@@ -15,8 +15,8 @@ set -e
 WORKSPACE="/home/riverbank1229/.openclaw/workspace"
 cd "$WORKSPACE"
 
-# Add all .md files
-git add *.md memory/*.md 2>/dev/null || true
+# Add all .md files and config examples
+git add *.md memory/*.md config/*.example 2>/dev/null || true
 
 # Check if there are changes to commit
 if git diff --staged --quiet; then
