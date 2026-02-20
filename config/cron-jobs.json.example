@@ -142,7 +142,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771621223919,
+      "updatedAtMs": 1771624839272,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -163,10 +163,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771623900000,
-        "lastRunAtMs": 1771621200034,
+        "nextRunAtMs": 1771627500000,
+        "lastRunAtMs": 1771624800023,
         "lastStatus": "ok",
-        "lastDurationMs": 23885,
+        "lastDurationMs": 39249,
         "consecutiveErrors": 0
       }
     },
@@ -496,7 +496,8 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771624979791
+        "nextRunAtMs": 1771624979791,
+        "runningAtMs": 1771624979811
       }
     }
   ]
