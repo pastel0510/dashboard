@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.16",
+    "lastTouchedAt": "2026-02-18T11:55:34.590Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-18T09:36:58.075Z",
+    "lastRunVersion": "2026.2.16",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "opencode-zen": {
+        "baseUrl": "https://opencode.ai/zen/v1",
+        "api": "openai-completions",
+        "apiKey": "YOUR_OPENCODE_API_KEY",
+        "models": [
+          {
+            "id": "glm-5-free",
+            "name": "GLM-5 Free",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "minimax-m2.5-free",
+            "name": "MiniMax M2.5 Free",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "kimi-k2.5-free",
+            "name": "Kimi K2.5 Free",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "trinity-large-preview-free",
+            "name": "Trinity Large Preview Free",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "minimax/minimax-m2.5",
+            "name": "MiniMax M2.5",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 4e-7, "output": 0.000001, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "minimax/minimax-m2.1",
+            "name": "MiniMax M2.1",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 2e-7, "output": 5e-7, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "openai/gpt-oss-120b",
+            "name": "GPT OSS 120B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "arcee-ai/trinity-large-preview:free",
+            "name": "Trinity Large Preview (Free)",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "opencode-zen/glm-5-free",
+        "fallbacks": [
+          "opencode-zen/minimax-m2.5-free",
+          "opencode-zen/kimi-k2.5-free",
+          "opencode-zen/trinity-large-preview-free",
+          "openrouter/arcee-ai/trinity-large-preview:free"
+        ]
+      },
+      "contextPruning": { "mode": "cache-ttl" },
+      "compaction": { "mode": "safeguard", "maxHistoryShare": 0.4 },
+      "timeoutSeconds": 1800,
+      "sandbox": { "mode": "off" }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "provider": "brave",
+        "apiKey": "YOUR_BRAVE_SEARCH_API_KEY"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "groupPolicy": "allowlist",
+      "streamMode": "block",
+      "accounts": {
+        "personal": {
+          "dmPolicy": "pairing",
+          "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
+          "allowFrom": ["55163462"],
+          "groupPolicy": "allowlist",
+          "streamMode": "block"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "YOUR_GATEWAY_TOKEN"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": { "enabled": true }
+    }
+  }
+}

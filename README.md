@@ -32,6 +32,13 @@ Custom OpenClaw skills in `skills/`:
 - `update-opencve-kb` - Update local OpenCVE-KB repo
 - `xkcd` - Fetch xkcd comics
 
+## Config (Sanitized)
+
+- `config/openclaw.json.example` — API keys replaced with placeholders
+- `config/cron-jobs.json.example` — Cron job templates (chat ID placeholder)
+
+To restore: copy examples to `~/.openclaw/`, remove `.example`, fill in your keys.
+
 ## Auto-sync
 
 Files are automatically committed and pushed every 6 hours via OpenClaw cron.

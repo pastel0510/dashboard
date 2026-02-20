@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Daily Fingerpori comic",
+      "enabled": true,
+      "schedule": {
+        "expr": "10 7 * * *",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "/fingerpori",
+        "model": "opencode-zen/glm-5-free",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Self‑reflection & improvement log",
+      "enabled": true,
+      "schedule": {
+        "expr": "0 */3 * * *",
+        "kind": "cron",
+        "staggerMs": 300000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Review last 6 hours of session messages for mistakes...",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "none"
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Security Bulletin (Mon 7:50 UTC+2)",
+      "enabled": true,
+      "schedule": {
+        "expr": "50 5 * * 1",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate security bulletin from BleepingComputer, The Hacker News, Dark Web Informer...",
+        "model": "opencode-zen/glm-5-free",
+        "timeoutSeconds": 600,
+        "thinking": "off"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Finnish News Bulletin",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 15 * * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate Finnish news from YLE, HS, TS, Iltalehti, Ilta-Sanomat, Kauppalehti...",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Science & Space News Bulletin",
+      "enabled": true,
+      "schedule": {
+        "expr": "2 15 */2 * *",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate science news from Nature, Science, NASA, ESA, Space.com...",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "bestEffort": true,
+        "channel": "telegram",
+        "mode": "announce",
+        "to": "YOUR_CHAT_ID"
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Daily Random xkcd",
+      "enabled": true,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Send a random xkcd comic...",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 30000
+      },
+      "delivery": {
+        "bestEffort": true,
+        "channel": "telegram",
+        "mode": "announce",
+        "to": "YOUR_CHAT_ID"
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "agentId": "main",
+      "name": "Daily ASCII Smiley (weekdays)",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * 1-5",
+        "tz": "Europe/Helsinki"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "/smiley",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 60
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
+      }
+    },
+    {
+      "id": "example-uuid-here",
+      "name": "Push md files",
+      "enabled": true,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */6 * * *",
+        "tz": "Europe/Helsinki",
+        "staggerMs": 300000
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the push-md-files skill to commit and push all md files"
+      },
+      "delivery": {
+        "mode": "none"
+      }
+    }
+  ]
+}
