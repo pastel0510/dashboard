@@ -14,15 +14,22 @@
       "opencode-zen": {
         "baseUrl": "https://opencode.ai/zen/v1",
         "api": "openai-completions",
-        "apiKey": "YOUR_OPENCODE_API_KEY",
+        "apiKey": "YOUR_API_KEY",
         "models": [
           {
             "id": "glm-5-free",
             "name": "GLM-5 Free",
             "api": "openai-completions",
             "reasoning": true,
-            "input": ["text"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 128000,
             "maxTokens": 8192
           },
@@ -31,8 +38,15 @@
             "name": "MiniMax M2.5 Free",
             "api": "openai-completions",
             "reasoning": true,
-            "input": ["text"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 128000,
             "maxTokens": 8192
           },
@@ -41,8 +55,15 @@
             "name": "Kimi K2.5 Free",
             "api": "openai-completions",
             "reasoning": true,
-            "input": ["text"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 128000,
             "maxTokens": 8192
           },
@@ -51,8 +72,15 @@
             "name": "Trinity Large Preview Free",
             "api": "openai-completions",
             "reasoning": false,
-            "input": ["text"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 128000,
             "maxTokens": 8192
           }
@@ -67,8 +95,15 @@
             "name": "MiniMax M2.5",
             "api": "openai-completions",
             "reasoning": true,
-            "input": ["text"],
-            "cost": { "input": 4e-7, "output": 0.000001, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 4e-7,
+              "output": 0.000001,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 200000,
             "maxTokens": 8192
           },
@@ -77,8 +112,15 @@
             "name": "MiniMax M2.1",
             "api": "openai-completions",
             "reasoning": true,
-            "input": ["text"],
-            "cost": { "input": 2e-7, "output": 5e-7, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 2e-7,
+              "output": 5e-7,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 200000,
             "maxTokens": 8192
           },
@@ -87,8 +129,15 @@
             "name": "GPT OSS 120B",
             "api": "openai-completions",
             "reasoning": false,
-            "input": ["text"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 128000,
             "maxTokens": 8192
           },
@@ -97,8 +146,15 @@
             "name": "Trinity Large Preview (Free)",
             "api": "openai-completions",
             "reasoning": false,
-            "input": ["text"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 128000,
             "maxTokens": 8192
           }
@@ -117,17 +173,24 @@
           "openrouter/arcee-ai/trinity-large-preview:free"
         ]
       },
-      "contextPruning": { "mode": "cache-ttl" },
-      "compaction": { "mode": "safeguard", "maxHistoryShare": 0.4 },
+      "contextPruning": {
+        "mode": "cache-ttl"
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "maxHistoryShare": 0.4
+      },
       "timeoutSeconds": 1800,
-      "sandbox": { "mode": "off" }
+      "sandbox": {
+        "mode": "off"
+      }
     }
   },
   "tools": {
     "web": {
       "search": {
         "provider": "brave",
-        "apiKey": "YOUR_BRAVE_SEARCH_API_KEY"
+        "apiKey": "YOUR_API_KEY"
       }
     }
   },
@@ -145,7 +208,9 @@
         "personal": {
           "dmPolicy": "pairing",
           "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
-          "allowFrom": ["55163462"],
+          "allowFrom": [
+            "55163462"
+          ],
           "groupPolicy": "allowlist",
           "streamMode": "block"
         }
@@ -161,7 +226,9 @@
   },
   "plugins": {
     "entries": {
-      "telegram": { "enabled": true }
+      "telegram": {
+        "enabled": true
+      }
     }
   }
 }
