@@ -2,7 +2,7 @@
   "version": 1,
   "jobs": [
     {
-      "id": "14935823-fe34-4fcc-a599-f9de63f5a512",
+      "id": "14935823-fe34-4fcc-a599-f9de63f5aUUID",
       "agentId": "main",
       "name": "Daily Fingerpori comic",
       "enabled": true,
@@ -26,22 +26,15 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771657800000,
-        "lastRunAtMs": 1771576726749,
-        "lastStatus": "ok",
-        "lastDurationMs": 167481,
-        "consecutiveErrors": 0
       }
     },
     {
-      "id": "89f4721b-6574-47c4-8a11-4dbe22d44c90",
+      "id": "89f4721b-6574-47c4-8a11-4dbe22d44UUID",
       "agentId": "main",
-      "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
+      "name": "Self‑reflection & improvement log",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771621414647,
+      "updatedAtMs": 1771632353559,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -51,7 +44,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Please review the last 6 hours of this session's messages, identify any mistakes (e.g., inaccurate info, formatting issues, failed tool calls). If mistakes are found, append a concise summary to /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md and also append the same entry to MEMORY.md under a \"## Reflections\" heading. If no mistakes are found, do nothing — do not send any message or announcement.",
+        "message": "Please review the last 6 hours of this session's messages, identify any mistakes (e.g., inaccurate info, formatting issues, failed tool calls). If mistakes are found, append a concise summary to MEMORY.md under a \"## Reflections\" heading. If no mistakes are found, do nothing — do not send any message or announcement.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 300
@@ -61,22 +54,15 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771632207761,
-        "lastRunAtMs": 1771621407790,
-        "lastStatus": "ok",
-        "lastDurationMs": 6857,
-        "consecutiveErrors": 0
       }
     },
     {
-      "id": "01feffa5-5573-4e34-8389-630e2ad5f6cf",
+      "id": "01feffa5-5573-4e34-8389-630e2ad5UUID",
       "agentId": "main",
       "name": "Security Bulletin (Mon 7:50 UTC+2 – last 72 h)",
       "enabled": true,
       "createdAtMs": 1771255832920,
-      "updatedAtMs": 1771403780211,
+      "updatedAtMs": 1771632706130,
       "schedule": {
         "expr": "50 5 * * 1",
         "kind": "cron",
@@ -86,7 +72,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a security bulletin covering the **top 8** most important and widely‑discussed cyber‑security stories from the **last 72 hours**. Prioritise sources: BleepingComputer, The Hacker News, Dark Web Informer, and any Kevin Beaumont posts. For each story output:\n\n**Title:** …\n**Summary:** … (2‑3 sentences)\n**Link:** …\n\nOnly include items published within the window. Use the format exactly as shown.\n\nIMPORTANT: If any web_fetch or web_search call returns an error or 403, skip that source and continue with the remaining sources. Always produce a bulletin with whatever stories you can find — do not stop if one source fails. End your response with the compiled bulletin text.",
+        "message": "Generate a security bulletin covering the top 8 most important cybersecurity stories from the last 72 hours. Sources: BleepingComputer, The Hacker News, Dark Web Informer, Kevin Beaumont.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (2-3 sentences)\n**Link:** ...\n\nSkip all narration. Do not explain what you are doing. Just output the compiled bulletin.",
         "model": "opencode-zen/glm-5-free",
         "timeoutSeconds": 600,
         "thinking": "off"
@@ -96,18 +82,15 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771825800000
       }
     },
     {
-      "id": "ececb885-561b-4c6b-ae81-100ca94ac8a0",
+      "id": "ececb885-561b-4c6b-ae81-100ca94acUUID",
       "agentId": "main",
       "name": "Security Bulletin (Tue‑Fri 7:50 UTC+2 – last 24 h)",
       "enabled": true,
       "createdAtMs": 1771255853178,
-      "updatedAtMs": 1771577237112,
+      "updatedAtMs": 1771632709888,
       "schedule": {
         "expr": "50 5 * * 2-5",
         "kind": "cron",
@@ -117,7 +100,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a security bulletin covering the **top 8** most important and widely‑discussed cyber‑security stories from the **last 24 hours**. Prioritise sources: BleepingComputer, The Hacker News, Dark Web Informer, and any Kevin Beaumont posts. For each story output:\n\n**Title:** …\n**Summary:** … (2‑3 sentences)\n**Link:** …\n\nOnly include items published within the window. Use the format exactly as shown.\n\nIMPORTANT: If any web_fetch or web_search call returns an error or 403, skip that source and continue with the remaining sources. Always produce a bulletin with whatever stories you can find — do not stop if one source fails. End your response with the compiled bulletin text.",
+        "message": "Generate a security bulletin covering the top 8 most important cybersecurity stories from the last 24 hours. Sources: BleepingComputer, The Hacker News, Dark Web Informer, Kevin Beaumont.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (2-3 sentences)\n**Link:** ...\n\nSkip all narration. Do not explain what you are doing. Just output the compiled bulletin.",
         "timeoutSeconds": 600,
         "model": "opencode-zen/glm-5-free",
         "thinking": "off"
@@ -127,51 +110,10 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771912200000,
-        "lastRunAtMs": 1771576981672,
-        "lastStatus": "ok",
-        "lastDurationMs": 255440,
-        "consecutiveErrors": 0
       }
     },
     {
-      "id": "a62a866e-64b2-4fe5-869c-edc9500ef145",
-      "agentId": "main",
-      "name": "Unanswered questions reflection",
-      "enabled": true,
-      "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771624839272,
-      "schedule": {
-        "expr": "*/45 * * * *",
-        "kind": "cron",
-        "tz": "UTC"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Check for unanswered user messages in the main session using this exact approach:\n\n1. Use the exec tool to run this Python script:\n\npython3 -c \"\nimport json, os, glob, sys\nSESSION_DIR = '/home/riverbank1229/.openclaw/agents/main/sessions/'\nfiles = sorted([f for f in glob.glob(SESSION_DIR + '*.jsonl') if '.reset.' not in f], key=os.path.getmtime, reverse=True)\nmain_session = None\nfor f in files[:10]:\n    try:\n        lines = open(f).readlines()[:6]\n        is_cron = any('[cron:' in l or '[system:' in l for l in lines if l.strip())\n        if not is_cron:\n            main_session = f\n            break\n    except: pass\nif not main_session:\n    print('NO_MAIN_SESSION'); sys.exit(0)\nmessages = []\nfor line in open(main_session):\n    try:\n        d = json.loads(line)\n        if d.get('type') == 'message':\n            m = d.get('message', {})\n            r = m.get('role', '')\n            if r in ('user','assistant'):\n                t = ''.join(c.get('text','') for c in m.get('content',[]) if isinstance(c,dict) and c.get('type')=='text')\n                messages.append({'role':r,'text':t.strip(),'ts':d.get('timestamp','')})\n    except: pass\nunanswered = []\nfor i,msg in enumerate(messages):\n    if msg['role']=='user' and msg['text'] and not msg['text'].startswith('[cron:'):\n        if not any(m['role']=='assistant' for m in messages[i+1:]):\n            unanswered.append(msg)\nif unanswered:\n    print('UNANSWERED:')\n    [print(f\\\"  [{m['ts']}] {m['text'][:200]}\\\") for m in unanswered]\nelse:\n    print('ALL_ANSWERED')\n\"\n\n2. If output is ALL_ANSWERED or NO_MAIN_SESSION: output nothing and stop.\n3. If output shows UNANSWERED questions: append each with its timestamp to /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md, then send a single Telegram announcement to chat ID 55163462 summarising the unanswered questions.",
-        "model": "opencode-zen/glm-5-free",
-        "timeoutSeconds": 120
-      },
-      "delivery": {
-        "mode": "none",
-        "channel": "telegram",
-        "to": "YOUR_CHAT_ID",
-        "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771627500000,
-        "lastRunAtMs": 1771624800023,
-        "lastStatus": "ok",
-        "lastDurationMs": 39249,
-        "consecutiveErrors": 0
-      }
-    },
-    {
-      "id": "8cba6fc7-871d-4738-8f77-e78674c2f95c",
+      "id": "8cba6fc7-871d-4738-8f77-e78674c2UUID",
       "agentId": "main",
       "name": "cve-bulletin-weekday",
       "enabled": true,
@@ -193,23 +135,17 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "telegram"
-      },
-      "state": {
-        "nextRunAtMs": 1771830000000,
-        "lastRunAtMs": 1771577237117,
-        "lastStatus": "ok",
-        "lastDurationMs": 195723,
-        "consecutiveErrors": 0
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID"
       }
     },
     {
-      "id": "58667790-4dae-477a-90be-a6e50ce13374",
+      "id": "58667790-4dae-477a-90be-a6e50ce1UUID",
       "agentId": "main",
       "name": "Daily reflection summary",
       "enabled": true,
       "createdAtMs": 1771417817364,
-      "updatedAtMs": 1771545670726,
+      "updatedAtMs": 1771632372820,
       "schedule": {
         "expr": "0 0 * * *",
         "kind": "cron",
@@ -219,31 +155,24 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Read the file /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md, extract the entries added in the last 24 hours, summarize them into a concise paragraph, and append this summary under a \"## Daily Reflections\" heading in /home/riverbank1229/.openclaw/workspace/MEMORY.md. Then send an announcement message: \"Daily reflection summary added.\"",
+        "message": "Read the file REFLECTIONS.md, extract the entries added in the last 24 hours, summarize them into a concise paragraph, and append this summary under a \"## Daily Reflections\" heading in MEMORY.md. Then send an announcement message: \"Daily reflection summary added.\"",
         "model": "opencode-zen/glm-5-free",
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771632000000,
-        "lastRunAtMs": 1771545620019,
-        "lastStatus": "ok",
-        "lastDurationMs": 50707,
-        "consecutiveErrors": 0
       }
     },
     {
-      "id": "c3d7e8f9-1a2b-4c5d-9e0f-a1b2c3d4e5f6",
+      "id": "c3d7e8f9-1a2b-4c5d-9e0f-a1b2c3d4UUID",
       "agentId": "main",
       "name": "OpenClaw auto-update check",
       "enabled": true,
       "createdAtMs": 1771435800000,
-      "updatedAtMs": 1771578961374,
+      "updatedAtMs": 1771632357336,
       "schedule": {
         "expr": "0 4 * * *",
         "kind": "cron",
@@ -253,32 +182,24 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Use the exec tool to run this command and check for OpenClaw updates:\n\ncommand: bash /home/riverbank1229/.openclaw/update-openclaw.sh\n\nDo NOT specify host: gateway — use the default (sandbox). If the script outputs a version number (e.g. '2026.2.18'), send a Telegram announcement to chat ID 55163462: 'OpenClaw updated to v<version>. Gateway restarting...'. If it outputs 'Already on latest version' or similar, do nothing.",
+        "message": "Use the exec tool to run the update script. If it outputs a version number, send a Telegram announcement. If 'Already on latest version', do nothing.",
         "model": "opencode-zen/glm-5-free",
         "timeoutSeconds": 600
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771646400000,
-        "lastRunAtMs": 1771578920429,
-        "lastStatus": "ok",
-        "lastDurationMs": 40945,
-        "consecutiveErrors": 0
       }
     },
     {
-      "id": "2421cb3f-c8ad-458c-81c1-4164c441e187",
+      "id": "2421cb3f-c8ad-458c-81c1-4164c441UUID",
       "agentId": "main",
-      "sessionKey": "agent:main:main",
       "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771517731167,
-      "updatedAtMs": 1771599720776,
+      "updatedAtMs": 1771632713532,
       "schedule": {
         "kind": "cron",
         "expr": "0 15 * * *",
@@ -288,7 +209,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a Finnish news bulletin covering the **top 8** most important stories from the **last 24 hours**. Search these Finnish news sources: YLE (yle.fi), Helsingin Sanomat (hs.fi), Turun Sanomat (ts.fi), Iltalehti (iltalehti.fi), Ilta-Sanomat (iltasanomat.fi), and Kauppalehti (kauppalehti.fi). For each story output:\n\n**Title:** …\n**Summary:** … (10-word summary)\n**Link:** …\n\nOnly include general news (politics, economy, society, culture, weather). Do NOT include: sports/urheilu, cybersecurity, CVE, or IT security topics. End with: Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta-Sanomat · Kauppalehti",
+        "message": "Generate a Finnish news bulletin covering the top 8 most important stories from the last 24 hours. Sources: YLE, Helsingin Sanomat, Turun Sanomat, Iltalehti, Ilta-Sanomat, Kauppalehti.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nOnly include general news (politics, economy, society, culture, weather). NO sports, cybersecurity, or IT security topics.\n\nSkip all narration. Just output the compiled bulletin.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 600
@@ -298,24 +219,15 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771686000000,
-        "lastRunAtMs": 1771599720059,
-        "lastStatus": "error",
-        "lastDurationMs": 717,
-        "consecutiveErrors": 1,
-        "lastError": "Error: All models failed (2): opencode/glm-5-free: No available auth profile for opencode (all in cooldown or unavailable). (rate_limit) | opencode/minimax-m2.5-free: No available auth profile for opencode (all in cooldown or unavailable). (rate_limit)"
       }
     },
     {
-      "id": "fcc3bc5b-b36f-4a5e-9a65-21bfc8c626ec",
+      "id": "fcc3bc5b-b36f-4a5e-9a65-21bfc8c6UUID",
       "agentId": "main",
-      "sessionKey": "agent:main:main",
       "name": "Science & Space News Bulletin (daily 17:02 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771522691608,
-      "updatedAtMs": 1771523255175,
+      "updatedAtMs": 1771632717279,
       "schedule": {
         "expr": "2 15 */2 * *",
         "kind": "cron",
@@ -325,7 +237,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a science and space news bulletin covering the **top 8** most important stories from the **last 48 hours**. Search these science news sources: Nature (nature.com), Science (science.org), NASA (nasa.gov), ESA (esa.int), Space.com, New Scientist (newscientist.com), Phys.org, and Scientific American (scientificamerican.com). For each story output:\n\n**Title:** …\n**Summary:** … (10-word summary)\n**Link:** …\n\nInclude: Space missions, astronomy, physics, biology, climate science, medical research, technology breakthroughs.\nExclude: Politics (unless science-related), sports, entertainment.\n\nEnd with: Sources: Nature · Science · NASA · ESA · Space.com · New Scientist · Phys.org · Scientific American",
+        "message": "Generate a science and space news bulletin covering the top 8 most important stories from the last 48 hours. Sources: Nature, Science, NASA, ESA, Space.com, New Scientist, Phys.org, Scientific American.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nInclude: Space missions, astronomy, physics, biology, climate science, medical research, technology breakthroughs.\nExclude: Politics, sports, entertainment.\n\nSkip all narration. Just output the compiled bulletin.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 600
@@ -335,19 +247,15 @@
         "channel": "telegram",
         "mode": "announce",
         "to": "YOUR_CHAT_ID"
-      },
-      "state": {
-        "nextRunAtMs": 1771686120000
       }
     },
     {
-      "id": "d810114a-8a66-429d-8f1f-567968576a5b",
+      "id": "d810114a-8a66-429d-8f1f-56796857UUID",
       "agentId": "main",
-      "sessionKey": "agent:main:main",
       "name": "Daily Random xkcd (10am-5pm Helsinki)",
       "enabled": true,
       "createdAtMs": 1771537957591,
-      "updatedAtMs": 1771577773944,
+      "updatedAtMs": 1771632765959,
       "schedule": {
         "expr": "0 8 * * *",
         "kind": "cron",
@@ -357,32 +265,25 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send a random xkcd comic to Telegram chat ID 55163462. Steps:\n\n1. Pick a random delay between 0 and 420 minutes (use Python: import random; delay = random.randint(0, 420); print(f'Waiting {delay} minutes...'))\n2. Sleep for that many minutes (multiply by 60 for seconds)\n3. Fetch the latest xkcd number: curl -s https://xkcd.com/info.0.json\n4. Pick a random comic number between 1 and max (skip 404)\n5. Fetch that comic's JSON\n6. Download the image\n7. Send as photo with caption: 'xkcd #<num> — <title>\\n\\n🖱 <alt text>'",
+        "message": "Send a random xkcd comic to Telegram. Steps:\n1. Pick random delay 0-420 minutes, sleep\n2. Fetch latest xkcd number from https://xkcd.com/info.0.json\n3. Pick random comic (skip 404), fetch JSON\n4. Download image, send as photo with caption: 'xkcd #<num> — <title>'\n\nSkip all narration. Just send the comic.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 30000
       },
       "delivery": {
-        "bestEffort": true,
-        "channel": "telegram",
         "mode": "announce",
-        "to": "YOUR_CHAT_ID"
-      },
-      "state": {
-        "nextRunAtMs": 1771660800000,
-        "lastRunAtMs": 1771577432843,
-        "lastStatus": "ok",
-        "lastDurationMs": 341101,
-        "consecutiveErrors": 0
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
       }
     },
     {
-      "id": "cd18018b-4991-4404-99a3-0284bf24dae2",
+      "id": "cd18018b-4991-4404-99a3-0284bf24UUID",
       "agentId": "main",
       "name": "Daily ASCII Smiley (weekdays 8am Helsinki)",
       "enabled": true,
       "createdAtMs": 1771578216577,
-      "updatedAtMs": 1771578818697,
+      "updatedAtMs": 1771632585523,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * 1-5",
@@ -402,17 +303,10 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771826400000,
-        "lastRunAtMs": 1771578787877,
-        "lastStatus": "ok",
-        "lastDurationMs": 30820,
-        "consecutiveErrors": 0
       }
     },
     {
-      "id": "b89ab11d-69a9-4463-8d10-6e099f503f56",
+      "id": "b89ab11d-69a9-4463-8d10-6e099f50UUID",
       "agentId": "main",
       "name": "Self-Host Weekly (selfh.st)",
       "enabled": true,
@@ -437,18 +331,15 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1772200800000
       }
     },
     {
-      "id": "9a7b6574-755d-4a73-a675-ac5d2c77d6cb",
+      "id": "9a7b6574-755d-4a73-a675-ac5d2c77UUID",
       "agentId": "main",
       "name": "Philips Hue HomeKit fix monitor",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771595719992,
+      "updatedAtMs": 1771632365173,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -468,17 +359,14 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
-      },
-      "state": {
-        "nextRunAtMs": 1771657200000
       }
     },
     {
-      "id": "3b7b5f4c-8bcf-4608-8f69-98fb72d8f042",
+      "id": "3b7b5f4c-8bcf-4608-8f69-98fb72d8UUID",
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771621226601,
+      "updatedAtMs": 1771632361347,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -489,15 +377,34 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run the push-md-files skill to commit and push all md files from the workspace to git@gitgud.io:unreached2457/md-files.git"
+        "message": "Run the push-md-files skill to commit and push all md files from the workspace to git@gitgud.io:YOUR_REPO/md-files.git"
       },
       "delivery": {
         "mode": "none",
         "channel": "last"
+      }
+    },
+    {
+      "id": "c1568a3b-2434-49f7-9c12-5e3e77c2UUID",
+      "name": "RSS Feed Translator",
+      "enabled": true,
+      "createdAtMs": 1771633525844,
+      "updatedAtMs": 1771635945393,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 * * * *",
+        "tz": "UTC",
+        "staggerMs": 300000
       },
-      "state": {
-        "nextRunAtMs": 1771624979791,
-        "runningAtMs": 1771624979811
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run the RSS feed translator: cd ~/.openclaw/workspace/rss-translator && ./run.sh"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "last"
       }
     }
   ]

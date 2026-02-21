@@ -86,6 +86,33 @@
           }
         ]
       },
+      "nvidia": {
+        "baseUrl": "https://integrate.api.nvidia.com/v1",
+        "api": "openai-completions",
+        "apiKey": "YOUR_NVIDIA_API_KEY",
+        "models": [
+          {
+            "id": "meta/llama-3.3-70b-instruct",
+            "name": "Llama 3.3 70B Instruct",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
+            "name": "Nemotron Super 49B",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      },
       "openrouter": {
         "baseUrl": "https://openrouter.ai/api/v1",
         "api": "openai-completions",
@@ -170,6 +197,8 @@
           "opencode-zen/minimax-m2.5-free",
           "opencode-zen/kimi-k2.5-free",
           "opencode-zen/trinity-large-preview-free",
+          "nvidia/meta/llama-3.3-70b-instruct",
+          "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1",
           "openrouter/arcee-ai/trinity-large-preview:free"
         ]
       },
@@ -190,7 +219,7 @@
     "web": {
       "search": {
         "provider": "brave",
-        "apiKey": "YOUR_API_KEY"
+        "apiKey": "YOUR_BRAVE_API_KEY"
       }
     }
   },
@@ -209,7 +238,7 @@
           "dmPolicy": "pairing",
           "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
           "allowFrom": [
-            "55163462"
+            "YOUR_CHAT_ID"
           ],
           "groupPolicy": "allowlist",
           "streamMode": "block"
