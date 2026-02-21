@@ -74,6 +74,12 @@ When creating or updating scripts that use external dependencies:
 3. Document dependency verification dates in requirements.txt or script header
 4. If a library becomes unmaintained, find and switch to an actively maintained alternative
 
+## Git Repository Visibility
+- **RSS feed translator repo** — PUBLIC (visible to everyone)
+- **md-files repo** (git@gitgud.io:unreached2457/md-files.git) — PRIVATE
+
+When working with these repos, be mindful of what gets committed. No sensitive data should go to the public RSS feed repo.
+
 ## Configuration Issues
 ### 2026-02-21: Telegram Bot Token Missing
 ⚠️ The Telegram bot token is not configured. Cron jobs that send to Telegram (like Daily Fingerpori comic) are failing with "Telegram bot token missing" error. The gateway config needs either:

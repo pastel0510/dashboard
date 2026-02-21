@@ -26,26 +26,62 @@ Generate a curated bulletin of the top Finnish news stories from major Finnish n
 - `hours` — lookback window. Default: `24`.
 - `count` — number of stories. Default: `8`.
 
+## RSS Feed Sources (Primary)
+
+Use RSS feeds as the primary source. They have no rate limits and are always available.
+
+### RSS Feed URLs
+
+| Source | RSS URL | Notes |
+|--------|---------|-------|
+| YLE Main News | `https://yle.fi/rss/uutiset/paauutiset` | Finland's public broadcaster |
+| YLE Latest | `https://yle.fi/rss/uutiset/tuoreimmat` | Most recent stories |
+| YLE Domestic | `https://yle.fi/rss/t/18-34837/fi` | Kotimaa (domestic news) |
+| YLE Foreign | `https://yle.fi/rss/t/18-34953/fi` | Ulkomaat (foreign news) |
+| YLE Economy | `https://yle.fi/rss/t/18-19274/fi` | Talous (economy) |
+| YLE Politics | `https://yle.fi/rss/t/18-38033/fi` | Politiikka |
+| Iltalehti News | `https://www.iltalehti.fi/rss/uutiset.xml` | Tabloid news |
+| Iltalehti All | `https://www.iltalehti.fi/rss/rss.xml` | All sections |
+| Ilta-Sanomat | `https://www.is.fi/rss/tuoreimmat.xml` | Tabloid news |
+| Helsingin Sanomat | `https://www.hs.fi/rss/tuoreimmat.xml` | Major newspaper (may be paywalled) |
+| Kauppalehti | `https://www.kauppalehti.fi/rss/latest` | Business news |
+
 ## Steps (follow in order)
 
-### 1. Search each source
+### 1. Fetch RSS Feeds
 
-Use the **web search tool** to query each Finnish news source for recent stories. Run searches in parallel where possible.
+Fetch RSS feeds using `web_fetch` or `curl`. Parse the XML to extract:
+- Title
+- Link
+- Publication date
+- Description/summary
 
-Search queries (substitute `hours` as appropriate):
+Fetch from at least 3-4 sources to get broad coverage. Prioritize:
+1. YLE Main News (comprehensive, free)
+2. YLE Latest (most recent)
+3. Iltalehti or Ilta-Sanomat (popular coverage)
+4. Kauppalehti (economy/business)
 
-| Source | Query |
-|--------|-------|
-| YLE | `site:yle.fi/a uutiset` |
-| Helsingin Sanomat | `site:hs.fi uutiset` |
-| Turun Sanomat | `site:ts.fi uutiset` |
-| Iltalehti | `site:iltalehti.fi uutiset` |
-| Ilta-Sanomat | `site:iltasanomat.fi uutiset` |
-| Kauppalehti | `site:kauppalehti.fi uutiset` |
+**Example curl command:**
+```bash
+curl -sL "https://yle.fi/rss/uutiset/paauutiset" | head -200
+```
 
-Fetch the top results from each. Prioritise stories that appear across multiple sources — cross-coverage signals importance.
+RSS feeds are XML. Extract `<item>` elements with `<title>`, `<link>`, `<pubDate>`, and `<description>`.
 
-### 2. Score and rank
+### 2. Optional: Web Search Enhancement
+
+If web search is available and not rate-limited, use it to:
+- Find additional context for major stories
+- Cross-reference coverage across sources
+
+**If web search fails (rate limit, timeout, etc.)**, proceed with RSS-only data. The bulletin should still be deliverable.
+
+**Search queries (only if search works):**
+- `site:yle.fi uutiset` — for YLE specific stories
+- `site:iltalehti.fi uutiset` — for Iltalehti stories
+
+### 3. Score and Rank
 
 Rank by:
 1. **Impact** — major political, economic, or social significance
@@ -55,7 +91,16 @@ Rank by:
 
 Discard stories outside the time window. If fewer than `count` qualifying stories exist, deliver what is available and note the shortage.
 
-### 3. Write the bulletin
+### 4. Filter Content
+
+**Important:** Only include general news (politics, economy, society, culture, weather, etc.). Do NOT include:
+- Sports (urheilu) — exclude all sports-related news
+- Cybersecurity or hacking news
+- CVE or vulnerability reports
+- Technical IT security topics
+- Trump or Elon Musk related news (per user preference)
+
+### 5. Write the Bulletin
 
 Select up to `count` stories. Format each entry as:
 
@@ -67,13 +112,7 @@ Select up to `count` stories. Format each entry as:
 
 Separate each story with a blank line and do not add numbering, bullets, or extra headers.
 
-**Important:** Only include general news (politics, economy, society, culture, weather, etc.). Do NOT include:
-- Sports (urheilu) — exclude all sports-related news
-- Cybersecurity or hacking news
-- CVE or vulnerability reports
-- Technical IT security topics
-
-### 4. Deliver
+### 6. Deliver
 
 Wrap in a header and footer, then send as a **single message**:
 
@@ -82,15 +121,21 @@ Wrap in a header and footer, then send as a **single message**:
 
 <stories>
 
-Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta-Sanomat · Kauppalehti
+Sources: YLE · Helsingin Sanomat · Iltalehti · Ilta-Sanomat · Kauppalehti
 ```
+
+## Resilience
+
+- **RSS feeds always work** — no rate limits, no authentication required
+- **Web search is optional** — if it fails, still produce the bulletin from RSS data
+- **Never fail silently** — if all sources fail, report the error clearly
 
 ## Notes
 
-- **This task is slow.** Searching and reading articles typically takes 3–8 minutes. Set `timeoutSeconds: 600` or higher on the cron job.
+- **This task can be slow.** Fetching and parsing RSS typically takes 2–5 minutes. Set `timeoutSeconds: 600` on the cron job.
 - **Model selection matters.** A reasoning-capable model writes better summaries.
 - **No speculation.** Only include stories with a verifiable published URL.
-- **Finnish language:** The articles will be in Finnish. Summaries should be in Finnish for Finnish news sources.
+- **Finnish language:** The articles will be in Finnish. Summaries should be in English for the bulletin.
 
 ## Cron recommendations
 

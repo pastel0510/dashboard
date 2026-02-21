@@ -8,11 +8,11 @@
 Check https://www.cloudflarestatus.com/ periodically and notify Shadow when current issues are resolved.
 
 Active issues to track:
-- Bot Management / JSD detections (Degraded Performance, JSD disabled since Feb 18, fix in progress — last checked Feb 21, 09:49 UTC)
-- Data Loss Prevention (DLP) (Degraded Performance, Newark NJ latency — last checked Feb 21, 09:49 UTC)
-- Workers AI (Degraded Performance — last checked Feb 21, 09:49 UTC)
+- Data Loss Prevention (DLP) (Degraded Performance, Newark NJ latency — last checked Feb 21, 15:47 UTC, still working on fix)
 
 Resolved:
+- Bot Management / JSD detections — RESOLVED Feb 21, 10:13 UTC
+- Workers AI — RESOLVED (now Operational)
 - 1.1.1.1 landing page 403 errors — RESOLVED Feb 20, 22:23 UTC
 - BYOIP prefixes impact — RESOLVED Feb 21, 00:27 UTC
 - Higher 429 errors — RESOLVED (fix implemented Feb 19, monitoring completed)
