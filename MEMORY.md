@@ -8,6 +8,8 @@ When you ask for today's Fingerpori comic, the process is:
 This procedure is used by the Daily Fingerpori comic cron job and can be invoked manually as needed.
 
 ## Reflections
+2026-02-21 09:04 UTC - File corruption detected: REFLECTIONS.md was overwritten with a heartbeat poll message. The entire reflection history was lost. Restored from MEMORY.md backup. Need to investigate which process caused this.
+2026-02-21 06:03 UTC - Security issue found: Hardcoded API keys in `rss-translator/translate_feeds.py` — NVIDIA and OpenCode API keys are embedded in source code pushed to git. Should use environment variables or excluded config file. User should rotate keys immediately.
 2026-02-17 06:00 UTC - Self‑reflection completed: No mistakes identified in the last 6 hours; all tool calls succeeded and formatting was correct.
 2026-02-17 12:00 UTC - Reviewed the last 6 hours of session activity. No mistakes found in tool calls, formatting, and information accuracy.
 2026-02-18 09:43 UTC - Reviewed the last 6 hours of session activity. No mistakes found in tool calls, formatting, and information accuracy.
@@ -46,18 +48,20 @@ Started monitoring Cloudflare status page on 2026-02-20 for Shadow. Active issue
 Notify when resolved. Check via HEARTBEAT.md during periodic polls.
 
 ## Philips Hue + Apple HomeKit Issue Tracking
-Shadow is experiencing Hue Bridge not connecting to Apple HomeKit ("no response" errors, "reading between the lines" in Hue app). 
+Shadow is experiencing Hue Bridge not connecting to Apple HomeKit ("no response" errors, "reading between the lines" in Hue app).
 
-**Cause:** iOS 26.3 / tvOS 26.3 / HomePod 26.3 updates breaking HomeKit ↔ Hue connectivity, especially via Matter.
+**Cause:** iOS 26.3 / tvOS 26.3 / HomePod 26.3 updates breaking HomeKit ↔ Hue connectivity via Matter.
 
 **Started:** Around Feb 2026
 
-**Action:** Periodically search for fixes/updates and notify when resolved. Check for:
-- Apple iOS/tvOS/HomePod updates fixing HomeKit/Matter
-- Philips Hue Bridge firmware updates
-- Official statements from Apple or Philips
+**WORKAROUND FOUND (Feb 21, 2026):** Do NOT add Hue Bridge as Matter accessory. Use native HomeKit:
+1. Remove Hue Bridge from HomeKit → Home Settings → Home Hubs & Bridges
+2. Hue App → Settings → Smart home → Unlink HomeKit
+3. HomeKit → Add Accessory → More options
+4. Select "Philips Hue HomeKit" (NOT under "Other Matter Accessories")
+5. Use code on back of Hue Bridge
 
-**Search terms:** "Philips Hue Apple HomeKit no response fix 2026", "iOS HomeKit Hue fix"
+**Status:** No official Apple/Philips fix yet. Workaround confirmed working by users on Apple Discussions.
 
 **Started tracking:** 2026-02-20
 
@@ -69,3 +73,11 @@ When creating or updating scripts that use external dependencies:
 2. Verify commit dates via GitHub API before adding new dependencies
 3. Document dependency verification dates in requirements.txt or script header
 4. If a library becomes unmaintained, find and switch to an actively maintained alternative
+
+## Configuration Issues
+### 2026-02-21: Telegram Bot Token Missing
+⚠️ The Telegram bot token is not configured. Cron jobs that send to Telegram (like Daily Fingerpori comic) are failing with "Telegram bot token missing" error. The gateway config needs either:
+- `TELEGRAM_BOT_TOKEN` environment variable, or
+- `channels.telegram.botToken` in the config file
+
+This also prevents me from sending messages via the message tool.
