@@ -1,3 +1,6 @@
+## 2026-02-21 18:03 UTC
+- **Formatting mistake:** Bulletin skills used markdown formatting (`**bold**`, `_italic_`) which Telegram doesn't render in plain text messages. Fixed in commit 85568f4 by switching to plain text field names. Affected: Finnish, Science, Security, and Self-Host Weekly bulletin skills.
+
 ## 2026-02-21 09:04 UTC
 - **File corruption detected:** REFLECTIONS.md was completely overwritten with a heartbeat poll message instead of reflection log content. The entire history was lost. This appears to be a mistake in another process/cron job writing the wrong content to the wrong file. File restored from MEMORY.md backup.
 
@@ -25,3 +28,7 @@
 ## 2026-02-20 18:45 UTC
 - Unanswered question detected:
   - [2026-02-20T18:45:12.200Z] "get me todays finnish news bulletin"
+
+## 2026-02-21 20:45 UTC
+- Unanswered message detected (appears to be a heartbeat poll):
+  - [2026-02-21T20:45:17.002Z] Conversation info (untrusted metadata) - heartbeat poll not responded to

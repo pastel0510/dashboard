@@ -8,6 +8,7 @@ When you ask for today's Fingerpori comic, the process is:
 This procedure is used by the Daily Fingerpori comic cron job and can be invoked manually as needed.
 
 ## Reflections
+2026-02-21 18:03 UTC - Formatting mistake: Bulletin skills used markdown formatting (`**bold**`, `_italic_`) which Telegram doesn't render in plain text messages. Fixed by switching to plain text field names. Affected: Finnish, Science, Security, Self-Host Weekly bulletin skills.
 2026-02-21 09:04 UTC - File corruption detected: REFLECTIONS.md was overwritten with a heartbeat poll message. The entire reflection history was lost. Restored from MEMORY.md backup. Need to investigate which process caused this.
 2026-02-21 06:03 UTC - Security issue found: Hardcoded API keys in `rss-translator/translate_feeds.py` — NVIDIA and OpenCode API keys are embedded in source code pushed to git. Should use environment variables or excluded config file. User should rotate keys immediately.
 2026-02-17 06:00 UTC - Self‑reflection completed: No mistakes identified in the last 6 hours; all tool calls succeeded and formatting was correct.
@@ -25,7 +26,7 @@ This procedure is used by the Daily Fingerpori comic cron job and can be invoked
 2026-02-19 15:03 UTC - Reviewed the last 6 hours of session activity. No mistakes identified in tool calls, formatting, or information accuracy.
 2026-02-19 18:03 UTC - Reviewed the last 6 hours of session activity. No mistakes identified in tool calls, formatting, or information accuracy.
 
-## Daily Reflections
+2026-02-21 19:05 UTC - Self-reflection gap: The cron only checked for "mistakes" but didn't detect unanswered questions or pending confirmations. Updated prompt to actively answer gaps, not just log them. Root cause: I made changes for user request but never replied — need to always confirm actions taken.
 ### 2026-02-20
 Six self-reflection reviews were conducted throughout February 19th (at 12:03, 13:33, 13:35, 13:36, 15:03, and 18:03 UTC). Each review examined the preceding 6 hours of session activity, consistently finding no issues with tool calls, formatting, or information accuracy. The day's operations proceeded smoothly with no errors or corrective actions needed.
 
@@ -87,3 +88,18 @@ When working with these repos, be mindful of what gets committed. No sensitive d
 - `channels.telegram.botToken` in the config file
 
 This also prevents me from sending messages via the message tool.
+
+## Daily Reflections
+### 2026-02-21
+Today's reflections identified several issues: a formatting mistake where bulletin skills used markdown formatting incompatible with Telegram (fixed in commit 85568f4 by switching to plain text); file corruption in REFLECTIONS.md caused by another process overwriting it with heartbeat content (restored from backup); a security concern with hardcoded API keys in `rss-translator/translate_feeds.py` (needs environment variable migration and key rotation); and an unanswered heartbeat poll at 20:45 UTC. The formatting fix affected Finnish, Science, Security, and Self-Host Weekly bulletin skills.
+
+## Public Content Privacy Policy
+When creating anything for public release (git repos, scripts, feeds, etc.):
+- NEVER include usernames or person names
+- NEVER reference OpenClaw, ~/.openclaw paths, or system-specific paths
+- Use generic paths (e.g., `./feeds/` instead of `/home/username/.openclaw/workspace/...`)
+- Use generic user agents (e.g., "MyApp/1.0" not "OpenClaw:BunnyOfTheDay:v1.0")
+- Scrub git history before pushing if any personal info was committed
+- Check for hardcoded paths, names, or identifying info before any public push
+
+This applies to: git commits, scripts, config files, logs, documentation, and any generated content.

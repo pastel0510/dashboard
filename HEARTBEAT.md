@@ -8,7 +8,7 @@
 Check https://www.cloudflarestatus.com/ periodically and notify Shadow when current issues are resolved.
 
 Active issues to track:
-- Data Loss Prevention (DLP) (Degraded Performance, Newark NJ latency — last checked Feb 21, 15:47 UTC, still working on fix)
+- Data Loss Prevention (DLP) (Degraded Performance, Newark NJ latency — last update Feb 21, 09:57 UTC, still working on fix. No new updates since then)
 
 Resolved:
 - Bot Management / JSD detections — RESOLVED Feb 21, 10:13 UTC
