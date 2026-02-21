@@ -44,6 +44,8 @@ Fetch the latest selfh.st weekly edition and extract up to 10 self-hosted projec
 
 Send to Telegram chat ID 55163462. **Use EXACTLY two blank lines (two empty lines) between each numbered entry.** This is required for readability.
 
+**Skip all narration. Do not explain what you are doing. Output ONLY the formatted list.**
+
 ```
 🔧 Self-Host Weekly — [date from page]
 
