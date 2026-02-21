@@ -27,6 +27,9 @@ This procedure is used by the Daily Fingerpori comic cron job and can be invoked
 ### 2026-02-20
 Six self-reflection reviews were conducted throughout February 19th (at 12:03, 13:33, 13:35, 13:36, 15:03, and 18:03 UTC). Each review examined the preceding 6 hours of session activity, consistently finding no issues with tool calls, formatting, or information accuracy. The day's operations proceeded smoothly with no errors or corrective actions needed.
 
+### 2026-02-21
+One unanswered question was detected on February 20th at 18:45 UTC: a request for "today's Finnish news bulletin." This indicates a possible gap in responding to a user request that may need follow-up or review of the Finnish news bulletin delivery mechanism.
+
 ## xkcd Preferences
 When sending xkcd comics, always include the original release date (found on xkcd.com or explainxkcd.com).
 
@@ -57,3 +60,12 @@ Shadow is experiencing Hue Bridge not connecting to Apple HomeKit ("no response"
 **Search terms:** "Philips Hue Apple HomeKit no response fix 2026", "iOS HomeKit Hue fix"
 
 **Started tracking:** 2026-02-20
+
+**Resolved:** 2026-02-21 - BYOIP prefixes issue resolved (now Operational)
+
+## Dependency Policy for Scripts
+When creating or updating scripts that use external dependencies:
+1. All dependencies must be actively maintained (commits within last 2 years)
+2. Verify commit dates via GitHub API before adding new dependencies
+3. Document dependency verification dates in requirements.txt or script header
+4. If a library becomes unmaintained, find and switch to an actively maintained alternative

@@ -8,9 +8,12 @@
 Check https://www.cloudflarestatus.com/ periodically and notify Shadow when current issues are resolved.
 
 Active issues to track:
-- BYOIP prefixes impact (still restoring as of Feb 20 20:50 UTC)
-- 1.1.1.1 landing page 403 errors (fix implemented, monitoring)
-- Bot Management / JSD detections (still investigating, JSD disabled since Feb 18)
-- Higher 429 errors (fix implemented, monitoring)
+- Bot Management / JSD detections (Degraded Performance, JSD disabled since Feb 18, fix in progress)
+- Higher 429 errors (fix implemented, monitoring as of Feb 20 16:26 UTC)
+- Data Loss Prevention (DLP) (Degraded Performance, Newark NJ latency)
 
-Notify when these show "Operational" or "Resolved".
+Resolved:
+- 1.1.1.1 landing page 403 errors — RESOLVED Feb 20, 22:23 UTC
+- BYOIP prefixes impact — RESOLVED Feb 21, 00:27 UTC
+
+Notify when remaining issues show "Operational" or "Resolved".
