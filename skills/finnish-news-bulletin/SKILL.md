@@ -102,12 +102,12 @@ Discard stories outside the time window. If fewer than `count` qualifying storie
 
 ### 5. Write the Bulletin
 
-Select up to `count` stories. Format each entry as:
+Select up to `count` stories. Format each entry as plain text (no markdown, no asterisks):
 
 ```
-**Title:** <story title>
-**Summary:** <10‑word summary of the article>
-**Link:** <direct article URL>
+Title: <story title>
+Summary: <10‑word summary of the article>
+Link: <direct article URL>
 ```
 
 Separate each story with a blank line and do not add numbering, bullets, or extra headers.

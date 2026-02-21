@@ -51,19 +51,19 @@ Send to Telegram chat ID 55163462. **Use EXACTLY two blank lines (two empty line
 
 [N] Projects to Check Out:
 
-1. **[Project Name]** — [one-line description from page]
+1. [Project Name] — [one-line description from page]
 [project URL]
-_Why: [reason it's featured]_
+Why: [reason it's featured]
 
 
-2. **[Project Name]** — [one-line description]
+2. [Project Name] — [one-line description]
 [URL]
-_Why: [reason]_
+Why: [reason]
 
 
-3. **[Project Name]** — [one-line description]
+3. [Project Name] — [one-line description]
 [URL]
-_Why: [reason]_
+Why: [reason]
 
 
 [...up to 10]

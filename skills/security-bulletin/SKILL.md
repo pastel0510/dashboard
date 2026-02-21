@@ -63,13 +63,13 @@ Discard stories outside the time window. If fewer than `count` qualifying storie
 
 ### 3. Write the bulletin
 
-Select up to `count` stories. Include **at most one** CVE entry; if a CVE appears, add a TLDR line with a 10‑word summary. All other entries should be regular cybersecurity news and must contain only:
+Select up to `count` stories. Include **at most one** CVE entry; if a CVE appears, add a TLDR line with a 10‑word summary. All other entries should be regular cybersecurity news and must contain only plain text (no markdown, no asterisks):
 
 ```
-**Title:** <story title>
-**Summary:** <5‑word summary of the article>
-**Link:** <direct article URL>
-**TLDR:** <10‑word CVE summary>   # only for the single CVE entry
+Title: <story title>
+Summary: <5‑word summary of the article>
+Link: <direct article URL>
+TLDR: <10‑word CVE summary>   # only for the single CVE entry
 ```
 
 If multiple CVEs are found, pick the most critical/high‑impact one for the TLDR and treat the rest as regular news (omit TLDR). Separate each story with a blank line and do not add numbering, bullets, or extra headers.
