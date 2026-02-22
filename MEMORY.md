@@ -7,6 +7,8 @@ When you ask for today's Fingerpori comic, the process is:
 5. Send the image as a photo to the chat with the caption "Today's Fingerpori comic".
 This procedure is used by the Daily Fingerpori comic cron job and can be invoked manually as needed.
 
+**Publication schedule:** Fingerpori is published on **weekdays only** (Mon-Fri), typically in the morning Helsinki time (~06:00-08:00 UTC). Do not send stale Friday comics on weekends — verify the date before sending.
+
 ## Reflections
 2026-02-22 00:03 UTC - Security issue RESOLVED: Hardcoded API keys in `rss-translator/translate_feeds.py` were fixed. Keys now load from `.env` file via environment variables. `.env` added to `.gitignore`. User should still rotate previously exposed keys.
 2026-02-21 18:03 UTC - Formatting mistake: Bulletin skills used markdown formatting (`**bold**`, `_italic_`) which Telegram doesn't render in plain text messages. Fixed by switching to plain text field names. Affected: Finnish, Science, Security, Self-Host Weekly bulletin skills.
