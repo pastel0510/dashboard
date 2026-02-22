@@ -18,3 +18,24 @@ Resolved:
 - Higher 429 errors — RESOLVED (fix implemented Feb 19, monitoring completed)
 
 Notify when remaining issues show "Operational" or "Resolved".
+
+## Tokmanni Data Leak Investigation (Feb 2026)
+Monitor for updates on the Tokmanni customer data situation.
+
+**Timeline:**
+- 18.2.2026: BreachForums listing ~473k Tokmanni records for sale
+- 19.2.2026: Screenshots of customer data appeared online (possibly Telegram)
+- 20.2.2026: Tokmanni's Maarit Mikkonen confirmed investigation found leak was NOT from Tokmanni systems — traced to customer's infected machine (claim later retracted/corrected?)
+
+**Current status:** Tokmanni denies breach originated from their systems. No further public updates after Feb 20.
+
+**Sources to check for updates:**
+- Iltalehti.fi, Verkkouutiset.fi, MTV Uutiset
+- Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
+- BreachForums / Telegram for new data listings
+
+Notify Shadow if:
+- New statements from Tokmanni
+- Confirmed breach source identified
+- Data proven authentic or fake
+- Customers notified of breach

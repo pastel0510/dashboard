@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-02-22T00:00:00Z",
+  "totalJobs": 17,
+  "currentIndex": 0,
+  "completedJobs": [],
+  "pendingJobs": [
+    {"index": 1, "name": "Daily Fingerpori comic", "id": "14935823-fe34-4fcc-a599-f9de63f5a512"},
+    {"index": 2, "name": "Self-reflection & improvement log", "id": "89f4721b-6574-47c4-8a11-4dbe22d44c90"},
+    {"index": 3, "name": "Security Bulletin (Mon)", "id": "01feffa5-5573-4e34-8389-630e2ad5f6cf"},
+    {"index": 4, "name": "Security Bulletin (Tue-Fri)", "id": "ececb885-561b-4c6b-ae81-100ca94ac8a0"},
+    {"index": 5, "name": "Unanswered questions reflection", "id": "a62a866e-64b2-4fe5-869c-edc9500ef145"},
+    {"index": 6, "name": "CVE bulletin (weekday)", "id": "8cba6fc7-871d-4738-8f77-e78674c2f95c"},
+    {"index": 7, "name": "Daily reflection summary", "id": "58667790-4dae-477a-90be-a6e50ce13374"},
+    {"index": 8, "name": "OpenClaw auto-update check", "id": "c3d7e8f9-1a2b-4c5d-9e0f-a1b2c3d4e5f6"},
+    {"index": 9, "name": "Finnish News Bulletin", "id": "2421cb3f-c8ad-458c-81c1-4164c441e187"},
+    {"index": 10, "name": "Science & Space News Bulletin", "id": "fcc3bc5b-b36f-4a5e-9a65-21bfc8c626ec"},
+    {"index": 11, "name": "Daily Random xkcd", "id": "d810114a-8a66-429d-8f1f-567968576a5b"},
+    {"index": 12, "name": "Daily ASCII Smiley", "id": "cd18018b-4991-4404-99a3-0284bf24dae2"},
+    {"index": 13, "name": "Self-Host Weekly", "id": "b89ab11d-69a9-4463-8d10-6e099f503f56"},
+    {"index": 14, "name": "Philips Hue HomeKit fix monitor", "id": "9a7b6574-755d-4a73-a675-ac5d2c77d6cb"},
+    {"index": 15, "name": "Push md files", "id": "3b7b5f4c-8bcf-4608-8f69-98fb72d8f042"},
+    {"index": 16, "name": "RSS Feed Translator", "id": "c1568a3b-2434-49f7-9c12-5e3e77c2bfb4"},
+    {"index": 17, "name": "Bunny of the Day", "id": "bunny-of-the-day-001"}
+  ]
+}

@@ -59,15 +59,18 @@ Discard stories outside the time window. If fewer than `count` qualifying storie
 
 ### 3. Write the bulletin
 
-Select up to `count` stories. Format each entry as plain text (no markdown, no asterisks):
+Select up to `count` stories. Format each entry as:
 
 ```
-Title: <story title>
-Summary: <10‑word summary of the article>
-Link: <direct article URL>
+**<story title>**
+<5‑word summary of the article>
+<direct article URL>
 ```
 
-Separate each story with a blank line and do not add numbering, bullets, or extra headers.
+- Bold the title with `**...**` (Telegram renders this as bold)
+- Summary is 5 words max, placed directly under the title with no label
+- Link on its own line, no label prefix
+- Separate each story with a blank line, no numbering or bullets
 
 **Include:** Space missions, astronomy, physics, biology, climate science, medical research, technology breakthroughs, Earth science.
 

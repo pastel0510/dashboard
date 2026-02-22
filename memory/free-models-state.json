@@ -1,0 +1,58 @@
+{
+  "lastChecked": "2026-02-21T23:30:00Z",
+  "trackedModels": {
+    "primary": "kilocode/z-ai/glm-5:free",
+    "fallbacks": [
+      "opencode-zen/glm-5-free",
+      "nvidia/meta/llama-3.3-70b-instruct",
+      "opencode-zen/minimax-m2.5-free",
+      "kilocode/minimax/minimax-m2.5:free",
+      "opencode-zen/kimi-k2.5-free"
+    ]
+  },
+  "providers": {
+    "opencode-zen": {
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "models": ["glm-5-free", "minimax-m2.5-free", "kimi-k2.5-free", "trinity-large-preview-free"]
+    },
+    "kilocode": {
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "models": ["stepfun/step-3.5-flash:free", "minimax/minimax-m2.5:free", "z-ai/glm-5:free"]
+    },
+    "nvidia": {
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "models": ["meta/llama-3.3-70b-instruct", "nvidia/llama-3.3-nemotron-super-49b-v1"]
+    },
+    "openrouter": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "freeModels": ["arcee-ai/trinity-large-preview:free", "openai/gpt-oss-120b"]
+    }
+  },
+  "knownFreeModels": [
+    "arcee-ai/trinity-large-preview:free",
+    "arcee-ai/trinity-mini:free",
+    "deepseek/deepseek-r1-0528:free",
+    "google/gemma-3-27b-it:free",
+    "google/gemma-3-12b-it:free",
+    "google/gemma-3-4b-it:free",
+    "nvidia/nemotron-3-nano-30b-a3b:free",
+    "nvidia/nemotron-nano-12b-v2-vl:free",
+    "nvidia/nemotron-nano-9b-v2:free",
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "qwen/qwen3-vl-235b-a22b-thinking",
+    "qwen/qwen3-vl-30b-a3b-thinking",
+    "stepfun/step-3.5-flash:free",
+    "upstage/solar-pro-3:free",
+    "z-ai/glm-4.5-air:free"
+  ],
+  "watchlist": [
+    {
+      "id": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "name": "Qwen3 Next 80B A3B Instruct",
+      "context": 262144,
+      "provider": "openrouter",
+      "added": "2026-02-22",
+      "note": "Candidate for fallback chain - 262k context, 80B params, within 6 months"
+    }
+  ]
+}

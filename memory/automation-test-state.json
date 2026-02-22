@@ -1,0 +1,24 @@
+{
+  "started": "2026-02-22T00:00:00Z",
+  "total": 17,
+  "completed": 17,
+  "current": null,
+  "pending": [],
+  "results": [
+    {"index": 1, "name": "Daily Fingerpori comic", "status": "done", "duration": "1m"},
+    {"index": 2, "name": "Self‑reflection & improvement log", "status": "done", "duration": "2m"},
+    {"index": 3, "name": "Security Bulletin (Mon)", "status": "done", "duration": "1m"},
+    {"index": 4, "name": "Security Bulletin (Tue-Fri)", "status": "done", "duration": "1m"},
+    {"index": 5, "name": "Unanswered questions reflection", "status": "done", "duration": "1m"},
+    {"index": 6, "name": "CVE bulletin (weekday)", "status": "done", "duration": "2m"},
+    {"index": 7, "name": "Daily reflection summary", "status": "done", "duration": "1m"},
+    {"index": 8, "name": "OpenClaw auto-update check", "status": "timeout", "duration": "1m"},
+    {"index": 9, "name": "Finnish News Bulletin", "status": "done", "duration": "1m"},
+    {"index": 10, "name": "Science & Space News Bulletin", "status": "done", "duration": "1m"},
+    {"index": 11, "name": "Daily Random xkcd", "status": "done", "duration": "1m"},
+    {"index": 12, "name": "Daily ASCII Smiley", "status": "done", "duration": "1m"},
+    {"index": 13, "name": "Self-Host Weekly", "status": "done", "duration": "1m"},
+    {"index": 14, "name": "Philips Hue HomeKit fix monitor", "status": "done", "duration": "1m"},
+    {"index": 15, "name": "Bunny of the Day", "status": "done", "duration": "1m"}
+  ]
+}

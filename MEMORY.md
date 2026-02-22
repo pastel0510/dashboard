@@ -8,6 +8,7 @@ When you ask for today's Fingerpori comic, the process is:
 This procedure is used by the Daily Fingerpori comic cron job and can be invoked manually as needed.
 
 ## Reflections
+2026-02-22 00:03 UTC - Security issue RESOLVED: Hardcoded API keys in `rss-translator/translate_feeds.py` were fixed. Keys now load from `.env` file via environment variables. `.env` added to `.gitignore`. User should still rotate previously exposed keys.
 2026-02-21 18:03 UTC - Formatting mistake: Bulletin skills used markdown formatting (`**bold**`, `_italic_`) which Telegram doesn't render in plain text messages. Fixed by switching to plain text field names. Affected: Finnish, Science, Security, Self-Host Weekly bulletin skills.
 2026-02-21 09:04 UTC - File corruption detected: REFLECTIONS.md was overwritten with a heartbeat poll message. The entire reflection history was lost. Restored from MEMORY.md backup. Need to investigate which process caused this.
 2026-02-21 06:03 UTC - Security issue found: Hardcoded API keys in `rss-translator/translate_feeds.py` — NVIDIA and OpenCode API keys are embedded in source code pushed to git. Should use environment variables or excluded config file. User should rotate keys immediately.
@@ -93,6 +94,9 @@ This also prevents me from sending messages via the message tool.
 ### 2026-02-21
 Today's reflections identified several issues: a formatting mistake where bulletin skills used markdown formatting incompatible with Telegram (fixed in commit 85568f4 by switching to plain text); file corruption in REFLECTIONS.md caused by another process overwriting it with heartbeat content (restored from backup); a security concern with hardcoded API keys in `rss-translator/translate_feeds.py` (needs environment variable migration and key rotation); and an unanswered heartbeat poll at 20:45 UTC. The formatting fix affected Finnish, Science, Security, and Self-Host Weekly bulletin skills.
 
+### 2026-02-22
+The past 24 hours revealed three notable issues: (1) markdown formatting in bulletin skills that Telegram couldn't render, resolved by switching to plain text field names; (2) REFLECTIONS.md file corruption when another process overwrote it with heartbeat content, restored from MEMORY.md backup; and (3) hardcoded API keys discovered in `rss-translator/translate_feeds.py` — a security risk requiring migration to environment variables and key rotation. An unanswered heartbeat poll was also logged at 20:45 UTC.
+
 ## Public Content Privacy Policy
 When creating anything for public release (git repos, scripts, feeds, etc.):
 - NEVER include usernames or person names
@@ -103,3 +107,32 @@ When creating anything for public release (git repos, scripts, feeds, etc.):
 - Check for hardcoded paths, names, or identifying info before any public push
 
 This applies to: git commits, scripts, config files, logs, documentation, and any generated content.
+
+## Free Model Monitoring
+Cron job monitors OpenCode, Kilocode, NVIDIA, and OpenRouter every 3 days for model changes.
+
+**Primary Model:** `kilocode/z-ai/glm-5:free`
+
+**Fallback Chain:**
+1. `opencode-zen/glm-5-free`
+2. `nvidia/meta/llama-3.3-70b-instruct`
+3. `opencode-zen/minimax-m2.5-free`
+4. `kilocode/minimax/minimax-m2.5:free`
+5. `opencode-zen/kimi-k2.5-free`
+
+Alerts sent to Telegram when:
+- Any tracked model is deprecated or becomes paid
+- New powerful free models appear (64k+ context or reasoning)
+
+State file: `memory/free-models-state.json`
+
+## Tokmanni Data Leak Investigation (Feb 2026)
+Monitoring ongoing situation — see HEARTBEAT.md for details.
+
+**Key dates:**
+- 18.2.2026: BreachForums listing ~473k records
+- 19.2.2026: Data screenshots appeared online
+- 20.2.2026: Tokmanni claims leak not from their systems (customer infected machine)
+
+**Last checked:** 2026-02-22
+**Status:** Awaiting further updates from Tokmanni or media

@@ -1,3 +1,6 @@
+## 2026-02-22 00:03 UTC
+- **Security issue RESOLVED:** Hardcoded API keys in `rss-translator/translate_feeds.py` were fixed in commit 2dcde47. Keys now load from `.env` file via environment variables. `.env` added to `.gitignore`. User should still rotate the previously exposed keys.
+
 ## 2026-02-21 18:03 UTC
 - **Formatting mistake:** Bulletin skills used markdown formatting (`**bold**`, `_italic_`) which Telegram doesn't render in plain text messages. Fixed in commit 85568f4 by switching to plain text field names. Affected: Finnish, Science, Security, and Self-Host Weekly bulletin skills.
 
