@@ -99,6 +99,9 @@ Today's reflections identified several issues: a formatting mistake where bullet
 ### 2026-02-22
 The past 24 hours revealed three notable issues: (1) markdown formatting in bulletin skills that Telegram couldn't render, resolved by switching to plain text field names; (2) REFLECTIONS.md file corruption when another process overwrote it with heartbeat content, restored from MEMORY.md backup; and (3) hardcoded API keys discovered in `rss-translator/translate_feeds.py` — a security risk requiring migration to environment variables and key rotation. An unanswered heartbeat poll was also logged at 20:45 UTC.
 
+### 2026-02-23
+The security issue with hardcoded API keys in `rss-translator/translate_feeds.py` was resolved in commit 2dcde47 — keys now load from `.env` via environment variables and `.env` was added to `.gitignore`. The previously exposed keys should still be rotated as a precaution.
+
 ## Public Content Privacy Policy
 When creating anything for public release (git repos, scripts, feeds, etc.):
 - NEVER include usernames or person names

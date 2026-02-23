@@ -29,9 +29,11 @@ Parse the XML returned by web_fetch to locate the first (newest) `<item>` that c
 
 ### 3. Verify the date (for scheduled/cron runs)
 
-Check the `<pubDate>` of that item. If the date is **not today** (UTC), do not deliver — instead output:
+**Fingerpori is published on weekdays only** (Mon-Fri), typically in the morning Helsinki time (~06:00-08:00 UTC).
 
-> "Fingerpori not yet posted today (latest: `<pubDate>`). Will retry next run."
+Check the `<pubDate>` of that item:
+- If the date is **not today** (UTC), do not deliver — instead output: "Fingerpori not yet posted today (latest: `<pubDate>`). Will retry next run."
+- If it's a **weekend** (Sat/Sun) and the latest comic is from Friday, that's expected — do not send stale Friday comics on weekends.
 
 Do not error or send a broken image. If this is an on-demand `/fingerpori` invocation (not a cron run), skip the date check and deliver the most recent comic regardless.
 

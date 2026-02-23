@@ -2,12 +2,12 @@
   "version": 1,
   "jobs": [
     {
-      "id": "14935823-fe34-4fcc-a599-f9de63f5aUUID",
+      "id": "14935823-fe34-4fcc-a599-f9de63f5a512",
       "agentId": "main",
       "name": "Daily Fingerpori comic",
       "enabled": true,
       "createdAtMs": 1771253377070,
-      "updatedAtMs": 1771576894230,
+      "updatedAtMs": 1771744275517,
       "schedule": {
         "expr": "10 7 * * *",
         "kind": "cron",
@@ -26,15 +26,22 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771830600000,
+        "lastRunAtMs": 1771744200028,
+        "lastStatus": "ok",
+        "lastDurationMs": 75489,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "89f4721b-6574-47c4-8a11-4dbe22d44UUID",
+      "id": "89f4721b-6574-47c4-8a11-4dbe22d44c90",
       "agentId": "main",
-      "name": "Self‑reflection & improvement log",
+      "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771632353559,
+      "updatedAtMs": 1771815936282,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -44,7 +51,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Please review the last 6 hours of this session's messages, identify any mistakes (e.g., inaccurate info, formatting issues, failed tool calls). If mistakes are found, append a concise summary to MEMORY.md under a \"## Reflections\" heading. If no mistakes are found, do nothing — do not send any message or announcement.",
+        "message": "Please review the last 6 hours of this session's messages and check:\n\n1. UNANSWERED QUESTIONS: Look for user messages that asked something but received no reply. If found AND no job is currently running, ANSWER THE QUESTION NOW. Do not just note it — actually reply.\n\n2. MISTAKES: Identify any errors (inaccurate info, formatting issues, failed tool calls). If found, append to MEMORY.md under \"## Reflections\".\n\n3. PENDING ACTIONS: Check if you made edits/changes in response to a user message but never confirmed. Send the confirmation now.\n\nIf nothing needs attention, reply HEARTBEAT_OK. Do not send announcements or system details.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 300
@@ -54,10 +61,17 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771826607761,
+        "lastRunAtMs": 1771815807790,
+        "lastStatus": "ok",
+        "lastDurationMs": 128492,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "01feffa5-5573-4e34-8389-630e2ad5UUID",
+      "id": "01feffa5-5573-4e34-8389-630e2ad5f6cf",
       "agentId": "main",
       "name": "Security Bulletin (Mon 7:50 UTC+2 – last 72 h)",
       "enabled": true,
@@ -82,10 +96,13 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771825800000
       }
     },
     {
-      "id": "ececb885-561b-4c6b-ae81-100ca94acUUID",
+      "id": "ececb885-561b-4c6b-ae81-100ca94ac8a0",
       "agentId": "main",
       "name": "Security Bulletin (Tue‑Fri 7:50 UTC+2 – last 24 h)",
       "enabled": true,
@@ -110,10 +127,51 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771912200000,
+        "lastRunAtMs": 1771576981672,
+        "lastStatus": "ok",
+        "lastDurationMs": 255440,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "8cba6fc7-871d-4738-8f77-e78674c2UUID",
+      "id": "a62a866e-64b2-4fe5-869c-edc9500ef145",
+      "agentId": "main",
+      "name": "Unanswered questions reflection",
+      "enabled": true,
+      "createdAtMs": 1771280413764,
+      "updatedAtMs": 1771819223344,
+      "schedule": {
+        "expr": "*/45 * * * *",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check for unanswered user messages in the main session using this exact approach:\n\n1. Use the exec tool to run this Python script:\n\npython3 -c \"\nimport json, os, glob, sys\nSESSION_DIR = '/home/riverbank1229/.openclaw/agents/main/sessions/'\nfiles = sorted([f for f in glob.glob(SESSION_DIR + '*.jsonl') if '.reset.' not in f], key=os.path.getmtime, reverse=True)\nmain_session = None\nfor f in files[:10]:\n    try:\n        lines = open(f).readlines()[:6]\n        is_cron = any('[cron:' in l or '[system:' in l for l in lines if l.strip())\n        if not is_cron:\n            main_session = f\n            break\n    except: pass\nif not main_session:\n    print('NO_MAIN_SESSION'); sys.exit(0)\nmessages = []\nfor line in open(main_session):\n    try:\n        d = json.loads(line)\n        if d.get('type') == 'message':\n            m = d.get('message', {})\n            r = m.get('role', '')\n            if r in ('user','assistant'):\n                t = ''.join(c.get('text','') for c in m.get('content',[]) if isinstance(c,dict) and c.get('type')=='text')\n                messages.append({'role':r,'text':t.strip(),'ts':d.get('timestamp','')})\n    except: pass\nunanswered = []\nfor i,msg in enumerate(messages):\n    if msg['role']=='user' and msg['text'] and not msg['text'].startswith('[cron:'):\n        if not any(m['role']=='assistant' for m in messages[i+1:]):\n            unanswered.append(msg)\nif unanswered:\n    print('UNANSWERED:')\n    [print(f\\\"  [{m['ts']}] {m['text'][:200]}\\\") for m in unanswered]\nelse:\n    print('ALL_ANSWERED')\n\"\n\n2. If output is ALL_ANSWERED or NO_MAIN_SESSION: output nothing and stop.\n3. If output shows UNANSWERED questions: append each with its timestamp to /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md, then send a single Telegram announcement to chat ID 55163462 summarising the unanswered questions.",
+        "model": "opencode-zen/glm-5-free",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771821900000,
+        "lastRunAtMs": 1771819200032,
+        "lastStatus": "ok",
+        "lastDurationMs": 23312,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "8cba6fc7-871d-4738-8f77-e78674c2f95c",
       "agentId": "main",
       "name": "cve-bulletin-weekday",
       "enabled": true,
@@ -135,17 +193,23 @@
       },
       "delivery": {
         "mode": "announce",
-        "channel": "telegram",
-        "to": "YOUR_CHAT_ID"
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1771830000000,
+        "lastRunAtMs": 1771577237117,
+        "lastStatus": "ok",
+        "lastDurationMs": 195723,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "58667790-4dae-477a-90be-a6e50ce1UUID",
+      "id": "58667790-4dae-477a-90be-a6e50ce13374",
       "agentId": "main",
       "name": "Daily reflection summary",
       "enabled": true,
       "createdAtMs": 1771417817364,
-      "updatedAtMs": 1771632372820,
+      "updatedAtMs": 1771804875389,
       "schedule": {
         "expr": "0 0 * * *",
         "kind": "cron",
@@ -155,7 +219,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Read the file REFLECTIONS.md, extract the entries added in the last 24 hours, summarize them into a concise paragraph, and append this summary under a \"## Daily Reflections\" heading in MEMORY.md. Then send an announcement message: \"Daily reflection summary added.\"",
+        "message": "Read the file /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md, extract the entries added in the last 24 hours, summarize them into a concise paragraph, and append this summary under a \"## Daily Reflections\" heading in /home/riverbank1229/.openclaw/workspace/MEMORY.md. Then send an announcement message: \"Daily reflection summary added.\"",
         "model": "opencode-zen/glm-5-free",
         "timeoutSeconds": 300
       },
@@ -164,15 +228,22 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771891200000,
+        "lastRunAtMs": 1771804822671,
+        "lastStatus": "ok",
+        "lastDurationMs": 52718,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "c3d7e8f9-1a2b-4c5d-9e0f-a1b2c3d4UUID",
+      "id": "c3d7e8f9-1a2b-4c5d-9e0f-a1b2c3d4e5f6",
       "agentId": "main",
       "name": "OpenClaw auto-update check",
       "enabled": true,
       "createdAtMs": 1771435800000,
-      "updatedAtMs": 1771632357336,
+      "updatedAtMs": 1771819247444,
       "schedule": {
         "expr": "0 4 * * *",
         "kind": "cron",
@@ -182,7 +253,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Use the exec tool to run the update script. If it outputs a version number, send a Telegram announcement. If 'Already on latest version', do nothing.",
+        "message": "Use the exec tool to run this command and check for OpenClaw updates:\n\ncommand: bash /home/riverbank1229/.openclaw/update-openclaw.sh\n\nDo NOT specify host: gateway — use the default (sandbox). If the script outputs a version number (e.g. '2026.2.18'), send a Telegram announcement to chat ID 55163462: 'OpenClaw updated to v<version>. Gateway restarting...'. If it outputs 'Already on latest version' or similar, do nothing.",
         "model": "opencode-zen/glm-5-free",
         "timeoutSeconds": 600
       },
@@ -191,43 +262,23 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771905600000,
+        "lastRunAtMs": 1771819223344,
+        "lastStatus": "ok",
+        "lastDurationMs": 24100,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "2421cb3f-c8ad-458c-81c1-4164c441UUID",
+      "id": "fcc3bc5b-b36f-4a5e-9a65-21bfc8c626ec",
       "agentId": "main",
-      "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
-      "enabled": true,
-      "createdAtMs": 1771517731167,
-      "updatedAtMs": 1771632713532,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 15 * * *",
-        "tz": "UTC"
-      },
-      "sessionTarget": "isolated",
-      "wakeMode": "now",
-      "payload": {
-        "kind": "agentTurn",
-        "message": "Generate a Finnish news bulletin covering the top 8 most important stories from the last 24 hours. Sources: YLE, Helsingin Sanomat, Turun Sanomat, Iltalehti, Ilta-Sanomat, Kauppalehti.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nOnly include general news (politics, economy, society, culture, weather). NO sports, cybersecurity, or IT security topics.\n\nSkip all narration. Just output the compiled bulletin.",
-        "model": "opencode-zen/glm-5-free",
-        "thinking": "off",
-        "timeoutSeconds": 600
-      },
-      "delivery": {
-        "mode": "announce",
-        "channel": "telegram",
-        "to": "YOUR_CHAT_ID",
-        "bestEffort": true
-      }
-    },
-    {
-      "id": "fcc3bc5b-b36f-4a5e-9a65-21bfc8c6UUID",
-      "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "Science & Space News Bulletin (daily 17:02 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771522691608,
-      "updatedAtMs": 1771632717279,
+      "updatedAtMs": 1771686657163,
       "schedule": {
         "expr": "2 15 */2 * *",
         "kind": "cron",
@@ -237,7 +288,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Generate a science and space news bulletin covering the top 8 most important stories from the last 48 hours. Sources: Nature, Science, NASA, ESA, Space.com, New Scientist, Phys.org, Scientific American.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nInclude: Space missions, astronomy, physics, biology, climate science, medical research, technology breakthroughs.\nExclude: Politics, sports, entertainment.\n\nSkip all narration. Just output the compiled bulletin.",
+        "message": "Generate a science and space news bulletin covering the top 8 most important stories from the last 48 hours. Sources: Nature, Science, NASA, ESA, Space.com, New Scientist, Phys.org, Scientific American.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nInclude: Space missions, astronomy, physics, biology, climate science, medical research, technology breakthroughs.\nExclude: Politics, sports, entertainment.\n\nSkip all narration. Just output the compiled bulletin.\n\nEnd with: Sources: Nature · Science · NASA · ESA · Space.com · New Scientist · Phys.org · Scientific American",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 600
@@ -247,15 +298,23 @@
         "channel": "telegram",
         "mode": "announce",
         "to": "YOUR_CHAT_ID"
+      },
+      "state": {
+        "nextRunAtMs": 1771858920000,
+        "lastRunAtMs": 1771686316364,
+        "lastStatus": "ok",
+        "lastDurationMs": 340799,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "d810114a-8a66-429d-8f1f-56796857UUID",
+      "id": "d810114a-8a66-429d-8f1f-567968576a5b",
       "agentId": "main",
+      "sessionKey": "agent:main:main",
       "name": "Daily Random xkcd (10am-5pm Helsinki)",
       "enabled": true,
       "createdAtMs": 1771537957591,
-      "updatedAtMs": 1771632765959,
+      "updatedAtMs": 1771753369884,
       "schedule": {
         "expr": "0 8 * * *",
         "kind": "cron",
@@ -265,7 +324,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send a random xkcd comic to Telegram. Steps:\n1. Pick random delay 0-420 minutes, sleep\n2. Fetch latest xkcd number from https://xkcd.com/info.0.json\n3. Pick random comic (skip 404), fetch JSON\n4. Download image, send as photo with caption: 'xkcd #<num> — <title>'\n\nSkip all narration. Just send the comic.",
+        "message": "Send a random xkcd comic to Telegram chat ID 55163462.\n\nSteps:\n1. Pick random delay 0-420 minutes, sleep\n2. Fetch latest xkcd number from https://xkcd.com/info.0.json\n3. Pick random comic (skip 404), fetch JSON\n4. Download image, send as photo with caption: 'xkcd #<num> — <title>'\n\nSkip all narration. Do not explain what you are doing. Just send the comic.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
         "timeoutSeconds": 30000
@@ -275,10 +334,17 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771833600000,
+        "lastRunAtMs": 1771747251164,
+        "lastStatus": "ok",
+        "lastDurationMs": 6118720,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "cd18018b-4991-4404-99a3-0284bf24UUID",
+      "id": "cd18018b-4991-4404-99a3-0284bf24dae2",
       "agentId": "main",
       "name": "Daily ASCII Smiley (weekdays 8am Helsinki)",
       "enabled": true,
@@ -303,10 +369,17 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771826400000,
+        "lastRunAtMs": 1771578787877,
+        "lastStatus": "ok",
+        "lastDurationMs": 30820,
+        "consecutiveErrors": 0
       }
     },
     {
-      "id": "b89ab11d-69a9-4463-8d10-6e099f50UUID",
+      "id": "b89ab11d-69a9-4463-8d10-6e099f503f56",
       "agentId": "main",
       "name": "Self-Host Weekly (selfh.st)",
       "enabled": true,
@@ -331,15 +404,18 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1772200800000
       }
     },
     {
-      "id": "9a7b6574-755d-4a73-a675-ac5d2c77UUID",
+      "id": "9a7b6574-755d-4a73-a675-ac5d2c77d6cb",
       "agentId": "main",
       "name": "Philips Hue HomeKit fix monitor",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771632365173,
+      "updatedAtMs": 1771743753912,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -359,14 +435,22 @@
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1771830000000,
+        "lastRunAtMs": 1771743633907,
+        "lastStatus": "error",
+        "lastDurationMs": 120005,
+        "consecutiveErrors": 2,
+        "lastError": "Error: cron: job execution timed out"
       }
     },
     {
-      "id": "3b7b5f4c-8bcf-4608-8f69-98fb72d8UUID",
+      "id": "3b7b5f4c-8bcf-4608-8f69-98fb72d8f042",
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771632361347,
+      "updatedAtMs": 1771797800288,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -377,19 +461,27 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run the push-md-files skill to commit and push all md files from the workspace to git@gitgud.io:YOUR_REPO/md-files.git"
+        "message": "Run the push-md-files skill to commit and push all md files from the workspace to git@gitgud.io:unreached2457/md-files.git"
       },
       "delivery": {
         "mode": "none",
         "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1771819379791,
+        "lastRunAtMs": 1771797779815,
+        "lastStatus": "ok",
+        "lastDurationMs": 20473,
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771819379812
       }
     },
     {
-      "id": "c1568a3b-2434-49f7-9c12-5e3e77c2UUID",
+      "id": "c1568a3b-2434-49f7-9c12-5e3e77c2bfb4",
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771635945393,
+      "updatedAtMs": 1771819378191,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -400,11 +492,150 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Run the RSS feed translator: cd ~/.openclaw/workspace/rss-translator && ./run.sh"
+        "message": "Run the RSS feed translator: cd ~/.openclaw/workspace/rss-translator && ./run.sh",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "silent"
+      },
+      "state": {
+        "nextRunAtMs": 1771822821844,
+        "lastRunAtMs": 1771819247488,
+        "lastStatus": "ok",
+        "lastDurationMs": 130703,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "bunny-of-the-day-001",
+      "agentId": "main",
+      "name": "Bunny of the Day",
+      "enabled": true,
+      "createdAtMs": 1771703073980,
+      "updatedAtMs": 1771790488077,
+      "schedule": {
+        "expr": "0 20 * * *",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "/bunny",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "silent",
+        "channel": "telegram"
+      },
+      "state": {
+        "nextRunAtMs": 1771876800000,
+        "lastRunAtMs": 1771790420176,
+        "lastStatus": "ok",
+        "lastDurationMs": 67901,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "2cc3a71a-5185-4d04-be4c-c2a93b9c825d",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Free Model Monitor (every 3 days)",
+      "enabled": true,
+      "createdAtMs": 1771718562328,
+      "updatedAtMs": 1771754730172,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 */3 * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Monitor Shadow's free model providers for changes. This is CRITICAL - alert immediately if any tracked model is deprecated or becomes paid.\n\n## Tracked Models (MUST MONITOR)\n\n**Primary model:** kilocode/z-ai/glm-5:free\n\n**Fallbacks (in order):**\n1. opencode-zen/glm-5-free\n2. nvidia/meta/llama-3.3-70b-instruct\n3. opencode-zen/minimax-m2.5-free\n4. kilocode/minimax/minimax-m2.5:free\n5. opencode-zen/kimi-k2.5-free\n\n## Check Steps\n\n### 1. Check OpenRouter for free model changes\n```\ncurl -s \"https://openrouter.ai/api/v1/models\" | jq '[.data[] | select(.pricing.prompt == \"0\" and .pricing.completion == \"0\") | {id, name, context_length}]'\n```\n\n### 2. Load state file\nRead: ~/.openclaw/workspace/memory/free-models-state.json\n\n### 3. Detect CHANGES\n\n**DEPRECATED/REMOVED** - Send URGENT alert if:\n- Any tracked model (primary or fallback) disappears from provider\n- Model was free, now has pricing > 0\n- Model returns 404 or \"not found\"\n\n**NEW POWERFUL FREE MODELS** - Alert if found:\n- Context window >= 64k OR reasoning capability\n- Not already in tracked list\n- From OpenCode, Kilocode, NVIDIA, or major providers\n\n### 4. Alert Format\n\nFor DEPRECATED:\n```\n🚨 MODEL DEPRECATED: <model-id>\nProvider: <provider>\nStatus: No longer available / Now paid ($X/input)\nACTION: Update fallbacks or switch primary model!\n```\n\nFor NEW:\n```\n🆕 NEW POWERFUL FREE MODEL: <model-id>\nProvider: <provider>\nContext: <X>k tokens\nReasoning: yes/no\nRecommendation: Consider adding to fallbacks\n```\n\n### 5. Update state file\nSave new knownFreeModels list to free-models-state.json\n\nOnly send Telegram notification to 55163462 if there are actual changes. Otherwise stay silent.",
+        "model": "opencode-zen/glm-5-free",
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "announce",
-        "channel": "last"
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID"
+      },
+      "state": {
+        "nextRunAtMs": 1772013600000,
+        "lastRunAtMs": 1771754430170,
+        "lastStatus": "error",
+        "lastDurationMs": 300002,
+        "lastError": "Error: cron: job execution timed out",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "04f08d95-c14e-4236-b205-d00526c54e8e",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Tokmanni Data Leak Monitor (every 3 days)",
+      "enabled": true,
+      "createdAtMs": 1771720300533,
+      "updatedAtMs": 1771758189818,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 11 */3 * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Check for updates on Tokmanni data leak investigation (Feb 2026).\n\n## Background\n- 18.2.2026: BreachForums listing ~473k Tokmanni records\n- 19.2.2026: Screenshots of customer data appeared online\n- 20.2.2026: Tokmanni claimed leak NOT from their systems — traced to customer's infected machine\n\n## Check these sources:\n1. Iltalehti.fi - search \"Tokmanni asiakastieto\" or \"Tokmanni vuoto\"\n2. Verkkouutiset.fi - search Tokmanni\n3. MTV Uutiset - search Tokmanni\n4. Tokmanni press releases: https://tokmannigroup.com/en/newsroom/\n5. Kauppalehti.fi - search Tokmanni\n\n## Report format:\nSend Telegram notification to 55163462 with:\n\n**TOKMANNI UPDATE**\n- New statements? Yes/No + summary\n- Confirmed breach source? Yes/No + details\n- Data authenticity verified? Yes/No\n- Customer notifications? Yes/No\n- Any other developments\n\nEven if no updates, send a brief \"No new developments since Feb 20\" status.",
+        "model": "opencode-zen/glm-5-free",
+        "timeoutSeconds": 300
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID"
+      },
+      "state": {
+        "nextRunAtMs": 1772017200000,
+        "lastRunAtMs": 1771758041368,
+        "lastStatus": "error",
+        "lastDurationMs": 148450,
+        "lastError": "cron announce delivery failed",
+        "consecutiveErrors": 1
+      }
+    },
+    {
+      "id": "0c5e50f6-5e4b-4e5e-bbee-868c681ba0c5",
+      "agentId": "main",
+      "sessionKey": "agent:main:main",
+      "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
+      "enabled": true,
+      "createdAtMs": 1771777058490,
+      "updatedAtMs": 1771777058490,
+      "schedule": {
+        "expr": "0 15 * * *",
+        "kind": "cron",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate a Finnish news bulletin covering the top 8 most important stories from the last 24 hours. Sources: YLE (yle.fi), Helsingin Sanomat (hs.fi), Turun Sanomat (ts.fi), Iltalehti (iltalehti.fi), Ilta-Sanomat (iltasanomat.fi), Kauppalehti (kauppalehti.fi).\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nOnly include general news (politics, economy, society, culture, weather). NO sports, cybersecurity, or IT security topics.\n\nSkip all narration. Just output the compiled bulletin.\n\nEnd with: Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta-Sanomat · Kauppalehti",
+        "model": "opencode-zen/glm-5-free",
+        "thinking": "off",
+        "timeoutSeconds": 600
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771858800000
       }
     }
   ]

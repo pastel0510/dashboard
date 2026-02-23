@@ -89,7 +89,7 @@
       "nvidia": {
         "baseUrl": "https://integrate.api.nvidia.com/v1",
         "api": "openai-completions",
-        "apiKey": "YOUR_NVIDIA_API_KEY",
+        "apiKey": "YOUR_API_KEY",
         "models": [
           {
             "id": "meta/llama-3.3-70b-instruct",
@@ -109,6 +109,43 @@
             "input": ["text"],
             "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
             "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "kilocode": {
+        "baseUrl": "https://api.kilo.ai/api/gateway",
+        "api": "openai-completions",
+        "apiKey": "YOUR_API_KEY",
+        "models": [
+          {
+            "id": "stepfun/step-3.5-flash:free",
+            "name": "StepFun Step 3.5 Flash (free)",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "minimax/minimax-m2.5:free",
+            "name": "MiniMax M2.5 (free, via Kilocode)",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 204800,
+            "maxTokens": 8192
+          },
+          {
+            "id": "z-ai/glm-5:free",
+            "name": "Z.ai GLM-5 (free, via Kilocode)",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": {"input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0},
+            "contextWindow": 202800,
             "maxTokens": 8192
           }
         ]
@@ -192,14 +229,13 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "opencode-zen/glm-5-free",
+        "primary": "kilocode/z-ai/glm-5:free",
         "fallbacks": [
-          "opencode-zen/minimax-m2.5-free",
-          "opencode-zen/kimi-k2.5-free",
-          "opencode-zen/trinity-large-preview-free",
+          "opencode-zen/glm-5-free",
           "nvidia/meta/llama-3.3-70b-instruct",
-          "nvidia/nvidia/llama-3.3-nemotron-super-49b-v1",
-          "openrouter/arcee-ai/trinity-large-preview:free"
+          "opencode-zen/minimax-m2.5-free",
+          "kilocode/minimax/minimax-m2.5:free",
+          "opencode-zen/kimi-k2.5-free"
         ]
       },
       "contextPruning": {
@@ -219,7 +255,7 @@
     "web": {
       "search": {
         "provider": "brave",
-        "apiKey": "YOUR_BRAVE_API_KEY"
+        "apiKey": "YOUR_API_KEY"
       }
     }
   },
@@ -230,6 +266,7 @@
   "channels": {
     "telegram": {
       "enabled": true,
+      "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
       "dmPolicy": "pairing",
       "groupPolicy": "allowlist",
       "streamMode": "block",
@@ -238,7 +275,7 @@
           "dmPolicy": "pairing",
           "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
           "allowFrom": [
-            "YOUR_CHAT_ID"
+            "55163462"
           ],
           "groupPolicy": "allowlist",
           "streamMode": "block"
