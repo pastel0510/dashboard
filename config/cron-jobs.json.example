@@ -7,7 +7,7 @@
       "name": "Daily Fingerpori comic",
       "enabled": true,
       "createdAtMs": 1771253377070,
-      "updatedAtMs": 1771744275517,
+      "updatedAtMs": 1771834335934,
       "schedule": {
         "expr": "10 7 * * *",
         "kind": "cron",
@@ -22,17 +22,18 @@
         "timeoutSeconds": 180
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771830600000,
-        "lastRunAtMs": 1771744200028,
-        "lastStatus": "ok",
-        "lastDurationMs": 75489,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771917000000,
+        "lastRunAtMs": 1771830600027,
+        "lastStatus": "error",
+        "lastDurationMs": 180053,
+        "consecutiveErrors": 1,
+        "lastError": "Error: cron: job execution timed out"
       }
     },
     {
@@ -41,7 +42,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771815936282,
+      "updatedAtMs": 1771837576968,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -63,10 +64,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771826607761,
-        "lastRunAtMs": 1771815807790,
+        "nextRunAtMs": 1771848207761,
+        "lastRunAtMs": 1771837537963,
         "lastStatus": "ok",
-        "lastDurationMs": 128492,
+        "lastDurationMs": 39005,
         "consecutiveErrors": 0
       }
     },
@@ -76,7 +77,7 @@
       "name": "Security Bulletin (Mon 7:50 UTC+2 – last 72 h)",
       "enabled": true,
       "createdAtMs": 1771255832920,
-      "updatedAtMs": 1771632706130,
+      "updatedAtMs": 1771826330531,
       "schedule": {
         "expr": "50 5 * * 1",
         "kind": "cron",
@@ -92,13 +93,17 @@
         "thinking": "off"
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771825800000
+        "nextRunAtMs": 1772430600000,
+        "lastRunAtMs": 1771825800037,
+        "lastStatus": "ok",
+        "lastDurationMs": 176393,
+        "consecutiveErrors": 0
       }
     },
     {
@@ -107,7 +112,7 @@
       "name": "Security Bulletin (Tue‑Fri 7:50 UTC+2 – last 24 h)",
       "enabled": true,
       "createdAtMs": 1771255853178,
-      "updatedAtMs": 1771632709888,
+      "updatedAtMs": 1771826338091,
       "schedule": {
         "expr": "50 5 * * 2-5",
         "kind": "cron",
@@ -123,7 +128,7 @@
         "thinking": "off"
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
@@ -142,7 +147,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771819223344,
+      "updatedAtMs": 1771840848407,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -163,10 +168,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771821900000,
-        "lastRunAtMs": 1771819200032,
+        "nextRunAtMs": 1771843500000,
+        "lastRunAtMs": 1771840800027,
         "lastStatus": "ok",
-        "lastDurationMs": 23312,
+        "lastDurationMs": 48380,
         "consecutiveErrors": 0
       }
     },
@@ -176,7 +181,7 @@
       "name": "cve-bulletin-weekday",
       "enabled": true,
       "createdAtMs": 1771412721193,
-      "updatedAtMs": 1771577432840,
+      "updatedAtMs": 1771834273143,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * 1-5",
@@ -192,15 +197,17 @@
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "announce",
-        "channel": "telegram"
+        "mode": "none",
+        "channel": "telegram",
+        "to": "YOUR_CHAT_ID"
       },
       "state": {
-        "nextRunAtMs": 1771830000000,
-        "lastRunAtMs": 1771577237117,
-        "lastStatus": "ok",
-        "lastDurationMs": 195723,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1771916400000,
+        "lastRunAtMs": 1771830035848,
+        "lastStatus": "error",
+        "lastDurationMs": 97356,
+        "consecutiveErrors": 1,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -278,7 +285,7 @@
       "name": "Science & Space News Bulletin (daily 17:02 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771522691608,
-      "updatedAtMs": 1771686657163,
+      "updatedAtMs": 1771826350857,
       "schedule": {
         "expr": "2 15 */2 * *",
         "kind": "cron",
@@ -294,10 +301,10 @@
         "timeoutSeconds": 600
       },
       "delivery": {
-        "bestEffort": true,
+        "mode": "none",
         "channel": "telegram",
-        "mode": "announce",
-        "to": "YOUR_CHAT_ID"
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
       },
       "state": {
         "nextRunAtMs": 1771858920000,
@@ -314,7 +321,7 @@
       "name": "Daily Random xkcd (10am-5pm Helsinki)",
       "enabled": true,
       "createdAtMs": 1771537957591,
-      "updatedAtMs": 1771753369884,
+      "updatedAtMs": 1771837383751,
       "schedule": {
         "expr": "0 8 * * *",
         "kind": "cron",
@@ -330,16 +337,16 @@
         "timeoutSeconds": 30000
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771833600000,
-        "lastRunAtMs": 1771747251164,
+        "nextRunAtMs": 1771920000000,
+        "lastRunAtMs": 1771833627588,
         "lastStatus": "ok",
-        "lastDurationMs": 6118720,
+        "lastDurationMs": 3756163,
         "consecutiveErrors": 0
       }
     },
@@ -349,7 +356,7 @@
       "name": "Daily ASCII Smiley (weekdays 8am Helsinki)",
       "enabled": true,
       "createdAtMs": 1771578216577,
-      "updatedAtMs": 1771632585523,
+      "updatedAtMs": 1771826657158,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * 1-5",
@@ -365,16 +372,16 @@
         "timeoutSeconds": 60
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771826400000,
-        "lastRunAtMs": 1771578787877,
+        "nextRunAtMs": 1771912800000,
+        "lastRunAtMs": 1771826483528,
         "lastStatus": "ok",
-        "lastDurationMs": 30820,
+        "lastDurationMs": 37543,
         "consecutiveErrors": 0
       }
     },
@@ -384,7 +391,7 @@
       "name": "Self-Host Weekly (selfh.st)",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771596399404,
+      "updatedAtMs": 1771834336107,
       "schedule": {
         "kind": "cron",
         "expr": "0 14 * * 5",
@@ -400,7 +407,7 @@
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID",
         "bestEffort": true
@@ -415,7 +422,7 @@
       "name": "Philips Hue HomeKit fix monitor",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771743753912,
+      "updatedAtMs": 1771830253209,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -437,11 +444,11 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771830000000,
-        "lastRunAtMs": 1771743633907,
+        "nextRunAtMs": 1771916400000,
+        "lastRunAtMs": 1771830133204,
         "lastStatus": "error",
         "lastDurationMs": 120005,
-        "consecutiveErrors": 2,
+        "consecutiveErrors": 3,
         "lastError": "Error: cron: job execution timed out"
       }
     },
@@ -450,7 +457,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771797800288,
+      "updatedAtMs": 1771819471402,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -468,12 +475,12 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771819379791,
-        "lastRunAtMs": 1771797779815,
+        "nextRunAtMs": 1771840979791,
+        "lastRunAtMs": 1771819379813,
         "lastStatus": "ok",
-        "lastDurationMs": 20473,
+        "lastDurationMs": 91589,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771819379812
+        "runningAtMs": 1771840979962
       }
     },
     {
@@ -481,7 +488,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771819378191,
+      "updatedAtMs": 1771840978399,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -499,10 +506,10 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1771822821844,
-        "lastRunAtMs": 1771819247488,
+        "nextRunAtMs": 1771844421844,
+        "lastRunAtMs": 1771840848459,
         "lastStatus": "ok",
-        "lastDurationMs": 130703,
+        "lastDurationMs": 129940,
         "consecutiveErrors": 0
       }
     },
@@ -546,7 +553,7 @@
       "name": "Free Model Monitor (every 3 days)",
       "enabled": true,
       "createdAtMs": 1771718562328,
-      "updatedAtMs": 1771754730172,
+      "updatedAtMs": 1771834335998,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 */3 * *",
@@ -561,7 +568,7 @@
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID"
       },
@@ -581,7 +588,7 @@
       "name": "Tokmanni Data Leak Monitor (every 3 days)",
       "enabled": true,
       "createdAtMs": 1771720300533,
-      "updatedAtMs": 1771758189818,
+      "updatedAtMs": 1771834336045,
       "schedule": {
         "kind": "cron",
         "expr": "0 11 */3 * *",
@@ -596,7 +603,7 @@
         "timeoutSeconds": 300
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "none",
         "channel": "telegram",
         "to": "YOUR_CHAT_ID"
       },
@@ -616,7 +623,7 @@
       "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771777058490,
-      "updatedAtMs": 1771777058490,
+      "updatedAtMs": 1771826350796,
       "schedule": {
         "expr": "0 15 * * *",
         "kind": "cron",
@@ -632,7 +639,7 @@
         "timeoutSeconds": 600
       },
       "delivery": {
-        "mode": "announce"
+        "mode": "none"
       },
       "state": {
         "nextRunAtMs": 1771858800000

@@ -93,6 +93,10 @@ When working with these repos, be mindful of what gets committed. No sensitive d
 This also prevents me from sending messages via the message tool.
 
 ## Daily Reflections
+### 2026-02-23
+- **Mistake acknowledged:** Sent internal heartbeat status message ("Sent update to Shadow. Found new Cloudflare Analytics Engine API issue, updated HEARTBEAT.md. Tokmanni — no new developments.") to Telegram instead of keeping it internal. User flagged this. Lesson: Heartbeat processing notes are internal — only actual user alerts should go to Telegram. The distinction is: "I found X and notified you" = internal log; "Here's important news: X" = user-facing message.
+- **Tool issue:** The edit tool rejected empty `newText` parameter twice (for removing Cloudflare section from HEARTBEAT.md), even though empty string should be valid. Workaround: used write tool to rewrite the entire file. May be a tool quirk to note.
+
 ### 2026-02-21
 Today's reflections identified several issues: a formatting mistake where bulletin skills used markdown formatting incompatible with Telegram (fixed in commit 85568f4 by switching to plain text); file corruption in REFLECTIONS.md caused by another process overwriting it with heartbeat content (restored from backup); a security concern with hardcoded API keys in `rss-translator/translate_feeds.py` (needs environment variable migration and key rotation); and an unanswered heartbeat poll at 20:45 UTC. The formatting fix affected Finnish, Science, Security, and Self-Host Weekly bulletin skills.
 

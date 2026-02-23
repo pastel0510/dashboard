@@ -35,3 +35,7 @@
 ## 2026-02-21 20:45 UTC
 - Unanswered message detected (appears to be a heartbeat poll):
   - [2026-02-21T20:45:17.002Z] Conversation info (untrusted metadata) - heartbeat poll not responded to
+
+## 2026-02-23 06:00 UTC
+- Unanswered message detected (appears to be Telegram metadata/false positive):
+  - [2026-02-23T06:00:07.767Z] Conversation info (untrusted metadata) - likely false positive, just message context
