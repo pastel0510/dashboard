@@ -42,7 +42,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771837576968,
+      "updatedAtMs": 1771859209944,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -64,10 +64,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771848207761,
-        "lastRunAtMs": 1771837537963,
+        "nextRunAtMs": 1771869807761,
+        "lastRunAtMs": 1771859166686,
         "lastStatus": "ok",
-        "lastDurationMs": 39005,
+        "lastDurationMs": 43258,
         "consecutiveErrors": 0
       }
     },
@@ -147,7 +147,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771840848407,
+      "updatedAtMs": 1771862504390,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -168,10 +168,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771843500000,
-        "lastRunAtMs": 1771840800027,
+        "nextRunAtMs": 1771865100000,
+        "lastRunAtMs": 1771862400022,
         "lastStatus": "ok",
-        "lastDurationMs": 48380,
+        "lastDurationMs": 104368,
         "consecutiveErrors": 0
       }
     },
@@ -285,7 +285,7 @@
       "name": "Science & Space News Bulletin (daily 17:02 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771522691608,
-      "updatedAtMs": 1771826350857,
+      "updatedAtMs": 1771859037757,
       "schedule": {
         "expr": "2 15 */2 * *",
         "kind": "cron",
@@ -307,10 +307,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771858920000,
-        "lastRunAtMs": 1771686316364,
+        "nextRunAtMs": 1772031720000,
+        "lastRunAtMs": 1771858972939,
         "lastStatus": "ok",
-        "lastDurationMs": 340799,
+        "lastDurationMs": 64818,
         "consecutiveErrors": 0
       }
     },
@@ -457,7 +457,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771819471402,
+      "updatedAtMs": 1771841081646,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -475,12 +475,12 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771840979791,
-        "lastRunAtMs": 1771819379813,
+        "nextRunAtMs": 1771862579791,
+        "lastRunAtMs": 1771840979997,
         "lastStatus": "ok",
-        "lastDurationMs": 91589,
+        "lastDurationMs": 101649,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771840979962
+        "runningAtMs": 1771862660794
       }
     },
     {
@@ -488,7 +488,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771840978399,
+      "updatedAtMs": 1771862660742,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -506,10 +506,10 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1771844421844,
-        "lastRunAtMs": 1771840848459,
+        "nextRunAtMs": 1771866021844,
+        "lastRunAtMs": 1771862504433,
         "lastStatus": "ok",
-        "lastDurationMs": 129940,
+        "lastDurationMs": 156309,
         "consecutiveErrors": 0
       }
     },
@@ -623,7 +623,7 @@
       "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771777058490,
-      "updatedAtMs": 1771826350796,
+      "updatedAtMs": 1771858972890,
       "schedule": {
         "expr": "0 15 * * *",
         "kind": "cron",
@@ -642,7 +642,11 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771858800000
+        "nextRunAtMs": 1771945200000,
+        "lastRunAtMs": 1771858920093,
+        "lastStatus": "ok",
+        "lastDurationMs": 52797,
+        "consecutiveErrors": 0
       }
     }
   ]
