@@ -36,8 +36,14 @@ Six self-reflection reviews were conducted throughout February 19th (at 12:03, 1
 ### 2026-02-21
 One unanswered question was detected on February 20th at 18:45 UTC: a request for "today's Finnish news bulletin." This indicates a possible gap in responding to a user request that may need follow-up or review of the Finnish news bulletin delivery mechanism.
 
+## Bunny of the Day Preferences
+Only static images (JPG, PNG, WEBP). NO GIFs or videos. Only use r/rabbits subreddit, no other sources.
+
 ## xkcd Preferences
 When sending xkcd comics, always include the original release date (found on xkcd.com or explainxkcd.com).
+
+## Bunny of the Day Preferences
+Only static images (JPG, PNG, WEBP). NO GIFs or videos. The fetch script filters out .gif files.
 
 ## Finnish News Bulletin Preferences
 Exclude Trump and Elon Musk news from Finnish news bulletins. Focus on Finnish domestic news, EU matters, economy, society, and other international stories not related to Trump or Musk.

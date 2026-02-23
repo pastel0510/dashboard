@@ -17,7 +17,7 @@ metadata:
 
 # Bunny of the Day Skill
 
-Fetches the most upvoted bunny/rabbit image from Reddit (r/bunnies + r/rabbits) in the last 24 hours and sends ONE picture.
+Fetches the most upvoted bunny/rabbit **static image** (NO GIFs or videos) from Reddit (**r/rabbits only**) in the last 24 hours and sends ONE picture.
 
 ## Usage
 
@@ -39,6 +39,8 @@ Automated:
 `scripts/fetch_bunny.py` — returns JSON with top bunny data
 
 ## Agent Instructions
+
+**IMPORTANT: Only static images (JPG, PNG, WEBP). NO GIFs or videos.**
 
 When this skill is triggered:
 

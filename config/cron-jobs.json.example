@@ -7,7 +7,7 @@
       "name": "Daily Fingerpori comic",
       "enabled": true,
       "createdAtMs": 1771253377070,
-      "updatedAtMs": 1771834335934,
+      "updatedAtMs": 1771863427817,
       "schedule": {
         "expr": "10 7 * * *",
         "kind": "cron",
@@ -19,7 +19,7 @@
         "kind": "agentTurn",
         "message": "/fingerpori",
         "model": "opencode-zen/glm-5-free",
-        "timeoutSeconds": 180
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "none",
@@ -42,7 +42,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771859209944,
+      "updatedAtMs": 1771880755469,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -64,10 +64,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771869807761,
-        "lastRunAtMs": 1771859166686,
+        "nextRunAtMs": 1771891407761,
+        "lastRunAtMs": 1771880641378,
         "lastStatus": "ok",
-        "lastDurationMs": 43258,
+        "lastDurationMs": 114091,
         "consecutiveErrors": 0
       }
     },
@@ -147,7 +147,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771862504390,
+      "updatedAtMs": 1771884023806,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -168,10 +168,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771865100000,
-        "lastRunAtMs": 1771862400022,
+        "nextRunAtMs": 1771886700000,
+        "lastRunAtMs": 1771884000038,
         "lastStatus": "ok",
-        "lastDurationMs": 104368,
+        "lastDurationMs": 23768,
         "consecutiveErrors": 0
       }
     },
@@ -321,7 +321,7 @@
       "name": "Daily Random xkcd (10am-5pm Helsinki)",
       "enabled": true,
       "createdAtMs": 1771537957591,
-      "updatedAtMs": 1771837383751,
+      "updatedAtMs": 1771863428024,
       "schedule": {
         "expr": "0 8 * * *",
         "kind": "cron",
@@ -331,10 +331,10 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Send a random xkcd comic to Telegram chat ID 55163462.\n\nSteps:\n1. Pick random delay 0-420 minutes, sleep\n2. Fetch latest xkcd number from https://xkcd.com/info.0.json\n3. Pick random comic (skip 404), fetch JSON\n4. Download image, send as photo with caption: 'xkcd #<num> — <title>'\n\nSkip all narration. Do not explain what you are doing. Just send the comic.",
+        "message": "Send a random xkcd comic to Telegram chat ID 55163462.\n\nSteps:\n1. Fetch latest xkcd number from https://xkcd.com/info.0.json\n2. Pick random comic (skip 404), fetch JSON\n3. Download image, send as photo with caption: 'xkcd #<num> — <title>'\n\nSkip all narration. Do not explain what you are doing. Just send the comic.",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
-        "timeoutSeconds": 30000
+        "timeoutSeconds": 120
       },
       "delivery": {
         "mode": "none",
@@ -422,7 +422,7 @@
       "name": "Philips Hue HomeKit fix monitor",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771830253209,
+      "updatedAtMs": 1771863427903,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -435,7 +435,7 @@
         "message": "/hue-status",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
-        "timeoutSeconds": 120
+        "timeoutSeconds": 180
       },
       "delivery": {
         "mode": "none",
@@ -457,7 +457,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771841081646,
+      "updatedAtMs": 1771862778565,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -475,12 +475,12 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771862579791,
-        "lastRunAtMs": 1771840979997,
+        "nextRunAtMs": 1771884179791,
+        "lastRunAtMs": 1771862660797,
         "lastStatus": "ok",
-        "lastDurationMs": 101649,
+        "lastDurationMs": 117768,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771862660794
+        "runningAtMs": 1771884179811
       }
     },
     {
@@ -488,7 +488,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771862660742,
+      "updatedAtMs": 1771884155024,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -506,10 +506,10 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1771866021844,
-        "lastRunAtMs": 1771862504433,
+        "nextRunAtMs": 1771887621844,
+        "lastRunAtMs": 1771884023868,
         "lastStatus": "ok",
-        "lastDurationMs": 156309,
+        "lastDurationMs": 131156,
         "consecutiveErrors": 0
       }
     },
@@ -519,7 +519,7 @@
       "name": "Bunny of the Day",
       "enabled": true,
       "createdAtMs": 1771703073980,
-      "updatedAtMs": 1771790488077,
+      "updatedAtMs": 1771876899471,
       "schedule": {
         "expr": "0 20 * * *",
         "kind": "cron",
@@ -539,10 +539,10 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1771876800000,
-        "lastRunAtMs": 1771790420176,
+        "nextRunAtMs": 1771963200000,
+        "lastRunAtMs": 1771876822394,
         "lastStatus": "ok",
-        "lastDurationMs": 67901,
+        "lastDurationMs": 77077,
         "consecutiveErrors": 0
       }
     },
@@ -553,7 +553,7 @@
       "name": "Free Model Monitor (every 3 days)",
       "enabled": true,
       "createdAtMs": 1771718562328,
-      "updatedAtMs": 1771834335998,
+      "updatedAtMs": 1771863427963,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 */3 * *",
@@ -565,7 +565,7 @@
         "kind": "agentTurn",
         "message": "Monitor Shadow's free model providers for changes. This is CRITICAL - alert immediately if any tracked model is deprecated or becomes paid.\n\n## Tracked Models (MUST MONITOR)\n\n**Primary model:** kilocode/z-ai/glm-5:free\n\n**Fallbacks (in order):**\n1. opencode-zen/glm-5-free\n2. nvidia/meta/llama-3.3-70b-instruct\n3. opencode-zen/minimax-m2.5-free\n4. kilocode/minimax/minimax-m2.5:free\n5. opencode-zen/kimi-k2.5-free\n\n## Check Steps\n\n### 1. Check OpenRouter for free model changes\n```\ncurl -s \"https://openrouter.ai/api/v1/models\" | jq '[.data[] | select(.pricing.prompt == \"0\" and .pricing.completion == \"0\") | {id, name, context_length}]'\n```\n\n### 2. Load state file\nRead: ~/.openclaw/workspace/memory/free-models-state.json\n\n### 3. Detect CHANGES\n\n**DEPRECATED/REMOVED** - Send URGENT alert if:\n- Any tracked model (primary or fallback) disappears from provider\n- Model was free, now has pricing > 0\n- Model returns 404 or \"not found\"\n\n**NEW POWERFUL FREE MODELS** - Alert if found:\n- Context window >= 64k OR reasoning capability\n- Not already in tracked list\n- From OpenCode, Kilocode, NVIDIA, or major providers\n\n### 4. Alert Format\n\nFor DEPRECATED:\n```\n🚨 MODEL DEPRECATED: <model-id>\nProvider: <provider>\nStatus: No longer available / Now paid ($X/input)\nACTION: Update fallbacks or switch primary model!\n```\n\nFor NEW:\n```\n🆕 NEW POWERFUL FREE MODEL: <model-id>\nProvider: <provider>\nContext: <X>k tokens\nReasoning: yes/no\nRecommendation: Consider adding to fallbacks\n```\n\n### 5. Update state file\nSave new knownFreeModels list to free-models-state.json\n\nOnly send Telegram notification to 55163462 if there are actual changes. Otherwise stay silent.",
         "model": "opencode-zen/glm-5-free",
-        "timeoutSeconds": 300
+        "timeoutSeconds": 600
       },
       "delivery": {
         "mode": "none",

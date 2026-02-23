@@ -39,3 +39,7 @@
 ## 2026-02-23 06:00 UTC
 - Unanswered message detected (appears to be Telegram metadata/false positive):
   - [2026-02-23T06:00:07.767Z] Conversation info (untrusted metadata) - likely false positive, just message context
+
+## 2026-02-23 21:04 UTC
+- Unanswered message detected (appears to be system metadata/false positive):
+  - [2026-02-23T21:04:10.237Z] Queued announce messages while agent was busy - likely false positive, just system queue status
