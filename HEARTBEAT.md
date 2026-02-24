@@ -20,6 +20,8 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
+**Last checked:** 2026-02-24 15:06 UTC — No new developments. Story appears dormant.
+
 Notify Shadow if:
 - New statements from Tokmanni
 - Confirmed breach source identified

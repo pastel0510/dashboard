@@ -7,7 +7,7 @@
       "name": "Daily Fingerpori comic",
       "enabled": true,
       "createdAtMs": 1771253377070,
-      "updatedAtMs": 1771863427817,
+      "updatedAtMs": 1771917121213,
       "schedule": {
         "expr": "10 7 * * *",
         "kind": "cron",
@@ -28,12 +28,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771917000000,
-        "lastRunAtMs": 1771830600027,
-        "lastStatus": "error",
-        "lastDurationMs": 180053,
-        "consecutiveErrors": 1,
-        "lastError": "Error: cron: job execution timed out"
+        "nextRunAtMs": 1772003400000,
+        "lastRunAtMs": 1771917000057,
+        "lastStatus": "ok",
+        "lastDurationMs": 121156,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -42,7 +44,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771880755469,
+      "updatedAtMs": 1771945554961,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -64,11 +66,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771891407761,
-        "lastRunAtMs": 1771880641378,
+        "nextRunAtMs": 1771956207761,
+        "lastRunAtMs": 1771945533024,
         "lastStatus": "ok",
-        "lastDurationMs": 114091,
-        "consecutiveErrors": 0
+        "lastDurationMs": 21937,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -134,7 +139,7 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771912200000,
+        "nextRunAtMs": 1771998600000,
         "lastRunAtMs": 1771576981672,
         "lastStatus": "ok",
         "lastDurationMs": 255440,
@@ -147,7 +152,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771884023806,
+      "updatedAtMs": 1771948855034,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -168,11 +173,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771886700000,
-        "lastRunAtMs": 1771884000038,
+        "nextRunAtMs": 1771951500000,
+        "lastRunAtMs": 1771948800033,
         "lastStatus": "ok",
-        "lastDurationMs": 23768,
-        "consecutiveErrors": 0
+        "lastDurationMs": 55001,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false
       }
     },
     {
@@ -181,7 +189,7 @@
       "name": "cve-bulletin-weekday",
       "enabled": true,
       "createdAtMs": 1771412721193,
-      "updatedAtMs": 1771834273143,
+      "updatedAtMs": 1771916590116,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * 1-5",
@@ -199,15 +207,18 @@
       "delivery": {
         "mode": "none",
         "channel": "telegram",
-        "to": "YOUR_CHAT_ID"
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771916400000,
-        "lastRunAtMs": 1771830035848,
-        "lastStatus": "error",
-        "lastDurationMs": 97356,
-        "consecutiveErrors": 1,
-        "lastError": "cron announce delivery failed"
+        "nextRunAtMs": 1772002800000,
+        "lastRunAtMs": 1771916435256,
+        "lastStatus": "ok",
+        "lastDurationMs": 154860,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -216,7 +227,7 @@
       "name": "Daily reflection summary",
       "enabled": true,
       "createdAtMs": 1771417817364,
-      "updatedAtMs": 1771804875389,
+      "updatedAtMs": 1771891455074,
       "schedule": {
         "expr": "0 0 * * *",
         "kind": "cron",
@@ -237,10 +248,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771891200000,
-        "lastRunAtMs": 1771804822671,
+        "nextRunAtMs": 1771977600000,
+        "lastRunAtMs": 1771891320060,
         "lastStatus": "ok",
-        "lastDurationMs": 52718,
+        "lastDurationMs": 135014,
         "consecutiveErrors": 0
       }
     },
@@ -271,7 +282,7 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771905600000,
+        "nextRunAtMs": 1771992000000,
         "lastRunAtMs": 1771819223344,
         "lastStatus": "ok",
         "lastDurationMs": 24100,
@@ -321,7 +332,7 @@
       "name": "Daily Random xkcd (10am-5pm Helsinki)",
       "enabled": true,
       "createdAtMs": 1771537957591,
-      "updatedAtMs": 1771863428024,
+      "updatedAtMs": 1771920118402,
       "schedule": {
         "expr": "0 8 * * *",
         "kind": "cron",
@@ -343,11 +354,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771920000000,
-        "lastRunAtMs": 1771833627588,
+        "nextRunAtMs": 1772006400000,
+        "lastRunAtMs": 1771920053744,
         "lastStatus": "ok",
-        "lastDurationMs": 3756163,
-        "consecutiveErrors": 0
+        "lastDurationMs": 64658,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -378,7 +392,7 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771912800000,
+        "nextRunAtMs": 1771999200000,
         "lastRunAtMs": 1771826483528,
         "lastStatus": "ok",
         "lastDurationMs": 37543,
@@ -422,7 +436,7 @@
       "name": "Philips Hue HomeKit fix monitor",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771863427903,
+      "updatedAtMs": 1771916686648,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -435,7 +449,7 @@
         "message": "/hue-status",
         "model": "opencode-zen/glm-5-free",
         "thinking": "off",
-        "timeoutSeconds": 180
+        "timeoutSeconds": 300
       },
       "delivery": {
         "mode": "none",
@@ -444,12 +458,16 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771916400000,
-        "lastRunAtMs": 1771830133204,
+        "nextRunAtMs": 1772002800000,
+        "lastRunAtMs": 1771916590116,
         "lastStatus": "error",
-        "lastDurationMs": 120005,
-        "consecutiveErrors": 3,
-        "lastError": "Error: cron: job execution timed out"
+        "lastDurationMs": 96532,
+        "consecutiveErrors": 4,
+        "lastRunStatus": "error",
+        "lastError": "⚠️ 🔎 Web Search: `for \"\"2071223010\" Hue Bridge Pro fix\"` failed",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "lastDeliveryError": "⚠️ 🔎 Web Search: `for \"\"2071223010\" Hue Bridge Pro fix\"` failed"
       }
     },
     {
@@ -457,7 +475,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771862778565,
+      "updatedAtMs": 1771927430314,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -475,12 +493,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771884179791,
-        "lastRunAtMs": 1771862660797,
+        "nextRunAtMs": 1771948979791,
+        "lastRunAtMs": 1771927379805,
         "lastStatus": "ok",
-        "lastDurationMs": 117768,
+        "lastDurationMs": 50509,
         "consecutiveErrors": 0,
-        "runningAtMs": 1771884179811
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered",
+        "runningAtMs": 1771948996998
       }
     },
     {
@@ -488,7 +509,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771884155024,
+      "updatedAtMs": 1771948996917,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -506,11 +527,14 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1771887621844,
-        "lastRunAtMs": 1771884023868,
+        "nextRunAtMs": 1771952421844,
+        "lastRunAtMs": 1771948855075,
         "lastStatus": "ok",
-        "lastDurationMs": 131156,
-        "consecutiveErrors": 0
+        "lastDurationMs": 141842,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered"
       }
     },
     {
@@ -563,8 +587,8 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "Monitor Shadow's free model providers for changes. This is CRITICAL - alert immediately if any tracked model is deprecated or becomes paid.\n\n## Tracked Models (MUST MONITOR)\n\n**Primary model:** kilocode/z-ai/glm-5:free\n\n**Fallbacks (in order):**\n1. opencode-zen/glm-5-free\n2. nvidia/meta/llama-3.3-70b-instruct\n3. opencode-zen/minimax-m2.5-free\n4. kilocode/minimax/minimax-m2.5:free\n5. opencode-zen/kimi-k2.5-free\n\n## Check Steps\n\n### 1. Check OpenRouter for free model changes\n```\ncurl -s \"https://openrouter.ai/api/v1/models\" | jq '[.data[] | select(.pricing.prompt == \"0\" and .pricing.completion == \"0\") | {id, name, context_length}]'\n```\n\n### 2. Load state file\nRead: ~/.openclaw/workspace/memory/free-models-state.json\n\n### 3. Detect CHANGES\n\n**DEPRECATED/REMOVED** - Send URGENT alert if:\n- Any tracked model (primary or fallback) disappears from provider\n- Model was free, now has pricing > 0\n- Model returns 404 or \"not found\"\n\n**NEW POWERFUL FREE MODELS** - Alert if found:\n- Context window >= 64k OR reasoning capability\n- Not already in tracked list\n- From OpenCode, Kilocode, NVIDIA, or major providers\n\n### 4. Alert Format\n\nFor DEPRECATED:\n```\n🚨 MODEL DEPRECATED: <model-id>\nProvider: <provider>\nStatus: No longer available / Now paid ($X/input)\nACTION: Update fallbacks or switch primary model!\n```\n\nFor NEW:\n```\n🆕 NEW POWERFUL FREE MODEL: <model-id>\nProvider: <provider>\nContext: <X>k tokens\nReasoning: yes/no\nRecommendation: Consider adding to fallbacks\n```\n\n### 5. Update state file\nSave new knownFreeModels list to free-models-state.json\n\nOnly send Telegram notification to 55163462 if there are actual changes. Otherwise stay silent.",
-        "model": "opencode-zen/glm-5-free",
+        "message": "Monitor Shadow's free model providers for changes. This is CRITICAL - alert immediately if any tracked model is deprecated or becomes paid.\n\n## Tracked Models (MUST MONITOR)\n\n**Primary model:** kilocode/z-ai/glm-5:free\n\n**Fallbacks (in order):**\n1. opencode-zen/glm-5-free\n2. nvidia/meta/llama-3.3-70b-instruct\n3. opencode-zen/minimax-m2.5-free\n4. kilocode/minimax/minimax-m2.5:free\n5. opencode-zen/kimi-k2.5-free\n\n## Check Steps\n\n### 1. Check OpenRouter for free model changes\nUse exec to run:\n```\ncurl -s \"https://openrouter.ai/api/v1/models\" | python3 -c \"import json,sys; data=json.load(sys.stdin); free=[m for m in data.get('data',[]) if str(m.get('pricing',{}).get('prompt','1'))=='0' and str(m.get('pricing',{}).get('completion','1'))=='0']; [print(m['id'],'ctx:',m.get('context_length','?')) for m in free]\"\n```\n\n### 2. Load state file\nRead: ~/.openclaw/workspace/memory/free-models-state.json\n\n### 3. Detect CHANGES\n\n**DEPRECATED/REMOVED** - Send URGENT alert if:\n- Any tracked model (primary or fallback) disappears from provider\n- Model was free, now has pricing > 0\n- Model returns 404 or \"not found\"\n\n**NEW POWERFUL FREE MODELS** - Alert if found:\n- Context window >= 64k OR reasoning capability\n- Not already in tracked list\n- From OpenCode, Kilocode, NVIDIA, or major providers\n\n### 4. Alert Format\n\nFor DEPRECATED:\n```\n🚨 MODEL DEPRECATED: <model-id>\nProvider: <provider>\nStatus: No longer available / Now paid ($X/input)\nACTION: Update fallbacks or switch primary model!\n```\n\nFor NEW:\n```\n🆕 NEW POWERFUL FREE MODEL: <model-id>\nProvider: <provider>\nContext: <X>k tokens\nReasoning: yes/no\nRecommendation: Consider adding to fallbacks\n```\n\n### 5. Update state file\nSave new knownFreeModels list to free-models-state.json\n\nOnly send Telegram notification to 55163462 if there are actual changes. Otherwise stay silent.",
+        "model": "kilocode/z-ai/glm-5:free",
         "timeoutSeconds": 600
       },
       "delivery": {
@@ -584,7 +608,6 @@
     {
       "id": "04f08d95-c14e-4236-b205-d00526c54e8e",
       "agentId": "main",
-      "sessionKey": "agent:main:main",
       "name": "Tokmanni Data Leak Monitor (every 3 days)",
       "enabled": true,
       "createdAtMs": 1771720300533,
@@ -605,7 +628,8 @@
       "delivery": {
         "mode": "none",
         "channel": "telegram",
-        "to": "YOUR_CHAT_ID"
+        "to": "YOUR_CHAT_ID",
+        "bestEffort": true
       },
       "state": {
         "nextRunAtMs": 1772017200000,
@@ -623,7 +647,7 @@
       "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771777058490,
-      "updatedAtMs": 1771858972890,
+      "updatedAtMs": 1771945392511,
       "schedule": {
         "expr": "0 15 * * *",
         "kind": "cron",
@@ -642,11 +666,14 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1771945200000,
-        "lastRunAtMs": 1771858920093,
+        "nextRunAtMs": 1772031600000,
+        "lastRunAtMs": 1771945320131,
         "lastStatus": "ok",
-        "lastDurationMs": 52797,
-        "consecutiveErrors": 0
+        "lastDurationMs": 72380,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     }
   ]
