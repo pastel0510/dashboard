@@ -44,7 +44,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771945554961,
+      "updatedAtMs": 1771967068390,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -66,10 +66,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771956207761,
-        "lastRunAtMs": 1771945533024,
+        "nextRunAtMs": 1771977807761,
+        "lastRunAtMs": 1771967047666,
         "lastStatus": "ok",
-        "lastDurationMs": 21937,
+        "lastDurationMs": 20724,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
@@ -152,7 +152,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771948855034,
+      "updatedAtMs": 1771970423390,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -173,10 +173,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771951500000,
-        "lastRunAtMs": 1771948800033,
+        "nextRunAtMs": 1771973100000,
+        "lastRunAtMs": 1771970400032,
         "lastStatus": "ok",
-        "lastDurationMs": 55001,
+        "lastDurationMs": 23358,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -475,7 +475,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771927430314,
+      "updatedAtMs": 1771949049611,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -493,15 +493,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771948979791,
-        "lastRunAtMs": 1771927379805,
+        "nextRunAtMs": 1771970579791,
+        "lastRunAtMs": 1771948997000,
         "lastStatus": "ok",
-        "lastDurationMs": 50509,
+        "lastDurationMs": 52611,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1771948996998
+        "runningAtMs": 1771970579819
       }
     },
     {
@@ -509,7 +509,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771948996917,
+      "updatedAtMs": 1771970543869,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -527,10 +527,10 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1771952421844,
-        "lastRunAtMs": 1771948855075,
+        "nextRunAtMs": 1771974021844,
+        "lastRunAtMs": 1771970423479,
         "lastStatus": "ok",
-        "lastDurationMs": 141842,
+        "lastDurationMs": 120390,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
@@ -543,7 +543,7 @@
       "name": "Bunny of the Day",
       "enabled": true,
       "createdAtMs": 1771703073980,
-      "updatedAtMs": 1771876899471,
+      "updatedAtMs": 1771963262302,
       "schedule": {
         "expr": "0 20 * * *",
         "kind": "cron",
@@ -563,11 +563,14 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1771963200000,
-        "lastRunAtMs": 1771876822394,
+        "nextRunAtMs": 1772049600000,
+        "lastRunAtMs": 1771963225269,
         "lastStatus": "ok",
-        "lastDurationMs": 77077,
-        "consecutiveErrors": 0
+        "lastDurationMs": 37033,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
