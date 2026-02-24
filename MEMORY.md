@@ -90,13 +90,20 @@ When creating or updating scripts that use external dependencies:
 
 When working with these repos, be mindful of what gets committed. No sensitive data should go to the public RSS feed repo.
 
-## Configuration Issues
-### 2026-02-21: Telegram Bot Token Missing
-⚠️ The Telegram bot token is not configured. Cron jobs that send to Telegram (like Daily Fingerpori comic) are failing with "Telegram bot token missing" error. The gateway config needs either:
-- `TELEGRAM_BOT_TOKEN` environment variable, or
-- `channels.telegram.botToken` in the config file
+## Model Error Recovery (stopReason: error)
+When the primary model (`kilocode/z-ai/glm-5:free`) returns `stopReason: "error"` mid-session, a tool result may have been generated but the final response was never delivered to the user. This happens occasionally as a transient API failure.
 
-This also prevents me from sending messages via the message tool.
+**Pattern to detect in self-reflection:**
+- Session ends with assistant message having `stopReason: "error"` and empty content
+- Previous message was a successful tool result (e.g. exec returning a smiley, search result, etc.)
+- The user never received the intended reply
+
+**Recovery action:**
+- Read the last successful tool result in the failed session
+- Deliver it directly via the `message` tool to chat ID 55163462
+- Log the recovery in REFLECTIONS.md
+
+**Known occurrence:** 2026-02-24 07:24 UTC — `/smiley` command generated `(─‿‿─)` but was not delivered. Manually recovered and sent.
 
 ## Daily Reflections
 ### 2026-02-23
@@ -111,6 +118,9 @@ The past 24 hours revealed three notable issues: (1) markdown formatting in bull
 
 ### 2026-02-23
 The security issue with hardcoded API keys in `rss-translator/translate_feeds.py` was resolved in commit 2dcde47 — keys now load from `.env` via environment variables and `.env` was added to `.gitignore`. The previously exposed keys should still be rotated as a precaution.
+
+### 2026-02-24
+Two false positive "unanswered message" detections were logged on Feb 23rd — one at 06:00 UTC from Telegram metadata and one at 21:04 UTC from system queue status. Both were correctly identified as non-issues requiring no action, reflecting improved filtering for heartbeat/self-reflection noise.
 
 ## Public Content Privacy Policy
 When creating anything for public release (git repos, scripts, feeds, etc.):

@@ -1,3 +1,6 @@
+## 2026-02-24 07:24 UTC
+- **Delivery failure recovered:** `kilocode/z-ai/glm-5:free` returned `stopReason: "error"` after exec tool successfully returned smiley `(─‿‿─)`. The response was generated but never sent to the user. Smiley delivered manually via Telegram Bot API. Recovery pattern documented in MEMORY.md under "Model Error Recovery (stopReason: error)" so self-reflection cron can detect and recover from future occurrences.
+
 ## 2026-02-22 00:03 UTC
 - **Security issue RESOLVED:** Hardcoded API keys in `rss-translator/translate_feeds.py` were fixed in commit 2dcde47. Keys now load from `.env` file via environment variables. `.env` added to `.gitignore`. User should still rotate the previously exposed keys.
 
