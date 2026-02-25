@@ -122,6 +122,9 @@ The security issue with hardcoded API keys in `rss-translator/translate_feeds.py
 ### 2026-02-24
 Two false positive "unanswered message" detections were logged on Feb 23rd — one at 06:00 UTC from Telegram metadata and one at 21:04 UTC from system queue status. Both were correctly identified as non-issues requiring no action, reflecting improved filtering for heartbeat/self-reflection noise.
 
+### 2026-02-25
+A delivery failure was recovered when the primary model (`kilocode/z-ai/glm-5:free`) returned `stopReason: "error"` after successfully generating a smiley via exec tool — the response was created but never sent to the user. The smiley was delivered manually via Telegram Bot API, and the recovery pattern was documented in MEMORY.md under "Model Error Recovery (stopReason: error)" to enable future self-reflection crons to detect and recover from similar occurrences.
+
 ## Public Content Privacy Policy
 When creating anything for public release (git repos, scripts, feeds, etc.):
 - NEVER include usernames or person names
@@ -150,6 +153,10 @@ Alerts sent to Telegram when:
 - New powerful free models appear (64k+ context or reasoning)
 
 State file: `memory/free-models-state.json`
+
+## Cron Job Model
+All cron jobs in `~/.openclaw/cron/jobs.json` use `kilocode/z-ai/glm-5:free`.
+Do NOT set `opencode-zen/glm-5-free` as the model for cron jobs — OpenCode hits rate limits when all jobs run on it simultaneously.
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitoring ongoing situation — see HEARTBEAT.md for details.

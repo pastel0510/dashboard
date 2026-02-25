@@ -1,3 +1,8 @@
+## 2026-02-25 06:20 UTC
+- **Gateway was dead:** Auto-update to 2026.2.24 started at 04:00 UTC, stopped the gateway, but the cron agent running the update script died with the gateway before it could complete. Manually ran `update-openclaw.sh` — updated to v2026.2.24 and restarted gateway (PID 289307).
+- **Mass rate-limit cascade fixed:** All 14 cron jobs were using `opencode-zen/glm-5-free` which hit rate limits every hour overnight (`"No available auth profile for opencode (all in cooldown or unavailable)"`). Switched all jobs to `kilocode/z-ai/glm-5:free`.
+- **Hue monitor errors:** 4 consecutive failures with malformed web search query containing number `2071223010` (model artifact). Should resolve after model switch to kilocode.
+
 ## 2026-02-24 07:24 UTC
 - **Delivery failure recovered:** `kilocode/z-ai/glm-5:free` returned `stopReason: "error"` after exec tool successfully returned smiley `(─‿‿─)`. The response was generated but never sent to the user. Smiley delivered manually via Telegram Bot API. Recovery pattern documented in MEMORY.md under "Model Error Recovery (stopReason: error)" so self-reflection cron can detect and recover from future occurrences.
 
