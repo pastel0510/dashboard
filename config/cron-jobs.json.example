@@ -7,7 +7,7 @@
       "name": "Daily Fingerpori comic",
       "enabled": true,
       "createdAtMs": 1771253377070,
-      "updatedAtMs": 1771917121213,
+      "updatedAtMs": 1772003545674,
       "schedule": {
         "expr": "10 7 * * *",
         "kind": "cron",
@@ -28,10 +28,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772003400000,
-        "lastRunAtMs": 1771917000057,
+        "nextRunAtMs": 1772089800000,
+        "lastRunAtMs": 1772003400033,
         "lastStatus": "ok",
-        "lastDurationMs": 121156,
+        "lastDurationMs": 145641,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
@@ -44,7 +44,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1771988945645,
+      "updatedAtMs": 1772010507958,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -66,14 +66,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771999407761,
-        "lastRunAtMs": 1771988645589,
+        "nextRunAtMs": 1772021007761,
+        "lastRunAtMs": 1772010207840,
         "lastStatus": "error",
-        "lastDurationMs": 300056,
+        "lastDurationMs": 300118,
         "consecutiveErrors": 1,
         "lastRunStatus": "error",
         "lastDeliveryStatus": "not-requested",
-        "runningAtMs": 1772000646479
+        "lastError": "cron: job execution timed out"
       }
     },
     {
@@ -117,7 +117,7 @@
       "name": "Security Bulletin (Tue‑Fri 7:50 UTC+2 – last 24 h)",
       "enabled": true,
       "createdAtMs": 1771255853178,
-      "updatedAtMs": 1771826338091,
+      "updatedAtMs": 1772000847338,
       "schedule": {
         "expr": "50 5 * * 2-5",
         "kind": "cron",
@@ -139,12 +139,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771998600000,
-        "lastRunAtMs": 1771576981672,
+        "nextRunAtMs": 1772085000000,
+        "lastRunAtMs": 1772000712636,
         "lastStatus": "ok",
-        "lastDurationMs": 255440,
+        "lastDurationMs": 134702,
         "consecutiveErrors": 0,
-        "runningAtMs": 1772000646479
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -153,7 +155,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1771991130666,
+      "updatedAtMs": 1772013644064,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -174,10 +176,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771992000000,
-        "lastRunAtMs": 1771991100023,
+        "nextRunAtMs": 1772016300000,
+        "lastRunAtMs": 1772013600040,
         "lastStatus": "ok",
-        "lastDurationMs": 30643,
+        "lastDurationMs": 44024,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -190,7 +192,7 @@
       "name": "cve-bulletin-weekday",
       "enabled": true,
       "createdAtMs": 1771412721193,
-      "updatedAtMs": 1771916590116,
+      "updatedAtMs": 1772002969894,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * 1-5",
@@ -212,10 +214,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772002800000,
-        "lastRunAtMs": 1771916435256,
+        "nextRunAtMs": 1772089200000,
+        "lastRunAtMs": 1772002822352,
         "lastStatus": "ok",
-        "lastDurationMs": 154860,
+        "lastDurationMs": 147542,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
@@ -286,7 +288,7 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771992000000,
+        "nextRunAtMs": 1772078400000,
         "lastRunAtMs": 1771819223344,
         "lastStatus": "ok",
         "lastDurationMs": 24100,
@@ -336,7 +338,7 @@
       "name": "Daily Random xkcd (10am-5pm Helsinki)",
       "enabled": true,
       "createdAtMs": 1771537957591,
-      "updatedAtMs": 1771920118402,
+      "updatedAtMs": 1772006570946,
       "schedule": {
         "expr": "0 8 * * *",
         "kind": "cron",
@@ -358,14 +360,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772006400000,
-        "lastRunAtMs": 1771920053744,
-        "lastStatus": "ok",
-        "lastDurationMs": 64658,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered"
+        "nextRunAtMs": 1772092800000,
+        "lastRunAtMs": 1772006450909,
+        "lastStatus": "error",
+        "lastDurationMs": 120037,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDeliveryStatus": "not-requested",
+        "lastError": "cron: job execution timed out"
       }
     },
     {
@@ -374,7 +376,7 @@
       "name": "Daily ASCII Smiley (weekdays 8am Helsinki)",
       "enabled": true,
       "createdAtMs": 1771578216577,
-      "updatedAtMs": 1771826657158,
+      "updatedAtMs": 1772000907375,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * 1-5",
@@ -396,12 +398,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1771999200000,
-        "lastRunAtMs": 1771826483528,
-        "lastStatus": "ok",
-        "lastDurationMs": 37543,
-        "consecutiveErrors": 0,
-        "runningAtMs": 1772000646479
+        "nextRunAtMs": 1772085600000,
+        "lastRunAtMs": 1772000847338,
+        "lastStatus": "error",
+        "lastDurationMs": 60037,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastError": "Error: cron: job execution timed out",
+        "lastDeliveryStatus": "not-requested"
       }
     },
     {
@@ -441,7 +445,7 @@
       "name": "Philips Hue HomeKit fix monitor",
       "enabled": true,
       "createdAtMs": 1771595719992,
-      "updatedAtMs": 1771916686648,
+      "updatedAtMs": 1772003052456,
       "schedule": {
         "kind": "cron",
         "expr": "0 9 * * *",
@@ -463,16 +467,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772002800000,
-        "lastRunAtMs": 1771916590116,
-        "lastStatus": "error",
-        "lastDurationMs": 96532,
-        "consecutiveErrors": 4,
-        "lastRunStatus": "error",
-        "lastError": "⚠️ 🔎 Web Search: `for \"\"2071223010\" Hue Bridge Pro fix\"` failed",
+        "nextRunAtMs": 1772089200000,
+        "lastRunAtMs": 1772002969894,
+        "lastStatus": "ok",
+        "lastDurationMs": 82562,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
         "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered",
-        "lastDeliveryError": "⚠️ 🔎 Web Search: `for \"\"2071223010\" Hue Bridge Pro fix\"` failed"
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -480,7 +482,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1771970639201,
+      "updatedAtMs": 1772000994671,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -498,15 +500,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1771992179791,
-        "lastRunAtMs": 1771970579821,
+        "nextRunAtMs": 1772013779791,
+        "lastRunAtMs": 1772000907375,
         "lastStatus": "ok",
-        "lastDurationMs": 59380,
+        "lastDurationMs": 87296,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772000646479
+        "runningAtMs": 1772013871991
       }
     },
     {
@@ -514,7 +516,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1771988645561,
+      "updatedAtMs": 1772010190549,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -532,15 +534,15 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1771992021844,
-        "lastRunAtMs": 1771988520154,
+        "nextRunAtMs": 1772013621844,
+        "lastRunAtMs": 1772010039532,
         "lastStatus": "ok",
-        "lastDurationMs": 125407,
+        "lastDurationMs": 151017,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772000646479
+        "runningAtMs": 1772013871991
       }
     },
     {
@@ -586,7 +588,7 @@
       "name": "Free Model Monitor (every 3 days)",
       "enabled": true,
       "createdAtMs": 1771718562328,
-      "updatedAtMs": 1771863427963,
+      "updatedAtMs": 1772013871587,
       "schedule": {
         "kind": "cron",
         "expr": "0 10 */3 * *",
@@ -606,12 +608,14 @@
         "to": "YOUR_CHAT_ID"
       },
       "state": {
-        "nextRunAtMs": 1772013600000,
-        "lastRunAtMs": 1771754430170,
-        "lastStatus": "error",
-        "lastDurationMs": 300002,
-        "lastError": "Error: cron: job execution timed out",
-        "consecutiveErrors": 1
+        "nextRunAtMs": 1772272800000,
+        "lastRunAtMs": 1772013644064,
+        "lastStatus": "ok",
+        "lastDurationMs": 227523,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
