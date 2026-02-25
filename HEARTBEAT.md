@@ -20,10 +20,40 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-02-25 10:02 UTC — No new developments. Finnish news search returned no Tokmanni-related results. Story remains dormant.
+**Last checked:** 2026-02-25 16:02 UTC — No new developments. Story remains dormant.
 
 Notify Shadow if:
 - New statements from Tokmanni
 - Confirmed breach source identified
 - Data proven authentic or fake
 - Customers notified of breach
+
+## Posti Omaposti Data Breach (Feb 25, 2026) — ACTIVE
+Serious privacy incident: Users saw other people's data in Omaposti app.
+
+**Timeline:**
+- 25.2.2026 (morning): Users report seeing strangers' data (names, packages, letters, salary slips)
+- Multiple users saw the same "Hi Sara!" greeting with Sara's pickup info
+- Posti CISO claims: "test in the service" caused "single wrong person's data visible"
+- Media reports contradict: multiple people affected, salary info exposed
+- App taken offline for maintenance
+- Posti had NOT yet reported to Data Protection Ombudsman as of midday
+- 25.2.2026 (~15:33 Helsinki): Posti announces outage fixed, service restored
+
+**Current status:** Service restored. Posti maintains only "single person's data" was exposed. Users have filed reports with Data Protection Ombudsman.
+
+**Sources to check:**
+- HS.fi, IS.fi, Turun Sanomat, Verkkouutiset
+- Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
+- Data Protection Ombudsman statements
+
+**Last checked:** 2026-02-25 15:33 UTC — No new developments. Service restored. No news on Data Protection Ombudsman investigation.
+
+**Note:** Include source links in all update notifications.
+
+Notify Shadow if:
+- Posti files official breach notification
+- More users confirmed affected
+- App restored (or extended outage)
+- Official apology or compensation announced
+- Authorities open investigation
