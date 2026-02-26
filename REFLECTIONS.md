@@ -1,3 +1,8 @@
+## 2026-02-26 07:30 UTC
+- **Constant typing indicator fixed:** 4 cron jobs (`Science & Space`, `xkcd`, `Free Model Monitor`, `Finnish News`) had `sessionKey: "agent:main:main"` which routed their entire run through the main Telegram session — causing "typing" to show for minutes even with no user message. Removed all `sessionKey` fields. Also fixed `Push md files` (`channel: last` → no channel) and `Bunny of the Day` (added explicit `to: 55163462`).
+- **Model cascade: z-ai/glm-5:free dead, opencode-zen blocked:** `kilocode/z-ai/glm-5:free` alpha period ended. All `opencode-zen/*` models returning Cloudflare 403. Migrated primary to `kilocode/minimax/minimax-m2.5:free`, fallbacks: stepfun → nvidia. Updated 105 session caches and all 18 cron jobs. RSS translator URL also wrong (`/v1/` prefix) — fixed to `/chat/completions`.
+- **Gateway OOM / auto-update chicken-and-egg:** Auto-update cron at 04:00 UTC kills the gateway, but the cron agent IS the gateway — so the update script dies mid-run. Manually completed update to v2026.2.24. (update-openclaw.sh already handles memory by stopping gateway first; the issue is the cron agent dying.)
+
 ## 2026-02-25 06:20 UTC
 - **Gateway was dead:** Auto-update to 2026.2.24 started at 04:00 UTC, stopped the gateway, but the cron agent running the update script died with the gateway before it could complete. Manually ran `update-openclaw.sh` — updated to v2026.2.24 and restarted gateway (PID 289307).
 - **Mass rate-limit cascade fixed:** All 14 cron jobs were using `opencode-zen/glm-5-free` which hit rate limits every hour overnight (`"No available auth profile for opencode (all in cooldown or unavailable)"`). Switched all jobs to `kilocode/z-ai/glm-5:free`.

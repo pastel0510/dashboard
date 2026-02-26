@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-02-21T23:30:00Z",
+  "lastChecked": "2026-02-25T10:00:00Z",
   "trackedModels": {
     "primary": "kilocode/z-ai/glm-5:free",
     "fallbacks": [
@@ -25,34 +25,84 @@
     },
     "openrouter": {
       "baseUrl": "https://openrouter.ai/api/v1",
-      "freeModels": ["arcee-ai/trinity-large-preview:free", "openai/gpt-oss-120b"]
+      "freeModels": [
+        "qwen/qwen3-coder:free",
+        "nousresearch/hermes-3-llama-3.1-405b:free",
+        "meta-llama/llama-3.3-70b-instruct:free",
+        "openai/gpt-oss-120b:free",
+        "qwen/qwen3-235b-a22b-thinking-2507",
+        "qwen/qwen3-next-80b-a3b-instruct:free"
+      ]
     }
   },
   "knownFreeModels": [
     "arcee-ai/trinity-large-preview:free",
     "arcee-ai/trinity-mini:free",
-    "deepseek/deepseek-r1-0528:free",
     "google/gemma-3-27b-it:free",
     "google/gemma-3-12b-it:free",
     "google/gemma-3-4b-it:free",
+    "google/gemma-3n-e2b-it:free",
+    "google/gemma-3n-e4b-it:free",
+    "liquid/lfm-2.5-1.2b-thinking:free",
+    "liquid/lfm-2.5-1.2b-instruct:free",
+    "meta-llama/llama-3.2-3b-instruct:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "mistralai/mistral-small-3.1-24b-instruct:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "nvidia/nemotron-nano-9b-v2:free",
+    "nousresearch/hermes-3-llama-3.1-405b:free",
+    "openai/gpt-oss-120b:free",
+    "openai/gpt-oss-20b:free",
+    "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
+    "qwen/qwen3-235b-a22b-thinking-2507",
     "qwen/qwen3-vl-235b-a22b-thinking",
     "qwen/qwen3-vl-30b-a3b-thinking",
     "stepfun/step-3.5-flash:free",
     "upstage/solar-pro-3:free",
-    "z-ai/glm-4.5-air:free"
+    "z-ai/glm-4.5-air:free",
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "qwen/qwen3-4b:free"
   ],
   "watchlist": [
+    {
+      "id": "qwen/qwen3-coder:free",
+      "name": "Qwen3 Coder 480B A35B",
+      "context": 262000,
+      "provider": "openrouter",
+      "added": "2026-02-22",
+      "note": "262k context coding specialist - excellent fallback candidate"
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+      "name": "Hermes 3 405B",
+      "context": 131072,
+      "provider": "openrouter",
+      "added": "2026-02-22",
+      "note": "405B params - one of largest free models available"
+    },
     {
       "id": "qwen/qwen3-next-80b-a3b-instruct:free",
       "name": "Qwen3 Next 80B A3B Instruct",
       "context": 262144,
       "provider": "openrouter",
       "added": "2026-02-22",
-      "note": "Candidate for fallback chain - 262k context, 80B params, within 6 months"
+      "note": "262k context, 80B params - strong fallback candidate"
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct:free",
+      "name": "Llama 3.3 70B Instruct",
+      "context": 128000,
+      "provider": "openrouter",
+      "added": "2026-02-22",
+      "note": "Same as NVIDIA fallback but now free on OpenRouter too"
     }
-  ]
+  ],
+  "changes": {
+    "2026-02-25": {
+      "deprecated": ["deepseek/deepseek-r1-0528:free"],
+      "note": "deepseek-r1-0528:free no longer on OpenRouter free tier (not a tracked model)"
+    }
+  }
 }

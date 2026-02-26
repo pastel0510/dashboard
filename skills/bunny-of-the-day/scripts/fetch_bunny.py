@@ -19,7 +19,7 @@ except ImportError:
     print("PRAW not installed. Run: pip install praw")
 
 TELEGRAM_CHAT_ID = "55163462"
-SUBREDDITS = ["rabbits", "bunnies"]  # rabbits first for preference
+SUBREDDITS = ["rabbits"]  # Only r/rabbits
 
 def get_reddit_instance():
     """Create a read-only Reddit instance using PRAW."""
@@ -49,10 +49,10 @@ def get_top_bunny_praw():
             # Get top posts from last 24 hours
             try:
                 for post in subreddit.top(time_filter="day", limit=100):
-                    # Check if it's an image post
+                    # Check if it's a static image post (NO GIFs or videos)
                     if post.url and (
-                        post.url.endswith(('.jpg', '.jpeg', '.png', '.gif', '.webp')) or
-                        'i.redd.it' in post.url
+                        post.url.endswith(('.jpg', '.jpeg', '.png', '.webp')) or
+                        ('i.redd.it' in post.url and not post.url.endswith('.gif'))
                     ):
                         all_posts.append({
                             "title": post.title,

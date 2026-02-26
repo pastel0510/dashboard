@@ -20,7 +20,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-02-25 16:35 UTC — No new developments. Story remains dormant.
+**Last checked:** 2026-02-26 07:05 UTC — No new developments. Tokmanni situation unchanged. Posti Omaposti service restored, no new updates.
 
 Notify Shadow if:
 - New statements from Tokmanni
