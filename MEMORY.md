@@ -106,6 +106,9 @@ When the primary model (`kilocode/z-ai/glm-5:free`) returns `stopReason: "error"
 **Known occurrence:** 2026-02-24 07:24 UTC — `/smiley` command generated `(─‿‿─)` but was not delivered. Manually recovered and sent.
 
 ## Daily Reflections
+### 2026-02-26
+February 25th brought several operational challenges: the gateway went down during an auto-update to v2026.2.24 when the cron agent died with the gateway before completing the update, requiring a manual `update-openclaw.sh` to restore service. A cascading rate-limit issue was resolved by migrating all 14 cron jobs from the defunct `opencode-zen/glm-5-free` model to `kilocode/z-ai/glm-5:free`, which had been hitting hourly rate limits overnight. The Hue monitor also experienced 4 consecutive failures due to malformed web search queries containing a model artifact number (2071223010), an issue expected to resolve after the model switch.
+
 ### 2026-02-23
 - **Mistake acknowledged:** Sent internal heartbeat status message ("Sent update to Shadow. Found new Cloudflare Analytics Engine API issue, updated HEARTBEAT.md. Tokmanni — no new developments.") to Telegram instead of keeping it internal. User flagged this. Lesson: Heartbeat processing notes are internal — only actual user alerts should go to Telegram. The distinction is: "I found X and notified you" = internal log; "Here's important news: X" = user-facing message.
 - **Tool issue:** The edit tool rejected empty `newText` parameter twice (for removing Cloudflare section from HEARTBEAT.md), even though empty string should be valid. Workaround: used write tool to rewrite the entire file. May be a tool quirk to note.
@@ -137,16 +140,17 @@ When creating anything for public release (git repos, scripts, feeds, etc.):
 This applies to: git commits, scripts, config files, logs, documentation, and any generated content.
 
 ## Free Model Monitoring
-Cron job monitors OpenCode, Kilocode, NVIDIA, and OpenRouter every 3 days for model changes.
+Cron job monitors Kilocode and NVIDIA every 3 days for model changes.
 
-**Primary Model:** `kilocode/z-ai/glm-5:free`
+**Primary Model:** `kilocode/minimax/minimax-m2.5:free`
 
 **Fallback Chain:**
-1. `opencode-zen/glm-5-free`
+1. `kilocode/stepfun/step-3.5-flash:free`
 2. `nvidia/meta/llama-3.3-70b-instruct`
-3. `opencode-zen/minimax-m2.5-free`
-4. `kilocode/minimax/minimax-m2.5:free`
-5. `opencode-zen/kimi-k2.5-free`
+
+**Dead models (as of 2026-02-25):**
+- `kilocode/z-ai/glm-5:free` — alpha period ended (404)
+- `opencode-zen/*` (all models) — Cloudflare 403 blocked, entire provider dead
 
 Alerts sent to Telegram when:
 - Any tracked model is deprecated or becomes paid
@@ -155,8 +159,15 @@ Alerts sent to Telegram when:
 State file: `memory/free-models-state.json`
 
 ## Cron Job Model
-All cron jobs in `~/.openclaw/cron/jobs.json` use `kilocode/z-ai/glm-5:free`.
-Do NOT set `opencode-zen/glm-5-free` as the model for cron jobs — OpenCode hits rate limits when all jobs run on it simultaneously.
+All cron jobs in `~/.openclaw/cron/jobs.json` use `kilocode/minimax/minimax-m2.5:free`.
+Do NOT use `opencode-zen/*` models — provider is Cloudflare-blocked (403).
+Do NOT use `kilocode/z-ai/glm-5:free` — alpha period ended (404).
+
+## RSS Translator LLM Fallback
+File: `~/.openclaw/workspace/rss-translator/translate_feeds.py`
+- Primary LLM fallback: NVIDIA `meta/llama-3.3-70b-instruct`
+- Secondary LLM fallback: Kilocode `minimax/minimax-m2.5:free` at `https://api.kilo.ai/api/gateway/chat/completions` (no /v1/ prefix!)
+- Key in `.env` as `KILOCODE_API_KEY`
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitoring ongoing situation — see HEARTBEAT.md for details.

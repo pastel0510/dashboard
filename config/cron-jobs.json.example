@@ -18,7 +18,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "/fingerpori",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "timeoutSeconds": 300
       },
       "delivery": {
@@ -44,7 +44,7 @@
       "name": "Self‑reflection & improvement log (REFLECTIONS.md)",
       "enabled": true,
       "createdAtMs": 1771254755586,
-      "updatedAtMs": 1772010507958,
+      "updatedAtMs": 1772075039896,
       "schedule": {
         "expr": "0 */3 * * *",
         "kind": "cron",
@@ -55,7 +55,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Please review the last 6 hours of this session's messages and check:\n\n1. UNANSWERED QUESTIONS: Look for user messages that asked something but received no reply. If found AND no job is currently running, ANSWER THE QUESTION NOW. Do not just note it — actually reply.\n\n2. MISTAKES: Identify any errors (inaccurate info, formatting issues, failed tool calls). If found, append to MEMORY.md under \"## Reflections\".\n\n3. PENDING ACTIONS: Check if you made edits/changes in response to a user message but never confirmed. Send the confirmation now.\n\nIf nothing needs attention, reply HEARTBEAT_OK. Do not send announcements or system details.",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 300
       },
@@ -66,14 +66,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772021007761,
-        "lastRunAtMs": 1772010207840,
-        "lastStatus": "error",
-        "lastDurationMs": 300118,
-        "consecutiveErrors": 1,
-        "lastRunStatus": "error",
-        "lastDeliveryStatus": "not-requested",
-        "lastError": "cron: job execution timed out"
+        "nextRunAtMs": 1772085807761,
+        "lastRunAtMs": 1772075007800,
+        "lastStatus": "ok",
+        "lastDurationMs": 32096,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false
       }
     },
     {
@@ -93,7 +93,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Generate a security bulletin covering the top 8 most important cybersecurity stories from the last 72 hours. Sources: BleepingComputer, The Hacker News, Dark Web Informer, Kevin Beaumont.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (2-3 sentences)\n**Link:** ...\n\nSkip all narration. Do not explain what you are doing. Just output the compiled bulletin.",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "timeoutSeconds": 600,
         "thinking": "off"
       },
@@ -129,7 +129,7 @@
         "kind": "agentTurn",
         "message": "Generate a security bulletin covering the top 8 most important cybersecurity stories from the last 24 hours. Sources: BleepingComputer, The Hacker News, Dark Web Informer, Kevin Beaumont.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (2-3 sentences)\n**Link:** ...\n\nSkip all narration. Do not explain what you are doing. Just output the compiled bulletin.",
         "timeoutSeconds": 600,
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off"
       },
       "delivery": {
@@ -155,7 +155,7 @@
       "name": "Unanswered questions reflection",
       "enabled": true,
       "createdAtMs": 1771280413764,
-      "updatedAtMs": 1772013644064,
+      "updatedAtMs": 1772078420289,
       "schedule": {
         "expr": "*/45 * * * *",
         "kind": "cron",
@@ -166,7 +166,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Check for unanswered user messages in the main session using this exact approach:\n\n1. Use the exec tool to run this Python script:\n\npython3 -c \"\nimport json, os, glob, sys\nSESSION_DIR = '/home/riverbank1229/.openclaw/agents/main/sessions/'\nfiles = sorted([f for f in glob.glob(SESSION_DIR + '*.jsonl') if '.reset.' not in f], key=os.path.getmtime, reverse=True)\nmain_session = None\nfor f in files[:10]:\n    try:\n        lines = open(f).readlines()[:6]\n        is_cron = any('[cron:' in l or '[system:' in l for l in lines if l.strip())\n        if not is_cron:\n            main_session = f\n            break\n    except: pass\nif not main_session:\n    print('NO_MAIN_SESSION'); sys.exit(0)\nmessages = []\nfor line in open(main_session):\n    try:\n        d = json.loads(line)\n        if d.get('type') == 'message':\n            m = d.get('message', {})\n            r = m.get('role', '')\n            if r in ('user','assistant'):\n                t = ''.join(c.get('text','') for c in m.get('content',[]) if isinstance(c,dict) and c.get('type')=='text')\n                messages.append({'role':r,'text':t.strip(),'ts':d.get('timestamp','')})\n    except: pass\nunanswered = []\nfor i,msg in enumerate(messages):\n    if msg['role']=='user' and msg['text'] and not msg['text'].startswith('[cron:'):\n        if not any(m['role']=='assistant' for m in messages[i+1:]):\n            unanswered.append(msg)\nif unanswered:\n    print('UNANSWERED:')\n    [print(f\\\"  [{m['ts']}] {m['text'][:200]}\\\") for m in unanswered]\nelse:\n    print('ALL_ANSWERED')\n\"\n\n2. If output is ALL_ANSWERED or NO_MAIN_SESSION: output nothing and stop.\n3. If output shows UNANSWERED questions: append each with its timestamp to /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md, then send a single Telegram announcement to chat ID 55163462 summarising the unanswered questions.",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "timeoutSeconds": 120
       },
       "delivery": {
@@ -176,10 +176,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772016300000,
-        "lastRunAtMs": 1772013600040,
+        "nextRunAtMs": 1772081100000,
+        "lastRunAtMs": 1772078400034,
         "lastStatus": "ok",
-        "lastDurationMs": 44024,
+        "lastDurationMs": 20255,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDeliveryStatus": "not-delivered",
@@ -203,7 +203,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "/cve-bulletin",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 300
       },
@@ -230,7 +230,7 @@
       "name": "Daily reflection summary",
       "enabled": true,
       "createdAtMs": 1771417817364,
-      "updatedAtMs": 1771977772635,
+      "updatedAtMs": 1772064137525,
       "schedule": {
         "expr": "0 0 * * *",
         "kind": "cron",
@@ -241,7 +241,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Read the file /home/riverbank1229/.openclaw/workspace/REFLECTIONS.md, extract the entries added in the last 24 hours, summarize them into a concise paragraph, and append this summary under a \"## Daily Reflections\" heading in /home/riverbank1229/.openclaw/workspace/MEMORY.md. Then send an announcement message: \"Daily reflection summary added.\"",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "timeoutSeconds": 300
       },
       "delivery": {
@@ -251,10 +251,10 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772064000000,
-        "lastRunAtMs": 1771977720079,
+        "nextRunAtMs": 1772150400000,
+        "lastRunAtMs": 1772064017513,
         "lastStatus": "ok",
-        "lastDurationMs": 52556,
+        "lastDurationMs": 120012,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
@@ -267,7 +267,7 @@
       "name": "OpenClaw auto-update check",
       "enabled": true,
       "createdAtMs": 1771435800000,
-      "updatedAtMs": 1771819247444,
+      "updatedAtMs": 1772078440468,
       "schedule": {
         "expr": "0 4 * * *",
         "kind": "cron",
@@ -278,7 +278,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Use the exec tool to run this command and check for OpenClaw updates:\n\ncommand: bash /home/riverbank1229/.openclaw/update-openclaw.sh\n\nDo NOT specify host: gateway — use the default (sandbox). If the script outputs a version number (e.g. '2026.2.18'), send a Telegram announcement to chat ID 55163462: 'OpenClaw updated to v<version>. Gateway restarting...'. If it outputs 'Already on latest version' or similar, do nothing.",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "timeoutSeconds": 600
       },
       "delivery": {
@@ -288,11 +288,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772078400000,
-        "lastRunAtMs": 1771819223344,
+        "nextRunAtMs": 1772164800000,
+        "lastRunAtMs": 1772078420289,
         "lastStatus": "ok",
-        "lastDurationMs": 24100,
-        "consecutiveErrors": 0
+        "lastDurationMs": 20179,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -302,7 +305,7 @@
       "name": "Science & Space News Bulletin (daily 17:02 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771522691608,
-      "updatedAtMs": 1771859037757,
+      "updatedAtMs": 1772032183146,
       "schedule": {
         "expr": "2 15 */2 * *",
         "kind": "cron",
@@ -313,7 +316,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Generate a science and space news bulletin covering the top 8 most important stories from the last 48 hours. Sources: Nature, Science, NASA, ESA, Space.com, New Scientist, Phys.org, Scientific American.\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nInclude: Space missions, astronomy, physics, biology, climate science, medical research, technology breakthroughs.\nExclude: Politics, sports, entertainment.\n\nSkip all narration. Just output the compiled bulletin.\n\nEnd with: Sources: Nature · Science · NASA · ESA · Space.com · New Scientist · Phys.org · Scientific American",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 600
       },
@@ -324,11 +327,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772031720000,
-        "lastRunAtMs": 1771858972939,
+        "nextRunAtMs": 1772204520000,
+        "lastRunAtMs": 1772031972331,
         "lastStatus": "ok",
-        "lastDurationMs": 64818,
-        "consecutiveErrors": 0
+        "lastDurationMs": 210815,
+        "consecutiveErrors": 0,
+        "lastRunStatus": "ok",
+        "lastDelivered": false,
+        "lastDeliveryStatus": "not-delivered"
       }
     },
     {
@@ -349,9 +355,9 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Send a random xkcd comic to Telegram chat ID 55163462.\n\nSteps:\n1. Fetch latest xkcd number from https://xkcd.com/info.0.json\n2. Pick random comic (skip 404), fetch JSON\n3. Download image, send as photo with caption: 'xkcd #<num> — <title>'\n\nSkip all narration. Do not explain what you are doing. Just send the comic.",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
-        "timeoutSeconds": 120
+        "timeoutSeconds": 240
       },
       "delivery": {
         "mode": "none",
@@ -387,9 +393,9 @@
       "payload": {
         "kind": "agentTurn",
         "message": "/smiley",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
-        "timeoutSeconds": 60
+        "timeoutSeconds": 120
       },
       "delivery": {
         "mode": "none",
@@ -425,7 +431,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "/selfhst-weekly",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 300
       },
@@ -456,7 +462,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "/hue-status",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 300
       },
@@ -482,7 +488,7 @@
       "name": "Push md files",
       "enabled": true,
       "createdAtMs": 1771621226601,
-      "updatedAtMs": 1772000994671,
+      "updatedAtMs": 1772057065217,
       "schedule": {
         "kind": "cron",
         "expr": "0 */6 * * *",
@@ -500,15 +506,15 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1772013779791,
-        "lastRunAtMs": 1772000907375,
+        "nextRunAtMs": 1772078579791,
+        "lastRunAtMs": 1772057063503,
         "lastStatus": "ok",
-        "lastDurationMs": 87296,
+        "lastDurationMs": 1714,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
         "lastDeliveryStatus": "not-delivered",
-        "runningAtMs": 1772013871991
+        "runningAtMs": 1772078579843
       }
     },
     {
@@ -516,7 +522,7 @@
       "name": "RSS Feed Translator",
       "enabled": true,
       "createdAtMs": 1771633525844,
-      "updatedAtMs": 1772010190549,
+      "updatedAtMs": 1772078560763,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -534,15 +540,14 @@
         "mode": "silent"
       },
       "state": {
-        "nextRunAtMs": 1772013621844,
-        "lastRunAtMs": 1772010039532,
+        "nextRunAtMs": 1772082021844,
+        "lastRunAtMs": 1772078440512,
         "lastStatus": "ok",
-        "lastDurationMs": 151017,
+        "lastDurationMs": 120251,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
-        "lastDelivered": true,
-        "lastDeliveryStatus": "delivered",
-        "runningAtMs": 1772013871991
+        "lastDeliveryStatus": "not-delivered",
+        "lastDelivered": false
       }
     },
     {
@@ -551,7 +556,7 @@
       "name": "Bunny of the Day",
       "enabled": true,
       "createdAtMs": 1771703073980,
-      "updatedAtMs": 1771963262302,
+      "updatedAtMs": 1772049602118,
       "schedule": {
         "expr": "0 20 * * *",
         "kind": "cron",
@@ -562,7 +567,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "/bunny",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 120
       },
@@ -571,14 +576,15 @@
         "channel": "telegram"
       },
       "state": {
-        "nextRunAtMs": 1772049600000,
-        "lastRunAtMs": 1771963225269,
-        "lastStatus": "ok",
-        "lastDurationMs": 37033,
-        "consecutiveErrors": 0,
-        "lastRunStatus": "ok",
-        "lastDelivered": false,
-        "lastDeliveryStatus": "not-delivered"
+        "nextRunAtMs": 1772136000000,
+        "lastRunAtMs": 1772049600040,
+        "lastStatus": "error",
+        "lastDurationMs": 2078,
+        "consecutiveErrors": 1,
+        "lastRunStatus": "error",
+        "lastDelivered": true,
+        "lastDeliveryStatus": "delivered",
+        "lastError": "404 \"The alpha period for this model has ended.\""
       }
     },
     {
@@ -599,7 +605,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Monitor Shadow's free model providers for changes. This is CRITICAL - alert immediately if any tracked model is deprecated or becomes paid.\n\n## Tracked Models (MUST MONITOR)\n\n**Primary model:** kilocode/z-ai/glm-5:free\n\n**Fallbacks (in order):**\n1. opencode-zen/glm-5-free\n2. nvidia/meta/llama-3.3-70b-instruct\n3. opencode-zen/minimax-m2.5-free\n4. kilocode/minimax/minimax-m2.5:free\n5. opencode-zen/kimi-k2.5-free\n\n## Check Steps\n\n### 1. Check OpenRouter for free model changes\nUse exec to run:\n```\ncurl -s \"https://openrouter.ai/api/v1/models\" | python3 -c \"import json,sys; data=json.load(sys.stdin); free=[m for m in data.get('data',[]) if str(m.get('pricing',{}).get('prompt','1'))=='0' and str(m.get('pricing',{}).get('completion','1'))=='0']; [print(m['id'],'ctx:',m.get('context_length','?')) for m in free]\"\n```\n\n### 2. Load state file\nRead: ~/.openclaw/workspace/memory/free-models-state.json\n\n### 3. Detect CHANGES\n\n**DEPRECATED/REMOVED** - Send URGENT alert if:\n- Any tracked model (primary or fallback) disappears from provider\n- Model was free, now has pricing > 0\n- Model returns 404 or \"not found\"\n\n**NEW POWERFUL FREE MODELS** - Alert if found:\n- Context window >= 64k OR reasoning capability\n- Not already in tracked list\n- From OpenCode, Kilocode, NVIDIA, or major providers\n\n### 4. Alert Format\n\nFor DEPRECATED:\n```\n🚨 MODEL DEPRECATED: <model-id>\nProvider: <provider>\nStatus: No longer available / Now paid ($X/input)\nACTION: Update fallbacks or switch primary model!\n```\n\nFor NEW:\n```\n🆕 NEW POWERFUL FREE MODEL: <model-id>\nProvider: <provider>\nContext: <X>k tokens\nReasoning: yes/no\nRecommendation: Consider adding to fallbacks\n```\n\n### 5. Update state file\nSave new knownFreeModels list to free-models-state.json\n\nOnly send Telegram notification to 55163462 if there are actual changes. Otherwise stay silent.",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "timeoutSeconds": 600
       },
       "delivery": {
@@ -624,7 +630,7 @@
       "name": "Tokmanni Data Leak Monitor (every 3 days)",
       "enabled": true,
       "createdAtMs": 1771720300533,
-      "updatedAtMs": 1771834336045,
+      "updatedAtMs": 1772017566885,
       "schedule": {
         "kind": "cron",
         "expr": "0 11 */3 * *",
@@ -635,8 +641,8 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Check for updates on Tokmanni data leak investigation (Feb 2026).\n\n## Background\n- 18.2.2026: BreachForums listing ~473k Tokmanni records\n- 19.2.2026: Screenshots of customer data appeared online\n- 20.2.2026: Tokmanni claimed leak NOT from their systems — traced to customer's infected machine\n\n## Check these sources:\n1. Iltalehti.fi - search \"Tokmanni asiakastieto\" or \"Tokmanni vuoto\"\n2. Verkkouutiset.fi - search Tokmanni\n3. MTV Uutiset - search Tokmanni\n4. Tokmanni press releases: https://tokmannigroup.com/en/newsroom/\n5. Kauppalehti.fi - search Tokmanni\n\n## Report format:\nSend Telegram notification to 55163462 with:\n\n**TOKMANNI UPDATE**\n- New statements? Yes/No + summary\n- Confirmed breach source? Yes/No + details\n- Data authenticity verified? Yes/No\n- Customer notifications? Yes/No\n- Any other developments\n\nEven if no updates, send a brief \"No new developments since Feb 20\" status.",
-        "model": "kilocode/z-ai/glm-5:free",
-        "timeoutSeconds": 300
+        "model": "kilocode/minimax/minimax-m2.5:free",
+        "timeoutSeconds": 600
       },
       "delivery": {
         "mode": "none",
@@ -645,12 +651,14 @@
         "bestEffort": true
       },
       "state": {
-        "nextRunAtMs": 1772017200000,
-        "lastRunAtMs": 1771758041368,
+        "nextRunAtMs": 1772276400000,
+        "lastRunAtMs": 1772017266853,
         "lastStatus": "error",
-        "lastDurationMs": 148450,
-        "lastError": "cron announce delivery failed",
-        "consecutiveErrors": 1
+        "lastDurationMs": 300032,
+        "consecutiveErrors": 2,
+        "lastRunStatus": "error",
+        "lastError": "cron: job execution timed out",
+        "lastDeliveryStatus": "not-requested"
       }
     },
     {
@@ -660,7 +668,7 @@
       "name": "Finnish News Bulletin (daily 17:00 UTC+2)",
       "enabled": true,
       "createdAtMs": 1771777058490,
-      "updatedAtMs": 1771945392511,
+      "updatedAtMs": 1772031710885,
       "schedule": {
         "expr": "0 15 * * *",
         "kind": "cron",
@@ -671,7 +679,7 @@
       "payload": {
         "kind": "agentTurn",
         "message": "Generate a Finnish news bulletin covering the top 8 most important stories from the last 24 hours. Sources: YLE (yle.fi), Helsingin Sanomat (hs.fi), Turun Sanomat (ts.fi), Iltalehti (iltalehti.fi), Ilta-Sanomat (iltasanomat.fi), Kauppalehti (kauppalehti.fi).\n\nOutput ONLY the bulletin in this exact format:\n**Title:** ...\n**Summary:** (10-word summary)\n**Link:** ...\n\nOnly include general news (politics, economy, society, culture, weather). NO sports, cybersecurity, or IT security topics.\n\nSkip all narration. Just output the compiled bulletin.\n\nEnd with: Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta-Sanomat · Kauppalehti",
-        "model": "kilocode/z-ai/glm-5:free",
+        "model": "kilocode/minimax/minimax-m2.5:free",
         "thinking": "off",
         "timeoutSeconds": 600
       },
@@ -679,10 +687,10 @@
         "mode": "none"
       },
       "state": {
-        "nextRunAtMs": 1772031600000,
-        "lastRunAtMs": 1771945320131,
+        "nextRunAtMs": 1772118000000,
+        "lastRunAtMs": 1772031626094,
         "lastStatus": "ok",
-        "lastDurationMs": 72380,
+        "lastDurationMs": 84791,
         "consecutiveErrors": 0,
         "lastRunStatus": "ok",
         "lastDelivered": false,
