@@ -1,3 +1,6 @@
+## 2026-02-27 07:14 UTC
+- **Gateway dead again (auto-update chicken-and-egg):** Auto-update at 04:00 UTC stopped gateway for v2026.2.26 — cron agent died mid-run as before. Manually ran `update-openclaw.sh` at 07:11 UTC, updated to v2026.2.26, restarted (PID 884987). Cron jobs and answering now restored.
+
 ## 2026-02-26 07:30 UTC
 - **Constant typing indicator fixed:** 4 cron jobs (`Science & Space`, `xkcd`, `Free Model Monitor`, `Finnish News`) had `sessionKey: "agent:main:main"` which routed their entire run through the main Telegram session — causing "typing" to show for minutes even with no user message. Removed all `sessionKey` fields. Also fixed `Push md files` (`channel: last` → no channel) and `Bunny of the Day` (added explicit `to: 55163462`).
 - **Model cascade: z-ai/glm-5:free dead, opencode-zen blocked:** `kilocode/z-ai/glm-5:free` alpha period ended. All `opencode-zen/*` models returning Cloudflare 403. Migrated primary to `kilocode/minimax/minimax-m2.5:free`, fallbacks: stepfun → nvidia. Updated 105 session caches and all 18 cron jobs. RSS translator URL also wrong (`/v1/` prefix) — fixed to `/chat/completions`.

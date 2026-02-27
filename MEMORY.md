@@ -107,6 +107,9 @@ When the primary model (`kilocode/z-ai/glm-5:free`) returns `stopReason: "error"
 
 ## Daily Reflections
 ### 2026-02-26
+February 26th focused on infrastructure fixes: resolved a persistent typing indicator issue caused by 4 cron jobs routing through the main Telegram session (removed all `sessionKey` fields), completed a model migration from the defunct `kilocode/z-ai/glm-5:free` and blocked `opencode-zen/*` models to `kilocode/minimax/minimax-m2.5:free` as primary with stepfun and NVIDIA as fallbacks (updating 105 session caches and 18 cron jobs), and fixed a broken RSS translator URL. Also manually completed the gateway auto-update to v2026.2.24 after the cron agent died mid-run when the gateway was stopped.
+
+### 2026-02-26
 February 25th brought several operational challenges: the gateway went down during an auto-update to v2026.2.24 when the cron agent died with the gateway before completing the update, requiring a manual `update-openclaw.sh` to restore service. A cascading rate-limit issue was resolved by migrating all 14 cron jobs from the defunct `opencode-zen/glm-5-free` model to `kilocode/z-ai/glm-5:free`, which had been hitting hourly rate limits overnight. The Hue monitor also experienced 4 consecutive failures due to malformed web search queries containing a model artifact number (2071223010), an issue expected to resolve after the model switch.
 
 ### 2026-02-23
