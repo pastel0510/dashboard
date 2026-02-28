@@ -87,8 +87,12 @@ When creating or updating scripts that use external dependencies:
 ## Git Repository Visibility
 - **RSS feed translator repo** — PUBLIC (visible to everyone)
 - **md-files repo** (git@gitgud.io:unreached2457/md-files.git) — PRIVATE
+- **dashboard repo** (git@github.com:pastel0510/dashboard.git) — PUBLIC (GitHub Pages: https://pastel0510.github.io/dashboard/)
 
-When working with these repos, be mindful of what gets committed. No sensitive data should go to the public RSS feed repo.
+When working with these repos, be mindful of what gets committed. No sensitive data in public repos. Dashboard commits use identity `pastel0510 <pastel0510@users.noreply.github.com>`.
+
+**Dashboard SSH setup:** Deploy key added to GitHub repo. Key: `~/.ssh/id_ed25519_github_dashboard`. SSH config host: `github.com`.
+**Dashboard update script:** `~/.openclaw/workspace/dashboard-data/fetch-latest.sh` — clones if `/tmp/dashboard` is missing, pushes to GitHub main branch (Pages serves from root). Runs daily at 15:30 UTC via cron.
 
 ## Model Error Recovery (stopReason: error)
 When the primary model (`kilocode/z-ai/glm-5:free`) returns `stopReason: "error"` mid-session, a tool result may have been generated but the final response was never delivered to the user. This happens occasionally as a transient API failure.
@@ -106,6 +110,12 @@ When the primary model (`kilocode/z-ai/glm-5:free`) returns `stopReason: "error"
 **Known occurrence:** 2026-02-24 07:24 UTC — `/smiley` command generated `(─‿‿─)` but was not delivered. Manually recovered and sent.
 
 ## Daily Reflections
+### 2026-02-28
+Dashboard migrated to GitHub Pages (`pastel0510/dashboard`). Fixed: /tmp/dashboard was never initialized as a git repo; re-initialized with fresh clone logic in fetch-latest.sh, deploy SSH key added via API. Name "Shadow" removed from dashboard template (title + h1). RSS Feed Translator and Self-Host Weekly timeouts bumped 300→600s. xkcd error counter reset after 3 stale errors from pre-restart runs.
+
+### 2026-02-27
+February 27th saw another gateway outage caused by the auto-update cron at 04:00 UTC stopping the gateway for v2026.2.26, but the cron agent died mid-run as before (the chicken-and-egg problem where the cron agent IS the gateway). The gateway was manually revived at 07:11 UTC by running `update-openclaw.sh`, updating to v2026.2.26 and restarting (PID 884987), which restored cron jobs and answering capability.
+
 ### 2026-02-26
 February 26th focused on infrastructure fixes: resolved a persistent typing indicator issue caused by 4 cron jobs routing through the main Telegram session (removed all `sessionKey` fields), completed a model migration from the defunct `kilocode/z-ai/glm-5:free` and blocked `opencode-zen/*` models to `kilocode/minimax/minimax-m2.5:free` as primary with stepfun and NVIDIA as fallbacks (updating 105 session caches and 18 cron jobs), and fixed a broken RSS translator URL. Also manually completed the gateway auto-update to v2026.2.24 after the cron agent died mid-run when the gateway was stopped.
 
@@ -133,12 +143,13 @@ A delivery failure was recovered when the primary model (`kilocode/z-ai/glm-5:fr
 
 ## Public Content Privacy Policy
 When creating anything for public release (git repos, scripts, feeds, etc.):
-- NEVER include usernames or person names
+- NEVER include usernames or person names (no "Shadow", no real names)
 - NEVER reference OpenClaw, ~/.openclaw paths, or system-specific paths
 - Use generic paths (e.g., `./feeds/` instead of `/home/username/.openclaw/workspace/...`)
 - Use generic user agents (e.g., "MyApp/1.0" not "OpenClaw:BunnyOfTheDay:v1.0")
 - Scrub git history before pushing if any personal info was committed
 - Check for hardcoded paths, names, or identifying info before any public push
+- **Dashboard template.html**: title and heading must stay as "Daily Dashboard" — no names
 
 This applies to: git commits, scripts, config files, logs, documentation, and any generated content.
 

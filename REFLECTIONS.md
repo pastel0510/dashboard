@@ -1,3 +1,7 @@
+## 2026-02-28 00:00 UTC
+- **Dashboard migrated to GitHub Pages:** `/tmp/dashboard` was not a git repo (never properly initialized). Migrated from broken GitLab Pages setup to GitHub Pages at `https://pastel0510.github.io/dashboard/`. Added deploy SSH key via API, initialized fresh git repo, updated `fetch-latest.sh` to clone-if-missing and push to `git@github.com:pastel0510/dashboard.git`. Git identity set to `pastel0510` (no server/usernames). Dashboard is live and auto-updates at 15:30 UTC daily.
+- **Cron timeout fixes:** RSS Feed Translator and Self-Host Weekly bumped from 300s → 600s to prevent `FailoverError: LLM request timed out`. xkcd consecutive error counter reset (3 errors from before the restart, fresh chance at next run).
+
 ## 2026-02-27 07:14 UTC
 - **Gateway dead again (auto-update chicken-and-egg):** Auto-update at 04:00 UTC stopped gateway for v2026.2.26 — cron agent died mid-run as before. Manually ran `update-openclaw.sh` at 07:11 UTC, updated to v2026.2.26, restarted (PID 884987). Cron jobs and answering now restored.
 
