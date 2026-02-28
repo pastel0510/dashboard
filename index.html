@@ -134,10 +134,45 @@
             flex-direction: column;
             align-items: center;
             gap: 3px;
+            flex: 1;
         }
         .forecast-day .f-date { font-size: 0.75em; color: #999; }
-        .forecast-day .f-icon { font-size: 1.2em; }
-        .forecast-day .f-temp { font-size: 0.8em; color: #ccc; }
+        .forecast-day .f-temp { font-size: 0.8em; }
+        .forecast-day .f-temp.fmi { color: #00d9ff; }
+        .forecast-day .f-temp.foreca { color: #ffcc00; }
+        .city-weather .time { font-size: 0.7em; color: #666; font-weight: normal; }
+        .city-weather .temp-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .city-weather .provider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+        }
+        .city-weather .provider-name {
+            font-size: 0.75em;
+            color: #666;
+        }
+        .city-weather .provider.fmi .temp { color: #00d9ff; }
+        .city-weather .provider.foreca .temp { color: #ffcc00; }
+        .city-weather .feels {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .forecast-header {
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.7em;
+            color: #666;
+            margin-bottom: 5px;
+            padding-left: 40px;
+        }
+        .forecast-header .provider-label.fmi { color: #00d9ff; }
+        .forecast-header .provider-label.foreca { color: #ffcc00; }
     </style>
 </head>
 <body>
@@ -326,55 +361,125 @@
                 <h2>🌤️ Weather - Finland</h2>
                 <div id="weather" class="weather-grid">
                     <div class="city-weather">
-            <h3>☁️ Helsinki</h3>
+            <h3>📍 Helsinki <span class="time">@ 10.38</span></h3>
             <div class="current">
-                <span class="temp">3.1°C</span>
-                <span class="desc">Overcast</span>
-                <span class="details">Feels like 0.3°C | Humidity 92% | Wind 7.2 km/h</span>
+                <div class="temp-row">
+                    <div class="provider fmi">
+                        <span class="provider-name">IL</span>
+                        <span class="temp">1°C</span>
+                        <span class="feels">Tuntuu -3°</span>
+                    </div>
+                    <div class="provider foreca">
+                        <span class="provider-name">Foreca</span>
+                        <span class="temp">1°C</span>
+                        <span class="feels">Tuntuu -3°</span>
+                    </div>
+                </div>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌧️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">3°/0°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">2°/-1°</span></div></div>
+            <div class="forecast-header">
+                <span></span>
+                <span class="provider-label fmi">IL</span>
+                <span class="provider-label foreca">Foreca</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Lau 28.02.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Sun 01.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3>☁️ Tampere</h3>
+            <h3>📍 Tampere <span class="time">@ 10.38</span></h3>
             <div class="current">
-                <span class="temp">2.6°C</span>
-                <span class="desc">Overcast</span>
-                <span class="details">Feels like -0.5°C | Humidity 96% | Wind 9.0 km/h</span>
+                <div class="temp-row">
+                    <div class="provider fmi">
+                        <span class="provider-name">IL</span>
+                        <span class="temp">3°C</span>
+                        <span class="feels">Tuntuu -1°</span>
+                    </div>
+                    <div class="provider foreca">
+                        <span class="provider-name">Foreca</span>
+                        <span class="temp">3°C</span>
+                        <span class="feels">Tuntuu 0°</span>
+                    </div>
+                </div>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌧️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">3°/-4°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">2°/-6°</span></div></div>
+            <div class="forecast-header">
+                <span></span>
+                <span class="provider-label fmi">IL</span>
+                <span class="provider-label foreca">Foreca</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Lau 28.02.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Sun 01.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">4°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3>☁️ Turku</h3>
+            <h3>📍 Turku <span class="time">@ 10.38</span></h3>
             <div class="current">
-                <span class="temp">3.2°C</span>
-                <span class="desc">Overcast</span>
-                <span class="details">Feels like -0.1°C | Humidity 94% | Wind 10.8 km/h</span>
+                <div class="temp-row">
+                    <div class="provider fmi">
+                        <span class="provider-name">IL</span>
+                        <span class="temp">2°C</span>
+                        <span class="feels">Tuntuu 1°</span>
+                    </div>
+                    <div class="provider foreca">
+                        <span class="provider-name">Foreca</span>
+                        <span class="temp">2°C</span>
+                        <span class="feels">Tuntuu 0°</span>
+                    </div>
+                </div>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌧️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">4°/-3°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">3°/-3°</span></div></div>
+            <div class="forecast-header">
+                <span></span>
+                <span class="provider-label fmi">IL</span>
+                <span class="provider-label foreca">Foreca</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Lau 28.02.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Sun 01.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">5°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3>☁️ Oulu</h3>
+            <h3>📍 Oulu <span class="time">@ 10.38</span></h3>
             <div class="current">
-                <span class="temp">-2.5°C</span>
-                <span class="desc">Overcast</span>
-                <span class="details">Feels like -6.9°C | Humidity 97% | Wind 13.0 km/h</span>
+                <div class="temp-row">
+                    <div class="provider fmi">
+                        <span class="provider-name">IL</span>
+                        <span class="temp">-1°C</span>
+                        <span class="feels">Tuntuu -4°</span>
+                    </div>
+                    <div class="provider foreca">
+                        <span class="provider-name">Foreca</span>
+                        <span class="temp">-2°C</span>
+                        <span class="feels">Tuntuu -4°</span>
+                    </div>
+                </div>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">☁️</span><span class="f-temp">-0°/-5°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">☁️</span><span class="f-temp">-2°/-11°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">0°/-9°</span></div></div>
+            <div class="forecast-header">
+                <span></span>
+                <span class="provider-label fmi">IL</span>
+                <span class="provider-label foreca">Foreca</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Lau 28.02.</span><span class="f-temp fmi">-1°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Sun 01.03.</span><span class="f-temp fmi">-1°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-4°</span><span class="f-temp foreca">-8°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">1°</span><span class="f-temp foreca">3°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3>☁️ Rovaniemi</h3>
+            <h3>📍 Rovaniemi <span class="time">@ 10.38</span></h3>
             <div class="current">
-                <span class="temp">-3.1°C</span>
-                <span class="desc">Overcast</span>
-                <span class="details">Feels like -7.4°C | Humidity 89% | Wind 10.4 km/h</span>
+                <div class="temp-row">
+                    <div class="provider fmi">
+                        <span class="provider-name">IL</span>
+                        <span class="temp">-4°C</span>
+                        <span class="feels">Tuntuu -8°</span>
+                    </div>
+                    <div class="provider foreca">
+                        <span class="provider-name">Foreca</span>
+                        <span class="temp">-5°C</span>
+                        <span class="feels">Tuntuu -5°</span>
+                    </div>
+                </div>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">☁️</span><span class="f-temp">-2°/-7°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">☁️</span><span class="f-temp">-1°/-10°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">-3°/-11°</span></div></div>
+            <div class="forecast-header">
+                <span></span>
+                <span class="provider-label fmi">IL</span>
+                <span class="provider-label foreca">Foreca</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Lau 28.02.</span><span class="f-temp fmi">-2°</span><span class="f-temp foreca">-3°</span></div><div class="forecast-day"><span class="f-date">Sun 01.03.</span><span class="f-temp fmi">-2°</span><span class="f-temp foreca">-3°</span></div><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-3°</span><span class="f-temp foreca">-7°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">-3°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">-2°</span></div></div>
         </div>
                 </div>
             </div>
         </div>
         
-        <p class="timestamp">Last updated: 2026-02-28 10:31 UTC</p>
+        <p class="timestamp">Last updated: 2026-02-28 10:38 UTC</p>
     </div>
 </body>
 </html>
