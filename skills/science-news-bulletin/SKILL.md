@@ -32,6 +32,18 @@ Generate a curated bulletin of the top science and space news stories and delive
 
 Use the **web search tool** to query each science news source for recent stories. Run searches in parallel where possible.
 
+**CRITICAL:** You must ONLY use links from the following domains:
+- nature.com
+- science.org
+- nasa.gov (including jpl.nasa.gov)
+- esa.int
+- space.com
+- newscientist.com
+- phys.org
+- scientificamerican.com
+
+**DO NOT use aggregator sites** (e.g., scitechdaily.com, sci.news, others). If a search result is from any other domain, ignore it even if it seems relevant.
+
 Search queries (substitute `hours` as appropriate):
 
 | Source | Query |
@@ -62,13 +74,16 @@ Discard stories outside the time window. If fewer than `count` qualifying storie
 Select up to `count` stories. Format each entry as:
 
 ```
-**<story title>**
+📅 <date> • **<story title>**
 <5‑word summary of the article>
 <direct article URL>
 ```
 
+Where `<date>` is the publication date in a human-readable short format (e.g., "27 Feb 2026" or "2026-02-27").
+
+- Include the DATE at the start of each entry (before the title)
 - Bold the title with `**...**` (Telegram renders this as bold)
-- Summary is 5 words max, placed directly under the title with no label
+- Summary is 5 words max, placed directly under the title line with no label
 - Link on its own line, no label prefix
 - Separate each story with a blank line, no numbering or bullets
 
