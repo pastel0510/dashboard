@@ -20,7 +20,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-02-28 02:35 UTC — No new developments. Tokmanni situation unchanged. Posti Omaposti service restored, no new updates.
+**Last checked:** 2026-02-28 16:05 UTC — No new developments. Tokmanni situation unchanged.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -47,7 +47,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-02-28 03:05 UTC — No new Tokmanni developments. Posti: Data Protection Ombudsman imposed ADMINISTRATIVE FINE on Posti for data protection shortcomings in OmaPosti service (new development). Need to fetch details. Service restored.
+**Last checked:** 2026-02-28 16:05 UTC — No new developments. Service restored. Administrative fine imposed by Data Protection Ombudsman (previously reported).
 
 **Note:** Include source links in all update notifications.
 

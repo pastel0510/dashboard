@@ -156,13 +156,15 @@ This applies to: git commits, scripts, config files, logs, documentation, and an
 ## Free Model Monitoring
 Cron job monitors Kilocode and NVIDIA every 3 days for model changes.
 
-**Primary Model:** `kilocode/minimax/minimax-m2.5:free`
+**Primary Model:** `kilocode/moonshotai/kimi-k2.5:free` (262k ctx, reasoning, ~5.6s)
 
 **Fallback Chain:**
-1. `kilocode/stepfun/step-3.5-flash:free`
-2. `nvidia/meta/llama-3.3-70b-instruct`
+1. `kilocode/stepfun/step-3.5-flash:free` (256k ctx, reasoning, ~5.9s)
+2. `kilocode/arcee-ai/trinity-large-preview:free` (131k ctx, no reasoning, ~0.8s — fast)
+3. `nvidia/meta/llama-3.3-70b-instruct`
 
-**Dead models (as of 2026-02-25):**
+**Dead/retired models:**
+- `kilocode/minimax/minimax-m2.5:free` — flagged as no longer free (2026-02-28), do NOT use as primary
 - `kilocode/z-ai/glm-5:free` — alpha period ended (404)
 - `opencode-zen/*` (all models) — Cloudflare 403 blocked, entire provider dead
 
@@ -173,14 +175,15 @@ Alerts sent to Telegram when:
 State file: `memory/free-models-state.json`
 
 ## Cron Job Model
-All cron jobs in `~/.openclaw/cron/jobs.json` use `kilocode/minimax/minimax-m2.5:free`.
+All cron jobs in `~/.openclaw/cron/jobs.json` use `kilocode/moonshotai/kimi-k2.5:free`.
 Do NOT use `opencode-zen/*` models — provider is Cloudflare-blocked (403).
 Do NOT use `kilocode/z-ai/glm-5:free` — alpha period ended (404).
+Do NOT use `kilocode/minimax/minimax-m2.5:free` — flagged as ending free tier.
 
 ## RSS Translator LLM Fallback
 File: `~/.openclaw/workspace/rss-translator/translate_feeds.py`
 - Primary LLM fallback: NVIDIA `meta/llama-3.3-70b-instruct`
-- Secondary LLM fallback: Kilocode `minimax/minimax-m2.5:free` at `https://api.kilo.ai/api/gateway/chat/completions` (no /v1/ prefix!)
+- Secondary LLM fallback: Kilocode `moonshotai/kimi-k2.5:free` at `https://api.kilo.ai/api/gateway/chat/completions` (no /v1/ prefix!)
 - Key in `.env` as `KILOCODE_API_KEY`
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
