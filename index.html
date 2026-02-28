@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow's Daily Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #eee;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { 
+            text-align: center; 
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card h2 {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .bulletin-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .bulletin-item h3 {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #00d9ff;
+        }
+        .bulletin-item p {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+        .bulletin-item a {
+            color: #00ff88;
+            font-size: 0.85em;
+        }
+        .full-width { grid-column: 1 / -1; }
+        .timestamp {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐺 Shadow's Daily Dashboard</h1>
+        
+        <div class="grid">
+            <!-- Finnish News -->
+            <div class="card">
+                <h2>🇫🇮 Finnish News</h2>
+                <div id="finnish-bulletin">
+                    <div class="bulletin-item">
+<h3>Suomi nousi taantumasta – BKT kasvoi 0,2%</h3>
+<p>Talouskasvu ylsi 0,4% loppuvuonna, investoinnit vetivät.</p>
+<a href="https://www.bloomberg.com/news/articles/2026-02-27/finland-exits-recession-on-higher-investment-spending">Read more</a>
+</div>
+<div class="bulletin-item">
+<h3>Maahanmuutto: Ennätysmäärä karkoituksia</h3>
+<p>169 ihmistä määrättiin poistumaan maasta viime vuonna.</p>
+<a href="https://yle.fi/a/74-20212725">Read more</a>
+</div>
+<div class="bulletin-item">
+<h3>Julkista taloutta sopeutettava 8–11 miljardilla</h3>
+<p>Velkajarrutyöryhmä esittää merkittäviä leikkauksia.</p>
+<a href="https://www.sss.fi/2026/02/velkajarrutyoryhma-suomen-julkista-taloutta-sopeutettava-8-11-miljardilla/">Read more</a>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Science -->
+            <div class="card">
+                <h2>🔬 Science & Space</h2>
+                <div id="science-bulletin">
+                    <div class="bulletin-item">
+<h3>Gravitational Wave GW250114</h3>
+<p>Record-breaking black hole collision gives clearest Einstein test.</p>
+<a href="https://www.sciencedaily.com/releases/2026/02/260201231224.htm">Read more</a>
+</div>
+<div class="bulletin-item">
+<h3>NASA Perseverance Drives Using AI</h3>
+<p>Mars rover first to navigate using artificial intelligence.</p>
+<a href="https://www.sciencedaily.com/releases/2026/02/260201230000.htm">Read more</a>
+</div>
+<div class="bulletin-item">
+<h3>JWST Discovers Jellyfish Galaxy</h3>
+<p>James Webb reveals mysterious galaxy with tentacles.</p>
+<a href="https://scitechdaily.com/why-does-this-galaxy-have-tentacles-deep-space-mystery-stuns-astronomers/">Read more</a>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="card">
+                <h2>🔐 Security</h2>
+                <div id="security-bulletin">
+                    <div class="bulletin-item">
+<h3>Cisco SD-WAN Zero-Day CVE-2026-20127</h3>
+<p>Critical flaw exploited since 2023, CVSS 10.0</p>
+<a href="https://thehackernews.com/2026/02/cisco-sd-wan-zero-day-cve-2026-20127.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<h3>Aeternum C2 Botnet</h3>
+<p>Uses Polygon blockchain for command-and-control</p>
+<a href="https://thehackernews.com/2026/02/aeternum-c2-botnet-stores-encrypted.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<h3>Google Disrupts UNC2814 GRIDTIDE</h3>
+<p>53 breaches across 42 countries using Google Sheets API</p>
+<a href="https://thehackernews.com/2026/02/google-disrupts-unc2814-gridtide.html">Read more</a>
+</div>
+
+                </div>
+            </div>
+
+            <!-- Bunny -->
+            <div class="card">
+                <h2>🐰 Bunny of the Day</h2>
+                <div id="bunny">
+                    <p>No bunny today</p>
+                </div>
+            </div>
+
+            <!-- xkcd -->
+            <div class="card">
+                <h2>💭 xkcd</h2>
+                <div id="xkcd">
+                    <img src="xkcd.jpg" alt="Xkcd">
+                </div>
+            </div>
+
+            <!-- Fingerpori -->
+            <div class="card">
+                <h2>📰 Fingerpori</h2>
+                <div id="fingerpori">
+                    <img src="fingerpori.jpg" alt="Fingerpori">
+                </div>
+            </div>
+        </div>
+        
+        <p class="timestamp">Last updated: 2026-02-28 00:00 UTC</p>
+    </div>
+</body>
+</html>
