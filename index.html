@@ -85,6 +85,59 @@
             color: #666;
             font-size: 0.8em;
         }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        @media (max-width: 600px) {
+            .weather-grid { grid-template-columns: 1fr; }
+        }
+        .city-weather {
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            padding: 15px;
+        }
+        .city-weather h3 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #00d9ff;
+        }
+        .city-weather .current {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 12px;
+        }
+        .city-weather .temp {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .city-weather .desc {
+            color: #ccc;
+            font-size: 0.95em;
+        }
+        .city-weather .details {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .city-weather .forecast {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .forecast-day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+        }
+        .forecast-day .f-date { font-size: 0.75em; color: #999; }
+        .forecast-day .f-icon { font-size: 1.2em; }
+        .forecast-day .f-temp { font-size: 0.8em; color: #ccc; }
     </style>
 </head>
 <body>
@@ -267,9 +320,52 @@
 
                 </div>
             </div>
+
+            <!-- Weather -->
+            <div class="card full-width">
+                <h2>🌤️ Weather - Finland's 4 Largest Cities</h2>
+                <div id="weather" class="weather-grid">
+                    <div class="city-weather">
+            <h3>☁️ Helsinki</h3>
+            <div class="current">
+                <span class="temp">3.1°C</span>
+                <span class="desc">Overcast</span>
+                <span class="details">Feels like 0.3°C | Humidity 92% | Wind 7.2 km/h</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌧️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">3°/0°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">2°/-1°</span></div></div>
+        </div>
+<div class="city-weather">
+            <h3>☁️ Espoo</h3>
+            <div class="current">
+                <span class="temp">3.6°C</span>
+                <span class="desc">Overcast</span>
+                <span class="details">Feels like 0.8°C | Humidity 92% | Wind 7.2 km/h</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌦️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">3°/0°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">2°/-1°</span></div></div>
+        </div>
+<div class="city-weather">
+            <h3>☁️ Tampere</h3>
+            <div class="current">
+                <span class="temp">2.6°C</span>
+                <span class="desc">Overcast</span>
+                <span class="details">Feels like -0.5°C | Humidity 96% | Wind 9.0 km/h</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌧️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">3°/-4°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">2°/-6°</span></div></div>
+        </div>
+<div class="city-weather">
+            <h3>☁️ Vantaa</h3>
+            <div class="current">
+                <span class="temp">3.5°C</span>
+                <span class="desc">Overcast</span>
+                <span class="details">Feels like 0.3°C | Humidity 87% | Wind 9.0 km/h</span>
+            </div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">03-01</span><span class="f-icon">🌦️</span><span class="f-temp">2°/1°</span></div><div class="forecast-day"><span class="f-date">03-02</span><span class="f-icon">🌦️</span><span class="f-temp">3°/-0°</span></div><div class="forecast-day"><span class="f-date">03-03</span><span class="f-icon">🌨️</span><span class="f-temp">2°/-1°</span></div></div>
+        </div>
+                </div>
+            </div>
         </div>
         
-        <p class="timestamp">Last updated: 2026-02-28 08:47 UTC</p>
+        <p class="timestamp">Last updated: 2026-02-28 10:30 UTC</p>
     </div>
 </body>
 </html>
