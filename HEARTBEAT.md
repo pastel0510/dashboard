@@ -4,6 +4,10 @@
 
 # Add tasks below when you want the agent to check something periodically.
 
+# IMPORTANT: When updating "Last checked" timestamps, ALWAYS use the write tool
+# to rewrite this entire file. Never use the edit tool — timestamps change every
+# run so exact-text matching will always fail.
+
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitor for updates on the Tokmanni customer data situation.
 
@@ -20,7 +24,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-01 12:02 UTC — No new developments. Tokmanni situation unchanged.
+**Last checked:** 2026-03-01 21:32 UTC — No new developments. Tokmanni situation unchanged.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -47,13 +51,13 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-01 12:02 UTC — No new developments. Service restored. Administrative fine previously imposed.
+**Last checked:** 2026-03-01 21:32 UTC — No new developments. Service restored. Note: The €2.4M administrative fine (March 2025) was for mailbox onboarding practices, NOT for the Feb 25, 2026 incident.
 
 **Note:** Include source links in all update notifications.
 
 Notify Shadow if:
-- Posti files official breach notification
-- More users confirmed affected
-- App restored (or extended outage)
-- Official apology or compensation announced
-- Authorities open investigation
+- Posti files official breach notification FOR THE FEB 25, 2026 INCIDENT
+- More users confirmed affected by Feb 25 incident
+- Official apology or compensation announced for Feb 25 incident
+- Authorities open investigation into Feb 25 incident
+- NEW separate fine imposed specifically for the Feb 25 data exposure
