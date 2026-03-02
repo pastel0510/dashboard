@@ -70,7 +70,17 @@ curl -sL "https://yle.fi/rss/uutiset/paauutiset" | head -200
 
 RSS feeds are XML. Extract `<item>` elements with `<title>`, `<link>`, `<pubDate>`, and `<description>`.
 
-### 2. Optional: Web Search Enhancement
+### 2. Verify Article Links (CRITICAL)
+
+**Before including any article URL in the bulletin, you MUST verify it works:**
+- Fetch the article URL using `web_fetch` or `curl -I` to check for 404 errors
+- **Do NOT use placeholder URLs or assume URL patterns** (e.g., don't guess `art-2000010666975.html`)
+- If a link returns 404, search for the correct URL or exclude the story
+- Links must return actual article content, not error pages
+
+**User instruction:** "When putting links to the dashboard or any bulletin. Make sure that they work and return what they promise."
+
+### 3. Optional: Web Search Enhancement
 
 If web search is available and not rate-limited, use it to:
 - Find additional context for major stories
@@ -96,7 +106,7 @@ If web search is available and not rate-limited, use it to:
 
 **Never include links from non-Finnish domains** (e.g., bloomberg.com, reuters.com, pravda.ru, etc.). The bulletin should only cover Finnish news from Finnish sources.
 
-### 3. Score and Rank
+### 4. Score and Rank
 
 Rank by:
 1. **Impact** — major political, economic, or social significance
@@ -106,7 +116,7 @@ Rank by:
 
 Discard stories outside the time window. If fewer than `count` qualifying stories exist, deliver what is available and note the shortage.
 
-### 4. Filter Content
+### 5. Filter Content
 
 **Important:** Only include general news (politics, economy, society, culture, weather, etc.). Do NOT include:
 - Sports (urheilu) — exclude all sports-related news
@@ -116,7 +126,7 @@ Discard stories outside the time window. If fewer than `count` qualifying storie
 - Trump or Elon Musk related news (per user preference)
 - **Foreign country news** — exclude stories primarily about other countries (e.g., Russia, Ukraine, USA, Sweden, Estonia). Focus on Finnish domestic news, EU matters affecting Finland, or international news where Finland is the subject.
 
-### 5. Write the Bulletin
+### 6. Write the Bulletin
 
 Select up to `count` stories. Format each entry as:
 
@@ -134,7 +144,7 @@ Where `<date>` is the publication date in a human-readable short format (e.g., "
 - Link on its own line, no label prefix
 - Separate each story with a blank line, no numbering or bullets
 
-### 6. Deliver
+### 7. Deliver
 
 Wrap in a header and footer, then send as a **single message**:
 

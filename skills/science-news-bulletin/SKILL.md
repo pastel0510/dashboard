@@ -69,7 +69,17 @@ Rank by:
 
 Discard stories outside the time window. If fewer than `count` qualifying stories exist, deliver what is available.
 
-### 3. Write the bulletin
+### 3. Verify article links (CRITICAL)
+
+**Before including any URL in the bulletin, verify it works:**
+- Fetch each article URL using `web_fetch` to confirm it returns actual content
+- If a URL returns 404 or redirects to a homepage, find the correct URL or drop the story
+- **Do NOT assume URL patterns** or use placeholder URLs
+- Links must return the actual article, not an error page or unrelated content
+
+**User rule:** "When putting links to the dashboard or any bulletin, make sure they work and return what they promise."
+
+### 4. Write the bulletin
 
 Select up to `count` stories. Format each entry as:
 
