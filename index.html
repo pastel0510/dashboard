@@ -14,6 +14,54 @@
             padding: 20px;
         }
         .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* Top bar with weather and smiley */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .weather-widgets {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: center;
+        }
+        .weather-widget {
+            text-align: center;
+            padding: 8px 12px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            min-width: 70px;
+        }
+        .weather-widget .city {
+            font-size: 0.75em;
+            color: #888;
+            margin-bottom: 2px;
+        }
+        .weather-widget .temp {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+        .smiley-box {
+            font-size: 1.5em;
+            color: #00ff88;
+            padding: 5px 10px;
+            background: rgba(0,255,136,0.1);
+            border-radius: 10px;
+            border: 1px solid rgba(0,255,136,0.2);
+        }
+        
         h1 { 
             text-align: center; 
             margin-bottom: 30px;
@@ -92,6 +140,7 @@
         }
         @media (max-width: 600px) {
             .weather-grid { grid-template-columns: 1fr; }
+            .weather-widgets { justify-content: flex-start; }
         }
         .city-weather {
             background: rgba(0,0,0,0.2);
@@ -242,6 +291,33 @@
 </head>
 <body>
     <div class="container">
+        <!-- Top bar with weather widgets and smiley -->
+        <div class="top-bar">
+            <div class="weather-widgets">
+                <div class="weather-widget">
+                    <div class="city">Helsinki</div>
+                    <div class="temp">1°C</div>
+                </div>
+                <div class="weather-widget">
+                    <div class="city">Tampere</div>
+                    <div class="temp">1°C</div>
+                </div>
+                <div class="weather-widget">
+                    <div class="city">Turku</div>
+                    <div class="temp">1°C</div>
+                </div>
+                <div class="weather-widget">
+                    <div class="city">Oulu</div>
+                    <div class="temp">-5°C</div>
+                </div>
+                <div class="weather-widget">
+                    <div class="city">Rovaniemi</div>
+                    <div class="temp">-7°C</div>
+                </div>
+            </div>
+            <div class="smiley-box">(◠‿◠)</div>
+        </div>
+        
         <h1>Daily Dashboard</h1>
         
         <div class="grid">
@@ -426,7 +502,7 @@
             <div class="card">
                 <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
                 <div id="xkcd">
-                    <img src="https://imgs.xkcd.com/comics/base_system.png" alt="Xkcd">
+                    <img src="https://imgs.xkcd.com/comics/synonym_movies.png" alt="Xkcd">
                 </div>
             </div>
 
@@ -436,12 +512,6 @@
                 <div id="fingerpori">
                     <img src="https://media.mas.to/media_attachments/files/116/158/289/259/286/951/original/6fb47b0c121ce4e7.jpeg" alt="Fingerpori">
                 </div>
-            </div>
-
-            <!-- Smiley -->
-            <div class="card">
-                <h2>Daily Smiley</h2>
-                <pre style="font-size:1.2em;text-align:center;color:#00ff88;white-space:pre-wrap;">(◠‿◠)</pre>
             </div>
 
             <!-- CVE Bulletin -->
@@ -529,7 +599,7 @@
                 <h2>Weather - Finland</h2>
                 <div id="weather" class="weather-grid">
                     <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" style="color:#00d9ff;text-decoration:none;">Helsinki</a> <span class="time">@ 09.32</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" style="color:#00d9ff;text-decoration:none;">Helsinki</a> <span class="time">@ 10.06</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -544,16 +614,16 @@
                     </div>
                 </div>
             </div>
-            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">1°</span><span class="h-temp foreca">0°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">3°</span><span class="h-temp foreca">2°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-1°</span><span class="h-temp foreca">-2°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">1°</span><span class="h-temp foreca">1°</span></div></div>
+            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">1°</span><span class="h-temp foreca">0°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">3°</span><span class="h-temp foreca">2°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-2°</span><span class="h-temp foreca">-2°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">1°</span><span class="h-temp foreca">1°</span></div></div>
             <div class="forecast-header" style="margin-top:12px;">
                 <span></span>
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">3°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">3°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" style="color:#00d9ff;text-decoration:none;">Tampere</a> <span class="time">@ 09.32</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" style="color:#00d9ff;text-decoration:none;">Tampere</a> <span class="time">@ 10.06</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -568,16 +638,16 @@
                     </div>
                 </div>
             </div>
-            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">0°</span><span class="h-temp foreca">0°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">2°</span><span class="h-temp foreca">0°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-4°</span><span class="h-temp foreca">-5°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">0°</span><span class="h-temp foreca">1°</span></div></div>
+            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">1°</span><span class="h-temp foreca">0°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">2°</span><span class="h-temp foreca">0°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-5°</span><span class="h-temp foreca">-5°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">0°</span><span class="h-temp foreca">1°</span></div></div>
             <div class="forecast-header" style="margin-top:12px;">
                 <span></span>
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">6°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">7°</span><span class="f-temp foreca">5°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">6°</span><span class="f-temp foreca">5°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/turku/633679/" target="_blank" style="color:#00d9ff;text-decoration:none;">Turku</a> <span class="time">@ 09.32</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/turku/633679/" target="_blank" style="color:#00d9ff;text-decoration:none;">Turku</a> <span class="time">@ 10.06</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -598,10 +668,10 @@
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">6°</span><span class="f-temp foreca">6°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">8°</span><span class="f-temp foreca">7°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">7°</span><span class="f-temp foreca">5°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">6°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">8°</span><span class="f-temp foreca">7°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">7°</span><span class="f-temp foreca">5°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" style="color:#00d9ff;text-decoration:none;">Oulu</a> <span class="time">@ 09.32</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" style="color:#00d9ff;text-decoration:none;">Oulu</a> <span class="time">@ 10.06</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -616,16 +686,16 @@
                     </div>
                 </div>
             </div>
-            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">-6°</span><span class="h-temp foreca">-10°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">-4°</span><span class="h-temp foreca">-7°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-6°</span><span class="h-temp foreca">-9°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">-4°</span><span class="h-temp foreca">-4°</span></div></div>
+            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">-8°</span><span class="h-temp foreca">-10°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">-4°</span><span class="h-temp foreca">-7°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-7°</span><span class="h-temp foreca">-9°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">-4°</span><span class="h-temp foreca">-4°</span></div></div>
             <div class="forecast-header" style="margin-top:12px;">
                 <span></span>
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-3°</span><span class="f-temp foreca">-5°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">1°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">-1°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">0°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-4°</span><span class="f-temp foreca">-5°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">-1°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">0°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" style="color:#00d9ff;text-decoration:none;">Rovaniemi</a> <span class="time">@ 09.32</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" style="color:#00d9ff;text-decoration:none;">Rovaniemi</a> <span class="time">@ 10.06</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -640,19 +710,19 @@
                     </div>
                 </div>
             </div>
-            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">-7°</span><span class="h-temp foreca">-10°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">-6°</span><span class="h-temp foreca">-7°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-8°</span><span class="h-temp foreca">-10°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">-5°</span><span class="h-temp foreca">-4°</span></div></div>
+            <div class="hourly-forecast"><div class="forecast-subheader">Next 12 hours:</div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">09:00</a><span class="h-temp fmi">-9°</span><span class="h-temp foreca">-10°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">18:00</a><span class="h-temp fmi">-7°</span><span class="h-temp foreca">-7°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">03:00</a><span class="h-temp fmi">-9°</span><span class="h-temp foreca">-10°</span></div><div class="forecast-hour"><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" class="h-time">12:00</a><span class="h-temp fmi">-5°</span><span class="h-temp foreca">-4°</span></div></div>
             <div class="forecast-header" style="margin-top:12px;">
                 <span></span>
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-4°</span><span class="f-temp foreca">-4°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">-2°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">0°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">-1°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">0°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-5°</span><span class="f-temp foreca">-4°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">-2°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">0°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">-1°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">0°</span></div></div>
         </div>
                 </div>
             </div>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-02 09:32 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-02 10:06 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
