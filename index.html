@@ -13,7 +13,7 @@
             color: #eee;
             padding: 20px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
+        .container { max-width: 1400px; margin: 0 auto; }
         
         /* Top bar with weather and smiley */
         .top-bar {
@@ -70,19 +70,59 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .grid {
+        
+        /* Main layout with sidebar */
+        .main-layout {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: 280px 1fr;
             gap: 20px;
         }
-        .card {
+        @media (max-width: 900px) {
+            .main-layout { grid-template-columns: 1fr; }
+        }
+        
+        /* Left sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .sidebar .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .sidebar .card h2 {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .sidebar .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        /* Main content area */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-content .card {
             background: rgba(255,255,255,0.05);
             border-radius: 16px;
             padding: 20px;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.1);
         }
-        .card h2 {
+        .main-content .card h2 {
             margin-bottom: 15px;
             padding-bottom: 10px;
             border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -90,11 +130,7 @@
             align-items: center;
             gap: 10px;
         }
-        .card img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+        
         .bulletin-item {
             margin-bottom: 15px;
             padding: 10px;
@@ -126,19 +162,33 @@
             font-size: 0.85em;
             margin-bottom: 3px;
         }
-        .full-width { grid-column: 1 / -1; }
         
         /* Side-by-side layout for Security and CVE */
         .side-by-side {
-            grid-column: 1 / -1;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
-        @media (max-width: 800px) {
+        @media (max-width: 700px) {
             .side-by-side { grid-template-columns: 1fr; }
         }
-        .side-by-side .card { margin: 0; }
+        .side-by-side .card { 
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .side-by-side .card h2 {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .full-width { grid-column: 1 / -1; }
         .timestamp {
             text-align: center;
             margin-top: 30px;
@@ -332,12 +382,43 @@
         
         <h1>Daily Dashboard</h1>
         
-        <div class="grid">
-            <!-- Finnish News -->
-            <div class="card">
-                <h2>Finnish News</h2>
-                <div id="finnish-bulletin">
-                    <div class="bulletin-item">
+        <!-- Main layout with left sidebar -->
+        <div class="main-layout">
+            <!-- Left sidebar: Bunny, xkcd, Fingerpori -->
+            <aside class="sidebar">
+                <!-- Bunny -->
+                <div class="card">
+                    <h2>Bunny of the Day</h2>
+                    <div id="bunny">
+                        <img src="https://i.redd.it/dcvhgb89pfmg1.jpeg" alt="Bunny">
+                    </div>
+                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/Rabbits/comments/1rhx334/crying_at_the_size_difference_between_their_ears/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
+                </div>
+
+                <!-- xkcd -->
+                <div class="card">
+                    <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
+                    <div id="xkcd">
+                        <img src="https://imgs.xkcd.com/comics/synonym_movies.png" alt="Xkcd">
+                    </div>
+                </div>
+
+                <!-- Fingerpori -->
+                <div class="card">
+                    <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
+                    <div id="fingerpori">
+                        <img src="https://media.mas.to/media_attachments/files/116/158/289/259/286/951/original/6fb47b0c121ce4e7.jpeg" alt="Fingerpori">
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content area -->
+            <main class="main-content">
+                <!-- Finnish News -->
+                <div class="card">
+                    <h2>Finnish News</h2>
+                    <div id="finnish-bulletin">
+                        <div class="bulletin-item">
 <p class="date-line">📅 1.3.</p>
 <h3>Foreign minister hails "window for long-awaited change in the Middle East"</h3>
 <p>Finnish FM meets EU and Moroccan leaders amid Iran crisis</p>
@@ -386,14 +467,14 @@
 <a href="https://www.kauppalehti.fi/uutiset/a/09be47de-edbc-4cb0-9e5f-42c8138a2aec">Read more</a>
 </div>
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Science -->
-            <div class="card">
-                <h2>Science & Space</h2>
-                <div id="science-bulletin">
-                    <div class="bulletin-item">
+                <!-- Science -->
+                <div class="card">
+                    <h2>Science & Space</h2>
+                    <div id="science-bulletin">
+                        <div class="bulletin-item">
 <p class="date-line">📅 27 Feb 2026</p>
 <h3>NASA Adds Mission to Artemis Lunar Program, Updates Architecture</h3>
 <p>NASA accelerates Moon mission cadence, adds 2027 test flight</p>
@@ -442,16 +523,16 @@
 <a href="https://science.nasa.gov/blogs/science-news/2026/02/24/nasas-pace-satellite-provides-new-pollution-measuring-product/">Read more</a>
 </div>
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Security & CVE side by side -->
-            <div class="side-by-side">
-                <!-- Security -->
-                <div class="card">
-                    <h2>Security</h2>
-                    <div id="security-bulletin">
-                        <div class="bulletin-item">
+                <!-- Security & CVE side by side -->
+                <div class="side-by-side">
+                    <!-- Security -->
+                    <div class="card">
+                        <h2>Security</h2>
+                        <div id="security-bulletin">
+                            <div class="bulletin-item">
 <p class="date-line">📅 Mar 01, 2026</p>
 <h3>ClawJacked attack let malicious websites hijack OpenClaw to steal data</h3>
 <p>Malicious sites brute-force local AI gateway</p>
@@ -500,14 +581,14 @@
 <a href="https://windowsnews.ai/article/vim-netrw-command-injection-vulnerability-cve-2026-28417-critical-security-fix-in-vim-920073.403617">Read more</a>
 </div>
 
+                        </div>
                     </div>
-                </div>
 
-                <!-- CVE Bulletin -->
-                <div class="card">
-                    <h2>CVE Bulletin</h2>
-                    <div id="cve-bulletin">
-                        <div class="bulletin-item">
+                    <!-- CVE Bulletin -->
+                    <div class="card">
+                        <h2>CVE Bulletin</h2>
+                        <div id="cve-bulletin">
+                            <div class="bulletin-item">
 <p class="cve-id">CVE-2026-21902</p>
 <h3>Juniper PTX Routers Junos OS Evolved Root RCE</h3>
 <p>Juniper PTX routers unauthenticated root code execution vulnerability</p>
@@ -556,40 +637,15 @@
 <a href="https://db.gcve.eu/cve/CVE-2026-20127">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20127">OpenCVE</a>
 </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Bunny -->
-            <div class="card">
-                <h2>Bunny of the Day</h2>
-                <div id="bunny">
-                    <img src="https://i.redd.it/dcvhgb89pfmg1.jpeg" alt="Bunny">
-                </div>
-                <p style="margin-top:8px;"><a href="https://reddit.com/r/Rabbits/comments/1rhx334/crying_at_the_size_difference_between_their_ears/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
-            </div>
-
-            <!-- xkcd -->
-            <div class="card">
-                <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
-                <div id="xkcd">
-                    <img src="https://imgs.xkcd.com/comics/synonym_movies.png" alt="Xkcd">
-                </div>
-            </div>
-
-            <!-- Fingerpori -->
-            <div class="card">
-                <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
-                <div id="fingerpori">
-                    <img src="https://media.mas.to/media_attachments/files/116/158/289/259/286/951/original/6fb47b0c121ce4e7.jpeg" alt="Fingerpori">
-                </div>
-            </div>
-
-            <!-- Self-Host Weekly -->
-            <div class="card">
-                <h2>Self-Host Weekly</h2>
-                <div id="selfhst-bulletin">
-                    <div class="bulletin-item">
+                <!-- Self-Host Weekly -->
+                <div class="card">
+                    <h2>Self-Host Weekly</h2>
+                    <div id="selfhst-bulletin">
+                        <div class="bulletin-item">
 <p class="date-line">27 February 2026</p>
 <h3>Self-Host Weekly</h3>
 <p>Peek-aboo, the (un)usefulness of AGENTS.md, and Windows Phone (finally) gets some love</p>
@@ -606,15 +662,17 @@
 <a href="https://selfh.st/weekly/2026-02-27/">Read on selfh.st</a>
 </div>
 
+                    </div>
                 </div>
-            </div>
-
-            <!-- Weather -->
-            <div class="card full-width">
-                <h2>Weather - Finland</h2>
-                <div id="weather" class="weather-grid">
-                    <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" style="color:#00d9ff;text-decoration:none;">Helsinki</a> <span class="time">@ 12.31</span></h3>
+            </main>
+        </div>
+        
+        <!-- Weather (full width below) -->
+        <div class="card full-width" style="margin-top:20px;">
+            <h2>Weather - Finland</h2>
+            <div id="weather" class="weather-grid">
+                <div class="city-weather">
+            <h3><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" style="color:#00d9ff;text-decoration:none;">Helsinki</a> <span class="time">@ 12.36</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -638,7 +696,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">3°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" style="color:#00d9ff;text-decoration:none;">Tampere</a> <span class="time">@ 12.31</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" style="color:#00d9ff;text-decoration:none;">Tampere</a> <span class="time">@ 12.36</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -662,7 +720,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">6°</span><span class="f-temp foreca">5°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/turku/633679/" target="_blank" style="color:#00d9ff;text-decoration:none;">Turku</a> <span class="time">@ 12.31</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/turku/633679/" target="_blank" style="color:#00d9ff;text-decoration:none;">Turku</a> <span class="time">@ 12.36</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -686,7 +744,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">6°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">8°</span><span class="f-temp foreca">7°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">7°</span><span class="f-temp foreca">6°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" style="color:#00d9ff;text-decoration:none;">Oulu</a> <span class="time">@ 12.31</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" style="color:#00d9ff;text-decoration:none;">Oulu</a> <span class="time">@ 12.36</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -707,10 +765,10 @@
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-4°</span><span class="f-temp foreca">-6°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">0°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">2°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-5°</span><span class="f-temp foreca">-6°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">0°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">2°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" style="color:#00d9ff;text-decoration:none;">Rovaniemi</a> <span class="time">@ 12.31</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" style="color:#00d9ff;text-decoration:none;">Rovaniemi</a> <span class="time">@ 12.36</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -731,13 +789,12 @@
                 <span class="provider-label fmi">Ilmatieteen laitos</span>
                 <span class="provider-label foreca">Foreca</span>
             </div>
-            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-5°</span><span class="f-temp foreca">-5°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">-2°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">-1°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">3°</span></div></div>
+            <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-6°</span><span class="f-temp foreca">-5°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">-2°</span><span class="f-temp foreca">-2°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">-1°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">3°</span></div></div>
         </div>
-                </div>
             </div>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-02 12:31 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-02 12:36 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
