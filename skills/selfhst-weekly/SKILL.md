@@ -19,6 +19,7 @@ Fetch the latest selfh.st weekly edition and extract up to 10 self-hosted projec
 - **ONLY report projects and links that are literally present in the fetched page.** Do not add, invent, or extrapolate any project names, descriptions, or URLs from your training data.
 - **Every project MUST include its URL.** If you cannot find the URL for a project on the page, skip it.
 - If you cannot find 10 projects on the page, list however many you find — do not pad with invented ones.
+- **Verify every project URL works** before including it — fetch it with `web_fetch` and confirm it returns actual content, not a 404 or homepage redirect. Drop any project whose link is broken. **User rule:** "When putting links to the dashboard or any bulletin, make sure they work and return what they promise."
 - Do not include general news, drama, opinion pieces, YouTube videos, or non-software links. Projects and tools only.
 
 ## Steps

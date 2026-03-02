@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #eee;
+            padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { 
+            text-align: center; 
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .card h2 {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .bulletin-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .bulletin-item h3 {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #00d9ff;
+        }
+        .bulletin-item .date-line {
+            font-size: 0.85em;
+            color: #ffcc00;
+            margin-bottom: 5px;
+        }
+        .bulletin-item p {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+        .bulletin-item a {
+            color: #00ff88;
+            font-size: 0.85em;
+        }
+        .bulletin-item .cve-id {
+            font-family: monospace;
+            color: #ff6b6b;
+            font-size: 0.85em;
+            margin-bottom: 3px;
+        }
+        .full-width { grid-column: 1 / -1; }
+        .timestamp {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.8em;
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        @media (max-width: 600px) {
+            .weather-grid { grid-template-columns: 1fr; }
+        }
+        .city-weather {
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            padding: 15px;
+        }
+        .city-weather h3 {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #00d9ff;
+        }
+        .city-weather .current {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 12px;
+        }
+        .city-weather .temp {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+        @media (min-width: 1400px) {
+            .city-weather .temp {
+                font-size: 2em;
+            }
+        }
+        .city-weather .desc {
+            color: #ccc;
+            font-size: 0.95em;
+        }
+        .city-weather .details {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .city-weather .forecast {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .forecast-day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+            flex: 1;
+        }
+        .forecast-day .f-date { font-size: 0.75em; color: #999; }
+        .forecast-day .f-temp { font-size: 0.8em; }
+        .forecast-day .f-temp.fmi { color: #00d9ff; }
+        .forecast-day .f-temp.foreca { color: #ffcc00; }
+        @media (min-width: 1400px) {
+            .forecast-day .f-date { font-size: 0.9em; }
+            .forecast-day .f-temp { font-size: 0.95em; }
+        }
+        .city-weather .time { font-size: 0.7em; color: #666; font-weight: normal; }
+        .city-weather .temp-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .city-weather .provider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+        }
+        .city-weather .provider-name {
+            font-size: 0.75em;
+            color: #666;
+        }
+        @media (min-width: 1400px) {
+            .city-weather .provider-name {
+                font-size: 0.9em;
+            }
+        }
+        .city-weather .provider.fmi .temp { color: #00d9ff; }
+        .city-weather .provider.foreca .temp { color: #ffcc00; }
+        .city-weather .feels {
+            font-size: 0.8em;
+            color: #888;
+        }
+        @media (min-width: 1400px) {
+            .city-weather .feels {
+                font-size: 0.95em;
+            }
+        }
+        .forecast-header {
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.7em;
+            color: #666;
+            margin-bottom: 5px;
+            padding-left: 40px;
+        }
+        @media (min-width: 1400px) {
+            .forecast-header {
+                font-size: 0.85em;
+            }
+        }
+        .forecast-header .provider-label.fmi { color: #00d9ff; }
+        .forecast-header .provider-label.foreca { color: #ffcc00; }
+        .hourly-forecast {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(0,0,0,0.15);
+            border-radius: 8px;
+        }
+        .forecast-subheader {
+            width: 100%;
+            font-size: 0.75em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        .forecast-hour {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            flex: 1;
+            min-width: 50px;
+        }
+        .forecast-hour .h-time {
+            font-size: 0.75em;
+            color: #aaa;
+            text-decoration: none;
+        }
+        .forecast-hour .h-time:hover {
+            color: #00d9ff;
+        }
+        .forecast-hour .h-temp {
+            font-size: 0.85em;
+        }
+        .forecast-hour .h-temp.fmi { color: #00d9ff; }
+        .forecast-hour .h-temp.foreca { color: #ffcc00; }
+        @media (min-width: 1400px) {
+            .forecast-hour .h-temp {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Dashboard</h1>
+        
+        <div class="grid">
+            <!-- Finnish News -->
+            <div class="card">
+                <h2>Finnish News</h2>
+                <div id="finnish-bulletin">
+                    {{FINNISH_BULLETIN}}
+                </div>
+            </div>
+
+            <!-- Science -->
+            <div class="card">
+                <h2>Science & Space</h2>
+                <div id="science-bulletin">
+                    {{SCIENCE_BULLETIN}}
+                </div>
+            </div>
+
+            <!-- Security -->
+            <div class="card">
+                <h2>Security</h2>
+                <div id="security-bulletin">
+                    {{SECURITY_BULLETIN}}
+                </div>
+            </div>
+
+            <!-- Bunny -->
+            <div class="card">
+                <h2>Bunny of the Day</h2>
+                <div id="bunny">
+                    {{BUNNY_URL}}
+                </div>
+                <p style="margin-top:8px;">{{BUNNY_REDDIT}}</p>
+            </div>
+
+            <!-- xkcd -->
+            <div class="card">
+                <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
+                <div id="xkcd">
+                    {{XKCD_URL}}
+                </div>
+            </div>
+
+            <!-- Fingerpori -->
+            <div class="card">
+                <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
+                <div id="fingerpori">
+                    {{FINGERPORI_URL}}
+                </div>
+            </div>
+
+            <!-- Smiley -->
+            <div class="card">
+                <h2>Daily Smiley</h2>
+                <pre style="font-size:1.2em;text-align:center;color:#00ff88;white-space:pre-wrap;">{{SMILEY}}</pre>
+            </div>
+
+            <!-- CVE Bulletin -->
+            <div class="card">
+                <h2>CVE Bulletin</h2>
+                <div id="cve-bulletin">
+                    {{CVE_BULLETIN}}
+                </div>
+            </div>
+
+            <!-- Self-Host Weekly -->
+            <div class="card">
+                <h2>Self-Host Weekly</h2>
+                <div id="selfhst-bulletin">
+                    {{SELFHST_BULLETIN}}
+                </div>
+            </div>
+
+            <!-- Weather -->
+            <div class="card full-width">
+                <h2>Weather - Finland</h2>
+                <div id="weather" class="weather-grid">
+                    {{WEATHER}}
+                </div>
+            </div>
+        </div>
+        
+        <p class="timestamp">Last updated: {{TIMESTAMP}} (Europe/Helsinki, {{UTC_OFFSET}})</p>
+        <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
+            Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
+        </p>
+    </div>
+</body>
+</html>

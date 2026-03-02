@@ -1,0 +1,48 @@
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Asuntolaina-aika pitenee 35 vuoteen – OP ja Handelsbanken valmiita pidempiin lainoihin</h3>
+<p>Pankit joustavat asuntolainojen maksuajoissa</p>
+<a href="https://yle.fi/a/74-20128103">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Naloksoni pelastaa henkiä, mutta Suomi epäröi – katso mitä se on</h3>
+<p>Yliannostuslääkkeen saatavuus herättää keskustelua</p>
+<a href="https://yle.fi/a/74-20128127">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Solar Foodsin tuote juuttui vuosiksi EU:n hyväksyntään</h3>
+<p>Suomalainen innovaatio odotti markkinoille pääsyä</p>
+<a href="https://www.iltalehti.fi/talous/a/256256c8-d7de-4b92-8cc1-5d4d8c56e7f1">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Kaupoissa myydään laitonta tuotetta: nikotiinipussit eivät ole sallittuja</h3>
+<p>Tupakkalaki kieltää nikotiinipussien myynnin</p>
+<a href="https://www.iltalehti.fi/kotimaa/a/2025030100010">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Helsinki päätti vähentää liharuokia kouluissa</h3>
+<p>Kasvisruuan osuutta lisätään kouluruokailussa</p>
+<a href="https://www.is.fi/kotimaa/art-2000010666978.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>UMK-voittaja edustaa Suomea Euroviisuissa</h3>
+<p>Suomen euroviisuedustaja on valittu</p>
+<a href="https://www.is.fi/musiikki/art-2000010666980.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Rajavartiolaitos aloitti uuden yhteistyön Viron kanssa</h3>
+<p>Merirajavalvonta tiivistyy naapurimaan kanssa</p>
+<a href="https://www.hs.fi/suomi/art-2000011840179.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 1.3.2026</p>
+<h3>Koiran kiinnipitovelvoite alkaa tänään – luonto kiittää</h3>
+<p>Vapaana juoksevat koirat uhkaavat villieläimiä</p>
+<a href="https://www.iltalehti.fi/kotimaa/a/2025030100009">Read more</a>
+</div>

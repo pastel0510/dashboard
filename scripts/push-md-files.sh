@@ -19,4 +19,4 @@ git add *.md memory/*.md 2>/dev/null || true
 git commit -m "Auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
 
 # Push
-git push origin main || git push origin master
+git push origin master

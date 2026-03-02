@@ -1,0 +1,55 @@
+<div class="bulletin-item">
+<p class="date-line">📅 February 28, 2026</p>
+<h3>Interstellar Comet 3I/ATLAS captured speeding through the solar system by Jupiter-bound spacecraft</h3>
+<p>Rare interstellar visitor photographed by ESA's JUICE mission.</p>
+<a href="https://www.scientificamerican.com/article/interstellar-comet-3i-atlas-captured-speeding-through-the-solar-system-by/">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 26, 2026</p>
+<h3>Neanderthal dad, human mum: study reveals ancient procreation pattern</h3>
+<p>Genetic analysis shows male Neanderthals mated with female humans more often.</p>
+<a href="https://www.nature.com/articles/d41586-026-00583-z">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 25, 2026</p>
+<h3>Brains of 'super agers' are strong producers of new neurons</h3>
+<p>Super agers over 80 have more immature neurons than those with Alzheimer's.</p>
+<a href="https://www.nature.com/articles/d41586-026-00599-5">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 26, 2026</p>
+<h3>Ultra-sensitive CAR T cells eliminate hard-to-treat tumours in mice</h3>
+<p>Engineered immune cells target previously unseen cancer antigens.</p>
+<a href="https://www.nature.com/articles/d41586-026-00622-9">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 26, 2026</p>
+<h3>World-first stem-cell therapy shows promise for treating spina bifida in the womb</h3>
+<p>Placenta-derived stem cells applied to fetal spinal cords reverse complications.</p>
+<a href="https://www.nature.com/articles/d41586-026-00602-z">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 27, 2026</p>
+<h3>Galápagos tortoise once believed extinct is now roaming free</h3>
+<p>158 Floreana giant tortoises released after 180-year absence from island.</p>
+<a href="https://www.scientificamerican.com/article/galapagos-tortoise-once-believed-extinct-is-now-roaming-free/">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 27, 2026</p>
+<h3>This weekend, six worlds will align in a rare 'planetary parade'</h3>
+<p>Mercury, Venus, Jupiter, Saturn, Uranus and Neptune align in celestial display.</p>
+<a href="https://www.scientificamerican.com/article/how-to-watch-the-planetary-parade-of-2026/">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 February 28, 2026</p>
+<h3>Male Neanderthals and female humans likely interbred more often than the other way around</h3>
+<p>Study reveals prehistoric mating patterns shaped modern human genomes.</p>
+<a href="https://www.scientificamerican.com/article/male-neanderthals-and-human-females-likely-interbred-more-often-than-the/">Read more</a>
+</div>

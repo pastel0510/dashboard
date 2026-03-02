@@ -1,27 +1,29 @@
 {
-  "lastChecked": "2026-02-25T10:00:00Z",
+  "lastChecked": "2026-03-01T10:00:00Z",
   "trackedModels": {
-    "primary": "kilocode/z-ai/glm-5:free",
+    "primary": "kilocode/minimax/minimax-m2.5:free",
     "fallbacks": [
-      "opencode-zen/glm-5-free",
-      "nvidia/meta/llama-3.3-70b-instruct",
-      "opencode-zen/minimax-m2.5-free",
-      "kilocode/minimax/minimax-m2.5:free",
-      "opencode-zen/kimi-k2.5-free"
+      "stepfun/step-3.5-flash:free",
+      "meta-llama/llama-3.3-70b-instruct:free"
+    ],
+    "dead": [
+      "kilocode/z-ai/glm-5:free",
+      "opencode-zen/*"
     ]
   },
   "providers": {
     "opencode-zen": {
       "baseUrl": "https://opencode.ai/zen/v1",
-      "models": ["glm-5-free", "minimax-m2.5-free", "kimi-k2.5-free", "trinity-large-preview-free"]
+      "models": [],
+      "note": "Cloudflare blocked - all models dead"
     },
     "kilocode": {
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "models": ["stepfun/step-3.5-flash:free", "minimax/minimax-m2.5:free", "z-ai/glm-5:free"]
+      "models": ["stepfun/step-3.5-flash:free", "minimax/minimax-m2.5:free"]
     },
     "nvidia": {
       "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "models": ["meta/llama-3.3-70b-instruct", "nvidia/llama-3.3-nemotron-super-49b-v1"]
+      "models": ["meta/llama-3.3-70b-instruct"]
     },
     "openrouter": {
       "baseUrl": "https://openrouter.ai/api/v1",
@@ -31,13 +33,15 @@
         "meta-llama/llama-3.3-70b-instruct:free",
         "openai/gpt-oss-120b:free",
         "qwen/qwen3-235b-a22b-thinking-2507",
-        "qwen/qwen3-next-80b-a3b-instruct:free"
+        "qwen/qwen3-next-80b-a3b-instruct:free",
+        "openrouter/free"
       ]
     }
   },
   "knownFreeModels": [
     "arcee-ai/trinity-large-preview:free",
     "arcee-ai/trinity-mini:free",
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "google/gemma-3-27b-it:free",
     "google/gemma-3-12b-it:free",
     "google/gemma-3-4b-it:free",
@@ -54,6 +58,8 @@
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
+    "openrouter/free",
+    "qwen/qwen3-4b:free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
     "qwen/qwen3-235b-a22b-thinking-2507",
@@ -61,11 +67,17 @@
     "qwen/qwen3-vl-30b-a3b-thinking",
     "stepfun/step-3.5-flash:free",
     "upstage/solar-pro-3:free",
-    "z-ai/glm-4.5-air:free",
-    "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-    "qwen/qwen3-4b:free"
+    "z-ai/glm-4.5-air:free"
   ],
   "watchlist": [
+    {
+      "id": "openrouter/free",
+      "name": "OpenRouter Free",
+      "context": 200000,
+      "provider": "openrouter",
+      "added": "2026-03-01",
+      "note": "200k context - new free tier model"
+    },
     {
       "id": "qwen/qwen3-coder:free",
       "name": "Qwen3 Coder 480B A35B",
@@ -96,13 +108,17 @@
       "context": 128000,
       "provider": "openrouter",
       "added": "2026-02-22",
-      "note": "Same as NVIDIA fallback but now free on OpenRouter too"
+      "note": "Now free on OpenRouter - use instead of NVIDIA"
     }
   ],
   "changes": {
-    "2026-02-25": {
-      "deprecated": ["deepseek/deepseek-r1-0528:free"],
-      "note": "deepseek-r1-0528:free no longer on OpenRouter free tier (not a tracked model)"
+    "2026-02-28": {
+      "deprecated": ["kilocode/minimax/minimax-m2.5:free"],
+      "note": "Primary model no longer free on OpenRouter"
+    },
+    "2026-03-01": {
+      "new": ["openrouter/free"],
+      "note": "New OpenRouter free tier model with 200k context"
     }
   }
 }

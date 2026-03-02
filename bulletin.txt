@@ -1,0 +1,37 @@
+🔐 Security Bulletin — Sun, 01 Mar 2026 (last 24 h)
+
+📅 28 Feb 2026 • Title: ClawJacked Flaw Lets Malicious Sites Hijack Local OpenClaw AI Agents via WebSocket
+Summary: WebSocket flaw allows website hijacking of local AI agents
+Link: https://thehackernews.com/2026/02/clawjacked-flaw-lets-malicious-sites.html
+
+📅 28 Feb 2026 • Title: Thousands of Public Google Cloud API Keys Exposed with Gemini Access After API Enablement
+Summary: Google API keys accidentally grant unauthorized Gemini LLM access
+Link: https://thehackernews.com/2026/02/thousands-of-public-google-cloud-api.html
+
+📅 28 Feb 2026 • Title: Critical Cisco SD-WAN bug exploited in zero-day attacks since 2023
+Summary: Authentication bypass allows rogue peers in SD-WAN networks
+Link: https://www.bleepingcomputer.com/news/security/critical-cisco-sd-wan-bug-exploited-in-zero-day-attacks-since-2023/
+TLDR: CVE-2026-20127 enables authentication bypass to compromise SD-WAN controllers with maximum severity
+
+📅 28 Feb 2026 • Title: Chinese hackers exploiting Dell zero-day flaw since mid-2024
+Summary: Hardcoded credentials give root access to Dell backup systems
+Link: https://www.bleepingcomputer.com/news/security/chinese-hackers-exploiting-dell-zero-day-flaw-since-mid-2024/
+
+📅 27 Feb 2026 • Title: Marquis sues SonicWall over backup breach that led to ransomware attack
+Summary: Cloud backup API flaw exposed 74 U.S. banks to ransomware
+Link: https://www.bleepingcomputer.com/news/security/marquis-sues-sonicwall-over-backup-breach-that-led-to-ransomware-attack/
+
+📅 26 Feb 2026 • Title: QuickLens Chrome extension steals crypto, shows ClickFix attack
+Summary: Compromised extension pushed malware to cryptocurrency users
+Link: https://www.bleepingcomputer.com/news/security/quicklens-chrome-extension-steals-crypto-shows-clickfix-attack/
+
+📅 26 Feb 2026 • Title: CISA releases details about RESURGE malware used in Ivanti zero-day attacks
+Summary: RESURGE implant breaches Ivanti Connect Secure via CVE-2025-0282
+Link: https://www.bleepingcomputer.com/news/security/cisa-releases-details-about-resurge-malware-used-in-ivanti-zero-day-attacks/
+
+📅 17 Feb 2026 • Title: Google Chromium CSS Use-After-Free Vulnerability
+Summary: CSS bug in Chromium enables heap corruption via HTML pages
+Link: https://db.gcve.eu/vuln/CVE-2026-2441
+TLDR: CVE-2026-2441 is a use-after-free vulnerability in Google Chromium CSS affecting Chrome, Edge, and Opera
+
+Sources: BleepingComputer · The Hacker News · Dark Web Informer · Kevin Beaumont
