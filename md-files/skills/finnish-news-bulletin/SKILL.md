@@ -73,9 +73,9 @@ RSS feeds are XML. Extract `<item>` elements with `<title>`, `<link>`, `<pubDate
 ### 2. Verify Article Links (CRITICAL)
 
 **Before including any article URL in the bulletin, you MUST verify it works:**
-- Fetch the article URL using `web_fetch` to confirm it returns actual content
+- Fetch the article URL using `web_fetch` or `curl -I` to check for 404 errors
 - **Do NOT use placeholder URLs or assume URL patterns** (e.g., don't guess `art-2000010666975.html`)
-- If a link returns 404 or redirects to a homepage, drop the story — do NOT search for an alternative URL
+- If a link returns 404, search for the correct URL or exclude the story
 - Links must return actual article content, not error pages
 
 **User instruction:** "When putting links to the dashboard or any bulletin. Make sure that they work and return what they promise."
