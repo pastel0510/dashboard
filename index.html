@@ -349,6 +349,51 @@
                 font-size: 1em;
             }
         }
+        
+        /* Lightbox styles */
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-overlay.active {
+            display: flex;
+        }
+        .lightbox-overlay img {
+            max-width: 95%;
+            max-height: 95%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2em;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .lightbox-close:hover {
+            opacity: 1;
+        }
+        .lightbox-trigger img {
+            cursor: zoom-in;
+            transition: transform 0.2s;
+        }
+        .lightbox-trigger img:hover {
+            transform: scale(1.02);
+        }
     </style>
 </head>
 <body>
@@ -384,12 +429,20 @@
         
         <!-- Main layout with left sidebar -->
         <div class="main-layout">
-            <!-- Left sidebar: Bunny, xkcd, Fingerpori -->
+            <!-- Left sidebar: Fingerpori, Bunny, xkcd -->
             <aside class="sidebar">
+                <!-- Fingerpori -->
+                <div class="card">
+                    <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
+                    <div id="fingerpori" class="lightbox-trigger">
+                        <img src="https://media.mas.to/media_attachments/files/116/158/289/259/286/951/original/6fb47b0c121ce4e7.jpeg" alt="Fingerpori">
+                    </div>
+                </div>
+
                 <!-- Bunny -->
                 <div class="card">
                     <h2>Bunny of the Day</h2>
-                    <div id="bunny">
+                    <div id="bunny" class="lightbox-trigger">
                         <img src="https://i.redd.it/dcvhgb89pfmg1.jpeg" alt="Bunny">
                     </div>
                     <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/Rabbits/comments/1rhx334/crying_at_the_size_difference_between_their_ears/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
@@ -398,16 +451,8 @@
                 <!-- xkcd -->
                 <div class="card">
                     <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
-                    <div id="xkcd">
+                    <div id="xkcd" class="lightbox-trigger">
                         <img src="https://imgs.xkcd.com/comics/synonym_movies.png" alt="Xkcd">
-                    </div>
-                </div>
-
-                <!-- Fingerpori -->
-                <div class="card">
-                    <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
-                    <div id="fingerpori">
-                        <img src="https://media.mas.to/media_attachments/files/116/158/289/259/286/951/original/6fb47b0c121ce4e7.jpeg" alt="Fingerpori">
                     </div>
                 </div>
             </aside>
@@ -675,7 +720,7 @@
             <h2>Weather - Finland</h2>
             <div id="weather" class="weather-grid">
                 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" style="color:#00d9ff;text-decoration:none;">Helsinki</a> <span class="time">@ 12.39</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/helsinki/helsinki%20keskusta/-10019448/" target="_blank" style="color:#00d9ff;text-decoration:none;">Helsinki</a> <span class="time">@ 12.41</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -699,7 +744,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">3°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" style="color:#00d9ff;text-decoration:none;">Tampere</a> <span class="time">@ 12.39</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/tampere/634963/" target="_blank" style="color:#00d9ff;text-decoration:none;">Tampere</a> <span class="time">@ 12.41</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -723,7 +768,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">4°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">6°</span><span class="f-temp foreca">5°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/turku/633679/" target="_blank" style="color:#00d9ff;text-decoration:none;">Turku</a> <span class="time">@ 12.39</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/turku/633679/" target="_blank" style="color:#00d9ff;text-decoration:none;">Turku</a> <span class="time">@ 12.41</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -747,7 +792,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">3°</span><span class="f-temp foreca">3°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">5°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">5°</span><span class="f-temp foreca">6°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">8°</span><span class="f-temp foreca">7°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">7°</span><span class="f-temp foreca">6°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" style="color:#00d9ff;text-decoration:none;">Oulu</a> <span class="time">@ 12.39</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/oulu/643492/" target="_blank" style="color:#00d9ff;text-decoration:none;">Oulu</a> <span class="time">@ 12.41</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -771,7 +816,7 @@
             <div class="forecast"><div class="forecast-day"><span class="f-date">Mon 02.03.</span><span class="f-temp fmi">-5°</span><span class="f-temp foreca">-6°</span></div><div class="forecast-day"><span class="f-date">Tue 03.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">1°</span></div><div class="forecast-day"><span class="f-date">Wed 04.03.</span><span class="f-temp fmi">0°</span><span class="f-temp foreca">2°</span></div><div class="forecast-day"><span class="f-date">Thu 05.03.</span><span class="f-temp fmi">2°</span><span class="f-temp foreca">0°</span></div><div class="forecast-day"><span class="f-date">Fri 06.03.</span><span class="f-temp fmi">4°</span><span class="f-temp foreca">2°</span></div></div>
         </div>
 <div class="city-weather">
-            <h3><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" style="color:#00d9ff;text-decoration:none;">Rovaniemi</a> <span class="time">@ 12.39</span></h3>
+            <h3><a href="https://www.is.fi/supersaa/suomi/rovaniemi/638936/" target="_blank" style="color:#00d9ff;text-decoration:none;">Rovaniemi</a> <span class="time">@ 12.41</span></h3>
             <div class="current">
                 <div class="temp-row">
                     <div class="provider fmi">
@@ -797,10 +842,48 @@
             </div>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-02 12:39 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-02 12:41 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
     </div>
+    
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Fullscreen">
+    </div>
+    
+    <script>
+        // Lightbox functionality
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Add click handlers to sidebar images
+        document.addEventListener('DOMContentLoaded', function() {
+            const triggers = document.querySelectorAll('.lightbox-trigger img');
+            triggers.forEach(function(img) {
+                img.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openLightbox(this.src);
+                });
+            });
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
