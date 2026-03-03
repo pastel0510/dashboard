@@ -13,3 +13,7 @@ Images currently used:
 - **Fingerpori**: Mastodon media attachment URL from `fingerpori.url`
 
 Source: User instruction (Shadow), 2026-03-01
+
+## Daily Reflections
+
+**March 3, 2026** — Added weather widgets displaying current temperatures for multiple cities to the dashboard, alongside relocating the smiley indicator to the top-right corner. The fetch-latest.sh script already contained {{CITY_TEMP}} placeholder logic; running it populated the live temperature data and completed the layout adjustments successfully.

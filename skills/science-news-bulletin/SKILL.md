@@ -73,7 +73,7 @@ Discard stories outside the time window. If fewer than `count` qualifying storie
 
 **Before including any URL in the bulletin, verify it works:**
 - Fetch each article URL using `web_fetch` to confirm it returns actual content
-- If a URL returns 404 or redirects to a homepage, find the correct URL or drop the story
+- If a URL returns 404 or redirects to a homepage, drop the story — do NOT search for an alternative URL
 - **Do NOT assume URL patterns** or use placeholder URLs
 - Links must return the actual article, not an error page or unrelated content
 
