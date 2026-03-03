@@ -50,8 +50,25 @@ if os.path.exists(weather_file):
     with open(weather_file) as f:
         weather_content = f.read()
     html = html.replace('{{WEATHER}}', weather_content)
+    
+    # Extract current temps for top widgets (use FMI/Ilmatieteen laitos temps)
+    import re
+    cities = ['Helsinki', 'Tampere', 'Turku', 'Oulu', 'Rovaniemi']
+    for city in cities:
+        # Find the city section and extract FMI temp
+        city_pattern = rf'<h3>.*?{city}.*?</h3>.*?<div class="provider fmi">.*?<span class="temp">([^<]+)</span>'
+        match = re.search(city_pattern, weather_content, re.DOTALL | re.IGNORECASE)
+        placeholder = '{{' + city.upper() + '_TEMP}}'
+        if match:
+            temp = match.group(1).strip()
+            html = html.replace(placeholder, temp)
+        else:
+            html = html.replace(placeholder, '--')
 else:
     html = html.replace('{{WEATHER}}', '<p>Weather data unavailable</p>')
+    for city in ['HELSINKI', 'TAMPERE', 'TURKU', 'OULU', 'ROVANIEMI']:
+        placeholder = '{{' + city + '_TEMP}}'
+        html = html.replace(placeholder, '--')
 
 # Self-Host Weekly HTML
 selfhst_file = os.path.join(data_dir, 'selfhst.html')
@@ -108,6 +125,26 @@ html = html.replace('{{UTC_OFFSET}}', offset_str)
 with open('/tmp/dashboard/index.html', 'w') as f:
     f.write(html)
 print('Built index.html')
+
+# Build weather.html from template
+with open(os.path.join(data_dir, 'weather-template.html')) as f:
+    weather_html = f.read()
+
+# Use the same weather content
+if os.path.exists(weather_file):
+    with open(weather_file) as f:
+        weather_content = f.read()
+    weather_html = weather_html.replace('{{WEATHER}}', weather_content)
+else:
+    weather_html = weather_html.replace('{{WEATHER}}', '<p>Weather data unavailable</p>')
+
+# Update timestamp in weather page too
+weather_html = weather_html.replace('{{TIMESTAMP}}', timestamp)
+weather_html = weather_html.replace('{{UTC_OFFSET}}', offset_str)
+
+with open('/tmp/dashboard/weather.html', 'w') as f:
+    f.write(weather_html)
+print('Built weather.html')
 EOF
 
 # Commit and push

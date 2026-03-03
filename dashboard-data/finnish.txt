@@ -1,48 +1,48 @@
 <div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Asuntolaina-aika pitenee 35 vuoteen – OP ja Handelsbanken valmiita pidempiin lainoihin</h3>
-<p>Pankit joustavat asuntolainojen maksuajoissa</p>
-<a href="https://yle.fi/a/74-20128103">Read more</a>
+<p class="date-line">📅 2.3.2026</p>
+<h3>Finland allows 35-year mortgages, as government aims to boost growth</h3>
+<p>Government extends loan cap to 35 years</p>
+<a href="https://yle.fi/a/74-20213105">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2.3.2026</p>
+<h3>"All of us are happy" — Iranians in Finland celebrate Khamenei's death</h3>
+<p>Finnish Iranians see hope for change after leader's death</p>
+<a href="https://yle.fi/a/74-20213136">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2.3.2026</p>
+<h3>Finland to stop accepting non-biometric Russian passports in June</h3>
+<p>New restrictions target Russian passport holders</p>
+<a href="https://yle.fi/a/74-20213214">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2.3.2026</p>
+<h3>Finnish journalist-artist suspected of attempted kidnapping in Spain</h3>
+<p>45-year-old Finn allegedly tried to abduct child at market</p>
+<a href="https://yle.fi/a/74-20213055">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2.3.2026</p>
+<h3>Suomalaisen politiikan nykyistä taakanjakoa on muutettava</h3>
+<p>Column argues for fairer distribution of fiscal burden</p>
+<a href="https://www.hs.fi/paakirjoitukset/art-2000011852951.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2.3.2026</p>
+<h3>Pitkä sota kävisi Trumpille kalliiksi</h3>
+<p>Editorial warns of economic costs from prolonged Iran conflict</p>
+<a href="https://www.hs.fi/paakirjoitukset/art-2000011852725.html">Read more</a>
 </div>
 <div class="bulletin-item">
 <p class="date-line">📅 1.3.2026</p>
-<h3>Naloksoni pelastaa henkiä, mutta Suomi epäröi – katso mitä se on</h3>
-<p>Yliannostuslääkkeen saatavuus herättää keskustelua</p>
-<a href="https://yle.fi/a/74-20128127">Read more</a>
+<h3>Salainen tieto Kremlistä: Putin suunnittelee ennennäkemätöntä takinkääntöä</h3>
+<p>Russia reportedly considering return to dollar system</p>
+<a href="https://www.kauppalehti.fi/uutiset/a/aa5ee226-24bd-4452-b82d-4cf3ebf52710">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Solar Foodsin tuote juuttui vuosiksi EU:n hyväksyntään</h3>
-<p>Suomalainen innovaatio odotti markkinoille pääsyä</p>
-<a href="https://www.iltalehti.fi/talous/a/256256c8-d7de-4b92-8cc1-5d4d8c56e7f1">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Kaupoissa myydään laitonta tuotetta: nikotiinipussit eivät ole sallittuja</h3>
-<p>Tupakkalaki kieltää nikotiinipussien myynnin</p>
-<a href="https://www.iltalehti.fi/kotimaa/a/2025030100010">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Helsinki päätti vähentää liharuokia kouluissa</h3>
-<p>Kasvisruuan osuutta lisätään kouluruokailussa</p>
-<a href="https://www.is.fi/kotimaa/art-2000010666978.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>UMK-voittaja edustaa Suomea Euroviisuissa</h3>
-<p>Suomen euroviisuedustaja on valittu</p>
-<a href="https://www.is.fi/musiikki/art-2000010666980.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Rajavartiolaitos aloitti uuden yhteistyön Viron kanssa</h3>
-<p>Merirajavalvonta tiivistyy naapurimaan kanssa</p>
-<a href="https://www.hs.fi/suomi/art-2000011840179.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Koiran kiinnipitovelvoite alkaa tänään – luonto kiittää</h3>
-<p>Vapaana juoksevat koirat uhkaavat villieläimiä</p>
-<a href="https://www.iltalehti.fi/kotimaa/a/2025030100009">Read more</a>
+<p class="date-line">📅 2.3.2026</p>
+<h3>EK:lta visio Suomesta: Irti hyvinvointivaltiosta, Helsinki osaksi "megakaupunkia"</h3>
+<p>Business lobby outlines 2035 vision for Finland</p>
+<a href="https://www.kauppalehti.fi/uutiset/a/8b4bd316-8f52-447c-b186-bade7581d45c">Read more</a>
 </div>
