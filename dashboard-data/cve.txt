@@ -1,48 +1,48 @@
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-22719</p>
+<h3>Broadcom VMware Aria Operations Command Injection Vulnerability</h3>
+<p>Unauthenticated command injection allows arbitrary code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22719">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22719">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-22891</p>
+<h3>libbiosig Intan CLP Parsing Heap Buffer Overflow</h3>
+<p>Heap overflow in Biosig Project allows arbitrary code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22891">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22891">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-24061</p>
+<h3>GNU InetUtils telnetd Authentication Bypass Vulnerability</h3>
+<p>Critical auth bypass allows remote root access via USER variable.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24061">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24061">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-21385</p>
+<h3>Qualcomm Chipsets Memory Corruption Vulnerability</h3>
+<p>Actively exploited Android graphics buffer over-read vulnerability.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21385">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21385">OpenCVE</a>
+</div>
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-20127</p>
-<h3>Cisco SD-WAN authentication bypass allows admin access</h3>
-<p>Cisco SD-WAN authentication bypass vulnerability enables remote admin access.</p>
+<h3>Cisco Catalyst SD-WAN Controller Authentication Bypass</h3>
+<p>CVSS 10.0 auth bypass allows admin access via crafted requests.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20127">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20127">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-2441</p>
-<h3>Chrome CSS use-after-free enables remote code execution</h3>
-<p>Chrome CSS parsing vulnerability allows sandboxed remote code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-2441">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2441">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25108</p>
-<h3>FileZen command injection allows arbitrary OS commands</h3>
-<p>FileZen OS command injection vulnerability enables authenticated command execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25108">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25108">OpenCVE</a>
+<p class="cve-id">CVE-2026-20777</p>
+<h3>libbiosig Nicolet WFT Parsing Heap Buffer Overflow</h3>
+<p>Heap overflow in WFT parsing functionality allows code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20777">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20777">OpenCVE</a>
 </div>
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-22769</p>
-<h3>Dell RecoverPoint hard-coded credentials grant root access</h3>
-<p>Dell RecoverPoint hard-coded credentials enable unauthorized root-level access.</p>
+<h3>Dell RecoverPoint for Virtual Machines Hard-coded Credentials</h3>
+<p>Hard-coded credentials allow unauthenticated root-level access.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-22769">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22769">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-49113</p>
-<h3>RoundCube Webmail deserialization enables authenticated RCE</h3>
-<p>RoundCube deserialization flaw allows remote code execution by authenticated users.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-49113">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-49113">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2025-68461</p>
-<h3>RoundCube Webmail XSS vulnerability via SVG animate tag</h3>
-<p>RoundCube cross-site scripting via SVG document animate tag.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-68461">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-68461">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2021-22175</p>
-<h3>GitLab server-side request forgery in webhooks</h3>
-<p>GitLab SSRF vulnerability when internal webhook requests enabled.</p>
-<a href="https://db.gcve.eu/cve/CVE-2021-22175">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2021-22175">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2020-7796</p>
-<h3>Zimbra SSRF vulnerability with WebEx zimlet enabled</h3>
-<p>Zimbra server-side request forgery when WebEx zimlet installed.</p>
-<a href="https://db.gcve.eu/cve/CVE-2020-7796">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2020-7796">OpenCVE</a>
+<p class="cve-id">CVE-2026-25108</p>
+<h3>Soliton Systems FileZen OS Command Injection Vulnerability</h3>
+<p>Authenticated OS command injection via specially crafted requests.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25108">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25108">OpenCVE</a>
 </div>

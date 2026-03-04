@@ -8,6 +8,7 @@ Uses PRAW (Python Reddit API Wrapper) for proper API access.
 import json
 import time
 import os
+import urllib.request
 from datetime import datetime, timezone
 
 try:
@@ -123,19 +124,34 @@ def main():
     print(f"   Subreddit: r/{top['subreddit']}")
     print(f"   Upvotes: {top['ups']:,}")
     print(f"   URL: {top['url']}")
-    
+
+    # Download image locally so Telegram bot can send it (i.redd.it blocks Telegram's IP)
+    local_path = "/tmp/bunny_today.jpg"
+    try:
+        req = urllib.request.Request(
+            top["url"],
+            headers={"User-Agent": "BunnyOfTheDay/1.0"}
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp, open(local_path, "wb") as f:
+            f.write(resp.read())
+        print(f"   Saved to: {local_path}")
+    except Exception as e:
+        print(f"   Warning: could not download image locally: {e}")
+        local_path = None
+
     # Output JSON for the agent
     result = {
         "image_url": top["url"],
+        "local_path": local_path,
         "title": top["title"],
         "subreddit": top["subreddit"],
         "ups": top["ups"],
         "permalink": top["permalink"]
     }
-    
+
     print("\n---BUNNY_JSON---")
     print(json.dumps(result))
-    
+
     return 0
 
 if __name__ == "__main__":

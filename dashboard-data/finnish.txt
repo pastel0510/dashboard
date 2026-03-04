@@ -1,48 +1,48 @@
 <div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>Finland allows 35-year mortgages, as government aims to boost growth</h3>
-<p>Government extends loan cap to 35 years</p>
-<a href="https://yle.fi/a/74-20213105">Read more</a>
+<p class="date-line">📅 4 March 2026</p>
+<h3>Five killed in Vantaa apartment fire, suspect detained</h3>
+<p>Police suspect deliberate arson in blaze that killed parents and three children</p>
+<a href="https://yle.fi/a/74-20213287">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>"All of us are happy" — Iranians in Finland celebrate Khamenei's death</h3>
-<p>Finnish Iranians see hope for change after leader's death</p>
+<p class="date-line">📅 3 March 2026</p>
+<h3>Iran selects Mojtaba Khamenei as new supreme leader</h3>
+<p>Son of slain leader Ali Khamenei succeeds father amid escalating conflict</p>
+<a href="https://www.hs.fi/maailma/art-2000011849876.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 3 March 2026</p>
+<h3>Iranian drone strike kills six US soldiers in Kuwait</h3>
+<p>Attack on poorly protected command centre marks first American casualties</p>
+<a href="https://www.is.fi/ulkomaat/art-2000011855480.html">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 3 March 2026</p>
+<h3>Workers need 46 days to match one CEO day's pay</h3>
+<p>Income gap between executives and salaried employees continues to widen</p>
+<a href="https://yle.fi/a/74-20213374">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 3 March 2026</p>
+<h3>Supo recruits intelligence officers with Chinese, Russian skills</h3>
+<p>Finnish Security Service seeks creative candidates fluent in key languages</p>
+<a href="https://yle.fi/a/74-20213372">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 3 March 2026</p>
+<h3>Helsinki to halve meat in school lunches by 2030</h3>
+<p>Meat dishes limited to once or twice weekly in environmental initiative</p>
+<a href="https://yle.fi/a/74-20213319">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 3 March 2026</p>
+<h3>Finland's pandemic mortality among lowest in Europe</h3>
+<p>THL reports minor excess deaths thanks to effective restrictions and compliance</p>
+<a href="https://yle.fi/a/74-20213320">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 3 March 2026</p>
+<h3>Iranians in Finland celebrate Khamenei's death</h3>
+<p>Exiled community sees supreme leader's demise as hope for regime change</p>
 <a href="https://yle.fi/a/74-20213136">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>Finland to stop accepting non-biometric Russian passports in June</h3>
-<p>New restrictions target Russian passport holders</p>
-<a href="https://yle.fi/a/74-20213214">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>Finnish journalist-artist suspected of attempted kidnapping in Spain</h3>
-<p>45-year-old Finn allegedly tried to abduct child at market</p>
-<a href="https://yle.fi/a/74-20213055">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>Suomalaisen politiikan nykyistä taakanjakoa on muutettava</h3>
-<p>Column argues for fairer distribution of fiscal burden</p>
-<a href="https://www.hs.fi/paakirjoitukset/art-2000011852951.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>Pitkä sota kävisi Trumpille kalliiksi</h3>
-<p>Editorial warns of economic costs from prolonged Iran conflict</p>
-<a href="https://www.hs.fi/paakirjoitukset/art-2000011852725.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 1.3.2026</p>
-<h3>Salainen tieto Kremlistä: Putin suunnittelee ennennäkemätöntä takinkääntöä</h3>
-<p>Russia reportedly considering return to dollar system</p>
-<a href="https://www.kauppalehti.fi/uutiset/a/aa5ee226-24bd-4452-b82d-4cf3ebf52710">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2.3.2026</p>
-<h3>EK:lta visio Suomesta: Irti hyvinvointivaltiosta, Helsinki osaksi "megakaupunkia"</h3>
-<p>Business lobby outlines 2035 vision for Finland</p>
-<a href="https://www.kauppalehti.fi/uutiset/a/8b4bd316-8f52-447c-b186-bade7581d45c">Read more</a>
 </div>

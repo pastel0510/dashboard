@@ -1,14 +1,15 @@
 {
-  "lastChecked": "2026-03-01T10:00:00Z",
+  "lastChecked": "2026-03-04T10:00:00Z",
   "trackedModels": {
-    "primary": "kilocode/minimax/minimax-m2.5:free",
+    "primary": null,
     "fallbacks": [
       "stepfun/step-3.5-flash:free",
       "meta-llama/llama-3.3-70b-instruct:free"
     ],
     "dead": [
       "kilocode/z-ai/glm-5:free",
-      "opencode-zen/*"
+      "opencode-zen/*",
+      "kilocode/minimax/minimax-m2.5:free"
     ]
   },
   "providers": {
@@ -19,22 +20,27 @@
     },
     "kilocode": {
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "models": ["stepfun/step-3.5-flash:free", "minimax/minimax-m2.5:free"]
+      "models": ["stepfun/step-3.5-flash:free"]
     },
     "nvidia": {
       "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "models": ["meta/llama-3.3-70b-instruct"]
+      "models": []
     },
     "openrouter": {
       "baseUrl": "https://openrouter.ai/api/v1",
       "freeModels": [
-        "qwen/qwen3-coder:free",
-        "nousresearch/hermes-3-llama-3.1-405b:free",
+        "stepfun/step-3.5-flash:free",
         "meta-llama/llama-3.3-70b-instruct:free",
-        "openai/gpt-oss-120b:free",
-        "qwen/qwen3-235b-a22b-thinking-2507",
+        "openrouter/free",
+        "qwen/qwen3-coder:free",
         "qwen/qwen3-next-80b-a3b-instruct:free",
-        "openrouter/free"
+        "nousresearch/hermes-3-llama-3.1-405b:free",
+        "openai/gpt-oss-120b:free",
+        "openai/gpt-oss-20b:free",
+        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+        "google/gemma-3n-e2b-it:free",
+        "google/gemma-3n-e4b-it:free",
+        "qwen/qwen3-4b:free"
       ]
     }
   },
@@ -66,7 +72,6 @@
     "qwen/qwen3-vl-235b-a22b-thinking",
     "qwen/qwen3-vl-30b-a3b-thinking",
     "stepfun/step-3.5-flash:free",
-    "upstage/solar-pro-3:free",
     "z-ai/glm-4.5-air:free"
   ],
   "watchlist": [
@@ -109,6 +114,22 @@
       "provider": "openrouter",
       "added": "2026-02-22",
       "note": "Now free on OpenRouter - use instead of NVIDIA"
+    },
+    {
+      "id": "openai/gpt-oss-20b:free",
+      "name": "OpenAI GPT-OSS 20B",
+      "context": 131072,
+      "provider": "openrouter",
+      "added": "2026-03-04",
+      "note": "New free OSS model from OpenAI"
+    },
+    {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "name": "Dolphin Mistral 24B Venice",
+      "context": 32768,
+      "provider": "openrouter",
+      "added": "2026-03-04",
+      "note": "32k context - uncensored model via Venice"
     }
   ],
   "changes": {
@@ -119,6 +140,16 @@
     "2026-03-01": {
       "new": ["openrouter/free"],
       "note": "New OpenRouter free tier model with 200k context"
+    },
+    "2026-03-04": {
+      "new": [
+        "openai/gpt-oss-20b:free",
+        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+        "google/gemma-3n-e2b-it:free",
+        "google/gemma-3n-e4b-it:free",
+        "qwen/qwen3-4b:free"
+      ],
+      "note": "4 new free models added; no high-priority alerts (contexts < 64k or no reasoning)"
     }
   }
 }
