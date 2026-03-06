@@ -1,55 +1,48 @@
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Hallitus esittää ydinaseiden tuomista Suomeen – Kreml pitää uhkana</h3>
-<p>Suomi tekee historiallisen päätöksen sallia ydinaseiden maahantuonti Venäjän uhkakuvan kasvaessa.</p>
-<a href="https://yle.fi/a/74-20213938" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Suomi purkaa ydinaseiden kieltolain – Hakkänen: mahdollistaa NATOn yhteisen puolustuksen</h3>
+<p>Suomi esittää lakimuutosta, joka sallisi ydinaseiden tuomisen ja kuljettamisen maahan osana NATOn puolustusta</p>
+<a href="https://yle.fi/a/74-20213910">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Velkaantuva Suomi joutui EU:n tarkkailuun</h3>
-<p>Suomi siirretty toiselle EU:n tarkkailuluokalle velkaantumisen kasvaessa.</p>
-<a href="https://yle.fi/a/74-20211806" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Presidentti Stubb varoitti maailmanjärjestyksen hajoamisesta – "Raaka voima täyttää tyhjiön"</h3>
+<p>Stubb puhui Raisina Dialogue 2026 -konferenssissa Intiassa, totesi globaalien uhkien kasvavan</p>
+<a href="https://www.presidentti.fi/tasavallan-presidentti-alexander-stubbin-avauspuheenvuoro-raisina-dialogue-2026-konferenssissa-new-delhissa-intiassa-5-maaliskuuta-2026/">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Iranin sota sekoittaa lentoliikenteen – Finnair valmistelee ylimääräisiä lentoja</h3>
-<p>Suomalaisia evakuoidaan Lähi-idästä Iranin konfliktin pahentessa.</p>
-<a href="https://yle.fi/a/74-20214080" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Suomi ja Intia nostivat suhteet strategiseen kumppanuuteen – painopisteenä tekoäly ja 6G</h3>
+<p>Maat sopivat yhteistyöstä digitalisaatiossa, kestävässä kehityksessä ja puolustusteknologiassa</p>
+<a href="https://newsable.asianetnews.com/world/india-finland-elevate-ties-to-strategic-partnership-in-digitalisation-articleshow-p1n33wd">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Minna Suominen katosi Turussa 14 vuotta sitten – oikeus tuomitsi naisen taposta</h3>
-<p>Käräjäoikeus ratkaisi vuosikymmenen vanhan henkirikostapauksen.</p>
-<a href="https://yle.fi/a/74-20213987" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Köyhyys- ja syrjäytymisvaarassa olevien määrä kasvanut kymmenillätuhansilla</h3>
+<p>Tilastokeskuksen mukaan riskiryhmässä olevien suomalaisten määrä on lisääntynyt merkittävästi</p>
+<a href="https://yle.fi/a/74-20213923">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Uudellemaalle tuli yllättävä vauvaruuhka</h3>
-<p>Alueella syntyy poikkeuksellisesti paljon lapsia ilman selkeää syytä.</p>
-<a href="https://yle.fi/a/74-20212146" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Visit Finland markkinoi suomalaista mökkilomaa – rahaa Itä-Suomen elvytyksestä</h3>
+<p>Kansainvälinen kampanja tähtää mökkiloman brändäämiseen uudeksi matkailutuotteeksi</p>
+<a href="https://yle.fi/a/74-20213740">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Kulta Katriina -suodatinkahvissa metallipaloja</h3>
-<p>Tuote vedetään markettien hyllyiltä – asiakkaat voivat palauttaa ostokset.</p>
-<a href="https://yle.fi/a/74-20214085" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Vantaan Pähkinärinteen tulipalo – kolmekymmentä kotia tuhoutui</h3>
+<p>Asukkaat jäivät kodittomiksi, osalle ei riitä korvaavia asuntoja</p>
+<a href="https://yle.fi/a/74-20213858">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Unkarin Orbán hermostutti EU:ta – Ukrainalle sovittu lainakasa meni uusiksi</h3>
-<p>Orbánin vaalitappion pelko sabotoi EU:n päätöksentekoa.</p>
-<a href="https://yle.fi/a/74-20213645" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-06</p>
+<h3>Rakennusneuvos: Pahin on vielä edessä – nousu vasta 2030-luvulla</h3>
+<p>Toimitilarakentaminen pitää yrityksiä hengissä, mutta alamäki jatkuu vuosia</p>
+<a href="https://yle.fi/a/74-20213173">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 6.3.2026</p>
-<h3>Kevät saapui Suomeen – lämpö ylitti +10 astetta</h3>
-<p>Helsingin seudulla mitattiin ensimmäistä kertaa kevään lämpimät lukemat.</p>
-<a href="https://yle.fi/a/74-20214071" target="_blank">Read more</a>
+<p class="date-line">📅 2026-03-05</p>
+<h3>Suomen keskustalous velkaantui 190,29 miljardia euroa helmikuussa 2026</h3>
+<p>Valtionvarainministeriön mukaan velka kasvoi vuoden takaisesta</p>
+<a href="https://www.treasuryfinland.fi/">Read more</a>
 </div>
