@@ -2,54 +2,54 @@
 <p class="date-line">📅 March 3</p>
 <h3>NASA reveals the astronaut who required 1st medical evacuation from the International Space Station</h3>
 <p>Astronaut emergency evacuation marks new milestone in ISS medical protocols</p>
-<a href="https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-199-the-obsolete-astronaut">Read more</a>
+<a target="_blank" href="https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-199-the-obsolete-astronaut">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 3</p>
 <h3>The world's 1st private space telescope just spotted its 1st star. Here's what it saw.</h3>
 <p>Commercial space telescope begins exoplanet search mission with first stellar measurements</p>
-<a href="https://www.space.com/astronomy/exoplanets/the-worlds-1st-private-space-telescope-just-spotted-its-1st-star-heres-what-it-saw">Read more</a>
+<a target="_blank" href="https://www.space.com/astronomy/exoplanets/the-worlds-1st-private-space-telescope-just-spotted-its-1st-star-heres-what-it-saw">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 4</p>
 <h3>How fast is the universe actually expanding? Ripples in spacetime could finally solve 'Hubble tension'</h3>
 <p>Gravitational wave measurements may resolve physics' biggest measurement discrepancy</p>
-<a href="https://www.space.com/astronomy/how-fast-is-the-universe-actually-expanding-ripples-in-spacetime-could-finally-solve-hubble-tension">Read more</a>
+<a target="_blank" href="https://www.space.com/astronomy/how-fast-is-the-universe-actually-expanding-ripples-in-spacetime-could-finally-solve-hubble-tension">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 5</p>
 <h3>Daily briefing: The return of the snail — the month's best science images</h3>
 <p>Nature's monthly roundup of most striking scientific imagery and discoveries</p>
-<a href="https://www.nature.com/articles/d41586-026-00751-1">Read more</a>
+<a target="_blank" href="https://www.nature.com/articles/d41586-026-00751-1">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 6</p>
 <h3>2026 NASA Science Calendar - Biological and Physical Sciences in space</h3>
 <p>NASA research focuses on sustainable space nutrition and plant adaptation for long missions</p>
-<a href="https://science.nasa.gov/multimedia/2026-nasa-science-calendar/">Read more</a>
+<a target="_blank" href="https://science.nasa.gov/multimedia/2026-nasa-science-calendar/">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 6</p>
 <h3>Astrophysics Division Meeting - NASA Science updates</h3>
 <p>NASA's astrophysics division prepares for Astro 2030 strategic planning</p>
-<a href="https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/astrophysics-division-meeting-10-march-2026/">Read more</a>
+<a target="_blank" href="https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/astrophysics-division-meeting-10-march-2026/">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 6</p>
 <h3>NASA's ESCAPADE mission ready to study space weather from Earth to Mars</h3>
 <p>ESCAPADE spacecraft launched to investigate plasma dynamics in solar system</p>
-<a href="https://science.nasa.gov/science-research/heliophysics/nasas-escapade-ready-to-study-space-weather-from-earth-to-mars/">Read more</a>
+<a target="_blank" href="https://science.nasa.gov/science-research/heliophysics/nasas-escapade-ready-to-study-space-weather-from-earth-to-mars/">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 March 6</p>
 <h3>Stand Up for Science will hold second rally against Trump administration</h3>
 <p>Scientific community protests research funding cuts and policy changes</p>
-<a href="https://www.scientificamerican.com/article/stand-up-for-science-will-hold-second-rally-against-trump-administration/">Read more</a>
+<a target="_blank" href="https://www.scientificamerican.com/article/stand-up-for-science-will-hold-second-rally-against-trump-administration/">Read more</a>
 </div>

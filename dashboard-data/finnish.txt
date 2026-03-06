@@ -1,33 +1,55 @@
-📅 5.3.2026 • **Hallitus purkaa ydinaserajoituksia – Suomen puolustuspolitiikka muuttuu**
-Suomi muuttaa lakia sallien ydinaseiden kauttakulun ja säilytyksen Naton pelotteen vahvistamiseksi
-https://yle.fi/a/74-20213722
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Hallitus esittää ydinaseiden tuomista Suomeen – Kreml pitää uhkana</h3>
+<p>Suomi tekee historiallisen päätöksen sallia ydinaseiden maahantuonti Venäjän uhkakuvan kasvaessa.</p>
+<a href="https://yle.fi/a/74-20213938" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **SDP:n etumatka kokoomukseen suurin tällä hallituskaudella**
-Ylen kannatusmittaus: SDP 25,0 %, kokoomus 17,9 % – ero kasvoi 7,1 prosenttiyksikköön
-https://yle.fi/a/74-20213575
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Velkaantuva Suomi joutui EU:n tarkkailuun</h3>
+<p>Suomi siirretty toiselle EU:n tarkkailuluokalle velkaantumisen kasvaessa.</p>
+<a href="https://yle.fi/a/74-20211806" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **Tulli tutkii jättimäistä autokaupan veropetosvyyhtiä**
-Yli 3 500 ajoneuvoa tuotu väärennetyillä tositteilla – epäiltynä J. Rinta-Joupin työntekijöitä
-https://yle.fi/a/74-20213212
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Iranin sota sekoittaa lentoliikenteen – Finnair valmistelee ylimääräisiä lentoja</h3>
+<p>Suomalaisia evakuoidaan Lähi-idästä Iranin konfliktin pahentessa.</p>
+<a href="https://yle.fi/a/74-20214080" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **Tulli aloittaa neuvottelut itärajan henkilöstön lomautuksista**
-Enintään 140 työntekijää uhattuna – itäraja pysynyt suljettuna joulukuusta 2023 lähtien
-https://yle.fi/a/74-20213845
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Minna Suominen katosi Turussa 14 vuotta sitten – oikeus tuomitsi naisen taposta</h3>
+<p>Käräjäoikeus ratkaisi vuosikymmenen vanhan henkirikostapauksen.</p>
+<a href="https://yle.fi/a/74-20213987" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **Helsingin krematoriot ruuhkautuneet – vainajia jonossa yli 250**
-Kaksi kolmesta uunista rikki – tuhkausajat venyvät ja omaisille kertyy lisäkustannuksia
-https://www.iltalehti.fi/kotimaa/a/8f6f73e1-6936-47ce-99b0-282df07e5c49
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Uudellemaalle tuli yllättävä vauvaruuhka</h3>
+<p>Alueella syntyy poikkeuksellisesti paljon lapsia ilman selkeää syytä.</p>
+<a href="https://yle.fi/a/74-20212146" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **Akkuvarastot uhkaavat tukkia Suomen sähköverkon**
-Fingrid varoittaa: liittymäkyselyitä kymmeniä tuhansia megawatteja, kapasiteetti loppumassa
-https://yle.fi/a/74-20213310
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Kulta Katriina -suodatinkahvissa metallipaloja</h3>
+<p>Tuote vedetään markettien hyllyiltä – asiakkaat voivat palauttaa ostokset.</p>
+<a href="https://yle.fi/a/74-20214085" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **Vantaan kerrostalopalossa kuoli viisi – 71-vuotiasta epäillään murhista**
-Perheen äiti, isä ja kolme lasta menehtyivät – pikkuvauva selvisi hengissä
-https://www.is.fi/kotimaa/art-2000011860542.html
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Unkarin Orbán hermostutti EU:ta – Ukrainalle sovittu lainakasa meni uusiksi</h3>
+<p>Orbánin vaalitappion pelko sabotoi EU:n päätöksentekoa.</p>
+<a href="https://yle.fi/a/74-20213645" target="_blank">Read more</a>
+</div>
 
-📅 5.3.2026 • **Viikonloppuna luvassa harvinaisen lämmintä säätä**
-Lämpötilat nousevat 10 asteeseen – keväinen sää yleistyy koko Suomeen
-https://www.hs.fi/suomi/art-2000011861112.html
-
-Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta‑Sanomat · Kauppalehti
+<div class="bulletin-item">
+<p class="date-line">📅 6.3.2026</p>
+<h3>Kevät saapui Suomeen – lämpö ylitti +10 astetta</h3>
+<p>Helsingin seudulla mitattiin ensimmäistä kertaa kevään lämpimät lukemat.</p>
+<a href="https://yle.fi/a/74-20214071" target="_blank">Read more</a>
+</div>
