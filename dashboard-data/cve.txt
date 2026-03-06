@@ -1,48 +1,48 @@
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-20079</p>
-<h3>Cisco Secure Firewall Management Center Authentication Bypass</h3>
-<p>Critical unauthenticated remote attacker access to web interface vulnerability</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20079">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20079">OpenCVE</a>
+<p class="cve-id">CVE-2025-68553</p>
+<h3>Lendiz Theme Unrestricted File Upload</h3>
+<p>Critical vulnerability in zozothemes Lendiz allows remote attackers to upload a web shell to the web server, leading to remote code execution. Affects versions through 2.0.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-68553">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-68553">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-0006</p>
-<h3>Critical Heap Buffer Overflow Remote Code Execution</h3>
-<p>Multiple locations allow RCE without user interaction or privileges</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-0006">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0006">OpenCVE</a>
+<p class="cve-id">CVE-2025-54001</p>
+<h3>ThemeREX Classter Object Injection</h3>
+<p>Critical deserialization vulnerability in ThemeREX Classter allows remote attackers to inject malicious PHP objects via untrusted input, potentially leading to code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-54001">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-54001">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-26478</p>
-<h3>Mobvoi Tichome Mini Smart Speaker Shell Command Injection</h3>
-<p>Remote attackers execute arbitrary shell code as root via UDP</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-26478">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26478">OpenCVE</a>
+<p class="cve-id">CVE-2025-69338</p>
+<h3>Riode Core Plugin SQL Injection</h3>
+<p>Critical blind SQL injection vulnerability in don-themes Riode Core plugin allows unauthenticated attackers to inject malicious SQL queries, potentially exfiltrating database contents.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-69338">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-69338">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22891</p>
-<h3>libbiosig Intan CLP Parsing Heap Buffer Overflow</h3>
-<p>Crafted Intan CLP file leads to arbitrary code execution vulnerability</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22891">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22891">OpenCVE</a>
+<p class="cve-id">CVE-2026-3540</p>
+<h3>Google Chrome WebAudio Use-After-Free</h3>
+<p>High severity vulnerability in Google Chrome WebAudio implementation allows remote attackers to perform out-of-bounds memory access via crafted HTML pages.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3540">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3540">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3431</p>
-<h3>SimStudio MongoDB Tool Endpoint Authentication Bypass</h3>
-<p>Arbitrary MongoDB connections allow unauthorized data modification access</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3431">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3431">OpenCVE</a>
+<p class="cve-id">CVE-2026-3541</p>
+<h3>Google Chrome CSS Out-of-Bounds Read</h3>
+<p>High severity vulnerability in Google Chrome CSS implementation allows remote attackers to perform out-of-bounds memory read via crafted HTML pages.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3541">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3541">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22769</p>
-<h3>Dell RecoverPoint Virtual Machines Hard-Coded Credentials</h3>
-<p>Unauthenticated remote attacker gains root-level persistent access vulnerability</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22769">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22769">OpenCVE</a>
+<p class="cve-id">CVE-2026-3542</p>
+<h3>Google Chrome WebAssembly Out-of-Bounds Access</h3>
+<p>High severity vulnerability in Google Chrome WebAssembly implementation allows remote attackers to perform out-of-bounds memory access via crafted HTML pages.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3542">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3542">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21385</p>
-<h3>Android Qualcomm Graphics Buffer Over-Read Vulnerability</h3>
-<p>Active exploitation allows attackers access to sensitive memory data</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-21385">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21385">OpenCVE</a>
+<p class="cve-id">CVE-2026-3543</p>
+<h3>Google Chrome V8 Out-of-Bounds Access</h3>
+<p>High severity vulnerability in Google Chrome V8 JavaScript engine allows remote attackers to potentially perform out-of-bounds memory access via crafted HTML pages.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3543">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3543">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-49113</p>
-<h3>RoundCube Webmail Deserialization Remote Code Execution</h3>
-<p>Authenticated users execute remote code via unvalidated upload parameter</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-49113">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-49113">OpenCVE</a>
+<p class="cve-id">CVE-2026-3544</p>
+<h3>Google Chrome WebCodecs Heap Buffer Overflow</h3>
+<p>High severity heap buffer overflow vulnerability in Google Chrome WebCodecs allows remote attackers to perform out-of-bounds memory write via crafted HTML pages.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3544">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3544">OpenCVE</a>
 </div>

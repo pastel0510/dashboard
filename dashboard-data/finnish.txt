@@ -1,33 +1,48 @@
-📅 5.3.2026 • **Hallitus purkaa ydinaserajoituksia – Suomen puolustuspolitiikka muuttuu**
-Suomi muuttaa lakia sallien ydinaseiden kauttakulun ja säilytyksen Naton pelotteen vahvistamiseksi
-https://yle.fi/a/74-20213722
-
-📅 5.3.2026 • **SDP:n etumatka kokoomukseen suurin tällä hallituskaudella**
-Ylen kannatusmittaus: SDP 25,0 %, kokoomus 17,9 % – ero kasvoi 7,1 prosenttiyksikköön
-https://yle.fi/a/74-20213575
-
-📅 5.3.2026 • **Tulli tutkii jättimäistä autokaupan veropetosvyyhtiä**
-Yli 3 500 ajoneuvoa tuotu väärennetyillä tositteilla – epäiltynä J. Rinta-Joupin työntekijöitä
-https://yle.fi/a/74-20213212
-
-📅 5.3.2026 • **Tulli aloittaa neuvottelut itärajan henkilöstön lomautuksista**
-Enintään 140 työntekijää uhattuna – itäraja pysynyt suljettuna joulukuusta 2023 lähtien
-https://yle.fi/a/74-20213845
-
-📅 5.3.2026 • **Helsingin krematoriot ruuhkautuneet – vainajia jonossa yli 250**
-Kaksi kolmesta uunista rikki – tuhkausajat venyvät ja omaisille kertyy lisäkustannuksia
-https://www.iltalehti.fi/kotimaa/a/8f6f73e1-6936-47ce-99b0-282df07e5c49
-
-📅 5.3.2026 • **Akkuvarastot uhkaavat tukkia Suomen sähköverkon**
-Fingrid varoittaa: liittymäkyselyitä kymmeniä tuhansia megawatteja, kapasiteetti loppumassa
-https://yle.fi/a/74-20213310
-
-📅 5.3.2026 • **Vantaan kerrostalopalossa kuoli viisi – 71-vuotiasta epäillään murhista**
-Perheen äiti, isä ja kolme lasta menehtyivät – pikkuvauva selvisi hengissä
-https://www.is.fi/kotimaa/art-2000011860542.html
-
-📅 5.3.2026 • **Viikonloppuna luvassa harvinaisen lämmintä säätä**
-Lämpötilat nousevat 10 asteeseen – keväinen sää yleistyy koko Suomeen
-https://www.hs.fi/suomi/art-2000011861112.html
-
-Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta‑Sanomat · Kauppalehti
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Suomi purkaa ydinaseiden kieltolain – Hakkänen: mahdollistaa NATOn yhteisen puolustuksen</h3>
+<p>Suomi esittää lakimuutosta, joka sallisi ydinaseiden tuomisen ja kuljettamisen maahan osana NATOn puolustusta</p>
+<a href="https://yle.fi/a/74-20213910">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Presidentti Stubb varoitti maailmanjärjestyksen hajoamisesta – "Raaka voima täyttää tyhjiön"</h3>
+<p>Stubb puhui Raisina Dialogue 2026 -konferenssissa Intiassa, totesi globaalien uhkien kasvavan</p>
+<a href="https://www.presidentti.fi/tasavallan-presidentti-alexander-stubbin-avauspuheenvuoro-raisina-dialogue-2026-konferenssissa-new-delhissa-intiassa-5-maaliskuuta-2026/">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Suomi ja Intia nostivat suhteet strategiseen kumppanuuteen – painopisteenä tekoäly ja 6G</h3>
+<p>Maat sopivat yhteistyöstä digitalisaatiossa, kestävässä kehityksessä ja puolustusteknologiassa</p>
+<a href="https://newsable.asianetnews.com/world/india-finland-elevate-ties-to-strategic-partnership-in-digitalisation-articleshow-p1n33wd">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Köyhyys- ja syrjäytymisvaarassa olevien määrä kasvanut kymmenillätuhansilla</h3>
+<p>Tilastokeskuksen mukaan riskiryhmässä olevien suomalaisten määrä on lisääntynyt merkittävästi</p>
+<a href="https://yle.fi/a/74-20213923">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Visit Finland markkinoi suomalaista mökkilomaa – rahaa Itä-Suomen elvytyksestä</h3>
+<p>Kansainvälinen kampanja tähtää mökkiloman brändäämiseen uudeksi matkailutuotteeksi</p>
+<a href="https://yle.fi/a/74-20213740">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Vantaan Pähkinärinteen tulipalo – kolmekymmentä kotia tuhoutui</h3>
+<p>Asukkaat jäivät kodittomiksi, osalle ei riitä korvaavia asuntoja</p>
+<a href="https://yle.fi/a/74-20213858">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-06</p>
+<h3>Rakennusneuvos: Pahin on vielä edessä – nousu vasta 2030-luvulla</h3>
+<p>Toimitilarakentaminen pitää yrityksiä hengissä, mutta alamäki jatkuu vuosia</p>
+<a href="https://yle.fi/a/74-20213173">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-03-05</p>
+<h3>Suomen keskustalous velkaantui 190,29 miljardia euroa helmikuussa 2026</h3>
+<p>Valtionvarainministeriön mukaan velka kasvoi vuoden takaisesta</p>
+<a href="https://www.treasuryfinland.fi/">Read more</a>
+</div>
