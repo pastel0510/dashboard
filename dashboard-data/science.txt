@@ -1,55 +1,55 @@
 <div class="bulletin-item">
-<p class="date-line">📅 February 27, 2026</p>
-<h3>NASA Adds Mission to Artemis Lunar Program, Updates Architecture</h3>
-<p>NASA accelerates Moon missions with annual landings planned</p>
-<a href="https://www.nasa.gov/news-release/nasa-adds-mission-to-artemis-lunar-program-updates-architecture/">Read more</a>
+<p class="date-line">📅 March 3</p>
+<h3>NASA reveals the astronaut who required 1st medical evacuation from the International Space Station</h3>
+<p>Astronaut emergency evacuation marks new milestone in ISS medical protocols</p>
+<a href="https://www.space.com/entertainment/space-movies-shows/this-week-in-space-podcast-episode-199-the-obsolete-astronaut">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 27, 2026</p>
-<h3>SpaceX Dragon Splashes Down Returning Science from ISS</h3>
-<p>Cargo capsule completes six-month mission with research samples</p>
-<a href="https://www.nasa.gov/blogs/spacestation/2026/02/27/dragon-splashes-down-and-returns-science-cargo/">Read more</a>
+<p class="date-line">📅 March 3</p>
+<h3>The world's 1st private space telescope just spotted its 1st star. Here's what it saw.</h3>
+<p>Commercial space telescope begins exoplanet search mission with first stellar measurements</p>
+<a href="https://www.space.com/astronomy/exoplanets/the-worlds-1st-private-space-telescope-just-spotted-its-1st-star-heres-what-it-saw">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 27, 2026</p>
-<h3>James Webb Reveals Earliest Barred Spiral Galaxy Ever Found</h3>
-<p>Ancient galaxy structure formed just 2 billion years after Big Bang</p>
-<a href="https://www.sciencedaily.com/releases/2026/02/260227071931.htm">Read more</a>
+<p class="date-line">📅 March 4</p>
+<h3>How fast is the universe actually expanding? Ripples in spacetime could finally solve 'Hubble tension'</h3>
+<p>Gravitational wave measurements may resolve physics' biggest measurement discrepancy</p>
+<a href="https://www.space.com/astronomy/how-fast-is-the-universe-actually-expanding-ripples-in-spacetime-could-finally-solve-hubble-tension">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 27, 2026</p>
-<h3>Scientists Turn Methane into Medicine in Breakthrough</h3>
-<p>Researchers transform natural gas into pharmaceutical compounds</p>
-<a href="https://www.sciencedaily.com/releases/2026/02/260227071916.htm">Read more</a>
+<p class="date-line">📅 March 5</p>
+<h3>Daily briefing: The return of the snail — the month's best science images</h3>
+<p>Nature's monthly roundup of most striking scientific imagery and discoveries</p>
+<a href="https://www.nature.com/articles/d41586-026-00751-1">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 21, 2026</p>
-<h3>Webb Maps Uranus Upper Atmosphere in 3D for First Time</h3>
-<p>Telescope reveals auroras and cooling patterns on ice giant</p>
-<a href="https://www.sciencedaily.com/releases/2026/02/260221000303.htm">Read more</a>
+<p class="date-line">📅 March 6</p>
+<h3>2026 NASA Science Calendar - Biological and Physical Sciences in space</h3>
+<p>NASA research focuses on sustainable space nutrition and plant adaptation for long missions</p>
+<a href="https://science.nasa.gov/multimedia/2026-nasa-science-calendar/">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 17, 2026</p>
-<h3>ESA Captures Annular Solar Eclipse from Space</h3>
-<p>Satellite images show Moon creating ring of fire around Sun</p>
-<a href="https://www.esa.int/ESA_Multimedia/Images/2026/02/Annular_solar_eclipse_seen_from_space">Read more</a>
+<p class="date-line">📅 March 6</p>
+<h3>Astrophysics Division Meeting - NASA Science updates</h3>
+<p>NASA's astrophysics division prepares for Astro 2030 strategic planning</p>
+<a href="https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/astrophysics-division-meeting-10-march-2026/">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 13, 2026</p>
-<h3>NASA Selects Two New Earth System Explorer Missions</h3>
-<p>Satellite missions to improve disaster prediction and monitoring</p>
-<a href="https://www.nasa.gov/news-release/nasa-selects-two-earth-system-explorers-missions/">Read more</a>
+<p class="date-line">📅 March 6</p>
+<h3>NASA's ESCAPADE mission ready to study space weather from Earth to Mars</h3>
+<p>ESCAPADE spacecraft launched to investigate plasma dynamics in solar system</p>
+<a href="https://science.nasa.gov/science-research/heliophysics/nasas-escapade-ready-to-study-space-weather-from-earth-to-mars/">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 February 11, 2026</p>
-<h3>Webb Detects Complex Organic Molecules in Distant Galaxy</h3>
-<p>First detection of methyl radical outside Milky Way found</p>
-<a href="https://www.sciencedaily.com/releases/2026/02/260211073026.htm">Read more</a>
+<p class="date-line">📅 March 6</p>
+<h3>Stand Up for Science will hold second rally against Trump administration</h3>
+<p>Scientific community protests research funding cuts and policy changes</p>
+<a href="https://www.scientificamerican.com/article/stand-up-for-science-will-hold-second-rally-against-trump-administration/">Read more</a>
 </div>

@@ -1,48 +1,33 @@
-<div class="bulletin-item">
-<p class="date-line">📅 4 March 2026</p>
-<h3>Five killed in Vantaa apartment fire, suspect detained</h3>
-<p>Police suspect deliberate arson in blaze that killed parents and three children</p>
-<a href="https://yle.fi/a/74-20213287">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Iran selects Mojtaba Khamenei as new supreme leader</h3>
-<p>Son of slain leader Ali Khamenei succeeds father amid escalating conflict</p>
-<a href="https://www.hs.fi/maailma/art-2000011849876.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Iranian drone strike kills six US soldiers in Kuwait</h3>
-<p>Attack on poorly protected command centre marks first American casualties</p>
-<a href="https://www.is.fi/ulkomaat/art-2000011855480.html">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Workers need 46 days to match one CEO day's pay</h3>
-<p>Income gap between executives and salaried employees continues to widen</p>
-<a href="https://yle.fi/a/74-20213374">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Supo recruits intelligence officers with Chinese, Russian skills</h3>
-<p>Finnish Security Service seeks creative candidates fluent in key languages</p>
-<a href="https://yle.fi/a/74-20213372">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Helsinki to halve meat in school lunches by 2030</h3>
-<p>Meat dishes limited to once or twice weekly in environmental initiative</p>
-<a href="https://yle.fi/a/74-20213319">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Finland's pandemic mortality among lowest in Europe</h3>
-<p>THL reports minor excess deaths thanks to effective restrictions and compliance</p>
-<a href="https://yle.fi/a/74-20213320">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 3 March 2026</p>
-<h3>Iranians in Finland celebrate Khamenei's death</h3>
-<p>Exiled community sees supreme leader's demise as hope for regime change</p>
-<a href="https://yle.fi/a/74-20213136">Read more</a>
-</div>
+📅 5.3.2026 • **Hallitus purkaa ydinaserajoituksia – Suomen puolustuspolitiikka muuttuu**
+Suomi muuttaa lakia sallien ydinaseiden kauttakulun ja säilytyksen Naton pelotteen vahvistamiseksi
+https://yle.fi/a/74-20213722
+
+📅 5.3.2026 • **SDP:n etumatka kokoomukseen suurin tällä hallituskaudella**
+Ylen kannatusmittaus: SDP 25,0 %, kokoomus 17,9 % – ero kasvoi 7,1 prosenttiyksikköön
+https://yle.fi/a/74-20213575
+
+📅 5.3.2026 • **Tulli tutkii jättimäistä autokaupan veropetosvyyhtiä**
+Yli 3 500 ajoneuvoa tuotu väärennetyillä tositteilla – epäiltynä J. Rinta-Joupin työntekijöitä
+https://yle.fi/a/74-20213212
+
+📅 5.3.2026 • **Tulli aloittaa neuvottelut itärajan henkilöstön lomautuksista**
+Enintään 140 työntekijää uhattuna – itäraja pysynyt suljettuna joulukuusta 2023 lähtien
+https://yle.fi/a/74-20213845
+
+📅 5.3.2026 • **Helsingin krematoriot ruuhkautuneet – vainajia jonossa yli 250**
+Kaksi kolmesta uunista rikki – tuhkausajat venyvät ja omaisille kertyy lisäkustannuksia
+https://www.iltalehti.fi/kotimaa/a/8f6f73e1-6936-47ce-99b0-282df07e5c49
+
+📅 5.3.2026 • **Akkuvarastot uhkaavat tukkia Suomen sähköverkon**
+Fingrid varoittaa: liittymäkyselyitä kymmeniä tuhansia megawatteja, kapasiteetti loppumassa
+https://yle.fi/a/74-20213310
+
+📅 5.3.2026 • **Vantaan kerrostalopalossa kuoli viisi – 71-vuotiasta epäillään murhista**
+Perheen äiti, isä ja kolme lasta menehtyivät – pikkuvauva selvisi hengissä
+https://www.is.fi/kotimaa/art-2000011860542.html
+
+📅 5.3.2026 • **Viikonloppuna luvassa harvinaisen lämmintä säätä**
+Lämpötilat nousevat 10 asteeseen – keväinen sää yleistyy koko Suomeen
+https://www.hs.fi/suomi/art-2000011861112.html
+
+Sources: YLE · Helsingin Sanomat · Turun Sanomat · Iltalehti · Ilta‑Sanomat · Kauppalehti

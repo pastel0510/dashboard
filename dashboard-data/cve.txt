@@ -1,48 +1,48 @@
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22719</p>
-<h3>Broadcom VMware Aria Operations Command Injection Vulnerability</h3>
-<p>Unauthenticated command injection allows arbitrary code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22719">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22719">OpenCVE</a>
+<p class="cve-id">CVE-2026-20079</p>
+<h3>Cisco Secure Firewall Management Center Authentication Bypass</h3>
+<p>Critical unauthenticated remote attacker access to web interface vulnerability</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20079">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20079">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-0006</p>
+<h3>Critical Heap Buffer Overflow Remote Code Execution</h3>
+<p>Multiple locations allow RCE without user interaction or privileges</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-0006">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0006">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-26478</p>
+<h3>Mobvoi Tichome Mini Smart Speaker Shell Command Injection</h3>
+<p>Remote attackers execute arbitrary shell code as root via UDP</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26478">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26478">OpenCVE</a>
 </div>
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-22891</p>
 <h3>libbiosig Intan CLP Parsing Heap Buffer Overflow</h3>
-<p>Heap overflow in Biosig Project allows arbitrary code execution.</p>
+<p>Crafted Intan CLP file leads to arbitrary code execution vulnerability</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-22891">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22891">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24061</p>
-<h3>GNU InetUtils telnetd Authentication Bypass Vulnerability</h3>
-<p>Critical auth bypass allows remote root access via USER variable.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24061">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24061">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-21385</p>
-<h3>Qualcomm Chipsets Memory Corruption Vulnerability</h3>
-<p>Actively exploited Android graphics buffer over-read vulnerability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-21385">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21385">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-20127</p>
-<h3>Cisco Catalyst SD-WAN Controller Authentication Bypass</h3>
-<p>CVSS 10.0 auth bypass allows admin access via crafted requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20127">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20127">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-20777</p>
-<h3>libbiosig Nicolet WFT Parsing Heap Buffer Overflow</h3>
-<p>Heap overflow in WFT parsing functionality allows code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20777">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20777">OpenCVE</a>
+<p class="cve-id">CVE-2026-3431</p>
+<h3>SimStudio MongoDB Tool Endpoint Authentication Bypass</h3>
+<p>Arbitrary MongoDB connections allow unauthorized data modification access</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3431">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3431">OpenCVE</a>
 </div>
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-22769</p>
-<h3>Dell RecoverPoint for Virtual Machines Hard-coded Credentials</h3>
-<p>Hard-coded credentials allow unauthenticated root-level access.</p>
+<h3>Dell RecoverPoint Virtual Machines Hard-Coded Credentials</h3>
+<p>Unauthenticated remote attacker gains root-level persistent access vulnerability</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-22769">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22769">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25108</p>
-<h3>Soliton Systems FileZen OS Command Injection Vulnerability</h3>
-<p>Authenticated OS command injection via specially crafted requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25108">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25108">OpenCVE</a>
+<p class="cve-id">CVE-2026-21385</p>
+<h3>Android Qualcomm Graphics Buffer Over-Read Vulnerability</h3>
+<p>Active exploitation allows attackers access to sensitive memory data</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21385">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21385">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-49113</p>
+<h3>RoundCube Webmail Deserialization Remote Code Execution</h3>
+<p>Authenticated users execute remote code via unvalidated upload parameter</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-49113">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-49113">OpenCVE</a>
 </div>
