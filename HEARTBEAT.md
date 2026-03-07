@@ -24,7 +24,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-07 15:04 UTC — No new developments.
+**Last checked:** 2026-03-07 19:05 UTC — No new developments. News focused on Q4 earnings.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -51,7 +51,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-07 15:04 UTC — No new developments.
+**Last checked:** 2026-03-07 19:05 UTC — No new developments.
 
 **Note:** Include source links in all update notifications.
 
