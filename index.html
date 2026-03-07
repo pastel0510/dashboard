@@ -510,59 +510,59 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29082</p>
-<h3>Kestra XSS via Markdown Execution-File Preview</h3>
-<p>Kestra orchestration platform renders user-supplied Markdown with html:true and injects via v-html without sanitization, allowing cross-site scripting attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29082" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29082" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28446</p>
+<h3>OpenClaw Voice Extension Remote Code Execution</h3>
+<p>Critical vulnerability in OpenClaw's voice-call extension allows remote code execution with CVSS 9.8. Policy bypass via empty CA in voice call extension enables attacker control.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28446" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28446" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-29058</p>
+<h3>WWBN AVideo OS Command Injection</h3>
+<p>Critical OS command injection in AVideo platform (CVSS 9.8). Unauthenticated attackers can execute arbitrary commands via base64Url parameter, leading to full server compromise.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29058" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29058" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-26288</p>
+<h3>WebSocket OCPP Authentication Bypass</h3>
+<p>Critical vulnerability in WebSocket endpoints (CVSS 9.4) lacks authentication, allowing unauthorized station impersonation and OCPP command injection in charging infrastructure.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26288" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26288" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-29064</p>
-<h3>Zarf Path Traversal in Archive Extraction</h3>
-<p>Zarf Kubernetes packager has path traversal vulnerability allowing crafted packages to create symlinks outside destination, enabling arbitrary file read/write. Patched in v0.73.1.</p>
+<h3>Zarf Path Traversal Vulnerability</h3>
+<p>High severity path traversal in Zarf packager (CVSS 8.2). Malicious packages can create symlinks outside destination directory, enabling arbitrary file read/write on host systems.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-29064" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29064" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28683</p>
-<h3>Gokapi Stored XSS via Malicious SVG Hotlink</h3>
-<p>Gokapi self-hosted file sharing server allows authenticated users to upload malicious SVG and create hotlinks achieving stored XSS. Patched in v2.2.3.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28683" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28683" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-29039</p>
-<h3>Changedetection.io Arbitrary File Read</h3>
-<p>Changedetection.io versions prior to 0.54.4 allow unauthenticated remote attackers to read arbitrary files on the server via unspecified vector.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29039" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29039" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29082</p>
+<h3>Kestra Markdown XSS Vulnerability</h3>
+<p>High severity XSS in Kestra orchestration platform (CVSS 7.3). User-supplied Markdown rendered as HTML without sanitization allows script injection via execution-file preview.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29082" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29082" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-20882</p>
-<h3>WebSocket API Authentication Rate Limiting Missing</h3>
-<p>WebSocket Application Programming Interface lacks restrictions on authentication requests, allowing potential brute-force attacks without rate limiting.</p>
+<h3>WebSocket API Authentication Rate Limiting Bypass</h3>
+<p>High severity vulnerability (CVSS 7.5) in WebSocket API lacks rate limiting on authentication requests, enabling brute-force attacks against authentication endpoints.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20882" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20882" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29093</p>
-<h3>WWBN AVideo Improper Authentication</h3>
-<p>WWBN AVideo versions prior to 24.0 expose memcached service on host port 11211 without authentication, allowing unauthorized access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29093" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29183</p>
+<h3>SiYuan Reflected Cross-Site Scripting</h3>
+<p>Critical reflected XSS in SiYuan knowledge management system. Attackers can inject malicious scripts via unsanitized input in web page generation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29183" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29183" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28676</p>
-<h3>OpenSift Path Injection in Storage Helpers</h3>
-<p>OpenSift AI study tool has path injection vulnerability in storage helpers affecting versions prior to 1.6.3-alpha with CVSS 8.8.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28676" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28676" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25888</p>
-<h3>Chartbrew Remote Code Execution via API</h3>
-<p>Chartbrew open-source charting application contains high-severity remote code execution vulnerability in its API endpoints.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25888" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25888" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28794</p>
+<h3>middleapi orpc Prototype Pollution</h3>
+<p>Prototype pollution vulnerability in @orpc/client package RPC JSON deserializer. Improperly controlled modification of object prototype attributes enables further exploitation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28794" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28794" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -574,16 +574,17 @@
                     <h2>Self-Host Weekly</h2>
                     <div id="selfhst-bulletin">
                         <div class="bulletin-item">
-<p class="date-line">📅 6 March 2026</p>
+<p class="date-line">6 March 2026</p>
 <h3>Self-Host Weekly</h3>
-<p>Viral cheeseburgers, microslop, and a new place to run DOOM</p>
+<p>A few new goodies for paid Self-Host Weekly subscribers</p>
 <ul style="margin-top:10px;padding-left:20px;">
-<li><a href="https://github.com/frenck/home-assistant-doom">Home Assistant DOOM</a> — Play the original DOOM in your Home Assistant dashboard</li>
-<li><a href="https://ente.io/ensu">Ensu</a> — Offline, privacy-focused LLM app that runs completely on your device</li>
-<li><a href="https://myrient.erista.me/">Myrient</a> — Video game preservation service with 390+ terabytes of ROMs (shutting down March 31)</li>
-<li><a href="https://github.com/versity/versitygw">Versity S3 Gateway</a> — Self-hosted bridge for accessing local filesystems through S3 APIs</li>
+<li><a href="https://www.star-history.com/blog/openclaw-surpasses-react-most-starred-software" target="_blank" rel="noopener">OpenClaw</a> — AI agent skill marketplace platform · <a href="https://github.com/star-history/star-history" target="_blank" rel="noopener" style="color:#888;">GitHub</a></li>
+<li><a href="https://github.com/kyantech/Palmr/issues/418" target="_blank" rel="noopener">Palmr</a> — Self-hosted open source project</li>
+<li><a href="https://claude.com/contact-sales/claude-for-oss" target="_blank" rel="noopener">Anthropic</a> — AI safety and research company</li>
+<li><a href="https://github.com/frenck/home-assistant-doom" target="_blank" rel="noopener">Home Assistant</a> — Self-hosted open source project</li>
+<li><a href="https://github.com/bunkeriot/BunkerM" target="_blank" rel="noopener">BunkerM</a> — Self-hosted open source project</li>
 </ul>
-<a href="https://selfh.st/weekly/2026-03-06/">Read on selfh.st</a>
+<a href="https://selfh.st/weekly/2026-03-06/" target="_blank" rel="noopener">Read on selfh.st</a>
 </div>
 
                     </div>
@@ -591,7 +592,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-07 14:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-07 14:48 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
