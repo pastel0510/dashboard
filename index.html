@@ -280,19 +280,19 @@
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">-2°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">-1°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">-2°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">-5°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -302,7 +302,7 @@
                 <div class="card">
                     <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
                     <div id="fingerpori" class="lightbox-trigger">
-                        <img src="https://media.mas.to/media_attachments/files/116/180/938/309/280/147/original/dffa821a5730fb38.jpeg" alt="Fingerpori">
+                        <img src="https://media.mas.to/media_attachments/files/116/186/600/610/338/505/original/4573463121debded.jpeg" alt="Fingerpori">
                     </div>
                 </div>
 
@@ -319,7 +319,7 @@
                 <div class="card">
                     <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
                     <div id="xkcd" class="lightbox-trigger">
-                        <img src="https://imgs.xkcd.com/comics/douglas_engelbart_1925_2013.png" alt="Xkcd">
+                        <img src="https://imgs.xkcd.com/comics/arbitrage.png" alt="Xkcd">
                     </div>
                 </div>
             </aside>
@@ -509,59 +509,59 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28446</p>
-<h3>OpenClaw Voice Extension RCE</h3>
-<p>A critical vulnerability in OpenClaw's voice-call extension with CVSS 9.8 allows remote code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28446" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28446" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-28794</p>
-<h3>Prototype Pollution in middleapi orpc</h3>
-<p>Critical prototype pollution vulnerability in @orpc/client package allows unauthenticated remote attackers to inject arbitrary properties.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28794" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28794" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-26288</p>
-<h3>OCPP WebSocket Authentication Bypass</h3>
-<p>Critical vulnerability in WebSocket endpoints lacks authentication, enabling unauthorized station impersonation and data manipulation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-26288" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26288" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-29064</p>
-<h3>Zarf Path Traversal Vulnerability</h3>
-<p>High severity path traversal vulnerability in Zarf (Kubernetes packager) allows arbitrary file read/write via crafted packages. CVSS 8.2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29064" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29064" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-29000</p>
-<h3>pac4j-jwt Authentication Bypass</h3>
-<p>Authentication bypass vulnerability in pac4j-jwt library exposes critical security flaw in Java JWT authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29000" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29000" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-29183</p>
-<h3>SiYuan Cross-Site Scripting</h3>
-<p>Critical reflected XSS vulnerability in SiYuan personal knowledge management system before version 3.5.9.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29183" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29183" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-29082</p>
-<h3>Kestra Markdown XSS Vulnerability</h3>
-<p>High severity XSS in Kestra execution-file preview renders user-supplied Markdown with potentially malicious content. CVSS 7.3.</p>
+<h3>Kestra XSS via Markdown Execution-File Preview</h3>
+<p>Kestra orchestration platform renders user-supplied Markdown with html:true and injects via v-html without sanitization, allowing cross-site scripting attacks.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-29082" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29082" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-29064</p>
+<h3>Zarf Path Traversal in Archive Extraction</h3>
+<p>Zarf Kubernetes packager has path traversal vulnerability allowing crafted packages to create symlinks outside destination, enabling arbitrary file read/write. Patched in v0.73.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29064" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29064" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28683</p>
+<h3>Gokapi Stored XSS via Malicious SVG Hotlink</h3>
+<p>Gokapi self-hosted file sharing server allows authenticated users to upload malicious SVG and create hotlinks achieving stored XSS. Patched in v2.2.3.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28683" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28683" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-29039</p>
+<h3>Changedetection.io Arbitrary File Read</h3>
+<p>Changedetection.io versions prior to 0.54.4 allow unauthenticated remote attackers to read arbitrary files on the server via unspecified vector.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29039" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29039" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-20882</p>
-<h3>WebSocket API Rate Limiting Issue</h3>
-<p>High severity vulnerability (CVSS 7.5) - WebSocket Application Programming Interface lacks restrictions on authentication requests.</p>
+<h3>WebSocket API Authentication Rate Limiting Missing</h3>
+<p>WebSocket Application Programming Interface lacks restrictions on authentication requests, allowing potential brute-force attacks without rate limiting.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20882" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20882" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-29093</p>
+<h3>WWBN AVideo Improper Authentication</h3>
+<p>WWBN AVideo versions prior to 24.0 expose memcached service on host port 11211 without authentication, allowing unauthorized access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29093" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28676</p>
+<h3>OpenSift Path Injection in Storage Helpers</h3>
+<p>OpenSift AI study tool has path injection vulnerability in storage helpers affecting versions prior to 1.6.3-alpha with CVSS 8.8.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28676" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28676" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-25888</p>
+<h3>Chartbrew Remote Code Execution via API</h3>
+<p>Chartbrew open-source charting application contains high-severity remote code execution vulnerability in its API endpoints.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25888" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25888" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -590,7 +590,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-07 08:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-07 10:05 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
