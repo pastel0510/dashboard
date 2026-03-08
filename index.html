@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">-2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">0°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -510,59 +510,59 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30860</p>
-<h3>WeKnora Remote Code Execution</h3>
-<p>Critical RCE vulnerability in WeKnora's database query functionality. Attackers can bypass SQL injection protections and achieve arbitrary code execution via PostgreSQL array expressions. Patched in version 0.2.12.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30860" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30860" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-30861</p>
-<h3>WeKnora Command Injection</h3>
-<p>Critical RCE in WeKnora MCP stdio configuration. Unauthenticated attackers can bypass command validation using npx -p node flag to execute arbitrary commands. Patched in version 0.2.10.</p>
+<h3>WeKnora MCP Stdio Command Injection</h3>
+<p>Critical RCE vulnerability in WeKnora versions 0.2.5 to before 0.2.10. Unauthenticated attackers can execute arbitrary commands via MCP stdio configuration validation due to incomplete input sanitization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30861" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-22688</p>
+<h3>WeKnora Command Injection (CVSS 9.9)</h3>
+<p>Critical command injection in WeKnora allowing unauthenticated RCE. Affects all versions up to 0.2.5. High impact on confidentiality, integrity, and availability.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22688" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22688" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-27574</p>
+<h3>OneUptime Remote Code Execution</h3>
+<p>Critical RCE vulnerability in OneUptime versions prior to 10.0.5. Attackers can achieve one-shot RCE via "Test Monitor" function or persistent scheduled RCE through malicious Synthetic Monitors.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27574" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27574" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-30855</p>
-<h3>WeKnora Authorization Bypass</h3>
-<p>High-severity authorization bypass in WeKnora tenant management. Any authenticated user can read, modify, or delete any tenant by ID, enabling cross-tenant account takeover. Patched in version 0.3.2.</p>
+<h3>WeKnora Authorization Bypass (CVSS 8.8)</h3>
+<p>High-severity authorization bypass in WeKnora prior to version 0.3.2. Allows authenticated users to bypass tenant isolation and access data across all tenants in the system.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30855" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30855" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-30851</p>
-<h3>Caddy forward_auth Identity Injection</h3>
-<p>High-severity vulnerability in Caddy web server. forward_auth copy_headers does not strip client-supplied headers, allowing identity injection and privilege escalation. Patched in version 2.11.2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30851" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30851" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-30834</p>
-<h3>PinchTab Server-Side Request Forgery</h3>
-<p>High-severity SSRF in PinchTab HTTP server for AI agents. The /download endpoint allows attackers to make requests to arbitrary URLs including internal network services. Patched in version 0.7.7.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30834" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30834" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25071</p>
-<h3>XikeStor Missing Authentication</h3>
-<p>High-severity vulnerability in XikeStor SKS8310-8X network switch. Missing authentication on /switch_config.src endpoint allows unauthenticated attackers to download sensitive device configuration files.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25071" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25071" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25072</p>
-<h3>XikeStor Insufficiently Random Values</h3>
-<p>High-severity vulnerability in XikeStor SKS8310-8X network switch firmware. Use of insufficiently random values allows attackers to predict sensitive values.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25072" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25072" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-30821</p>
 <h3>FlowiseAI Unrestricted File Upload</h3>
-<p>High-severity vulnerability in FlowiseAI Flowise. Allows unauthenticated attackers to upload arbitrary files by spoofing MIME types. Affected versions prior to 3.0.13.</p>
+<p>High-severity vulnerability in FlowiseAI Flowise versions prior to 3.0.13. Allows unauthenticated attackers to upload arbitrary files by spoofing MIME types.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30821" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30821" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30834</p>
+<h3>PinchTab HTTP Server Vulnerability (CVSS 7.5)</h3>
+<p>High-severity vulnerability in PinchTab versions prior to 0.7.7. PinchTab is a standalone HTTP server that gives AI agents direct control over a Chrome browser.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30834" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30834" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-25071</p>
+<h3>XikeStor SKS8310-8X Missing Authentication</h3>
+<p>Missing authentication on the /switch_config.src endpoint in XikeStor SKS8310-8X network switch firmware. Allows unauthenticated remote attackers to download sensitive device configuration files.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25071" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25071" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-25072</p>
+<h3>XikeStor SKS8310-8X Insufficiently Random Values</h3>
+<p>High-severity vulnerability in XikeStor SKS8310-8X network switch firmware versions 1.04.B07 and earlier. Uses insufficiently random values affecting security.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25072" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25072" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -592,7 +592,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-08 14:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-08 16:05 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
