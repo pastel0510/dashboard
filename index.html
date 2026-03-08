@@ -276,7 +276,7 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">0°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
@@ -284,7 +284,7 @@
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">-3°C</div>
+                            <div class="temp">-2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
@@ -319,7 +319,7 @@
                 <div class="card">
                     <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
                     <div id="xkcd" class="lightbox-trigger">
-                        <img src="https://imgs.xkcd.com/comics/arbitrage.png" alt="Xkcd">
+                        <img src="https://imgs.xkcd.com/comics/encoding.png" alt="Xkcd">
                     </div>
                 </div>
             </aside>
@@ -517,59 +517,59 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30861</p>
-<h3>WeKnora Unauthenticated Command Injection RCE</h3>
-<p>Critical RCE in WeKnora MCP stdio configuration. Attackers bypass whitelist/blacklist using npx -p node flag to execute arbitrary commands. Unauthenticated. CVSS 9.9.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30861" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-30860</p>
-<h3>WeKnora Database Query RCE</h3>
-<p>Critical RCE in WeKnora's database query functionality. Attackers bypass SQL injection protections by smuggling PostgreSQL functions in array/row expressions. Unauthenticated. CVSS 9.9.</p>
+<h3>WeKnora Remote Code Execution</h3>
+<p>Critical RCE vulnerability in WeKnora's database query functionality. Attackers can bypass SQL injection protections and achieve arbitrary code execution via PostgreSQL array expressions. Patched in version 0.2.12.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30860" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30860" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27446</p>
-<h3>Apache Artemis Missing Authentication</h3>
-<p>Critical authentication bypass in Apache Artemis/ActiveMQ. Unauthenticated attackers can force broker to connect to rogue broker for message injection/exfiltration. CVSS 9.3.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27446" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27446" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30861</p>
+<h3>WeKnora Command Injection</h3>
+<p>Critical RCE in WeKnora MCP stdio configuration. Unauthenticated attackers can bypass command validation using npx -p node flag to execute arbitrary commands. Patched in version 0.2.10.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30861" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30824</p>
-<h3>FlowiseAI Flowise Missing Authentication</h3>
-<p>High severity - NVIDIA NIM router endpoints lack authentication, allowing unauthenticated access to container management and token generation. Affects &lt;3.0.13. CVSS 7.7.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30824" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30824" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30855</p>
+<h3>WeKnora Authorization Bypass</h3>
+<p>High-severity authorization bypass in WeKnora tenant management. Any authenticated user can read, modify, or delete any tenant by ID, enabling cross-tenant account takeover. Patched in version 0.3.2.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30855" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30855" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30841</p>
-<h3>Wallos Reflected XSS</h3>
-<p>Reflected cross-site scripting in Wallos passwordreset.php. Unescaped token/email parameters allow malicious script execution. Affects &lt;4.6.2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30841" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30841" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30851</p>
+<h3>Caddy forward_auth Identity Injection</h3>
+<p>High-severity vulnerability in Caddy web server. forward_auth copy_headers does not strip client-supplied headers, allowing identity injection and privilege escalation. Patched in version 2.11.2.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30851" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30851" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30842</p>
-<h3>Wallos Insecure Direct Object Reference</h3>
-<p>Authenticated users can delete uploaded avatars of other users without authorization checks in Wallos. Affects &lt;4.6.2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30842" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30842" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30834</p>
+<h3>PinchTab Server-Side Request Forgery</h3>
+<p>High-severity SSRF in PinchTab HTTP server for AI agents. The /download endpoint allows attackers to make requests to arbitrary URLs including internal network services. Patched in version 0.7.7.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30834" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30834" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22719</p>
-<h3>VMware Aria Operations Command Injection</h3>
-<p>Command injection vulnerability in VMware Aria Operations (vRealize Operations). Unauthenticated attacker can execute arbitrary commands during support-assisted migration.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22719" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22719" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-25071</p>
+<h3>XikeStor Missing Authentication</h3>
+<p>High-severity vulnerability in XikeStor SKS8310-8X network switch. Missing authentication on /switch_config.src endpoint allows unauthenticated attackers to download sensitive device configuration files.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25071" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25071" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21385</p>
-<h3>Qualcomm Multiple Chipsets Memory Corruption</h3>
-<p>Memory corruption vulnerability in multiple Qualcomm chipsets related to memory alignment handling.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-21385" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21385" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-25072</p>
+<h3>XikeStor Insufficiently Random Values</h3>
+<p>High-severity vulnerability in XikeStor SKS8310-8X network switch firmware. Use of insufficiently random values allows attackers to predict sensitive values.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25072" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25072" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30821</p>
+<h3>FlowiseAI Unrestricted File Upload</h3>
+<p>High-severity vulnerability in FlowiseAI Flowise. Allows unauthenticated attackers to upload arbitrary files by spoofing MIME types. Affected versions prior to 3.0.13.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30821" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30821" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -599,7 +599,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-08 08:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-08 10:10 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
