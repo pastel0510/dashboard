@@ -511,59 +511,59 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30860</p>
-<h3>WeKnora Database Query RCE</h3>
-<p>Critical SQL injection in WeKnora &lt;0.2.12 allows unauthenticated RCE via PostgreSQL array expressions bypassing protection mechanisms.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30860" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30860" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-30861</p>
-<h3>WeKnora MCP Command Injection</h3>
-<p>Critical unauthenticated RCE in WeKnora 0.2.5-0.2.9 via MCP stdio configuration bypass using npx node -p flag.</p>
+<h3>WeKnora Unauthenticated Command Injection RCE</h3>
+<p>Critical RCE in WeKnora MCP stdio configuration. Attackers bypass whitelist/blacklist using npx -p node flag to execute arbitrary commands. Unauthenticated. CVSS 9.9.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30861" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28446</p>
-<h3>OpenClaw Voice Extension RCE</h3>
-<p>Critical vulnerability in OpenClaw voice-call extension with CVSS 9.8 allows remote code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28446" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28446" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30860</p>
+<h3>WeKnora Database Query RCE</h3>
+<p>Critical RCE in WeKnora's database query functionality. Attackers bypass SQL injection protections by smuggling PostgreSQL functions in array/row expressions. Unauthenticated. CVSS 9.9.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30860" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30860" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-26288</p>
-<h3>WebSocket Authentication Bypass</h3>
-<p>Critical vulnerability in WebSocket endpoints allows unauthorized station impersonation and backend data manipulation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-26288" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26288" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27446</p>
+<h3>Apache Artemis Missing Authentication</h3>
+<p>Critical authentication bypass in Apache Artemis/ActiveMQ. Unauthenticated attackers can force broker to connect to rogue broker for message injection/exfiltration. CVSS 9.3.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27446" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27446" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29058</p>
-<h3>WWBN AVideo-Encoder Command Injection</h3>
-<p>OS command injection in AVideo-Encoder allows remote attackers to execute arbitrary commands via improper input validation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29058" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29058" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30824</p>
+<h3>FlowiseAI Flowise Missing Authentication</h3>
+<p>High severity - NVIDIA NIM router endpoints lack authentication, allowing unauthenticated access to container management and token generation. Affects &lt;3.0.13. CVSS 7.7.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30824" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30824" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29000</p>
-<h3>pac4j JwtAuthenticator Signature Bypass</h3>
-<p>Critical flaw in pac4j JwtAuthenticator allows bypass of cryptographic signature verification when processing encrypted JWTs (JWE).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29000" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29000" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30841</p>
+<h3>Wallos Reflected XSS</h3>
+<p>Reflected cross-site scripting in Wallos passwordreset.php. Unescaped token/email parameters allow malicious script execution. Affects &lt;4.6.2.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30841" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30841" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-20127</p>
-<h3>Cisco Catalyst SD-WAN Authentication Bypass</h3>
-<p>Critical (CVSS 10.0) authentication bypass in Cisco Catalyst SD-WAN Controller and Manager actively exploited in the wild.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20127" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20127" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30842</p>
+<h3>Wallos Insecure Direct Object Reference</h3>
+<p>Authenticated users can delete uploaded avatars of other users without authorization checks in Wallos. Affects &lt;4.6.2.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30842" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30842" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22769</p>
-<h3>Dell RecoverPoint Hard-coded Credentials</h3>
-<p>Critical (CVSS 10.0) hard-coded credentials in Dell RecoverPoint for VMs exploited since mid-2024.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22769" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-22719</p>
+<h3>VMware Aria Operations Command Injection</h3>
+<p>Command injection vulnerability in VMware Aria Operations (vRealize Operations). Unauthenticated attacker can execute arbitrary commands during support-assisted migration.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22719" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22719" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-21385</p>
+<h3>Qualcomm Multiple Chipsets Memory Corruption</h3>
+<p>Memory corruption vulnerability in multiple Qualcomm chipsets related to memory alignment handling.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21385" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21385" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -593,7 +593,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-08 02:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-08 04:09 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
