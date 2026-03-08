@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">-2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">2°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">1°C</div>
+                            <div class="temp">0°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -310,9 +310,9 @@
                 <div class="card">
                     <h2>Bunny of the Day</h2>
                     <div id="bunny" class="lightbox-trigger">
-                        <img src="https://i.redd.it/fpu5ymr1ling1.jpeg" alt="Bunny">
+                        <img src="https://i.redd.it/a1zkbq9nkung1.jpeg" alt="Bunny">
                     </div>
-                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/Rabbits/comments/1rmum5r/imagine_being_a_literal_rhombus/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
+                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/Rabbits/comments/1ro91je/she_looks_so_regal_when_she_sits_with_crossed_paws/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
                 </div>
 
                 <!-- xkcd -->
@@ -519,58 +519,58 @@
                         <div id="cve-bulletin">
                             <div class="bulletin-item">
 <p class="cve-id">CVE-2026-30861</p>
-<h3>WeKnora MCP Stdio Command Injection</h3>
-<p>Critical RCE vulnerability in WeKnora versions 0.2.5 to before 0.2.10. Unauthenticated attackers can execute arbitrary commands via MCP stdio configuration validation due to incomplete input sanitization.</p>
+<h3>WeKnora MCP Stdio Remote Code Execution</h3>
+<p>Critical vulnerability in WeKnora versions 0.2.5-0.2.9 allows unauthenticated RCE via bypassed command validation in MCP stdio configuration. CVSS 9.9.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30861" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22688</p>
-<h3>WeKnora Command Injection (CVSS 9.9)</h3>
-<p>Critical command injection in WeKnora allowing unauthenticated RCE. Affects all versions up to 0.2.5. High impact on confidentiality, integrity, and availability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22688" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22688" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3703</p>
+<h3>Wavlink NU516U1 Out-of-Bounds Write</h3>
+<p>Critical buffer overflow in Wavlink NU516U1 login.cgi allows remote code execution. The vulnerability affects the sub_401A10 function. CVSS 9.8.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3703" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3703" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27574</p>
-<h3>OneUptime Remote Code Execution</h3>
-<p>Critical RCE vulnerability in OneUptime versions prior to 10.0.5. Attackers can achieve one-shot RCE via "Test Monitor" function or persistent scheduled RCE through malicious Synthetic Monitors.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27574" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27574" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30860</p>
+<h3>WeKnora Database Query RCE</h3>
+<p>Critical RCE in WeKnora prior to v0.2.12 allows unauthenticated attackers to execute arbitrary code via PostgreSQL array/row expression bypass.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30860" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30860" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30855</p>
-<h3>WeKnora Authorization Bypass (CVSS 8.8)</h3>
-<p>High-severity authorization bypass in WeKnora prior to version 0.3.2. Allows authenticated users to bypass tenant isolation and access data across all tenants in the system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30855" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30855" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3102</p>
+<h3>ExifTool macOS Command Injection</h3>
+<p>Critical OS command injection in ExifTool up to 13.49 on macOS via PNG file parser (SetMacOSTags function). Upgrade to 13.50.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3102" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3102" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30821</p>
-<h3>FlowiseAI Unrestricted File Upload</h3>
-<p>High-severity vulnerability in FlowiseAI Flowise versions prior to 3.0.13. Allows unauthenticated attackers to upload arbitrary files by spoofing MIME types.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30821" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30821" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3698</p>
+<h3>UTT HiPER 810G Buffer Overflow</h3>
+<p>High-severity buffer overflow in UTT HiPER 810G devices (up to v1.7.7-171114) via strcpy in /goform/NTP. Published March 8, 2026.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3698" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3698" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30834</p>
-<h3>PinchTab HTTP Server Vulnerability (CVSS 7.5)</h3>
-<p>High-severity vulnerability in PinchTab versions prior to 0.7.7. PinchTab is a standalone HTTP server that gives AI agents direct control over a Chrome browser.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30834" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30834" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3700</p>
+<h3>UTT HiPER 810G DNS Filter Buffer Overflow</h3>
+<p>High-severity buffer overflow (CVSS 8.8) in UTT HiPER 810G via strcpy in /goform/formConfigDnsFilterGlobal. Affects firmware up to 1.7.7-171114.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3700" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3700" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25071</p>
-<h3>XikeStor SKS8310-8X Missing Authentication</h3>
-<p>Missing authentication on the /switch_config.src endpoint in XikeStor SKS8310-8X network switch firmware. Allows unauthenticated remote attackers to download sensitive device configuration files.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25071" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25071" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3715</p>
+<h3>Wavlink WL-WN579X3-C Stack Buffer Overflow</h3>
+<p>High-severity stack-based buffer overflow in Wavlink WL-WN579X3-C devices (version 231124). Published March 8, 2026.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3715" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3715" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25072</p>
-<h3>XikeStor SKS8310-8X Insufficiently Random Values</h3>
-<p>High-severity vulnerability in XikeStor SKS8310-8X network switch firmware versions 1.04.B07 and earlier. Uses insufficiently random values affecting security.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25072" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25072" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3701</p>
+<h3>H3C Magic B1 Buffer Overflow</h3>
+<p>High-severity buffer overflow (CVSS 8.8) in H3C Magic B1 devices via Edit_BasicSSID_5G function. Affects firmware up to 100R004.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3701" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3701" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -600,7 +600,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-08 20:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-08 22:05 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
