@@ -24,65 +24,13 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-08 12:34 UTC — No new developments. News quiet on this topic.
+**Last checked:** 2026-03-09 21:38 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
 - Confirmed breach source identified
 - Data proven authentic or fake
 - Customers notified of breach
-
-## Strix Halo Crash Issue (Mar 2026)
-Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
-
-**Known issues:**
-- AMD GPU driver bug (cwsr_enable) — fix: disable via amdgpu cwsr_enable=0
-- ROCm/AI + video encoding causes GPU hangs (GitHub ROCm#5665)
-- Memory allocation issues with large models
-- Kernel ≥ 6.18.4 required (older kernels have gfx1151 bug)
-- Avoid linux-firmware-20251125 (breaks ROCm)
-
-**Sources to check:**
-- Reddit r/LocalLLaMA, r/ASUS
-- ASUS ROG forums
-- GitHub ROCm issues
-- GitHub kyuz0/amd-strix-halo-toolboxes
-- Framework BIOS updates: https://frame.work/support/enclosures/desktop
-
-**Last checked:** 2026-03-08 12:40 UTC
-
-Notify Shadow if:
-- BIOS/firmware update released
-- AMD releases driver fix
-- New workaround discovered
-
-## Strix Halo Crash Issue (Mar 2026)
-Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
-
-**Current status:** Shadow upgraded to kernel 6.19.4 (was on 6.17.0). Monitoring for resolution.
-
-**Known issues:**
-- AMD GPU driver bug (cwsr_enable) — fix: disable via amdgpu cwsr_enable=0
-- ROCm/AI + video encoding causes GPU hangs (GitHub ROCm#5665)
-- Memory allocation issues with large models
-- Kernel ≥ 6.18.4 required (older kernels have gfx1151 bug)
-- Avoid linux-firmware-20251125 (breaks ROCm)
-
-**Sources to check:**
-- Reddit r/LocalLLaMA, r/ASUS
-- ASUS ROG forums
-- GitHub ROCm issues
-- GitHub kyuz0/amd-strix-halo-toolboxes
-- Framework BIOS updates: https://frame.work/support/enclosures/desktop
-
-**Last checked:** 2026-03-08 15:35 UTC — Finnish bulletin manually sent (cron has bug). No new developments on Tokmanni/Posti.
-
-Notify Shadow if:
-- Crash resolved after kernel upgrade
-- Crash persists after kernel upgrade
-- BIOS/firmware update released
-- AMD releases driver fix
-- New workaround discovered
 
 ## Posti Omaposti Data Breach (Feb 25, 2026) — ACTIVE
 Serious privacy incident: Users saw other people's data in Omaposti app.
@@ -103,7 +51,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-08 08:10 UTC — No new developments.
+**Last checked:** 2026-03-09 21:38 UTC — No new developments. The €2.4M fine was from Nov 2024, unrelated to Feb 2026 incident.
 
 **Note:** Include source links in all update notifications.
 
@@ -113,3 +61,31 @@ Notify Shadow if:
 - Official apology or compensation announced for Feb 25 incident
 - Authorities open investigation into Feb 25 incident
 - NEW separate fine imposed specifically for the Feb 25 data exposure
+
+## Strix Halo Crash Issue (Mar 2026)
+Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
+
+**Current status:** Shadow upgraded to kernel 6.19.4 (was on 6.17.0). Monitoring for resolution.
+
+**Known issues:**
+- AMD GPU driver bug (cwsr_enable) — fix: disable via amdgpu cwsr_enable=0
+- ROCm/AI + video encoding causes GPU hangs (GitHub ROCm#5665)
+- Memory allocation issues with large models
+- Kernel ≥ 6.18.4 required (older kernels have gfx1151 bug)
+- Avoid linux-firmware-20251125 (breaks ROCm)
+
+**Sources to check:**
+- Reddit r/LocalLLaMA, r/ASUS
+- ASUS ROG forums
+- GitHub ROCm issues
+- GitHub kyuz0/amd-strix-halo-toolboxes
+- Framework BIOS updates: https://frame.work/support/enclosures/desktop
+
+**Last checked:** 2026-03-09 21:38 UTC — No new fixes since January 2026. Kernel 6.19.4 should resolve.
+
+Notify Shadow if:
+- Crash resolved after kernel upgrade
+- Crash persists after kernel upgrade
+- BIOS/firmware update released
+- AMD releases driver fix
+- New workaround discovered
