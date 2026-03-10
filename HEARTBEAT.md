@@ -24,7 +24,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-09 21:38 UTC — No new developments.
+**Last checked:** 2026-03-10 03:41 UTC — Skipping web checks (early morning).
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -51,7 +51,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-09 21:38 UTC — No new developments. The €2.4M fine was from Nov 2024, unrelated to Feb 2026 incident.
+**Last checked:** 2026-03-10 03:41 UTC — Skipping web checks (early morning).
 
 **Note:** Include source links in all update notifications.
 
@@ -81,7 +81,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 - GitHub kyuz0/amd-strix-halo-toolboxes
 - Framework BIOS updates: https://frame.work/support/enclosures/desktop
 
-**Last checked:** 2026-03-09 21:38 UTC — No new fixes since January 2026. Kernel 6.19.4 should resolve.
+**Last checked:** 2026-03-10 03:41 UTC — Skipping web checks (early morning).
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade
