@@ -1,11 +1,22 @@
 
-## Dashboard Image Policy
+## Managed Repositories
+
+| Repo | URL | Privacy | Notes |
+|------|-----|---------|-------|
+| **dashboard** | github.com/pastel0510/dashboard | **Public** | GitHub Pages site. Cloned to workspace. Always `git pull` when asked to update. Check README when pulling for changes. |
+| **rss-translator** | gitgud.io:unreached2457/rss-translator | **Private** | RSS translation service. Stays on gitgud.io. |
+| **md-files** | gitgud.io:unreached2457/md-files | **Private** | Personal data, never push to public GitHub. |
+
+**Rule:** Never push md-files content to any public repo. Only push public-friendly content to GitHub (pastel0510/*).
 **Always use remote image URLs, never save image files to the git repo.**
 
 The dashboard (`pastel0510/dashboard`) must:
 - Use direct links to images (e.g., `https://media.mas.to/...`, `https://i.redd.it/...`, `https://imgs.xkcd.com/...`)
 - Wrap images in `<a href="URL">` tags so they're clickable to full size
 - Never commit `.jpg`, `.png`, or `.gif` files to the repo
+- **Only cron jobs** update index.html & weather.html — nothing else should touch those files
+
+Current structure: index.html, weather.html, .github/workflows/pages.yml, .gitlab-ci.yml, README.md
 
 Images currently used:
 - **Bunny**: Reddit direct image URL from `bunny.url`

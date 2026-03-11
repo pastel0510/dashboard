@@ -37,7 +37,10 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
-## Telegram
+## Git / Dashboard
+
+- **Git commits** must use GitHub username, not display names. Always check `git config user.name` before pushing to GitHub repos.
+- Dashboard repo: `pastel0510/dashboard`
 
 - **Primary chat ID: `55163462`** — this is Shadow's personal Telegram chat. Use this as the `target` whenever you need to send a message, photo, or file via the `message` tool. Never use `"telegram"` as the target — it must be the numeric chat ID.
 
