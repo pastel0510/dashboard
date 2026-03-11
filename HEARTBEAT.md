@@ -19,12 +19,12 @@ Monitor for updates on the Tokmanni customer data situation.
 
 **Current status:** Tokmanni denies any breach of their systems. Source of leaked data remains unknown. Screenshots have been removed.
 
-**Sources to check for updates:**
+**Sources to check:**
 - Iltalehti.fi, Verkkouutiset.fi, MTV Uutiset
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-10 08:14 UTC — No new developments.
+**Last checked:** 2026-03-11 03:15 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -51,7 +51,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.posti.fi/fi/asiakastuki/hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-10 08:14 UTC — No new developments.
+**Last checked:** 2026-03-11 03:15 UTC — No new developments (rate limited on search).
 
 **Note:** Include source links in all update notifications.
 
@@ -81,7 +81,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 - GitHub kyuz0/amd-strix-halo-toolboxes
 - Framework BIOS updates: https://frame.work/support/enclosures/desktop
 
-**Last checked:** 2026-03-10 08:14 UTC — No new fixes. Kernel 6.19.4 should resolve.
+**Last checked:** 2026-03-11 03:15 UTC — No new fixes. Kernel 6.19.4 should resolve.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade

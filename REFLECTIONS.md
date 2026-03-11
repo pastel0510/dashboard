@@ -13,3 +13,7 @@
 - **Mistake:** Failed `edit` tool call when trying to update HEARTBEAT.md - "Could not find the exact text" - the edit command failed because the file content didn't match what I tried to edit.
 - **Mistake:** Failed `web_fetch` (403 error) when trying to fetch Posti fine details from Finnish news source.
 - **Status:** Edit failure was benign (file already had correct timestamp). Web fetch failure was handled gracefully with fallback searches.
+
+## 2026-03-10T15:05:00Z
+- **Issue:** Self-reflection cron job (89f4721b-6574-47c4-8a11-4dbe22d44c90) is misconfigured - it runs in an isolated session that cannot access the main session's message history, making it unable to fulfill its stated purpose of reviewing unanswered questions.
+- **Status:** NEEDS FIX — The cron job should target the main session or use a different approach to access conversation history.
