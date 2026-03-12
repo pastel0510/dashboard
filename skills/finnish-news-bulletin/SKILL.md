@@ -136,7 +136,7 @@ Select up to `count` stories. Format each entry as:
 <direct article URL>
 ```
 
-Where `<date>` is the publication date in a human-readable short format (e.g., "27 Feb 2026" or "2026-02-27").
+Where `<date>` is the publication date in ISO format: `yyyy-mm-dd` (e.g., "2026-02-27").
 
 - Include the DATE at the start of each entry (before the title)
 - Bold the title with `**...**` (Telegram renders this as bold)

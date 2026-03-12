@@ -82,7 +82,7 @@ Link: <direct article URL>
 TLDR: <10‑word CVE summary>   # only for the single CVE entry
 ```
 
-Where `<date>` is the publication date in a short format (e.g., "27 Feb 2026" or "2026-02-27").
+Where `<date>` is the publication date in ISO format: `yyyy-mm-dd` (e.g., "2026-02-27").
 
 If multiple CVEs are found, pick the most critical/high‑impact one for the TLDR and treat the rest as regular news (omit TLDR). Separate each story with a blank line and do not add numbering, bullets, or extra headers.
 
