@@ -8,7 +8,7 @@
 # to rewrite this entire file. Never use the edit tool — timestamps change every
 # run so exact-text matching will always fail.
 
-## Viking Line Data Breach (Mar 12, 2026)
+## Viking Line Data Breach (Mar 12, 2026) — ESCALATED
 Monitor for updates on the Viking Line customer data breach.
 
 **Timeline:**
@@ -21,23 +21,29 @@ Monitor for updates on the Viking Line customer data breach.
 - 12.3.2026: **UPDATE** — Data **may have been published online** (location unknown)
 - 12.3.2026: **UPDATE** — No "sensitive" (arkaluonteinen) data leaked per Viking Line
 - 12.3.2026: Reported to **tietosuojavaltuutettu** (Data Protection Ombudsman)
-- Still unknown: number of affected customers
+- 12.3.2026 (~10:45): **UPDATE** — Affected customers: "not hundreds of thousands" — exact number unknown
+- 11.3.2026 (14:46 UTC): **MAJOR ESCALATION** — DarkWeb Informer: threat actor "bytetobreach" claims FULL breach of Viking Line, not just subcontractor
+- 12.3.2026 (~14:33 UTC): **CONFIRMED** — Threat actor claims: complete passenger database + NetAxept payment API data (transaction history, onboard purchases), vehicle reg plates, system credentials. Data allegedly available for FREE download. Attack chain: Solr LFI (2021) → Tomcat creds → reverse shell → pivot to master server.
 
-**Current status:** Subcontractor (Digitalist Experience) identified. Contact info exposed. May have been published online. Scope under investigation.
+**Current status:** ⚠️ ESCALATED. Viking Line's claim of "only contact info, no sensitive data" is contradicted by threat actor claiming full passenger DB + payment transaction data from all ships. No new Viking Line response to the bytetobreach claims yet. Finnish media (Yle, Iltalehti, HBL, Shippax) still repeating Viking Line's "subcontractor pre-order duty-free only" narrative — none have picked up the bytetobreach / full breach angle.
 
 **Sources to check:**
+- DarkWeb Informer: https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/
 - Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
+- BreachForums for data listings
 
-**Last checked:** 2026-03-12 08:43 UTC — Alert sent: subcontractor identified (Digitalist Experience), contact info exposed, may be published online.
+**Last checked:** 2026-03-12 15:34 UTC — No new developments. Finnish media still on subcontractor narrative, no coverage of bytetobreach claims.
 
 Notify Shadow if:
+- Viking Line responds to the bytetobreach / DarkWeb Informer claims
 - Number of affected customers disclosed
-- Payment/card data exposed
-- Data confirmed published somewhere (BreachForums, Telegram, etc.)
+- Payment/card data confirmed by authorities
+- Data confirmed published on BreachForums/Telegram with proof
 - Customers start receiving notifications
 - Follow-up incidents or escalation
+- Finnish media picks up the bytetobreach angle
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitor for updates on the Tokmanni customer data situation.
@@ -55,7 +61,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-11 22:43 UTC — No new developments.
+**Last checked:** 2026-03-12 15:34 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -82,7 +88,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-11 22:43 UTC — No new developments.
+**Last checked:** 2026-03-12 15:34 UTC — No new developments.
 
 **Note:** Include source links in all update notifications.
 
@@ -112,7 +118,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 - GitHub kyuz0/amd-strix-halo-toolboxes
 - Framework BIOS updates: https://frame.work/support/enclosures/desktop
 
-**Last checked:** 2026-03-11 22:43 UTC — No new fixes. Kernel 6.19.4 should resolve.
+**Last checked:** 2026-03-12 15:34 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade
