@@ -8,6 +8,37 @@
 # to rewrite this entire file. Never use the edit tool — timestamps change every
 # run so exact-text matching will always fail.
 
+## Viking Line Data Breach (Mar 12, 2026)
+Monitor for updates on the Viking Line customer data breach.
+
+**Timeline:**
+- 12.3.2026 (morning): Iltalehti reports customer data breached at Viking Line
+- 12.3.2026: Viking Line confirms breach — occurred at subcontractor
+- 12.3.2026: Breach involves pre-order (tax-free advance order) data
+- 12.3.2026: Reported to Traficom and Kyberturvallisuuskeskus
+- 12.3.2026 (~08:30): **UPDATE** — HS reports: subcontractor is **Digitalist Experience**
+- 12.3.2026: **UPDATE** — Exposed data includes **contact info** (names, addresses, phone, email)
+- 12.3.2026: **UPDATE** — Data **may have been published online** (location unknown)
+- 12.3.2026: **UPDATE** — No "sensitive" (arkaluonteinen) data leaked per Viking Line
+- 12.3.2026: Reported to **tietosuojavaltuutettu** (Data Protection Ombudsman)
+- Still unknown: number of affected customers
+
+**Current status:** Subcontractor (Digitalist Experience) identified. Contact info exposed. May have been published online. Scope under investigation.
+
+**Sources to check:**
+- Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi
+- Viking Line press releases
+- Traficom/Kyberturvallisuuskeskus statements
+
+**Last checked:** 2026-03-12 08:43 UTC — Alert sent: subcontractor identified (Digitalist Experience), contact info exposed, may be published online.
+
+Notify Shadow if:
+- Number of affected customers disclosed
+- Payment/card data exposed
+- Data confirmed published somewhere (BreachForums, Telegram, etc.)
+- Customers start receiving notifications
+- Follow-up incidents or escalation
+
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitor for updates on the Tokmanni customer data situation.
 
