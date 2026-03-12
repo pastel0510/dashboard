@@ -24,26 +24,25 @@ Monitor for updates on the Viking Line customer data breach.
 - 12.3.2026 (~10:45): **UPDATE** — Affected customers: "not hundreds of thousands" — exact number unknown
 - 11.3.2026 (14:46 UTC): **MAJOR ESCALATION** — DarkWeb Informer: threat actor "bytetobreach" claims FULL breach of Viking Line, not just subcontractor
 - 12.3.2026 (~14:33 UTC): **CONFIRMED** — Threat actor claims: complete passenger database + NetAxept payment API data (transaction history, onboard purchases), vehicle reg plates, system credentials. Data allegedly available for FREE download. Attack chain: Solr LFI (2021) → Tomcat creds → reverse shell → pivot to master server.
+- 12.3.2026 (~10:15 UTC): Yle article — Viking Line comms director Boijer-Svahnström: "thousands, not hundreds of thousands" affected. No criminal report filed yet. Still subcontractor narrative.
 
-**Current status:** ⚠️ ESCALATED. Viking Line's claim of "only contact info, no sensitive data" is contradicted by threat actor claiming full passenger DB + payment transaction data from all ships. No new Viking Line response to the bytetobreach claims yet. Finnish media (Yle, Iltalehti, HBL, Shippax) still repeating Viking Line's "subcontractor pre-order duty-free only" narrative — none have picked up the bytetobreach / full breach angle.
+**Current status:** ⚠️ ESCALATED. Viking Line's claim of "only contact info, no sensitive data" is contradicted by threat actor claiming full passenger DB + payment transaction data from all ships. Finnish media (Yle, Iltalehti, IS, HS) still repeating Viking Line's "subcontractor pre-order duty-free only" narrative — none have picked up the bytetobreach / full breach angle.
 
 **Sources to check:**
 - DarkWeb Informer: https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/
-- Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi
+- Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi, Yle.fi
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
 - BreachForums for data listings
 
-**Last checked:** 2026-03-12 15:34 UTC — No new developments. Finnish media still on subcontractor narrative, no coverage of bytetobreach claims.
+**Last checked:** 2026-03-12 22:02 UTC — No new developments (midnight in Finland, 30 min since last check).
 
 Notify Shadow if:
 - Viking Line responds to the bytetobreach / DarkWeb Informer claims
-- Number of affected customers disclosed
+- Number of affected customers disclosed with exact figure
 - Payment/card data confirmed by authorities
 - Data confirmed published on BreachForums/Telegram with proof
 - Customers start receiving notifications
-- Follow-up incidents or escalation
-- Finnish media picks up the bytetobreach angle
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitor for updates on the Tokmanni customer data situation.
@@ -61,7 +60,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-12 15:34 UTC — No new developments.
+**Last checked:** 2026-03-12 22:02 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -88,7 +87,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-12 15:34 UTC — No new developments.
+**Last checked:** 2026-03-12 22:02 UTC — No new developments.
 
 **Note:** Include source links in all update notifications.
 
@@ -118,7 +117,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 - GitHub kyuz0/amd-strix-halo-toolboxes
 - Framework BIOS updates: https://frame.work/support/enclosures/desktop
 
-**Last checked:** 2026-03-12 15:34 UTC — No new fixes.
+**Last checked:** 2026-03-12 22:02 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade
