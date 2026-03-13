@@ -35,7 +35,7 @@ Monitor for updates on the Viking Line customer data breach.
 - Traficom/Kyberturvallisuuskeskus statements
 - BreachForums for data listings
 
-**Last checked:** 2026-03-12 22:02 UTC — No new developments (midnight in Finland, 30 min since last check).
+**Last checked:** 2026-03-13 03:33 UTC — Late night, no new developments expected.
 
 Notify Shadow if:
 - Viking Line responds to the bytetobreach / DarkWeb Informer claims
@@ -60,7 +60,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-12 22:02 UTC — No new developments.
+**Last checked:** 2026-03-13 03:33 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -87,7 +87,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-12 22:02 UTC — No new developments.
+**Last checked:** 2026-03-13 03:33 UTC — No new developments.
 
 **Note:** Include source links in all update notifications.
 
@@ -117,7 +117,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 - GitHub kyuz0/amd-strix-halo-toolboxes
 - Framework BIOS updates: https://frame.work/support/enclosures/desktop
 
-**Last checked:** 2026-03-12 22:02 UTC — No new fixes.
+**Last checked:** 2026-03-13 03:33 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade
