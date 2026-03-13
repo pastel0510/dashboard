@@ -25,24 +25,31 @@ Monitor for updates on the Viking Line customer data breach.
 - 11.3.2026 (14:46 UTC): **MAJOR ESCALATION** — DarkWeb Informer: threat actor "bytetobreach" claims FULL breach of Viking Line, not just subcontractor
 - 12.3.2026 (~14:33 UTC): **CONFIRMED** — Threat actor claims: complete passenger database + NetAxept payment API data (transaction history, onboard purchases), vehicle reg plates, system credentials. Data allegedly available for FREE download. Attack chain: Solr LFI (2021) → Tomcat creds → reverse shell → pivot to master server.
 - 12.3.2026 (~10:15 UTC): Yle article — Viking Line comms director Boijer-Svahnström: "thousands, not hundreds of thousands" affected. No criminal report filed yet. Still subcontractor narrative.
+- 13.3.2026 (~18:25 UTC): **MAJOR DEVELOPMENT** — ByteToBreach now also leaked full source code of Sweden's E-Government platform from compromised **CGI Sverige** infrastructure. Actor explicitly references Viking Line as example of companies blaming subcontractors.
+- 13.3.2026 (~06:00 UTC): **SWEDISH MEDIA PICKUP** — Expressen reports Viking Line breach linked to same actor as CGI Sverige hack
+- 13.3.2026 (~09:00 UTC): **SWEDISH MEDIA** — Aftonbladet reports CGI Sverige hacked, "multiple authorities active", explicitly connects to Viking Line breach. Still no Finnish media connection to bytetobreach.
 
-**Current status:** ⚠️ ESCALATED. Viking Line's claim of "only contact info, no sensitive data" is contradicted by threat actor claiming full passenger DB + payment transaction data from all ships. Finnish media (Yle, Iltalehti, IS, HS) still repeating Viking Line's "subcontractor pre-order duty-free only" narrative — none have picked up the bytetobreach / full breach angle.
+**Current status:** ⚠️ ESCALATED. Swedish media now covering the connection between ByteToBreach, CGI Sverige, and Viking Line. Finnish media still on subcontractor narrative only. No official response from Viking Line to the full breach claims.
 
 **Sources to check:**
-- DarkWeb Informer: https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/
+- DarkWeb Informer Viking Line: https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/
+- DarkWeb Informer CGI Sverige: https://darkwebinformer.com/full-source-code-of-swedens-e-government-platform-leaked-from-compromised-cgi-sverige-infrastructure/
+- Aftonbladet: https://www.aftonbladet.se/nyheter/a/ArvG0E/cgi-sverige-uppges-vara-hackade-flera-myndigheter-aktiva
+- Expressen: https://www.expressen.se/nyheter/sverige/uppgift-sveriges-digitala-plattform-hackad-av-aktor/
 - Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi, Yle.fi
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
-- BreachForums for data listings
 
-**Last checked:** 2026-03-13 03:33 UTC — Late night, no new developments expected.
+**Last checked:** 2026-03-13 09:35 UTC — Swedish media now actively covering. Aftonbladet story from 33 min ago. Finnish media still repeating subcontractor narrative.
 
 Notify Shadow if:
-- Viking Line responds to the bytetobreach / DarkWeb Informer claims
+- Finnish media reports on CGI Sverige / bytetobreach connection
+- Viking Line responds to the bytetobreach claims
 - Number of affected customers disclosed with exact figure
 - Payment/card data confirmed by authorities
 - Data confirmed published on BreachForums/Telegram with proof
 - Customers start receiving notifications
+- CGI Sverige or Swedish authorities issue statement
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitor for updates on the Tokmanni customer data situation.

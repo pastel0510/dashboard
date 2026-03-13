@@ -136,7 +136,7 @@ Select up to `count` stories. Format each entry as:
 <direct article URL>
 ```
 
-Where `<date>` is the publication date in ISO format: `yyyy-mm-dd` (e.g., "2026-02-27").
+Where `<date>` is the publication date in "Month Day, Year" format (e.g., "March 13, 2026"). **This format must match the Science and Security bulletins.**
 
 - Include the DATE at the start of each entry (before the title)
 - Bold the title with `**...**` (Telegram renders this as bold)
