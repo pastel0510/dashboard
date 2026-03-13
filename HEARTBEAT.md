@@ -25,22 +25,25 @@ Monitor for updates on the Viking Line customer data breach.
 - 11.3.2026 (14:46 UTC): **MAJOR ESCALATION** — DarkWeb Informer: threat actor "bytetobreach" claims FULL breach of Viking Line, not just subcontractor
 - 12.3.2026 (~14:33 UTC): **CONFIRMED** — Threat actor claims: complete passenger database + NetAxept payment API data (transaction history, onboard purchases), vehicle reg plates, system credentials. Data allegedly available for FREE download. Attack chain: Solr LFI (2021) → Tomcat creds → reverse shell → pivot to master server.
 - 12.3.2026 (~10:15 UTC): Yle article — Viking Line comms director Boijer-Svahnström: "thousands, not hundreds of thousands" affected. No criminal report filed yet. Still subcontractor narrative.
-- 13.3.2026 (~18:25 UTC): **MAJOR DEVELOPMENT** — ByteToBreach now also leaked full source code of Sweden's E-Government platform from compromised **CGI Sverige** infrastructure. Actor explicitly references Viking Line as example of companies blaming subcontractors.
-- 13.3.2026 (~06:00 UTC): **SWEDISH MEDIA PICKUP** — Expressen reports Viking Line breach linked to same actor as CGI Sverige hack
-- 13.3.2026 (~09:00 UTC): **SWEDISH MEDIA** — Aftonbladet reports CGI Sverige hacked, "multiple authorities active", explicitly connects to Viking Line breach. Still no Finnish media connection to bytetobreach.
+- 13.3.2026 (~18:25 UTC): **MAJOR DEVELOPMENT** — ByteToBreach leaked full source code of Sweden's E-Government platform from compromised **CGI Sverige** infrastructure. Actor explicitly references Viking Line as example of companies blaming subcontractors.
+- 13.3.2026 (~06:00 UTC): **SWEDISH MEDIA** — Expressen reports Viking Line breach linked to same actor as CGI Sverige hack
+- 13.3.2026 (~09:00 UTC): **SWEDISH MEDIA** — Aftonbladet reports CGI Sverige hacked, "multiple authorities active", connects to Viking Line
+- 13.3.2026 (~09:30 UTC): **INVESTIGATION OPENED** — Sweden officially probes e-government platform source code leak from CGI Sverige. Reports explicitly link ByteToBreach to both CGI Sverige hack and Viking Line as "an ongoing campaign targeting Swedish and European infrastructure via CGI's managed services footprint."
+- 13.3.2026: Finnish media still on subcontractor narrative, no ByteToBreach connection reported
 
-**Current status:** ⚠️ ESCALATED. Swedish media now covering the connection between ByteToBreach, CGI Sverige, and Viking Line. Finnish media still on subcontractor narrative only. No official response from Viking Line to the full breach claims.
+**Current status:** ⚠️ ESCALATED. Sweden has opened an official investigation into the CGI Sverige breach. Multiple international outlets now linking ByteToBreach to both CGI Sverige and Viking Line. Finnish media still only reporting subcontractor narrative.
 
 **Sources to check:**
 - DarkWeb Informer Viking Line: https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/
 - DarkWeb Informer CGI Sverige: https://darkwebinformer.com/full-source-code-of-swedens-e-government-platform-leaked-from-compromised-cgi-sverige-infrastructure/
+- TradingView/Cointelegraph: https://www.tradingview.com/news/cointelegraph:077d8119f094b:0-sweden-probes-reported-leak-of-e-government-platform-source-code/
 - Aftonbladet: https://www.aftonbladet.se/nyheter/a/ArvG0E/cgi-sverige-uppges-vara-hackade-flera-myndigheter-aktiva
 - Expressen: https://www.expressen.se/nyheter/sverige/uppgift-sveriges-digitala-plattform-hackad-av-aktor/
 - Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi, Yle.fi
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
 
-**Last checked:** 2026-03-13 09:35 UTC — Swedish media now actively covering. Aftonbladet story from 33 min ago. Finnish media still repeating subcontractor narrative.
+**Last checked:** 2026-03-13 12:32 UTC — Sweden officially investigating. Finnish media still repeating subcontractor narrative.
 
 Notify Shadow if:
 - Finnish media reports on CGI Sverige / bytetobreach connection
@@ -49,7 +52,7 @@ Notify Shadow if:
 - Payment/card data confirmed by authorities
 - Data confirmed published on BreachForums/Telegram with proof
 - Customers start receiving notifications
-- CGI Sverige or Swedish authorities issue statement
+- CGI Sverige or Swedish authorities issue statement on Viking Line specifically
 
 ## Tokmanni Data Leak Investigation (Feb 2026)
 Monitor for updates on the Tokmanni customer data situation.
@@ -67,7 +70,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-13 03:33 UTC — No new developments.
+**Last checked:** 2026-03-13 12:32 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -94,37 +97,21 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-13 03:33 UTC — No new developments.
-
-**Note:** Include source links in all update notifications.
+**Last checked:** 2026-03-13 12:32 UTC — No new developments.
 
 Notify Shadow if:
-- Posti files official breach notification FOR THE FEB 25, 2026 INCIDENT
-- More users confirmed affected by Feb 25 incident
-- Official apology or compensation announced for Feb 25 incident
-- Authorities open investigation into Feb 25 incident
-- NEW separate fine imposed specifically for the Feb 25 data exposure
+- Posti files official breach notification
+- More users confirmed affected
+- Official apology or compensation announced
+- Authorities open investigation
+- NEW fine imposed specifically for the Feb 25 data exposure
 
 ## Strix Halo Crash Issue (Mar 2026)
 Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 
 **Current status:** Shadow upgraded to kernel 6.19.4 (was on 6.17.0). Monitoring for resolution.
 
-**Known issues:**
-- AMD GPU driver bug (cwsr_enable) — fix: disable via amdgpu cwsr_enable=0
-- ROCm/AI + video encoding causes GPU hangs (GitHub ROCm#5665)
-- Memory allocation issues with large models
-- Kernel ≥ 6.18.4 required (older kernels have gfx1151 bug)
-- Avoid linux-firmware-20251125 (breaks ROCm)
-
-**Sources to check:**
-- Reddit r/LocalLLaMA, r/ASUS
-- ASUS ROG forums
-- GitHub ROCm issues
-- GitHub kyuz0/amd-strix-halo-toolboxes
-- Framework BIOS updates: https://frame.work/support/enclosures/desktop
-
-**Last checked:** 2026-03-13 03:33 UTC — No new fixes.
+**Last checked:** 2026-03-13 12:32 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade
