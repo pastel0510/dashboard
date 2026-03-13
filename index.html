@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">7°C</div>
+                            <div class="temp">3°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -515,67 +515,63 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <div class="bulletin-item" style="background: transparent; border: 1px solid #444; padding: 12px;">
-<p class="disclaimer">Showing CVEs from the last 24 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
-</div>
+                            <p class="disclaimer">Showing CVEs from the last 24 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21708 · March 12, 2026</p>
-<h3>Critical Remote Code Execution in Backup Viewer</h3>
-<p>A critical RCE vulnerability in the Backup Viewer component allows an attacker to execute arbitrary code with the privileges of the postgres user. CVSS 9.9 (Critical). No authentication details specified; network access to the vulnerable service is required. No public PoC at time of disclosure.</p>
+<p class="cve-id">CVE-2026-21708 · Mar 12, 2026 · updated Mar 13, 2026</p>
+<h3>Veeam Backup & Replication Remote Code Execution</h3>
+<p>A vulnerability allowing an authenticated user holding the Backup Administrator role to execute arbitrary code remotely on Veeam Backup & Replication.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-21708" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21708" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21667 · March 12, 2026</p>
+<p class="cve-id">CVE-2026-21669 · Mar 12, 2026 · updated Mar 13, 2026</p>
+<h3>Backup Server Remote Code Execution via Authenticated User</h3>
+<p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21669" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21669" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-21667 · Mar 12, 2026 · updated Mar 13, 2026</p>
 <h3>Backup Server RCE via Authenticated Domain User</h3>
-<p>Critical RCE vulnerability affecting Backup Servers with a CVSS score of 9.9. An authenticated domain user can execute arbitrary code remotely on the target Backup Server over the network. Specific vulnerable function not yet disclosed; no public PoC available.</p>
+<p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-21667" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21667" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21671 · March 12, 2026</p>
-<h3>Veeam Backup &amp; Replication HA Remote Code Execution</h3>
-<p>Critical RCE vulnerability specific to high availability (HA) deployments of Veeam Backup &amp; Replication. An authenticated user with Backup Administrator role can execute arbitrary code remotely. Likely stems from insufficient sanitization of commands in HA mode.</p>
+<p class="cve-id">CVE-2026-21671 · Mar 12, 2026 · updated Mar 13, 2026</p>
+<h3>Veeam Backup & Replication HA RCE</h3>
+<p>A vulnerability allowing an authenticated user holding the Backup Administrator role to execute arbitrary code remotely.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-21671" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21671" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21262 · March 12, 2026</p>
-<h3>Microsoft SQL Server Privilege Escalation Zero-Day</h3>
-<p>Publicly disclosed zero-day in SQL Server with CVSS 8.8. Improper access control allows an authorized attacker to elevate privileges over a network without user interaction. One of two zero-days addressed in Microsoft's March 2026 Patch Tuesday. Patch available.</p>
+<p class="cve-id">CVE-2026-28792 · Mar 12, 2026</p>
+<h3>TinaCMS Cross-Origin File Exfiltration via CORS Misconfiguration + Path Traversal</h3>
+<p>The TinaCMS CLI dev server combines a permissive CORS configuration (Access-Control-Allow-Origin: *) with a path traversal vulnerability to enable a browser-based drive-by attack. A remote attacker can enumerate the filesystem, write arbitrary files, and delete arbitrary files on developer's machines.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28792" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28792" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-21887 · Mar 12, 2026</p>
+<h3>OpenCTI Semi-Blind SSRF via Unvalidated External URL</h3>
+<p>The OpenCTI platform's data ingestion feature accepts user-supplied URLs without validation and uses the Axios HTTP client with its default configuration (allowAbsoluteUrls: true). This allows attackers to craft requests to arbitrary endpoints, including internal services, resulting in a semi-blind SSRF.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21887" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21887" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-21668 · Mar 12, 2026 · updated Mar 13, 2026</p>
+<h3>Backup Repository Arbitrary File Manipulation</h3>
+<p>A vulnerability allowing an authenticated domain user to bypass restrictions and manipulate arbitrary files on a Backup Repository.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21668" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21668" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-21262 · Mar 10, 2026 · updated Mar 12, 2026</p>
+<h3>Microsoft SQL Server Elevation of Privilege</h3>
+<p>Improper access control in SQL Server allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-21262" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21262" target="_blank">OpenCVE</a>
 </div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-31857 · March 12, 2026</p>
-<h3>CraftCMS Remote Code Execution</h3>
-<p>Remote code execution vulnerability in CraftCMS with CVSS 8.1 (High). Network attack vector with low complexity; requires authentication but no user interaction. High impact on confidentiality, integrity, and availability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31857" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31857" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-1428 · March 12, 2026</p>
-<h3>WellChoose SSO Portal OS Command Injection</h3>
-<p>OS command injection vulnerability in WellChoose SSO Portal rated CVSS 8.8 (High). Network attack vector with low complexity; requires low-privilege authentication. High impact on confidentiality, integrity, and availability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-1428" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1428" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2025-68613 · March 12, 2026 · [KEV]</p>
-<h3>n8n Expression Injection Remote Code Execution</h3>
-<p>Actively exploited expression injection vulnerability in n8n leading to RCE, CVSS 9.9 (Critical). Added to CISA KEV catalog on March 12, 2026 based on evidence of active exploitation. Approximately 24,700 instances remain exposed. Patched in n8n versions 1.120.4, 1.121.1 and later.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-68613" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-68613" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-1603 · March 9, 2026 · [KEV]</p>
-<h3>Ivanti Endpoint Manager Authentication Bypass</h3>
-<p>Authentication bypass in Ivanti EPM allowing remote unauthenticated attackers to leak stored credential data. CVSS 8.6. Added to CISA KEV on March 9, 2026 with a federal patching deadline of March 23. Hundreds of EPM instances remain internet-exposed. Patch available in EPM 2024 SU5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-1603" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1603" target="_blank">OpenCVE</a>
-</div>
-
-
 
                         </div>
                     </div>
@@ -586,25 +582,22 @@
                     <h2>Self-Host Weekly</h2>
                     <div id="selfhst-bulletin">
                         <div class="bulletin-item">
-<p class="date-line">6 March 2026</p>
+<p class="date-line">📅 March 13, 2026</p>
 <h3>Self-Host Weekly</h3>
-<p>A few new goodies for paid Self-Host Weekly subscribers</p>
+<p>A light edition this week covering news about ntfy's AI-generated PostgreSQL support, a Home Assistant integration for sourdough starters, and a feature spotlight on Open DroneLog.</p>
 <ul style="margin-top:10px;padding-left:20px;">
-<li><a href="https://www.star-history.com/blog/openclaw-surpasses-react-most-starred-software" target="_blank" rel="noopener">OpenClaw</a> — AI agent skill marketplace platform · <a href="https://github.com/star-history/star-history" target="_blank" rel="noopener" style="color:#888;">GitHub</a></li>
-<li><a href="https://github.com/kyantech/Palmr/issues/418" target="_blank" rel="noopener">Palmr</a> — Self-hosted open source project</li>
-<li><a href="https://claude.com/contact-sales/claude-for-oss" target="_blank" rel="noopener">Anthropic</a> — AI safety and research company</li>
-<li><a href="https://github.com/frenck/home-assistant-doom" target="_blank" rel="noopener">Home Assistant</a> — Self-hosted open source project</li>
-<li><a href="https://github.com/bunkeriot/BunkerM" target="_blank" rel="noopener">BunkerM</a> — Self-hosted open source project</li>
+<li><a href="https://opendronelog.com">Open DroneLog</a> — Drone flight log analyzer with telemetry, maps, and battery health</li>
+<li><a href="https://ntfy.sh">ntfy</a> — HTTP-based pub-sub notifications (v2.18 adds PostgreSQL support)</li>
+<li><a href="https://github.com/Matts-Baps/ha-sourdough">Sourdough Monitor</a> — Home Assistant integration for tracking sourdough starters</li>
 </ul>
-<a href="https://selfh.st/weekly/2026-03-06/" target="_blank" rel="noopener">Read on selfh.st</a>
+<a href="https://selfh.st/weekly/2026-03-13/">Read on selfh.st</a>
 </div>
-
                     </div>
                 </div>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-13 14:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-13 16:02 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
