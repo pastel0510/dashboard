@@ -30,6 +30,7 @@ Monitor for updates on the Viking Line customer data breach.
 - 13.3.2026 (~09:00 UTC): **SWEDISH MEDIA** — Aftonbladet reports CGI Sverige hacked, "multiple authorities active", connects to Viking Line
 - 13.3.2026 (~09:30 UTC): **INVESTIGATION OPENED** — Sweden officially probes e-government platform source code leak from CGI Sverige. Reports explicitly link ByteToBreach to both CGI Sverige hack and Viking Line as "an ongoing campaign targeting Swedish and European infrastructure via CGI's managed services footprint."
 - 13.3.2026: Finnish media still on subcontractor narrative, no ByteToBreach connection reported
+- 14.3.2026 (~01:00 UTC): BitcoinEthereumNews and CryptoNews.net continue covering the Sweden probe story — same reporting, no new developments
 
 **Current status:** ⚠️ ESCALATED. Sweden has opened an official investigation into the CGI Sverige breach. Multiple international outlets now linking ByteToBreach to both CGI Sverige and Viking Line. Finnish media still only reporting subcontractor narrative.
 
@@ -43,7 +44,7 @@ Monitor for updates on the Viking Line customer data breach.
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
 
-**Last checked:** 2026-03-13 12:32 UTC — Sweden officially investigating. Finnish media still repeating subcontractor narrative.
+**Last checked:** 2026-03-14 04:02 UTC — No new developments. International media still covering the Sweden probe story with same details.
 
 Notify Shadow if:
 - Finnish media reports on CGI Sverige / bytetobreach connection
@@ -70,7 +71,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-13 12:32 UTC — No new developments.
+**Last checked:** 2026-03-14 04:02 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -97,7 +98,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-13 12:32 UTC — No new developments.
+**Last checked:** 2026-03-14 04:02 UTC — No new developments.
 
 Notify Shadow if:
 - Posti files official breach notification
@@ -111,7 +112,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 
 **Current status:** Shadow upgraded to kernel 6.19.4 (was on 6.17.0). Monitoring for resolution.
 
-**Last checked:** 2026-03-13 12:32 UTC — No new fixes.
+**Last checked:** 2026-03-14 04:02 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade

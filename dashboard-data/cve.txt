@@ -1,48 +1,57 @@
+<p class="disclaimer">Showing CVEs from the last 24 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-68553</p>
-<h3>Lendiz Theme Unrestricted File Upload</h3>
-<p>Critical vulnerability in zozothemes Lendiz allows remote attackers to upload a web shell to the web server, leading to remote code execution. Affects versions through 2.0.1.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-68553">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-68553">OpenCVE</a>
+<p class="cve-id">CVE-2026-3909 · March 12, 2026 · <strong>[KEV]</strong></p>
+<h3>Chrome Skia Out-of-Bounds Write</h3>
+<p>Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3909" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3909" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-54001</p>
-<h3>ThemeREX Classter Object Injection</h3>
-<p>Critical deserialization vulnerability in ThemeREX Classter allows remote attackers to inject malicious PHP objects via untrusted input, potentially leading to code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-54001">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-54001">OpenCVE</a>
+<p class="cve-id">CVE-2026-3910 · March 12, 2026 · <strong>[KEV]</strong></p>
+<h3>Chrome V8 Sandbox Escape</h3>
+<p>Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3910" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3910" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-69338</p>
-<h3>Riode Core Plugin SQL Injection</h3>
-<p>Critical blind SQL injection vulnerability in don-themes Riode Core plugin allows unauthenticated attackers to inject malicious SQL queries, potentially exfiltrating database contents.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-69338">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-69338">OpenCVE</a>
+<p class="cve-id">CVE-2026-21666 · March 12, 2026, updated March 13</p>
+<h3>Veeam Backup & Replication RCE</h3>
+<p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21666" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21666" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3540</p>
-<h3>Google Chrome WebAudio Use-After-Free</h3>
-<p>High severity vulnerability in Google Chrome WebAudio implementation allows remote attackers to perform out-of-bounds memory access via crafted HTML pages.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3540">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3540">OpenCVE</a>
+<p class="cve-id">CVE-2026-21667 · March 12, 2026, updated March 13</p>
+<h3>Veeam Backup & Replication RCE</h3>
+<p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21667" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21667" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3541</p>
-<h3>Google Chrome CSS Out-of-Bounds Read</h3>
-<p>High severity vulnerability in Google Chrome CSS implementation allows remote attackers to perform out-of-bounds memory read via crafted HTML pages.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3541">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3541">OpenCVE</a>
+<p class="cve-id">CVE-2026-21669 · March 12, 2026, updated March 13</p>
+<h3>Veeam Backup & Replication RCE</h3>
+<p>A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21669" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21669" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3542</p>
-<h3>Google Chrome WebAssembly Out-of-Bounds Access</h3>
-<p>High severity vulnerability in Google Chrome WebAssembly implementation allows remote attackers to perform out-of-bounds memory access via crafted HTML pages.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3542">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3542">OpenCVE</a>
+<p class="cve-id">CVE-2026-21708 · March 12, 2026, updated March 13</p>
+<h3>Veeam Backup Viewer RCE</h3>
+<p>A vulnerability allowing a Backup Viewer to perform remote code execution (RCE) as the postgres user.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21708" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21708" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3543</p>
-<h3>Google Chrome V8 Out-of-Bounds Access</h3>
-<p>High severity vulnerability in Google Chrome V8 JavaScript engine allows remote attackers to potentially perform out-of-bounds memory access via crafted HTML pages.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3543">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3543">OpenCVE</a>
+<p class="cve-id">CVE-2026-26792 · March 12, 2026</p>
+<h3>GL-iNet GL-AR300M16 Command Injection</h3>
+<p>Multiple command injection vulnerabilities in the set_upgrade function allow attackers to execute arbitrary commands via crafted input.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26792" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26792" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3544</p>
-<h3>Google Chrome WebCodecs Heap Buffer Overflow</h3>
-<p>High severity heap buffer overflow vulnerability in Google Chrome WebCodecs allows remote attackers to perform out-of-bounds memory write via crafted HTML pages.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3544">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3544">OpenCVE</a>
+<p class="cve-id">CVE-2026-32366 · March 13, 2026</p>
+<h3>WordPress Collapsing Categories SQL Injection</h3>
+<p>Blind SQL Injection vulnerability in robfelty Collapsing Categories plugin allows attackers to inject malicious SQL commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32366" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32366" target="_blank">OpenCVE</a>
 </div>

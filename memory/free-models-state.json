@@ -1,15 +1,14 @@
 {
-  "lastChecked": "2026-03-04T10:00:00Z",
+  "lastChecked": "2026-03-13T10:00:00Z",
   "trackedModels": {
-    "primary": null,
+    "primary": "kilocode/minimax/minimax-m2.5:free",
     "fallbacks": [
       "stepfun/step-3.5-flash:free",
       "meta-llama/llama-3.3-70b-instruct:free"
     ],
     "dead": [
       "kilocode/z-ai/glm-5:free",
-      "opencode-zen/*",
-      "kilocode/minimax/minimax-m2.5:free"
+      "opencode-zen/*"
     ]
   },
   "providers": {
@@ -20,11 +19,11 @@
     },
     "kilocode": {
       "baseUrl": "https://api.kilo.ai/api/gateway",
-      "models": ["stepfun/step-3.5-flash:free"]
+      "models": ["stepfun/step-3.5-flash:free", "kilocode/minimax/minimax-m2.5:free"]
     },
     "nvidia": {
       "baseUrl": "https://integrate.api.nvidia.com/v1",
-      "models": []
+      "models": ["nvidia/nemotron-3-nano-30b-a3b:free", "nvidia/nemotron-nano-12b-v2-vl:free", "nvidia/nemotron-nano-9b-v2:free", "nvidia/nemotron-3-super-120b-a12b:free"]
     },
     "openrouter": {
       "baseUrl": "https://openrouter.ai/api/v1",
@@ -40,7 +39,21 @@
         "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
         "google/gemma-3n-e2b-it:free",
         "google/gemma-3n-e4b-it:free",
-        "qwen/qwen3-4b:free"
+        "qwen/qwen3-4b:free",
+        "google/gemma-3-4b-it:free",
+        "google/gemma-3-12b-it:free",
+        "google/gemma-3-27b-it:free",
+        "mistralai/mistral-small-3.1-24b-instruct:free",
+        "meta-llama/llama-3.2-3b-instruct:free",
+        "arcee-ai/trinity-large-preview:free",
+        "arcee-ai/trinity-mini:free",
+        "z-ai/glm-4.5-air:free",
+        "liquid/lfm-2.5-1.2b-instruct:free",
+        "liquid/lfm-2.5-1.2b-thinking:free",
+        "qwen/qwen3-vl-30b-a3b-thinking",
+        "qwen/qwen3-vl-235b-a22b-thinking",
+        "openrouter/hunter-alpha",
+        "openrouter/healer-alpha"
       ]
     }
   },
@@ -53,28 +66,55 @@
     "google/gemma-3-4b-it:free",
     "google/gemma-3n-e2b-it:free",
     "google/gemma-3n-e4b-it:free",
-    "liquid/lfm-2.5-1.2b-thinking:free",
     "liquid/lfm-2.5-1.2b-instruct:free",
+    "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
     "mistralai/mistral-small-3.1-24b-instruct:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "nvidia/nemotron-nano-9b-v2:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
     "openrouter/free",
+    "openrouter/healer-alpha",
+    "openrouter/hunter-alpha",
     "qwen/qwen3-4b:free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
-    "qwen/qwen3-235b-a22b-thinking-2507",
-    "qwen/qwen3-vl-235b-a22b-thinking",
     "qwen/qwen3-vl-30b-a3b-thinking",
+    "qwen/qwen3-vl-235b-a22b-thinking",
     "stepfun/step-3.5-flash:free",
-    "z-ai/glm-4.5-air:free"
+    "z-ai/glm-4.5-air:free",
+    "kilocode/minimax/minimax-m2.5:free"
   ],
   "watchlist": [
+    {
+      "id": "openrouter/hunter-alpha",
+      "name": "Hunter Alpha",
+      "context": 1048576,
+      "provider": "openrouter",
+      "added": "2026-03-13",
+      "note": "1M context - NEW! Largest free context window found"
+    },
+    {
+      "id": "openrouter/healer-alpha",
+      "name": "Healer Alpha",
+      "context": 262144,
+      "provider": "openrouter",
+      "added": "2026-03-13",
+      "note": "NEW - 262k context"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "name": "Nemotron 3 Super 120B",
+      "context": 262144,
+      "provider": "nvidia",
+      "added": "2026-03-13",
+      "note": "NEW - 120B params, 262k context"
+    },
     {
       "id": "openrouter/free",
       "name": "OpenRouter Free",
@@ -130,6 +170,14 @@
       "provider": "openrouter",
       "added": "2026-03-04",
       "note": "32k context - uncensored model via Venice"
+    },
+    {
+      "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+      "name": "Mistral Small 3.1 24B",
+      "context": 128000,
+      "provider": "openrouter",
+      "added": "2026-03-07",
+      "note": "New Mistral free model - 128k context"
     }
   ],
   "changes": {
@@ -150,6 +198,29 @@
         "qwen/qwen3-4b:free"
       ],
       "note": "4 new free models added; no high-priority alerts (contexts < 64k or no reasoning)"
+    },
+    "2026-03-07": {
+      "new": [
+        "mistralai/mistral-small-3.1-24b-instruct:free"
+      ],
+      "note": "Mistral Small 3.1 24B now free - 128k context, solid fallback",
+      "reappeared": [
+        "kilocode/minimax/minimax-m2.5:free"
+      ],
+      "reappeared_note": "Primary model is back! Now available via kilocode provider"
+    },
+    "2026-03-10": {
+      "checked": true,
+      "note": "All tracked models still free - no changes detected"
+    },
+    "2026-03-13": {
+      "new": [
+        "openrouter/hunter-alpha",
+        "openrouter/healer-alpha",
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "liquid/lfm-2.5-1.2b-thinking:free"
+      ],
+      "note": "Hunter Alpha has 1M context - largest free model found! Healer Alpha at 262k. Nemotron Super 120B is 120B params."
     }
   }
 }

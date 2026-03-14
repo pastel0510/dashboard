@@ -203,18 +203,18 @@ def generate_html(data):
             github = proj.get('github', '')
             summary = generate_summary(name)
             
-            html += f'<li><a href="{url}">{name}</a> — {summary}'
+            html += f'<li><a href="{url}" target="_blank" rel="noopener">{name}</a> — {summary}'
             if github and github != url:
-                html += f' · <a href="{github}" style="color:#888;">GitHub</a>'
+                html += f' · <a href="{github}" target="_blank" rel="noopener" style="color:#888;">GitHub</a>'
             html += '</li>\n'
             
             # Add context links (controversy, updates, etc.)
             if proj.get('context_links'):
                 for ctx_text, ctx_url in proj['context_links'][:2]:
-                    html += f'<li style="list-style-type: circle; margin-left: 20px; font-size: 0.85em; color: #888;"><a href="{ctx_url}" style="color: #888;">{ctx_text}</a></li>\n'
+                    html += f'<li style="list-style-type: circle; margin-left: 20px; font-size: 0.85em; color: #888;"><a href="{ctx_url}" target="_blank" rel="noopener" style="color: #888;">{ctx_text}</a></li>\n'
         html += '</ul>\n'
     
-    html += f'<a href="{data["source_url"]}">Read on selfh.st</a>\n'
+    html += f'<a href="{data["source_url"]}" target="_blank" rel="noopener">Read on selfh.st</a>\n'
     html += '</div>\n'
     
     return html

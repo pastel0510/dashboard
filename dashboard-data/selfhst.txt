@@ -1,30 +1,25 @@
-Self-Host Weekly — 27 February 2026
+Self-Host Weekly — 6 March 2026
 
-Peek-aboo, the (un)usefulness of AGENTS.md, and Windows Phone (finally) gets some love
+A few new goodies for paid Self-Host Weekly subscribers
 
 Top 5 Projects:
-1. OpenDroneLog — Drone flight logging and management
-   Website: https://opendronelog.com/
-   GitHub: https://github.com/arpanghosh8453/open-dronelog
-   Context:
-     • received a cease and desist letter: https://old.reddit.com/r/selfhosted/comments/1rbkx5e/large_us_company_came_after_me_for_releasing_a/
-     • third-party platform: https://airdata.com/
+1. OpenClaw — AI agent skill marketplace platform
+   Website: https://www.star-history.com/blog/openclaw-surpasses-react-most-starred-software
+   GitHub: https://github.com/star-history/star-history
 
-2. OpenClaw — AI agent skill marketplace platform
-   Website: https://github.com/openclaw/openclaw
-   GitHub: https://github.com/openclaw/openclaw
-   Context:
-     • despite repeatedly being told not to: https://www.tomshardware.com/tech-industry/artificial-intelligence/openclaw-wipes-inbox-of-meta-ai-alignment-director-executive-finds-out-the-hard-way-how-spectacularly-efficient-ai-tool-is-at-maintaining-her-inbox
+2. Palmr — Self-hosted open source project
+   Website: https://github.com/kyantech/Palmr/issues/418
+   GitHub: https://github.com/kyantech/Palmr/issues/418
 
-3. LibreOffice — Open source office productivity suite
-   Website: https://blog.documentfoundation.org/blog/2026/02/24/libreoffice-online-a-fresh-start/
+3. Anthropic — AI safety and research company
+   Website: https://claude.com/contact-sales/claude-for-oss
 
-4. Vikunja — Task management and todo platform
-   Website: https://vikunja.io/changelog/whats-new-in-vikunja-1.0.0/
-   GitHub: https://github.com/sponsors/kolaente
+4. Home Assistant — Self-hosted open source project
+   Website: https://github.com/frenck/home-assistant-doom
+   GitHub: https://github.com/frenck/home-assistant-doom
 
-5. Ente — Private photo storage platform
-   Website: https://ente.io/blog/locker/
-   GitHub: https://github.com/twbs/bootstrap
+5. BunkerM — Self-hosted open source project
+   Website: https://github.com/bunkeriot/BunkerM
+   GitHub: https://github.com/bunkeriot/BunkerM
 
-Read more: https://selfh.st/weekly/2026-02-27/
+Read more: https://selfh.st/weekly/2026-03-06/
