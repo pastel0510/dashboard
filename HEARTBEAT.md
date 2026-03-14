@@ -29,10 +29,11 @@ Monitor for updates on the Viking Line customer data breach.
 - 13.3.2026 (~06:00 UTC): **SWEDISH MEDIA** — Expressen reports Viking Line breach linked to same actor as CGI Sverige hack
 - 13.3.2026 (~09:00 UTC): **SWEDISH MEDIA** — Aftonbladet reports CGI Sverige hacked, "multiple authorities active", connects to Viking Line
 - 13.3.2026 (~09:30 UTC): **INVESTIGATION OPENED** — Sweden officially probes e-government platform source code leak from CGI Sverige. Reports explicitly link ByteToBreach to both CGI Sverige hack and Viking Line as "an ongoing campaign targeting Swedish and European infrastructure via CGI's managed services footprint."
-- 13.3.2026: Finnish media still on subcontractor narrative, no ByteToBreach connection reported
-- 14.3.2026 (~01:00 UTC): BitcoinEthereumNews and CryptoNews.net continue covering the Sweden probe story — same reporting, no new developments
+- 14.3.2026 (~11:30 UTC): **NEW DETAILS** — byteiota.com confirms CGI's "test servers only" claim is contradicted by evidence: production DB passwords, keystore passwords, Jenkins SSH pivot credentials all leaked. Citizen PII databases and signing documents being sold separately on dark web markets. Reveals **coordinated Nordic campaign**: March 9 = Czech insurance (CZ Slavia), March 11 = Viking Line, March 12 = CGI Sverige (Sweden government) — 3 breaches in 4 days.
+- 14.3.2026 (~20:00 EET): **🇫🇮 FINNISH MEDIA** — **Tekniikka&Talous** first Finnish outlet to link ByteToBreach to Viking Line. Article title: "Hirvittävä datamurto Ruotsissa: Koko valtion lähdekoodi varastettiin, ihmisten tiedot jo myynnissä". Shadow notified.
+- 14.3.2026 (~15:00 UTC): **🇫🇮 MORE FINNISH MEDIA** — **Ilta-Sanomat (IS.fi)** now covers ByteToBreach + CGI Sverige breach (article: "Laaja tietomurto Ruotsin valtion järjestelmiin"). Does NOT mention Viking Line connection. HS and Yle still no detailed coverage.
 
-**Current status:** ⚠️ ESCALATED. Sweden has opened an official investigation into the CGI Sverige breach. Multiple international outlets now linking ByteToBreach to both CGI Sverige and Viking Line. Finnish media still only reporting subcontractor narrative.
+**Current status:** 🔴 CRITICAL. Part of coordinated 3-target Nordic campaign. Sweden investigating. CGI's "test servers only" narrative contradicted by leaked production credentials. Citizen PII actively being sold. 🇫🇮 Finnish media expanding coverage — IS.fi now covers ByteToBreach/CGI (no Viking Line link), T&T covers full connection.
 
 **Sources to check:**
 - DarkWeb Informer Viking Line: https://darkwebinformer.com/viking-line-ferries-allegedly-breached-with-full-passenger-database-and-payment-data-leaked/
@@ -40,14 +41,15 @@ Monitor for updates on the Viking Line customer data breach.
 - TradingView/Cointelegraph: https://www.tradingview.com/news/cointelegraph:077d8119f094b:0-sweden-probes-reported-leak-of-e-government-platform-source-code/
 - Aftonbladet: https://www.aftonbladet.se/nyheter/a/ArvG0E/cgi-sverige-uppges-vara-hackade-flera-myndigheter-aktiva
 - Expressen: https://www.expressen.se/nyheter/sverige/uppgift-sveriges-digitala-plattform-hackad-av-aktor/
+- Tekniikka&Talous: https://www.tekniikkatalous.fi/uutiset/a/d693bb43-7797-464a-a8ca-58a9eb835140
 - Iltalehti.fi, Verkkouutiset.fi, IS.fi, MTV Uutiset, HS.fi, Yle.fi
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
 
-**Last checked:** 2026-03-14 04:02 UTC — No new developments. International media still covering the Sweden probe story with same details.
+**Last checked:** 2026-03-14 15:39 UTC — No new developments since 15:03 check.
 
 Notify Shadow if:
-- Finnish media reports on CGI Sverige / bytetobreach connection
+- HS.fi or main Yle reports on CGI Sverige / ByteToBreach connection
 - Viking Line responds to the bytetobreach claims
 - Number of affected customers disclosed with exact figure
 - Payment/card data confirmed by authorities
@@ -71,7 +73,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-14 04:02 UTC — No new developments.
+**Last checked:** 2026-03-14 15:39 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -98,7 +100,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-14 04:02 UTC — No new developments.
+**Last checked:** 2026-03-14 15:39 UTC — No new developments.
 
 Notify Shadow if:
 - Posti files official breach notification
@@ -112,7 +114,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 
 **Current status:** Shadow upgraded to kernel 6.19.4 (was on 6.17.0). Monitoring for resolution.
 
-**Last checked:** 2026-03-14 04:02 UTC — No new fixes.
+**Last checked:** 2026-03-14 15:39 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade
