@@ -46,7 +46,7 @@ Monitor for updates on the Viking Line customer data breach.
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
 
-**Last checked:** 2026-03-14 21:35 UTC — Keskisuomalainen/Uutissuomalainen now covering CGI Sverige breach. Still quoting CGI "no production data" narrative. No Viking Line connection in main Finnish media.
+**Last checked:** 2026-03-15 03:32 UTC — No new developments. Overnight (Helsinki).
 
 Notify Shadow if:
 - HS.fi or main Yle reports on CGI Sverige / ByteToBreach connection
