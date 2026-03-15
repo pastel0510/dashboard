@@ -1,48 +1,48 @@
 <div class="bulletin-item">
-<p class="date-line">📅 March 12, 2026</p>
-<h3>NASA's Artemis II Flight Readiness Review Clears Crew for April Launch</h3>
-<p>NASA completed its Flight Readiness Review and polled "go" to proceed toward launch, targeting April 1, 2026 for the first crewed lunar flyby in 50 years.</p>
-<a href="https://www.nasa.gov/blogs/missions/2026/03/12/artemis-ii-flight-readiness-polls-go-to-proceed-toward-april-launch/" target="_blank">Read more</a>
+<p class="date-line">📅 March 9</p>
+<h3>NASA's DART Mission Confirmed: Asteroids Changed Orbit Around the Sun</h3>
+<p>The historic DART mission successfully altered how two asteroids orbit the sun, marking the first time humanity has changed the orbit of a celestial body.</p>
+<a href="https://edition.cnn.com/2026/03/09/science/nasa-dart-didymos-sun-orbit" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 11, 2026</p>
-<h3>Milky Way's Supermassive Black Hole Launches 3,000-Light-Year Cosmic Jet</h3>
-<p>Astronomers observed the first black hole ever imaged launching a massive jet from its glowing shadow, revealing new details about our galaxy's core.</p>
-<a href="https://www.space.com/astronomy/stars/the-invisible-giant-at-the-heart-of-our-galaxy-space-photo-of-the-day-for-march-11-2026" target="_blank">Read more</a>
+<p class="date-line">📅 March 12</p>
+<h3>Artemis II Moon Launch Confirmed for April 2026</h3>
+<p>NASA announces the first crewed lunar mission in over 50 years is on track, with four astronauts preparing for launch.</p>
+<a href="https://www.nytimes.com/2026/03/12/science/nasa-moon-artemis-launch-april.html" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 11, 2026</p>
-<h3>NASA's Van Allen Probe A Re-Enters Atmosphere After 14 Years</h3>
-<p>NASA's Van Allen Probe A re-entered Earth's atmosphere on March 11, ending a nearly 14-year mission studying Earth's radiation belts.</p>
-<a href="https://www.nasa.gov/missions/van-allen-probes/nasa-van-allen-probe-a-to-re-enter-atmosphere/" target="_blank">Read more</a>
+<p class="date-line">📅 March 11</p>
+<h3>James Webb Telescope Reveals Jupiter's Moons Leave Auroral Footprints</h3>
+<p>JWST discovers Jupiter's moons create cold "footprints" in the planet's auroras, revealing new insights about moon-planet interactions.</p>
+<a href="https://www.space.com/astronomy/jupiter/jupiters-moons-leave-cold-footprints-in-the-planets-auroras-james-webb-space-telescope-finds" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 10, 2026</p>
-<h3>Mystery 'Whippet' Space Explosion Is Brightest of Its Kind</h3>
-<p>Astronomers detected an extremely bright, sudden burst of light possibly from a black hole devouring a massive, unusually bare star.</p>
-<a href="https://www.newscientist.com/article/2518683-mystery-whippet-space-explosion-is-the-brightest-of-its-kind/" target="_blank">Read more</a>
+<p class="date-line">📅 March 10</p>
+<h3>New Molecule Shows Promise Against Aggressive Breast Cancer</h3>
+<p>Scientists at OHSU discover molecule SU212 that blocks cancer progression in triple-negative breast cancer, a form with few effective treatments.</p>
+<a href="https://www.sciencedaily.com/releases/2026/03/260309225146.htm" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 10, 2026</p>
-<h3>Interstellar Comet 3I/ATLAS Found Bursting with Methanol</h3>
-<p>New observations reveal the interstellar comet is actively releasing methanol, offering insights into comet composition and solar system formation.</p>
-<a href="https://www.space.com/astronomy/comets/interstellar-comet-3i-atlas-is-bursting-with-methanol-new-study-finds" target="_blank">Read more</a>
+<p class="date-line">📅 March 12</p>
+<h3>Gene-Edited Crops Secure $105M Funding Round</h3>
+<p>UK-based Tropic raises $105 million to scale climate-resilient bananas and rice using CRISPR gene-editing technology.</p>
+<a href="https://www.agtechnavigator.com/Article/2026/03/12/tropic-lands-105m-to-scale-climateresilient-bananas-and-rice/" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 9, 2026</p>
-<h3>SETI May Have Missed Alien Signals Due to Space Weather</h3>
-<p>Researchers suggest space weather could distort and blur radio signals, meaning SETI searches may have missed alien transmissions.</p>
-<a href="https://www.newscientist.com/article/2518324-seti-may-have-missed-alien-signals-because-of-space-weather/" target="_blank">Read more</a>
+<p class="date-line">📅 March 12</p>
+<h3>Cancer Research Identifies New Immunotherapy Target</h3>
+<p>Researchers discover Src protein on cancer cell surfaces, creating a new target for immunotherapy against solid tumors.</p>
+<a href="https://www.statnews.com/2026/03/12/cancer-researchers-new-immunology-target-oncogene-src/" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 8, 2026</p>
-<h3>Gene Conversion Empowers Natural Selection in Clonal Fish</h3>
-<p>Scientists discovered how gene conversion enables natural selection in a clonal fish species, revealing new evolutionary mechanisms.</p>
-<a href="https://www.nature.com/articles/s41586-026-10180-9" target="_blank">Read more</a>
+<p class="date-line">📅 March 10</p>
+<h3>New Chemical Reaction Discovery Could Revolutionize Pharmaceuticals</h3>
+<p>International scientists confirm a new chemical reaction with applications ranging from recycled plastics to pharmaceutical development.</p>
+<a href="https://phys.org/news/2026-03-plastics-pharmaceuticals-discovery-chain-reactions.html" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 8, 2026</p>
-<h3>Sorghum Pangenome Reference Improves Global Crop Trait Discovery</h3>
-<p>Researchers published a sorghum pangenome reference that could improve climate-resilient crop breeding worldwide.</p>
-<a href="https://www.nature.com/articles/s41586-026-10229-9" target="_blank">Read more</a>
+<p class="date-line">📅 March 9</p>
+<h3>ESA Analyzes Massive Fireball Over Europe</h3>
+<p>European Space Agency studies a bright fireball observed across Belgium, France, Germany, Luxembourg, and the Netherlands on March 8.</p>
+<a href="https://www.copernical.com/news-public/item/56760-2026-03-09-12-55-04" target="_blank">Read more</a>
 </div>

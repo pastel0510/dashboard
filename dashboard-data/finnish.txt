@@ -1,55 +1,55 @@
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Finland Will Not Host Nuclear Weapons in Peacetime, President Stubb Says</h3>
-<p>President Alexander Stubb confirmed Finland does not intend to host nuclear weapons on its soil during peacetime, aligning with Nordic neighbours' policies.</p>
-<a href="https://www.reuters.com/business/aerospace-defense/finland-does-not-intend-host-nuclear-weapons-peace-time-president-says-2026-03-13/" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Finland Interested in France's Nuclear Umbrella Protection</h3>
+<p>Finland wants to hear more about France's extended nuclear deterrent</p>
+<a href="https://yle.fi/a/74-20215375" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>SDP's Lindtman Demands Halt to Finland Nuclear Law Reform</h3>
-<p>Opposition leader Antti Lindtman called for suspending government plans to remove nuclear weapons restrictions, proposing a cross-party working group instead.</p>
-<a href="https://www.helsinkitimes.fi/finland/finland-news/politics/28624-lindtman-urges-halt-to-finland-nuclear-law-change.html" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Face Covering Ban Debate Now Demanded in Lahti Schools</h3>
+<p>Discussion continues about banning face coverings in schools</p>
+<a href="https://yle.fi/a/74-20215362" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Finland's Obesity Crisis: Two-Thirds of Men Overweight or Obese</h3>
-<p>Finland's physical fitness is deteriorating with over 500,000 diabetics. Researchers developed a new physical functioning index to address the crisis.</p>
-<a href="https://yle.fi/a/74-20215091" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Rare Warm Weather: Kyrönjoki Ice Moving Month Early</h3>
+<p>Unusually warm temperatures causing early ice movement in Finland</p>
+<a href="https://yle.fi/a/74-20215367" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Finland's Consumer Prices Rise 0.6% in February</h3>
-<p>Statistics Finland reports consumer prices increased 0.6% year-on-year in February, reversing a slight decline from the previous month.</p>
-<a href="https://www.emirates247.com/business/finlands-consumer-prices-rise-06-in-february/194" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Oil Price Forecast to Rise Above $117 on Monday</h3>
+<p>Oil prices expected to surge amid Middle East tensions</p>
+<a href="https://www.kauppalehti.fi/uutiset/a/e39527c6-5e13-4406-bbb4-859086d1ba10" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>EU Pay Transparency Directive to Narrow Gender Pay Gap</h3>
-<p>New EU rules requiring firms to disclose wage logic aim to close the gender pay gap, but critics note exemptions for companies under 100 employees.</p>
-<a href="https://yle.fi/a/74-20215091" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>600 Bulletproof Bunkers to Be Built on NATO-Russia Border</h3>
+<p>Decision made to construct defensive fortifications along border</p>
+<a href="https://www.kauppalehti.fi/uutiset/a/bce6abd1-8447-48e1-84ce-e72e41beb6d8" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Religious Education Reform Proposed in Finland</h3>
-<p>A government working group recommends replacing separate religion and ethics classes with a single shared worldview subject for all Finnish school pupils.</p>
-<a href="https://yle.fi/a/74-20215091" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Russia Preparing for War Near Norwegian Border</h3>
+<p>Military activity increases along Russia's border with Norway</p>
+<a href="https://yle.fi/a/74-20212459" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Cloudberry Clean Energy Enters Finnish Wind Market</h3>
-<p>Norwegian company Cloudberry Clean Energy acquired 50% of a 132 MW onshore wind farm in Finland, marking its strategic entry into the country.</p>
-<a href="https://live.euronext.com/en/products/equities/company-news/2026-03-13-cloudberry-clean-energy-asa-strategic-entry-finland" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Young Finns Want to Retire in Their 40s</h3>
+<p>Survey shows younger generation aspiring to early retirement</p>
+<a href="https://www.kauppalehti.fi/uutiset/a/d639079d-0aed-4886-be61-b792c8214b56" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Finland's Youth Unemployment Remains High at 23.6%</h3>
-<p>Finland's youth unemployment rate stands at 23.6%, among the highest in Europe, according to OECD data for Q4 2025.</p>
-<a href="https://commonslibrary.parliament.uk/research-briefings/sn02800/" target="_blank">Read more</a>
+<p class="date-line">📅 March 15, 2026</p>
+<h3>Nordic Countries and Canada Deepen Defense Cooperation</h3>
+<p>New agreement signed to strengthen military industrial cooperation</p>
+<a href="https://yle.fi/a/74-20215375" target="_blank">Read more</a>
 </div>

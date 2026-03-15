@@ -46,7 +46,7 @@ Monitor for updates on the Viking Line customer data breach.
 - Viking Line press releases
 - Traficom/Kyberturvallisuuskeskus statements
 
-**Last checked:** 2026-03-15 10:02 UTC — No new developments. Sunday noon Helsinki. Only Viking Grace mechanical issue in news (unrelated).
+**Last checked:** 2026-03-15 15:34 UTC — No new developments. Quiet Sunday evening.
 
 Notify Shadow if:
 - HS.fi or main Yle reports on CGI Sverige / ByteToBreach connection
@@ -73,7 +73,7 @@ Monitor for updates on the Tokmanni customer data situation.
 - Tokmanni press releases: https://tokmannigroup.com/en/newsroom/
 - BreachForums / Telegram for new data listings
 
-**Last checked:** 2026-03-15 10:02 UTC — No new developments.
+**Last checked:** 2026-03-15 15:34 UTC — No new developments.
 
 Notify Shadow if:
 - New statements from Tokmanni
@@ -100,7 +100,7 @@ Serious privacy incident: Users saw other people's data in Omaposti app.
 - Posti official updates: https://www.postiasiakastuki.fi/fi//hairiot
 - Data Protection Ombudsman statements
 
-**Last checked:** 2026-03-15 10:02 UTC — No new developments.
+**Last checked:** 2026-03-15 15:34 UTC — No new developments.
 
 Notify Shadow if:
 - Posti files official breach notification
@@ -114,7 +114,7 @@ Monitor for fixes/workarounds for AMD Strix Halo crashing after few hours.
 
 **Current status:** Shadow upgraded to kernel 6.19.4 (was on 6.17.0). Monitoring for resolution.
 
-**Last checked:** 2026-03-15 10:02 UTC — No new fixes.
+**Last checked:** 2026-03-15 15:34 UTC — No new fixes.
 
 Notify Shadow if:
 - Crash resolved after kernel upgrade

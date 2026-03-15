@@ -1,48 +1,48 @@
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>CISA Flags SolarWinds, Ivanti, and Workspace One Vulnerabilities as Actively Exploited</h3>
-<p>CISA adds 3 critical flaws to KEV catalog after active exploitation</p>
-<a href="https://thehackernews.com/2026/03/cisa-flags-solarwinds-ivanti-and.html" target="_blank">Read more</a>
+<p class="date-line">📅 March 12, 2026</p>
+<h3>Google fixes two new Chrome zero-days exploited in attacks</h3>
+<p>Two critical Chrome zero-days actively exploited in wild</p>
+<a href="https://www.bleepingcomputer.com/news/google/google-fixes-two-new-chrome-zero-days-exploited-in-attacks/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 March 12, 2026</p>
+<h3>US charges another ransomware negotiator linked to BlackCat attacks</h3>
+<p>Former DigitalMint employee charged for BlackCat collusion</p>
+<a href="https://www.bleepingcomputer.com/news/security/us-charges-another-ransomware-negotiator-linked-to-blackcat-attacks/" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
 <p class="date-line">📅 March 13, 2026</p>
-<h3>Telus Digital Confirms Breach After Hacker Claims 1 Petabyte Data Theft</h3>
-<p>ShinyHunters claims theft from Telus Digital via exposed Google Cloud credentials</p>
-<a href="https://www.bleepingcomputer.com/news/security/telus-digital-confirms-breach-after-hacker-claims-1-petabyte-data-theft/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>FortiGate Devices Exploited to Breach Networks and Steal Service Account Credentials</h3>
-<p>Attackers exploit FortiGate vulnerabilities to extract config files and credentials</p>
-<a href="https://thehackernews.com/2026/03/fortigate-devices-exploited-to-breach.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Veeam Patches 7 Critical Backup & Replication Flaws Allowing Remote Code Execution</h3>
-<p>Veeam fixes 7 critical RCE flaws including CVSS 9.9 vulnerabilities</p>
-<a href="https://thehackernews.com/2026/03/veeam-patches-7-critical-backup.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 March 14, 2026</p>
-<h3>Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8</h3>
-<p>Chrome updates patch two actively exploited zero-days in Skia and V8 engines</p>
-<a href="https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html" target="_blank">Read more</a>
+<h3>Veeam warns of critical flaws exposing backup servers to RCE attacks</h3>
+<p>Four critical RCE vulnerabilities in Veeam Backup & Replication</p>
+<a href="https://www.bleepingcomputer.com/news/security/veeam-warns-of-critical-flaws-exposing-backup-servers-to-rce-attacks/" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
 <p class="date-line">📅 March 12, 2026</p>
 <h3>CISA Flags Actively Exploited n8n RCE Bug as 24,700 Instances Remain Exposed</h3>
-<p>CISA adds n8n RCE flaw CVE-2025-68613 to KEV after active exploitation</p>
+<p>Critical n8n RCE flaw added to KEV catalog with active exploitation</p>
 <a href="https://thehackernews.com/2026/03/cisa-flags-actively-exploited-n8n-rce.html" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
-<h3>Sweden's E-Government Platform Source Code Leaked From Compromised CGI Sverige Infrastructure</h3>
-<p>Full source code of Swedish government platform leaked after Jenkins compromise</p>
-<a href="https://darkwebinformer.com/full-source-code-of-swedens-e-government-platform-leaked-from-compromised-cgi-sverige-infrastructure/" target="_blank">Read more</a>
+<p class="date-line">📅 March 12, 2026</p>
+<h3>AI-generated Slopoly malware used in Interlock ransomware attack</h3>
+<p>IBM X-Force discovers AI-generated backdoor in ransomware attacks</p>
+<a href="https://www.bleepingcomputer.com/news/security/ai-generated-slopoly-malware-used-in-interlock-ransomware-attack/" target="_blank">Read more</a>
 </div>
 <div class="bulletin-item">
-<p class="date-line">📅 March 12, 2026</p>
-<h3>Critical n8n Flaws Allow Remote Code Execution and Exposure of Stored Credentials</h3>
-<p>n8n workflow automation tool has critical RCE via sandbox escape</p>
-<a href="https://thehackernews.com/2026/03/critical-n8n-flaws-allow-remote-code.html" target="_blank">Read more</a>
+<p class="date-line">📅 March 14, 2026</p>
+<h3>Microsoft releases Windows 11 OOB hotpatch to fix RRAS RCE flaw</h3>
+<p>Out-of-band update patches three RRAS remote code execution flaws</p>
+<a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-11-oob-hotpatch-to-fix-rras-rce-flaw/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 March 14, 2026</p>
+<h3>AppsFlyer Web SDK hijacked to spread crypto-stealing JavaScript code</h3>
+<p>Supply chain attack compromises AppsFlyer SDK to steal cryptocurrency</p>
+<a href="https://www.bleepingcomputer.com/news/security/appsflyer-web-sdk-hijacked-to-spread-crypto-stealing-javascript-code/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 March 14, 2026</p>
+<h3>FBI seeks victims of Steam games used to spread malware</h3>
+<p>FBI investigates malware-laden Steam games from 2024-2026</p>
+<a href="https://www.bleepingcomputer.com/news/security/fbi-seeks-victims-of-steam-games-used-to-spread-malware/" target="_blank">Read more</a>
 </div>
