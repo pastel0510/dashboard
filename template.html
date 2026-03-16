@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Dashboard</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #eee;
+            padding: 20px;
+        }
+        .container { max-width: 1400px; margin: 0 auto; }
+        
+        h1 { 
+            text-align: center; 
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Main layout with sidebar */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 900px) {
+            .main-layout { grid-template-columns: 1fr; }
+        }
+        
+        /* Left sidebar */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        /* Weather widgets at top of sidebar */
+        .sidebar-weather {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .sidebar-weather .weather-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .sidebar-weather h3 {
+            font-size: 0.95em;
+            color: #00d9ff;
+        }
+        .smiley-box {
+            font-size: 1.3em;
+            color: #00ff88;
+            padding: 3px 8px;
+            background: rgba(0,255,136,0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(0,255,136,0.2);
+        }
+        .weather-mini {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+        .weather-mini-item {
+            text-align: center;
+            padding: 6px 8px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .weather-mini-item .city {
+            font-size: 0.7em;
+            color: #888;
+            margin-bottom: 2px;
+        }
+        .weather-mini-item .temp {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+        .full-weather-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            padding: 8px;
+            background: rgba(0,217,255,0.1);
+            border-radius: 8px;
+            color: #00d9ff;
+            text-decoration: none;
+            font-size: 0.85em;
+            border: 1px solid rgba(0,217,255,0.2);
+            transition: background 0.2s;
+        }
+        .full-weather-link:hover {
+            background: rgba(0,217,255,0.2);
+        }
+        
+        .sidebar .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .sidebar .card h2 {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .sidebar .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        
+        /* Main content area */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-content .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .main-content .card h2 {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .bulletin-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .bulletin-item h3 {
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #00d9ff;
+        }
+        .bulletin-item .date-line {
+            font-size: 0.85em;
+            color: #ffcc00;
+            margin-bottom: 5px;
+        }
+        .bulletin-item p {
+            font-size: 0.9em;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+        .bulletin-item a {
+            color: #00ff88;
+            font-size: 0.85em;
+        }
+        .bulletin-item .cve-id {
+            font-family: monospace;
+            color: #ff6b6b;
+            font-size: 0.85em;
+            margin-bottom: 3px;
+        }
+        
+        /* Side-by-side layout */
+        .side-by-side {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        @media (max-width: 700px) {
+            .side-by-side { grid-template-columns: 1fr; }
+        }
+        .side-by-side .card { 
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .side-by-side .card h2 {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .timestamp {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.8em;
+        }
+        
+        /* Lightbox styles */
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox-overlay.active {
+            display: flex;
+        }
+        .lightbox-overlay img {
+            max-width: 95%;
+            max-height: 95%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: #fff;
+            font-size: 2em;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+        .lightbox-close:hover {
+            opacity: 1;
+        }
+        .lightbox-trigger img {
+            cursor: zoom-in;
+            transition: transform 0.2s;
+        }
+        .lightbox-trigger img:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daily Dashboard</h1>
+        
+        <!-- Main layout with left sidebar -->
+        <div class="main-layout">
+            <!-- Left sidebar -->
+            <aside class="sidebar">
+                <!-- Weather widgets + Smiley at top -->
+                <div class="sidebar-weather">
+                    <div class="weather-header">
+                        <h3>Weather</h3>
+                        <div class="smiley-box">{{SMILEY}}</div>
+                    </div>
+                    <div class="weather-mini">
+                        <div class="weather-mini-item">
+                            <div class="city">Helsinki</div>
+                            <div class="temp">{{HELSINKI_TEMP}}</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Tampere</div>
+                            <div class="temp">{{TAMPERE_TEMP}}</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Turku</div>
+                            <div class="temp">{{TURKU_TEMP}}</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Oulu</div>
+                            <div class="temp">{{OULU_TEMP}}</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Rovaniemi</div>
+                            <div class="temp">{{ROVANIEMI_TEMP}}</div>
+                        </div>
+                    </div>
+                    <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
+                </div>
+
+                <!-- Fingerpori -->
+                <div class="card">
+                    <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
+                    <div id="fingerpori" class="lightbox-trigger">
+                        {{FINGERPORI_URL}}
+                    </div>
+                </div>
+
+                <!-- Bunny -->
+                <div class="card">
+                    <h2>Bunny of the Day</h2>
+                    <div id="bunny" class="lightbox-trigger">
+                        {{BUNNY_URL}}
+                    </div>
+                    <p style="margin-top:8px;font-size:0.85em;">{{BUNNY_REDDIT}}</p>
+                </div>
+
+                <!-- Fox -->
+                <div class="card">
+                    <h2>Fox of the Day <a href="https://reddit.com/r/foxes" target="_blank" style="font-size:0.6em;color:#00ff88;">r/foxes</a></h2>
+                    <div id="fox" class="lightbox-trigger">
+                        {{FOX_URL}}
+                    </div>
+                    <p style="margin-top:8px;font-size:0.85em;">{{FOX_REDDIT}}</p>
+                </div>
+
+                <!-- xkcd -->
+                <div class="card">
+                    <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
+                    <div id="xkcd" class="lightbox-trigger">
+                        {{XKCD_URL}}
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content area -->
+            <main class="main-content">
+                <!-- Finnish News & Science side by side -->
+                <div class="side-by-side">
+                    <!-- Finnish News -->
+                    <div class="card">
+                        <h2>Finnish News</h2>
+                        <div id="finnish-bulletin">
+                            {{FINNISH_BULLETIN}}
+                        </div>
+                    </div>
+
+                    <!-- Science -->
+                    <div class="card">
+                        <h2>Science & Space</h2>
+                        <div id="science-bulletin">
+                            {{SCIENCE_BULLETIN}}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & CVE side by side -->
+                <div class="side-by-side">
+                    <!-- Security -->
+                    <div class="card">
+                        <h2>Security</h2>
+                        <div id="security-bulletin">
+                            {{SECURITY_BULLETIN}}
+                        </div>
+                    </div>
+
+                    <!-- CVE Bulletin -->
+                    <div class="card">
+                        <h2>CVE Bulletin</h2>
+                        <div id="cve-bulletin">
+                            {{CVE_BULLETIN}}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Self-Host Weekly -->
+                <div class="card">
+                    <h2>Self-Host Weekly</h2>
+                    <div id="selfhst-bulletin">
+                        {{SELFHST_BULLETIN}}
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <p class="timestamp">Last updated: {{TIMESTAMP}} (Europe/Helsinki, {{UTC_OFFSET}})</p>
+        <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
+            Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
+        </p>
+    </div>
+    
+    <!-- Lightbox overlay -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="Fullscreen">
+    </div>
+    
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const triggers = document.querySelectorAll('.lightbox-trigger img');
+            triggers.forEach(function(img) {
+                img.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openLightbox(this.src);
+                });
+            });
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>
