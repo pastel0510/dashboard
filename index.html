@@ -536,24 +536,45 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27962 · Mar 16, 2026 · updated Mar 17, 2026 · </p>
-<h3>Authlib JWS JWK Header Injection: Signature Verification Bypass</h3>
-<p>Authlib before 1.6.9 allows unauthenticated attackers to forge arbitrary JWT tokens by embedding their own public key in the JWK header, bypassing signature verification entirely.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27962" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27962" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-0708 · Mar 17, 2026 · </p>
-<h3>Libucl: denial of service via embedded null byte in UCL input</h3>
-<p>libucl contains a flaw allowing remote attackers to cause a segmentation fault by providing crafted UCL input with an embedded null byte, leading to DoS.</p>
+<h3>Libucl: libucl denial of service via embedded null byte in UCL input</h3>
+<p>A flaw was found in libucl. A remote attacker could exploit this by providing a specially crafted Universal Configuration Language (UCL) input that contains a key with an embedded null byte. This can cause a segmentation fault (SEGV fault) in the ucl_object_emit function when parsing and emitting the object, leading to a Denial of Service (DoS) for the affected system.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-0708" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0708" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4258 · Mar 17, 2026 · </p>
-<h3>sjcl Improper Verification of Cryptographic Signature</h3>
-<p>All versions of sjcl ECC library are vulnerable due to missing point-on-curve validation, allowing attackers to recover victims' ECDH private keys via crafted off-curve public keys.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4258" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4258" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-69809 · Mar 16, 2026 · </p>
+<h3>p2r3 Bareiron write-what-where condition allows arbitrary code execution</h3>
+<p>A write-what-where condition in p2r3 Bareiron commit 8e4d40 allows unauthenticated attackers to write arbitrary values to memory, enabling arbitrary code execution via a crafted packet.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-69809" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-69809" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-69808 · Mar 16, 2026 · </p>
+<h3>p2r3 Bareiron out-of-bounds memory access allows information disclosure and DoS</h3>
+<p>An out-of-bounds memory access (OOB) in p2r3 Bareiron commit 8e4d40 allows unauthenticated attackers to access sensitive information and cause a Denial of Service (DoS) via supplying a crafted packet.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-69808" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-69808" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4193 · Mar 16, 2026 · </p>
+<h3>D-Link DIR-823G improper access controls vulnerability</h3>
+<p>A security vulnerability has been detected in D-Link DIR-823G 1.0.2B05. The affected element is multiple functions of the component goahead. Such manipulation leads to improper access controls. The attack may be launched remotely. The exploit has been disclosed publicly and may be used. This vulnerability only affects products that are no longer supported by the maintainer.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4193" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4193" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4194 · Mar 16, 2026 · </p>
+<h3>D-Link DNS devices improper access controls vulnerability</h3>
+<p>A vulnerability was detected in multiple D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 devices up to 20260205. The impacted element is the function cgi_set_wto of the file /cgi-bin/system_mgr.cgi. Performing a manipulation results in improper access controls. Remote exploitation of the attack is possible. The exploit is now public and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4194" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4194" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-69768 · Mar 16, 2026 · </p>
+<h3>Chyrp SQL Injection vulnerability allows information disclosure</h3>
+<p>SQL Injection vulnerability in Chyrp v.2.5.2 and before allows a remote attacker to obtain sensitive information via the Admin.php component.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-69768" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-69768" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -580,7 +601,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-17 14:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-17 14:49 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
