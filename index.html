@@ -536,38 +536,31 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32596 · Mar 18, 2026 · </p>
-<h3>Glances exposes the REST API without authentication</h3>
-<p>Glances is an open-source system cross-platform monitoring tool. Prior to 4.5.2, Glances web server runs without authentication by default when started with `glances -w`, exposing REST API with sensitive system information including process command-lines containing credentials (passwords, API keys, tokens) to any network client.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32596" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32596" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31938 · Mar 18, 2026 · 9.6 Critical</p>
+<h3>jsPDF HTML Injection Vulnerability</h3>
+<p>jsPDF is a library to generate PDFs in JavaScript. Prior to version 4.2.1, user control of the `options` argument of the `output` function allows attackers to inject arbitrary HTML (such as scripts) into the browser context the created PDF is opened in.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31938" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31938" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32268 · Mar 18, 2026 · </p>
-<h3>Azure Blob Storage for Craft CMS Potential Sensitive Information Disclosure vulnerability</h3>
-<p>The Azure Blob Storage for Craft CMS plugin provides an Azure Blob Storage integration for Craft CMS. In versions on the 2.x branch prior to 2.1.1, unauthenticated users can view a list of buckets the plugin has access to.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32268" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32268" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32256 · Mar 18, 2026 · 7.5 High</p>
+<h3>music-metadata ASF Parser Infinite Loop</h3>
+<p>music-metadata is a metadata parser for audio and video media files. Prior to version 11.12.3, music-metadata's ASF parser enters an infinite loop when a sub-object inside the ASF Header Extension Object has objectSize = 0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32256" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32256" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25770 · Mar 17, 2026 · updated Mar 18, 2026 · </p>
-<h3>Wazuh has Privilege Escalation to Root via Cluster Protocol File Write</h3>
-<p>Starting in version 3.9.0 and prior to version 4.14.3, a privilege escalation vulnerability exists in the Wazuh Manager's cluster synchronization protocol. An attacker with cluster credentials can gain full Root Remote Code Execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25770" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25770" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32254 · Mar 18, 2026 · 7.1 High</p>
+<h3>Kube-router Proxy Module Blindly Trusts ExternalIPs/LoadBalancer IPs</h3>
+<p>Kube-router is a turnkey solution for Kubernetes networking. Prior to version 2.8.0, Kube-router's proxy module does not validate externalIPs or loadBalancer IPs before programming them into the node's network configuration, enabling cluster-wide traffic hijacking and DNS DoS.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32254" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32254" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25769 · Mar 17, 2026 · updated Mar 18, 2026 · </p>
-<h3>Wazuh Cluster vulnerable to Remote Code Execution via Insecure Deserialization</h3>
-<p>Versions 4.0.0 through 4.14.2 have a Remote Code Execution vulnerability due to Deserialization of Untrusted Data. An attacker who gains access to a worker node can achieve full RCE on the master node with root privileges.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25769" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4148 · Mar 17, 2026 · updated Mar 18, 2026 · </p>
-<h3>ExpressionContext use-after-free in classic engine $lookup and $graphLookup aggregation operators</h3>
-<p>A use-after-free vulnerability can be triggered in sharded clusters by an authenticated user with the read role who issues a specially crafted $lookup or $graphLookup aggregation pipeline.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4148" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4148" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2023-5157 · Mar 18, 2026 (updated) · 7.5 High</p>
+<h3>MariaDB Denial of Service Vulnerability</h3>
+<p>A vulnerability was found in MariaDB. An OpenVAS port scan on ports 3306 and 4567 allows a malicious remote client to cause a denial of service.</p>
+<a href="https://db.gcve.eu/cve/CVE-2023-5157" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2023-5157" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -594,7 +587,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-18 08:49 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-18 09:05 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
