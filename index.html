@@ -537,59 +537,60 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-32292 · Mar 17, 2026 · CVSS 9.3</p>
-<h3>GL-iNet Comet KVM Insufficient Login Rate-Limiting</h3>
+<h3>GL-iNet Comet KVM Brute-Force Vulnerability</h3>
 <p>The GL-iNet Comet (GL-RM1) KVM web interface does not limit login requests, enabling brute-force attempts to guess credentials.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-32292" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32292" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32295 · Mar 17, 2026 · CVSS 9.3</p>
-<h3>JetKVM Insufficient Login Rate Limiting</h3>
-<p>JetKVM before 0.5.4 does not rate limit login requests, enabling brute-force attempts to guess credentials.</p>
+<p class="cve-id">CVE-2026-32295 · Mar 17, 2026 · CVSS 9.3 · <strong>[KEV]</strong></p>
+<h3>JetKVM Login Brute-Force Vulnerability</h3>
+<p>JetKVM before 0.5.4 does not rate limit login requests, enabling brute-force attempts to guess credentials. Proof of concept available.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-32295" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32295" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-32297 · Mar 17, 2026 · CVSS 9.3</p>
 <h3>Angeet ES3 KVM Arbitrary File Write</h3>
-<p>The Angeet ES3 KVM allows a remote, unauthenticated attacker to write arbitrary files, including configuration files or system binaries.</p>
+<p>The Angeet ES3 KVM allows a remote, unauthenticated attacker to write arbitrary files, including configuration files or system binaries, potentially allowing complete system control.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-32297" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32297" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-4312 · Mar 17, 2026 · CVSS 9.3</p>
 <h3>GCB/FCB Audit Software Missing Authentication</h3>
-<p>GCB/FCB Audit Software developed by DrangSoft has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to create administrative accounts.</p>
+<p>GCB/FCB Audit Software developed by DrangSoft has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access certain APIs to create a new administrative account.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-4312" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4312" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-25534 · Mar 17, 2026 · CVSS 9.1</p>
-<h3>Spinnaker URL Validation SSRF</h3>
-<p>Spinnaker updated URL Validation logic to provide sanitation on user inputted URLs, but Java URL objects do not correctly handle underscores in hostnames leading to SSRF.</p>
+<h3>Spinnaker URL Validation Bypass</h3>
+<p>Spinnaker updated URL Validation logic to provide sanitation on user inputted URLs but missed that Java URL objects do not correctly handle underscores, allowing bypass of previous CVE through crafted URLs.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-25534" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25534" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25769 · Mar 17, 2026 · CVSS 9.1</p>
-<h3>Wazuh Deserialization Remote Code Execution</h3>
-<p>Wazuh versions 4.0.0 through 4.14.2 have a Remote Code Execution vulnerability due to Deserialization of Untrusted Data. An attacker with worker node access can achieve full RCE on the master node.</p>
+<p class="cve-id">CVE-2026-25769 · Mar 17, 2026 · CVSS 9.1 · <strong>[KEV]</strong></p>
+<h3>Wazuh Remote Code Execution Vulnerability</h3>
+<p>Wazuh versions 4.0.0 through 4.14.2 have a Remote Code Execution vulnerability due to Deserialization of Untrusted Data. An attacker with access to a worker node can achieve full RCE on the master node with root privileges. Proof of concept available.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-25769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25769" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25770 · Mar 17, 2026 · CVSS 9.1</p>
-<h3>Wazuh Privilege Escalation</h3>
-<p>Starting in version 3.9.0 and prior to version 4.14.3, a privilege escalation vulnerability exists in the Wazuh cluster. A compromised worker node can escalate to the master node.</p>
+<p class="cve-id">CVE-2026-25770 · Mar 17, 2026 · CVSS 9.1 · <strong>[KEV]</strong></p>
+<h3>Wazuh Privilege Escalation Vulnerability</h3>
+<p>A privilege escalation vulnerability exists in the Wazuh Manager's cluster synchronization protocol. An attacker with cluster credentials can inject malicious commands to gain full Root RCE. Proof of concept available.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-25770" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25770" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-3564 · Mar 17, 2026 · CVSS 9.0</p>
-<h3>ScreenConnect Authentication Bypass</h3>
-<p>A condition in ScreenConnect may allow an actor with access to server-level cryptographic material used for authentication to obtain unauthorized access, including elevated privileges.</p>
+<h3>ScreenConnect Cryptographic Signature Verification Issue</h3>
+<p>A condition in ScreenConnect may allow an actor with access to server-level cryptographic material used for authentication to obtain unauthorized access, including elevated privileges, in certain scenarios.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-3564" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3564" target="_blank">OpenCVE</a>
 </div>
+
                         </div>
                     </div>
                 </div>
@@ -614,7 +615,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-20 08:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-20 08:49 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
