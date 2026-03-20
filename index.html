@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">7°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -535,62 +535,6 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32292 · Mar 17, 2026 · CVSS 9.3</p>
-<h3>GL-iNet Comet KVM Brute-Force Vulnerability</h3>
-<p>The GL-iNet Comet (GL-RM1) KVM web interface does not limit login requests, enabling brute-force attempts to guess credentials.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32292" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32292" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32295 · Mar 17, 2026 · CVSS 9.3 · <strong>[KEV]</strong></p>
-<h3>JetKVM Login Brute-Force Vulnerability</h3>
-<p>JetKVM before 0.5.4 does not rate limit login requests, enabling brute-force attempts to guess credentials. Proof of concept available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32295" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32295" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32297 · Mar 17, 2026 · CVSS 9.3</p>
-<h3>Angeet ES3 KVM Arbitrary File Write</h3>
-<p>The Angeet ES3 KVM allows a remote, unauthenticated attacker to write arbitrary files, including configuration files or system binaries, potentially allowing complete system control.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32297" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32297" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4312 · Mar 17, 2026 · CVSS 9.3</p>
-<h3>GCB/FCB Audit Software Missing Authentication</h3>
-<p>GCB/FCB Audit Software developed by DrangSoft has a Missing Authentication vulnerability, allowing unauthenticated remote attackers to directly access certain APIs to create a new administrative account.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4312" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4312" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25534 · Mar 17, 2026 · CVSS 9.1</p>
-<h3>Spinnaker URL Validation Bypass</h3>
-<p>Spinnaker updated URL Validation logic to provide sanitation on user inputted URLs but missed that Java URL objects do not correctly handle underscores, allowing bypass of previous CVE through crafted URLs.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25534" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25534" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25769 · Mar 17, 2026 · CVSS 9.1 · <strong>[KEV]</strong></p>
-<h3>Wazuh Remote Code Execution Vulnerability</h3>
-<p>Wazuh versions 4.0.0 through 4.14.2 have a Remote Code Execution vulnerability due to Deserialization of Untrusted Data. An attacker with access to a worker node can achieve full RCE on the master node with root privileges. Proof of concept available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25769" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25770 · Mar 17, 2026 · CVSS 9.1 · <strong>[KEV]</strong></p>
-<h3>Wazuh Privilege Escalation Vulnerability</h3>
-<p>A privilege escalation vulnerability exists in the Wazuh Manager's cluster synchronization protocol. An attacker with cluster credentials can inject malicious commands to gain full Root RCE. Proof of concept available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25770" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25770" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-3564 · Mar 17, 2026 · CVSS 9.0</p>
-<h3>ScreenConnect Cryptographic Signature Verification Issue</h3>
-<p>A condition in ScreenConnect may allow an actor with access to server-level cryptographic material used for authentication to obtain unauthorized access, including elevated privileges, in certain scenarios.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3564" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3564" target="_blank">OpenCVE</a>
-</div>
-
                         </div>
                     </div>
                 </div>
@@ -600,22 +544,21 @@
                     <h2>Self-Host Weekly</h2>
                     <div id="selfhst-bulletin">
                         <div class="bulletin-item">
-<p class="date-line">📅 March 13, 2026</p>
+<p class="date-line">📅 20 March 2026</p>
 <h3>Self-Host Weekly</h3>
-<p>A light edition this week covering news about ntfy's AI-generated PostgreSQL support, a Home Assistant integration for sourdough starters, and a feature spotlight on Open DroneLog.</p>
+<p>This week's edition covers AI's impact on open source maintainers, the Booklore controversy, and more. Featured projects:</p>
 <ul style="margin-top:10px;padding-left:20px;">
-<li><a href="https://opendronelog.com">Open DroneLog</a> — Drone flight log analyzer with telemetry, maps, and battery health</li>
-<li><a href="https://ntfy.sh">ntfy</a> — HTTP-based pub-sub notifications (v2.18 adds PostgreSQL support)</li>
-<li><a href="https://github.com/Matts-Baps/ha-sourdough">Sourdough Monitor</a> — Home Assistant integration for tracking sourdough starters</li>
+<li><a href="https://sure.am">Sure</a> — All-in-one personal finance platform (successor to Maybe Finance)</li>
+<li><a href="https://github.com/peakoss/anti-slop">Anti-slop</a> — GitHub Action to detect and close low-quality AI PRs</li>
 </ul>
-<a href="https://selfh.st/weekly/2026-03-13/">Read on selfh.st</a>
+<a href="https://selfh.st/weekly/2026-03-20/">Read on selfh.st</a>
 </div>
                     </div>
                 </div>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-20 14:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-20 16:02 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
