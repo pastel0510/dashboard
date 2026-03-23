@@ -535,60 +535,61 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33125 (March 20, 2026)</p>
-<h3>Frigate Broken Access Control: Users assigned the viewer role can delete admin and other low-privileged accounts</h3>
-<p>Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. In versions 0.16.2 and below, users with the viewer role can delete admin and low-privileged user accounts. Exploitation can lead to DoS and affect data integrity.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33125" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33125" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-32432 · April 25, 2025, updated March 20, 2026 <strong>[KEV]</strong></p>
+<h3>Craft CMS Allows Remote Code Execution</h3>
+<p>Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. Starting from version 3.0.0-RC1 to before 3.9.15, 4.0.0-RC1 to before 4.14.15, and 5.0.0-RC1 to before 5.6.17, Craft is vulnerable to remote code ex</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-32432" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-32432" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32954 (March 20, 2026)</p>
-<h3>ERP has a possibility SQL Injection vulnerability due to missing validation</h3>
-<p>ERP is a free and open source Enterprise Resource Planning tool. In versions prior to 16.8.0 and 15.100.0, certain endpoints were vulnerable to time-based and boolean-based blind SQL injection due to insufficient parameter validation, allowing attackers to infer database information.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32954" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32954" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32941 (March 20, 2026)</p>
-<h3>Sliver Vulnerable to Authenticated OOM via Memory Exhaustion in mTLS/WireGuard Transports</h3>
-<p>Sliver is a command and control framework that uses a custom Wireguard netstack. Versions 1.7.3 and below contain a Remote OOM (Out-of-Memory) vulnerability in the Sliver C2 server's mTLS and WireGuard C2 transport layer. A compromised implant or attacker with valid credentials can exploit this to crash the server.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32941" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32941" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32937 (March 20, 2026)</p>
-<h3>free5GC CHF has Out-of-Bounds Slice Access that Leads to DoS</h3>
-<p>free5GC is an open source 5G core network. free5GC CHF prior to version 1.2.2 has an out-of-bounds slice access vulnerability in the CHF nchf-convergedcharging service. A valid authenticated request can trigger a server-side panic, leading to denial of service.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32937" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32937" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32769 (March 20, 2026)</p>
-<h3>Fullchain's Invalid NetworkPolicy enables a malicious actor to pivot into another namespace</h3>
-<p>Fullchain is an umbrella project for deploying a ready-to-use CTF platform. In versions prior to 0.1.1, due to a mis-written NetworkPolicy, a malicious actor can pivot from a subverted application to any Pod out of the origin namespace, leading to potential lateral movement.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32769" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-20131 (March 19, 2026) <strong>[KEV]</strong></p>
+<p class="cve-id">CVE-2026-20131 · March 04, 2026, updated March 20, 2026 <strong>[KEV]</strong></p>
 <h3>Cisco Secure Firewall Management Center Deserialization of Untrusted Data Vulnerability</h3>
 <p>A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root on an affected device. This vulnerability is due to insecure deserialization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20131" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20131" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-32432 (April 25, 2025, updated March 20, 2026) <strong>[KEV]</strong></p>
-<h3>Craft CMS Allows Remote Code Execution</h3>
-<p>Craft is a flexible, user-friendly CMS for creating custom digital experiences. Craft is vulnerable to remote code execution in versions 3.0.0-RC1 to before 3.9.15, 4.0.0-RC1 to before 4.14.15, and 5.0.0-RC1 to before 5.6.17. This is a high-impact, low-complexity attack vector.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-32432" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-32432" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2025-31277 (July 29, 2025, updated March 20, 2026) <strong>[KEV]</strong></p>
+<p class="cve-id">CVE-2025-31277 · July 29, 2025, updated March 20, 2026 <strong>[KEV]</strong></p>
 <h3>Apple Multiple Products Buffer Overflow Vulnerability</h3>
 <p>Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may lead to memory corruption.</p>
 <a href="https://db.gcve.eu/cve/CVE-2025-31277" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-31277" target="_blank">OpenCVE</a>
 </div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33054 · March 20, 2026</p>
+<h3>Mesop: Path Traversal utilizing `FileStateSessionBackend` leads to Application Denial of Service and File Write/Deletion</h3>
+<p>Mesop is a Python-based UI framework that allows users to build web applications. Versions 1.2.2 and below contain a Path Traversal vulnerability that allows any user supplying an untrusted state_token through the UI stream payload to arbitrarily tar</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33054" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33054" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-22172 · March 20, 2026</p>
+<h3>OpenClaw < 2026.3.12 - Scope Elevation in WebSocket Shared-Auth Connections</h3>
+<p>OpenClaw versions prior to 2026.3.12 contain an authorization bypass vulnerability in the WebSocket connect path that allows shared-token or password-authenticated connections to self-declare elevated scopes without server-side binding. Attackers can</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22172" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22172" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33057 · March 20, 2026</p>
+<h3>Mesop Affected by Unauthenticated Remote Code Execution via Test Suite Route /exec-py</h3>
+<p>Mesop is a Python-based UI framework that allows users to build web applications. In versions 1.2.2 and below, an explicit web endpoint inside the ai/ testing module infrastructure directly ingests untrusted Python code strings unconditionally withou</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33057" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33057" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33136 · March 20, 2026</p>
+<h3>WeGIA has Reflected Cross-Site Scripting (XSS) in `listar_memorandos_ativos.php` via `sccd` parameter</h3>
+<p>WeGIA is a web manager for charitable institutions. Versions 3.6.6 and below have a Reflected Cross-Site Scripting (XSS) vulnerability in the listar_memorandos_ativos.php endpoint. An attacker can inject arbitrary JavaScript or HTML tags into the scc</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33136" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33136" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33134 · March 20, 2026</p>
+<h3>WeGIA has Authenticated Time-Based Blind SQL Injection in `restaurar_produto.php` via `id_produto` parameter</h3>
+<p>WeGIA is a web manager for charitable institutions. Versions 3.6.5 and below contain an authenticated SQL Injection vulnerability in the html/matPat/restaurar_produto.php endpoint. The vulnerability allows an authenticated attacker to inject arbitrar</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33134" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33134" target="_blank">OpenCVE</a>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -613,7 +614,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-23 08:15 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-23 08:49 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
