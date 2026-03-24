@@ -524,61 +524,55 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33478 · March 23, 2026</p>
-<h3>AVideo Multi-Chain Attack: Unauthenticated Remote Code Execution via Clone Key Disclosure, Database Dump, and Command Injection</h3>
-<p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo's CloneSite plugin chain together to allow a completely unauthenticated attacker to achieve remote code execution. The `clones.json.php` endpoint exposes clone secret keys without a...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33478" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33478" target="_blank">OpenCVE</a>
-</div>
-
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-4606 · March 23, 2026</p>
 <h3>GeoVision ERM Improper Privilege Assignment Leads to SYSTEM-Level Privilege</h3>
-<p>GV Edge Recording Manager (ERM) v2.3.1 improperly runs application components with SYSTEM-level privileges, allowing any local user to gain full control of the operating system. During installation, ERM creates a Windows service that runs under the LocalSystem account. When the ERM application i...</p>
+<p>GV Edge Recording Manager (ERM) v2.3.1 improperly runs application components with SYSTEM-level privileges, allowing any local user to gain full control of the operating system. 
+
+During installation, ERM creates a Windows service that runs under the...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-4606" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4606" target="_blank">OpenCVE</a>
 </div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-3587 · March 23, 2026</p>
-<h3>Hidden CLI Function Allows Root Access</h3>
-<p>An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface and gain root access to the underlying Linux based OS, leading to full compromise of the device.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3587" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3587" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32968 · March 23, 2026</p>
-<h3>Unauthenticated RCE in com_mb24sysapi</h3>
-<p>Due to the improper neutralisation of special elements used in an OS command, an unauthenticated remote attacker can exploit an RCE vulnerability in the com_mb24sysapi module, resulting in full system compromise. This vulnerability is a variant attack for CVE-2020-10383.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32968" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32968" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4567 · March 23, 2026</p>
-<h3>Tenda A15 UploadCfg stack-based overflow</h3>
-<p>A vulnerability has been found in Tenda A15 15.13.07.13. The impacted element is the function UploadCfg of the file /cgi-bin/UploadCfg. The manipulation of the argument File leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and m...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4567" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4567" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33352 · March 23, 2026</p>
-<h3>AVideo has an Unauthenticated SQL Injection via `doNotShowCats` Parameter (Backslash Escape Bypass)</h3>
-<p>WWBN AVideo is an open source video platform. Prior to version 26.0, an unauthenticated SQL injection vulnerability exists in `objects/category.php` in the `getAllCategories()` method. The `doNotShowCats` request parameter is sanitized only by stripping single-quote characters (`str_replace("'", '',...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33352" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33352" target="_blank">OpenCVE</a>
-</div>
-
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-4585 · March 23, 2026</p>
 <h3>Tiandy Easy7 Integrated Management Platform Configuration ImportSystemConfiguration.jsp os command injection</h3>
-<p>A vulnerability has been found in Tiandy Easy7 Integrated Management Platform up to 7.17.0. This vulnerability affects unknown code of the file /Easy7/apps/WebService/ImportSystemConfiguration.jsp of the component Configuration Handler. The manipulation of the argument File leads to os command injec...</p>
+<p>A vulnerability has been found in Tiandy Easy7 Integrated Management Platform up to 7.17.0. This vulnerability affects unknown code of the file /Easy7/apps/WebService/ImportSystemConfiguration.jsp of the component Configuration Handler. The manipulat...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-4585" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4585" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4404 · March 23, 2026</p>
-<h3>Use of hard coded credentials in GoHarbor Harbor</h3>
-<p>Use of hard coded credentials in GoHarbor Harbor version 2.15.0 and below, allows attackers to use the default password and gain access to the web UI.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4404" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4404" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4599 · March 23, 2026</p>
+<h3>jsrsasign: jsrsasign: Private key recovery via incomplete comparison checks biasing DSA nonces</h3>
+<p>Versions of the package jsrsasign from 7.0.0 and before 11.1.1 are vulnerable to Incomplete Comparison with Missing Factors via the getRandomBigIntegerZeroToMax and getRandomBigIntegerMinToMax functions in src/crypto-1.1.js; an attacker can recover t...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4599" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4599" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4567 · March 23, 2026</p>
+<h3>Tenda A15 UploadCfg stack-based overflow</h3>
+<p>A vulnerability has been found in Tenda A15 15.13.07.13. The impacted element is the function UploadCfg of the file /cgi-bin/UploadCfg. The manipulation of the argument File leads to stack-based buffer overflow. The attack may be initiated remotely. ...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4567" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4567" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-1958 · March 23, 2026</p>
+<h3>Hard-coded passwords in KlinikaXP</h3>
+<p>Use of hard-coded credentials in Klinika XP and KlinikaXP Insertino allowed an unauthorized attacker access to several internal services. Critically, this included access to the FTP server that hosted the application&#x27;s update packages. The attacker w...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-1958" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1958" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4598 · March 23, 2026</p>
+<h3>jsrsasign: jsrsasign: Denial of Service via infinite loop in bnModInverse function with crafted inputs</h3>
+<p>Versions of the package jsrsasign before 11.1.1 are vulnerable to Infinite loop via the bnModInverse function in ext/jsbn2.js when the BigInteger.modInverse implementation receives zero or negative inputs, allowing an attacker to hang the process per...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4598" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4598" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4602 · March 23, 2026</p>
+<h3>jsrsasign: jsrsasign: Signature verification bypass via negative exponent handling</h3>
+<p>Versions of the package jsrsasign before 11.1.1 are vulnerable to Incorrect Conversion between Numeric Types due to handling negative exponents in ext/jsbn2.js. An attacker can force the computation of incorrect modular inverses and break signature v...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4602" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4602" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4566 · March 23, 2026</p>
+<h3>Belkin F9K1122 formWISP5G stack-based overflow</h3>
+<p>A flaw has been found in Belkin F9K1122 1.00.33. The affected element is the function formWISP5G of the file /goform/formWISP5G. Executing a manipulation of the argument webpage can lead to stack-based buffer overflow. The attack can be launched remo...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4566" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4566" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -605,7 +599,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-24 20:15 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-03-24 20:48 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
