@@ -519,26 +519,39 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33017 · Mar 25, 2026 · <KEV badge></p>
-<h3>Langflow Unauthenticated Remote Code Execution</h3>
-<p>Langflow versions prior to 1.9.0 allow unauthenticated remote code execution via the /api/v1/build_public_tmp/{flow_id}/flow endpoint. Attackers can supply arbitrary Python code to the exec() function with zero sandboxing.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33017" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33017" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30457 · 2026-03-26</p>
+<h3>FuelCMS PHP Code Execution via Dwoo Parser</h3>
+<p>An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows attackers to execute arbitrary code via crafted PHP code.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30457" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30457" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3055 · Mar 25, 2026 · </p>
-<h3>Citrix NetScaler ADC and Gateway Memory Overread</h3>
-<p>Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread. Allows unauthenticated remote attackers to steal sensitive information such as session tokens.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3055" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3055" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30458 · 2026-03-26</p>
+<h3>FuelCMS Password Reset Token Exfiltration</h3>
+<p>An issue in Daylight Studio FuelCMS v1.5.2 allows attackers to exfiltrate users' password reset tokens via a mail splitting attack.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30458" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30458" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4368 · Mar 25, 2026 · </p>
-<h3>Citrix NetScaler ADC and Gateway Race Condition</h3>
-<p>Race condition in NetScaler ADC and Gateway when configured as Gateway or AAA virtual server. Allows attackers with low privileges to cause user session mix-up in low-complexity attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4368" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4368" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-22738 · 2026-03-27</p>
+<h3>Spring AI SpEL Injection in SimpleVectorStore</h3>
+<p>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22738" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22738" target="_blank">OpenCVE</a>
 </div>
 
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-27876 · 2026-03-27</p>
+<h3>Grafana Enterprise RCE via SQL Expressions</h3>
+<p>A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). Only instances with the sqlExpressions feature toggle enabled are vulnerable.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27876" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27876" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33725 · 2026-03-27</p>
+<h3>Metabase Enterprise RCE via H2 JDBC INIT Injection</h3>
+<p>Metabase Enterprise Edition allows authenticated admins to achieve Remote Code Execution (RCE) and Arbitrary File Read via the POST /api/ee/serialization/import endpoint. A crafted serialization archive injects an INIT property into the H2 JDBC spec.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33725" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33725" target="_blank">OpenCVE</a>
+</div>
                         </div>
                     </div>
                 </div>
