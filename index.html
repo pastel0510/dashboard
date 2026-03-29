@@ -526,59 +526,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30302 (March 27, 2026, updated March 27, 2026)</p>
-<h3>CodeRider-Kilo OS Command Injection via Auto-Approval Module</h3>
-<p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of an incompatible command parser (the Unix-based shell-quote library) to analyze commands on the Windows platform, coupled with a failure to correctly handle Windows CMD-specific escape sequences (^). Attackers can exploit this discrepancy between the parsing logic and the execution environment by constructing payloads such as git log ^" & malicious_command ^".</p>
+<p class="cve-id">CVE-2026-5024 (March 29, 2026)</p>
+<h3>A vulnerability was found in D-Link DIR-513 1</h3>
+<p>A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formSetEmail. Performing a manipulation of the argument curTime results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been made publ...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5024" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5024" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-5021 (March 29, 2026)</p>
+<h3>A flaw has been found in Tenda F453 1</h3>
+<p>A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserSetting of the component httpd. This manipulation of the argument delno causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publi...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5021" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5021" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30302 (March 27, 2026)</p>
+<h3>command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rende</h3>
+<p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of an incompatible command parser (the Unix-based shell-quote library) to analyze commands on the ...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-30302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30302" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-5027 (March 27, 2026)</p>
+<h3>&#x27;POST /api/v2/files&#x27; endpoint does not sanitize the &#x27;filename&#x27; parameter from th</h3>
+<p>The &#x27;POST /api/v2/files&#x27; endpoint does not sanitize the &#x27;filename&#x27; parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path traversal sequences (&#x27;../&#x27;).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5027" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5027" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-33494 (March 26, 2026)</p>
-<h3>ORY Oathkeeper Authorization Bypass via HTTP Path Traversal</h3>
-<p>ORY Oathkeeper is an Identity & Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequences (e.g. `/public/../admin/secrets`) that resolves to a protected path after normalization, but is matched against a permissive rule because the raw, un-normalized path is used during rule evaluation.</p>
+<h3>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authoriz</h3>
+<p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequen...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-33494" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33494" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33945 (March 27, 2026)</p>
-<h3>Incus Container Privilege Escalation via Systemd Credentials</h3>
-<p>Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prior to version 6.23.0, an attacker can set a configuration key named something like `systemd.credential.../../../../../../root/.bashrc` to cause Incus to write outside of the `credentials` directory associated with the container.</p>
+<p class="cve-id">CVE-2026-33945 (March 26, 2026)</p>
+<h3>Incus is a system container and virtual machine manager</h3>
+<p>Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prior to version 6.23.0, an attacker can set a configuration key named something like `systemd.credentia...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-33945" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33945" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-33897 (March 26, 2026)</p>
-<h3>Incus Arbitrary File Read/Write as Root via Instance Templates</h3>
-<p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, instance template files can be used to cause arbitrary read or writes as root on the host server. Incus allows for pongo2 templates within instances which can be used at various times in the instance lifecycle to template files inside of the instance.</p>
+<h3>Incus is a system container and virtual machine manager</h3>
+<p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, instance template files can be used to cause arbitrary read or writes as root on the host server. Incus allows for pongo2 templates within instances which can be used at various times in the instance lifecycle to templ...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-33897" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33897" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33396 (March 26, 2026, updated March 26, 2026)</p>
-<h3>OneUptime Remote Code Execution via Synthetic Monitor</h3>
-<p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe container/host by abusing Synthetic Monitor Playwright script execution. Synthetic monitor code is executed in VMRunner.runCodeInNodeVM with a live Playwright page object in context.</p>
+<p class="cve-id">CVE-2026-33396 (March 26, 2026)</p>
+<h3>OneUptime is an open-source monitoring and observability platform</h3>
+<p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe container/host by abusing Synthetic Monitor Playwright script execution. Synthetic monitor code is execut...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-33396" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33396" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33937 (March 27, 2026)</p>
-<h3>Handlebars Remote Code Execution via AST Injection</h3>
-<p>Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, `Handlebars.compile()` accepts a pre-parsed AST object in addition to a template string. The `value` field of a `NumberLiteral` AST node is emitted directly into the generated JavaScript without quoting or sanitization.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33937" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33937" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-30533 (March 27, 2026, updated March 27, 2026)</p>
-<h3>SourceCodester Online Food Ordering System SQL Injection</h3>
-<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/manage_product.php file via the "id" parameter.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30533" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30533" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-30532 (March 27, 2026, updated March 27, 2026)</p>
-<h3>SourceCodester Online Food Ordering System SQL Injection</h3>
-<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/view_product.php file via the "id" parameter.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30532" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30532" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -610,7 +610,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-29 09:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-29 09:52 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
