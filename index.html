@@ -533,59 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29000 · Mar 4, 2026 (updated Mar 11) · CVSS 9.1</p>
-<h3>pac4j-jwt JwtAuthenticator Authentication Bypass</h3>
-<p>pac4j-jwt versions prior to 4.5.9, 5.7.9, and 6.3.3 contain an authentication bypass vulnerability in JwtAuthenticator when processing encrypted JWTs that allows remote attackers to forge authentication tokens. Attackers who possess the server's RSA public key can create a JWE-wrapped PlainJWT with arbitrary subject and role claims, bypassing signature verification to authenticate as any user including administrators.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-29000" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29000" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34053 · Mar 26, 2026 · CVSS 7.1 [KEV]</p>
+<h3>OpenEMR is a free and open source electronic health records and medical practice management application</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, missing authorization in the AJAX deletion endpoint `interface/forms/procedure_order/handle_deletions.php` allows any a...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34053" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34053" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34046 · Mar 27, 2026 · CVSS 8.7</p>
-<h3>Langflow: Authenticated Users Can Read, Modify, and Delete Any Flow via Missing Ownership Check</h3>
-<p>Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.5.1, the `_read_flow` helper in `src/backend/base/langflow/api/v1/flows.py` branched on the `AUTO_LOGIN` setting to decide whether to filter by `user_id`. When `AUTO_LOGIN` was `False` (i.e., authentication was enabled), neither branch enforced an ownership check — the query returned any flow matching the given UUID regardless of who owned it. This allowed any authenticated user to read any other user's flow, including embedded plaintext API keys; modify the logic of another user's AI agents, and/or delete flows belonging to other users.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-34046" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34046" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33914 · Mar 26, 2026 · CVSS 7.2 [KEV]</p>
+<h3>OpenEMR is a free and open source electronic health records and medical practice management application</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the PostCalendar module contains a blind SQL injection vulnerability in the `categoriesUpdate` administrative function....</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33914" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33914" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34053 · Mar 25, 2026 (updated Mar 26) · CVSS 7.1</p>
-<h3>OpenEMR Missing Authorization in Procedure Order AJAX Deletion Handler</h3>
-<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, missing authorization in the AJAX deletion endpoint `interface/forms/procedure_order/handle_deletions.php` allows any authenticated user, regardless of role, to irreversibly delete procedure orders, answers, and specimens belonging to any patient in the system. Version 8.0.0.3 patches the issue.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-34053" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34053" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33285 · Mar 26, 2026 · CVSS 7.5 [KEV]</p>
+<h3>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript</h3>
+<p>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, LiquidJS's `memoryLimit` security mechanism can be completely bypassed by using reverse range expressions (e.g., `(100000000..1)`), allowing...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33285" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33285" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34055 · Mar 25, 2026 (updated Mar 26) · CVSS 8.1</p>
-<h3>OpenEMR has IDOR in Patient Notes Web UI allows unauthorized note access/modification</h3>
-<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the legacy patient notes functions in `library/pnotes.inc.php` perform updates and deletes using `WHERE id = ?` without verifying that the note belongs to a patient the user is authorized to access. Multiple web UI callers pass user-controlled note IDs directly to these functions. This is the same class of vulnerability as CVE-2026-25745 (REST API IDOR), but affects the web UI code paths. Version 8.0.0.3 patches the issue.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-34055" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34055" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33287 · Mar 26, 2026 · CVSS 7.5 [KEV]</p>
+<h3>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript</h3>
+<p>LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, the `replace_first` filter in LiquidJS uses JavaScript's `String.prototype.replace()` which interprets `$&` as a back reference to the match...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33287" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33287" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34056 · Mar 25, 2026 (updated Mar 28) · CVSS 7.7</p>
-<h3>OpenEMR has a Privilege Escalation that Allows a Low-Level User to View Admin-Only Data</h3>
-<p>OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low-privilege users to view and download Ensora eRx error logs without proper authorization checks. This flaw compromises system confidentiality by exposing sensitive information, potentially leading to unauthorized data disclosure and misuse. As of time of publication, no known patches versions are available.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-34056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34056" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33918 · Mar 26, 2026 · CVSS 7.6 [KEV]</p>
+<h3>OpenEMR is a free and open source electronic health records and medical practice management application</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the billing file-download endpoint `interface/billing/get_claim_file.php` only verifies that the caller has a valid ses...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33918" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33918" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4004 · Feb 28, 2026 · CVSS 9.9</p>
-<h3>Progress WhatsUp Gold NVTA Service Pre-Auth Remote Code Execution</h3>
-<p>Progress WhatsUp Gold versions prior to 24.0.0.1184 contain an unauthenticated remote code execution vulnerability in the NVTA (Next Generation WhatsUp Gold, an analytics service) component. A heap-based buffer overflow in the parsing of a specially crafted HTTP request allows a remote attacker to overflow the allocated buffer and achieve code execution as the SYSTEM account prior to any authentication.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-4004" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4004" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33932 · Mar 26, 2026 · CVSS 7.6 [KEV]</p>
+<h3>OpenEMR is a free and open source electronic health records and medical practice management application</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a stored cross-site scripting vulnerability in the CCDA document preview allows an attacker who can upload or send a CC...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33932" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33932" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4007 · Mar 10, 2026 (updated Mar 12) · CVSS 9.8</p>
-<h3>JetBrains TeamCity CVE-2026-4007 Authentication Bypass On-Premises</h3>
-<p>JetBrains TeamCity before 2024.10.3 contains an authentication bypass vulnerability in the web server component of TeamCity On-Premises servers. An unauthenticated remote attacker can send a crafted HTTP request to bypass authentication and gain full control of the TeamCity server.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-4007" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4007" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34056 · Mar 26, 2026 · CVSS 7.7 [KEV]</p>
+<h3>OpenEMR is a free and open source electronic health records and medical practice management application</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low-privilege users to view and download Ensora eRx e...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34056" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5004 · Mar 3, 2026 (updated Mar 10) · CVSS 9.1</p>
-<h3>Fortinet FortiOS & FortiGate - Improper Authorization in CLI commands</h3>
-<p>An improper authorization vulnerability in FortiOS may allow a remote unauthenticated attacker to execute unauthorized CLI commands via specifically crafted HTTP requests through the SSL-VPN web interface or the management interface (if REST API is enabled), leading to unauthorized system control and information disclosure.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-5004" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5004" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33183 · Mar 26, 2026 · CVSS 8.0 [KEV]</p>
+<h3>Saloon is a PHP library that gives users tools to build API integrations and SDKs</h3>
+<p>Saloon is a PHP library that gives users tools to build API integrations and SDKs. Prior to version 4.0.0, fixture names were used to build file paths under the configured fixture directory without validation. A name containing path segments (e.g. .....</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33183" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33183" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -617,7 +617,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-29 21:44 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-29 21:49 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
