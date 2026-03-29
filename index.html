@@ -533,59 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5024 (March 29, 2026)</p>
-<h3>A vulnerability was found in D-Link DIR-513 1</h3>
-<p>A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formSetEmail. Performing a manipulation of the argument curTime results in stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been made publ...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5024" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5024" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29000 · Mar 4, 2026 (updated Mar 11) · CVSS 9.1</p>
+<h3>pac4j-jwt JwtAuthenticator Authentication Bypass</h3>
+<p>pac4j-jwt versions prior to 4.5.9, 5.7.9, and 6.3.3 contain an authentication bypass vulnerability in JwtAuthenticator when processing encrypted JWTs that allows remote attackers to forge authentication tokens. Attackers who possess the server's RSA public key can create a JWE-wrapped PlainJWT with arbitrary subject and role claims, bypassing signature verification to authenticate as any user including administrators.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-29000" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29000" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5021 (March 29, 2026)</p>
-<h3>A flaw has been found in Tenda F453 1</h3>
-<p>A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserSetting of the component httpd. This manipulation of the argument delno causes stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been publi...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5021" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5021" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34046 · Mar 27, 2026 · CVSS 8.7</p>
+<h3>Langflow: Authenticated Users Can Read, Modify, and Delete Any Flow via Missing Ownership Check</h3>
+<p>Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.5.1, the `_read_flow` helper in `src/backend/base/langflow/api/v1/flows.py` branched on the `AUTO_LOGIN` setting to decide whether to filter by `user_id`. When `AUTO_LOGIN` was `False` (i.e., authentication was enabled), neither branch enforced an ownership check — the query returned any flow matching the given UUID regardless of who owned it. This allowed any authenticated user to read any other user's flow, including embedded plaintext API keys; modify the logic of another user's AI agents, and/or delete flows belonging to other users.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-34046" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34046" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30302 (March 27, 2026)</p>
-<h3>command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rende</h3>
-<p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of an incompatible command parser (the Unix-based shell-quote library) to analyze commands on the ...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30302" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34053 · Mar 25, 2026 (updated Mar 26) · CVSS 7.1</p>
+<h3>OpenEMR Missing Authorization in Procedure Order AJAX Deletion Handler</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, missing authorization in the AJAX deletion endpoint `interface/forms/procedure_order/handle_deletions.php` allows any authenticated user, regardless of role, to irreversibly delete procedure orders, answers, and specimens belonging to any patient in the system. Version 8.0.0.3 patches the issue.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-34053" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34053" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5027 (March 27, 2026)</p>
-<h3>&#x27;POST /api/v2/files&#x27; endpoint does not sanitize the &#x27;filename&#x27; parameter from th</h3>
-<p>The &#x27;POST /api/v2/files&#x27; endpoint does not sanitize the &#x27;filename&#x27; parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path traversal sequences (&#x27;../&#x27;).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5027" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5027" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34055 · Mar 25, 2026 (updated Mar 26) · CVSS 8.1</p>
+<h3>OpenEMR has IDOR in Patient Notes Web UI allows unauthorized note access/modification</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the legacy patient notes functions in `library/pnotes.inc.php` perform updates and deletes using `WHERE id = ?` without verifying that the note belongs to a patient the user is authorized to access. Multiple web UI callers pass user-controlled note IDs directly to these functions. This is the same class of vulnerability as CVE-2026-25745 (REST API IDOR), but affects the web UI code paths. Version 8.0.0.3 patches the issue.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-34055" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34055" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33494 (March 26, 2026)</p>
-<h3>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authoriz</h3>
-<p>ORY Oathkeeper is an Identity &amp; Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorization bypass via HTTP path traversal. An attacker can craft a URL containing path traversal sequen...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33494" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33494" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34056 · Mar 25, 2026 (updated Mar 28) · CVSS 7.7</p>
+<h3>OpenEMR has a Privilege Escalation that Allows a Low-Level User to View Admin-Only Data</h3>
+<p>OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low-privilege users to view and download Ensora eRx error logs without proper authorization checks. This flaw compromises system confidentiality by exposing sensitive information, potentially leading to unauthorized data disclosure and misuse. As of time of publication, no known patches versions are available.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-34056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34056" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33945 (March 26, 2026)</p>
-<h3>Incus is a system container and virtual machine manager</h3>
-<p>Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prior to version 6.23.0, an attacker can set a configuration key named something like `systemd.credentia...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33945" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33945" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4004 · Feb 28, 2026 · CVSS 9.9</p>
+<h3>Progress WhatsUp Gold NVTA Service Pre-Auth Remote Code Execution</h3>
+<p>Progress WhatsUp Gold versions prior to 24.0.0.1184 contain an unauthenticated remote code execution vulnerability in the NVTA (Next Generation WhatsUp Gold, an analytics service) component. A heap-based buffer overflow in the parsing of a specially crafted HTTP request allows a remote attacker to overflow the allocated buffer and achieve code execution as the SYSTEM account prior to any authentication.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-4004" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4004" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33897 (March 26, 2026)</p>
-<h3>Incus is a system container and virtual machine manager</h3>
-<p>Incus is a system container and virtual machine manager. Prior to version 6.23.0, instance template files can be used to cause arbitrary read or writes as root on the host server. Incus allows for pongo2 templates within instances which can be used at various times in the instance lifecycle to templ...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33897" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33897" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4007 · Mar 10, 2026 (updated Mar 12) · CVSS 9.8</p>
+<h3>JetBrains TeamCity CVE-2026-4007 Authentication Bypass On-Premises</h3>
+<p>JetBrains TeamCity before 2024.10.3 contains an authentication bypass vulnerability in the web server component of TeamCity On-Premises servers. An unauthenticated remote attacker can send a crafted HTTP request to bypass authentication and gain full control of the TeamCity server.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-4007" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4007" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33396 (March 26, 2026)</p>
-<h3>OneUptime is an open-source monitoring and observability platform</h3>
-<p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe container/host by abusing Synthetic Monitor Playwright script execution. Synthetic monitor code is execut...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33396" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33396" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5004 · Mar 3, 2026 (updated Mar 10) · CVSS 9.1</p>
+<h3>Fortinet FortiOS & FortiGate - Improper Authorization in CLI commands</h3>
+<p>An improper authorization vulnerability in FortiOS may allow a remote unauthenticated attacker to execute unauthorized CLI commands via specifically crafted HTTP requests through the SSL-VPN web interface or the management interface (if REST API is enabled), leading to unauthorized system control and information disclosure.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-5004" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5004" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -617,7 +617,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-29 15:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-29 15:51 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
