@@ -280,15 +280,15 @@
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">4°C</div>
-                        </div>
-                        <div class="weather-mini-item">
-                            <div class="city">Turku</div>
                             <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
+                            <div class="city">Turku</div>
+                            <div class="temp">3°C</div>
+                        </div>
+                        <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">3°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
@@ -536,60 +536,19 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28369 · Mar 27, 2026</p>
-<h3>Undertow HTTP Request Smuggling</h3>
-<p>A flaw was found in Undertow. When Undertow receives an HTTP request where the first header line starts with one or more spaces, it incorrectly processes the request by stripping these leading spaces. This behavior violates HTTP standards and can be exploited to perform request smuggling, allowing attackers to bypass security mechanisms and access restricted information.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28369" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28369" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-0603 · Jan 23, 2026 · updated Mar 30, 2026</p>
+<h3>Hibernate Second-Order SQL Injection</h3>
+<p>A flaw was found in Hibernate. A remote attacker with low privileges could exploit a second-order SQL injection vulnerability by providing specially crafted, unsanitized non-alphanumeric characters in the ID column when the InlineIdsOrClauseBuilder is used. This could lead to sensitive information disclosure, such as reading system files, and allow for data manipulation or deletion within the application's database, resulting in an application level denial of service.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-0603" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0603" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28368 · Mar 27, 2026</p>
-<h3>Undertow Request Smuggling (Header Parsing)</h3>
-<p>A flaw was found in Undertow. This vulnerability allows a remote attacker to construct specially crafted requests where header names are parsed differently by Undertow compared to upstream proxies. This discrepancy can be exploited to launch request smuggling attacks, potentially bypassing security controls and accessing unauthorized resources.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28368" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28368" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2024-3884 · Dec 03, 2025 · updated Mar 30, 2026</p>
+<h3>Undertow Remote Denial of Service</h3>
+<p>A flaw was found in Undertow that can cause remote denial of service attacks. When the server uses the FormEncodedDataDefinition.doParse(StreamSourceChannel) method to parse large form data encoding with application/x-www-form-urlencoded, the method will cause an OutOfMemory issue. This flaw allows unauthorized users to cause a remote denial of service (DoS) attack.</p>
+<a href="https://db.gcve.eu/cve/CVE-2024-3884" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2024-3884" target="_blank">OpenCVE</a>
 </div>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-28367 · Mar 27, 2026</p>
-<h3>Undertow Request Smuggling (Header Block Terminator)</h3>
-<p>A flaw was found in Undertow. A remote attacker can exploit this vulnerability by sending `\r\r\r` as a header block terminator. This can be used for request smuggling with certain proxy servers, such as older versions of Apache Traffic Server and Google Cloud Classic Application Load Balancer, potentially leading to unauthorized access or manipulation of web requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28367" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28367" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4998 · Mar 28, 2026</p>
-<h3>PandasAI Code Injection</h3>
-<p>A weakness has been identified in Sinaptik AI PandasAI up to 3.0.0. This vulnerability affects the function CodeExecutor.execute of the file pandasai/core/code_execution/code_executor.py of the component Chat Message Handler. Executing a manipulation can lead to code injection. The attack may be launched remotely.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4998" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4998" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5000 · Mar 28, 2026</p>
-<h3>localGPT Missing Authentication</h3>
-<p>A vulnerability was detected in PromtEngineer localGPT. Impacted is the function LocalGPTHandler of the file backend/server.py of the component API Endpoint. The manipulation of the argument BaseHTTPRequestHandler results in missing authentication. The attack can be executed remotely.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5000" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5000" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5012 · Mar 28, 2026</p>
-<h3>elecV2P OS Command Injection</h3>
-<p>A flaw has been found in elecV2 elecV2P up to 3.8.3. This issue affects the function pm2run of the file /rpc. Executing a manipulation can lead to os command injection. The attack can be executed remotely. The exploit has been published and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5012" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5012" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5017 · Mar 28, 2026</p>
-<h3>Simple Food Order System SQL Injection</h3>
-<p>A security flaw has been discovered in code-projects Simple Food Order System 1.0. This impacts an unknown function of the file /all-tickets.php of the component Parameter Handler. Performing a manipulation of the argument Status results in sql injection. The attack can be initiated remotely.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5017" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5017" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5018 · Mar 28, 2026</p>
-<h3>Simple Food Order System SQL Injection (register-router)</h3>
-<p>A weakness has been identified in code-projects Simple Food Order System 1.0. Affected is an unknown function of the file register-router.php of the component Parameter Handler. Executing a manipulation of the argument Name can lead to sql injection. The attack can be launched remotely.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5018" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5018" target="_blank">OpenCVE</a>
-</div>
 
                         </div>
                     </div>
@@ -621,7 +580,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-30 15:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-30 16:34 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
