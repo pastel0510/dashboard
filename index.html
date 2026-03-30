@@ -534,59 +534,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4692 (March 24, 2026, updated March 27, 2026)</p>
-<h3>Sandbox escape in the Responsive Design Mode component</h3>
-<p>Sandbox escape in the Responsive Design Mode component. This vulnerability affects Firefox < 149, Firefox ESR < 115.34, Firefox ESR < 140.9, Thunderbird < 149, and Thunderbird < 140.9.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4692" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4692" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28369 · Mar 27, 2026</p>
+<h3>Undertow HTTP Request Smuggling</h3>
+<p>A flaw was found in Undertow. When Undertow receives an HTTP request where the first header line starts with one or more spaces, it incorrectly processes the request by stripping these leading spaces. This behavior violates HTTP standards and can be exploited to perform request smuggling, allowing attackers to bypass security mechanisms and access restricted information.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28369" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28369" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33494 (March 26, 2026, updated March 27, 2026)</p>
-<h3>Ory Oathkeeper has a path traversal authorization bypass</h3>
-<p>ORY Oathkeeper is an Identity & Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authori...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33494" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33494" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28368 · Mar 27, 2026</p>
+<h3>Undertow Request Smuggling (Header Parsing)</h3>
+<p>A flaw was found in Undertow. This vulnerability allows a remote attacker to construct specially crafted requests where header names are parsed differently by Undertow compared to upstream proxies. This discrepancy can be exploited to launch request smuggling attacks, potentially bypassing security controls and accessing unauthorized resources.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28368" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28368" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32169 (March 19, 2026, updated March 27, 2026)</p>
-<h3>Azure Cloud Shell Elevation of Privilege Vulnerability</h3>
-<p>Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32169" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32169" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28367 · Mar 27, 2026</p>
+<h3>Undertow Request Smuggling (Header Block Terminator)</h3>
+<p>A flaw was found in Undertow. A remote attacker can exploit this vulnerability by sending `\r\r\r` as a header block terminator. This can be used for request smuggling with certain proxy servers, such as older versions of Apache Traffic Server and Google Cloud Classic Application Load Balancer, potentially leading to unauthorized access or manipulation of web requests.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28367" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28367" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30302 (March 27, 2026, updated March 29, 2026)</p>
-<h3>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, r...</h3>
-<p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30302" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4998 · Mar 28, 2026</p>
+<h3>PandasAI Code Injection</h3>
+<p>A weakness has been identified in Sinaptik AI PandasAI up to 3.0.0. This vulnerability affects the function CodeExecutor.execute of the file pandasai/core/code_execution/code_executor.py of the component Chat Message Handler. Executing a manipulation can lead to code injection. The attack may be launched remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4998" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4998" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33396 (March 26, 2026, updated March 27, 2026)</p>
-<h3>OneUptime has sandbox escape in Synthetic Monitor Playwright runtime allows project members to execute arbitrary commands on Probe</h3>
-<p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe co...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33396" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33396" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5000 · Mar 28, 2026</p>
+<h3>localGPT Missing Authentication</h3>
+<p>A vulnerability was detected in PromtEngineer localGPT. Impacted is the function LocalGPTHandler of the file backend/server.py of the component API Endpoint. The manipulation of the argument BaseHTTPRequestHandler results in missing authentication. The attack can be executed remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5000" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5000" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32523 (March 25, 2026, updated March 27, 2026)</p>
-<h3>WordPress WPJAM Basic plugin <= 6.9.2 - Arbitrary File Upload vulnerability</h3>
-<p>Unrestricted Upload of File with Dangerous Type vulnerability in denishua WPJAM Basic wpjam-basic allows Using Malicious Files.This issue affects WPJAM Basic: from n/a through <= 6.9.2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32523" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32523" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5012 · Mar 28, 2026</p>
+<h3>elecV2P OS Command Injection</h3>
+<p>A flaw has been found in elecV2 elecV2P up to 3.8.3. This issue affects the function pm2run of the file /rpc. Executing a manipulation can lead to os command injection. The attack can be executed remotely. The exploit has been published and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5012" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5012" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32482 (March 25, 2026, updated March 27, 2026)</p>
-<h3>WordPress Ona theme < 1.24 - Arbitrary File Upload vulnerability</h3>
-<p>Unrestricted Upload of File with Dangerous Type vulnerability in deothemes Ona ona allows Upload a Web Shell to a Web Server.This issue affects Ona: from n/a through < 1.24.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32482" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32482" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5017 · Mar 28, 2026</p>
+<h3>Simple Food Order System SQL Injection</h3>
+<p>A security flaw has been discovered in code-projects Simple Food Order System 1.0. This impacts an unknown function of the file /all-tickets.php of the component Parameter Handler. Performing a manipulation of the argument Status results in sql injection. The attack can be initiated remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5017" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5017" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33945 (March 26, 2026, updated March 27, 2026)</p>
-<h3>Abitrary file write through systemd-creds option</h3>
-<p>Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. P...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33945" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33945" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5018 · Mar 28, 2026</p>
+<h3>Simple Food Order System SQL Injection (register-router)</h3>
+<p>A weakness has been identified in code-projects Simple Food Order System 1.0. Affected is an unknown function of the file register-router.php of the component Parameter Handler. Executing a manipulation of the argument Name can lead to sql injection. The attack can be launched remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5018" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5018" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -619,7 +619,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-30 09:48 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-30 09:58 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
