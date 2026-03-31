@@ -276,19 +276,19 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">1°C</div>
+                            <div class="temp">3°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">1°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">2°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
@@ -534,61 +534,60 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33026 · Mar 30, 2026 · 9.4 Critical</p>
-<h3>nginx-ui Backup Restore Allows Tampering with Encrypted Backups</h3>
-<p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, the nginx-ui backup restore mechanism allows attackers to tamper with encrypted backup archives and inject malicious configuration during restoration. This issue has been patched in version 2.3.4.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33026" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33026" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32922 · Mar 29, 2026, updated Mar 30, 2026 </p>
+<h3>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate</h3>
+<p>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes by failing to constrain newly minted scopes to the caller's current scop...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32922" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32922" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4974 · Mar 27, 2026 · 8.7 High</p>
-<h3>Tenda AC7 Buffer Overflow via SetSysTimeCfg</h3>
-<p>A flaw has been found in Tenda AC7 15.03.06.44. Affected by this issue is the function fromSetSysTime of the file /goform/SetSysTimeCfg of the component POST Request Handler. Executing a manipulation of the argument Time can lead to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been published and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4974" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2016-20049 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>JAD 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability</h3>
+<p>JAD 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying oversized input that exceeds buffer boundaries. Attackers can craft malicious input strings exceeding 8150 b...</p>
+<a href="https://db.gcve.eu/cve/CVE-2016-20049" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2016-20049" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31831 · Mar 30, 2026 · 8.7 High</p>
-<h3>Tautulli Path Traversal via /newsletter/image/images API</h3>
-<p>Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Prior to version 2.17.0, the /newsletter/image/images API endpoint is vulnerable to path traversal, allowing unauthenticated attackers to read arbitrary files from the application server's filesystem. This issue has been patched in version 2.17.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31831" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31831" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2017-20225 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>TiEmu 2.08 and prior contains a stack-based buffer overflow vulnerability</h3>
+<p>TiEmu 2.08 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting inadequate boundary checks on user-supplied input. Attackers can trigger the overflow through command-line argumen...</p>
+<a href="https://db.gcve.eu/cve/CVE-2017-20225" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2017-20225" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3108 · Mar 26, 2026 · updated Mar 30, 2026 · 8.0 High</p>
-<h3>Mattermost Terminal Manipulation via ANSI/OSC Escape Sequences</h3>
-<p>Mattermost versions 11.2.x <= 11.2.2, 10.11.x <= 10.11.10, 11.4.x <= 11.4.0, 11.3.x <= 11.3.1 fail to sanitize user-controlled post content in the mmctl commands terminal output which allows attackers to manipulate administrator terminals via crafted messages containing ANSI and OSC escape sequences that enable screen manipulation, fake prompts, and clipboard hijacking.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3108" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3108" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2017-20227 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>JAD Java Decompiler 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability</h3>
+<p>JAD Java Decompiler 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying overly long input that exceeds buffer boundaries. Attackers can craft malicious input passed...</p>
+<a href="https://db.gcve.eu/cve/CVE-2017-20227" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2017-20227" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29953 · Mar 30, 2026 · 7.5 High</p>
-<h3>SchemaHero SQL Injection via columnAsInsert Function</h3>
-<p>SQL Injection vulnerability in SchemaHero 0.23.0 via the column parameter to the columnAsInsert function in file plugins/postgres/lib/column.go.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29953" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29953" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2017-20229 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>MAWK 1.3.3-17 and prior contains a stack-based buffer overflow vulnerability</h3>
+<p>MAWK 1.3.3-17 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting inadequate boundary checks on user-supplied input. Attackers can craft malicious input that overflows the stack...</p>
+<a href="https://db.gcve.eu/cve/CVE-2017-20229" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2017-20229" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29909 · Mar 30, 2026 · 7.3 High</p>
-<h3>MRCMS Unauthenticated Directory Enumeration</h3>
-<p>MRCMS V3.1.2 contains an unauthenticated directory enumeration vulnerability in the file management module. The /admin/file/list.do endpoint lacks authentication controls and proper input validation, allowing remote attackers to enumerate directory contents on the server without any credentials.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29909" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29909" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2018-25220 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>Bochs 2.6-5 contains a stack-based buffer overflow vulnerability</h3>
+<p>Bochs 2.6-5 contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying an oversized input string to the application. Attackers can craft a malicious payload with 1200 bytes of padding followed by...</p>
+<a href="https://db.gcve.eu/cve/CVE-2018-25220" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25220" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30305 · Mar 30, 2026 · 7.0 High</p>
-<h3>Syntx Command Auto-Approval OS Command Injection</h3>
-<p>Syntx's command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on fragile regular expressions to parse command structures; while it attempts to intercept dangerous operations, it fails to account for standard Shell command substitution syntax (specifically $(...)and backticks ...). An attacker can construct a command such as git log --grep="$(malicious_command)", forcing Syntx to misidentify it as a safe git operation and automatically approve it.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30305" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30305" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2018-25221 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>EChat Server 3.1 contains a buffer overflow vulnerability in the chat.ghp endpoint</h3>
+<p>EChat Server 3.1 contains a buffer overflow vulnerability in the chat.ghp endpoint that allows remote attackers to execute arbitrary code by supplying an oversized username parameter. Attackers can send a GET request to chat.ghp with a malicious user...</p>
+<a href="https://db.gcve.eu/cve/CVE-2018-25221" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25221" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29924 · Mar 30, 2026 · 7.0 High</p>
-<h3>Grav CMS XXE via SVG File Upload</h3>
-<p>Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the admin panel and File Manager plugin.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29924" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29924" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2018-25223 · Mar 28, 2026, updated Mar 30, 2026 </p>
+<h3>Crashmail 1.6 contains a stack-based buffer overflow vulnerability</h3>
+<p>Crashmail 1.6 contains a stack-based buffer overflow vulnerability that allows remote attackers to execute arbitrary code by sending malicious input to the application. Attackers can craft payloads with ROP chains to achieve code execution in the app...</p>
+<a href="https://db.gcve.eu/cve/CVE-2018-25223" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25223" target="_blank">OpenCVE</a>
 </div>
-
                         </div>
                     </div>
                 </div>
@@ -619,7 +618,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-31 08:00 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-31 09:02 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
