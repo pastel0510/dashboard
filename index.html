@@ -534,59 +534,45 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32922 · Mar 29, 2026, updated Mar 30, 2026 </p>
-<h3>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate</h3>
-<p>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes by failing to constrain newly minted scopes to the caller's current scop...</p>
+<p class="cve-id">CVE-2026-34505 · Mar 31, 2026</p>
+<h3>OpenClaw before 2026.3.12 applies rate limiting only after successful webhook authentication</h3>
+<p>Allows attackers to bypass rate limits and brute-force webhook secrets. Attackers can submit repeated authentication requests with invalid secrets without triggering rate limit responses, enabling systematic secret guessing and subsequent forged webhook submission.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34505" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34505" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-32920 · Mar 31, 2026</p>
+<h3>OpenClaw before 2026.3.12 automatically discovers and loads plugins from .OpenClaw/extensions/</h3>
+<p>Without explicit trust verification, allowing arbitrary code execution. Attackers can execute malicious code by including crafted workspace plugins in cloned repositories that execute when users run OpenClaw from the directory.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32920" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32920" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-32917 · Mar 31, 2026</p>
+<h3>OpenClaw before 2026.3.13 contains a remote command injection vulnerability in iMessage attachment staging</h3>
+<p>Allows attackers to execute arbitrary commands on configured remote hosts. The vulnerability exists because unsanitized remote attachment paths containing shell metacharacters are passed directly to the SCP remote operand without validation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32917" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32917" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34509 · Mar 31, 2026</p>
+<h3>OpenClaw before 2026.3.8 contains a sender allowlist bypass in Microsoft Teams plugin</h3>
+<p>When a team/channel route allowlist is configured with an empty groupAllowFrom parameter, the message handler synthesizes wildcard sender authorization, permitting any sender in the matched team/channel to trigger replies in allowlisted Teams routes.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34509" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34509" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-32982 · Mar 31, 2026</p>
+<h3>OpenClaw before 2026.3.13 contains an information disclosure in fetchRemoteMedia function</h3>
+<p>Exposes Telegram bot tokens in error messages. When media downloads fail, the original Telegram file URLs containing bot tokens are embedded in MediaFetchError strings and leaked to logs and error surfaces.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32982" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32982" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-32922 · Mar 29, 2026</p>
+<h3>OpenClaw before 2026.3.11 contains a privilege escalation in device.token.rotate</h3>
+<p>Allows callers with operator.pairing scope to mint tokens with broader scopes by failing to constrain newly minted scopes to the caller's current scope set. Attackers can obtain operator.admin tokens and achieve remote code execution on connected nodes.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-32922" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32922" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2016-20049 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>JAD 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability</h3>
-<p>JAD 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying oversized input that exceeds buffer boundaries. Attackers can craft malicious input strings exceeding 8150 b...</p>
-<a href="https://db.gcve.eu/cve/CVE-2016-20049" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2016-20049" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2017-20225 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>TiEmu 2.08 and prior contains a stack-based buffer overflow vulnerability</h3>
-<p>TiEmu 2.08 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting inadequate boundary checks on user-supplied input. Attackers can trigger the overflow through command-line argumen...</p>
-<a href="https://db.gcve.eu/cve/CVE-2017-20225" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2017-20225" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2017-20227 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>JAD Java Decompiler 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability</h3>
-<p>JAD Java Decompiler 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying overly long input that exceeds buffer boundaries. Attackers can craft malicious input passed...</p>
-<a href="https://db.gcve.eu/cve/CVE-2017-20227" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2017-20227" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2017-20229 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>MAWK 1.3.3-17 and prior contains a stack-based buffer overflow vulnerability</h3>
-<p>MAWK 1.3.3-17 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting inadequate boundary checks on user-supplied input. Attackers can craft malicious input that overflows the stack...</p>
-<a href="https://db.gcve.eu/cve/CVE-2017-20229" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2017-20229" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2018-25220 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>Bochs 2.6-5 contains a stack-based buffer overflow vulnerability</h3>
-<p>Bochs 2.6-5 contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying an oversized input string to the application. Attackers can craft a malicious payload with 1200 bytes of padding followed by...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25220" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25220" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2018-25221 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>EChat Server 3.1 contains a buffer overflow vulnerability in the chat.ghp endpoint</h3>
-<p>EChat Server 3.1 contains a buffer overflow vulnerability in the chat.ghp endpoint that allows remote attackers to execute arbitrary code by supplying an oversized username parameter. Attackers can send a GET request to chat.ghp with a malicious user...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25221" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25221" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2018-25223 · Mar 28, 2026, updated Mar 30, 2026 </p>
-<h3>Crashmail 1.6 contains a stack-based buffer overflow vulnerability</h3>
-<p>Crashmail 1.6 contains a stack-based buffer overflow vulnerability that allows remote attackers to execute arbitrary code by sending malicious input to the application. Attackers can craft payloads with ROP chains to achieve code execution in the app...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25223" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25223" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -618,7 +604,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-31 15:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-31 15:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
