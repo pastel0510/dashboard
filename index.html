@@ -527,46 +527,61 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34505 · Mar 31, 2026</p>
-<h3>OpenClaw before 2026.3.12 applies rate limiting only after successful webhook authentication</h3>
-<p>Allows attackers to bypass rate limits and brute-force webhook secrets. Attackers can submit repeated authentication requests with invalid secrets without triggering rate limit responses, enabling systematic secret guessing and subsequent forged webhook submission.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34505" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34505" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30302 (March 27, 2026, updated March 29, 2026)</p>
+<h3>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, r...</h3>
+<p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30302" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32920 · Mar 31, 2026</p>
-<h3>OpenClaw before 2026.3.12 automatically discovers and loads plugins from .OpenClaw/extensions/</h3>
-<p>Without explicit trust verification, allowing arbitrary code execution. Attackers can execute malicious code by including crafted workspace plugins in cloned repositories that execute when users run OpenClaw from the directory.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32920" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32920" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-26137 (March 19, 2026, updated March 29, 2026)</p>
+<h3>Microsoft Exchange Elevation of Privilege Vulnerability</h3>
+<p>Server-side request forgery (ssrf) in Microsoft Exchange allows an authorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26137" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26137" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32917 · Mar 31, 2026</p>
-<h3>OpenClaw before 2026.3.13 contains a remote command injection vulnerability in iMessage attachment staging</h3>
-<p>Allows attackers to execute arbitrary commands on configured remote hosts. The vulnerability exists because unsanitized remote attachment paths containing shell metacharacters are passed directly to the SCP remote operand without validation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32917" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32917" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-34509 · Mar 31, 2026</p>
-<h3>OpenClaw before 2026.3.8 contains a sender allowlist bypass in Microsoft Teams plugin</h3>
-<p>When a team/channel route allowlist is configured with an empty groupAllowFrom parameter, the message handler synthesizes wildcard sender authorization, permitting any sender in the matched team/channel to trigger replies in allowlisted Teams routes.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34509" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34509" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32982 · Mar 31, 2026</p>
-<h3>OpenClaw before 2026.3.13 contains an information disclosure in fetchRemoteMedia function</h3>
-<p>Exposes Telegram bot tokens in error messages. When media downloads fail, the original Telegram file URLs containing bot tokens are embedded in MediaFetchError strings and leaked to logs and error surfaces.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32982" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32982" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-32922 · Mar 29, 2026</p>
-<h3>OpenClaw before 2026.3.11 contains a privilege escalation in device.token.rotate</h3>
-<p>Allows callers with operator.pairing scope to mint tokens with broader scopes by failing to constrain newly minted scopes to the caller's current scope set. Attackers can obtain operator.admin tokens and achieve remote code execution on connected nodes.</p>
+<p class="cve-id">CVE-2026-32922 (March 29, 2026)</p>
+<h3>OpenClaw < 2026.3.11 - Privilege Escalation via Unvalidated Scope in device.token.rotate</h3>
+<p>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes by failing to const...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-32922" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32922" target="_blank">OpenCVE</a>
 </div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30530 (March 27, 2026, updated March 29, 2026)</p>
+<h3>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1</h3>
+<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_customer action). The application fails to properly sanitize u...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30530" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30530" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30533 (March 27, 2026, updated March 29, 2026)</p>
+<h3>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1</h3>
+<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/manage_product.php file via the "id" parameter.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30533" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30533" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30532 (March 27, 2026, updated March 29, 2026)</p>
+<h3>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1</h3>
+<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/view_product.php file via the "id" parameter.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30532" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30532" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-30457 (March 26, 2026, updated March 29, 2026)</p>
+<h3>Remote PHP Code Execution via Dwoo Parser in FuelCMS</h3>
+<p>An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows attackers to execute arbitrary code via crafted PHP code.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30457" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30457" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-24968 (March 25, 2026, updated March 29, 2026)</p>
+<h3>WordPress Xagio SEO plugin <= 7.1.0.30 - Privilege Escalation vulnerability</h3>
+<p>Incorrect Privilege Assignment vulnerability in Xagio SEO Xagio SEO xagio-seo allows Privilege Escalation.This issue affects Xagio SEO: from n/a through <= 7.1.0.30.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24968" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24968" target="_blank">OpenCVE</a>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -597,7 +612,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-31 21:44 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-31 21:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
