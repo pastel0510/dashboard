@@ -534,66 +534,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33757 · Mar 27, 2026 · 9.6 Critical</p>
-<h3>OpenBao lacks user confirmation for OIDC direct callback mode</h3>
-<p>OpenBao is an open source identity-based secrets management system. Prior to version 2.5.2, OpenBao does not prompt for user confirmation when logging in via JWT/OIDC and a role with `callback_mode` set to `direct`. This allows an attacker to start an authentication request and perform "remote phishing" by having the victim visit the URL and automatically log-in to the session of the attacker.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33757" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33757" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33026 · Mar 30, 2026 · 9.4 Critical</p>
+<h3>nginx-ui Backup Restore Allows Tampering with Encrypted Backups</h3>
+<p>Nginx UI is a web user interface for the Nginx web server. Prior to version 2.3.4, the nginx-ui backup restore mechanism allows attackers to tamper with encrypted backup archives and inject malicious configuration during restoration. This issue has been patched in version 2.3.4.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33026" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33026" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30529 · Mar 27, 2026 · updated Mar 30, 2026 · 8.8 High</p>
-<h3>Authenticated SQL Injection in SourceCodester Online Food Ordering System</h3>
-<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_user action). The application fails to properly sanitize user input supplied to the "username" parameter. This allows an authenticated attacker to inject malicious SQL commands.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30529" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30529" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4974 · Mar 27, 2026 · 8.7 High</p>
+<h3>Tenda AC7 Buffer Overflow via SetSysTimeCfg</h3>
+<p>A flaw has been found in Tenda AC7 15.03.06.44. Affected by this issue is the function fromSetSysTime of the file /goform/SetSysTimeCfg of the component POST Request Handler. Executing a manipulation of the argument Time can lead to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been published and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4974" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33669 · Mar 26, 2026 · updated Mar 27, 2026 · 9.8 Critical</p>
-<h3>SiYuan has Arbitrary Document Reading within the Publishing Service</h3>
-<p>SiYuan is a personal knowledge management system. Prior to version 3.6.2, document IDs were retrieved via the /api/file/readDir interface, and then the /api/block/getChildBlocks interface was used to view the content of all documents.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33669" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33669" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31831 · Mar 30, 2026 · 8.7 High</p>
+<h3>Tautulli Path Traversal via /newsletter/image/images API</h3>
+<p>Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Prior to version 2.17.0, the /newsletter/image/images API endpoint is vulnerable to path traversal, allowing unauthenticated attackers to read arbitrary files from the application server's filesystem. This issue has been patched in version 2.17.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31831" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31831" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33670 · Mar 26, 2026 · updated Mar 27, 2026 · 9.8 Critical</p>
-<h3>SiYuan has directory traversal within its publishing service</h3>
-<p>SiYuan's publishing service contains a directory traversal flaw on the /api/file/readDir endpoint. By supplying crafted path parameters, an attacker can cause the server to enumerate file names stored in any notebook, exposing the entire set of document names.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33670" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33670" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3108 · Mar 26, 2026 · updated Mar 30, 2026 · 8.0 High</p>
+<h3>Mattermost Terminal Manipulation via ANSI/OSC Escape Sequences</h3>
+<p>Mattermost versions 11.2.x <= 11.2.2, 10.11.x <= 10.11.10, 11.4.x <= 11.4.0, 11.3.x <= 11.3.1 fail to sanitize user-controlled post content in the mmctl commands terminal output which allows attackers to manipulate administrator terminals via crafted messages containing ANSI and OSC escape sequences that enable screen manipulation, fake prompts, and clipboard hijacking.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3108" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3108" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32973 · Mar 29, 2026 · 9.8 Critical</p>
-<h3>OpenClaw < 2026.3.11 - Exec Allowlist Pattern Overmatch via POSIX Path Normalization</h3>
-<p>OpenClaw before 2026.3.11 contains an exec allowlist bypass vulnerability where matchesExecAllowlistPattern improperly normalizes patterns with lowercasing and glob matching that overmatches on POSIX paths. Attackers can exploit the ? wildcard matching across path segments to execute commands or paths not intended by operators.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32973" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32973" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29953 · Mar 30, 2026 · 7.5 High</p>
+<h3>SchemaHero SQL Injection via columnAsInsert Function</h3>
+<p>SQL Injection vulnerability in SchemaHero 0.23.0 via the column parameter to the columnAsInsert function in file plugins/postgres/lib/column.go.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29953" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29953" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32978 · Mar 29, 2026 · 8.0 High</p>
-<h3>OpenClaw < 2026.3.11 - Approval Bypass via Unrecognized Script Runners</h3>
-<p>OpenClaw before 2026.3.11 contains an approval integrity vulnerability where system.run approvals fail to bind mutable file operands for certain script runners like tsx and jiti. Attackers can obtain approval for benign script commands, rewrite referenced scripts on disk, and execute modified code under the approved run context.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32978" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32978" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29909 · Mar 30, 2026 · 7.3 High</p>
+<h3>MRCMS Unauthenticated Directory Enumeration</h3>
+<p>MRCMS V3.1.2 contains an unauthenticated directory enumeration vulnerability in the file management module. The /admin/file/list.do endpoint lacks authentication controls and proper input validation, allowing remote attackers to enumerate directory contents on the server without any credentials.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29909" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29909" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32974 · Mar 29, 2026 · 8.6 High</p>
-<h3>OpenClaw < 2026.3.12 - Forged Event Injection via Feishu Webhook Verification Token</h3>
-<p>OpenClaw before 2026.3.12 contains an authentication bypass vulnerability in Feishu webhook mode when only verificationToken is configured without encryptKey, allowing acceptance of forged events. Unauthenticated network attackers can inject forged Feishu events and trigger downstream tool execution by reaching the webhook endpoint.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32974" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30305 · Mar 30, 2026 · 7.0 High</p>
+<h3>Syntx Command Auto-Approval OS Command Injection</h3>
+<p>Syntx's command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on fragile regular expressions to parse command structures; while it attempts to intercept dangerous operations, it fails to account for standard Shell command substitution syntax (specifically $(...)and backticks ...). An attacker can construct a command such as git log --grep="$(malicious_command)", forcing Syntx to misidentify it as a safe git operation and automatically approve it.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30305" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30305" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32975 · Mar 29, 2026 · 9.8 Critical</p>
-<h3>OpenClaw < 2026.3.12 - Weak Authorization via Mutable Group Names in Zalouser Allowlist</h3>
-<p>OpenClaw before 2026.3.12 contains a weak authorization vulnerability in Zalouser allowlist mode that matches mutable group display names instead of stable group identifiers. Attackers can create groups with identical names to allowlisted groups to bypass channel authorization and route messages from unintended groups to the agent.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32975" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32975" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33758 · Mar 27, 2026 · 6.1 Medium</p>
-<h3>OpenBao XSS via error_description parameter in OIDC/JWT authentication</h3>
-<p>OpenBao is an open source identity-based secrets management system. Prior to version 2.5.2, OpenBao installations that have an OIDC/JWT authentication method enabled and a role with `callback_mode=direct` configured are vulnerable to XSS via the `error_description` parameter on the page for a failed authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33758" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33758" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29924 · Mar 30, 2026 · 7.0 High</p>
+<h3>Grav CMS XXE via SVG File Upload</h3>
+<p>Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the admin panel and File Manager plugin.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29924" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29924" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -626,7 +619,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-03-31 03:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-03-31 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
