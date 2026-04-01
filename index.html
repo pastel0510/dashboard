@@ -534,61 +534,60 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30302 (March 27, 2026, updated March 29, 2026)</p>
-<h3>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, r...</h3>
-<p>The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30302" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-29180 · Mar 27, 2026 · </p>
+<h3>Fleet Device Management - Broken Access Control</h3>
+<p>A broken access control vulnerability in Fleet's host transfer API allows a team maintainer to transfer hosts from any team into their own team, bypassing team isolation boundaries. Once transferred, the attacker gains full control over the stolen hosts, including the ability to execute scripts with root privileges. Affects Fleet &lt; 4.81.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-29180" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29180" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-26137 (March 19, 2026, updated March 29, 2026)</p>
-<h3>Microsoft Exchange Elevation of Privilege Vulnerability</h3>
-<p>Server-side request forgery (ssrf) in Microsoft Exchange allows an authorized attacker to elevate privileges over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-26137" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26137" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28228 · Mar 29, 2026 · </p>
+<h3>OpenOlat E-Learning - Remote Code Execution</h3>
+<p>An authenticated user with the Author role can inject Velocity directives into a reminder email template. When processed, the injected directives are evaluated server-side. By chaining Velocity's #set directive with Java reflection, an attacker can execute OS commands with Tomcat privileges (typically root in containerized deployments). Affects OpenOlat &lt; 19.1.31, 20.1.18, 20.2.5.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28228" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32922 (March 29, 2026)</p>
-<h3>OpenClaw < 2026.3.11 - Privilege Escalation via Unvalidated Scope in device.token.rotate</h3>
-<p>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes by failing to const...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32922" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32922" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32241 · Mar 27, 2026 · </p>
+<h3>Flannel Kubernetes - Command Injection</h3>
+<p>The Flannel Extension backend is vulnerable to command injection via Node annotations. Attackers who can set Kubernetes Node annotations can achieve root-level arbitrary command execution on every flannel node in the cluster. The annotation content is unmarshalled and piped directly to a shell command without validation. Affects Flannel &lt; v0.28.2. Use vxlan or wireguard backends as workaround.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32241" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32241" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30530 (March 27, 2026, updated March 29, 2026)</p>
-<h3>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1</h3>
-<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_customer action). The application fails to properly sanitize u...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30530" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30530" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33871 · Mar 27, 2026 · </p>
+<h3>Netty HTTP/2 - Denial of Service</h3>
+<p>A remote user can trigger a Denial of Service against a Netty HTTP/2 server by sending a flood of CONTINUATION frames. The server lacks a limit on CONTINUATION frames combined with a bypass of size-based mitigations using zero-byte frames, causing excessive CPU consumption with minimal bandwidth. Affects Netty &lt; 4.1.132.Final and 4.2.10.Final.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33871" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33871" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30533 (March 27, 2026, updated March 29, 2026)</p>
-<h3>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1</h3>
-<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/manage_product.php file via the "id" parameter.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30533" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30533" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33874 · Mar 27, 2026 · </p>
+<h3>Gematik Authenticator - Remote Code Execution</h3>
+<p>The Mac OS version of Gematik Authenticator is vulnerable to remote code execution when victims open a malicious file. Starting in version 4.12.0 and prior to version 4.16.0. Update to version 4.16.0 or greater. No workarounds available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33874" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33874" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30532 (March 27, 2026, updated March 29, 2026)</p>
-<h3>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1</h3>
-<p>A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/view_product.php file via the "id" parameter.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30532" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30532" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27880 · Mar 27, 2026 (updated Mar 27, 2026) · </p>
+<h3>OpenFeature - Out-of-Memory Crashes</h3>
+<p>The OpenFeature feature toggle evaluation endpoint reads unbounded values into memory, which can cause out-of-memory crashes. Affects OpenFeature versions prior to fix.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27880" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27880" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-30457 (March 26, 2026, updated March 29, 2026)</p>
-<h3>Remote PHP Code Execution via Dwoo Parser in FuelCMS</h3>
-<p>An issue in the /parser/dwoo component of Daylight Studio FuelCMS v1.5.2 allows attackers to execute arbitrary code via crafted PHP code.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-30457" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30457" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32734 · Mar 31, 2026 · </p>
+<h3>baserCMS - Cross-Site Scripting</h3>
+<p>baserCMS has DOM-based cross-site scripting in tag creation. Affects baserCMS &lt; 5.2.3. Update to version 5.2.3 or greater.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32734" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32734" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24968 (March 25, 2026, updated March 29, 2026)</p>
-<h3>WordPress Xagio SEO plugin <= 7.1.0.30 - Privilege Escalation vulnerability</h3>
-<p>Incorrect Privilege Assignment vulnerability in Xagio SEO Xagio SEO xagio-seo allows Privilege Escalation.This issue affects Xagio SEO: from n/a through <= 7.1.0.30.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24968" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24968" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33906 · Mar 31, 2026 · </p>
+<h3>Ella Core 5G - Privilege Escalation</h3>
+<p>The NetworkManager role was granted backup and restore permission. The restore endpoint accepted any valid SQLite file without verifying contents. A NetworkManager could replace the production database with a tampered copy to escalate to Admin, gaining access to user management, audit logs, and operator identity configuration. Affects Ella Core &lt; 1.7.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33906" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33906" target="_blank">OpenCVE</a>
 </div>
-
                         </div>
                     </div>
                 </div>
@@ -619,7 +618,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-01 03:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-01 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
