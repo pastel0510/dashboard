@@ -276,15 +276,15 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
@@ -533,60 +533,61 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29180 · Mar 27, 2026 · </p>
-<h3>Fleet Device Management - Broken Access Control</h3>
-<p>A broken access control vulnerability in Fleet's host transfer API allows a team maintainer to transfer hosts from any team into their own team, bypassing team isolation boundaries. Once transferred, the attacker gains full control over the stolen hosts, including the ability to execute scripts with root privileges. Affects Fleet &lt; 4.81.1.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29180" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29180" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-22738 · Mar 26, 2026 · <KEV></p>
+<h3>Spring AI SpEL Injection Vulnerability</h3>
+<p>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code. Only applications that use SimpleVectorStore and pass user-supplied input as a filter expression key are affected. This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22738" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22738" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28228 · Mar 29, 2026 · </p>
-<h3>OpenOlat E-Learning - Remote Code Execution</h3>
-<p>An authenticated user with the Author role can inject Velocity directives into a reminder email template. When processed, the injected directives are evaluated server-side. By chaining Velocity's #set directive with Java reflection, an attacker can execute OS commands with Tomcat privileges (typically root in containerized deployments). Affects OpenOlat &lt; 19.1.31, 20.1.18, 20.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28228" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-21992 · Mar 24, 2026 · <KEV></p>
+<h3>Oracle Identity Manager Missing Authentication</h3>
+<p>Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: REST WebServices) and Oracle Web Services Manager product of Oracle Fusion Middleware (component: Web Services Security). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Identity Manager and Oracle Web Services Manager. Successful attacks can result in takeover of Oracle Identity Manager and Oracle Web Services Manager.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21992" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21992" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32241 · Mar 27, 2026 · </p>
-<h3>Flannel Kubernetes - Command Injection</h3>
-<p>The Flannel Extension backend is vulnerable to command injection via Node annotations. Attackers who can set Kubernetes Node annotations can achieve root-level arbitrary command execution on every flannel node in the cluster. The annotation content is unmarshalled and piped directly to a shell command without validation. Affects Flannel &lt; v0.28.2. Use vxlan or wireguard backends as workaround.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32241" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32241" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-24159 · Mar 24, 2026 · <KEV></p>
+<h3>NVIDIA NeMo Framework Remote Code Execution</h3>
+<p>NVIDIA NeMo Framework contains a vulnerability where an attacker may cause remote code execution. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, information disclosure and data tampering.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24159" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24159" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33871 · Mar 27, 2026 · </p>
-<h3>Netty HTTP/2 - Denial of Service</h3>
-<p>A remote user can trigger a Denial of Service against a Netty HTTP/2 server by sending a flood of CONTINUATION frames. The server lacks a limit on CONTINUATION frames combined with a bypass of size-based mitigations using zero-byte frames, causing excessive CPU consumption with minimal bandwidth. Affects Netty &lt; 4.1.132.Final and 4.2.10.Final.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33871" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33871" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33660 · Mar 25, 2026 · updated Mar 30, 2026 · <KEV></p>
+<h3>n8n Remote Code Execution</h3>
+<p>n8n is an open source workflow automation platform. Prior to versions 2.14.1, 2.13.3, and 1.123.26, an authenticated user with permission to create or modify workflows could use the Merge node's "Combine by SQL" mode to read local files on the n8n host and achieve remote code execution. The AlaSQL sandbox did not sufficiently restrict certain SQL statements, allowing an attacker to access sensitive files on the server or even compromise the instance.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33660" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33660" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33874 · Mar 27, 2026 · </p>
-<h3>Gematik Authenticator - Remote Code Execution</h3>
-<p>The Mac OS version of Gematik Authenticator is vulnerable to remote code execution when victims open a malicious file. Starting in version 4.12.0 and prior to version 4.16.0. Update to version 4.16.0 or greater. No workarounds available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33874" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33874" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-0596 · Mar 31, 2026 · <KEV></p>
+<h3>MLflow Command Injection</h3>
+<p>A command injection vulnerability exists in mlflow/mlflow when serving a model with `enable_mlserver=True`. The `model_uri` is embedded directly into a shell command executed via `bash -c` without proper sanitization. If the `model_uri` contains shell metacharacters, such as `$()` or backticks, it allows for command substitution and execution of attacker-controlled commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-0596" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0596" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27880 · Mar 27, 2026 (updated Mar 27, 2026) · </p>
-<h3>OpenFeature - Out-of-Memory Crashes</h3>
-<p>The OpenFeature feature toggle evaluation endpoint reads unbounded values into memory, which can cause out-of-memory crashes. Affects OpenFeature versions prior to fix.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27880" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27880" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4176 · Mar 29, 2026 · <KEV></p>
+<h3>Perl Compress::Raw::Zlib Critical Vulnerability</h3>
+<p>A critical vulnerability affecting multiple versions of Perl, specifically stemming from its Compress::Raw::Zlib core module. This issue carries a CVSS score of 9.8 (Critical).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4176" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4176" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32734 · Mar 31, 2026 · </p>
-<h3>baserCMS - Cross-Site Scripting</h3>
-<p>baserCMS has DOM-based cross-site scripting in tag creation. Affects baserCMS &lt; 5.2.3. Update to version 5.2.3 or greater.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32734" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32734" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5036 · Mar 29, 2026 · <KEV></p>
+<h3>Tenda 4G06 Stack-Based Buffer Overflow</h3>
+<p>A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the file /goform/DhcpListClient of the component Endpoint. Performing a manipulation of the argument page results in stack-based buffer overflow. The attack can be initiated remotely. The exploit has been made public and could be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5036" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5036" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33906 · Mar 31, 2026 · </p>
-<h3>Ella Core 5G - Privilege Escalation</h3>
-<p>The NetworkManager role was granted backup and restore permission. The restore endpoint accepted any valid SQLite file without verifying contents. A NetworkManager could replace the production database with a tampered copy to escalate to Admin, gaining access to user management, audit logs, and operator identity configuration. Affects Ella Core &lt; 1.7.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33906" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33906" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5212 · Mar 31, 2026 · <KEV></p>
+<h3>D-Link DNS Stack-Based Buffer Overflow</h3>
+<p>A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. This issue affects the function Webdav_Upload_File of the file /cgi-bin/webdav_mgr.cgi. The manipulation of the argument f_file leads to stack-based buffer overflow.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5212" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5212" target="_blank">OpenCVE</a>
 </div>
+
                         </div>
                     </div>
                 </div>
@@ -617,7 +618,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-01 08:00 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-01 09:01 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
