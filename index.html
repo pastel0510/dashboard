@@ -527,61 +527,60 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-22738 · Mar 26, 2026 · <KEV></p>
-<h3>Spring AI SpEL Injection Vulnerability</h3>
-<p>In Spring AI, a SpEL injection vulnerability exists in SimpleVectorStore when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code. Only applications that use SimpleVectorStore and pass user-supplied input as a filter expression key are affected. This issue affects Spring AI: from 1.0.0 before 1.0.5, from 1.1.0 before 1.1.4.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22738" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22738" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32922 · Mar 29, 2026 · CVSS 9.9 (Critical)</p>
+<h3>OpenClaw Privilege Escalation via Unvalidated Scope in Device Token Rotate</h3>
+<p>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes. Attackers can obtain operator.admin tokens for paired devices and achieve remote code execution on connected nodes via system.run or gain unauthorized gateway-admin access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32922" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32922" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-21992 · Mar 24, 2026 · <KEV></p>
-<h3>Oracle Identity Manager Missing Authentication</h3>
-<p>Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: REST WebServices) and Oracle Web Services Manager product of Oracle Fusion Middleware (component: Web Services Security). Supported versions that are affected are 12.2.1.4.0 and 14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Identity Manager and Oracle Web Services Manager. Successful attacks can result in takeover of Oracle Identity Manager and Oracle Web Services Manager.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-21992" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21992" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3055 · Mar 23, 2026 (updated Mar 30) · CVSS 9.3 (Critical) · <strong>[KEV]</strong></p>
+<h3>Citrix NetScaler ADC and Gateway Out-of-Bounds Read</h3>
+<p>Citrix NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway) contain an insufficient input validation vulnerability leading to memory overread when the appliance is configured as a SAML Identity Provider. Allows unauthenticated attackers to extract active session tokens from device memory. CISA added to KEV catalog on March 30, 2026.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3055" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3055" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24159 · Mar 24, 2026 · <KEV></p>
-<h3>NVIDIA NeMo Framework Remote Code Execution</h3>
-<p>NVIDIA NeMo Framework contains a vulnerability where an attacker may cause remote code execution. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, information disclosure and data tampering.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24159" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24159" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33577 · Mar 31, 2026 · CVSS 8.8 (High)</p>
+<h3>OpenClaw Node Pairing Privilege Extension via Insufficient Scope Validation</h3>
+<p>OpenClaw before 2026.3.28 contains an insufficient scope validation vulnerability in the node pairing approval path that allows low-privilege operators to approve nodes with broader scopes. Attackers can exploit missing callerScopes validation in node-pairing.ts to extend privileges onto paired nodes beyond their authorization level.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33577" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33577" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33660 · Mar 25, 2026 · updated Mar 30, 2026 · <KEV></p>
-<h3>n8n Remote Code Execution</h3>
-<p>n8n is an open source workflow automation platform. Prior to versions 2.14.1, 2.13.3, and 1.123.26, an authenticated user with permission to create or modify workflows could use the Merge node's "Combine by SQL" mode to read local files on the n8n host and achieve remote code execution. The AlaSQL sandbox did not sufficiently restrict certain SQL statements, allowing an attacker to access sensitive files on the server or even compromise the instance.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33660" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33660" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5212 · Mar 31, 2026 · CVSS 7.4 (High)</p>
+<h3>D-Link DNS Series Stack-Based Buffer Overflow</h3>
+<p>A vulnerability in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. The issue affects the function Webdav_Upload_File of the file /cgi-bin/webdav_mgr.cgi. Exploit has been publicly disclosed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5212" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5212" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-0596 · Mar 31, 2026 · <KEV></p>
-<h3>MLflow Command Injection</h3>
-<p>A command injection vulnerability exists in mlflow/mlflow when serving a model with `enable_mlserver=True`. The `model_uri` is embedded directly into a shell command executed via `bash -c` without proper sanitization. If the `model_uri` contains shell metacharacters, such as `$()` or backticks, it allows for command substitution and execution of attacker-controlled commands.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-0596" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0596" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4176 · Mar 29, 2026 · <KEV></p>
-<h3>Perl Compress::Raw::Zlib Critical Vulnerability</h3>
-<p>A critical vulnerability affecting multiple versions of Perl, specifically stemming from its Compress::Raw::Zlib core module. This issue carries a CVSS score of 9.8 (Critical).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4176" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4176" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5036 · Mar 29, 2026 · <KEV></p>
+<p class="cve-id">CVE-2026-5036 · Mar 29, 2026 · CVSS 8.8 (High)</p>
 <h3>Tenda 4G06 Stack-Based Buffer Overflow</h3>
-<p>A vulnerability was found in Tenda 4G06 04.06.01.29. This vulnerability affects the function fromDhcpListClient of the file /goform/DhcpListClient of the component Endpoint. Performing a manipulation of the argument page results in stack-based buffer overflow. The attack can be initiated remotely. The exploit has been made public and could be used.</p>
+<p>A vulnerability in Tenda 4G06 04.06.01.29 affects the function fromDhcpListClient of the file /goform/DhcpListClient. Performing a manipulation of the argument page results in stack-based buffer overflow. The attack can be initiated remotely and exploit has been made public.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-5036" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5036" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5212 · Mar 31, 2026 · <KEV></p>
-<h3>D-Link DNS Stack-Based Buffer Overflow</h3>
-<p>A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. This issue affects the function Webdav_Upload_File of the file /cgi-bin/webdav_mgr.cgi. The manipulation of the argument f_file leads to stack-based buffer overflow.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5212" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5212" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34714 · Mar 30, 2026 · Critical</p>
+<h3>Vim Code Execution via %{expr} Injection</h3>
+<p>Vim before 9.2.0272 allows code execution that happens immediately upon opening a crafted file in the default configuration, because %{expr} injection occurs with tabpanel lacking P_MLE. This is an OS command injection vulnerability (CWE-78).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34714" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34714" target="_blank">OpenCVE</a>
 </div>
 
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33575 · Mar 29, 2026 · CVSS 8.1 (High)</p>
+<h3>OpenClaw Long-Lived Credential Exposure in Pairing Setup Codes</h3>
+<p>OpenClaw before 2026.3.12 embeds long-lived shared gateway credentials directly in pairing setup codes generated by /pair endpoint and OpenClaw qr command. Attackers with access to leaked setup codes from chat history, logs, or screenshots can recover and reuse the shared gateway credential outside the intended one-time pairing flow.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33575" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-33572 · Mar 29, 2026 · CVSS 7.5 (High)</p>
+<h3>OpenClaw Authorization Bypass via Misclassified Feishu Reaction Events</h3>
+<p>OpenClaw before 2026.3.12 contains an authorization bypass vulnerability where Feishu reaction events with omitted chat_type are misclassified as p2p conversations instead of group chats. Attackers can exploit this misclassification to bypass groupAllowFrom and requireMention protections in group chat reaction-derived events.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33572" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33572" target="_blank">OpenCVE</a>
+</div>
                         </div>
                     </div>
                 </div>
@@ -612,7 +611,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-01 09:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-01 09:49 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
