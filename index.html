@@ -534,60 +534,19 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32922 · Mar 29, 2026 · CVSS 9.9 (Critical)</p>
-<h3>OpenClaw Privilege Escalation via Unvalidated Scope in Device Token Rotate</h3>
-<p>OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes. Attackers can obtain operator.admin tokens for paired devices and achieve remote code execution on connected nodes via system.run or gain unauthorized gateway-admin access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32922" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32922" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4370 · Apr 1, 2026</p>
+<h3>Improper TLS Client/Server authentication and certificate verification on Database Cluster</h3>
+<p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. Specifically, the Juju controller's database endpoint does not validate client certificates when a new node attempts to join the cluster. An unauthenticated attacker with network reachability to the Juju controller's Dqlite port can exploit this flaw to join the database cluster. Once joined, the attacker gains full read and write access to the underlying database, allowing for total data compromise.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4370" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4370" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3055 · Mar 23, 2026 (updated Mar 30) · CVSS 9.3 (Critical) · <strong>[KEV]</strong></p>
-<h3>Citrix NetScaler ADC and Gateway Out-of-Bounds Read</h3>
-<p>Citrix NetScaler ADC (formerly Citrix ADC) and NetScaler Gateway (formerly Citrix Gateway) contain an insufficient input validation vulnerability leading to memory overread when the appliance is configured as a SAML Identity Provider. Allows unauthenticated attackers to extract active session tokens from device memory. CISA added to KEV catalog on March 30, 2026.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3055" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3055" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5261 · Apr 1, 2026</p>
+<h3>Shandong Hoteam InforCenter PLM BaseHandler.ashx uploadFileToIIS unrestricted upload</h3>
+<p>A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uploadFileToIIS of the file /Base/BaseHandler.ashx. The manipulation of the argument File leads to unrestricted upload. It is possible to initiate the attack remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5261" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5261" target="_blank">OpenCVE</a>
 </div>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33577 · Mar 31, 2026 · CVSS 8.8 (High)</p>
-<h3>OpenClaw Node Pairing Privilege Extension via Insufficient Scope Validation</h3>
-<p>OpenClaw before 2026.3.28 contains an insufficient scope validation vulnerability in the node pairing approval path that allows low-privilege operators to approve nodes with broader scopes. Attackers can exploit missing callerScopes validation in node-pairing.ts to extend privileges onto paired nodes beyond their authorization level.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33577" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33577" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5212 · Mar 31, 2026 · CVSS 7.4 (High)</p>
-<h3>D-Link DNS Series Stack-Based Buffer Overflow</h3>
-<p>A vulnerability in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1100-4, DNS-1200-05 and DNS-1550-04 up to 20260205. The issue affects the function Webdav_Upload_File of the file /cgi-bin/webdav_mgr.cgi. Exploit has been publicly disclosed.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5212" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5212" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5036 · Mar 29, 2026 · CVSS 8.8 (High)</p>
-<h3>Tenda 4G06 Stack-Based Buffer Overflow</h3>
-<p>A vulnerability in Tenda 4G06 04.06.01.29 affects the function fromDhcpListClient of the file /goform/DhcpListClient. Performing a manipulation of the argument page results in stack-based buffer overflow. The attack can be initiated remotely and exploit has been made public.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5036" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5036" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-34714 · Mar 30, 2026 · Critical</p>
-<h3>Vim Code Execution via %{expr} Injection</h3>
-<p>Vim before 9.2.0272 allows code execution that happens immediately upon opening a crafted file in the default configuration, because %{expr} injection occurs with tabpanel lacking P_MLE. This is an OS command injection vulnerability (CWE-78).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34714" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34714" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33575 · Mar 29, 2026 · CVSS 8.1 (High)</p>
-<h3>OpenClaw Long-Lived Credential Exposure in Pairing Setup Codes</h3>
-<p>OpenClaw before 2026.3.12 embeds long-lived shared gateway credentials directly in pairing setup codes generated by /pair endpoint and OpenClaw qr command. Attackers with access to leaked setup codes from chat history, logs, or screenshots can recover and reuse the shared gateway credential outside the intended one-time pairing flow.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33575" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33572 · Mar 29, 2026 · CVSS 7.5 (High)</p>
-<h3>OpenClaw Authorization Bypass via Misclassified Feishu Reaction Events</h3>
-<p>OpenClaw before 2026.3.12 contains an authorization bypass vulnerability where Feishu reaction events with omitted chat_type are misclassified as p2p conversations instead of group chats. Attackers can exploit this misclassification to bypass groupAllowFrom and requireMention protections in group chat reaction-derived events.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33572" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33572" target="_blank">OpenCVE</a>
-</div>
                         </div>
                     </div>
                 </div>
@@ -618,7 +577,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-01 15:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-01 15:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
