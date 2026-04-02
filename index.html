@@ -276,11 +276,11 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">0°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
@@ -288,11 +288,11 @@
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">3°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">2°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -526,53 +526,19 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5281 · Apr 1, 2026 · <strong>[KEV]</strong></p>
-<h3>Use-After-Free in Dawn in Google Chrome</h3>
-<p>Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5281" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5281" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5289 · Apr 1, 2026 · <KEV></p>
+<h3>Chrome Navigation Use-After-Free (Sandbox Escape)</h3>
+<p>Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5289" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5289" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4370 · Apr 1, 2026</p>
-<h3>Improper TLS Client/Server Authentication on Database Cluster</h3>
-<p>A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authentication. An unauthenticated attacker with network reachability to the Juju controller's Dqlite port can exploit this flaw to join the database cluster.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4370" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4370" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5288 · Apr 1, 2026 · <KEV></p>
+<h3>Chrome Android WebView Use-After-Free (Sandbox Escape)</h3>
+<p>Use after free in WebView in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5288" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5288" target="_blank">OpenCVE</a>
 </div>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-34430 · Apr 1, 2026</p>
-<h3>ByteDance DeerFlow LocalSandboxProvider Host Bash Escape</h3>
-<p>ByteDance Deer-Flow versions prior to commit 92c7a20 contain a sandbox escape vulnerability in bash tool handling that allows attackers to execute arbitrary commands on the host system by bypassing regex-based validation using shell features such as directory changes and relative paths.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34430" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34430" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-34751 · Apr 1, 2026</p>
-<h3>Payload CMS Unvalidated Input in Password Recovery</h3>
-<p>Payload is a free and open source headless content management system. Prior to version 3.79.1 in @payloadcms/graphql and payload, a vulnerability in the password recovery flow could allow an unauthenticated attacker to perform actions on behalf of a user who initiates a password reset.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34751" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34751" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-34875 · Apr 1, 2026</p>
-<h3>Mbed TLS FFDH Buffer Overflow</h3>
-<p>An issue was discovered in Mbed TLS through 3.6.5 and TF-PSA-Crypto 1.0.0. A buffer overflow can occur in public key export for FFDH keys.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34875" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34875" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-34872 · Apr 1, 2026</p>
-<h3>Mbed TLS Lack of Contributory Behavior in FFDH</h3>
-<p>An issue was discovered in Mbed TLS 3.5.x and 3.6.x through 3.6.5 and TF-PSA-Crypto 1.0. There is a lack of contributory behavior in FFDH due to improper input validation. Using finite-field Diffie-Hellman, the other party can force the shared secret into a small set of values.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34872" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34872" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5261 · Apr 1, 2026</p>
-<h3>Shandong Hoteam InforCenter PLM BaseHandler.ashx Unrestricted Upload</h3>
-<p>A vulnerability was identified in Shandong Hoteam InforCenter PLM up to 8.3.8. The impacted element is the function uploadFileToIIS of the file /Base/BaseHandler.ashx. The manipulation of the argument File leads to unrestricted upload.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5261" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5261" target="_blank">OpenCVE</a>
-</div>
                         </div>
                     </div>
                 </div>
@@ -603,7 +569,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-02 08:00 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-02 09:01 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
