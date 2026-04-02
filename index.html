@@ -533,38 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5287 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Use after free in PDF in Google Chrome</h3>
-<p>Use after free in PDF in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5287" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5287" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-2287 · Mar 30, 2026 · updated Apr 1, 2026</p>
+<h3>CrewAI Docker Fallback Remote Code Execution</h3>
+<p>CrewAI does not properly check that Docker is still running during runtime, and will fall back to a sandbox setting that allows for RCE exploitation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-2287" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2287" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5285 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Use after free in WebGL in Google Chrome</h3>
-<p>Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5285" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5285" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-2286 · Mar 30, 2026 · updated Apr 1, 2026</p>
+<h3>CrewAI Server-Side Request Forgery</h3>
+<p>CrewAI contains a server-side request forgery vulnerability that enables content acquisition from internal and cloud services, facilitated by the RAG search tools not properly validating URLs provided at runtime.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-2286" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2286" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5280 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Use after free in WebCodecs in Google Chrome</h3>
-<p>Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5280" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5280" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30305 · Mar 30, 2026 · updated Apr 1, 2026</p>
+<h3>Syntx Command Auto-Approval Module OS Command Injection</h3>
+<p>Syntx's command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective. The system relies on fragile regular expressions to parse command structures.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30305" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30305" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5279 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Object corruption in V8 in Google Chrome</h3>
-<p>Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5279" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5279" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30307 · Mar 30, 2026 · updated Apr 1, 2026</p>
+<h3>Roo Code Command Auto-Approval Module OS Command Injection</h3>
+<p>Roo Code's command auto-approval module contains a critical OS command injection vulnerability that renders its whitelist security mechanism completely ineffective.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30307" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30307" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4947 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Insecure Direct Object Reference (IDOR) Leading to Signature Forgery in Foxit eSign</h3>
-<p>Addressed a potential insecure direct object reference (IDOR) vulnerability in the signing invitation acceptance process. Under certain conditions, this issue could have allowed an attacker to access or modify unauthorized resources by manipulating user-supplied object identifiers, potentially leading to forged signatures and compromising the integrity and authenticity of documents undergoing the signing process.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4947" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4947" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-2275 · Mar 30, 2026 · updated Apr 1, 2026</p>
+<h3>CrewAI CodeInterpreter Tool Remote Code Execution</h3>
+<p>The CrewAI CodeInterpreter tool falls back to SandboxPython when it cannot reach Docker, which can enable RCE through arbitrary C function calling.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-2275" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2275" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-5102 · Mar 30, 2026</p>
+<h3>Totolink A3300R Command Injection</h3>
+<p>A security flaw in Totolink A3300R affects the function setSmartQosCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument qos_up_bw results in command injection.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5102" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5102" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-2370 · Mar 30, 2026</p>
+<h3>GitLab Jira Connect Improper Authorization</h3>
+<p>GitLab Jira Connect installations could have allowed an authenticated user with minimal workspace permissions to obtain installation credentials and impersonate the GitLab app due to improper authorization checks.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-2370" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2370" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-5238 · Apr 1, 2026</p>
+<h3>itsourcecode Payroll Management System SQL Injection</h3>
+<p>A weakness in itsourcecode Payroll Management System 1.0. Affected is unknown functionality of the file /view_employee.php. Executing manipulation of the argument ID leads to SQL injection.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5238" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5238" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -596,7 +617,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-02 15:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-02 15:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
