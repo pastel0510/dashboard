@@ -533,31 +533,38 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34758 · Apr 2, 2026 · Updated Apr 3, 2026</p>
-<h3>OneUptime: Missing Authentication on Notification Endpoints</h3>
-<p>OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.42, unauthenticated access to Notification test and Phone Number management endpoints allows SMS/Call/Email/WhatsApp abuse and phone number purchase.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34758" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34758" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5281 · Apr 1, 2026 · updated Apr 2, 2026 · <span class="kev-badge">[KEV]</span></p>
+<h3>Google Chrome Dawn Use-After-Free Vulnerability</h3>
+<p>Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (CVSS 8.8 High)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5281" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5281" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35214 · Apr 3, 2026</p>
-<h3>Budibase: Path traversal in plugin file upload enables arbitrary directory deletion and file write</h3>
-<p>Budibase is an open-source low-code platform. Prior to version 3.33.4, the plugin file upload endpoint (POST /api/plugin/upload) passes the user-supplied filename directly to createTempFolder() without sanitizing path traversal sequences. An attacker with Global Builder privileges can craft a multipart upload with a filename containing ../ to delete arbitrary directories via rmSync and write arbitrary files via tarball extraction to any filesystem path the Node.js process can access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35214" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35214" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5285 · Apr 1, 2026 · updated Apr 2, 2026</p>
+<h3>Google Chrome WebGL Use-After-Free Vulnerability</h3>
+<p>Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (CVSS 8.8 High)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5285" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5285" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35218 · Apr 3, 2026</p>
-<h3>Budibase: Stored XSS via unsanitized entity names rendered with {@html} in Builder Command Palette</h3>
-<p>Budibase is an open-source low-code platform. Prior to version 3.32.5, Budibase's Builder Command Palette renders entity names (tables, views, queries, automations) using Svelte's {@html} directive without any sanitization. An authenticated user with Builder access can create a table, automation, view, or query whose name contains an HTML payload. When any Builder-role user in the same workspace opens the Command Palette (Ctrl+K), the payload executes in their browser, stealing their session cookie and enabling full account takeover.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35218" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35218" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5289 · Apr 1, 2026 · updated Apr 2, 2026</p>
+<h3>Google Chrome Navigation Use-After-Free (Sandbox Escape)</h3>
+<p>Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (CVSS 9.6 Critical)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5289" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5289" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34601 · Apr 2, 2026</p>
-<h3>xmldom: XML injection via unsafe CDATA serialization allows attacker-controlled markup insertion</h3>
-<p>xmldom is a pure JavaScript W3C standard-based (XML DOM Level 2 Core) DOMParser and XMLSerializer module. In xmldom versions 0.6.0 and prior and @xmldom/xmldom prior to versions 0.8.12 and 0.9.9, the XMLSerializer emits CDATA content verbatim without rejecting or safely splitting the ]]> terminator. This permits arbitrary XML structure injection, allowing an attacker to manipulate the serialized document and potentially alter application logic or data transported in the XML.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34601" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34601" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-20093 · Apr 1, 2026 · updated Apr 2, 2026</p>
+<h3>Cisco Integrated Management Controller Authentication Bypass</h3>
+<p>A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as Admin. (CVSS 9.8 Critical)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20093" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34751 · Apr 1, 2026</p>
+<h3>Payload CMS Unvalidated Input in Password Recovery</h3>
+<p>Prior to version 3.79.1 in @payloadcms/graphql and payload, a vulnerability in the password recovery flow could allow an unauthenticated attacker to perform actions on behalf of a user who initiates a password reset. (CVSS 9.1 Critical)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34751" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34751" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -591,7 +598,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-04 03:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-04 03:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
