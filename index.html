@@ -519,39 +519,33 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5281 · Apr 1, 2026 · updated Apr 2, 2026 · <span class="kev-badge">[KEV]</span></p>
-<h3>Google Chrome Dawn Use-After-Free Vulnerability</h3>
-<p>Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (CVSS 8.8 High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5281" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5281" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5285 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Google Chrome WebGL Use-After-Free Vulnerability</h3>
-<p>Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (CVSS 8.8 High)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5285" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5285" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5289 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Google Chrome Navigation Use-After-Free (Sandbox Escape)</h3>
-<p>Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (CVSS 9.6 Critical)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5289" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5289" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-20093 · Apr 1, 2026 · updated Apr 2, 2026</p>
+<p class="cve-id">CVE-2026-20093 · Apr 1, 2026 · <KEV badge></p>
 <h3>Cisco Integrated Management Controller Authentication Bypass</h3>
-<p>A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as Admin. (CVSS 9.8 Critical)</p>
+<p>A vulnerability in the change password functionality of Cisco IMC could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as Admin via crafted HTTP request.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20093" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34751 · Apr 1, 2026</p>
-<h3>Payload CMS Unvalidated Input in Password Recovery</h3>
-<p>Prior to version 3.79.1 in @payloadcms/graphql and payload, a vulnerability in the password recovery flow could allow an unauthenticated attacker to perform actions on behalf of a user who initiates a password reset. (CVSS 9.1 Critical)</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34751" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34751" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-20160 · Apr 1, 2026 · <KEV badge></p>
+<h3>Cisco SSM On-Prem Command Injection</h3>
+<p>A vulnerability in Cisco Smart Software Manager On-Prem could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying OS with root-level privileges via crafted API request.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20160" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20160" target="_blank">OpenCVE</a>
 </div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34714 · Apr 2, 2026 · </p>
+<h3>Vim Code Execution Vulnerability</h3>
+<p>Vim before 9.2.0272 allows code execution immediately upon opening a crafted file in the default configuration due to %{expr} injection with tabpanel lacking P_MLE.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34714" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34714" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34875 · Apr 2, 2026 · </p>
+<h3>Mbed TLS Buffer Overflow in FFDH Keys</h3>
+<p>A buffer overflow can occur in public key export for FFDH keys in Mbed TLS through 3.6.5 and TF-PSA-Crypto 1.0.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34875" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34875" target="_blank">OpenCVE</a>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -584,7 +578,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-04 09:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-04 09:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
