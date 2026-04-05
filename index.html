@@ -771,59 +771,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32213 · Apr 02, 2026</p>
-<h3>Azure AI Foundry Elevation of Privilege Vulnerability</h3>
-<p>Improper authorization in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network. The vulnerability stems from a missing or incorrect permission check (CWE-285) and can allow the attacker to acquire higher-privileged access than intended, potentially leading to full compromise of the service.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32213" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32213" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5577 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
+<h3>Song-Li cross_browser details Endpoint SQL Injection</h3>
+<p>A SQL injection vulnerability in Song-Li cross_browser allows remote attackers to manipulate the ID argument of the details endpoint in flask/uniquemachine_app.py. No authentication is required, and a public exploit exists.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5577" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5577" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33105 · Apr 02, 2026</p>
-<h3>Microsoft Azure Kubernetes Service Elevation of Privilege</h3>
-<p>Improper authorization in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network. The flaw (CWE-285) permits an attacker who can reach the cluster network to elevate privileges, potentially enabling full control over the cluster, its workloads, and associated data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33105" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33105" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5575 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
+<h3>SourceCodester/jkev Record Management System Login SQL Injection</h3>
+<p>The login page (index.php) of SourceCodester/jkev Record Management System 1.0 is vulnerable to SQL injection via the Username parameter. The exploit is publicly available and requires no authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5575" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33107 · Apr 02, 2026</p>
-<h3>Azure Databricks Server-Side Request Forgery / Privilege Escalation</h3>
-<p>Server-side request forgery (SSRF) in Azure Databricks allows an unauthorized attacker to elevate privileges over a network. Classified as CWE-918, this vulnerability enables an unauthenticated attacker to send requests from the Databricks cluster to arbitrary internal or external URLs, allowing unauthorized access to privileged resources.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33107" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33107" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5573 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
+<h3>Technostrobe HI-LED-WR120-G2 Unrestricted File Upload</h3>
+<p>Technostrobe HI-LED-WR120-G2 firmware 5.5.0.1R6.03.30 is vulnerable to unrestricted file upload via manipulation of the cwd argument in the /fs endpoint. A public exploit has been released, and the vendor did not respond to disclosure.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5573" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5573" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34938 · Apr 03, 2026</p>
-<h3>PraisonAI Python Sandbox Escape / Remote Code Execution</h3>
-<p>PraisonAI is a multi-agent teams system. Prior to version 1.5.90, execute_code() in praisonai-agents runs attacker-controlled Python inside a three-layer sandbox that can be fully bypassed by passing a str subclass with an overridden startswith() method to the _safe_getattr wrapper, achieving arbitrary OS command execution on the host. Patched in version 1.5.90.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34938" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34938" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5569 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
+<h3>Technostrobe HI-LED-WR120-G2 Improper Access Controls</h3>
+<p>Multiple endpoints in Technostrobe HI-LED-WR120-G2 firmware 5.5.0.1R6.03.30 suffer from improper access controls, allowing remote attackers to access restricted functionality without authentication. Public exploit available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5569" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5569" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25212 · Apr 02, 2026 (updated Apr 03)</p>
-<h3>Percona PMM Remote Code Execution via Database Context Escape</h3>
-<p>An issue was discovered in Percona PMM before 3.7. Because an internal database user retains specific superuser privileges, an attacker with pmm-admin rights can abuse the "Add data source" feature to break out of the database context and execute shell commands on the underlying operating system. This enables complete compromise of the underlying system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25212" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25212" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5567 · April 5, 2026 · CVSS 3.1: 8.8 High</p>
+<h3>Tenda M3 Buffer Overflow in setAdvPolicyData</h3>
+<p>Tenda M3 firmware 1.0.0.10 contains a buffer overflow in the setAdvPolicyData function (/goform/setAdvPolicyData) via the policyType parameter. This high-severity flaw enables remote code execution with low complexity. Public exploit published.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5567" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5567" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34717 · Apr 02, 2026 (updated Apr 03)</p>
-<h3>OpenProject SQL Injection in Cost Reporting Module</h3>
-<p>OpenProject is an open-source, web-based project management software. Prior to version 17.2.3, the =n operator in modules/reporting/lib/report/operator.rb embeds user input directly into SQL WHERE clauses without parameterization (CWE-89). An attacker who controls this input could inject arbitrary SQL, potentially reading, modifying, or deleting sensitive project data or executing privileged database commands.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34717" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34717" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5566 · April 5, 2026 · CVSS 3.1: 8.8 High</p>
+<h3>UTT HiPER 1250GW Buffer Overflow in formNatStaticMap</h3>
+<p>The UTT HiPER 1250GW router (firmware up to 3.2.7-210907-180535) is vulnerable to a buffer overflow via the strcpy function in /goform/formNatStaticMap using the NatBind parameter. Remote code execution is possible with low attack complexity. Public exploit available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5566" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5566" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34838 · Apr 02, 2026 (updated Apr 03)</p>
-<h3>Group-Office Authenticated Remote Code Execution via Insecure Deserialization</h3>
-<p>Group-Office is an enterprise CRM and groupware tool. Prior to versions 6.8.156, 25.0.90, and 26.0.12, a vulnerability in the AbstractSettingsCollection model leads to insecure deserialization (CWE-502) when settings are loaded. By injecting a serialized FileCookieJar object into a setting string, an authenticated attacker can achieve Arbitrary File Write, leading directly to RCE on the server.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34838" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34838" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5565 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
+<h3>code-projects Simple Laundry System SQL Injection (delmemberinfo.php)</h3>
+<p>The Simple Laundry System 1.0 by code-projects is vulnerable to SQL injection via the userid parameter in /delmemberinfo.php. The attack is remotely exploitable with no authentication required, and a public exploit exists.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5565" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5565" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34612 · Apr 03, 2026</p>
-<h3>Kestra SQL Injection Leading to Remote Code Execution</h3>
-<p>Kestra is an open-source, event-driven orchestration platform. Prior to version 1.3.7, the default docker-compose deployment contains a SQL Injection vulnerability that leads to RCE via the endpoint GET /api/v1/main/flows/search. Once authenticated, simply visiting a crafted link triggers the vulnerability. The injected payload is executed by PostgreSQL using COPY ... TO PROGRAM ..., which runs arbitrary OS commands on the host.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34612" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34612" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5564 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
+<h3>code-projects Simple Laundry System SQL Injection (searchguest.php)</h3>
+<p>SQL injection vulnerability in Simple Laundry System 1.0 by code-projects exists in /searchguest.php via the searchServiceId parameter. Exploitable remotely without authentication. Public exploit disclosed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5564" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5564" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -858,7 +858,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-05 21:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-05 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
