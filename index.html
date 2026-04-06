@@ -271,12 +271,12 @@
                 <div class="sidebar-weather">
                     <div class="weather-header">
                         <h3>Weather</h3>
-                        <div class="smiley-box">(∗•‿•∗)</div>
+                        <div class="smiley-box">(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</div>
                     </div>
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">3°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
@@ -284,15 +284,15 @@
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">4°C</div>
-                        </div>
-                        <div class="weather-mini-item">
-                            <div class="city">Oulu</div>
                             <div class="temp">3°C</div>
                         </div>
                         <div class="weather-mini-item">
-                            <div class="city">Rovaniemi</div>
+                            <div class="city">Oulu</div>
                             <div class="temp">2°C</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Rovaniemi</div>
+                            <div class="temp">1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -554,9 +554,9 @@
                 <div class="card">
                     <h2>Fox of the Day <a href="https://reddit.com/r/foxes" target="_blank" style="font-size:0.6em;color:#00ff88;">r/foxes</a></h2>
                     <div id="fox" class="lightbox-trigger">
-                        <img src="https://i.redd.it/4us1iqpff5tg1.jpeg" alt="Fox">
+                        <img src="https://i.redd.it/zldvf92ncdtg1.jpeg" alt="Fox">
                     </div>
-                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/foxes/comments/1sc5kl3/happy_easter_foxes/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
+                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/foxes/comments/1sd2vhu/red_fox_provincetown_ma_030326/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
                 </div>
 
                 <!-- xkcd -->
@@ -705,42 +705,62 @@
                     <div class="card">
                         <h2>Security</h2>
                         <div id="security-bulletin">
-                            📅 April 5, 2026 • Title: Fortinet FortiClient EMS Zero-Day CVE-2026-35616 Actively Exploited
-Summary: Pre-auth API bypass allows remote code execution on EMS
-Link: https://www.bleepingcomputer.com/news/security/new-fortinet-forticlient-ems-flaw-cve-2026-35616-exploited-in-attacks/
-TLDR: Critical FortiClient EMS API bypass exploited in wild, patch immediately (CVSS 9.1)
+                            <div class="bulletin-item">
+<p class="date-line">📅 April 6, 2026</p>
+<h3>Fortinet FortiClient EMS Zero-Day Actively Exploited — Emergency Patch Released</h3>
+<p>Fortinet released an emergency weekend patch for CVE-2026-35616, a pre-authentication API access bypass in FortiClient EMS allowing remote code execution. Defused discovered the flaw being exploited as a zero-day before responsible disclosure. Shadowserver found over 2,000 exposed instances online, primarily in the USA and Germany. This follows CVE-2026-21643, also reported by Defused and already under active exploitation.</p>
+<a href="https://www.bleepingcomputer.com/news/security/new-fortinet-forticlient-ems-flaw-cve-2026-35616-exploited-in-attacks/" target="_blank">Read more</a>
+</div>
 
-📅 April 5, 2026 • Title: Hackers Exploit React2Shell in Automated Credential Theft Campaign
-Summary: 766+ hosts compromised via Next.js flaw, NEXUS Listener deployed
-Link: https://www.bleepingcomputer.com/news/security/hackers-exploit-react2shell-in-automated-credential-theft-campaign/
-TLDR: CVE-2025-55182 exploited to steal cloud tokens, SSH keys, and API credentials
+<div class="bulletin-item">
+<p class="date-line">📅 April 6, 2026</p>
+<h3>Google Attributes Axios npm Supply Chain Attack to North Korea's UNC1069</h3>
+<p>Google's Threat Intelligence Group formally attributed the Axios npm supply chain compromise to North Korean threat cluster UNC1069. Between March 31 and April 1, attackers used a fake Teams error-fix lure to social-engineer a maintainer, publishing malicious versions 1.14.1 and 0.30.4 with a dependency named "plain-crypto-js." The Axios team published a detailed post-mortem confirming the campaign's sophistication and North Korean attribution.</p>
+<a href="https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html" target="_blank">Read more</a>
+</div>
 
-📅 April 5, 2026 • Title: Axios npm Supply Chain Attack Linked to North Korean UNC1069 Hackers
-Summary: Fake Teams fix used social engineering to hijack maintainer account
-Link: https://www.bleepingcomputer.com/news/security/axios-npm-hack-used-fake-teams-error-fix-to-hijack-maintainer-account/
-TLDR: North Korean UNC1069 compromised axios npm to distribute remote access trojan
+<div class="bulletin-item">
+<p class="date-line">📅 April 5, 2026</p>
+<h3>Drift Protocol Loses $280M in Six-Month DPRK Social Engineering Operation</h3>
+<p>DeFi platform Drift Protocol suffered a $280–285 million exploit on April 1 — the largest DeFi hack of 2026. TRM Labs and Elliptic confirmed DPRK-backed hackers spent six months social engineering Drift contributors, ultimately seizing Security Council administrative powers to drain funds. The operation combined social engineering, oracle manipulation, and governance takeover. Elliptic identified multiple DPRK indicators, and blockchain investigators have flagged attacker addresses with exchanges and bridge providers.</p>
+<a href="https://thehackernews.com/2026/04/285-million-drift-hack-traced-to-six.html" target="_blank">Read more</a>
+</div>
 
-📅 April 5, 2026 • Title: 36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants
-Summary: Fake Strapi plugins deploy reverse shells and harvest database credentials
-Link: https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html
+<div class="bulletin-item">
+<p class="date-line">📅 April 5, 2026</p>
+<h3>36 Malicious npm Packages Found Deploying Persistent Implants via Redis and PostgreSQL</h3>
+<p>SafeDep researchers uncovered 36 malicious npm packages disguised as Strapi CMS plugins, uploaded by four sock puppet accounts. The packages — all using version 3.6.8 to appear mature — exploited Redis and PostgreSQL, deployed reverse shells, harvested credentials, and dropped persistent implants. The official Strapi plugins are scoped under "@strapi/," and developers should watch for the misleading "strapi-plugin-" naming convention used by the threat actors.</p>
+<a href="https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html" target="_blank">Read more</a>
+</div>
 
-📅 April 1, 2026 • Title: Chrome Zero-Day CVE-2026-5281: Use-After-Free in Dawn WebGPU Layer
-Summary: Fourth actively exploited Chrome zero-day of 2026, arbitrary code execution
-Link: https://darkwebinformer.com/chrome-zero-day-cve-2026-5281-a-use-after-free-in-dawns-webgpu-layer/
-TLDR: Chrome CVE-2026-5281 use-after-free in WebGPU allows arbitrary code execution
+<div class="bulletin-item">
+<p class="date-line">📅 April 4, 2026</p>
+<h3>Device Code Phishing Attacks Surge 37x as New Toolkits Proliferate</h3>
+<p>Device code phishing attacks abusing the OAuth 2.0 Device Authorization Grant flow have surged more than 37 times year-over-year. Attackers trick users into authorizing a device code tied to the victim's identity, allowing threat actors to hijack accounts. New phishing toolkits enabling this technique are now widely available online, dramatically lowering the barrier for attackers and making multi-platform account takeover scalable.</p>
+<a href="https://www.bleepingcomputer.com/news/security/device-code-phishing-attacks-surge-37x-as-new-kits-spread-online/" target="_blank">Read more</a>
+</div>
 
-📅 April 3, 2026 • Title: China-Linked TA416 Targets European Governments with PlugX and OAuth Phishing
-Summary: Diplomatic missions to EU and NATO targeted with updated PlugX malware
-Link: https://thehackernews.com/2026/04/china-linked-ta416-targets-european.html
+<div class="bulletin-item">
+<p class="date-line">📅 April 4, 2026</p>
+<h3>Cisco Patches Critical IMC Auth Bypass — CVSS 9.8 Allows Remote Admin Access</h3>
+<p>Cisco patched CVE-2026-20093, a critical authentication bypass in the Integrated Management Controller (IMC) with a CVSS score of 9.8. The flaw, caused by incorrect handling of password change requests, allows unauthenticated remote attackers to send a crafted HTTP request, alter any user password (including Admin), and gain full system access. Security researcher "jyh" discovered and reported the vulnerability, which affects multiple Cisco product lines.</p>
+<a href="https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/" target="_blank">Read more</a>
+</div>
 
-📅 April 3, 2026 • Title: Microsoft Details Cookie-Controlled PHP Web Shells Persisting via Cron on Linux
-Summary: Stealthy web shells use HTTP cookies as C2 channel, evade detection
-Link: https://thehackernews.com/2026/04/microsoft-details-cookie-controlled-php.html
+<div class="bulletin-item">
+<p class="date-line">📅 April 3, 2026</p>
+<h3>React2Shell Campaign: 766+ Next.js Hosts Compromised in Automated Credential Theft</h3>
+<p>Cisco Talos attributed a large-scale credential harvesting campaign to threat cluster UAT-10608, exploiting the React2Shell vulnerability (CVE-2025-55182) in vulnerable Next.js applications. At least 766 hosts across multiple regions and cloud providers were compromised. Post-exploitation scripts automated extraction of database credentials, SSH private keys, AWS secrets, Stripe API keys, GitHub tokens, and shell history. The C2 infrastructure hosts a GUI titled "NEXUS Listener" for campaign management.</p>
+<a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-react2shell-in-automated-credential-theft-campaign/" target="_blank">Read more</a>
+</div>
 
-📅 April 4, 2026 • Title: Cisco Patches Critical Flaws Allowing Authentication Bypass and Root RCE
-Summary: Two critical CVEs (9.8 score) in IMC and SSM On-Prem need urgent patching
-Link: https://securityaffairs.com/190295/security/cisco-fixed-critical-and-high-severity-flaws.html
-TLDR: Cisco CVE-2026-20093 and CVE-2026-20160 allow auth bypass and root RCE
+<div class="bulletin-item">
+<p class="date-line">📅 April 3, 2026</p>
+<h3>CERT-EU: TeamPCP Breach Exposed Data of 30 EU Entities Including European Commission</h3>
+<p>EU Cybersecurity Service (CERT-EU) attributed the European Commission cloud hack to the TeamPCP threat group, concluding the breach exposed data from at least 29 other Union entities. The incident, first reported earlier, has been linked to a broader campaign targeting EU institutions. Organizations across the Union are urged to review third-party cloud configurations and monitor for indicators of compromise associated with TeamPCP's TTPs.</p>
+<a href="https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/" target="_blank">Read more</a>
+</div>
+
                         </div>
                     </div>
 
@@ -751,59 +771,59 @@ TLDR: Cisco CVE-2026-20093 and CVE-2026-20160 allow auth bypass and root RCE
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · <strong>[KEV]</strong></p>
-<h3>FortiClient EMS Pre-Authentication API Access Bypass (CVSS 9.1)</h3>
-<p>Critical pre-authentication API access bypass vulnerability in FortiClient Enterprise Management Server allows unauthenticated attackers to bypass authentication and execute code via specially crafted requests. Fortinet has confirmed active exploitation in the wild and urges immediate hotfix installation for versions 7.4.5 and 7.4.6.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35616" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-33105 · Apr 3, 2026</p>
-<h3>Azure Kubernetes Service Improper Authorization Privilege Escalation (CVSS 10.0)</h3>
-<p>Critical improper authorization vulnerability in Microsoft Azure Kubernetes Service allows unauthorized attackers to elevate privileges within the AKS environment over the network without any prior authentication.</p>
+<p class="cve-id">CVE-2026-33105 · Apr 3, 2026 · CVSS 10.0 (Critical)</p>
+<h3>Microsoft Azure Kubernetes Service Improper Authorization</h3>
+<p>An unauthorized attacker can exploit this vulnerability over a network to elevate their privileges within the AKS environment. This critical flaw allows privilege escalation with no authentication required.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-33105" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33105" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34934 · Apr 3, 2026</p>
-<h3>PraisonAI Critical SQL Injection (CVSS 9.8)</h3>
-<p>Critical SQL injection vulnerability in PraisonAI allows attackers to inject malicious SQL via crafted thread IDs, leading to full database access. The get_all_user_threads function uses f-strings to embed thread IDs directly into SQL queries without proper escaping.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34934" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34934" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-20093 · Apr 3, 2026 · CVSS 9.8 (Critical)</p>
+<h3>Cisco Integrated Management Controller Authentication Bypass</h3>
+<p>A critical authentication bypass vulnerability in Cisco IMC allows an unauthenticated, remote attacker to bypass authentication and gain access as Admin, potentially altering any user passwords on the system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20093" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34935 · Apr 3, 2026</p>
-<h3>PraisonAI CLI Command Injection (CVSS 9.8)</h3>
-<p>Critical arbitrary OS command execution vulnerability in PraisonAI allows attackers to execute arbitrary commands via the --mcp CLI argument. The argument is passed directly to shlex.split() and then to anyio.open_process() without any validation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34935" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34935" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31818 · Apr 3, 2026 · CVSS 9.6 (Critical)</p>
+<h3>Budibase SSRF IP Blacklist Bypass</h3>
+<p>A critical server-side request forgery (SSRF) vulnerability in Budibase allows attackers to completely bypass the platform's intended SSRF protection mechanism, potentially enabling unauthorized access to internal network resources. The IP blacklist is inactive by default.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31818" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31818" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34952 · Apr 3, 2026</p>
-<h3>PraisonAI Gateway Unauthenticated Agent Control (CVSS 9.1)</h3>
-<p>Critical vulnerability in PraisonAI Gateway server allows unauthenticated attackers to connect to WebSocket endpoints and enumerate/execute arbitrary messages to registered agents. The /ws and /info endpoints lack authentication entirely.</p>
+<p class="cve-id">CVE-2026-34952 · Apr 3, 2026 · CVSS 9.1 (Critical)</p>
+<h3>PraisonAI Gateway Missing Authentication</h3>
+<p>Prior to version 4.5.97, the PraisonAI Gateway server accepts WebSocket connections at /ws and serves agent topology at /info with no authentication. Any network client can connect, enumerate registered agents, and send arbitrary messages to agents and their tool sets.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-34952" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34952" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34953 · Apr 3, 2026</p>
-<h3>PraisonAI Authentication Bypass (CVSS 9.1)</h3>
-<p>Critical authentication bypass vulnerability in PraisonAI allows any attacker to gain full authenticated access by providing an arbitrary Bearer token. The OAuthManager.validate_token() function returns True for any token not in its default-empty store.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34953" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34953" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · CVSS 9.1 (Critical)</p>
+<h3>Fortinet FortiClient EMS Improper Access Control</h3>
+<p>A critical improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. Currently under active exploitation in the wild.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35616" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32211 · Apr 3, 2026</p>
-<h3>Azure MCP Server Missing Authentication Information Disclosure (CVSS 9.1)</h3>
-<p>Critical information disclosure vulnerability in Azure MCP Server stems from missing authentication on a critical function, allowing unauthorized attackers to disclose sensitive information over the network without any credentials.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32211" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32211" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5566 · Apr 5, 2026 · CVSS 8.8 (High)</p>
+<h3>UTT HiPER 1250GW Buffer Overflow via NatBind Argument</h3>
+<p>A high-severity buffer overflow vulnerability in UTT HiPER 1250GW devices up to version 3.2.7-210907-180535. The vulnerability stems from improper handling of the NatBind argument within the strcpy function. Public exploit available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5566" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5566" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35216 · Apr 3, 2026</p>
-<h3>Budibase Critical Remote Code Execution (CVSS 9.0)</h3>
-<p>Critical RCE vulnerability in Budibase low-code platform allows unauthenticated attackers to execute arbitrary code via public webhook endpoints. If an automation linked to the webhook contains a Bash step, commands execute as root inside the container.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35216" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35216" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5608 · Apr 6, 2026 · CVSS 8.8 (High)</p>
+<h3>Belkin F9K1122 Router Stack-Based Buffer Overflow</h3>
+<p>A stack-based buffer overflow vulnerability in Belkin F9K1122 firmware version 1.00.33. A remote attacker can trigger the vulnerability by manipulating the webpage argument within the formWlanSetup function, potentially leading to arbitrary code execution. Public exploit available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5608" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5608" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-23442 · Apr 5, 2026 · CVSS 8.2 (High)</p>
+<h3>Linux Kernel IPv6 Segment Routing Denial of Service</h3>
+<p>A critical Linux kernel vulnerability affecting IPv6 Segment Routing implementations that allows remote attackers to trigger kernel panics through NULL pointer dereferences. Impacts kernel versions 5.15 through 6.8.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-23442" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-23442" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -837,7 +857,7 @@ TLDR: Cisco CVE-2026-20093 and CVE-2026-20160 allow auth bypass and root RCE
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-06 03:48 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-06 09:12 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
