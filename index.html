@@ -751,61 +751,60 @@ TLDR: Cisco CVE-2026-20093 and CVE-2026-20160 allow auth bypass and root RCE
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5577 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
-<h3>Song-Li cross_browser details Endpoint SQL Injection</h3>
-<p>A SQL injection vulnerability in Song-Li cross_browser allows remote attackers to manipulate the ID argument of the details endpoint in flask/uniquemachine_app.py. No authentication is required, and a public exploit exists.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5577" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5577" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · <strong>[KEV]</strong></p>
+<h3>FortiClient EMS Pre-Authentication API Access Bypass (CVSS 9.1)</h3>
+<p>Critical pre-authentication API access bypass vulnerability in FortiClient Enterprise Management Server allows unauthenticated attackers to bypass authentication and execute code via specially crafted requests. Fortinet has confirmed active exploitation in the wild and urges immediate hotfix installation for versions 7.4.5 and 7.4.6.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35616" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5575 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
-<h3>SourceCodester/jkev Record Management System Login SQL Injection</h3>
-<p>The login page (index.php) of SourceCodester/jkev Record Management System 1.0 is vulnerable to SQL injection via the Username parameter. The exploit is publicly available and requires no authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5575" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33105 · Apr 3, 2026</p>
+<h3>Azure Kubernetes Service Improper Authorization Privilege Escalation (CVSS 10.0)</h3>
+<p>Critical improper authorization vulnerability in Microsoft Azure Kubernetes Service allows unauthorized attackers to elevate privileges within the AKS environment over the network without any prior authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33105" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33105" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5573 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
-<h3>Technostrobe HI-LED-WR120-G2 Unrestricted File Upload</h3>
-<p>Technostrobe HI-LED-WR120-G2 firmware 5.5.0.1R6.03.30 is vulnerable to unrestricted file upload via manipulation of the cwd argument in the /fs endpoint. A public exploit has been released, and the vendor did not respond to disclosure.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5573" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5573" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34934 · Apr 3, 2026</p>
+<h3>PraisonAI Critical SQL Injection (CVSS 9.8)</h3>
+<p>Critical SQL injection vulnerability in PraisonAI allows attackers to inject malicious SQL via crafted thread IDs, leading to full database access. The get_all_user_threads function uses f-strings to embed thread IDs directly into SQL queries without proper escaping.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34934" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34934" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5569 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
-<h3>Technostrobe HI-LED-WR120-G2 Improper Access Controls</h3>
-<p>Multiple endpoints in Technostrobe HI-LED-WR120-G2 firmware 5.5.0.1R6.03.30 suffer from improper access controls, allowing remote attackers to access restricted functionality without authentication. Public exploit available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5569" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5569" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34935 · Apr 3, 2026</p>
+<h3>PraisonAI CLI Command Injection (CVSS 9.8)</h3>
+<p>Critical arbitrary OS command execution vulnerability in PraisonAI allows attackers to execute arbitrary commands via the --mcp CLI argument. The argument is passed directly to shlex.split() and then to anyio.open_process() without any validation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34935" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34935" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5567 · April 5, 2026 · CVSS 3.1: 8.8 High</p>
-<h3>Tenda M3 Buffer Overflow in setAdvPolicyData</h3>
-<p>Tenda M3 firmware 1.0.0.10 contains a buffer overflow in the setAdvPolicyData function (/goform/setAdvPolicyData) via the policyType parameter. This high-severity flaw enables remote code execution with low complexity. Public exploit published.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5567" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5567" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34952 · Apr 3, 2026</p>
+<h3>PraisonAI Gateway Unauthenticated Agent Control (CVSS 9.1)</h3>
+<p>Critical vulnerability in PraisonAI Gateway server allows unauthenticated attackers to connect to WebSocket endpoints and enumerate/execute arbitrary messages to registered agents. The /ws and /info endpoints lack authentication entirely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34952" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34952" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5566 · April 5, 2026 · CVSS 3.1: 8.8 High</p>
-<h3>UTT HiPER 1250GW Buffer Overflow in formNatStaticMap</h3>
-<p>The UTT HiPER 1250GW router (firmware up to 3.2.7-210907-180535) is vulnerable to a buffer overflow via the strcpy function in /goform/formNatStaticMap using the NatBind parameter. Remote code execution is possible with low attack complexity. Public exploit available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5566" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5566" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34953 · Apr 3, 2026</p>
+<h3>PraisonAI Authentication Bypass (CVSS 9.1)</h3>
+<p>Critical authentication bypass vulnerability in PraisonAI allows any attacker to gain full authenticated access by providing an arbitrary Bearer token. The OAuthManager.validate_token() function returns True for any token not in its default-empty store.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34953" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34953" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5565 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
-<h3>code-projects Simple Laundry System SQL Injection (delmemberinfo.php)</h3>
-<p>The Simple Laundry System 1.0 by code-projects is vulnerable to SQL injection via the userid parameter in /delmemberinfo.php. The attack is remotely exploitable with no authentication required, and a public exploit exists.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5565" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5565" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32211 · Apr 3, 2026</p>
+<h3>Azure MCP Server Missing Authentication Information Disclosure (CVSS 9.1)</h3>
+<p>Critical information disclosure vulnerability in Azure MCP Server stems from missing authentication on a critical function, allowing unauthorized attackers to disclose sensitive information over the network without any credentials.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32211" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32211" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5564 · April 5, 2026 · CVSS 3.1: 7.3 High</p>
-<h3>code-projects Simple Laundry System SQL Injection (searchguest.php)</h3>
-<p>SQL injection vulnerability in Simple Laundry System 1.0 by code-projects exists in /searchguest.php via the searchServiceId parameter. Exploitable remotely without authentication. Public exploit disclosed.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5564" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5564" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-35216 · Apr 3, 2026</p>
+<h3>Budibase Critical Remote Code Execution (CVSS 9.0)</h3>
+<p>Critical RCE vulnerability in Budibase low-code platform allows unauthenticated attackers to execute arbitrary code via public webhook endpoints. If an automation linked to the webhook contains a Bash step, commands execute as root inside the container.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35216" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35216" target="_blank">OpenCVE</a>
 </div>
-
                         </div>
                     </div>
                 </div>
@@ -838,7 +837,7 @@ TLDR: Cisco CVE-2026-20093 and CVE-2026-20160 allow auth bypass and root RCE
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-06 03:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-06 03:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
