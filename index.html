@@ -535,24 +535,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · <strong>[KEV]</strong></p>
-<h3>Fortinet FortiClientEMS Improper Access Control (RCE)</h3>
-<p>An improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. The vulnerability has a CVSS v3.1 score of 9.1 (Critical) with Attack Vector: Network, Attack Complexity: Low, Privileges Required: None, and User Interaction: None. This issue allows remote, unauthenticated code execution or command execution on the affected system. Fortinet has released updates addressing this vulnerability. Exploitation has been observed as active.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35616" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33107 · Apr 2, 2026 · Updated Apr 4, 2026</p>
+<h3>Azure Databricks SSRF Allows Unauthorized Privilege Escalation</h3>
+<p>Server-side request forgery (SSRF) in Azure Databricks allows an unauthorized attacker to send requests from the Azure Databricks cluster to arbitrary internal or external URLs, effectively allowing the attacker to elevate privileges over the network. This is a critical CWE-918 vulnerability with CVSS 10.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33107" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33107" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34402 · Apr 6, 2026</p>
-<h3>ChurchCRM SQL Injection via PropertyAssign.php</h3>
-<p>ChurchCRM is an open-source church management system. Prior to version 7.1.0, authenticated users with Edit Records or Manage Groups permissions can exploit a time-based blind SQL injection vulnerability in the PropertyAssign.php endpoint to exfiltrate or modify any database content, including user credentials, personal identifiable information (PII), and configuration secrets. The vulnerability has a CVSS v3.1 score of 8.1 (High) with Attack Vector: Network, Attack Complexity: Low, Privileges Required: Low, and User Interaction: None. A proof-of-concept is publicly available. Upgrade to version 7.1.0 or later to remediate.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34402" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34402" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-35171 · Apr 6, 2026</p>
+<h3>Kedro Arbitrary Code Execution via Malicious Logging Configuration</h3>
+<p>Kedro is a toolbox for production-ready data science. Prior to version 1.3.0, Kedro allows the logging configuration file path to be set via the KEDRO_LOGGING_CONFIG environment variable and loads it without validation. The logging configuration schema supports the special () key, which enables arbitrary callable instantiation. An attacker can exploit this to execute arbitrary system commands during application startup. This is a critical remote code execution (RCE) vulnerability caused by unsafe use of logging.config.dictConfig() with user-controlled input. Fixed in 1.3.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35171" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35171" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34986 · Apr 6, 2026</p>
-<h3>Go JOSE JWE Decryption Panic / Denial of Service</h3>
-<p>Go JOSE provides a Go implementation of JWS, JWE, and JWT standards. Prior to versions 4.1.4 and 3.0.5, decrypting a JSON Web Encryption (JWE) object will panic if the alg field indicates a key wrapping algorithm and the encrypted_key field is empty. The panic occurs in cipher.KeyUnwrap() when attempting to allocate a slice with a zero or negative length. The vulnerability has a CVSS v3.1 score of 7.5 (High) with Attack Vector: Network, Attack Complexity: Low, Privileges Required: None, and User Interaction: None. The impact is denial of service due to application panic. Upgrade to go-jose version 4.1.4 or 3.0.5 to patch this issue.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34986" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34986" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-26135 · Apr 2, 2026 · Updated Apr 4, 2026</p>
+<h3>Azure Custom Locations Resource Provider SSRF Allows Privilege Escalation</h3>
+<p>Server-side request forgery (SSRF) in Azure Custom Locations Resource Provider (RP) allows an authorized attacker to issue arbitrary outbound requests from the provider's backend. By exploiting this flaw, the attacker can elevate privileges across the network, potentially reaching sensitive internal resources. This is a CWE-918 vulnerability with CVSS 9.6.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26135" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-35050 · Apr 6, 2026</p>
+<h3>text-generation-webui Remote Code Execution via Path Traversal</h3>
+<p>text-generation-webui is an open-source web interface for running Large Language Models. Prior to version 4.1.1, users can save extension settings in "py" format and in the app root directory. This allows overwriting python files, such as "download-model.py", which can then be triggered to execute when requesting to download a new model. This is a CWE-22 path traversal leading to RCE with CVSS 9.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35050" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35050" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-35470 · Apr 6, 2026</p>
+<h3>OpenSTAManager SQL Injection via righe Parameter</h3>
+<p>OpenSTAManager is open source management software for technical assistance and invoicing. Prior to version 2.10.2, confronta_righe.php files across different modules contain an SQL Injection vulnerability. The righe parameter received via $_GET['righe'] is directly concatenated into an SQL query without sanitization, parameterization or validation. An authenticated attacker can inject arbitrary SQL statements to extract sensitive data including user credentials, customer information, and invoice data.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35470" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35470" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-35164 · Apr 6, 2026</p>
+<h3>Brave CMS Unrestricted File Upload via CKEditor Endpoint</h3>
+<p>Brave CMS is an open-source CMS. Prior to version 2.0.6, an unrestricted file upload vulnerability exists in the CKEditor upload functionality in app/Http/Controllers/Dashboard/CkEditorController.php within the ckupload method. The method fails to validate uploaded file types and relies entirely on user input. This allows an authenticated user to upload executable PHP scripts and gain Remote Code Execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35164" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35164" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-35167 · Apr 6, 2026</p>
+<h3>Kedro Path Traversal in Versioned Dataset Loading</h3>
+<p>Kedro is a toolbox for production-ready data science. Prior to version 1.3.0, the _get_versioned_path() method in kedro/io/core.py constructs filesystem paths by directly interpolating user-supplied version strings without sanitization. Because version strings are used as path components, traversal sequences such as ../ are preserved and can escape the intended versioned dataset directory. An attacker who can influence the version string can force Kedro to load files from outside the intended version directory, enabling unauthorized file reads, data poisoning, or cross-tenant data access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35167" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35167" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-5672 · Apr 6, 2026</p>
+<h3>Simple IT Discussion Forum SQL Injection in edit-category.php</h3>
+<p>A SQL injection vulnerability in code-projects Simple IT Discussion Forum 1.0 affects the file /edit-category.php of the component Parameter Handler. The manipulation of the argument cat_id leads to SQL injection. It is possible to initiate the attack remotely, and the exploit has been disclosed to the public and may be used. This allows attackers to inject arbitrary SQL commands through the unsanitized cat_id parameter.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5672" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5672" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -587,7 +622,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-07 03:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-07 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
