@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">-2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">2°C</div>
+                            <div class="temp">-3°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -534,40 +534,25 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · [KEV]</p>
-<h3>FortiClient EMS Authentication Bypass</h3>
-<p>A vulnerability in FortiClientEMS 7.4.5 and 7.4.6 permits an unauthenticated attacker to execute arbitrary code or commands by sending specially crafted requests. The flaw is an improper access control that bypasses authentication checks, enabling the attacker to gain control of the system.</p>
+<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · <strong>[KEV]</strong></p>
+<h3>FortiClient EMS Improper Access Control (Pre-Auth RCE)</h3>
+<p>An improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. Actively exploited in the wild.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-35616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35616" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-20093 · Apr 1, 2026 · updated Apr 2, 2026</p>
-<h3>Cisco Integrated Management Controller Authentication Bypass</h3>
-<p>A vulnerability in the change password functionality of Cisco IMC could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as Admin by sending a crafted HTTP request to an affected device.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20093" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34040 · Mar 31, 2026</p>
+<h3>Docker/Moby Authorization Bypass</h3>
+<p>A security vulnerability in Docker Engine/Moby allows attackers to bypass authorization plugins (AuthZ) by submitting an oversized request body. This can allow unauthorized actions that would normally be denied. stems from incomplete fix for CVE-2024-41110.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34040" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34040" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-20160 · Apr 1, 2026</p>
-<h3>Cisco Smart Software Manager On-Prem Arbitrary Command Execution</h3>
-<p>A vulnerability in Cisco SSM On-Prem could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system due to unintentional exposure of an internal service.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20160" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20160" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-39397 · Apr 7, 2026</p>
+<h3>PayloadCMS Payload-Puck Plugin Missing Authorization</h3>
+<p>The payload-puck plugin for PayloadCMS versions before 0.6.23 registers CRUD API endpoints that bypass all collection-level access controls. Unauthorized users can perform create, read, update, and delete operations on any collections managed by the plugin.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39397" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39397" target="_blank">OpenCVE</a>
 </div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-39846 · Apr 7, 2026</p>
-<h3>SiYuan Electron Desktop Client Remote Code Execution</h3>
-<p>SiYuan is a personal knowledge management system. Prior to 3.6.4, a malicious note synced to another user can trigger remote code execution in the SiYuan Electron desktop client via stored XSS in table captions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39846" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39846" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-35392 · Apr 6, 2026</p>
-<h3>goshs Path Traversal via PUT Upload</h3>
-<p>goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.3, PUT upload has no path sanitization, allowing an attacker to write files to arbitrary paths via crafted HTTP PUT requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35392" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35392" target="_blank">OpenCVE</a>
-</div>
-
                         </div>
                     </div>
                 </div>
@@ -600,7 +585,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-08 08:00 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-08 09:05 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
