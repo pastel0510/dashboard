@@ -534,32 +534,40 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · updated Apr 7, 2026 · <strong>[KEV]</strong></p>
-<h3>FortiClientEMS Improper Access Control Allows Unauthenticated RCE</h3>
-<p>An improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests. The flaw is an API authentication and authorization bypass that enables remote attackers to gain full control of the system. Affected versions: 7.4.5-7.4.6. Fixed in 7.4.7 and 7.2.11.</p>
+<p class="cve-id">CVE-2026-35616 · Apr 4, 2026 · [KEV]</p>
+<h3>FortiClient EMS Authentication Bypass</h3>
+<p>A vulnerability in FortiClientEMS 7.4.5 and 7.4.6 permits an unauthenticated attacker to execute arbitrary code or commands by sending specially crafted requests. The flaw is an improper access control that bypasses authentication checks, enabling the attacker to gain control of the system.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-35616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35616" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34976 · Apr 6, 2026</p>
-<h3>Dgraph Pre-Auth Database Overwrite + SSRF + File Read via restoreTenant</h3>
-<p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config, making it completely unauthenticated. An unauthenticated attacker can overwrite the entire database, read server-side files, and perform SSRF via attacker-controlled backup source URLs including file:// for local filesystem access. Fixed in 25.3.1.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34976" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34976" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-20093 · Apr 1, 2026 · updated Apr 2, 2026</p>
+<h3>Cisco Integrated Management Controller Authentication Bypass</h3>
+<p>A vulnerability in the change password functionality of Cisco IMC could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system as Admin by sending a crafted HTTP request to an affected device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20093" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-20160 · Apr 1, 2026</p>
+<h3>Cisco Smart Software Manager On-Prem Arbitrary Command Execution</h3>
+<p>A vulnerability in Cisco SSM On-Prem could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system due to unintentional exposure of an internal service.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20160" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20160" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-39846 · Apr 7, 2026</p>
+<h3>SiYuan Electron Desktop Client Remote Code Execution</h3>
+<p>SiYuan is a personal knowledge management system. Prior to 3.6.4, a malicious note synced to another user can trigger remote code execution in the SiYuan Electron desktop client via stored XSS in table captions.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39846" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39846" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-35392 · Apr 6, 2026</p>
-<h3>goshs Path Traversal in PUT Upload</h3>
-<p>goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.3, PUT upload in httpserver/updown.go has no path sanitization. A client can issue a crafted HTTP PUT request that instructs the server to write a file to any path that the server process can access, allowing arbitrary file creation or overwrite. Fixed in 2.0.0-beta.3.</p>
+<h3>goshs Path Traversal via PUT Upload</h3>
+<p>goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.3, PUT upload has no path sanitization, allowing an attacker to write files to arbitrary paths via crafted HTTP PUT requests.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-35392" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35392" target="_blank">OpenCVE</a>
 </div>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-35174 · Apr 6, 2026 · updated Apr 7, 2026</p>
-<h3>Chyrp Lite Path Traversal to Remote Code Execution</h3>
-<p>Chyrp Lite is an ultra-lightweight blogging engine. Prior to 2026.01, a path traversal vulnerability in the administration console allows an administrator or user with Change Settings permission to change the uploads path to any folder. This enables reading any file on the server (including config.json.php with database credentials) and overwriting critical system files, leading to RCE. Fixed in 2026.01.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35174" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35174" target="_blank">OpenCVE</a>
-</div>
                         </div>
                     </div>
                 </div>
@@ -592,7 +600,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-08 03:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-08 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
