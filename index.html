@@ -506,52 +506,38 @@ Link: https://www.securityweek.com/
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-39888 · Apr 8, 2026</p>
-<h3>PraisonAI Sandbox Escape via Exception Frame Traversal (CRITICAL)</h3>
-<p>The execute_code() function in praisonaiagents defaults to sandbox_mode="sandbox" which runs user code in a subprocess. The AST blocklist embedded in the subprocess wrapper contains only 11 attribute names, missing four attributes (__traceback__, tb_frame, f_back, f_builtins) that form a frame-traversal chain. Chaining these through a caught exception exposes the real Python builtins dict, allowing exec retrieval and RCE. Fixed in version 1.5.115.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39888" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39888" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-39987 · Apr 9, 2026 · Critical</p>
+<h3>marimo Pre-Authentication Remote Code Execution</h3>
+<p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39987" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39987" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-39890 · Apr 8, 2026</p>
-<h3>PraisonAI Remote Code Execution via YAML Deserialization (CRITICAL)</h3>
-<p>The AgentService.loadAgentFromFile method uses the js-yaml library to parse YAML files without disabling dangerous tags (!!js/function, !!js/undefined). Attackers can craft malicious YAML files that execute arbitrary JavaScript code via the API endpoint, leading to RCE. Affects versions prior to 4.5.115.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39890" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39890" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-39974 · Apr 9, 2026 · High</p>
+<h3>n8n-MCP Server-Side Request Forgery (SSRF)</h3>
+<p>n8n-MCP is a Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Prior to 2.47.4, an authenticated Server-Side Request Forgery in n8n-mcp allows a caller holding a valid AUTH_TOKEN to cause the server to issue HTTP requests to arbitrary URLs supplied through multi-tenant HTTP headers. Response bodies are reflected back through JSON-RPC, so an attacker can read the contents of any URL the server can reach, including cloud instance metadata endpoints (AWS IMDS, GCP, Azure, Alibaba, Oracle), internal network services, and any other host the server process has network access to.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39974" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40035 · Apr 8, 2026</p>
-<h3>Unfurl Flask Debug Mode Activation (CRITICAL)</h3>
-<p>Unfurl through 2025.08 contains improper input validation in config parsing that enables Flask debug mode by default. The debug config value is read as a string and passed directly to app.run(), causing any non-empty string to evaluate truthy. Attackers can access the Werkzeug debugger to disclose sensitive info or achieve RCE.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40035" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40035" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-35395 · Apr 6, 2026 (updated Apr 7, 2026) · High</p>
+<h3>WeGIA SQL Injection Vulnerability</h3>
+<p>WeGIA is a Web manager for charitable institutions. Prior to 3.6.9, WeGIA contains a SQL injection vulnerability in dao/memorando/DespachoDAO.php. The id_memorando parameter is extracted from $_REQUEST without validation and directly interpolated into SQL queries, allowing any authenticated user to execute arbitrary SQL commands against the database. This can lead to data theft, alteration, or deletion of records, and potentially provide access to sensitive information within the system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35395" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35395" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25776 · Apr 8, 2026</p>
-<h3>Movable Type Perl Code Injection (CRITICAL)</h3>
-<p>Movable Type contains a code injection vulnerability that may allow attackers to execute arbitrary Perl script. The flaw arises from insufficient validation of user-supplied data in blog entry processing. Affected: all editions (standard, Advanced, Premium) up to 9.1.0 and earlier versions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25776" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25776" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5962 · Apr 9, 2026 · High</p>
+<h3>Tenda CH22 httpd Path Traversal</h3>
+<p>A vulnerability was detected in Tenda CH22 1.0.0.6(468). This issue affects the function R7WebsSecurityHandlerfunction of the component httpd. The manipulation results in path traversal. The attack may be launched remotely. The exploit is now public and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5962" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5962" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-39891 · Apr 8, 2026</p>
-<h3>PraisonAI Template Injection in Agent Tool Definitions (HIGH)</h3>
-<p>The create_agent_centric_tools() function returns tools that process file content using template rendering. When user input from agent.start() is passed directly without escaping, template expressions execute rather than treated as literal text. Fixed in version 4.5.115.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39891" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39891" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5815 · Apr 8, 2026</p>
-<h3>D-Link DIR-645 Stack-Based Buffer Overflow (HIGH)</h3>
-<p>A stack-based buffer overflow in the hedwigcgi_main function of /cgi-bin/hedwig.cgi allows remote attackers to execute arbitrary code. Affects D-Link DIR-645 firmware versions 1.01, 1.02, and 1.03. Note: These firmware versions are end-of-life and no longer supported.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5815" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5815" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-39328 · Apr 7, 2026</p>
-<h3>ChurchCRM Stored XSS in Social Profile Fields (HIGH)</h3>
-<p>ChurchCRM prior to 7.1.0 has a stored cross-site scripting vulnerability in person profile editing. Non-admin users with EditSelf permission can inject malicious JavaScript into Facebook, LinkedIn, and X profile fields. Due to 50-character limit, payloads chain onfocus event handlers to exfiltrate session cookies when admins view the profile. Fixed in version 7.1.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39328" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39328" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5961 · Apr 9, 2026 · High</p>
+<h3>code-projects Simple IT Discussion Forum SQL Injection</h3>
+<p>A security vulnerability has been detected in code-projects Simple IT Discussion Forum 1.0. This vulnerability affects unknown code of the file /topic-details.php. The manipulation of the argument post_id leads to SQL injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5961" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5961" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -585,7 +571,7 @@ Link: https://www.securityweek.com/
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-09 21:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-09 21:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
