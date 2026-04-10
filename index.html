@@ -510,38 +510,59 @@ https://phys.org/news/2026-04-climate-evolution-inherited-gene.html
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-39987 · Apr 9, 2026 · Critical</p>
-<h3>marimo Pre-Authentication Remote Code Execution</h3>
-<p>marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipping authentication verification.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39987" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39987" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-39337 · Apr 7, 2026 · 10.0 Critical</p>
+<h3>ChurchCRM Unauthenticated RCE via Install Wizard</h3>
+<p>ChurchCRM is affected by an unauthenticated remote code execution vulnerability in the Install Wizard. An attacker can execute arbitrary commands during the installation process, leading to full system compromise. This critical flaw affects versions prior to 7.1.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39337" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39337" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-39974 · Apr 9, 2026 · High</p>
-<h3>n8n-MCP Server-Side Request Forgery (SSRF)</h3>
-<p>n8n-MCP is a Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to n8n node documentation, properties, and operations. Prior to 2.47.4, an authenticated Server-Side Request Forgery in n8n-mcp allows a caller holding a valid AUTH_TOKEN to cause the server to issue HTTP requests to arbitrary URLs supplied through multi-tenant HTTP headers. Response bodies are reflected back through JSON-RPC, so an attacker can read the contents of any URL the server can reach, including cloud instance metadata endpoints (AWS IMDS, GCP, Azure, Alibaba, Oracle), internal network services, and any other host the server process has network access to.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39974" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-39339 · Apr 7, 2026 · 9.1 Critical</p>
+<h3>ChurchCRM API Authentication Bypass</h3>
+<p>ChurchCRM contains an authentication bypass vulnerability in the API middleware. By including "api/public" in the request URL, attackers can access all protected API endpoints without authentication, exposing sensitive church member data.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39339" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39339" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35395 · Apr 6, 2026 (updated Apr 7, 2026) · High</p>
-<h3>WeGIA SQL Injection Vulnerability</h3>
-<p>WeGIA is a Web manager for charitable institutions. Prior to 3.6.9, WeGIA contains a SQL injection vulnerability in dao/memorando/DespachoDAO.php. The id_memorando parameter is extracted from $_REQUEST without validation and directly interpolated into SQL queries, allowing any authenticated user to execute arbitrary SQL commands against the database. This can lead to data theft, alteration, or deletion of records, and potentially provide access to sensitive information within the system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35395" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35395" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-25776 · Apr 8, 2026 · 9.3 Critical</p>
+<h3>Movable Type Perl Code Injection</h3>
+<p>Movable Type contains a critical code injection vulnerability allowing attackers to execute arbitrary Perl script. The flaw arises from insufficient validation of user-supplied data in blog entry processing, affecting all versions through 9.1.0 and earlier.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25776" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25776" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5962 · Apr 9, 2026 · High</p>
-<h3>Tenda CH22 httpd Path Traversal</h3>
-<p>A vulnerability was detected in Tenda CH22 1.0.0.6(468). This issue affects the function R7WebsSecurityHandlerfunction of the component httpd. The manipulation results in path traversal. The attack may be launched remotely. The exploit is now public and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5962" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5962" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5850 · Apr 9, 2026 · 9.8 Critical</p>
+<h3>Totolink A7100RU OS Command Injection (setVpnPassCfg)</h3>
+<p>Totolink A7100RU router firmware 7.4cu.2313_b20191024 has an OS command injection vulnerability via the setVpnPassCfg function in cstecgi.cgi. Remote attackers can execute arbitrary OS commands with root privileges.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5850" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5850" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5961 · Apr 9, 2026 · High</p>
-<h3>code-projects Simple IT Discussion Forum SQL Injection</h3>
-<p>A security vulnerability has been detected in code-projects Simple IT Discussion Forum 1.0. This vulnerability affects unknown code of the file /topic-details.php. The manipulation of the argument post_id leads to SQL injection. The attack may be initiated remotely. The exploit has been disclosed publicly and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5961" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5961" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5854 · Apr 9, 2026 · 9.8 Critical</p>
+<h3>Totolink A7100RU OS Command Injection (setWiFiEasyCfg)</h3>
+<p>Totolink A7100RU router firmware 7.4cu.2313_b20191024 has an OS command injection vulnerability via the setWiFiEasyCfg function in cstecgi.cgi. Remote attackers can inject and execute arbitrary OS commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5854" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5854" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-5852 · Apr 9, 2026 · 9.8 Critical</p>
+<h3>Totolink A7100RU OS Command Injection (setIptvCfg)</h3>
+<p>Totolink A7100RU router firmware 7.4cu.2313_b20191024 contains an OS command injection vulnerability via the setIptvCfg function in cstecgi.cgi. Attackers can manipulate the igmpVer parameter to execute arbitrary OS commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5852" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5852" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-5851 · Apr 9, 2026 · 9.8 Critical</p>
+<h3>Totolink A7100RU OS Command Injection (setUPnPCfg)</h3>
+<p>Totolink A7100RU router firmware 7.4cu.2313_b20191024 has an OS command injection vulnerability via the setUPnPCfg function in cstecgi.cgi. The enable parameter can be manipulated to execute arbitrary commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5851" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5851" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34179 · Apr 9, 2026 · 9.1 Critical</p>
+<h3>Canonical LXD Privilege Escalation</h3>
+<p>Canonical LXD versions 4.12 through 6.7 have a privilege escalation vulnerability. An authenticated remote attacker can escalate privileges to cluster admin by manipulating the Type field in TLS certificate update requests.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34179" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34179" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -575,7 +596,7 @@ https://phys.org/news/2026-04-climate-evolution-inherited-gene.html
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-10 03:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-10 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
