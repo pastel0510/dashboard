@@ -527,31 +527,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5978 · Apr 10, 2026 · CVSS 9.8</p>
-<h3>Totolink A7100RU OS Command Injection via setWiFiAclRules</h3>
-<p>A critical command injection vulnerability in Totolink A7100RU router firmware (7.4cu.2313_b20191024). The function setWiFiAclRules in /cgi-bin/cstecgi.cgi does not properly validate the 'mode' argument, allowing remote attackers to execute arbitrary OS commands via crafted requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5978" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5978" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6116 · Apr 12, 2026 · </p>
+<h3>Totolink A7100RU CGI cstecgi.cgi setDiagnosisCfg os command injection</h3>
+<p>A vulnerability in Totolink A7100RU firmware 7.4cu.2313_b20191024 affects the function setDiagnosisCfg of /cgi-bin/cstecgi.cgi. Manipulation of the ip argument leads to os command injection. Remote attackers can execute arbitrary commands without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6116" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6116" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5977 · Apr 10, 2026 · CVSS 9.8</p>
-<h3>Totolink A7100RU OS Command Injection via setWiFiBasicCfg</h3>
-<p>A critical command injection vulnerability in Totolink A7100RU router firmware (7.4cu.2313_b20191024). The function setWiFiBasicCfg in /cgi-bin/cstecgi.cgi does not properly validate the 'wifiOff' argument, allowing remote attackers to execute arbitrary OS commands via crafted requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5977" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5977" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6115 · Apr 12, 2026 · </p>
+<h3>Totolink A7100RU CGI cstecgi.cgi setAppCfg os command injection</h3>
+<p>A flaw in Totolink A7100RU firmware 7.4cu.2313_b20191024 affects the function setAppCfg of /cgi-bin/cstecgi.cgi. Manipulation of the enable argument results in os command injection. Exploitable remotely without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6115" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6115" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40189 · Apr 11, 2026 · CVSS 9.3</p>
-<h3>goshs Authorization Bypass in State-Changing Routes</h3>
-<p>A critical authorization bypass vulnerability in goshs (SimpleHTTPServer written in Go) prior to version 2.0.0-beta.4. The application properly enforces ACL/basic-auth for directory listings and file reads but fails to enforce authorization checks for state-changing routes (PUT, POST upload, mkdir, delete). Unauthenticated attackers can upload files, create directories, and delete files inside .goshs-protected directories.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40189" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40189" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6114 · Apr 12, 2026 · </p>
+<h3>Totolink A7100RU CGI cstecgi.cgi setNetworkCfg os command injection</h3>
+<p>A vulnerability in Totolink A7100RU firmware 7.4cu.2313_b20191024 affects the function setNetworkCfg of /cgi-bin/cstecgi.cgi. Manipulation of the proto argument causes os command injection. Attack can be launched remotely without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6114" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6114" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34179 · Apr 9, 2026 · CVSS 9.1</p>
-<h3>Canonical LXD Privilege Escalation via Certificate Type Validation</h3>
-<p>A critical privilege escalation vulnerability in Canonical LXD versions 4.12 through 6.7. The doCertificateUpdate function in lxd/certificates.go does not validate the Type field when handling PUT/PATCH requests to /1.0/certificates/{fingerprint} for restricted TLS certificate users. This allows authenticated remote attackers to escalate privileges to cluster admin.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34179" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34179" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6113 · Apr 12, 2026 · </p>
+<h3>Totolink A7100RU CGI cstecgi.cgi setTtyServiceCfg os command injection</h3>
+<p>A security flaw in Totolink A7100RU firmware 7.4cu.2313_b20191024 affects the function setTtyServiceCfg of /cgi-bin/cstecgi.cgi. Manipulation of the ttyEnable argument leads to os command injection. Exploitation is possible remotely without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6113" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6113" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6112 · Apr 12, 2026 · </p>
+<h3>Totolink A7100RU CGI cstecgi.cgi setRadvdCfg os command injection</h3>
+<p>A weakness in Totolink A7100RU firmware 7.4cu.2313_b20191024 affects the function setRadvdCfg of /cgi-bin/cstecgi.cgi. Manipulation of the maxRtrAdvInterval argument enables os command injection. Remote attackers can execute arbitrary commands without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6112" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6112" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6124 · Apr 12, 2026 · </p>
+<h3>Tenda F451 httpd fromSafeMacFilter stack-based buffer overflow</h3>
+<p>A vulnerability in Tenda F451 firmware 1.0.0.7 exists in the function fromSafeMacFilter of /goform/SafeMacFilter in the httpd component. Manipulation of the page/menufacturer arguments leads to stack-based buffer overflow. Exploitable remotely with low privileges.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6124" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6124" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6126 · Apr 12, 2026 · </p>
+<h3>chatgpt-on-wechat CowAgent administrative HTTP endpoint missing authentication</h3>
+<p>A weakness in zhayujie chatgpt-on-wechat CowAgent 2.0.4 affects an unknown function of the Administrative HTTP Endpoint component. Missing authentication allows remote attackers to access administrative functions without credentials. Publicly disclosed and activelyexploitable.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6126" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6126" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6110 · Apr 12, 2026 · </p>
+<h3>MetaGPT Tree-of-Thought Solver code injection</h3>
+<p>A vulnerability in FoundationAgents MetaGPT up to 0.8.1 affects the function generate_thoughts in metagpt/strategy/tot.py of the Tree-of-Thought Solver component. Manipulation leads to code injection. Attack can be initiated remotely without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6110" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6110" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -579,7 +607,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-12 15:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-12 15:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
