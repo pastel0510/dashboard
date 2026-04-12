@@ -535,24 +535,31 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6105 · Apr 11, 2026</p>
-<h3>go-fastdfs-web Improper Authorization (CVSS 7.3 High)</h3>
-<p>A security vulnerability in perfree go-fastdfs-web up to version 1.3.7 allows unauthenticated attackers to exploit improper authorization via the doInstall Interface. The InstallController.java component lacks proper access controls during installation, enabling remote attackers to gain administrative access to the file storage system. All versions through 1.3.7 are affected.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6105" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6105" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5978 · Apr 10, 2026 · CVSS 9.8</p>
+<h3>Totolink A7100RU OS Command Injection via setWiFiAclRules</h3>
+<p>A critical command injection vulnerability in Totolink A7100RU router firmware (7.4cu.2313_b20191024). The function setWiFiAclRules in /cgi-bin/cstecgi.cgi does not properly validate the 'mode' argument, allowing remote attackers to execute arbitrary OS commands via crafted requests.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5978" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5978" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31845 · Apr 11, 2026</p>
-<h3>Rukovoditel CRM Reflected XSS (CVSS 9.3 Critical)</h3>
-<p>A critical reflected cross-site scripting vulnerability in Rukovoditel CRM v3.6.4 and earlier allows unauthenticated remote attackers to inject arbitrary JavaScript through the Zadarma telephony API endpoint (/api/tel/zadarma.php). The 'zd_echo' parameter is directly reflected in HTTP responses without sanitization. Successful exploitation enables session hijacking, credential theft, and account takeover. Fixed in version 3.7.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31845" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31845" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5977 · Apr 10, 2026 · CVSS 9.8</p>
+<h3>Totolink A7100RU OS Command Injection via setWiFiBasicCfg</h3>
+<p>A critical command injection vulnerability in Totolink A7100RU router firmware (7.4cu.2313_b20191024). The function setWiFiBasicCfg in /cgi-bin/cstecgi.cgi does not properly validate the 'wifiOff' argument, allowing remote attackers to execute arbitrary OS commands via crafted requests.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5977" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5977" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34621 · Apr 11, 2026</p>
-<h3>Adobe Acrobat Reader Prototype Pollution (CVSS 9.6 Critical)</h3>
-<p>Adobe Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier contain a critical prototype pollution vulnerability (CWE-1321) that can lead to arbitrary code execution in the current user's context. Exploitation requires user interaction (opening a malicious file). This affects Windows, macOS, and Linux versions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34621" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34621" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40189 · Apr 11, 2026 · CVSS 9.3</p>
+<h3>goshs Authorization Bypass in State-Changing Routes</h3>
+<p>A critical authorization bypass vulnerability in goshs (SimpleHTTPServer written in Go) prior to version 2.0.0-beta.4. The application properly enforces ACL/basic-auth for directory listings and file reads but fails to enforce authorization checks for state-changing routes (PUT, POST upload, mkdir, delete). Unauthenticated attackers can upload files, create directories, and delete files inside .goshs-protected directories.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40189" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40189" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34179 · Apr 9, 2026 · CVSS 9.1</p>
+<h3>Canonical LXD Privilege Escalation via Certificate Type Validation</h3>
+<p>A critical privilege escalation vulnerability in Canonical LXD versions 4.12 through 6.7. The doCertificateUpdate function in lxd/certificates.go does not validate the Type field when handling PUT/PATCH requests to /1.0/certificates/{fingerprint} for restricted TLS certificate users. This allows authenticated remote attackers to escalate privileges to cluster admin.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34179" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34179" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -580,7 +587,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-12 09:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-12 09:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
