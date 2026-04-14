@@ -534,60 +534,26 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-1115 · Apr 10, 2026 · Apr 13, 2026</p>
-<h3>Stored Cross-Site Scripting (XSS) in parisneo/lollms</h3>
-<p>A Stored Cross-Site Scripting (XSS) vulnerability was identified in the social feature of parisneo/lollms, affecting the latest version prior to 2.2.0. The vulnerability exists in the `create_post` function within `backend/routers/social/__init__.py`, where user-provided content is directly assigned to the DBPost model without sanitization. This allows attackers to inject and store malicious JavaScript, which is executed in the browsers of users viewing the Home Feed, including administrators.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-1115" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1115" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-21643 · Feb 6, 2026 · updated Apr 13, 2026 · <strong>[KEV]</strong></p>
+<h3>FortiClientEMS SQL Injection Vulnerability</h3>
+<p>An improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Fortinet FortiClientEMS 7.4.4 may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-21643" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-21643" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6026 · Apr 10, 2026 · Apr 13, 2026</p>
-<h3>OS Command Injection in Totolink A7100RU</h3>
-<p>A security flaw has been discovered in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setPortalConfWeChat of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulation of the argument enable results in OS command injection.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6026" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6026" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2023-21529 · Feb 14, 2023 · updated Apr 13, 2026 · <strong>[KEV]</strong></p>
+<h3>Microsoft Exchange Server Remote Code Execution Vulnerability</h3>
+<p>Microsoft Exchange Server Remote Code Execution Vulnerability. This vulnerability affects Microsoft Exchange Server 2013, 2016, and 2019 cumulative updates.</p>
+<a href="https://db.gcve.eu/cve/CVE-2023-21529" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2023-21529" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6027 · Apr 10, 2026 · Apr 13, 2026</p>
-<h3>OS Command Injection in Totolink A7100RU</h3>
-<p>A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. This issue affects the function setUrlFilterRules of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argument enable can lead to OS command injection.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6027" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6027" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6224 · Apr 13, 2026</p>
+<h3>NocoBase plugin-workflow-javascript Sandbox Escape</h3>
+<p>A security flaw has been discovered in nocobase plugin-workflow-javascript up to 2.0.23. This issue affects the function createSafeConsole of the file packages/plugins/@nocobase/plugin-workflow-javascript/src/server/Vm.js. Performing a manipulation results in sandbox issue. The attack can be initiated remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6224" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6224" target="_blank">OpenCVE</a>
 </div>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5989 · Apr 10, 2026 · Apr 13, 2026</p>
-<h3>Stack-Based Buffer Overflow in Tenda F451</h3>
-<p>A flaw has been found in Tenda F451 1.0.0.7. Affected is the function fromRouteStatic of the file /goform/RouteStatic. Executing a manipulation of the argument page can lead to stack-based buffer overflow.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5989" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5989" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-35666 · Apr 10, 2026 · Apr 13, 2026</p>
-<h3>Allowlist Bypass in OpenClaw</h3>
-<p>OpenClaw before 2026.3.22 contains an allowlist bypass vulnerability in system.run approvals that fails to unwrap /usr/bin/time wrappers. Attackers can bypass executable binding restrictions by using an unregistered time wrapper to reuse approval state for inner commands.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35666" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35666" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-35668 · Apr 10, 2026 · Apr 13, 2026</p>
-<h3>Path Traversal in OpenClaw Sandbox</h3>
-<p>OpenClaw before 2026.3.24 contains a path traversal vulnerability in sandbox enforcement allowing sandboxed agents to read arbitrary files from other agents' workspaces via unnormalized mediaUrl or fileUrl parameter keys.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-35668" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35668" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5217 · Apr 11, 2026 · Apr 13, 2026</p>
-<h3>Stored Cross-Site Scripting in Optimole WordPress Plugin</h3>
-<p>The Optimole – Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 4.2.2. This is due to insufficient input sanitization and output escaping on the user-supplied 's' parameter (srcset descriptor) in the unauthenticated /wp-json/optimole/v1/optimizations REST endpoint.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5217" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5217" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5809 · Apr 11, 2026 · Apr 13, 2026</p>
-<h3>Arbitrary File Deletion in wpForo Forum</h3>
-<p>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. This is due to a two-step logic flaw: the topic_add() and topic_edit() action handlers accept arbitrary user-supplied data arrays from $_REQUEST and store them as postmeta without restricting which fields may contain array values.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5809" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5809" target="_blank">OpenCVE</a>
-</div>
                         </div>
                     </div>
                 </div>
@@ -614,7 +580,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-14 03:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-14 03:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
