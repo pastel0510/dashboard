@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">11°C</div>
+                            <div class="temp">5°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">10°C</div>
+                            <div class="temp">5°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">11°C</div>
+                            <div class="temp">5°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">11°C</div>
+                            <div class="temp">4°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">10°C</div>
+                            <div class="temp">3°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -536,73 +536,24 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34621 · Apr 11, 2026 · updated Apr 13, 2026 · <strong>[KEV]</strong></p>
-<h3>Adobe Acrobat and Reader Prototype Pollution Vulnerability</h3>
-<p>Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34621" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34621" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32146 · Apr 11, 2026 · Apr 14, 2026</p>
+<h3>Improper Path Validation in Git Dependency Handling Allows Arbitrary File System Modification</h3>
+<p>A flaw in the Gleam compiler's handling of git dependencies allows arbitrary file system modification during dependency download. An attacker can exploit path traversal to delete or overwrite arbitrary directories outside the intended dependency directory, potentially causing data loss or code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32146" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32146" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5809 · Apr 11, 2026 · updated Apr 13, 2026</p>
-<h3>wpForo Forum Plugin Arbitrary File Deletion</h3>
-<p>The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. This is due to a two-step logic flaw allowing authenticated attackers with subscriber-level access to delete arbitrary files writable by the PHP process on the server, including critical files such as wp-config.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5809" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5809" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34487 · Apr 9, 2026 · updated Apr 10, 2026</p>
+<h3>Apache Tomcat: Cloud Membership for Clustering Component Exposed the Kubernetes Bearer Token</h3>
+<p>A vulnerability in Apache Tomcat's cloud membership for clustering component causes Kubernetes bearer tokens to be written to server log files. An attacker with access to the logs can obtain the token and gain unauthorized access to the Kubernetes cluster.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34487" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34487" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31845 · Apr 11, 2026 · updated Apr 13, 2026</p>
-<h3>Rukovoditel CRM Reflected XSS</h3>
-<p>A reflected cross-site scripting (XSS) vulnerability exists in Rukovoditel CRM version 3.6.4 and earlier in the Zadarma telephony API endpoint (/api/tel/zadarma.php). The application directly reflects user-supplied input from the 'zd_echo' GET parameter into the HTTP response without proper sanitization.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31845" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31845" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6105 · Apr 11, 2026 · updated Apr 13, 2026</p>
-<h3>go-fastdfs-web Improper Authorization</h3>
-<p>A security vulnerability has been detected in perfree go-fastdfs-web up to 1.3.7. This affects an unknown part of the file InstallController.java of the component doInstall Interface. The manipulation leads to improper authorization.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6105" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6105" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6129 · Apr 12, 2026 · updated Apr 13, 2026</p>
-<h3>chatgpt-on-wechat CowAgent Missing Authentication</h3>
-<p>A vulnerability was detected in zhayujie chatgpt-on-wechat CowAgent up to 2.0.4. This affects an unknown function of the component Agent Mode Service. Performing a manipulation results in missing authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6129" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6129" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6130 · Apr 12, 2026 · updated Apr 13, 2026</p>
-<h3>chatbox OS Command Injection</h3>
-<p>A flaw has been found in chatboxai chatbox up to 1.20.0. This impacts the function StdioClientTransport of the file ipc-stdio-transport.ts of the component Model Context Protocol Server Management System. Executing a manipulation of the argument args/env can lead to os command injection.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6130" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6131 · Apr 12, 2026 · updated Apr 13, 2026</p>
-<h3>Totolink A7100RU OS Command Injection (setTracerouteCfg)</h3>
-<p>A vulnerability was found in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is the function setTracerouteCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the argument command results in os command injection.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6131" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6131" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6132 · Apr 12, 2026 · updated Apr 13, 2026</p>
-<h3>Totolink A7100RU OS Command Injection (setLedCfg)</h3>
-<p>A vulnerability was determined in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setLedCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument enable causes os command injection.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6132" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6132" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6133 · Apr 12, 2026 · updated Apr 13, 2026</p>
-<h3>Tenda F451 Buffer Overflow (SafeUrlFilter)</h3>
-<p>A vulnerability was identified in Tenda F451 1.0.0.7_cn_svn7958. This affects the function fromSafeUrlFilter of the file /goform/SafeUrlFilter. Such manipulation of the argument page leads to stack-based buffer overflow.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6133" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6133" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6134 · Apr 12, 2026 · updated Apr 13, 2026</p>
-<h3>Tenda F451 Buffer Overflow (qossetting)</h3>
-<p>A security flaw has been discovered in Tenda F451 1.0.0.7_cn_svn7958. This vulnerability affects the function fromqossetting of the file /goform/qossetting. Performing a manipulation of the argument qos results in stack-based buffer overflow.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6134" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6134" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5201 · Mar 31, 2026 · updated Apr 14, 2026</p>
+<h3>Gdk-pixbuf: Heap-Based Buffer Overflow When Processing Specially Crafted JPEG Image</h3>
+<p>A flaw in the gdk-pixbuf library allows a heap-based buffer overflow in the JPEG image loader due to improper validation of color component counts. A remote attacker can exploit this without user interaction (e.g., via thumbnail generation) to cause application crashes and denial of service.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5201" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5201" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -630,7 +581,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-14 15:39 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-14 16:12 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
