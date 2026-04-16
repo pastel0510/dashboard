@@ -508,55 +508,62 @@ https://www.nature.com/articles/d41586-026-01024-7
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32171 · Apr 14, 2026 · updated Apr 15, 2026</p>
+<p class="cve-id">CVE-2026-32171 · Apr 14, 2026 · updated Apr 16, 2026</p>
 <h3>Azure Logic Apps Elevation of Privilege Vulnerability</h3>
 <p>Insufficiently protected credentials in Azure Logic Apps allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-32171" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32171" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33120 · Apr 14, 2026 · updated Apr 15, 2026</p>
+<p class="cve-id">CVE-2026-33120 · Apr 14, 2026 · updated Apr 16, 2026</p>
 <h3>Microsoft SQL Server Remote Code Execution Vulnerability</h3>
 <p>Untrusted pointer dereference in SQL Server allows an authorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-33120" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33120" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-40040 · Apr 13, 2026 · updated Apr 14, 2026</p>
 <h3>Pachno 1.0.6 Unrestricted File Upload Remote Code Execution</h3>
-<p>Pachno 1.0.6 contains an unrestricted file upload vulnerability that allows authenticated users to upload arbitrary file types by bypassing ineffective extension filtering to the /uploadfile endpoint.</p>
+<p>Pachno 1.0.6 contains an unrestricted file upload vulnerability that allows authenticated users to upload arbitrary file types by bypassing ineffective extension filtering to the /uploadfile endpoint. Attackers can upload executable files to achieve remote code execution.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-40040" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40040" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-25654 · Apr 14, 2026</p>
 <h3>Unauthorized Password Reset in Siemens SINEC NMS</h3>
-<p>A vulnerability has been identified in SINEC NMS (All versions < V4.0 SP3). Affected products do not properly validate user authorization when processing password reset requests.</p>
+<p>A vulnerability has been identified in SINEC NMS (All versions < V4.0 SP3). Affected products do not properly validate user authorization when processing password reset requests, allowing an authenticated remote attacker to reset any user account password.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-25654" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25654" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-27668 · Apr 14, 2026</p>
-<h3>Privilege Escalation in RUGGEDCOM CROSSBOW Secure Access Manager Primary</h3>
-<p>A vulnerability has been identified in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) (All versions < V5.8). User Administrators are allowed to administer groups they belong to.</p>
+<h3>Privilege Escalation in RUGGEDCOM CROSSBOW Secure Access Manager</h3>
+<p>A vulnerability in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) (All versions < V5.8) allows User Administrators to administer groups they belong to, enabling privilege escalation to access any device group at any access level.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-27668" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27668" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-34617 · Apr 14, 2026</p>
 <h3>Adobe Connect Cross-Site Scripting (XSS) Vulnerability</h3>
-<p>Adobe Connect versions 2025.3, 12.10 and earlier are affected by a Cross-Site Scripting (XSS) vulnerability that could result in privilege escalation.</p>
+<p>Adobe Connect versions 2025.3, 12.10 and earlier are affected by a Cross-Site Scripting (XSS) vulnerability that could result in privilege escalation. A low-privileged attacker could inject malicious scripts to gain elevated access.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-34617" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34617" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-4352 · Apr 14, 2026</p>
 <h3>JetEngine SQL Injection Vulnerability</h3>
-<p>The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom Content Type (CCT) REST API search endpoint in all versions up to, and including, 3.8.6.1.</p>
+<p>The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom Content Type (CCT) REST API search endpoint in all versions up to 3.8.6.1. The _cct_search parameter is directly interpolated into SQL queries without sanitization, allowing unauthenticated attackers to extract sensitive database information.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-4352" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4352" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-26154 · Apr 14, 2026</p>
+<p class="cve-id">CVE-2026-26154 · Apr 14, 2026 · updated Apr 16, 2026</p>
 <h3>Windows Server Update Service Tampering Vulnerability</h3>
 <p>Improper input validation in Windows Server Update Service allows an unauthorized attacker to perform tampering over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-26154" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26154" target="_blank">OpenCVE</a>
 </div>
-
                         </div>
                     </div>
                 </div>
@@ -583,7 +590,7 @@ https://www.nature.com/articles/d41586-026-01024-7
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-16 21:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-16 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
