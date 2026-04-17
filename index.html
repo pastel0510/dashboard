@@ -533,38 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27303 · April 14, 2026 · 9.6 Critical</p>
-<h3>Adobe Connect Deserialization Remote Code Execution</h3>
-<p>Adobe Connect versions 2025.3, 12.10 and earlier are affected by a Deserialization of Untrusted Data vulnerability that could result in arbitrary code execution. Exploitation does not require user interaction. Scope is changed.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27303" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27303" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27681 · Apr 14, 2026 · Apr 17, 2026</p>
+<h3>SAP Business Planning and Consolidation - SQL Injection</h3>
+<p>Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete database data. This leads to a high impact on the confidentiality, integrity, and availability of the system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27681" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27681" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31908 · April 14, 2026 · 9.1 Critical</p>
-<h3>Apache APISIX Forward Auth Plugin Header Injection</h3>
-<p>Header injection vulnerability in Apache APISIX forward-auth plugin. Attackers can inject malicious HTTP headers into requests forwarded to downstream services, potentially bypassing authentication controls. Affects versions 2.12.0 through 3.15.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31908" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31908" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6443 · Apr 17, 2026</p>
+<h3>Accordion and Accordion Slider Plugin - Backdoor</h3>
+<p>The Accordion and Accordion Slider plugin for WordPress is vulnerable to an injected backdoor in version 1.4.6. This is due to the plugin being sold to a malicious threat actor that embedded a backdoor in all of the plugin's they acquired. This makes it possible for the threat actor to maintain a persistent backdoor and inject spam into the affected sites.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6443" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6443" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-65135 · April 14, 2026 · 9.8 Critical</p>
-<h3>Time-Based Blind SQL Injection in School Management System</h3>
-<p>A time-based blind SQL injection vulnerability exists in manikandan580 School-management-system 1.0 via the fromdate POST parameter in /studentms/admin/between-date-reprtsdetails.php. This allows unauthenticated attackers to extract sensitive data from the database.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-65135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-65135" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27243 · Apr 14, 2026 · Apr 15, 2026</p>
+<h3>Adobe Connect - Reflected Cross-Site Scripting (XSS)</h3>
+<p>Adobe Connect versions 2025.3, 12.10 and earlier are affected by a reflected Cross-Site Scripting (XSS) vulnerability. If an attacker is able to convince a victim to visit a URL referencing a vulnerable page, malicious JavaScript content may be executed within the context of the victim's browser. Scope is changed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27243" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27243" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31923 · April 14, 2026 · 7.5 High</p>
-<h3>Apache APISIX OpenID Connect TLS Verification Disabled</h3>
-<p>Cleartext Transmission of Sensitive Information in Apache APISIX openid-connect plugin. The ssl_verify setting is false by default, causing sensitive data to be sent in cleartext. Affects versions 0.7 through 3.15.0. Fixed in 3.16.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31923" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31923" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4365 · Apr 14, 2026</p>
+<h3>LearnPress Plugin - Unauthorized Data Deletion</h3>
+<p>The LearnPress plugin for WordPress is vulnerable to unauthorized data deletion due to a missing capability check on the delete_question_answer() function in all versions up to, and including, 4.3.2.8. The plugin exposes a wp_rest nonce in public frontend HTML to unauthenticated visitors, and uses that nonce as the only security gate for the lp-load-ajax AJAX dispatcher. This makes it possible for unauthenticated attackers to delete any quiz answer option.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4365" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4365" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5807 · April 17, 2026 · 7.5 High</p>
-<h3>HashiCorp Vault Denial-of-Service via Root Token Operations</h3>
-<p>Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel root token generation or rekey operations, occupying the single in-progress operation slot. This prevents legitimate operators from completing workflows. Fixed in Vault 2.0.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5807" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-26149 · Apr 14, 2026 · Apr 17, 2026</p>
+<h3>Microsoft Power Apps - Escape/Meta/Control Sequence Bypass</h3>
+<p>Improper neutralization of escape, meta, or control sequences in Microsoft Power Apps allows an authorized attacker to bypass a security feature over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26149" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26149" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4352 · Apr 14, 2026</p>
+<h3>JetEngine Plugin - SQL Injection</h3>
+<p>The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom Content Type (CCT) REST API search endpoint in all versions up to, and including, 3.8.6.1. This is due to the _cct_search parameter being interpolated directly into a SQL query string via sprintf() without sanitization. This makes it possible for unauthenticated attackers to append additional SQL queries to extract sensitive data from the database.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4352" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4352" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-4388 · Apr 14, 2026</p>
+<h3>Form Maker by 10Web - Stored Cross-Site Scripting (XSS)</h3>
+<p>The Form Maker by 10Web plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Matrix field in form submissions in all versions up to, and including, 1.15.40. This is due to insufficient input sanitization and missing output escaping when rendering submission data in the admin view. This makes it possible for unauthenticated attackers to inject arbitrary JavaScript through a form submission.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4388" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4388" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34256 · Apr 14, 2026 · Apr 17, 2026</p>
+<h3>SAP ERP / S/4HANA - Authorization Bypass</h3>
+<p>Due to a missing authorization check in SAP ERP and SAP S/4HANA, an authenticated attacker could execute a particular ABAP report to overwrite any existing eight-character executable ABAP report without authorization. If the overwritten report is subsequently executed, the intended functionality could become unavailable.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34256" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34256" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -593,7 +614,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-17 21:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-17 21:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
