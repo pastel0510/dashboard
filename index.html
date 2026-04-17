@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">10°C</div>
-                        </div>
-                        <div class="weather-mini-item">
-                            <div class="city">Tampere</div>
                             <div class="temp">9°C</div>
                         </div>
                         <div class="weather-mini-item">
+                            <div class="city">Tampere</div>
+                            <div class="temp">5°C</div>
+                        </div>
+                        <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">10°C</div>
+                            <div class="temp">7°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -526,59 +526,45 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32171 · Apr 14, 2026 · updated Apr 16, 2026</p>
-<h3>Azure Logic Apps Elevation of Privilege Vulnerability</h3>
-<p>Insufficiently protected credentials in Azure Logic Apps allows an authorized attacker to elevate privileges over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32171" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32171" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31908 · Apr 14, 2026 · Apr 16, 2026 · <strong>[KEV]</strong></p>
+<h3>Apache APISIX Header Injection Vulnerability</h3>
+<p>Header injection vulnerability in Apache APISIX forward-auth plugin. The attacker can inject malicious headers via certain configuration. Affects versions 2.12.0 through 3.15.0. Upgrade to version 3.16.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31908" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31908" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33120 · Apr 14, 2026 · updated Apr 16, 2026</p>
-<h3>Microsoft SQL Server Remote Code Execution Vulnerability</h3>
-<p>Untrusted pointer dereference in SQL Server allows an authorized attacker to execute code over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33120" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33120" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-65135 · Apr 14, 2026 · <strong>[KEV]</strong></p>
+<h3>School-management-system SQL Injection</h3>
+<p>Time-based blind SQL injection in manikandan580 School-management-system 1.0 via the fromdate POST parameter in /studentms/admin/between-date-reprtsdetails.php. CVSS 9.8 Critical.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-65135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-65135" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40040 · Apr 13, 2026 · updated Apr 14, 2026</p>
-<h3>Pachno 1.0.6 Unrestricted File Upload Remote Code Execution</h3>
-<p>Pachno 1.0.6 contains an unrestricted file upload vulnerability that allows authenticated users to upload arbitrary file types by bypassing ineffective extension filtering to the /uploadfile endpoint. Attackers can upload executable files to achieve remote code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40040" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40040" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-25654 · Apr 14, 2026</p>
-<h3>Unauthorized Password Reset in Siemens SINEC NMS</h3>
-<p>A vulnerability has been identified in SINEC NMS (All versions < V4.0 SP3). Affected products do not properly validate user authorization when processing password reset requests, allowing an authenticated remote attacker to reset any user account password.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25654" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25654" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27303 · Apr 14, 2026 · Apr 15, 2026</p>
+<h3>Adobe Connect Deserialization Vulnerability</h3>
+<p>Deserialization of untrusted data vulnerability in Adobe Connect versions 2025.3, 12.10 and earlier. Could result in arbitrary code execution. Exploitation does not require user interaction. Scope changed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27303" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27303" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-27668 · Apr 14, 2026</p>
-<h3>Privilege Escalation in RUGGEDCOM CROSSBOW Secure Access Manager</h3>
-<p>A vulnerability in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) (All versions < V5.8) allows User Administrators to administer groups they belong to, enabling privilege escalation to access any device group at any access level.</p>
+<h3>Siemens RUGGEDCOM CROSSBOW Privilege Escalation</h3>
+<p>Privilege escalation vulnerability in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P). User Administrators can administer groups they belong to, allowing escalation to any device group at any access level. CVSS 8.7 High.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-27668" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27668" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-34617 · Apr 14, 2026</p>
-<h3>Adobe Connect Cross-Site Scripting (XSS) Vulnerability</h3>
-<p>Adobe Connect versions 2025.3, 12.10 and earlier are affected by a Cross-Site Scripting (XSS) vulnerability that could result in privilege escalation. A low-privileged attacker could inject malicious scripts to gain elevated access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-34617" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34617" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31923 · Apr 14, 2026</p>
+<h3>Apache APISIX Cleartext Transmission (openid-connect)</h3>
+<p>Cleartext transmission of sensitive information in Apache APISIX openid-connect plugin. ssl_verify defaults to false. Affects versions 0.7 through 3.15.0. Upgrade to 3.16.0. CVSS 7.5 High.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31923" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31923" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4352 · Apr 14, 2026</p>
-<h3>JetEngine SQL Injection Vulnerability</h3>
-<p>The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom Content Type (CCT) REST API search endpoint in all versions up to 3.8.6.1. The _cct_search parameter is directly interpolated into SQL queries without sanitization, allowing unauthenticated attackers to extract sensitive database information.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4352" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4352" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-26154 · Apr 14, 2026 · updated Apr 16, 2026</p>
-<h3>Windows Server Update Service Tampering Vulnerability</h3>
-<p>Improper input validation in Windows Server Update Service allows an unauthorized attacker to perform tampering over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-26154" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26154" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31924 · Apr 14, 2026</p>
+<h3>Apache APISIX Cleartext Transmission (tencent-cloud-cls)</h3>
+<p>Cleartext transmission in Apache APISIX tencent-cloud-cls log export using plaintext HTTP. Affects versions 2.99.0 through 3.15.0. CVSS 7.5 High.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31924" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31924" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -606,7 +592,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-17 08:03 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-17 09:02 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
