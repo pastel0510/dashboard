@@ -533,45 +533,38 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31908 · Apr 14, 2026 · Apr 16, 2026 · <strong>[KEV]</strong></p>
-<h3>Apache APISIX Header Injection Vulnerability</h3>
-<p>Header injection vulnerability in Apache APISIX forward-auth plugin. The attacker can inject malicious headers via certain configuration. Affects versions 2.12.0 through 3.15.0. Upgrade to version 3.16.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31908" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31908" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2025-65135 · Apr 14, 2026 · <strong>[KEV]</strong></p>
-<h3>School-management-system SQL Injection</h3>
-<p>Time-based blind SQL injection in manikandan580 School-management-system 1.0 via the fromdate POST parameter in /studentms/admin/between-date-reprtsdetails.php. CVSS 9.8 Critical.</p>
+<p class="cve-id">CVE-2025-65135 · April 14, 2026 · 9.8 Critical</p>
+<h3>Time-Based Blind SQL Injection in School Management System</h3>
+<p>A time-based blind SQL injection vulnerability exists in manikandan580 School-management-system 1.0 via the fromdate POST parameter in /studentms/admin/between-date-reprtsdetails.php. This allows unauthenticated attackers to extract sensitive data from the database.</p>
 <a href="https://db.gcve.eu/cve/CVE-2025-65135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-65135" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27303 · Apr 14, 2026 · Apr 15, 2026</p>
-<h3>Adobe Connect Deserialization Vulnerability</h3>
-<p>Deserialization of untrusted data vulnerability in Adobe Connect versions 2025.3, 12.10 and earlier. Could result in arbitrary code execution. Exploitation does not require user interaction. Scope changed.</p>
+<p class="cve-id">CVE-2026-27303 · April 14, 2026 · 9.6 Critical</p>
+<h3>Adobe Connect Deserialization Remote Code Execution</h3>
+<p>Adobe Connect versions 2025.3, 12.10 and earlier are affected by a Deserialization of Untrusted Data vulnerability that could result in arbitrary code execution. Exploitation does not require user interaction. Scope is changed.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-27303" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27303" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27668 · Apr 14, 2026</p>
-<h3>Siemens RUGGEDCOM CROSSBOW Privilege Escalation</h3>
-<p>Privilege escalation vulnerability in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P). User Administrators can administer groups they belong to, allowing escalation to any device group at any access level. CVSS 8.7 High.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27668" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27668" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31908 · April 14, 2026 · 9.1 Critical</p>
+<h3>Apache APISIX Forward Auth Plugin Header Injection</h3>
+<p>Header injection vulnerability in Apache APISIX forward-auth plugin. Attackers can inject malicious HTTP headers into requests forwarded to downstream services, potentially bypassing authentication controls. Affects versions 2.12.0 through 3.15.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31908" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31908" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31923 · Apr 14, 2026</p>
-<h3>Apache APISIX Cleartext Transmission (openid-connect)</h3>
-<p>Cleartext transmission of sensitive information in Apache APISIX openid-connect plugin. ssl_verify defaults to false. Affects versions 0.7 through 3.15.0. Upgrade to 3.16.0. CVSS 7.5 High.</p>
+<p class="cve-id">CVE-2026-31923 · April 14, 2026 · 7.5 High</p>
+<h3>Apache APISIX OpenID Connect TLS Verification Disabled</h3>
+<p>Cleartext Transmission of Sensitive Information in Apache APISIX openid-connect plugin. The ssl_verify setting is false by default, causing sensitive data to be sent in cleartext. Affects versions 0.7 through 3.15.0. Fixed in 3.16.0.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-31923" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31923" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31924 · Apr 14, 2026</p>
-<h3>Apache APISIX Cleartext Transmission (tencent-cloud-cls)</h3>
-<p>Cleartext transmission in Apache APISIX tencent-cloud-cls log export using plaintext HTTP. Affects versions 2.99.0 through 3.15.0. CVSS 7.5 High.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31924" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31924" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5807 · April 17, 2026 · 7.5 High</p>
+<h3>HashiCorp Vault Denial-of-Service via Root Token Operations</h3>
+<p>Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel root token generation or rekey operations, occupying the single in-progress operation slot. This prevents legitimate operators from completing workflows. Fixed in Vault 2.0.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5807" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -599,7 +592,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-17 09:17 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-17 09:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
