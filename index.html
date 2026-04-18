@@ -533,59 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4880 · Apr 16, 2026</p>
-<h3>WordPress Barcode Scanner Plugin Privilege Escalation</h3>
-<p>The Barcode Scanner (+Mobile App) plugin for WordPress is vulnerable to privilege escalation via insecure token-based authentication. Unauthenticated attackers can escalate privileges to administrator by spoofing user IDs to leak authentication tokens.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4880" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4880" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5617 · Apr 15, 2026 · 8.8 HIGH</p>
+<h3>WordPress Login as User Plugin Privilege Escalation</h3>
+<p>The Login as User plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.0.3. This is due to the handle_return_to_admin() function trusting a client-controlled cookie to determine which user to authenticate as, without server-side verification. This allows authenticated attackers with Subscriber-level access to escalate privileges to administrator.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5617" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5617" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-14868 · Apr 16, 2026</p>
-<h3>WordPress Career Section Plugin CSRF Path Traversal</h3>
-<p>The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Path Traversal and Arbitrary File Deletion. Missing nonce validation allows unauthenticated attackers to delete arbitrary files on the server.</p>
+<p class="cve-id">CVE-2025-14868 · Apr 16, 2026 · 8.8 HIGH</p>
+<h3>WordPress Career Section Plugin CSRF leading to Arbitrary File Deletion</h3>
+<p>The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Path Traversal and Arbitrary File Deletion in all versions up to, and including, 1.6. This is due to missing nonce validation and insufficient file path validation on the delete action. An attacker can trick a site administrator into performing an action to delete arbitrary files on the server.</p>
 <a href="https://db.gcve.eu/cve/CVE-2025-14868" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-14868" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40193 · Apr 16, 2026</p>
-<h3>Maddy Mail Server LDAP Injection</h3>
-<p>maddy is a composable, all-in-one mail server. Versions prior to 0.9.3 contain an LDAP injection vulnerability in the auth.ldap module where user-supplied usernames are interpolated into LDAP search filters without proper escaping. An attacker can inject arbitrary LDAP filter expressions through the username field to authenticate as another user.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40193" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40193" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3489 · Apr 16, 2026 · 7.5 HIGH</p>
+<h3>WordPress DirectoryPress SQL Injection</h3>
+<p>The DirectoryPress – Business Directory And Classified Ad Listing plugin for WordPress is vulnerable to SQL Injection via the 'packages' parameter in versions up to, and including, 3.6.26 due to insufficient escaping and lack of sufficient preparation on the existing SQL query. This allows unauthenticated attackers to append additional SQL queries to extract sensitive information from the database.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3489" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3489" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-63029 · Apr 15, 2026</p>
-<h3>WCFM Marketplace SQL Injection</h3>
-<p>Improper Neutralization of Special Elements used in an SQL Command vulnerability in WC Lovers WCFM Marketplace allows SQL Injection. This issue affects WCFM Marketplace from n/a through version 3.7.1.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-63029" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-63029" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-2834 · Apr 15, 2026 · 7.2 HIGH</p>
+<h3>WordPress Token of Trust Plugin Stored XSS</h3>
+<p>The Age Verification & Identity Verification by Token of Trust plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'description' parameter in all versions up to, and including, 3.32.3 due to insufficient input sanitization and output escaping. This allows unauthenticated attackers to inject arbitrary web scripts.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-2834" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2834" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40245 · Apr 16, 2026</p>
-<h3>Free5GC Information Disclosure</h3>
-<p>Free5GC is an open-source 5G mobile core network project. Versions 4.2.1 and below contain an information disclosure vulnerability in the UDR service. The handler sends full subscriber SUPI/IMSI values in error responses. An unauthenticated attacker can retrieve stored subscriber identifiers with a parameterless HTTP GET request.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40245" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40245" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3643 · Apr 15, 2026 · 7.2 HIGH</p>
+<h3>WordPress Accessibly Plugin Stored XSS via REST API</h3>
+<p>The Accessibly plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the REST API in all versions up to, and including, 3.0.3. The plugin registers REST API endpoints with no authentication. The stored widgetSrc value is later passed directly to wp_enqueue_script(), causing arbitrary JavaScript to execute for all site visitors.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3643" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3643" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2024-2374 · Apr 16, 2026</p>
-<h3>WSO2 Products XML External Entity Injection</h3>
-<p>The XML parsers within multiple WSO2 products accept user-supplied XML data without properly configuring to prevent the resolution of external entities. This allows malicious actors to craft XML payloads to read confidential files from the file system and perform denial of service attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2024-2374" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2024-2374" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5694 · Apr 15, 2026 · 7.2 HIGH</p>
+<h3>WordPress Quick Interest Slider Stored XSS</h3>
+<p>The Quick Interest Slider plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'loan-amount' and 'loan-period' parameters in all versions up to, and including, 3.1.5 due to insufficient input sanitization and output escaping. This allows unauthenticated attackers to inject arbitrary web scripts.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5694" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5694" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41035 · Apr 16, 2026</p>
-<h3>Rsync Receive Xattr Use-After-Free</h3>
-<p>In rsync 3.0.1 through 3.4.1, receive_xattr relies on an untrusted length value during a qsort call, leading to a receiver use-after-free. The victim must run rsync with -X (aka --xattrs).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41035" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41035" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3876 · Apr 16, 2026 · 7.2 HIGH</p>
+<h3>WordPress Prismatic Plugin Stored XSS</h3>
+<p>The Prismatic plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'prismatic_encoded' pseudo-shortcode in all versions up to, and including, 3.7.3. This is due to insufficient input sanitization and output escaping on user-supplied attributes. An attacker can inject arbitrary scripts via comments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3876" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3876" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41036 · Apr 16, 2026</p>
-<h3>Rsync Remote Code Execution</h3>
-<p>A vulnerability in rsync that may allow remote attackers to execute arbitrary code or cause a denial of service condition on the receiver side, due to improper input validation in the xattr handling code.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41036" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41036" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5231 · Apr 17, 2026 · 7.2 HIGH</p>
+<h3>WordPress WP Statistics Stored XSS</h3>
+<p>The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in all versions up to, and including, 14.16.4. The plugin's referral parser copies the raw utm_source value into the source_name field without escaping, allowing injection of arbitrary scripts in admin pages.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5231" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5231" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -614,7 +614,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-18 15:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-18 15:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
