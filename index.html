@@ -533,59 +533,45 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5617 · Apr 15, 2026 · 8.8 HIGH</p>
-<h3>WordPress Login as User Plugin Privilege Escalation</h3>
-<p>The Login as User plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.0.3. This is due to the handle_return_to_admin() function trusting a client-controlled cookie to determine which user to authenticate as, without server-side verification. This allows authenticated attackers with Subscriber-level access to escalate privileges to administrator.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5617" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5617" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4631 · Apr 7, 2026 · <KEV badge if in KEV></p>
+<h3>Red Hat Cockpit Remote Code Execution via SSH Injection</h3>
+<p>Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit web service can craft a single HTTP request to the login endpoint that injects malicious SSH options or shell commands, achieving code execution on the Cockpit host without valid credentials.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4631" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4631" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-14868 · Apr 16, 2026 · 8.8 HIGH</p>
-<h3>WordPress Career Section Plugin CSRF leading to Arbitrary File Deletion</h3>
-<p>The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Path Traversal and Arbitrary File Deletion in all versions up to, and including, 1.6. This is due to missing nonce validation and insufficient file path validation on the delete action. An attacker can trick a site administrator into performing an action to delete arbitrary files on the server.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-14868" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-14868" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5280 · Apr 1, 2026 · Updated Apr 2, 2026 · <KEV badge if in KEV></p>
+<h3>Google Chrome Use-After-Free in WebCodecs</h3>
+<p>Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5280" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5280" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3489 · Apr 16, 2026 · 7.5 HIGH</p>
-<h3>WordPress DirectoryPress SQL Injection</h3>
-<p>The DirectoryPress – Business Directory And Classified Ad Listing plugin for WordPress is vulnerable to SQL Injection via the 'packages' parameter in versions up to, and including, 3.6.26 due to insufficient escaping and lack of sufficient preparation on the existing SQL query. This allows unauthenticated attackers to append additional SQL queries to extract sensitive information from the database.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3489" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3489" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28501 · Mar 6, 2026 · Updated Apr 18, 2026 · <KEV badge if in KEV></p>
+<h3>WWBN AVideo Unauthenticated SQL Injection</h3>
+<p>WWBN AVideo is an open source video platform. Prior to version 24.0, an unauthenticated SQL Injection vulnerability exists in AVideo within the objects/videos.json.php and objects/video.php components. The application fails to properly sanitize the catName parameter when it is supplied via a JSON-formatted POST request body.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28501" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28501" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-2834 · Apr 15, 2026 · 7.2 HIGH</p>
-<h3>WordPress Token of Trust Plugin Stored XSS</h3>
-<p>The Age Verification & Identity Verification by Token of Trust plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'description' parameter in all versions up to, and including, 3.32.3 due to insufficient input sanitization and output escaping. This allows unauthenticated attackers to inject arbitrary web scripts.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-2834" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-2834" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30824 · Mar 7, 2026 · Updated Apr 18, 2026 · <KEV badge if in KEV></p>
+<h3>Flowise Missing Authentication on NVIDIA NIM Endpoints</h3>
+<p>Flowise is a drag & drop user interface to build a customized large language model flow. Prior to version 3.0.13, the NVIDIA NIM router (/api/v1/nvidia-nim/*) is whitelisted in the global authentication middleware, allowing unauthenticated access to privileged container management and token generation endpoints.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30824" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30824" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-3643 · Apr 15, 2026 · 7.2 HIGH</p>
-<h3>WordPress Accessibly Plugin Stored XSS via REST API</h3>
-<p>The Accessibly plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the REST API in all versions up to, and including, 3.0.3. The plugin registers REST API endpoints with no authentication. The stored widgetSrc value is later passed directly to wp_enqueue_script(), causing arbitrary JavaScript to execute for all site visitors.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3643" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3643" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33810 · Apr 8, 2026 · Updated Apr 13, 2026 · <KEV badge if in KEV></p>
+<h3>Go crypto/x509 Certificate Validation Bypass</h3>
+<p>When verifying a certificate chain containing excluded DNS constraints, these constraints are not correctly applied to wildcard DNS SANs which use a different case than the constraint. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33810" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33810" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5694 · Apr 15, 2026 · 7.2 HIGH</p>
-<h3>WordPress Quick Interest Slider Stored XSS</h3>
-<p>The Quick Interest Slider plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'loan-amount' and 'loan-period' parameters in all versions up to, and including, 3.1.5 due to insufficient input sanitization and output escaping. This allows unauthenticated attackers to inject arbitrary web scripts.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5694" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5694" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-3876 · Apr 16, 2026 · 7.2 HIGH</p>
-<h3>WordPress Prismatic Plugin Stored XSS</h3>
-<p>The Prismatic plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'prismatic_encoded' pseudo-shortcode in all versions up to, and including, 3.7.3. This is due to insufficient input sanitization and output escaping on user-supplied attributes. An attacker can inject arbitrary scripts via comments.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-3876" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3876" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5231 · Apr 17, 2026 · 7.2 HIGH</p>
-<h3>WordPress WP Statistics Stored XSS</h3>
-<p>The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in all versions up to, and including, 14.16.4. The plugin's referral parser copies the raw utm_source value into the source_name field without escaping, allowing injection of arbitrary scripts in admin pages.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5231" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5231" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-3807 · Mar 9, 2026 · Updated Apr 18, 2026 · <KEV badge if in KEV></p>
+<h3>Tenda FH1202 Stack-Based Buffer Overflow</h3>
+<p>A security vulnerability has been detected in Tenda FH1202 1.2.0.14(408). Impacted is the function formWrlsafeset of the file /goform/AdvSetWrlsafeset. Such manipulation of the argument mit_ssid/mit_ssid_index leads to stack-based buffer overflow. The attack can be launched remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-3807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-3807" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -614,7 +600,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-18 21:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-18 21:49 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
