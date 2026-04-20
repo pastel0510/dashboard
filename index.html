@@ -536,45 +536,45 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32955 · Apr 20, 2026 · High 8.8</p>
-<h3>SD-330AC / AMC Manager Stack-Based Buffer Overflow</h3>
-<p>SD-330AC and AMC Manager provided by Silex Technology, Inc. contain a stack-based buffer overflow vulnerability in processing redirect URLs. A remote attacker can craft a malicious redirect URL to trigger the overflow and execute arbitrary code on the device with high impact to confidentiality, integrity, and availability. Affects SD-330AC firmware Ver.1.42 and prior, and AMC Manager Ver.5.0.2 and prior.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32955" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32955" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6630 · Apr 20, 2026 · 8.8 High</p>
+<h3>Tenda F451 httpd Buffer Overflow (GstDhcpSetSer)</h3>
+<p>A vulnerability was found in Tenda F451 1.0.0.7_cn_svn7958. This issue affects the function fromGstDhcpSetSer of the file /goform/GstDhcpSetSer of the component httpd. Performing a manipulation of the argument dips results in buffer overflow. The attack may be initiated remotely. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6630" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6630" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32965 · Apr 20, 2026 · High 8.7</p>
-<h3>SD-330AC / AMC Manager Insecure Default Null Password</h3>
-<p>An insecure default initialization vulnerability in Silex SD-330AC and AMC Manager leaves devices configurable with a null (blank) password under factory-default settings. Any attacker who can reach the device over the network can authenticate with no credentials and gain full administrative control, enabling configuration changes or further network compromise.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32965" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6631 · Apr 20, 2026 · 8.8 High</p>
+<h3>Tenda F451 httpd Buffer Overflow (webExcptypemanFilter)</h3>
+<p>A vulnerability was determined in Tenda F451 1.0.0.7_cn_svn7958. Impacted is the function fromwebExcptypemanFilter of the file /goform/webExcptypemanFilter of the component httpd. Executing a manipulation of the argument page can lead to buffer overflow. The attack may be launched remotely. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6631" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6631" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6603 · Apr 20, 2026 · High 7.3</p>
-<h3>Modelscope AgentScope Code Injection via Python Execution</h3>
-<p>A code injection vulnerability in modelscope agentscope up to version 1.0.18 allows remote attackers to inject arbitrary code through the execute_python_code/execute_shell_command functions in the AgentScope coding tool. Public exploits are available and the vendor has not responded to disclosure. All versions 1.0.0 through 1.0.18 are affected.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6603" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6603" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6632 · Apr 20, 2026 · 8.8 High</p>
+<h3>Tenda F451 httpd Buffer Overflow (SafeClientFilter)</h3>
+<p>A vulnerability was identified in Tenda F451 1.0.0.7_cn_svn7958. The affected element is the function fromSafeClientFilter of the file /goform/SafeClientFilter of the component httpd. The manipulation of the argument menufacturer/Go leads to buffer overflow. Remote exploitation of the attack is possible. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6632" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6632" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6604 · Apr 20, 2026 · High 7.3</p>
-<h3>Modelscope AgentScope SSRF via Image/Audio URL</h3>
-<p>Modelscope agentscope up to 1.0.18 is vulnerable to server-side request forgery (SSRF) through the _parse_url/prepare_image/openai_audio_to_text functions. By supplying a crafted image_url or audio_file_url parameter, an attacker can cause the service to make arbitrary HTTP requests to internal or external resources. Public exploits exist and the vendor has not responded. All versions 1.0.0 through 1.0.18 are affected.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6604" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6604" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6507 · Apr 17, 2026 · 7.5 High</p>
+<h3>dnsmasq Out-of-Bounds Write in DHCP BOOTREPLY Processing</h3>
+<p>A flaw was found in dnsmasq. A remote attacker could exploit an out-of-bounds write vulnerability by sending a specially crafted BOOTREPLY (Bootstrap Protocol Reply) packet to a dnsmasq server configured with the `--dhcp-split-relay` option. This can lead to memory corruption, causing the dnsmasq daemon to crash and resulting in a denial of service (DoS). Affects Red Hat Enterprise Linux 6 and Red Hat OpenShift Container Platform 4. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6507" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6507" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6605 · Apr 20, 2026 · High 7.3</p>
-<h3>Modelscope AgentScope SSRF via Internal Web URL Fetch</h3>
-<p>Modelscope agentscope up to 1.0.18 is vulnerable to server-side request forgery (SSRF) through the _get_bytes_from_web_url function in the internal service utilities. An attacker can manipulate the URL argument to force the application to fetch arbitrary web resources, potentially accessing internal services or exfiltrating data. Publicly disclosed exploit available. Affects all versions 1.0.0 through 1.0.18.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6605" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6605" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5967 · Apr 20, 2026 · 8.8 High</p>
+<h3>ThreatSonar Anti-Ransomware Privilege Escalation</h3>
+<p>ThreatSonar Anti-Ransomware developed by TeamT5 has a Privilege Escalation vulnerability. Authenticated remote attackers with shell access can inject OS commands and execute them with root privileges. Affected versions: 0 through 4.0.0. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5967" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5967" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6606 · Apr 20, 2026 · High 7.3</p>
-<h3>Modelscope AgentScope SSRF via Audio Block URL</h3>
-<p>Modelscope agentscope up to 1.0.18 is vulnerable to server-side request forgery (SSRF) through the _process_audio_block function. By supplying a crafted URL argument, an attacker can cause the service to issue arbitrary HTTP requests, potentially reaching internal cloud metadata endpoints or internal services. Public exploit available; vendor unresponsive. All versions 1.0.0 through 1.0.18 are affected.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6606" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6606" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6629 · Apr 20, 2026 · 7.3 High</p>
+<h3>Metasoft MetaCRM SQL Injection</h3>
+<p>A vulnerability has been found in Metasoft 美特软件 MetaCRM up to 6.4.0. This vulnerability affects the function Statement.executeUpdate of the file sql.jsp of the component Interface. Such manipulation of the argument sql leads to SQL injection. The attack can be launched remotely. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6629" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6629" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -604,7 +604,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-20 15:22 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-20 15:58 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
