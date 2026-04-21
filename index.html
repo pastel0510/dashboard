@@ -533,45 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6630 · Apr 20, 2026 · 8.8 High</p>
-<h3>Tenda F451 httpd Buffer Overflow (GstDhcpSetSer)</h3>
-<p>A vulnerability was found in Tenda F451 1.0.0.7_cn_svn7958. This issue affects the function fromGstDhcpSetSer of the file /goform/GstDhcpSetSer of the component httpd. Performing a manipulation of the argument dips results in buffer overflow. The attack may be initiated remotely. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6630" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6630" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40492 · Apr 18, 2026 · updated Apr 20, 2026</p>
+<h3>SAIL Library XWD Codec Buffer Overflow (CRITICAL 9.8)</h3>
+<p>SAIL is a cross-platform library for loading and saving images. The XWD codec resolves pixel format based on pixmap_depth but the byte-swap code uses bits_per_pixel independently. When pixmap_depth=8 but bits_per_pixel=32, the byte-swap loop accesses memory as uint32_t*, reading/writing 4x the allocated buffer size, causing heap overflow.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40492" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40492" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6631 · Apr 20, 2026 · 8.8 High</p>
-<h3>Tenda F451 httpd Buffer Overflow (webExcptypemanFilter)</h3>
-<p>A vulnerability was determined in Tenda F451 1.0.0.7_cn_svn7958. Impacted is the function fromwebExcptypemanFilter of the file /goform/webExcptypemanFilter of the component httpd. Executing a manipulation of the argument page can lead to buffer overflow. The attack may be launched remotely. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6631" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6631" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40493 · Apr 18, 2026 · updated Apr 20, 2026</p>
+<h3>SAIL Library PSD Codec Buffer Overflow (CRITICAL 9.8)</h3>
+<p>SAIL library PSD codec computes bytes-per-pixel (bpp) from raw header fields channels * depth, but the pixel buffer is allocated based on the resolved pixel format. For LAB mode with channels=3, depth=16, bpp is calculated as 6 but the actual buffer is smaller, leading to out-of-bounds read/write.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40493" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40493" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6632 · Apr 20, 2026 · 8.8 High</p>
-<h3>Tenda F451 httpd Buffer Overflow (SafeClientFilter)</h3>
-<p>A vulnerability was identified in Tenda F451 1.0.0.7_cn_svn7958. The affected element is the function fromSafeClientFilter of the file /goform/SafeClientFilter of the component httpd. The manipulation of the argument menufacturer/Go leads to buffer overflow. Remote exploitation of the attack is possible. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6632" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6632" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40494 · Apr 18, 2026 · updated Apr 20, 2026</p>
+<h3>SAIL Library TGA Codec RLE Decoder Overflow (CRITICAL 9.8)</h3>
+<p>SAIL library TGA codec's RLE decoder in tga.c has an asymmetric bounds check vulnerability. The run-packet path correctly clamps the repeat count to remaining buffer, but the raw-packet path lacks proper bounds checking, allowing out-of-bounds memory access when processing crafted TGA files.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40494" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40494" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6507 · Apr 17, 2026 · 7.5 High</p>
-<h3>dnsmasq Out-of-Bounds Write in DHCP BOOTREPLY Processing</h3>
-<p>A flaw was found in dnsmasq. A remote attacker could exploit an out-of-bounds write vulnerability by sending a specially crafted BOOTREPLY (Bootstrap Protocol Reply) packet to a dnsmasq server configured with the `--dhcp-split-relay` option. This can lead to memory corruption, causing the dnsmasq daemon to crash and resulting in a denial of service (DoS). Affects Red Hat Enterprise Linux 6 and Red Hat OpenShift Container Platform 4. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6507" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6507" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40324 · Apr 18, 2026 · updated Apr 20, 2026</p>
+<h3>Hot Chocolate GraphQL Server Stack Overflow (CRITICAL 9.1)</h3>
+<p>Hot Chocolate is an open-source GraphQL server. The recursive descent parser Utf8GraphQLParser has no recursion depth limit. A crafted GraphQL document with deeply nested selection sets, object values, list values, or list types can trigger a StackOverflowException, potentially allowing denial of service or code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40324" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40324" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5967 · Apr 20, 2026 · 8.8 High</p>
-<h3>ThreatSonar Anti-Ransomware Privilege Escalation</h3>
-<p>ThreatSonar Anti-Ransomware developed by TeamT5 has a Privilege Escalation vulnerability. Authenticated remote attackers with shell access can inject OS commands and execute them with root privileges. Affected versions: 0 through 4.0.0. CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5967" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5967" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40484 · Apr 18, 2026 · updated Apr 20, 2026</p>
+<h3>ChurchCRM Backup Restore Path Traversal (CRITICAL 9.1)</h3>
+<p>ChurchCRM is an open-source church management system. In versions prior to 7.2.0, the database backup restore functionality extracts uploaded archive contents and copies files from the Images/ directory into the web-accessible document root using recursiveCopyDirectory(), which performs no file extension filtering. An authenticated administrator can upload and execute arbitrary files.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40484" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40484" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6629 · Apr 20, 2026 · 7.3 High</p>
-<h3>Metasoft MetaCRM SQL Injection</h3>
-<p>A vulnerability has been found in Metasoft 美特软件 MetaCRM up to 6.4.0. This vulnerability affects the function Statement.executeUpdate of the file sql.jsp of the component Interface. Such manipulation of the argument sql leads to SQL injection. The attack can be launched remotely. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6629" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6629" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-25917 · Apr 18, 2026 · updated Apr 20, 2026</p>
+<h3>Apache Airflow XCom Code Execution (CRITICAL 9.8)</h3>
+<p>Dag Authors, who normally should not be able to execute code in the webserver context, could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly trusted, severity is rated Low but with Critical CVSS score. Users are recommended to upgrade to Apache Airflow 3.2.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25917" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25917" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6518 · Apr 18, 2026</p>
+<h3>CMP WordPress Plugin RCE (HIGH 8.8)</h3>
+<p>The CMP – Coming Soon & Maintenance Plugin by NiteoThemes for WordPress is vulnerable to arbitrary file upload and remote code execution in all versions up to 4.1.16 via the cmp_theme_update_install AJAX action. The function only checks for publish_pages capability (available to Editors and above), but lacks proper file type validation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6518" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6518" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6560 · Apr 19, 2026</p>
+<h3>H3C Magic B0 Buffer Overflow RCE (HIGH 8.8)</h3>
+<p>A security vulnerability in H3C Magic B0 up to version 100R002 affects the Edit_BasicSSID function in /goform/aspForm. Manipulation of the param argument leads to buffer overflow. The attack can be executed remotely. The exploit has been disclosed publicly and may be used in attacks.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6560" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6560" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -600,7 +614,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-21 03:15 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-21 03:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
