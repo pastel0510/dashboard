@@ -519,38 +519,17 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40911 · Apr 21, 2026 · 10.0 Critical</p>
-<h3>WWBN AVideo YPTSocket Plugin Remote JavaScript Execution</h3>
-<p>The YPTSocket plugin's WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the msg or callback fields. On the client side, plugin/YPTSocket/script.js contains two eval() sinks fed directly by those relayed fields. Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40911" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40911" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41059 · Apr 21, 2026 · 8.2 High</p>
+<h3>OAuth2 Proxy Authentication Bypass via Fragment Confusion</h3>
+<p>OAuth2 Proxy versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass. When skip_auth_routes or skip_auth_regex are used with patterns that can be widened by attacker-controlled suffixes, an unauthenticated attacker can bypass authentication by sending a crafted request containing a hash fragment (# or %23) in the path.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41059" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41059" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40903 · Apr 21, 2026 · 9.1 Critical</p>
-<h3>goshs ArtiPACKED Vulnerability - GitHub Actions Credential Leakage</h3>
-<p>goshs, a SimpleHTTPServer written in Go, contains an ArtiPACKED vulnerability in releases before 2.0.0-beta.6 that can cause the server to embed the environment variable GITHUB_TOKEN into data written to workflow artifacts. If a malicious or compromised GitHub Actions workflow triggers artifact creation, the token can be downloaded by the attacker, granting authenticated access to the repository and related services.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40903" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40903" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6819 · Apr 21, 2026 · 8.8 High</p>
-<h3>HKUDS OpenHarness Plugin Lifecycle Command Exposure</h3>
-<p>HKUDS OpenHarness prior to PR #156 remediation exposes plugin lifecycle commands including /plugin install, /plugin enable, /plugin disable, and /reload-plugins to remote senders by default. Attackers who gain access through the channel layer can remotely manage plugin trust and activation state, enabling unauthorized plugin installation and activation on the system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6819" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6819" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-22754 · Apr 22, 2026 · 7.5 High</p>
-<h3>Spring Security Servlet Path Authorization Bypass</h3>
-<p>If an application uses sec:intercept-url servlet-path="/servlet-path" pattern="/endpoint/**" to define the servlet path for computing a path matcher, then the servlet path is not included and the related authorization rules are not exercised. This can lead to an authorization bypass. This issue affects Spring Security from 7.0.0 through 7.0.4.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22754" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22754" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-40890 · Apr 21, 2026 · 7.5 High</p>
-<h3>gomarkdown/markdown Out-of-bounds Read in SmartypantsRenderer</h3>
-<p>The package github.com/gomarkdown/markdown is a Go library for parsing Markdown text and rendering as HTML. Processing a malformed input containing a &lt; character that is not followed by a &gt; character anywhere in the remaining text with a SmartypantsRenderer will lead to Out of Bounds read or a panic. This can cause denial of service or crash that may expose internal information.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40890" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40890" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40575 · Apr 21, 2026 · 9.1 Critical</p>
+<h3>OAuth2 Proxy Authentication Bypass via X-Forwarded-Uri Header Spoofing</h3>
+<p>OAuth2 Proxy versions 7.5.0 through 7.15.1 may trust a client-supplied X-Forwarded-Uri header when --reverse-proxy is enabled and --skip-auth-regex or --skip-auth-route is configured. An attacker can spoof this header to bypass authentication and access protected routes without a valid session.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40575" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -579,7 +558,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-22 15:07 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-22 15:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
