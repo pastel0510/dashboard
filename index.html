@@ -519,61 +519,39 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6560 · Apr 19, 2026 · 8.8</p>
-<h3>H3C Magic B0 Buffer Overflow</h3>
-<p>A security vulnerability has been detected in H3C Magic B0 up to 100R002. This vulnerability affects the function Edit_BasicSSID of the file /goform/aspForm. Such manipulation of the argument param leads to buffer overflow. The attack can be executed remotely.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6560" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6560" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40911 · Apr 21, 2026 · 10.0 Critical</p>
+<h3>WWBN AVideo YPTSocket Plugin Remote JavaScript Execution</h3>
+<p>The YPTSocket plugin's WebSocket server relays attacker-supplied JSON message bodies to every connected client without sanitizing the msg or callback fields. On the client side, plugin/YPTSocket/script.js contains two eval() sinks fed directly by those relayed fields. Because tokens are minted for anonymous visitors and never revalidated beyond decryption, an unauthenticated attacker can broadcast arbitrary JavaScript that executes in the origin of every currently-connected user (including administrators), resulting in universal account takeover, session theft, and privileged action execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40911" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40911" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6562 · Apr 19, 2026 · 7.3</p>
-<h3>dameng100 muucmf SQL Injection</h3>
-<p>A flaw has been found in dameng100 muucmf 1.9.5.20260309. Impacted is the function getListByPage of the file /index/Search/index.html. Executing a manipulation of the argument keyword can lead to SQL injection.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6562" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6562" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40903 · Apr 21, 2026 · 9.1 Critical</p>
+<h3>goshs ArtiPACKED Vulnerability - GitHub Actions Credential Leakage</h3>
+<p>goshs, a SimpleHTTPServer written in Go, contains an ArtiPACKED vulnerability in releases before 2.0.0-beta.6 that can cause the server to embed the environment variable GITHUB_TOKEN into data written to workflow artifacts. If a malicious or compromised GitHub Actions workflow triggers artifact creation, the token can be downloaded by the attacker, granting authenticated access to the repository and related services.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40903" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40903" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6563 · Apr 19, 2026 · 8.8</p>
-<h3>H3C Magic B1 Buffer Overflow</h3>
-<p>A vulnerability has been found in H3C Magic B1 up to 100R004. The affected element is the function SetAPWifiorLedInfoById of the file /goform/aspForm. The manipulation of the argument param leads to buffer overflow.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6563" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6563" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6819 · Apr 21, 2026 · 8.8 High</p>
+<h3>HKUDS OpenHarness Plugin Lifecycle Command Exposure</h3>
+<p>HKUDS OpenHarness prior to PR #156 remediation exposes plugin lifecycle commands including /plugin install, /plugin enable, /plugin disable, and /reload-plugins to remote senders by default. Attackers who gain access through the channel layer can remotely manage plugin trust and activation state, enabling unauthorized plugin installation and activation on the system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6819" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6819" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6568 · Apr 19, 2026 · 7.3</p>
-<h3>KodCloud KodExplorer Path Traversal</h3>
-<p>A vulnerability was determined in kodcloud KodExplorer up to 4.52. This affects the function share.class.php::initShareOld of the file /app/controller/share.class.php of the component Public Share Handler. This manipulation of the argument path causes path traversal.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6568" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6568" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-22754 · Apr 22, 2026 · 7.5 High</p>
+<h3>Spring Security Servlet Path Authorization Bypass</h3>
+<p>If an application uses sec:intercept-url servlet-path="/servlet-path" pattern="/endpoint/**" to define the servlet path for computing a path matcher, then the servlet path is not included and the related authorization rules are not exercised. This can lead to an authorization bypass. This issue affects Spring Security from 7.0.0 through 7.0.4.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-22754" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22754" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6569 · Apr 19, 2026 · 7.3</p>
-<h3>KodCloud KodExplorer Improper Authentication</h3>
-<p>A vulnerability was identified in kodcloud KodExplorer up to 4.52. This impacts the function fileGet of the file /app/controller/share.class.php of the component fileGet Endpoint. Such manipulation of the argument fileUrl leads to improper authentication.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6569" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6569" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40890 · Apr 21, 2026 · 7.5 High</p>
+<h3>gomarkdown/markdown Out-of-bounds Read in SmartypantsRenderer</h3>
+<p>The package github.com/gomarkdown/markdown is a Go library for parsing Markdown text and rendering as HTML. Processing a malformed input containing a &lt; character that is not followed by a &gt; character anywhere in the remaining text with a SmartypantsRenderer will lead to Out of Bounds read or a panic. This can cause denial of service or crash that may expose internal information.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40890" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40890" target="_blank">OpenCVE</a>
 </div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6574 · Apr 19, 2026 · 7.3</p>
-<h3>osuuu LightPicture Hard-coded Credentials</h3>
-<p>A vulnerability has been found in osuuu LightPicture up to 1.2.2. This issue affects some unknown processing of the file /public/install/lp.sql of the component API Upload Endpoint. Such manipulation of the argument key leads to hard-coded credentials.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6574" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6574" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6577 · Apr 19, 2026 · 7.3</p>
-<h3>DjangoBlog Missing Authentication</h3>
-<p>A vulnerability was identified in liangliangyy DjangoBlog up to 2.1.0.0. The impacted element is an unknown function of the file owntracks/views.py of the component logtracks Endpoint. The manipulation leads to missing authentication.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6577" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6577" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6580 · Apr 19, 2026 · 7.3</p>
-<h3>DjangoBlog Hard-coded Cryptographic Key</h3>
-<p>A security vulnerability has been detected in liangliangyy DjangoBlog up to 2.1.0.0. Affected is an unknown function of the file owntracks/views.py of the component Amap API Call Handler. Such manipulation of the argument key leads to use of hard-coded cryptographic key.</p>
-<a href="https://www.gcve.eu/cve/CVE-2026-6580" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6580" target="_blank">OpenCVE</a>
-</div>
-
                         </div>
                     </div>
                 </div>
@@ -601,7 +579,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-22 09:05 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-22 09:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
