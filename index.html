@@ -519,17 +519,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41059 · Apr 21, 2026 · 8.2 High</p>
-<h3>OAuth2 Proxy Authentication Bypass via Fragment Confusion</h3>
-<p>OAuth2 Proxy versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass. When skip_auth_routes or skip_auth_regex are used with patterns that can be widened by attacker-controlled suffixes, an unauthenticated attacker can bypass authentication by sending a crafted request containing a hash fragment (# or %23) in the path.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41059" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41059" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6760 · Apr 21, 2026 · 9.8 Critical</p>
+<h3>Mitigation bypass in the Networking: Cookies component (Mozilla Firefox, Thunderbird)</h3>
+<p>Mitigation bypass in the Networking: Cookies component. This vulnerability allows an attacker to override cookie security controls, potentially leading to session hijacking, CSRF, or unauthorized access to authentication tokens. Fixed in Firefox 150 and Thunderbird 150.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-6760" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6760" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40575 · Apr 21, 2026 · 9.1 Critical</p>
-<h3>OAuth2 Proxy Authentication Bypass via X-Forwarded-Uri Header Spoofing</h3>
-<p>OAuth2 Proxy versions 7.5.0 through 7.15.1 may trust a client-supplied X-Forwarded-Uri header when --reverse-proxy is enabled and --skip-auth-regex or --skip-auth-route is configured. An attacker can spoof this header to bypass authentication and access protected routes without a valid session.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40575" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40498 · Apr 21, 2026 · 8.9 High</p>
+<h3>FreeScout Authentication Bypass and Information Disclosure (FreeScout Help Desk)</h3>
+<p>Prior to version 1.8.213, an unauthenticated attacker can access diagnostic and system tools via the /system/cron endpoint which relies on a static MD5 hash derived from the APP_KEY. This exposes sensitive server information (Full Path Disclosure) and allows Resource Exhaustion (DoS) due to lack of rate limiting.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-40498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40498" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-27928 · Apr 14, 2026 · 8.7 High</p>
+<h3>Windows Hello Security Feature Bypass (Microsoft Windows Server)</h3>
+<p>Improper input validation in Windows Hello allows an unauthorized attacker to bypass a security feature over a network. This flaw permits bypassing the biometric authentication process, potentially gaining access without proper credential verification. Affected: Windows Server 2016 through 2025.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-27928" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27928" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-27927 · Apr 22, 2026 · 7.8 High</p>
+<h3>Windows Projected File System Race Condition (Microsoft Windows)</h3>
+<p>Time-of-check time-of-use (TOCTOU) race condition in Windows Projected File System allows an authorized attacker to elevate privileges locally.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-27927" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27927" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-27924 · Apr 22, 2026 · 7.8 High</p>
+<h3>Desktop Window Manager Use-After-Free (Microsoft Windows)</h3>
+<p>Use after free in Desktop Window Manager allows an authorized attacker to elevate privileges locally.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-27924" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27924" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6756 · Apr 22, 2026 · 7.5 High</p>
+<h3>Firefox for Android Mitigation Bypass (Mozilla)</h3>
+<p>Mitigation bypass in Firefox for Android. This vulnerability was fixed in Firefox 150.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-6756" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6756" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6753 · Apr 22, 2026 · 7.3 High</p>
+<h3>WebRTC Incorrect Boundary Conditions (Mozilla Firefox, Thunderbird)</h3>
+<p>Incorrect boundary conditions in the WebRTC component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-6753" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6753" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-27926 · Apr 22, 2026 · 7.0 High</p>
+<h3>Windows Cloud Files Mini Filter Driver Race Condition (Microsoft Windows)</h3>
+<p>Concurrent execution using shared resource with improper synchronization (race condition) in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.</p>
+<a href="https://www.gcve.eu/cve/CVE-2026-27926" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27926" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -558,7 +600,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-22 21:11 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-22 21:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
