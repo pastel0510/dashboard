@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">7°C</div>
+                            <div class="temp">4°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">2°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">4°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">1°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">-1°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -466,6 +466,41 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-6947 · Apr 22, 2026 · updated Apr 23, 2026</p>
+<h3>Improper Neutralization of Special Elements Used in an OS Command ('OS Command Injection')</h3>
+<p>connect-api-webui schedules and runs OS commands directly from user input, leading to remote code execution. All versions of connect-api-webui are affected due to use of child_process.exec() without sanitization.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6947" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6947" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-41485 · Apr 24, 2026</p>
+<h3>Kyverno Controller Denial of Service via forEach Mutation Panic</h3>
+<p>Prior to versions 1.17.2 and 1.16.4, an unchecked type assertion in Kyverno's forEach mutation handler allows any user with permission to create a Policy or ClusterPolicy to crash the cluster-wide background controller into a persistent CrashLoopBackOff. The same bug also causes the admission controller to drop connections and block all matching resource operations.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41485" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41485" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-41324 · Apr 24, 2026</p>
+<h3>basic-ftp vulnerable to denial of service via unbounded memory consumption in Client.list()</h3>
+<p>Versions prior to 5.3.0 are vulnerable to denial of service through unbounded memory growth while processing directory listings from a remote FTP server. A malicious or compromised server can send an extremely large or never-ending listing response to Client.list(), causing the client process to consume memory until it becomes unstable or crashes.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41324" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41324" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-41323 · Apr 24, 2026</p>
+<h3>Kyverno: ServiceAccount token leaked to external servers via apiCall service URL</h3>
+<p>Prior to versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4, Kyverno's apiCall feature in ClusterPolicy automatically attaches the admission controller's ServiceAccount token to outgoing HTTP requests. The service URL has no validation — it can point anywhere, including attacker-controlled servers. Since the admission controller SA has permissions to patch webhook configurations, a stolen token leads to full cluster compromise.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41323" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41323" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-41068 · Apr 24, 2026</p>
+<h3>Kyverno: Cross-Namespace Read Bypasses RBAC Isolation (CVE-2026-22039 Incomplete Fix)</h3>
+<p>The patch for CVE-2026-22039 fixed cross-namespace privilege escalation in Kyverno's apiCall context by validating the URLPath field. However, the ConfigMap context loader has the identical vulnerability — the configMap.namespace field accepts any namespace with zero validation, allowing a namespace admin to read ConfigMaps from any namespace using Kyverno's privileged service account. This is a complete RBAC bypass in multi-tenant Kubernetes clusters.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41068" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41068" target="_blank">OpenCVE</a>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -493,7 +528,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-24 08:08 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-24 09:10 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
