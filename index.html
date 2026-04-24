@@ -271,28 +271,28 @@
                 <div class="sidebar-weather">
                     <div class="weather-header">
                         <h3>Weather</h3>
-                        <div class="smiley-box">(∗•‿•∗)</div>
+                        <div class="smiley-box">{{SMILEY}}</div>
                     </div>
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">7°C</div>
+                            <div class="temp">{{HELSINKI_TEMP}}</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">{{TAMPERE_TEMP}}</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">{{TURKU_TEMP}}</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">{{OULU_TEMP}}</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">3°C</div>
+                            <div class="temp">{{ROVANIEMI_TEMP}}</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -302,7 +302,7 @@
                 <div class="card">
                     <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
                     <div id="fingerpori" class="lightbox-trigger">
-                        <img src="https://media.mas.to/media_attachments/files/116/446/830/064/558/715/original/a88f0e8606d332c7.jpeg" alt="Fingerpori">
+                        {{FINGERPORI_URL}}
                     </div>
                 </div>
 
@@ -310,25 +310,25 @@
                 <div class="card">
                     <h2>Bunny of the Day</h2>
                     <div id="bunny" class="lightbox-trigger">
-                        <img src="https://i.redd.it/hhsyirozjuwg1.jpeg" alt="Bunny">
+                        {{BUNNY_URL}}
                     </div>
-                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/Rabbits/comments/1srzj4q/dropped_a_bag_of_spinach_on_accident_but_at_least/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
+                    <p style="margin-top:8px;font-size:0.85em;">{{BUNNY_REDDIT}}</p>
                 </div>
 
                 <!-- Fox -->
                 <div class="card">
                     <h2>Fox of the Day <a href="https://reddit.com/r/foxes" target="_blank" style="font-size:0.6em;color:#00ff88;">r/foxes</a></h2>
                     <div id="fox" class="lightbox-trigger">
-                        <img src="https://i.redd.it/tmhn91lsvvwg1.jpeg" alt="Fox">
+                        {{FOX_URL}}
                     </div>
-                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/foxes/comments/1staosm/my_dog_had_hidden_a_bone_in_early_winter_and_then/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
+                    <p style="margin-top:8px;font-size:0.85em;">{{FOX_REDDIT}}</p>
                 </div>
 
                 <!-- xkcd -->
                 <div class="card">
                     <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
                     <div id="xkcd" class="lightbox-trigger">
-                        <img src="https://imgs.xkcd.com/comics/seismologists.png" alt="Xkcd">
+                        {{XKCD_URL}}
                     </div>
                 </div>
             </aside>
@@ -463,7 +463,54 @@
                     <div class="card">
                         <h2>Security</h2>
                         <div id="security-bulletin">
-                            <div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Top Cybersecurity News</h3> <p>Cybersecurity news summary</p> <a href="https://example.com/cybersecurity-news" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Threats</h3> <p>Cybersecurity threats summary</p> <a href="https://example.com/cybersecurity-threats" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Breaches</h3> <p>Cybersecurity breaches summary</p> <a href="https://example.com/cybersecurity-breaches" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Risks</h3> <p>Cybersecurity risks summary</p> <a href="https://example.com/cybersecurity-risks" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Vulnerabilities</h3> <p>Cybersecurity vulnerabilities summary</p> <a href="https://example.com/cybersecurity-vulnerabilities" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Attacks</h3> <p>Cybersecurity attacks summary</p> <a href="https://example.com/cybersecurity-attacks" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Incident Response</h3> <p>Cybersecurity incident response summary</p> <a href="https://example.com/cybersecurity-incident-response" target="_blank">Read more</a> </div><div class="bulletin-item"> <p class="date-line">\u2705 April 24, 2026</p> <h3>Cybersecurity Best Practices</h3> <p>Cybersecurity best practices summary</p> <a href="https://example.com/cybersecurity-best-practices" target="_blank">Read more</a> </div>
+                            <div class="bulletin-item">
+    <p class="date-line">✅ April 18, 2026</p>
+    <h3>Critical flaw in Protobuf library enables JavaScript code execution</h3>
+    <p>Critical RCE vulnerability in protobuf.js with PoC</p>
+    <a href="https://www.bleepingcomputer.com/news/security/critical-flaw-in-protobuf-library-enables-javascript-code-execution/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 17, 2026</p>
+    <h3>Recently leaked Windows zero-days now exploited in attacks</h3>
+    <p>Three Windows zero-days exploited for SYSTEM privileges</p>
+    <a href="https://www.bleepingcomputer.com/news/security/recently-leaked-windows-zero-days-now-exploited-in-attacks/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 17, 2026</p>
+    <h3>CISA flags Apache ActiveMQ flaw as actively exploited in attacks</h3>
+    <p>High-severity ActiveMQ flaw exploited after 13-year undetected</p>
+    <a href="https://www.bleepingcomputer.com/news/security/cisa-flags-apache-activemq-flaw-as-actively-exploited-in-attacks/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 17, 2026</p>
+    <h3>Payouts King ransomware uses QEMU VMs to bypass endpoint security</h3>
+    <p>Novel ransomware uses virtual machines to evade detection</p>
+    <a href="https://www.bleepingcomputer.com/news/security/payouts-king-ransomware-uses-qemu-vms-to-bypass-endpoint-security/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 16, 2026</p>
+    <h3>Operation PowerOFF identifies 75k DDoS users, takes down 53 domains</h3>
+    <p>Law enforcement busts DDoS booter services globally</p>
+    <a href="https://www.bleepingcomputer.com/news/security/operation-poweroff-identifies-75k-ddos-users-takes-down-53-domains/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 16, 2026</p>
+    <h3>ZionSiphon malware designed to sabotage water treatment systems</h3>
+    <p>New OT malware targets water treatment and desalination</p>
+    <a href="https://www.bleepingcomputer.com/news/security/zionsiphon-malware-designed-to-sabotage-water-treatment-systems/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 16, 2026</p>
+    <h3>New Microsoft Defender RedSun zero-day PoC grants SYSTEM privileges</h3>
+    <p>Second Defender zero-day published by researcher in protest</p>
+    <a href="https://www.bleepingcomputer.com/news/microsoft/new-microsoft-defender-redsun-zero-day-poc-grants-system-privileges/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+    <p class="date-line">✅ April 18, 2026</p>
+    <h3>Mirai variant Nexcorium exploits CVE-2024-3721 to hijack TBK DVRs</h3>
+    <p>Mirai botnet targets DVRs and EoL routers for DDoS</p>
+    <a href="https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html" target="_blank">Read more</a>
+</div>
                         </div>
                     </div>
 
@@ -535,7 +582,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-24 13:05 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-24 11:54 UTC (Europe/Helsinki, {{UTC_OFFSET}})</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
