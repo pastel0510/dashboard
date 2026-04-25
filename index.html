@@ -515,59 +515,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-39861 · April 21, 2026 (updated April 23) · CVSS 10.0</p>
+<p class="cve-id">CVE-2026-33478 (March 23, 2026, updated April 22, 2026)</p>
+<h3>AVideo Multi-Chain Attack: Unauthenticated Remote Code Execution via Clone Key Disclosure, Database Dump, and Command Injection</h3>
+<p>WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo's CloneSite plugin chain together to allow a completely unauthenticated attack...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33478" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33478" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-20079 (March 04, 2026, updated April 22, 2026)</p>
+<h3>A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could...</h3>
+<p>A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on a...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20079" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20079" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-20127 (February 25, 2026, updated April 22, 2026) [KEV]</p>
+<h3>Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability</h3>
+<p>A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20127" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20127" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-34976 (April 06, 2026, updated April 22, 2026)</p>
+<h3>Dgraph Affected by Pre-Auth Database Overwrite + SSRF + File Read via restoreTenant Missing Authorization</h3>
+<p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthe...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34976" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34976" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-40911 (April 21, 2026, updated April 22, 2026)</p>
+<h3>WWBN AVideo YPTSocket WebSocket Broadcast Relay Leads to Unauthenticated Cross-User JavaScript Execution via Client-Side eval() Sinks</h3>
+<p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin's WebSocket server relays attacker-supplied JSON message bodies to every connected client without sani...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40911" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40911" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-39861 (April 21, 2026, updated April 23, 2026)</p>
 <h3>Claude Code: Sandbox Escape via Symlink Following Allows Arbitrary File Write Outside Workspace</h3>
-<p>Claude Code's sandbox did not prevent sandboxed processes from creating symlinks pointing outside the workspace. When unsandboxed processes followed these symlinks during file writes, arbitrary files could be overwritten, enabling sandbox escape and potential code execution outside the workspace. Patched in version 2.1.64.</p>
+<p>Claude Code is an agentic coding tool. Prior to version 2.1.64, Claude Code's sandbox did not prevent sandboxed processes from creating symlinks pointing to locations outside the workspace. When Cl...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-39861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39861" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5965 · April 21, 2026 · CVSS 9.8</p>
-<h3>NewSoftOA OS Command Injection Vulnerability</h3>
-<p>NewSoftOA contains an OS command injection vulnerability allowing unauthenticated local attackers to inject and execute arbitrary operating system commands on the server. Successful exploitation grants full system control, compromising confidentiality, integrity, and availability. Affects versions prior to 10.1.8.3.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5965" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32186 (April 03, 2026, updated April 24, 2026)</p>
+<h3>Microsoft Bing Elevation of Privilege Vulnerability</h3>
+<p>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32186" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32186" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40496 · April 21, 2026 (updated April 23) · CVSS 9.1</p>
-<h3>FreeScout Predictable Attachment Token Allows Unauthenticated Private File Download</h3>
-<p>FreeScout generates attachment download tokens using a weak formula (md5(APP_KEY + attachment_id + size)). Since attachment IDs are sequential and size is brute-forceable, unauthenticated attackers can forge tokens and download any private attachment without credentials. Fixed in version 1.8.213.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40496" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40496" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-41304 · April 22, 2026 (updated April 24) · CVSS 8.9</p>
-<h3>WWBN AVideo Remote Code Execution via CloneSite Plugin Command Injection</h3>
-<p>WWBN AVideo versions 29.0 and below are vulnerable to remote code execution through the CloneSite plugin. The cloneServer.json.php endpoint constructs shell commands using unsanitized user input from the url parameter, allowing command injection via shell metacharacters. Fixed in commit 473c609.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41304" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41304" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-41064 · April 22, 2026 (updated April 24) · CVSS 9.3</p>
-<h3>AVideo Incomplete Fix for CVE-2026-33502 Allows Remote Command Execution</h3>
-<p>AVideo's incomplete fix for CVE-2026-33502 left file_get_contents and curl code paths unsanitized after adding escapeshellarg for wget. Attackers can bypass authentication checks using crafted URLs like httpevil.com, achieving full remote command execution. Affects versions up to 29.0; fixed in commit 78bccae.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41064" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41064" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-40575 · April 22, 2026 · CVSS 9.1</p>
-<h3>OAuth2 Proxy Authentication Bypass via X-Forwarded-Uri Header Spoofing</h3>
-<p>OAuth2 Proxy versions 7.5.0 through 7.15.1 may trust a client-supplied X-Forwarded-Uri header when reverse-proxy mode and skip-auth rules are configured. Attackers can spoof this header to make the proxy evaluate authentication against a different path, bypassing access controls and accessing protected routes without a valid session. Patched in v7.15.2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40575" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-41133 · April 22, 2026 · CVSS 8.8</p>
-<h3>pyLoad Stale Session Privilege After Role/Permission Change</h3>
-<p>pyLoad versions up to 0.5.0b3.dev97 cache user roles and permissions in the session at login and continue using cached values after administrators change database records. This allows already-logged-in users to retain revoked privileges until logout/session expiry, enabling continued privileged actions. Fixed in commit e95804f.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41133" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41133" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-22753 · April 22, 2026 (updated April 24) · CVSS 7.5</p>
-<h3>Spring Security Authentication Bypass via Servlet Path Matching Error</h3>
-<p>Spring Security versions 7.0.0 through 7.0.4 contain a flaw where securityMatchers() combined with PathPatternRequestMatcher.Builder that prepends a servlet path may cause filter chain matching to fail. This renders authentication and authorization controls inactive for intended requests, allowing unauthorized access. Fixed in Spring Security 7.0.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-22753" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-22753" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41679 (April 23, 2026, updated April 24, 2026)</p>
+<h3>Paperclip Vulnerable to Unauthenticated Remote Code Execution via Import Authorization Bypass</h3>
+<p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution o...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41679" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41679" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -600,7 +600,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-25 03:40 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-25 03:49 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
