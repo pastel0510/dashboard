@@ -521,62 +521,62 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41304 (Apr 22, 2026, updated Apr 24, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
-<h3>AVideo - Critical (CVSS 9.8)</h3>
-<p>WWBN AVideo is an open source video platform. In versions 29.0 and below, the `cloneServer.json.php` endpoint in the CloneSite plugin constructs shell commands using user-controlled input (`url` parameter) without adequate sanitization, leading to remote code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41304" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41304" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34976 (April 06, 2026, updated April 22, 2026)</p>
+<h3>Dgraph Affected by Pre-Auth Database Overwrite + SSRF + File Read via restoreTenant Missing Authorization</h3>
+<p>Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthe...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34976" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34976" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6235 (Apr 22, 2026)</p>
-<h3>Sendmachine for WordPress - Critical (CVSS 9.8)</h3>
-<p>The Sendmachine for WordPress plugin for WordPress is vulnerable to authorization bypass via the 'manage_admin_requests' function in all versions up to and including 1.0.20. This allows unauthenticated attackers to perform unauthorized administrative actions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6235" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6235" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40911 (April 21, 2026, updated April 22, 2026)</p>
+<h3>WWBN AVideo YPTSocket WebSocket Broadcast Relay Leads to Unauthenticated Cross-User JavaScript Execution via Client-Side eval() Sinks</h3>
+<p>WWBN AVideo is an open source video platform. In versions 29.0 and prior, the YPTSocket plugin's WebSocket server relays attacker-supplied JSON message bodies to every connected client without sani...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40911" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40911" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41064 (Apr 22, 2026, updated Apr 24, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
-<h3>AVideo - Critical (CVSS 9.3)</h3>
-<p>WWBN AVideo is an open source video platform. In versions up to and including 29.0, an incomplete fix for AVideo's `test.php` adds `escapeshellarg` for wget but leaves the `file_get_contents` and `curl` code paths unsanitized, and URL validation accepts malicious patterns, enabling remote code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41064" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41064" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-39861 (April 21, 2026, updated April 23, 2026)</p>
+<h3>Claude Code: Sandbox Escape via Symlink Following Allows Arbitrary File Write Outside Workspace</h3>
+<p>Claude Code is an agentic coding tool. Prior to version 2.1.64, Claude Code's sandbox did not prevent sandboxed processes from creating symlinks pointing to locations outside the workspace. When Cl...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-39861" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39861" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40575 (Apr 22, 2026)</p>
-<h3>OAuth2 Proxy - Critical (CVSS 9.1)</h3>
-<p>OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 may trust a client-supplied `X-Forwarded-Uri` header when `--reverse-proxy` is enabled and skip-auth rules are configured, allowing authentication bypass.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40575" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-32186 (April 03, 2026, updated April 24, 2026)</p>
+<h3>Microsoft Bing Elevation of Privilege Vulnerability</h3>
+<p>Server-side request forgery (ssrf) in Microsoft Bing allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32186" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32186" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-4119 (Apr 22, 2026)</p>
-<h3>Create DB Tables - Critical (CVSS 9.1)</h3>
-<p>The Create DB Tables plugin for WordPress is vulnerable to authorization bypass in all versions up to and including 1.2.1. The plugin registers admin_post action hooks without capability checks or nonce validation, allowing unauthenticated attackers to create and delete database tables.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4119" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4119" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41679 (April 23, 2026, updated April 24, 2026)</p>
+<h3>Paperclip Vulnerable to Unauthenticated Remote Code Execution via Import Authorization Bypass</h3>
+<p>Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution o...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41679" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41679" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41133 (Apr 22, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
-<h3>pyLoad - High (CVSS 8.8)</h3>
-<p>pyLoad is a free and open-source download manager written in Python. Versions up to and including 0.5.0b3.dev97 cache `role` and `permission` in the session at login and continue to authorize requests using cached values even after admin changes, enabling privilege escalation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41133" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41133" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-35431 (April 23, 2026, updated April 24, 2026)</p>
+<h3>Microsoft Entra ID Entitlement Management Spoofing Vulnerability</h3>
+<p>Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-35431" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35431" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41059 (Apr 22, 2026)</p>
-<h3>OAuth2 Proxy - High (CVSS 8.2)</h3>
-<p>OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass when using skip_auth_routes with patterns that can be widened by attacker-controlled suffixes.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41059" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41059" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33819 (April 23, 2026, updated April 24, 2026)</p>
+<h3>Microsoft Bing Remote Code Execution Vulnerability</h3>
+<p>Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33819" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33819" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41135 (Apr 22, 2026, updated Apr 23, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
-<h3>free5GC UDR - High (CVSS 7.5)</h3>
-<p>free5GC UDR is the Policy Control Function (PCF) for free5GC, an open-source project for 5th generation (5G) mobile core networks. A memory leak vulnerability in versions prior to 1.4.3 allows unauthenticated attackers with network access to the PCF SBI interface to cause uncontrolled memory growth via repeated HTTP requests to the OAM endpoint.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41135" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34078 (April 07, 2026, updated April 24, 2026)</p>
+<h3>Flatpak has a complete sandbox escape leading to host file access and code execution in the host context</h3>
+<p>Flatpak is a Linux application sandboxing and distribution framework. Prior to 1.16.4, the Flatpak portal accepts paths in the sandbox-expose options which can be app-controlled symlinks pointing a...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34078" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34078" target="_blank">OpenCVE</a>
 </div>
-
 
                         </div>
                     </div>
@@ -608,7 +608,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-25 21:21 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-25 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
