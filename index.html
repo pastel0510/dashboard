@@ -479,62 +479,62 @@ https://www.scientificamerican.com/article/kraken-fossils-show-enormous-intellig
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6951 · April 25, 2026 · [KEV] No</p>
-<h3>simple-git Remote Code Execution via Incomplete Fix</h3>
-<p>Versions of the package simple-git before 3.36.0 are vulnerable to Remote Code Execution (RCE) due to an incomplete fix for CVE-2022-25912 that blocks the -c option but not the equivalent --config form. If untrusted input can reach the options argument passed to simple-git, an attacker may still achieve remote code execution by enabling protocol.ext.allow=always and using an ext:: clone source.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6951" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6951" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41304 (Apr 22, 2026, updated Apr 24, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
+<h3>AVideo - Critical (CVSS 9.8)</h3>
+<p>WWBN AVideo is an open source video platform. In versions 29.0 and below, the `cloneServer.json.php` endpoint in the CloneSite plugin constructs shell commands using user-controlled input (`url` parameter) without adequate sanitization, leading to remote code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41304" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41304" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41044 · April 24, 2026 · [KEV] No</p>
-<h3>Apache ActiveMQ Code Injection via Malicious Broker Name</h3>
-<p>An authenticated attacker can use the admin web console page to construct a malicious broker name that bypasses name validation to include an xbean binding. This can be later used by a VM transport to load a remote Spring XML application, leading to arbitrary code execution on the broker's JVM through bean factory methods such as Runtime.exec(). Affects Apache ActiveMQ before 5.19.6 and 6.0.0 before 6.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41044" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41044" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6235 (Apr 22, 2026)</p>
+<h3>Sendmachine for WordPress - Critical (CVSS 9.8)</h3>
+<p>The Sendmachine for WordPress plugin for WordPress is vulnerable to authorization bypass via the 'manage_admin_requests' function in all versions up to and including 1.0.20. This allows unauthenticated attackers to perform unauthorized administrative actions.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6235" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6235" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40466 · April 24, 2026 · [KEV] No</p>
-<h3>Apache ActiveMQ Code Injection Bypass via HTTP Discovery Transport</h3>
-<p>An authenticated attacker may bypass the fix in CVE-2026-34197 by adding a connector using an HTTP Discovery transport via BrokerView.addNetworkConnector or BrokerView.addConnector through Jolokia if the activemq-http module is on the classpath. A malicious HTTP endpoint can return a VM transport through the HTTP URI which bypasses validation, leading to arbitrary code execution on the broker's JVM. Affects Apache ActiveMQ before 5.19.6 and 6.0.0 before 6.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40466" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40466" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41064 (Apr 22, 2026, updated Apr 24, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
+<h3>AVideo - Critical (CVSS 9.3)</h3>
+<p>WWBN AVideo is an open source video platform. In versions up to and including 29.0, an incomplete fix for AVideo's `test.php` adds `escapeshellarg` for wget but leaves the `file_get_contents` and `curl` code paths unsanitized, and URL validation accepts malicious patterns, enabling remote code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41064" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41064" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-32210 (April 23, updated April 25, 2026) · [KEV] No</p>
-<h3>Microsoft Dynamics 365 Server-Side Request Forgery</h3>
-<p>Server-side request forgery (SSRF) in Microsoft Dynamics 365 (Online) allows an unauthorized attacker to perform spoofing over a network, potentially leading to information disclosure or further attacks against internal services.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-32210" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32210" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40575 (Apr 22, 2026)</p>
+<h3>OAuth2 Proxy - Critical (CVSS 9.1)</h3>
+<p>OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 may trust a client-supplied `X-Forwarded-Uri` header when `--reverse-proxy` is enabled and skip-auth rules are configured, allowing authentication bypass.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40575" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-33102 (April 23, updated April 25, 2026) · [KEV] No</p>
-<h3>Microsoft 365 Copilot Open Redirect Vulnerability</h3>
-<p>URL redirection to untrusted site (open redirect) in M365 Copilot allows an unauthorized attacker to elevate privileges over a network by redirecting users to malicious sites, potentially enabling phishing or further compromise.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-33102" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33102" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4119 (Apr 22, 2026)</p>
+<h3>Create DB Tables - Critical (CVSS 9.1)</h3>
+<p>The Create DB Tables plugin for WordPress is vulnerable to authorization bypass in all versions up to and including 1.2.1. The plugin registers admin_post action hooks without capability checks or nonce validation, allowing unauthenticated attackers to create and delete database tables.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4119" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4119" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2024-57726 (January 15, 2025, updated April 24, 2026) · [KEV] Yes</p>
-<h3>SimpleHelp Remote Support API Key Privilege Escalation</h3>
-<p>SimpleHelp remote support software v5.5.7 and before has a vulnerability that allows low-privileges technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges to the server admin role, enabling complete takeover of the support server.</p>
-<a href="https://db.gcve.eu/cve/CVE-2024-57726" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2024-57726" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41133 (Apr 22, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
+<h3>pyLoad - High (CVSS 8.8)</h3>
+<p>pyLoad is a free and open-source download manager written in Python. Versions up to and including 0.5.0b3.dev97 cache `role` and `permission` in the session at login and continue to authorize requests using cached values even after admin changes, enabling privilege escalation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41133" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41133" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2024-57728 (January 15, 2025, updated April 24, 2026) · [KEV] Yes</p>
-<h3>SimpleHelp Remote Support Arbitrary File Upload via Zip Slip</h3>
-<p>SimpleHelp remote support software v5.5.7 and before allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (zip slip vulnerability). This can be exploited to execute arbitrary code on the host in the context of the SimpleHelp server user.</p>
-<a href="https://db.gcve.eu/cve/CVE-2024-57728" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2024-57728" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41059 (Apr 22, 2026)</p>
+<h3>OAuth2 Proxy - High (CVSS 8.2)</h3>
+<p>OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions 7.5.0 through 7.15.1 have a configuration-dependent authentication bypass when using skip_auth_routes with patterns that can be widened by attacker-controlled suffixes.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41059" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41059" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-29635 (March 25, 2025, updated April 24, 2026) · [KEV] Yes</p>
-<h3>D-Link DIR-823X Command Injection via Set Prohibiting Endpoint</h3>
-<p>A command injection vulnerability in D-Link DIR-823X firmware versions 240126 and 240802 allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting, triggering remote command execution. This vulnerability is being actively exploited in Mirai botnet campaigns.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-29635" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-29635" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41135 (Apr 22, 2026, updated Apr 23, 2026)<span style="background-color: #dc3545; color: white; padding: 2px 6px; border-radius: 3px; font-size: 0.8em; margin-left: 8px;">[KEV]</span></p>
+<h3>free5GC UDR - High (CVSS 7.5)</h3>
+<p>free5GC UDR is the Policy Control Function (PCF) for free5GC, an open-source project for 5th generation (5G) mobile core networks. A memory leak vulnerability in versions prior to 1.4.3 allows unauthenticated attackers with network access to the PCF SBI interface to cause uncontrolled memory growth via repeated HTTP requests to the OAM endpoint.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41135" target="_blank">OpenCVE</a>
 </div>
+
 
                         </div>
                     </div>
@@ -566,7 +566,7 @@ https://www.scientificamerican.com/article/kraken-fossils-show-enormous-intellig
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-25 15:18 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-25 15:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
