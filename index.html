@@ -504,70 +504,6 @@ https://phys.org/news/2026-04-interplanetary-shortcut-mars.html
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31676 · (April 25, 2026, updated April 27, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-rxrpc: only handle RESPONSE dur...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-rxrpc: only handle RESPONSE during service challenge
-
-Only process RESPONSE packets while the service connection is still in
-RXRPC_CONN_SERVICE_CHALLENGING. Check that state under state_lock before
-running response verification and security initialization, then use a local
-secured flag to decide whether to queue the secured-connection work after
-the state transition. This keeps duplicate or late RESPONSE packets from
-re-running the setup path and removes the unlocked post-transition state
-test.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31676" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31676" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-31682 · (April 25, 2026, updated April 27, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-bridge: br_nd_send: linearize s...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-bridge: br_nd_send: linearize skb before parsing ND options
-
-br_nd_send() parses neighbour discovery options from ns->opt[] and
-assumes that these options are in the linear part of request.
-
-Its callers only guarantee that the ICMPv6 header and target address
-are available, so the option area can still be non-linear. Parsing
-ns->opt[] in that case can access data past the linear buffer.
-
-Linearize request before option parsing and derive ns from the linear
-network header.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31682" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31682" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-31685 · (April 25, 2026, updated April 27, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: ip6t_eui64: reject i...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-netfilter: ip6t_eui64: reject invalid MAC header for all packets
-
-`eui64_mt6()` derives a modified EUI-64 from the Ethernet source address
-and compares it with the low 64 bits of the IPv6 source address.
-
-The existing guard only rejects an invalid MAC header when
-`par->fragoff != 0`. For packets with `par->fragoff == 0`, `eui64_mt6()`
-can still reach `eth_hdr(skb)` even when the MAC header is not valid.
-
-Fix this by removing the `par->fragoff != 0` condition so that packets
-with an invalid MAC header are rejected before accessing `eth_hdr(skb)`.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31685" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31685" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6977 · (April 25, 2026, updated April 27, 2026)</p>
-<h3>A security vulnerability has been detected in vanna-ai vanna up to 2</h3>
-<p>A security vulnerability has been detected in vanna-ai vanna up to 2.0.2. The affected element is an unknown function of the component Legacy Flask API. The manipulation leads to improper authorization. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6977" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6977" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-6980 · (April 25, 2026, updated April 27, 2026)</p>
 <h3>A vulnerability has been found in Divyanshu-hash GitPilot-MCP up to 9ed9f153ba4158a2ad230ee4871b2513...</h3>
 <p>A vulnerability has been found in Divyanshu-hash GitPilot-MCP up to 9ed9f153ba4158a2ad230ee4871b25130da29ffd. This impacts the function repo_path of the file main.py. Such manipulation of the argument command leads to command injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The vendor was contacted early about this disclosure but did not respond in any way.</p>
@@ -590,6 +526,30 @@ with an invalid MAC header are rejected before accessing `eth_hdr(skb)`.</p>
 <h3>A vulnerability was identified in Linksys MR9600 2</h3>
 <p>A vulnerability was identified in Linksys MR9600 2.0.6.206937. This affects the function BTRequestGetSmartConnectStatus of the file /etc/init.d/run_central2.sh of the component JNAP Action Handler. The manipulation of the argument pin leads to os command injection. The attack may be initiated remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-6992" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6992" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-7002 · (April 25, 2026, updated April 27, 2026)</p>
+<h3>A vulnerability was determined in KLiK SocialMediaWebsite up to 1</h3>
+<p>A vulnerability was determined in KLiK SocialMediaWebsite up to 1.0.1. This vulnerability affects unknown code of the file /includes/get_message_ajax.php of the component Private Message Handler. Executing a manipulation of the argument c_id can lead to sql injection. It is possible to launch the attack remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7002" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7002" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-42255 · (April 26, 2026, updated April 27, 2026)</p>
+<h3>Technitium DNS Server before 15</h3>
+<p>Technitium DNS Server before 15.0 allows DNS traffic amplification via cyclic name server delegation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42255" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42255" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-7019 · (April 26, 2026, updated April 27, 2026)</p>
+<h3>A vulnerability was identified in Tenda F456 1</h3>
+<p>A vulnerability was identified in Tenda F456 1.0.0.5. The impacted element is the function fromP2pListFilter of the file /goform/P2pListFilter. The manipulation of the argument menufacturer/Go leads to buffer overflow. The attack is possible to be carried out remotely. The exploit is publicly available and might be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7019" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7019" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-7022 · (April 26, 2026, updated April 27, 2026)</p>
+<h3>A security vulnerability has been detected in SmythOS sre up to 0</h3>
+<p>A security vulnerability has been detected in SmythOS sre up to 0.0.15. Affected is the function AgentRuntime of the file packages/core/src/subsystems/AgentManager/AgentRuntime.class.ts of the component HTTP Header Handler. Such manipulation of the argument X-DEBUG-RUN/X-DEBUG-INJ leads to improper authentication. It is possible to launch the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7022" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7022" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -621,7 +581,7 @@ with an invalid MAC header are rejected before accessing `eth_hdr(skb)`.</p>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-28 15:44 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-28 15:54 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
