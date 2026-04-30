@@ -521,38 +521,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7099 · April 27, 2026 · updated April 29, 2026</p>
-<h3>Tenda F456 buffer overflow in formQuickIndex</h3>
-<p>A vulnerability was detected in Tenda F456 1.0.0.5. The affected element is the function formQuickIndex of the file /goform/QuickIndex of the component httpd. Performing a manipulation of the argument mit_linktype results in buffer overflow. The attack may be initiated remotely. The exploit is now public and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7099" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7099" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7121 · Apr 27, 2026 · <strong>[KEV]</strong></p>
+<h3>Totolink A8000RU OS command injection in setWizardCfg</h3>
+<p>A flaw has been found in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setWizardCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the argument wizard causes os command injection. It is possible to initiate the attack remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7121" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7121" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7100 · April 27, 2026 · updated April 29, 2026</p>
-<h3>Tenda F456 buffer overflow in fromNatlimitof</h3>
-<p>A flaw has been found in Tenda F456 1.0.0.5. The impacted element is the function fromNatlimitof of the file /goform/Natlimit of the component httpd. Executing a manipulation can lead to buffer overflow. The attack may be launched remotely. The exploit has been published and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7100" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7100" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7122 · Apr 27, 2026 · <strong>[KEV]</strong></p>
+<h3>Totolink A8000RU OS command injection in setUPnPCfg</h3>
+<p>A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. This impacts the function setUPnPCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argument enable leads to os command injection. It is possible to launch the attack remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7122" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7122" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7101 · April 27, 2026 · updated April 29, 2026</p>
-<h3>Tenda F456 buffer overflow in fromWrlclientSet</h3>
-<p>A vulnerability has been found in Tenda F456 1.0.0.5. This affects the function fromWrlclientSet of the file /goform/WrlclientSet of the component httpd. The manipulation leads to buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7101" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7101" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7123 · Apr 27, 2026 · <strong>[KEV]</strong></p>
+<h3>Totolink A8000RU OS command injection in setWlanPpp</h3>
+<p>A vulnerability was discovered in Totolink A8000RU 7.1cu.643_b20200521. The function setWlanPpp of the file /cgi-bin/cstecgi.cgi contains an os command injection through the argument pppUserName. An attacker can remotely execute arbitrary commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7123" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7123" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42198 · April 29, 2026</p>
-<h3>pgjdbc SCRAM authentication denial of service</h3>
-<p>pgjdbc is an open source postgresql JDBC Driver. From version 42.2.0 to before version 42.7.11, pgjdbc is vulnerable to a client-side denial of service during SCRAM-SHA-256 authentication. A malicious server can instruct the driver to perform SCRAM authentication with a very large iteration count. With a large enough value, the client spends an unbounded amount of CPU time inside PBKDF2 before authentication can fail. A single attempt ties up a CPU core. Repeated or concurrent attempts exhaust client CPU and can wedge connection pools. In affected versions, loginTimeout did not fully mitigate this problem. When loginTimeout expired, the caller could stop waiting, but the worker thread performing the connection attempt could continue running and burning CPU inside the SCRAM PBKDF2 computation. This issue has been patched in version 42.7.11.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42198" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42198" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7124 · Apr 27, 2026</p>
+<h3>Totolink A8000RU Stack-based buffer overflow</h3>
+<p>A stack-based buffer overflow vulnerability in Totolink A8000RU 7.1cu.643_b20200521 allows remote attackers to crash the device or potentially execute arbitrary code via a crafted request to the setWifiCfg function.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7124" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7124" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7102 · April 27, 2026 · updated April 29, 2026</p>
-<h3>Tenda F456 command injection in FromWriteFacMac</h3>
-<p>A vulnerability was found in Tenda F456 1.0.0.5. This impacts the function FromWriteFacMac of the file /goform/WriteFacMac of the component httpd. The manipulation of the argument mac results in command injection. The attack can be executed remotely. The exploit has been made public and could be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7102" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7102" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7125 · Apr 27, 2026</p>
+<h3>Totolink A8000RU Information disclosure</h3>
+<p>An information disclosure vulnerability in Totolink A8000RU 7.1cu.643_b20200521 allows remote attackers to read sensitive configuration files via path traversal in the logViewer component.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7125" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7125" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-40976 · Apr 28, 2026</p>
+<h3>Spring Boot default web security ineffective allowing unauthorized access</h3>
+<p>In certain circumstances, Spring Boot's default web security is ineffective allowing unauthorized access to all endpoints. For an application to be vulnerable, it must: be a servlet-based web application; have no Spring Security configuration of its own and rely on the default web security filter chain; depend on spring-boot-actuator-autoconfigure; not depend on spring-boot-health. Affected: Spring Boot 4.0.0–4.0.5; upgrade to 4.0.6 or later.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40976" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40976" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-41649 · Apr 28, 2026 (updated Apr 29, 2026)</p>
+<h3>Outline shares.create insecure direct object reference</h3>
+<p>The shares.create API endpoint starting in version 0.86.0 and prior to version 1.7.0 has an insecure direct object reference. When both collectionId and documentId are provided, the authorization logic only checks access to the collection, completely ignoring the document. This allows an authenticated attacker to generate a valid public share link for any document on the platform. Version 1.7.0 contains a patch.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41649" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41649" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-40967 · Apr 28, 2026</p>
+<h3>Spring AI FilterExpressionConverter injection</h3>
+<p>In Spring AI, various FilterExpressionConverter implementations accept a filter expression object and translate them to specific vector store query languages. In several cases, keys and values are not properly escaped, leading to the ability to alter the query. Affected: Spring AI 1.0.0 - 1.0.5 (fixed in 1.0.6), 1.1.0 - 1.1.4 (fixed in 1.1.5).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40967" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40967" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -585,7 +606,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-04-30 09:29 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-04-30 09:39 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
