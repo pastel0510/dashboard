@@ -531,322 +531,52 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31705 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: fix out-of-bounds write ...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: fix out-of-bounds write in smb2_get_ea() EA alignment
-
-smb2_get_ea() applies 4-byte alignment padding via memset() after
-writing each EA entry. The bounds check on buf_free_len is performed
-before the value memcpy, but the alignment memset fires unconditionally
-afterward with no check on remaining space.
-
-When the EA value exactly fills the remaining buffer (buf_free_len == 0
-after value subtraction), the alignment memset writes 1-3 NUL bytes
-past the buf_free_len boundary. In compound requests where the response
-buffer is shared across commands, the first command (e.g., READ) can
-consume most of the buffer, leaving a tight remainder for the QUERY_INFO
-EA response. The alignment memset then overwrites past the physical
-kvmalloc allocation into adjacent kernel heap memory.
-
-Add a bounds check before the alignment memset to ensure buf_free_len
-can accommodate the padding bytes.
-
-This is the same bug pattern fixed by commit beef2634f81f ("ksmbd: fix
-potencial OOB in get_file_all_info() for compound requests") and
-commit fda9522ed6af ("ksmbd: fix OOB write in QUERY_INFO for compound
-requests"), both of which added bounds checks before unconditional
-writes in QUERY_INFO response handlers.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31705" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31705" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7590 · (May 1, 2026, updated May 1, 2026)</p>
+<h3>A vulnerability was identified in eyal-gor p_69_branch_monkey_mcp up to 69bc71874ce40050ef45fde5a435...</h3>
+<p>A vulnerability was identified in eyal-gor p_69_branch_monkey_mcp up to 69bc71874ce40050ef45fde5a435855f18af3373. The affected element is an unknown function of the file branch_monkey_mcp/bridge_and_local_actions/routes/advanced.py of the component Preview Endpoint. Such manipulation of the argument dev_script leads to os command injection. The attack can be launched remotely. The exploit is publicly available and might be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The project was informed of the problem early through an issue report but has not responded yet.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7590" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7590" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31706 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: validate num_aces and ha...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: validate num_aces and harden ACE walk in smb_inherit_dacl()
-
-smb_inherit_dacl() trusts the on-disk num_aces value from the parent
-directory's DACL xattr and uses it to size a heap allocation:
-
-  aces_base = kmalloc(sizeof(struct smb_ace) * num_aces * 2, ...);
-
-num_aces is a u16 read from le16_to_cpu(parent_pdacl->num_aces)
-without checking that it is consistent with the declared pdacl_size.
-An authenticated client whose parent directory's security.NTACL is
-tampered (e.g. via offline xattr corruption or a concurrent path that
-bypasses parse_dacl()) can present num_aces = 65535 with minimal
-actual ACE data.  This causes a ~8 MB allocation (not kzalloc, so
-uninitialized) that the subsequent loop only partially populates, and
-may also overflow the three-way size_t multiply on 32-bit kernels.
-
-Additionally, the ACE walk loop uses the weaker
-offsetof(struct smb_ace, access_req) minimum size check rather than
-the minimum valid on-wire ACE size, and does not reject ACEs whose
-declared size is below the minimum.
-
-Reproduced on UML + KASAN + LOCKDEP against the real ksmbd code path.
-A legitimate mount.cifs client creates a parent directory over SMB
-(ksmbd writes a valid security.NTACL xattr), then the NTACL blob on
-the backing filesystem is rewritten to set num_aces = 0xFFFF while
-keeping the posix_acl_hash bytes intact so ksmbd_vfs_get_sd_xattr()'s
-hash check still passes.  A subsequent SMB2 CREATE of a child under
-that parent drives smb2_open() into smb_inherit_dacl() (share has
-"vfs objects = acl_xattr" set), which fails the page allocator:
-
-  WARNING: mm/page_alloc.c:5226 at __alloc_frozen_pages_noprof+0x46c/0x9c0
-  Workqueue: ksmbd-io handle_ksmbd_work
-   __alloc_frozen_pages_noprof+0x46c/0x9c0
-   ___kmalloc_large_node+0x68/0x130
-   __kmalloc_large_node_noprof+0x24/0x70
-   __kmalloc_noprof+0x4c9/0x690
-   smb_inherit_dacl+0x394/0x2430
-   smb2_open+0x595d/0xabe0
-   handle_ksmbd_work+0x3d3/0x1140
-
-With the patch applied the added guard rejects the tampered value
-with -EINVAL before any large allocation runs, smb2_open() falls back
-to smb2_create_sd_buffer(), and the child is created with a default
-SD.  No warning, no splat.
-
-Fix by:
-
-  1. Validating num_aces against pdacl_size using the same formula
-     applied in parse_dacl().
-
-  2. Replacing the raw kmalloc(sizeof * num_aces * 2) with
-     kmalloc_array(num_aces * 2, sizeof(...)) for overflow-safe
-     allocation.
-
-  3. Tightening the per-ACE loop guard to require the minimum valid
-     ACE size (offsetof(smb_ace, sid) + CIFS_SID_BASE_SIZE) and
-     rejecting under-sized ACEs, matching the hardening in
-     smb_check_perm_dacl() and parse_dacl().
-
-v1 -> v2:
-  - Replace the synthetic test-module splat in the changelog with a
-    real-path UML + KASAN reproduction driven through mount.cifs and
-    SMB2 CREATE; Namjae flagged the kcifs3_test_inherit_dacl_old name
-    in v1 since it does not exist in ksmbd.
-  - Drop the commit-hash citation from the code comment per Namjae's
-    review; keep the parse_dacl() pointer.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31706" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31706" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7592 · (May 1, 2026, updated May 1, 2026)</p>
+<h3>A weakness has been identified in itsourcecode Courier Management System 1</h3>
+<p>A weakness has been identified in itsourcecode Courier Management System 1.0. This affects an unknown function of the file /edit_staff.php. Executing a manipulation of the argument ID can lead to sql injection. The attack may be launched remotely. The exploit has been made available to the public and could be used for attacks.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7592" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7592" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31708 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-smb: client: fix OOB read in sm...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-smb: client: fix OOB read in smb2_ioctl_query_info QUERY_INFO path
-
-smb2_ioctl_query_info() has two response-copy branches: PASSTHRU_FSCTL
-and the default QUERY_INFO path.  The QUERY_INFO branch clamps
-qi.input_buffer_length to the server-reported OutputBufferLength and then
-copies qi.input_buffer_length bytes from qi_rsp->Buffer to userspace, but
-it never verifies that the flexible-array payload actually fits within
-rsp_iov[1].iov_len.
-
-A malicious server can return OutputBufferLength larger than the actual
-QUERY_INFO response, causing copy_to_user() to walk past the response
-buffer and expose adjacent kernel heap to userspace.
-
-Guard the QUERY_INFO copy with a bounds check on the actual Buffer
-payload.  Use struct_size(qi_rsp, Buffer, qi.input_buffer_length)
-rather than an open-coded addition so the guard cannot overflow on
-32-bit builds.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31708" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31708" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7593 · (May 1, 2026)</p>
+<h3>A security vulnerability has been detected in Sunwood-ai-labs command-executor-mcp-server up to 0</h3>
+<p>A security vulnerability has been detected in Sunwood-ai-labs command-executor-mcp-server up to 0.1.0. This impacts the function execute_command of the file src/index.ts of the component MCP Interface. The manipulation leads to os command injection. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used. The project was informed of the problem early through an issue report but has not responded yet.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7593" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7593" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31709 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-smb: client: validate the whole...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-smb: client: validate the whole DACL before rewriting it in cifsacl
-
-build_sec_desc() and id_mode_to_cifs_acl() derive a DACL pointer from a
-server-supplied dacloffset and then use the incoming ACL to rebuild the
-chmod/chown security descriptor.
-
-The original fix only checked that the struct smb_acl header fits before
-reading dacl_ptr->size or dacl_ptr->num_aces.  That avoids the immediate
-header-field OOB read, but the rewrite helpers still walk ACEs based on
-pdacl->num_aces with no structural validation of the incoming DACL body.
-
-A malicious server can return a truncated DACL that still contains a
-header, claims one or more ACEs, and then drive
-replace_sids_and_copy_aces() or set_chmod_dacl() past the validated
-extent while they compare or copy attacker-controlled ACEs.
-
-Factor the DACL structural checks into validate_dacl(), extend them to
-validate each ACE against the DACL bounds, and use the shared validator
-before the chmod/chown rebuild paths.  parse_dacl() reuses the same
-validator so the read-side parser and write-side rewrite paths agree on
-what constitutes a well-formed incoming DACL.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31709" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31709" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7594 · (May 1, 2026)</p>
+<h3>A vulnerability was detected in Flux159 mcp-game-asset-gen 0</h3>
+<p>A vulnerability was detected in Flux159 mcp-game-asset-gen 0.1.0. Affected is the function image_to_3d_async of the file src/index.ts of the component MCP Interface. The manipulation of the argument statusFile results in path traversal. The attack can be executed remotely. The exploit is now public and may be used. The project was informed of the problem early through an issue report but has not responded yet.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7594" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7594" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31711 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-smb: server: fix active_num_con...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-smb: server: fix active_num_conn leak on transport allocation failure
-
-Commit 77ffbcac4e56 ("smb: server: fix leak of active_num_conn in
-ksmbd_tcp_new_connection()") addressed the kthread_run() failure
-path.  The earlier alloc_transport() == NULL path in the same
-function has the same leak, is reachable pre-authentication via any
-TCP connect to port 445, and was empirically reproduced on UML
-(ARCH=um, v7.0-rc7): a small number of forced allocation failures
-were sufficient to put ksmbd into a state where every subsequent
-connection attempt was rejected for the remainder of the boot.
-
-ksmbd_kthread_fn() increments active_num_conn before calling
-ksmbd_tcp_new_connection() and discards the return value, so when
-alloc_transport() returns NULL the socket is released and -ENOMEM
-returned without decrementing the counter.  Each such failure
-permanently consumes one slot from the max_connections pool; once
-cumulative failures reach the cap, atomic_inc_return() hits the
-threshold on every subsequent accept and every new connection is
-rejected.  The counter is only reset by module reload.
-
-An unauthenticated remote attacker can drive the server toward the
-memory pressure that makes alloc_transport() fail by holding open
-connections with large RFC1002 lengths up to MAX_STREAM_PROT_LEN
-(0x00FFFFFF); natural transient allocation failures on a loaded
-host produce the same drift more slowly.
-
-Mirror the existing rollback pattern in ksmbd_kthread_fn(): on the
-alloc_transport() failure path, decrement active_num_conn gated on
-server_conf.max_connections.
-
-Repro details: with the patch reverted, forced alloc_transport()
-NULL returns leaked counter slots and subsequent connection
-attempts -- including legitimate connects issued after the
-forced-fail window had closed -- were all rejected with "Limit the
-maximum number of connections".  With this patch applied, the same
-connect sequence produces no rejections and the counter cycles
-cleanly between zero and one on every accept.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31711" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31711" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7598 · (May 1, 2026, updated May 4, 2026)</p>
+<h3>A security vulnerability has been detected in libssh2 up to 1</h3>
+<p>A security vulnerability has been detected in libssh2 up to 1.11.1. The impacted element is the function userauth_password of the file src/userauth.c. Such manipulation of the argument username_len/password_len leads to integer overflow. The attack may be launched remotely. The name of the patch is 256d04b60d80bf1190e96b0ad1e91b2174d744b1. A patch should be applied to remediate this issue.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7598" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7598" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31712 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: require minimum ACE size...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: require minimum ACE size in smb_check_perm_dacl()
-
-Both ACE-walk loops in smb_check_perm_dacl() only guard against an
-under-sized remaining buffer, not against an ACE whose declared
-`ace->size` is smaller than the struct it claims to describe:
-
-  if (offsetof(struct smb_ace, access_req) > aces_size)
-      break;
-  ace_size = le16_to_cpu(ace->size);
-  if (ace_size > aces_size)
-      break;
-
-The first check only requires the 4-byte ACE header to be in bounds;
-it does not require access_req (4 bytes at offset 4) to be readable.
-An attacker who has set a crafted DACL on a file they own can declare
-ace->size == 4 with aces_size == 4, pass both checks, and then
-
-  granted |= le32_to_cpu(ace->access_req);               /* upper loop */
-  compare_sids(&sid, &ace->sid);                         /* lower loop */
-
-reads access_req at offset 4 (OOB by up to 4 bytes) and ace->sid at
-offset 8 (OOB by up to CIFS_SID_BASE_SIZE + SID_MAX_SUB_AUTHORITIES
-* 4 bytes).
-
-Tighten both loops to require
-
-  ace_size >= offsetof(struct smb_ace, sid) + CIFS_SID_BASE_SIZE
-
-which is the smallest valid on-wire ACE layout (4-byte header +
-4-byte access_req + 8-byte sid base with zero sub-auths).  Also
-reject ACEs whose sid.num_subauth exceeds SID_MAX_SUB_AUTHORITIES
-before letting compare_sids() dereference sub_auth[] entries.
-
-parse_sec_desc() already enforces an equivalent check (lines 441-448);
-smb_check_perm_dacl() simply grew weaker validation over time.
-
-Reachability: authenticated SMB client with permission to set an ACL
-on a file.  On a subsequent CREATE against that file, the kernel
-walks the stored DACL via smb_check_perm_dacl() and triggers the
-OOB read.  Not pre-auth, and the OOB read is not reflected to the
-attacker, but KASAN reports and kernel state corruption are
-possible.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31712" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31712" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-43824 · (May 2, 2026, updated May 4, 2026)</p>
+<h3>In Argo CD 3</h3>
+<p>In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43824" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43824" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31717 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: validate owner of durabl...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: validate owner of durable handle on reconnect
-
-Currently, ksmbd does not verify if the user attempting to reconnect
-to a durable handle is the same user who originally opened the file.
-This allows any authenticated user to hijack an orphaned durable handle
-by predicting or brute-forcing the persistent ID.
-
-According to MS-SMB2, the server MUST verify that the SecurityContext
-of the reconnect request matches the SecurityContext associated with
-the existing open.
-Add a durable_owner structure to ksmbd_file to store the original opener's
-UID, GID, and account name. and catpure the owner information when a file
-handle becomes orphaned. and implementing ksmbd_vfs_compare_durable_owner()
-to validate the identity of the requester during SMB2_CREATE (DHnC).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31717" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31717" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4882 · (May 2, 2026)</p>
+<h3>The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads d...</h3>
+<p>The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to, and including, 1.6.20. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability can only be exploited if a "Profile Picture" field is added to the form.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4882" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4882" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31718 · (May 1, 2026, updated May 3, 2026)</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: fix use-after-free in __...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ksmbd: fix use-after-free in __ksmbd_close_fd() via durable scavenger
-
-When a durable file handle survives session disconnect (TCP close without
-SMB2_LOGOFF), session_fd_check() sets fp->conn = NULL to preserve the
-handle for later reconnection. However, it did not clean up the byte-range
-locks on fp->lock_list.
-
-Later, when the durable scavenger thread times out and calls
-__ksmbd_close_fd(NULL, fp), the lock cleanup loop did:
-
-    spin_lock(&fp->conn->llist_lock);
-
-This caused a slab use-after-free because fp->conn was NULL and the
-original connection object had already been freed by
-ksmbd_tcp_disconnect().
-
-The root cause is asymmetric cleanup: lock entries (smb_lock->clist) were
-left dangling on the freed conn->lock_list while fp->conn was nulled out.
-
-To fix this issue properly, we need to handle the lifetime of
-smb_lock->clist across three paths:
- - Safely skip clist deletion when list is empty and fp->conn is NULL.
- - Remove the lock from the old connection's lock_list in
-   session_fd_check()
- - Re-add the lock to the new connection's lock_list in
-   ksmbd_reopen_durable_fd().</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31718" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-31718" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-6963 · (May 2, 2026)</p>
+<h3>The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capab...</h3>
+<p>The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the wmg_save_provider_config AJAX action in all versions up to, and including, 1.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update SMTP settings and redirect mail which can be used for privilege escalation by triggering a password reset email and using that to access and administrator's account.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6963" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6963" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -878,7 +608,7 @@ smb_lock->clist across three paths:
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-04 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-04 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
