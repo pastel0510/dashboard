@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">8°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Tampere</div>
-                            <div class="temp">6°C</div>
+                            <div class="temp">8°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Turku</div>
-                            <div class="temp">5°C</div>
+                            <div class="temp">7°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Oulu</div>
-                            <div class="temp">2°C</div>
+                            <div class="temp">6°C</div>
                         </div>
                         <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">4°C</div>
+                            <div class="temp">6°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -302,7 +302,7 @@
                 <div class="card">
                     <h2>Fingerpori <a href="https://www.hs.fi/sarjakuvat/fingerpori/" target="_blank" style="font-size:0.6em;color:#00ff88;">HS.fi</a></h2>
                     <div id="fingerpori" class="lightbox-trigger">
-                        <img src="https://media.infosec.exchange/infosec.exchange/cache/media_attachments/files/116/514/777/920/238/884/original/8a41247d90d9d3ad.jpeg" alt="Fingerpori">
+                        <img src="https://media.infosec.exchange/infosec.exchange/cache/media_attachments/files/116/520/440/345/690/922/original/3dee9016038b91c4.jpeg" alt="Fingerpori">
                     </div>
                 </div>
 
@@ -522,55 +522,7 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-43824 · (May 2, 2026, updated May 4, 2026)</p>
-<h3>In Argo CD 3</h3>
-<p>In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-43824" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43824" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4882 · (May 2, 2026)</p>
-<h3>The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads d...</h3>
-<p>The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to, and including, 1.6.20. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible. Note: The vulnerability can only be exploited if a "Profile Picture" field is added to the form.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4882" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4882" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6963 · (May 2, 2026)</p>
-<h3>The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capab...</h3>
-<p>The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the wmg_save_provider_config AJAX action in all versions up to, and including, 1.8. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update SMTP settings and redirect mail which can be used for privilege escalation by triggering a password reset email and using that to access and administrator's account.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6963" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6963" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-7458 · (May 2, 2026)</p>
-<h3>The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in ...</h3>
-<p>The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.0.46. This is due to the use of a loose PHP comparison operator to validate OTP codes in the "user_verification_form_wrap_process_otpLogin" function. This makes it possible for unauthenticated attackers to log in as any user with a verified email address, such as an administrator, by submitting a "true" OTP value.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7458" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7458" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-7641 · (May 2, 2026)</p>
-<h3>The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation...</h3>
-<p>The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 2.0.8 via the `save_extra_user_profile_fields()` function. This is due to an incomplete blocklist that correctly restricts capability meta keys for the primary site (e.g., `wp_capabilities`, `wp_user_level`) but fails to block the equivalent meta keys for any other subsite in a WordPress Multisite network (e.g., `wp_2_capabilities`, `wp_2_user_level`), allowing these keys to pass the `in_array()` check and be written directly to user meta via `update_user_meta()`. This makes it possible for authenticated attackers, with Subscriber-level access and above, to escalate their privileges to Administrator on any subsite within the Multisite network by submitting a crafted profile update to `/wp-admin/profile.php`. Exploitation requires that an administrator has previously imported a CSV file containing multisite-prefixed capability column headers and has enabled the 'Show fields in profile?' option, which causes those keys to be stored in the `acui_columns` option and exposed as editable fields on the user profile page.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7641" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7641" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5109 · (May 2, 2026)</p>
-<h3>The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up t...</h3>
-<p>The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient validation and output escaping of Product Option field values. The vulnerability exists because the state validation function accepts submitted values where the wp_kses()-sanitized version matches a legitimate option value, but then stores the raw unsanitized value in the database. When administrators view entry details via the Order Summary section, the option_label is output directly without escaping (view-order-summary.php line 32), executing the injected JavaScript. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in entry data that will execute whenever an administrator accesses the entry details page.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5109" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5109" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5110 · (May 2, 2026)</p>
-<h3>The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting ...</h3>
-<p>The Gravity Forms plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping in the SingleProduct field when used inside a Repeater field. When SingleProduct fields are nested within Repeater fields, the validation flow bypasses the state validation mechanism (failed_state_validation()) that would normally prevent tampering with field values. The validate_subfield() method only calls the field's validate() method, which for SingleProduct fields only validates the quantity field and does not check the product name field for tampering. As a result, an attacker can inject arbitrary HTML and JavaScript into the product name field (input .1). This malicious input is then saved to the database without sanitization because sanitize_entry_value() returns raw values when HTML is not expected for the field type. When an administrator views the entry in wp-admin/admin.php?page=gf_entries, the get_value_entry_detail() method outputs the product name without escaping, causing the stored XSS payload to execute in the administrator's browser. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever an administrator accesses an entry containing the malicious payload.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5110" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5110" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5111 · (May 2, 2026)</p>
-<h3>The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up t...</h3>
-<p>The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 2.10.0. This is due to insufficient input validation and output escaping on Hidden Product field values when used inside Repeater fields, where repeater subfields bypass state validation checks and the Hidden Product validate() method only validates the quantity field while ignoring the product name field that is later output without proper escaping in the get_value_entry_detail() method. This makes it possible for unauthenticated attackers to inject arbitrary web scripts through form submissions that will execute whenever an administrator views the entry details.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5111" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5111" target="_blank">OpenCVE</a>
-</div>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p> <div class="bulletin-item"> <p class="cve-id"><cve-id> · <pub-date> · <updated-date-if-different> · <KEV badge if in KEV></p> <h3><title></h3> <p><summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div>
                         </div>
                     </div>
                 </div>
@@ -601,7 +553,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-05 09:46 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-05 10:10 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
