@@ -555,62 +555,55 @@ CRESST II)</small><br>
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog. (KEV status unavailable: CISA feed access blocked from this host)</p>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42364 · May 4, 2026 · updated May 5, 2026</p>
-<h3>GeoVision LPC2011/LPC2211 OS Command Injection</h3>
-<p>An os command injection vulnerability exists in the DdnsSetting.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted DDNS configuration can lead to arbitrary command execution. An attacker can modify a configuration value to trigger this vulnerability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42364" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42364" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42809 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
+<h3>Apache Polaris: Credential Vending with Unvalidated Storage Locations</h3>
+<p>Apache Polaris can issue broad temporary ("vended") storage credentials during staged table creation before the effective table location has been validated or durably reserved. Those temporary credentials are meant to limit the scope of accessible table data and metadata, but this scope limitation becomes attacker-directed because the attacker can choose a reachable target location. In the confirmed variant, if the caller supplies a custom location during stage create and requests credential vending, Apache Polaris uses that location to construct delegated storage credentials immediately. The stage-create path itself neither runs the normal location validation nor the overlap checks before those credentials are issued.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42809" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42809" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42365 · May 4, 2026 · updated May 5, 2026</p>
-<h3>GeoVision LPC2011/LPC2211 Guessable Session Cookie</h3>
-<p>A guessable session cookie vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted series of HTTP requests can lead to an authentication bypass. An attacker can bruteforce session cookies to trigger this vulnerability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42365" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42365" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42810 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
+<h3>Apache Polaris: Wildcard Character Injection in S3 IAM Policies</h3>
+<p>Apache Polaris accepts literal * characters in namespace and table names. When it later builds temporary S3 access policies for delegated table access, those same characters appear to be reused unescaped in S3 IAM resource patterns and s3:prefix conditions. In S3 IAM policy matching, * is treated as a wildcard rather than as ordinary text. That means temporary credentials issued for one crafted table can match the storage path of a different table. Confirmed testing shows credentials returned for crafted tables such as f*.t1, f*.*, *.*, and foo.* could reach other tables' S3 locations, enabling cross-table data access and modification.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42810" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42810" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42370 · May 4, 2026 · updated May 5, 2026</p>
-<h3>GeoVision GV-VMS V20 Stack Overflow</h3>
-<p>A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can make an unauthenticated HTTP request to trigger this vulnerability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42370" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42370" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42811 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
+<h3>Apache Polaris: CEL Injection in GCS Credential Access Boundary</h3>
+<p>Apache Polaris builds Google Cloud Storage downscoped credentials by creating a Credential Access Boundary (CAB) with CEL conditions intended to restrict access to the requested table's storage path. The CEL string is built from the bucket name and the table path derived from namespace and table identifiers. In current code, that path is inserted into the CEL expression without escaping. As a result, a namespace or table identifier containing a single quote and other URI-safe CEL fragments can break out of the intended quoted string and change the meaning of the CEL condition, effectively removing path restrictions and allowing bucket-wide access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42811" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42811" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7734 · May 4, 2026 · updated May 6, 2026</p>
-<h3>GoBGP SRv6 L3 Service Denial of Service</h3>
-<p>A vulnerability has been found in osrg GoBGP up to 4.3.0. This impacts the function SRv6L3ServiceAttribute.DecodeFromBytes of the file pkg/packet/bgp/prefix_sid.go of the component SRv6 L3 Service. Such manipulation of the argument data leads to denial of service. The attack may be performed from remote. Upgrading to version 4.4.0 will fix this issue.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7734" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7734" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-70067 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
+<h3>Assimp: Buffer Overflow in FBX Importer via Unchecked String Copy</h3>
+<p>Buffer Overflow vulnerability exists in Assimp versions up to 6.0.2 in the FBX Importer. The vulnerability occurs in aiMaterial::AddBinaryProperty, where a property key string from a crafted FBX file is copied into a fixed-size heap buffer using strcpy() without runtime length validation. This allows attackers to execute arbitrary code by supplying malicious FBX files with oversized property keys that overflow the buffer.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-70067" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-70067" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7736 · May 4, 2026 · updated May 6, 2026</p>
-<h3>GoBGP MRT Parser Integer Underflow</h3>
-<p>A vulnerability was determined in osrg GoBGP up to 4.3.0. Affected by this vulnerability is the function parseRibEntry of the file pkg/packet/mrt/mrt.go. Executing a manipulation can lead to integer underflow. It is possible to launch the attack remotely. Upgrading to version 4.4.0 addresses this issue.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7736" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7736" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-24118 · May 04, 2026 · updated May 04, 2026 · KEV: No</p>
+<h3>vm2: Sandbox Breakout via Arbitrary Command Execution</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, VM2 suffers from a sandbox breakout vulnerability. This allows attackers to write code which can escape from the VM2 sandbox and execute arbitrary commands on the host system. The vulnerability enables complete compromise of the host running the sandboxed code, bypassing the intended isolation boundaries.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24118" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24118" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7737 · May 4, 2026 · updated May 6, 2026</p>
-<h3>GoBGP BMP Parser Out-of-Bounds Read</h3>
-<p>A vulnerability was identified in osrg GoBGP up to 4.3.0. Affected by this issue is the function BMPPeerUpNotification.ParseBody/BMPStatisticsReport.ParseBody of the file pkg/packet/bmp/bmp.go of the component BMP Parser. The manipulation leads to out-of-bounds read. The attack can be initiated remotely. Upgrading to version 4.4.0 can resolve this issue.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7737" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7737" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-24120 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
+<h3>vm2: Insufficient Patch Bypass Allowing Sandbox Escape</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. Prior to version 3.10.5, the fix for CVE-2023-37466 is insufficient and can be circumvented allowing attackers to write code which can escape from the VM2 sandbox and execute arbitrary commands on the host system. The vulnerability represents a regression or incomplete fix that still permits sandbox escape through the same or similar attack vectors.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24120" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24120" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-47401 · May 4, 2026 · updated May 6, 2026</p>
-<h3>Wireless Channel Configuration Denial of Service</h3>
-<p>Transient DOS when processing target power rate tables during channel configuration.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-47401" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-47401" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2025-47403 · May 4, 2026 · updated May 6, 2026</p>
-<h3>Wireless Fast Transition Denial of Service</h3>
-<p>Transient DOS when processing a malformed Fast Transition response frame with an invalid header structure during wireless roaming.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-47403" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-47403" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-24781 · May 04, 2026 · updated May 04, 2026 · KEV: No</p>
+<h3>vm2: Sandbox Breakout via Inspect Function Vulnerability</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, VM2 suffers from a sandbox breakout vulnerability through the inspect function. This allows attackers to write code which can escape from the VM2 sandbox and execute arbitrary commands on the host system. The vulnerability leverages the inspect functionality to bypass sandbox restrictions and gain arbitrary code execution on the underlying system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24781" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24781" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -643,7 +636,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-07 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-07 15:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
