@@ -538,56 +538,54 @@ CRESST II)</small><br>
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42809 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
-<h3>Apache Polaris: Credential Vending with Unvalidated Storage Locations</h3>
-<p>Apache Polaris can issue broad temporary ("vended") storage credentials during staged table creation before the effective table location has been validated or durably reserved. Those temporary credentials are meant to limit the scope of accessible table data and metadata, but this scope limitation becomes attacker-directed because the attacker can choose a reachable target location. In the confirmed variant, if the caller supplies a custom location during stage create and requests credential vending, Apache Polaris uses that location to construct delegated storage credentials immediately. The stage-create path itself neither runs the normal location validation nor the overlap checks before those credentials are issued.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42809" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42809" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-25863 · (May 4, 2026, updated May 5, 2026)</p>
+<h3>Conditional Fields for Contact Form 7 WordPress plugin through version 2</h3>
+<p>Conditional Fields for Contact Form 7 WordPress plugin through version 2.6.7 contains an uncontrolled resource consumption vulnerability in the Wpcf7cfMailParser class where the hide_hidden_mail_fields_regex_callback() method reads an iteration count directly from user-supplied POST parameters without validation or upper bound enforcement. Unauthenticated attackers can supply an arbitrarily large integer value through the REST API endpoint to cause unbounded loop execution with multiple preg_replace() operations, exhausting server memory and crashing the PHP process.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25863" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25863" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42810 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
-<h3>Apache Polaris: Wildcard Character Injection in S3 IAM Policies</h3>
-<p>Apache Polaris accepts literal * characters in namespace and table names. When it later builds temporary S3 access policies for delegated table access, those same characters appear to be reused unescaped in S3 IAM resource patterns and s3:prefix conditions. In S3 IAM policy matching, * is treated as a wildcard rather than as ordinary text. That means temporary credentials issued for one crafted table can match the storage path of a different table. Confirmed testing shows credentials returned for crafted tables such as f*.t1, f*.*, *.*, and foo.* could reach other tables' S3 locations, enabling cross-table data access and modification.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42810" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42810" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-38751 · (May 4, 2026, updated May 7, 2026)</p>
+<h3>OpenSTAManager version 2</h3>
+<p>OpenSTAManager version 2.10 and earlier contains an arbitrary file upload vulnerability in the module update functionality (modules/aggiornamenti/upload_modules.php)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-38751" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38751" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42811 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
-<h3>Apache Polaris: CEL Injection in GCS Credential Access Boundary</h3>
-<p>Apache Polaris builds Google Cloud Storage downscoped credentials by creating a Credential Access Boundary (CAB) with CEL conditions intended to restrict access to the requested table's storage path. The CEL string is built from the bucket name and the table path derived from namespace and table identifiers. In current code, that path is inserted into the CEL expression without escaping. As a result, a namespace or table identifier containing a single quote and other URI-safe CEL fragments can break out of the intended quoted string and change the meaning of the CEL condition, effectively removing path restrictions and allowing bucket-wide access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42811" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42811" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42151 · (May 4, 2026, updated May 7, 2026)</p>
+<h3>Prometheus is an open-source monitoring system and time series database</h3>
+<p>Prometheus is an open-source monitoring system and time series database. Prior to versions 3.5.3 and 3.11.3, the client_secret field in the Azure AD remote write OAuth configuration (storage/remote/azuread) was typed as string instead of Secret. Prometheus redacts fields of type Secret when serving the configuration via the /-/config HTTP API endpoint. Because the field was a plain string, the Azure OAuth client secret was exposed in plaintext to any user or process with access to that endpoint. This issue has been patched in versions 3.5.3 and 3.11.3.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42151" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42151" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-70067 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
-<h3>Assimp: Buffer Overflow in FBX Importer via Unchecked String Copy</h3>
-<p>Buffer Overflow vulnerability exists in Assimp versions up to 6.0.2 in the FBX Importer. The vulnerability occurs in aiMaterial::AddBinaryProperty, where a property key string from a crafted FBX file is copied into a fixed-size heap buffer using strcpy() without runtime length validation. This allows attackers to execute arbitrary code by supplying malicious FBX files with oversized property keys that overflow the buffer.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-70067" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-70067" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42154 · (May 4, 2026, updated May 7, 2026)</p>
+<h3>Prometheus is an open-source monitoring system and time series database</h3>
+<p>Prometheus is an open-source monitoring system and time series database. Prior to versions 3.5.3 and 3.11.3, the remote read endpoint (/api/v1/read) does not validate the declared decoded length in a snappy-compressed request body before allocating memory. An unauthenticated attacker can send a small payload that causes a huge heap allocation per request. Under concurrent load this can exhaust available memory and crash the Prometheus process. This issue has been patched in versions 3.5.3 and 3.11.3.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42154" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42154" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24118 · May 04, 2026 · updated May 04, 2026 · KEV: No</p>
-<h3>vm2: Sandbox Breakout via Arbitrary Command Execution</h3>
-<p>vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, VM2 suffers from a sandbox breakout vulnerability. This allows attackers to write code which can escape from the VM2 sandbox and execute arbitrary commands on the host system. The vulnerability enables complete compromise of the host running the sandboxed code, bypassing the intended isolation boundaries.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24118" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24118" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42226 · (May 4, 2026, updated May 6, 2026)</p>
+<h3>n8n is an open source workflow automation platform</h3>
+<p>n8n is an open source workflow automation platform. Prior to versions 1.123.33 and 2.17.5, the dynamic-node-parameters endpoints did not verify whether the authenticated caller was authorized to use a supplied credential reference. An authenticated user with access to a shared workflow could supply a foreign credential ID in the request body, causing the backend to decrypt and use that credential in a helper execution path where the caller also controls the destination URL. This allowed the caller to force the backend to authenticate against attacker-controlled infrastructure using a credential belonging to another user, effectively exfiltrating a reusable API key. The issue is not limited to any single node type; any node that resolves credentials dynamically through these endpoints may be affected. This issue has been patched in versions 1.123.33, 2.17.5, and 2.18.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42226" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42226" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24120 · May 04, 2026 · updated May 05, 2026 · KEV: No</p>
-<h3>vm2: Insufficient Patch Bypass Allowing Sandbox Escape</h3>
-<p>vm2 is an open source vm/sandbox for Node.js. Prior to version 3.10.5, the fix for CVE-2023-37466 is insufficient and can be circumvented allowing attackers to write code which can escape from the VM2 sandbox and execute arbitrary commands on the host system. The vulnerability represents a regression or incomplete fix that still permits sandbox escape through the same or similar attack vectors.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24120" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24120" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42229 · (May 4, 2026, updated May 6, 2026)</p>
+<h3>n8n is an open source workflow automation platform</h3>
+<p>n8n is an open source workflow automation platform. Prior to versions 1.123.32, 2.17.4, and 2.18.1, a flaw in the SeaTable node's row:search and row:get operations allowed user-controlled input to be concatenated directly into SQL query strings without escaping or parameterization. In workflows where external user input is passed via expressions into the SeaTable node's search or row retrieval parameters, an attacker could manipulate the constructed query to retrieve unintended rows from the connected SeaTable base, bypassing row-level filtering logic implemented in the workflow. This issue has been patched in versions 1.123.32, 2.17.4, and 2.18.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42229" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42229" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24781 · May 04, 2026 · updated May 04, 2026 · KEV: No</p>
-<h3>vm2: Sandbox Breakout via Inspect Function Vulnerability</h3>
-<p>vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, VM2 suffers from a sandbox breakout vulnerability through the inspect function. This allows attackers to write code which can escape from the VM2 sandbox and execute arbitrary commands on the host system. The vulnerability leverages the inspect functionality to bypass sandbox restrictions and gain arbitrary code execution on the underlying system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24781" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24781" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42231 · (May 4, 2026, updated May 6, 2026)</p>
+<h3>n8n is an open source workflow automation platform</h3>
+<p>n8n is an open source workflow automation platform. Prior to versions 1.123.32, 2.17.4, and 2.18.1, a flaw in the xml2js library used to parse XML request bodies in n8n's webhook handler allowed prototype pollution via a crafted XML payload. An authenticated user with permission to create or modify workflows could exploit this to pollute the JavaScript object prototype and, by chaining the pollution with the Git node's SSH operations, achieve remote code execution on the n8n host. This issue has been patched in versions 1.123.32, 2.17.4, and 2.18.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42231" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42231" target="_blank">OpenCVE</a>
 </div>
-
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-42232 · (May 4, 2026, updated May 6, 2026)</p>
+<h3>n8n is an open source workflow automation platform</h3>
+<p>n8n is an open source workflow automation platform. Prior to versions 1.123.32, 2.17.4, and 2.18.1, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via the XML Node leading to RCE when combined with other nodes exploiting the prototype pollution. This issue has been patched in versions 1.123.32, 2.17.4, and 2.18.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42232" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42232" target="_blank">OpenCVE</a>
+</div>
                         </div>
                     </div>
                 </div>
@@ -618,7 +616,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-07 21:16 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-07 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
