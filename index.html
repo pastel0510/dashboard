@@ -539,53 +539,54 @@ CRESST II)</small><br>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25863 · (May 4, 2026, updated May 5, 2026)</p>
+<p class="cve-id">CVE-2026-25863 · May 4, 2026 · updated May 5, 2026</p>
 <h3>Conditional Fields for Contact Form 7 WordPress plugin through version 2</h3>
 <p>Conditional Fields for Contact Form 7 WordPress plugin through version 2.6.7 contains an uncontrolled resource consumption vulnerability in the Wpcf7cfMailParser class where the hide_hidden_mail_fields_regex_callback() method reads an iteration count directly from user-supplied POST parameters without validation or upper bound enforcement. Unauthenticated attackers can supply an arbitrarily large integer value through the REST API endpoint to cause unbounded loop execution with multiple preg_replace() operations, exhausting server memory and crashing the PHP process.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-25863" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25863" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-38751 · (May 4, 2026, updated May 7, 2026)</p>
+<p class="cve-id">CVE-2026-38751 · May 4, 2026 · updated May 7, 2026</p>
 <h3>OpenSTAManager version 2</h3>
 <p>OpenSTAManager version 2.10 and earlier contains an arbitrary file upload vulnerability in the module update functionality (modules/aggiornamenti/upload_modules.php)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-38751" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38751" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42151 · (May 4, 2026, updated May 7, 2026)</p>
+<p class="cve-id">CVE-2026-42151 · May 4, 2026 · updated May 7, 2026</p>
 <h3>Prometheus is an open-source monitoring system and time series database</h3>
 <p>Prometheus is an open-source monitoring system and time series database. Prior to versions 3.5.3 and 3.11.3, the client_secret field in the Azure AD remote write OAuth configuration (storage/remote/azuread) was typed as string instead of Secret. Prometheus redacts fields of type Secret when serving the configuration via the /-/config HTTP API endpoint. Because the field was a plain string, the Azure OAuth client secret was exposed in plaintext to any user or process with access to that endpoint. This issue has been patched in versions 3.5.3 and 3.11.3.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42151" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42151" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42154 · (May 4, 2026, updated May 7, 2026)</p>
+<p class="cve-id">CVE-2026-42154 · May 4, 2026 · updated May 7, 2026</p>
 <h3>Prometheus is an open-source monitoring system and time series database</h3>
 <p>Prometheus is an open-source monitoring system and time series database. Prior to versions 3.5.3 and 3.11.3, the remote read endpoint (/api/v1/read) does not validate the declared decoded length in a snappy-compressed request body before allocating memory. An unauthenticated attacker can send a small payload that causes a huge heap allocation per request. Under concurrent load this can exhaust available memory and crash the Prometheus process. This issue has been patched in versions 3.5.3 and 3.11.3.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42154" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42154" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42226 · (May 4, 2026, updated May 6, 2026)</p>
+<p class="cve-id">CVE-2026-42226 · May 4, 2026 · updated May 6, 2026</p>
 <h3>n8n is an open source workflow automation platform</h3>
 <p>n8n is an open source workflow automation platform. Prior to versions 1.123.33 and 2.17.5, the dynamic-node-parameters endpoints did not verify whether the authenticated caller was authorized to use a supplied credential reference. An authenticated user with access to a shared workflow could supply a foreign credential ID in the request body, causing the backend to decrypt and use that credential in a helper execution path where the caller also controls the destination URL. This allowed the caller to force the backend to authenticate against attacker-controlled infrastructure using a credential belonging to another user, effectively exfiltrating a reusable API key. The issue is not limited to any single node type; any node that resolves credentials dynamically through these endpoints may be affected. This issue has been patched in versions 1.123.33, 2.17.5, and 2.18.0.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42226" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42226" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42229 · (May 4, 2026, updated May 6, 2026)</p>
+<p class="cve-id">CVE-2026-42229 · May 4, 2026 · updated May 6, 2026</p>
 <h3>n8n is an open source workflow automation platform</h3>
 <p>n8n is an open source workflow automation platform. Prior to versions 1.123.32, 2.17.4, and 2.18.1, a flaw in the SeaTable node's row:search and row:get operations allowed user-controlled input to be concatenated directly into SQL query strings without escaping or parameterization. In workflows where external user input is passed via expressions into the SeaTable node's search or row retrieval parameters, an attacker could manipulate the constructed query to retrieve unintended rows from the connected SeaTable base, bypassing row-level filtering logic implemented in the workflow. This issue has been patched in versions 1.123.32, 2.17.4, and 2.18.1.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42229" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42229" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42231 · (May 4, 2026, updated May 6, 2026)</p>
+<p class="cve-id">CVE-2026-42231 · May 4, 2026 · updated May 6, 2026</p>
 <h3>n8n is an open source workflow automation platform</h3>
 <p>n8n is an open source workflow automation platform. Prior to versions 1.123.32, 2.17.4, and 2.18.1, a flaw in the xml2js library used to parse XML request bodies in n8n's webhook handler allowed prototype pollution via a crafted XML payload. An authenticated user with permission to create or modify workflows could exploit this to pollute the JavaScript object prototype and, by chaining the pollution with the Git node's SSH operations, achieve remote code execution on the n8n host. This issue has been patched in versions 1.123.32, 2.17.4, and 2.18.1.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42231" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42231" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42232 · (May 4, 2026, updated May 6, 2026)</p>
+<p class="cve-id">CVE-2026-42232 · May 4, 2026 · updated May 6, 2026</p>
 <h3>n8n is an open source workflow automation platform</h3>
 <p>n8n is an open source workflow automation platform. Prior to versions 1.123.32, 2.17.4, and 2.18.1, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via the XML Node leading to RCE when combined with other nodes exploiting the prototype pollution. This issue has been patched in versions 1.123.32, 2.17.4, and 2.18.1.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42232" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42232" target="_blank">OpenCVE</a>
 </div>
+
                         </div>
                     </div>
                 </div>
@@ -616,7 +617,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-07 21:46 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-07 21:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
