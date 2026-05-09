@@ -542,128 +542,73 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7332 · May 6, 2026</p>
-<h3>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerab...</h3>
-<p>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'booking_form_page_url' parameter in all versions up to, and including, 5.5.0 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The malicious activity log entry is written to the database even when Stripe is not configured, because the latepoint_order_intent_created action hook fires before the Stripe Connect account ID is validated, meaning a fully functional Stripe integration is not required for exploitation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7332" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7332" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40562 · May 6, 2026 · May 7, 2026</p>
+<h3>Gazelle versions through 0</h3>
+<p>Gazelle versions through 0.49 for Perl allows HTTP Request Smuggling via Improper Header Precedence.
+
+Gazelle incorrectly prioritizes "Content-Length" over "Transfer-Encoding: chunked" when both headers are present in an HTTP request. Per RFC 7230 3.3.3, Transfer-Encoding must take precedence.
+
+An attacker could exploit this to smuggle malicious HTTP requests via a front-end reverse proxy.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40562" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40562" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7841 · May 6, 2026 · May 7, 2026</p>
-<h3>A remote code execution vulnerability
-exists in Notification Settings on GeoVision GV-ASWeb 6</h3>
-<p>A remote code execution vulnerability
-exists in Notification Settings on GeoVision GV-ASWeb 6.2.0. An authenticated
-user with System Setting permissions can execute arbitrary commands on the
-server by sending a crafted HTTP POST request to the ASWebCommon.srf backend
-endpoint to bypass the frontend restrictions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7841" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7841" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5081 · May 6, 2026 · May 7, 2026</p>
+<h3>Apache::Session::Generate::ModUniqueId versions from 1</h3>
+<p>Apache::Session::Generate::ModUniqueId versions from 1.54 through 1.94 for Perl session ids are insecure.
+
+Apache::Session::Generate::ModUniqueId (added in version 1.54) uses the value of the UNIQUE_ID environment variable for the session id. The UNIQUE_ID variable is set by the Apache mod_unique_id plugin, which generates unique ids for the request. The id is based on the IPv4 address, the process id, the epoch time, a 16-bit counter and a thread index, with no obfuscation.
+
+The server IP is often available to the public, and if not available, can be guessed from previous session ids being issued. The process ids may also be guessed from previous session ids. The timestamp is easily guessed (and leaked in the HTTP Date response header).
+
+The purpose of mod_unique_id is to assign a unique id to requests so that events can be correlated in different logs. The id is not designed, nor is it suitable for security purposes.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5081" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5081" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-1719 · May 6, 2026</p>
-<h3>The Gravity Bookings Premium plugin for WordPress is vulnerable to SQL Injection in all versions up ...</h3>
-<p>The Gravity Bookings Premium plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 2.5.9 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-1719" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1719" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-20034 · May 6, 2026</p>
+<h3>A vulnerability in the web-based management interface of Cisco Unity Connection could allow an authe...</h3>
+<p>A vulnerability in the web-based management interface of Cisco Unity Connection could allow an authenticated, remote attacker to execute arbitrary code on an affected device.
+
+This vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by submitting a crafted API request. A successful exploit could allow the attacker to execute arbitrary code as root, possibly resulting in the complete compromise of a targeted device.&nbsp;To exploit this vulnerability, the attacker must have valid user credentials on the affected device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20034" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20034" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40010 · May 6, 2026 · May 7, 2026</p>
-<h3>Missing invocation of Servlet http web request method changeSessionId after session binding can be e...</h3>
-<p>Missing invocation of Servlet http web request method changeSessionId after session binding can be exploited for a session fixation attack in Apache Wicket.
+<p class="cve-id">CVE-2026-20035 · May 6, 2026</p>
+<h3>A vulnerability in the web UI of Cisco Unity Connection Web Inbox could allow an unauthenticated, re...</h3>
+<p>A vulnerability in the web UI of Cisco Unity Connection Web Inbox could allow an unauthenticated, remote attacker to conduct SSRF attacks through an affected device.
 
-This issue affects Apache Wicket: from 8.0.0 through 8.17.0, 9.0.0, from 10.0.0 through 10.8.0.
-
-Users are recommended to upgrade to version 10.9.0, which fixes the issue.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40010" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40010" target="_blank">OpenCVE</a>
+This vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to send arbitrary network requests that are sourced from the affected device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20035" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20035" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-43083 · May 6, 2026 · May 8, 2026</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
+<p class="cve-id">CVE-2026-20167 · May 6, 2026</p>
+<h3>A vulnerability in the web-based management interface of Cisco IoT Field Network Director could allo...</h3>
+<p>A vulnerability in the web-based management interface of Cisco IoT Field Network Director could allow an authenticated, remote attacker with low privileges to cause a DoS condition on a remotely managed router.
 
-net: ioam6: fix OOB and missing...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-net: ioam6: fix OOB and missing lock
-
-When trace->type.bit6 is set:
-
-    if (trace->type.bit6) {
-        ...
-        queue = skb_get_tx_queue(dev, skb);
-        qdisc = rcu_dereference(queue->qdisc);
-
-This code can lead to an out-of-bounds access of the dev->_tx[] array
-when is_input is true. In such a case, the packet is on the RX path and
-skb->queue_mapping contains the RX queue index of the ingress device. If
-the ingress device has more RX queues than the egress device (dev) has
-TX queues, skb_get_queue_mapping(skb) will exceed dev->num_tx_queues.
-Add a check to avoid this situation since skb_get_tx_queue() does not
-clamp the index. This issue has also revealed that per queue visibility
-cannot be accurate and will be replaced later as a new feature.
-
-While at it, add missing lock around qdisc_qstats_qlen_backlog(). The
-function __ioam6_fill_trace_data() is called from both softirq and
-process contexts, hence the use of spin_lock_bh() here.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-43083" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43083" target="_blank">OpenCVE</a>
+This vulnerability is due to improper error handling. An attacker could exploit this vulnerability by submitting crafted input to the web-based management interface. A successful exploit could allow the attacker to request unauthorized files from a remote router, causing the router to reload and resulting in a DoS condition.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20167" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20167" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-43099 · May 6, 2026 · May 8, 2026</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
+<p class="cve-id">CVE-2026-20185 · May 6, 2026</p>
+<h3>A vulnerability in the Simple Network Management Protocol (SNMP) subsystem of&nbsp;Cisco 350 Series ...</h3>
+<p>A vulnerability in the Simple Network Management Protocol (SNMP) subsystem of&nbsp;Cisco 350 Series Managed Switches (SG350) and Cisco 350X Series Stackable Managed Switches (SG350X)&nbsp;firmware could allow an authenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.&nbsp;
 
-ipv4: icmp: fix null-ptr-deref ...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ipv4: icmp: fix null-ptr-deref in icmp_build_probe()
-
-ipv6_stub->ipv6_dev_find() may return ERR_PTR(-EAFNOSUPPORT) when the
-IPv6 stack is not active (CONFIG_IPV6=m and not loaded), and passing
-this error pointer to dev_hold() will cause a kernel crash with
-null-ptr-deref.
-
-Instead, silently discard the request. RFC 8335 does not appear to
-define a specific response for the case where an IPv6 interface
-identifier is syntactically valid but the implementation cannot perform
-the lookup at runtime, and silently dropping the request may safer than
-misreporting "No Such Interface".</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-43099" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43099" target="_blank">OpenCVE</a>
+This vulnerability is due to improper error handling when parsing response data for a specific SNMP request. An attacker could exploit this vulnerability by sending a specific SNMP request to an affected device. A successful exploit could allow the attacker to cause the device to reload unexpectedly, resulting in a DoS condition.
+This vulnerability affects SNMP versions 1, 2c, and 3. To exploit this vulnerability through SNMPv2c or earlier, the attacker must know a valid read-write or read-only SNMP community string for the affected system. To exploit this vulnerability through SNMPv3, the attacker must have valid SNMP user credentials for the affected system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20185" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20185" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-43101 · May 6, 2026 · May 8, 2026</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
+<p class="cve-id">CVE-2026-20188 · May 6, 2026</p>
+<h3>A vulnerability in the connection-handling mechanism of Cisco Crosswork Network Controller (CNC) and...</h3>
+<p>A vulnerability in the connection-handling mechanism of Cisco Crosswork Network Controller (CNC) and Cisco Network Services Orchestrator (NSO) could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected system.
 
-ipv6: ioam: fix potential NULL ...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-ipv6: ioam: fix potential NULL dereferences in __ioam6_fill_trace_data()
-
-We need to check __in6_dev_get() for possible NULL value, as
-suggested by Yiming Qian.
-
-Also add skb_dst_dev_rcu() instead of skb_dst_dev(),
-and two missing READ_ONCE().
-
-Note that @dev can't be NULL.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-43101" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43101" target="_blank">OpenCVE</a>
+This vulnerability is due to an inadequate implementation of rate-limiting on incoming network connections. An attacker could exploit this vulnerability by sending a large number of connection requests to an affected system. A successful exploit could allow the attacker to exhaust available connection resources, causing Cisco CNC and Cisco NSO to become unresponsive and resulting in a DoS condition for legitimate users and dependent services. A manual reboot of the system is required to recover from this condition.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20188" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20188" target="_blank">OpenCVE</a>
 </div>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-43112 · May 6, 2026 · May 8, 2026</p>
-<h3>In the Linux kernel, the following vulnerability has been resolved:
-
-fs/smb/client: fix out-of-bound...</h3>
-<p>In the Linux kernel, the following vulnerability has been resolved:
-
-fs/smb/client: fix out-of-bounds read in cifs_sanitize_prepath
-
-When cifs_sanitize_prepath is called with an empty string or a string
-containing only delimiters (e.g., "/"), the current logic attempts to
-check *(cursor2 - 1) before cursor2 has advanced. This results in an
-out-of-bounds read.
-
-This patch adds an early exit check after stripping prepended
-delimiters. If no path content remains, the function returns NULL.
-
-The bug was identified via manual audit and verified using a
-standalone test case compiled with AddressSanitizer, which
-triggered a SEGV on affected inputs.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-43112" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43112" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-23870 · May 6, 2026 · May 7, 2026</p>
+<h3>A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to s...</h3>
+<p>A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to server function endpoints, this could lead to server crashes, out-of-memory exceptions or excessive CPU usage; affecting the following packages: react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack (versions 19.0.0 through 19.0.5, 19.1.0 through 19.1.6, and 19.2.0 through 19.2.5).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-23870" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-23870" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -696,7 +641,7 @@ triggered a SEGV on affected inputs.</p>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-09 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-09 15:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
