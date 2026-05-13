@@ -534,59 +534,24 @@ CRESST II)</small><br>
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-29204 · May 12, 2026</p>
-<h3>Insufficient ownership checks in `clientarea</h3>
-<p>Insufficient ownership checks in `clientarea.php` allow an authenticated client area user to submit requests using another user’s `addonId` without any ownership validation leading to unauthorized access to the victim's resources and their cPanel acc...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-29204" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-29204" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42869 · May 11, 2026, updated May 12, 2026</p>
-<h3>SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations ...</h3>
-<p>SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs. Prior to 0.1.57, SOCFortress CoPilot ships a hardcoded JWT signing secret as a fallback value in backend/app/auth/utils.py:28 and ships it verbati...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42869" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42869" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42898 · May 12, 2026</p>
-<h3>Improper control of generation of code ('code injection') in Microsoft Dynamics 365 (on-premises)...</h3>
-<p>Improper control of generation of code ('code injection') in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to execute code over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42898" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42898" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42823 · May 12, 2026</p>
-<h3>Improper access control in Azure Logic Apps allows an authorized attacker to elevate privileges o...</h3>
-<p>Improper access control in Azure Logic Apps allows an authorized attacker to elevate privileges over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42823" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42823" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42864 · May 11, 2026</p>
-<h3>FireFighter is an incident management application</h3>
-<p>FireFighter is an incident management application. Prior to 0.0.54, the POST /api/v2/firefighter/raid/jira_bot endpoint (CreateJiraBotView) is reachable without authentication (permission_classes = [permissions.AllowAny]). Its attachments payload is ...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42864" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42864" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-7813 · May 11, 2026</p>
-<h3>Authorization vulnerability in pgAdmin 4 server mode affecting Server Groups, Servers, Shared Ser...</h3>
-<p>Authorization vulnerability in pgAdmin 4 server mode affecting Server Groups, Servers, Shared Servers, Background Processes, and Debugger modules. Multiple endpoints fetched user-owned objects without filtering by the requesting user's identity. An a...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7813" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7813" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-44277 · May 12, 2026</p>
-<h3>A improper access control vulnerability in Fortinet FortiAuthenticator 8</h3>
-<p>A improper access control vulnerability in Fortinet FortiAuthenticator 8.0.2, FortiAuthenticator 8.0.0, FortiAuthenticator 6.6.0 through 6.6.8, FortiAuthenticator 6.5.0 through 6.5.6 may allow attacker to execute unauthorized code or commands via <in...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44277" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44277" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-44183 · May 12, 2026</p>
-<h3>Cleanuparr is a tool for automating the cleanup of unwanted or blocked files in Sonarr, Radarr, a...</h3>
-<p>Cleanuparr is a tool for automating the cleanup of unwanted or blocked files in Sonarr, Radarr, and supported download clients like qBittorrent. Prior to 2.9.10, TrustedNetworkAuthenticationHandler.ResolveClientIp parses the leftmost entry of the X-F...</p>
+<h3>Cleanuparr: X-Forwarded-For leftmost parsing allows remote unauthenticated admin takeover when reverse-proxy mode is enabled</h3>
+<p>TrustedNetworkAuthenticationHandler in Cleanuparr parses the leftmost X-Forwarded-For header entry as the client IP. An attacker can spoof a local IP value in this header to pass trusted-network checks and automatically log in as the administrator without credentials when reverse-proxy mode is enabled. Fixed in 2.9.10.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-44183" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44183" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28941 · May 11, 2026</p>
+<h3>Buffer overflow causing application termination on Apple OSes</h3>
+<p>A buffer overflow due to insufficient bounds checking in Apple iOS, iPadOS, macOS, tvOS, visionOS, and watchOS allows a remote attacker to cause unexpected app termination, resulting in denial-of-service. Fixed in iOS 18.7.9/iPadOS 18.7.9, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, and watchOS 26.5.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28941" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28941" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-43892 · May 12, 2026</p>
+<h3>AntSword jquery.terminal format code injection leading to remote code execution</h3>
+<p>AntSword's noxss() sanitization is incomplete, allowing format code injection through the jquery.terminal interface. A crafted payload enables one-click remote code execution when an authenticated user interacts with the malicious terminal content. Fixed in 2.1.16.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43892" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43892" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -620,7 +585,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-13 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-13 03:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
