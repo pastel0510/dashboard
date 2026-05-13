@@ -533,59 +533,38 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42869 · May 11, 2026 · May 12, 2026</p>
-<h3>SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs</h3>
-<p>SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs. Prior to 0.1.57, SOCFortress CoPilot ships a hardcoded JWT signing secret as a fallback value...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42869" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42869" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31222 · May 12, 2026 · May 12, 2026</p>
+<h3>Snorkel library insecure deserialization via Trainer.load()</h3>
+<p>The snorkel library through v0.10.0 contains an insecure deserialization vulnerability (CWE-502) in the Trainer.load() method. The method loads model checkpoint files using torch.load() without weights_only=True, allowing arbitrary Python object deserialization via Pickle. A remote attacker can supply a malicious model file to execute arbitrary code on the victim system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31222" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31222" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42288 · May 12, 2026</p>
-<h3>ChurchCRM is an open-source church management system</h3>
-<p>ChurchCRM is an open-source church management system. Prior to 7.3.2, The fix for CVE-2026-39337 is incomplete. The pre-authentication remote code execution vulnerability in ChurchCRM's setup wizar...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42288" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42288" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31223 · May 12, 2026 · May 12, 2026</p>
+<h3>Snorkel library insecure deserialization via BaseLabeler.load()</h3>
+<p>The snorkel library through v0.10.0 contains a critical insecure deserialization vulnerability (CWE-502) in the BaseLabeler.load() method. The method loads serialized labeler models using unsafe pickle.load() on user-supplied file paths without validation. A remote attacker can provide a malicious pickle file to execute arbitrary code during deserialization.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31223" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31223" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7813 · May 11, 2026</p>
-<h3>Authorization vulnerability in pgAdmin 4 server mode affecting Server Groups, Servers, Shared Servers, Background Proces...</h3>
-<p>Authorization vulnerability in pgAdmin 4 server mode affecting Server Groups, Servers, Shared Servers, Background Processes, and Debugger modules. Multiple endpoints fetched user-owned objects with...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7813" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7813" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31225 · May 12, 2026 · May 12, 2026</p>
+<h3>superduper project remote code execution via eval() in query parsing</h3>
+<p>The superduper project through v0.10.0 contains a critical remote code execution vulnerability in its query parsing component. The _parse_op_part() function in query.py uses unsafe eval() to dynamically evaluate user-supplied query operands without proper sanitization. Although a restricted global namespace is provided, dangerous built-in functions are not blocked, allowing an attacker to import modules (e.g., os) and execute arbitrary system commands.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31225" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31225" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42864 · May 11, 2026</p>
-<h3>FireFighter is an incident management application</h3>
-<p>FireFighter is an incident management application. Prior to 0.0.54, the POST /api/v2/firefighter/raid/jira_bot endpoint (CreateJiraBotView) is reachable without authentication (permission_classes =...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42864" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42864" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-31242 · May 12, 2026 · May 12, 2026</p>
+<h3>mem0 server unauthenticated database reset via DELETE /memories</h3>
+<p>The mem0 v1.0.0 server lacks authentication and authorization controls for its memory reset functionality accessible via the DELETE /memories endpoint. An unauthenticated attacker can send a DELETE request that triggers a reset operation, executing a DROP TABLE SQL statement and deleting the entire memory database table, causing catastrophic data loss and complete denial of service for all users.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-31242" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31242" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42823 · May 12, 2026</p>
-<h3>Improper access control in Azure Logic Apps allows an authorized attacker to elevate privileges over a network</h3>
-<p>Improper access control in Azure Logic Apps allows an authorized attacker to elevate privileges over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42823" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42823" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42898 · May 12, 2026</p>
-<h3>Improper control of generation of code ('code injection') in Microsoft Dynamics 365 (on-premises) allows an authorized a...</h3>
-<p>Improper control of generation of code ('code injection') in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to execute code over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42898" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42898" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42196 · May 12, 2026</p>
-<h3>django-s3file is a lightweight file upload input for Django and Amazon S3</h3>
-<p>django-s3file is a lightweight file upload input for Django and Amazon S3. Prior to 7.0.2, S3FileMiddleware is vulnerable to relative path traversal attacks, where an attacker can use a modified re...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42196" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42196" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-43948 · May 12, 2026</p>
-<h3>wger is a free, open-source workout and fitness manager</h3>
-<p>wger is a free, open-source workout and fitness manager. Prior to 2.6, the reset_user_password and gym_permissions_user_edit views in wger perform a gym-scope authorization check using Python objec...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-43948" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43948" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8389 · May 12, 2026 · May 12, 2026</p>
+<h3>Firefox JIT miscompilation in JavaScript Engine</h3>
+<p>Firefox contains a JIT miscompilation vulnerability in the JavaScript Engine component. The vulnerability was fixed in Firefox 150.0.3. A remote attacker could potentially exploit this to execute arbitrary code via crafted JavaScript that triggers incorrect JIT compilation, leading to memory corruption.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8389" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-8389" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -619,7 +598,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-13 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-13 21:49 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
