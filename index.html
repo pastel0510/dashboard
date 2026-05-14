@@ -533,38 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31222 · May 12, 2026 · May 12, 2026</p>
-<h3>Snorkel library insecure deserialization via Trainer.load()</h3>
-<p>The snorkel library through v0.10.0 contains an insecure deserialization vulnerability (CWE-502) in the Trainer.load() method. The method loads model checkpoint files using torch.load() without weights_only=True, allowing arbitrary Python object deserialization via Pickle. A remote attacker can supply a malicious model file to execute arbitrary code on the victim system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31222" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31222" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44006 · May 13, 2026</p>
+<h3>vm2 is an open source vm/sandbox for Node</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, It is possible to reach BaseHandler.getPrototypeOf, which can be used to get arbitrary prototypes. This vulnerability is fixed in 3.11.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44006" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44006" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31223 · May 12, 2026 · May 12, 2026</p>
-<h3>Snorkel library insecure deserialization via BaseLabeler.load()</h3>
-<p>The snorkel library through v0.10.0 contains a critical insecure deserialization vulnerability (CWE-502) in the BaseLabeler.load() method. The method loads serialized labeler models using unsafe pickle.load() on user-supplied file paths without validation. A remote attacker can provide a malicious pickle file to execute arbitrary code during deserialization.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31223" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31223" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44005 · May 13, 2026</p>
+<h3>vm2 is an open source vm/sandbox for Node</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. From 3.9.6 to 3.10.5, vm2's bridge exposes mutable proxies for real host-realm intrinsic prototypes and then forwards sandbox writes into the underlying host objects with otherReflectSet() and otherReflec...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44005" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44005" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31225 · May 12, 2026 · May 12, 2026</p>
-<h3>superduper project remote code execution via eval() in query parsing</h3>
-<p>The superduper project through v0.10.0 contains a critical remote code execution vulnerability in its query parsing component. The _parse_op_part() function in query.py uses unsafe eval() to dynamically evaluate user-supplied query operands without proper sanitization. Although a restricted global namespace is provided, dangerous built-in functions are not blocked, allowing an attacker to import modules (e.g., os) and execute arbitrary system commands.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31225" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31225" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-43997 · May 13, 2026</p>
+<h3>vm2 is an open source vm/sandbox for Node</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, it is possible to obtain the host Object. There are various ways to use the host Object, to escape the sandbox, one example would be using HostObject.getOwnPropertySymbols to obtain Symbo...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43997" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43997" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-31242 · May 12, 2026 · May 12, 2026</p>
-<h3>mem0 server unauthenticated database reset via DELETE /memories</h3>
-<p>The mem0 v1.0.0 server lacks authentication and authorization controls for its memory reset functionality accessible via the DELETE /memories endpoint. An unauthenticated attacker can send a DELETE request that triggers a reset operation, executing a DROP TABLE SQL statement and deleting the entire memory database table, causing catastrophic data loss and complete denial of service for all users.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-31242" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-31242" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42288 · May 12, 2026, updated May 13, 2026</p>
+<h3>ChurchCRM is an open-source church management system</h3>
+<p>ChurchCRM is an open-source church management system. Prior to 7.3.2, The fix for CVE-2026-39337 is incomplete. The pre-authentication remote code execution vulnerability in ChurchCRM's setup wizard via unsanitized DB_PASSWORD remains fully exploitab...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42288" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42288" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8389 · May 12, 2026 · May 12, 2026</p>
-<h3>Firefox JIT miscompilation in JavaScript Engine</h3>
-<p>Firefox contains a JIT miscompilation vulnerability in the JavaScript Engine component. The vulnerability was fixed in Firefox 150.0.3. A remote attacker could potentially exploit this to execute arbitrary code via crafted JavaScript that triggers incorrect JIT compilation, leading to memory corruption.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8389" target="_blank">GCVE</a> · <a href="https://app.opencve.io/cve/CVE-2026-8389" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42869 · May 11, 2026, updated May 13, 2026</p>
+<h3>SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations ...</h3>
+<p>SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs. Prior to 0.1.57, SOCFortress CoPilot ships a hardcoded JWT signing secret as a fallback value in backend/app/auth/utils.py:28 and ships it verbati...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42869" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42869" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-44643 · May 11, 2026, updated May 13, 2026</p>
+<h3>Angular Expressions provides expressions for the Angular</h3>
+<p>Angular Expressions provides expressions for the Angular.JS web framework as a standalone module. Prior to 1.5.2, an attacker can write a malicious expression using filters that escapes the sandbox to execute arbitrary code on the system. This vulner...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44643" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44643" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-44442 · May 13, 2026</p>
+<h3>ERPNext is a free and open source Enterprise Resource Planning tool</h3>
+<p>ERPNext is a free and open source Enterprise Resource Planning tool. Prior to 16.9.1, certain endpoints failed to enforce proper authorization checks, allowing users to modify data beyond their permitted role. This vulnerability is fixed in 16.9.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44442" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44442" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-43999 · May 13, 2026</p>
+<h3>vm2 is an open source vm/sandbox for Node</h3>
+<p>vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, NodeVM's builtin allowlist can be bypassed when the module builtin is allowed (including via the '*' wildcard). The module builtin exposes Node's Module._load(), which loads any module by...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43999" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43999" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -598,7 +619,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-14 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-14 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
