@@ -547,59 +547,24 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42031 · May 13, 2026 · May 15, 2026</p>
-<h3>CKAN (GHSA-h7j7-3rx6-xvcg) — SQL Injection via datastore_search_sql</h3>
-<p>CKAN is an open-source DMS for powering data hubs and data portals. Prior to 2.10.10 and 2.11.5, a vulnerability in <code>datastore_search_sql</code> allowed attackers to inject SQL in order to gain access to private resources and PostgreSQL system information. This vulnerability is fixed in 2.10.10 and 2.11.5. NVD CVSS v3.1: 9.8 (CRITICAL).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42031" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42031" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://nvd.nist.gov/cve/CVE-2026-6073" target="_blank" title="View NVD">CVE-2026-6073</a> · May 14, 2026</p>
+<h3>GitLab EE: Stored Cross-Site Scripting in Merge Request View</h3>
+<p>GitLab EE versions before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 contain a stored cross-site scripting (XSS) flaw. A maliciously crafted merge request is stored on the server and processed without proper output encoding. When a user who can view the merge request subsequently loads the page, the payload executes in the user's browser with the victim's session context. Because the payload is stored server-side, every user who views the affected merge request is a potential target. Exploitation does not require any cookies or special headers beyond the ability to read the affected page. The flaw is fixed in 18.9.7, 18.10.6, and 18.11.3. The vulnerability was assigned by GitLab (GitLab Issue #13) on 2026-05-14 and first seen in NVD on 2026-05-14.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-6073" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6073" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8201 · May 13, 2026</p>
-<h3>MongoDB Server — Use-After-Free in FLE Query Analysis (mongocryptd / crypt_shared)</h3>
-<p>A use-after-free vulnerability exists in MongoDB's Field-Level Encryption (FLE) query analysis component, affecting client-side uses of <code>mongocryptd</code> and <code>crypt_shared</code>. Triggering this vulnerability requires control over the structure of a client's FLE-related query. This issue impacts mongocryptd v7.0 versions prior to 7.0.34, v8.0 versions prior to 8.0.23, v8.2 versions prior to 8.2.9, and v8.3 versions prior to 8.3.2. NVD CVSS v3.1: 8.8 (HIGH).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8201" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8201" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://nvd.nist.gov/cve/CVE-2026-7377" target="_blank" title="View NVD">CVE-2026-7377</a> · May 14, 2026</p>
+<h3>GitLab EE: Stored Cross-Site Scripting in Customizable Analytics Dashboards</h3>
+<p>GitLab EE versions before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 are affected by a stored cross-site scripting vulnerability in customizable analytics dashboards. Dashboard builders who introduce or edit widgets without sanitizing embedded values can plant a script payload into the dashboard definition. When another authenticated user subsequently views that dashboard, the stored payload is rendered into the page without proper output encoding and executes in the victim's browser session. The attack surface is an authenticated user who has the ability to create dashboards and controls the input that is later reflected to other users. Exploitation requires an authenticated user who can create or edit a dashboard; once the malicious dashboard is published, every viewer is an automatic target. The flaw was reported by GitLab on 2026-05-14 and assigned that same day. It remains confirmed not in the CISA KEV catalog.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7377" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7377" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-41225 · May 13, 2026</p>
-<h3>F5 BIG-IP / iControl REST — Authenticated Arbitrary Command Execution (Appliance Mode)</h3>
-<p>A vulnerability exists in iControl REST where a highly privileged authenticated attacker with at least the Manager role can create configuration objects that allow running arbitrary commands. A successful exploit can allow the attacker to run arbitrary commands on the BIG-IP operating system. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated. NVD CVSS v3.1: 9.1 (CRITICAL).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-41225" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41225" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-39455 · May 13, 2026</p>
-<h3>F5 BIG-IP — LDAP Authentication LDAP Probe HTTPd File Descriptor Exhaustion</h3>
-<p>When the BIG-IP Configuration utility is configured to use Lightweight Directory Access Protocol (LDAP) authentication, undisclosed traffic can cause the <code>httpd</code> process to exhaust the available file descriptors. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated. NVD CVSS v3.1: 7.5 (HIGH).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39455" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39455" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-39458 · May 13, 2026</p>
-<h3>F5 BIG-IP — DNS Cache Virtual Server TMM Crash via Undisclosed Traffic</h3>
-<p>When a BIG-IP DNS profile enabled with DNS cache is configured on a virtual server, undisclosed traffic can cause the Traffic Management Microkernel (TMM) to terminate. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated. NVD CVSS v3.1: 7.5 (HIGH).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-39458" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-39458" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42924 · May 13, 2026</p>
-<h3>F5 BIG-IP / iControl SOAP — Authenticated SNMP Privilege Escalation via Configuration Objects</h3>
-<p>An authenticated attacker with the Resource Administrator or Administrator role can create SNMP configuration objects through iControl SOAP, resulting in privilege escalation. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated. NVD CVSS v3.1: 8.7 (HIGH).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42924" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42924" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-42463 · May 13, 2026 · May 15, 2026</p>
-<h3>SQLBot — Cross-Workspace Access Control Bypass via Datasource Endpoints</h3>
-<p>SQLBot is an intelligent Text-to-SQL system based on large language models and RAG. Prior to 1.8.0, SQLBot contains a Cross-Workspace IDOR (Insecure Direct Object Reference) and Authorization Bypass vulnerability in the <code>/api/v1/datasource/exportDsSchema</code> and <code>/api/v1/datasource/uploadDsSchema</code> endpoints, affecting all users of those endpoints. NVD CVSS v3.1: 8.1 (HIGH).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-42463" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42463" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-44293 · May 13, 2026</p>
-<h3>protobufjs — Code Injection via Unsafe Expression in Generated toObject Conversion Function</h3>
-<p>protobufjs compiles protobuf definitions into JavaScript (JS) functions. Prior to 7.5.6 and 8.0.2, protobufjs generated JavaScript for <code>toObject</code> conversion could include an unsafe expression derived from a schema-controlled bytes field default value. A crafted descriptor with a non-string default value for a bytes field could cause attacker-controlled code to be emitted into the generated conversion function. This vulnerability is fixed in 7.5.6 and 8.0.2. NVD CVSS v3.1: 8.8 (HIGH).</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44293" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44293" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://nvd.nist.gov/cve/CVE-2026-8657" target="_blank" title="View NVD">CVE-2026-8657</a> · May 16, 2026</p>
+<h3>jsondiffpatch: Prototype Pollution via Unfiltered Delta or JSON Patch Input</h3>
+<p>Versions of the package jsondiffpatch before 0.7.6 are vulnerable to prototype pollution via the jsondiffpatch.patch() and jsondiffpatch/formatters/jsonpatch.patch() APIs. These functions accept a delta or JSON Patch document from a caller and use attacker-controlled property names and path segments to traverse and mutate arbitrary object trees. Because the traversal does not guard against special properties such as __proto__ or constructor.prototype, an attacker who controls the patch document can write to Object.prototype, causing every subsequently constructed JavaScript object to inherit the poisoned property. The consequence is reliable remote code equivalent: a payload can modify prototypes used by downstream code — for example, JSON.parse — which an attacker can chain into code execution. Any application accepting or applying JSON Patch or jsondiffpatch-style diffs from an untrusted input vector is at risk. The vulnerability was reported to Snyk, who reserved CVE-2026-8657 on 2026-05-15 and published it on 2026-05-16. Scores shown are maximum CVSS v4.0 across NVD versions.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8657" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8657" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -633,7 +598,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-16 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-16 15:51 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
