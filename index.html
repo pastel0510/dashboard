@@ -532,59 +532,24 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8181 · May 14, 2026 · May 14, 2026</p>
-<h3>Burst Statistics WordPress Plugin — Authentication Bypass (CVSS 9.8 Critical)</h3>
-<p>The Burst Statistics – Privacy-Friendly WordPress Analytics plugin is vulnerable to Authentication Bypass in versions 3.4.0 to 3.4.1.1. Due to incorrect return-value handling in the <code>is_mainwp_authenticated()</code> function when validating application passwords from the Authorization header, unauthenticated attackers with knowledge of an administrator username can impersonate that administrator by supplying any random Basic Authentication password, achieving full privilege escalation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8181" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8181" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42897 · May 14, 2026 · updated May 15, 2026 · <span class="kev">[KEV]</span></p>
+<h3>Microsoft Exchange Server — Cross-Site Scripting (XSS) Enabling Email Spoofing</h3>
+<p>An improper input neutralization flaw during web page generation in Microsoft Exchange Server allows an unauthenticated attacker to perform spoofing over a network. The vulnerability is trivially exploitable: no authentication or user interaction is required, and the attack can be launched from any network location.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42897" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42897" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6271 · May 14, 2026 · May 14, 2026</p>
-<h3>Career Section WordPress Plugin — Arbitrary File Upload / RCE (CVSS 9.8 Critical)</h3>
-<p>The Career Section plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to and including 1.7 via the CV upload handler due to missing file type validation. Unauthenticated attackers can upload files that may be executable, enabling direct remote code execution on the host system.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6271" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6271" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-46364 · May 15, 2026</p>
+<h3>phpMyFAQ — Unauthenticated SQL Injection via User-Agent Header in BuiltinCaptcha</h3>
+<p>phpMyFAQ before version 4.1.2 contains an unauthenticated SQL injection vulnerability in the BuiltinCaptcha::garbageCollector() and BuiltinCaptcha::saveCaptcha() methods. Both methods interpolate the unsanitized HTTP User-Agent header and client IP address directly into DELETE and INSERT SQL queries with no escaping. The flaw is reachable through the unauthenticated public GET endpoint /api/captcha on every request, allowing any remote attacker to send a crafted User-Agent header and perform a time-based blind SQL injection to extract all database contents, including user credentials, admin tokens, and SMTP configuration.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-46364" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46364" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-6512 · May 14, 2026 · May 14, 2026</p>
-<h3>InfusedWoo Pro WordPress Plugin — Authorization Bypass / Arbitrary Post Deletion (CVSS 9.1 Critical)</h3>
-<p>The InfusedWoo Pro plugin for WordPress is vulnerable to Authorization Bypass in all versions up to and including 5.1.2. The plugin fails to verify user authorization before performing actions, allowing unauthenticated attackers to permanently delete arbitrary posts, pages, products, or orders, mass-delete all comments on any post, and change any post's status over the network without authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6512" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6512" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-4094 · May 15, 2026 · May 15, 2026</p>
-<h3>FOX – Currency Switcher Professional for WooCommerce — Unauthorized Data Loss / CSRF (CVSS 8.1 High)</h3>
-<p>The FOX – Currency Switcher Professional for WooCommerce plugin is vulnerable to unauthorized data loss due to a missing capability check on the <code>admin_head</code> function in all versions up to and including 1.4.5. Authenticated attackers with Contributor-level access (and above) can delete the entire multi-currency configuration by visiting any wp-admin page with the <code>woocs_reset</code> parameter appended. Because no nonce is verified, the flaw is also exploitable via Cross-Site Request Forgery against any administrator.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-4094" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4094" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6228 · May 15, 2026 · May 15, 2026</p>
-<h3>Frontend Admin by DynamiApps WordPress Plugin — Privilege Escalation (CVSS 8.8 High)</h3>
-<p>The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 3.28.36. Due to insufficient authorization checks in the role field update mechanism combined with overly permissive capabilities for the <code>admin_form</code> post type, unauthenticated attackers can first register as editors via a public new_user form, then create an edit_user form with administrator in the allowed roles, and finally escalate to full administrator privileges.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6228" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5395 · May 14, 2026 · May 14, 2026</p>
-<h3>Fluent Forms WordPress Plugin — Insecure Direct Object Reference / Data Exfiltration (CVSS 8.2 High)</h3>
-<p>The Fluent Forms – Customizable Contact Forms, Survey, Quiz & Conversational Form Builder plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to and including 6.2.0 via the <code>exportEntries</code> function. Missing validation on a user-controlled "table" key allows authenticated attackers with Fluent Forms manager-level access to bypass form-level access restrictions, export data from arbitrary database tables, and enumerate database table names via error message disclosure.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5395" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5395" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-6403 · May 15, 2026 · May 15, 2026</p>
-<h3>Quick Playground WordPress Plugin — Path Traversal / Arbitrary File Read (CVSS 7.5 High)</h3>
-<p>The Quick Playground plugin for WordPress is vulnerable to Path Traversal in versions up to and including 1.3.3. Insufficient path validation in the <code>qckply_zip_theme()</code> function allows a user-controlled "stylesheet" parameter to be appended to the theme root directory path without sanitizing directory traversal sequences. Unauthenticated attackers can trigger creation of a ZIP archive containing arbitrary files from the server's filesystem — including <code>wp-config</code>.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6403" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6403" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-8751 · May 17, 2026 · May 17, 2026</p>
-<h3>h2oai h2o-3 — JAR Handler Unsafe Deserialization (CVSS 7.3 High)</h3>
-<p>A security flaw has been discovered in h2oai h2o-3 up to version 7402 affecting the <code>importBinaryModel</code> function in <code>h2o-core/src/main/java/hex/Model.java</code> of the JAR Handler component. Manipulation results in unsafe deserialization, enabling a network-based remote attack without authentication. The exploit has been publicly released as proof-of-concept and the vendor did not respond to prior disclosure.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8751" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8751" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2021-47952 · May 16, 2026</p>
+<h3>python-jsonpickle — Remote Code Execution via py/repr Deserialization</h3>
+<p>python-jsonpickle version 2.0.0 allows remote code execution through the deserialization of malicious JSON payloads containing py/repr directives. During deserialization, the eval function is invoked on attacker-supplied input, enabling an unauthenticated remote attacker to execute arbitrary Python commands and achieve full system compromise.</p>
+<a href="https://db.gcve.eu/cve/CVE-2021-47952" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2021-47952" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -618,7 +583,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-17 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-17 21:57 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
