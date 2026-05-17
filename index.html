@@ -540,59 +540,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">2026-8181 · May 14, 2026 · [KEV]</p>
-<h3>WordPress Burst Statistics Plugin — Authentication Bypass</h3>
-<p>The Burst Statistics – Privacy-Friendly WordPress Analytics (Google Analytics Alternative) plugin for WordPress is vulnerable to Authentication Bypass in versions 3.4.0 to 3.4.1.1. Incorrect return-value handling in the is_mainwp_authenticated() function when validating application passwords from the Authorization header allows unauthenticated attackers, with knowledge of an administrator username, to impersonate that administrator for the duration of the request by supplying any random Basic Authentication password.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8181" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8181" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-20182" target="_blank">CVE-2026-20182</a> · May 14, 2026 · updated May 15, 2026 · <span class="kev-badge">[KEV]</span></p>
+<h3>Cisco Catalyst SD-WAN Controller Authentication Bypass</h3>
+<p>A vulnerability in the peering authentication of Cisco Catalyst SD-WAN Controller (formerly SD-Smart) and Cisco Catalyst SD-WAN Manager (formerly SD-WAN vManage) allows an unauthenticated remote attacker to bypass authentication via the control connection handshaking mechanism. Successful exploitation may result in full control of the SD-WAN control plane. Fixed in the latest May 2026 advisory.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20182" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20182" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">2026-6271 · May 14, 2026 · [KEV]</p>
-<h3>WordPress Career Section Plugin — Arbitrary File Upload</h3>
-<p>The Career Section plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to and including 1.7 via the CV upload handler due to missing file type validation. This allows unauthenticated attackers to upload potentially executable files, making remote code execution possible on the vulnerable WordPress installation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-6271" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-6271" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-44523" target="_blank">CVE-2026-44523</a> · May 14, 2026 · updated May 15, 2026</p>
+<h3>Note Mark JWT Secret Weakness — Full Account Takeover via Token Forgery</h3>
+<p>Note Mark is an open-source note-taking application. Prior to 0.19.4, no minimum length or entropy is enforced on the JWT_SECRET configuration value. The application accepts any base64-decodable secret regardless of size, including secrets as short as 1 byte, allowing an attacker to forge valid JWT tokens and take over any user account. Fixed in Note Mark 0.19.4.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44523" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44523" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">2026-5229 · May 15, 2026 · [KEV]</p>
-<h3>WordPress Form Notify Plugin — Authentication Bypass via LINE OAuth</h3>
-<p>The Form Notify plugin for WordPress is vulnerable to Authentication Bypass in versions up to and including 1.1.10. The plugin trusts user-controlled cookie data to authenticate after a LINE OAuth login. When LINE does not provide an email address, the plugin falls back to reading the form_notify_line_email cookie without verifying the LINE account is associated with that address, allowing unauthenticated attackers to gain access to any user account, including administrators.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5229" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5229" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">2026-46364 · May 15, 2026 · [KEV]</p>
-<h3>phpMyFAQ — Unauthenticated SQL Injection in BuiltinCaptcha</h3>
-<p>phpMyFAQ before 4.1.2 contains an unauthenticated SQL injection vulnerability in BuiltinCaptcha::garbageCollector() and BuiltinCaptcha::saveCaptcha() methods, which interpolate unsanitized User-Agent headers into DELETE and INSERT queries. Unauthenticated attackers can exploit the public GET /api/captcha endpoint with crafted User-Agent headers to perform time-based blind SQL injection, extracting user credentials, admin tokens, and SMTP credentials from the database.</p>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-46364" target="_blank">CVE-2026-46364</a> · May 15, 2026</p>
+<h3>phpMyFAQ — SQL Injection via User-Agent Header in BuiltinCaptcha</h3>
+<p>phpMyFAQ before 4.1.2 contains an unauthenticated SQL injection vulnerability in the BuiltinCaptcha::garbageCollector() and BuiltinCaptcha::saveCaptcha() methods, which interpolate unsanitized User-Agent headers into DELETE and INSERT SQL queries. Unauthenticated attackers can exploit the public GET /api/captcha endpoint by crafting malicious User-Agent headers to perform time-based blind SQL injection, extracting user credentials, admin tokens, and SMTP credentials from the database.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-46364" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46364" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">2021-47965 · May 15, 2026 · [KEV]</p>
-<h3>WordPress WP Super Edit Plugin — Unrestricted File Upload</h3>
-<p>WordPress Plugin WP Super Edit 2.5.4 and earlier contains an unrestricted file upload vulnerability in the FCKeditor component, allowing attackers to upload dangerous file types without validation via the filemanager upload endpoint. Successful exploitation yields arbitrary file upload and remote code execution, leading to complete system compromise on affected WordPress sites.</p>
-<a href="https://db.gcve.eu/cve/CVE-2021-47965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2021-47965" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-5229" target="_blank">CVE-2026-5229</a> · May 15, 2026</p>
+<h3>WordPress Form Notify Plugin — Authentication Bypass via LINE OAuth Callback</h3>
+<p>The Form Notify plugin for WordPress (versions up to and including 1.1.10) is vulnerable to Authentication Bypass due to trusting user-controlled cookie data to determine which WordPress account to authenticate after a LINE OAuth login. When LINE does not provide an email address, the plugin falls back to reading the form_notify_line_email cookie value without verifying that the LINE account is associated with that email address, enabling attackers to impersonate any user.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5229" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5229" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">2021-47952 · May 16, 2026 · [KEV]</p>
-<h3>Python jsonpickle 2.0.0 — Remote Code Execution via Unsafe Deserialization</h3>
-<p>python jsonpickle 2.0.0 contains a remote code execution vulnerability allowing attackers to execute arbitrary Python commands by deserializing malicious JSON payloads containing py/repr objects. During deserialization, crafted JSON strings with py/repr directives invoke Python's eval function, enabling execution of system commands and arbitrary code on the server.</p>
-<a href="https://db.gcve.eu/cve/CVE-2021-47952" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2021-47952" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-8580" target="_blank">CVE-2026-8580</a> · May 14, 2026</p>
+<h3>Google Chrome — Use-After-Free in Mojo Enabling Sandbox Escape (CVSS 9.6)</h3>
+<p>A use-after-free vulnerability in the Mojo IPC subsystem of Google Chrome prior to 148.0.7778.168 allows a remote attacker to potentially perform a sandbox escape via a crafted HTML page. Chromium rated the exploitability as Medium severity. This vulnerability directly impacts Chrome's sandbox isolation model and could enable arbitrary code execution at the OS level.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8580" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8580" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">2020-37239 · May 16, 2026 · [KEV]</p>
-<h3>libbabl 0.1.62 — Broken Double Free Memory Safety Bypass</h3>
-<p>libbabl 0.1.62 contains a broken double free detection vulnerability allowing attackers to bypass memory safety checks by exploiting signature overwriting in freed chunks. libc's malloc metadata overwrites babl's signature field upon freeing, allowing babl_free() to be called twice on the same pointer without triggering detection, enabling memory corruption and potential code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2020-37239" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2020-37239" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-8511" target="_blank">CVE-2026-8511</a> · May 14, 2026</p>
+<h3>Google Chrome — Use-After-Free in UI Enabling Sandbox Escape (CVSS 9.6)</h3>
+<p>A use-after-free vulnerability in the UI subsystem of Google Chrome prior to 148.0.7778.168 allows a remote attacker to potentially perform a sandbox escape via a crafted HTML page. Chromium rated this as Critical severity. The affected component is Chrome's renderer UI layer, which, if exploited, could allow arbitrary host-level code execution by escaping the sandbox.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8511" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8511" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">2020-37228 · May 16, 2026 · [KEV]</p>
-<h3>iDS6 DSSPro Digital Signage System — CAPTCHA Bypass and Account Brute-Force</h3>
-<p>iDS6 DSSPro Digital Signage System 6.2 contains a CAPTCHA security bypass vulnerability allowing attackers to bypass authentication by requesting the autoLoginVerifyCode object. Attackers can retrieve valid CAPTCHA codes from the login endpoint and use them to perform brute-force attacks against user accounts, leading to unauthorized access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2020-37228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2020-37228" target="_blank">OpenCVE</a>
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-44482" target="_blank">CVE-2026-44482</a> · May 14, 2026</p>
+<h3>soundcloud-rpc — Remote Code Execution via XSS in Track Title (Electron)</h3>
+<p>soundcloud-rpc is a SoundCloud client with Discord Rich Presence, Dark Mode, Last.fm and AdBlock support, built on Electron. Prior to 0.1.8, a track title containing an HTML payload is executed locally within the Electron app. Because track metadata is fetched from SoundCloud and trusted, an attacker who controls SoundCloud track metadata can inject a payload into the preload API (window.soundcloudAPI.sendTrackUpdate), forwarded through IPC, leading to arbitrary command execution on the user's machine.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44482" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44482" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id"><a href="https://db.gcve.eu/cve/CVE-2026-44212" target="_blank">CVE-2026-44212</a> · May 14, 2026 · updated May 15, 2026</p>
+<h3>PrestaShop — Stored XSS Executable in Customer Service Back-Office View</h3>
+<p>PrestaShop is an open source e-commerce platform. Prior to 8.2.6 and 9.1.1, there is a stored Cross-Site Scripting (XSS) vulnerability in the back-office Customer Service view. An unauthenticated attacker can submit the public Contact Us form with a malicious email address; the payload is stored in the database and executed when a back-office employee opens the affected customer thread, enabling session hijacking and full back-office takeover. Fixed in versions 8.2.6 and 9.1.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44212" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44212" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -626,7 +626,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-17 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-17 03:56 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
