@@ -481,40 +481,45 @@
                     <div class="card">
                         <h2>Security</h2>
                         <div id="security-bulletin">
-                            📅 May 17, 2026 • Title: New Windows 'MiniPlasma' zero-day exploit gives SYSTEM access, PoC released
-Summary: Unpatched Windows driver flaw grants SYSTEM privileges.
-Link: https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/
-TLDR: Windows Cloud Filter cldflt.sys kernel bypass still unpatched
-
-📅 May 17, 2026 • Title: NGINX CVE-2026-42945 Exploited in the Wild, Causing Worker Crashes and Possible RCE
-Summary: Heap buffer overflow in NGINX rewrite module under active attack.
+                            📅 2026-05-17 • Title: NGINX CVE-2026-42945 Actively Exploited in the Wild
+Summary: Heap overflow let attackers crash or run code
 Link: https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html
-TLDR: NGINX ngx_http_rewrite_module heap overflow RCE in the wild
+TLDR: NGINX rewrite module heap overflow, CVSS 9.2, RCE via crafted HTTP requests
 
-📅 May 17, 2026 • Title: Tycoon2FA hijacks Microsoft 365 accounts via device-code phishing
-Summary: Phishing kit adds device-code attack to hijack M365 accounts.
+📅 2026-05-17 • Title: Windows MiniPlasma Zero-Day With SYSTEM Access, PoC Released
+Summary: Researchers confirm elevation on fully patched Windows
+Link: https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/
+TLDR: New Windows privilege escalation zero-day grants SYSTEM access without a patch
+
+📅 2026-05-17 • Title: Tycoon2FA Hijacks Microsoft 365 Accounts via Device-Code Phishing
+Summary: MFA bypass kit weaponised against corporate Microsoft 365
 Link: https://www.bleepingcomputer.com/news/security/tycoon2fa-hijacks-microsoft-365-accounts-via-device-code-phishing/
+TLDR: Tycoon2FA kit adds device-code phishing to hijack Microsoft 365 accounts
 
-📅 May 15, 2026 • Title: CVE-2026-20182: Critical Cisco SD-WAN Auth Bypass Under Active Exploitation
-Summary: Unauthenticated Cisco SD-WAN auth bypass exploited in the wild.
-Link: https://darkwebinformer.com/cve-2026-20182-critical-cisco-sd-wan-auth-bypass-under-active-exploitation/
-TLDR: Cisco SD-WAN Controller auth bypass CVE-2026-20182 in the wild
+📅 2026-05-14 • Title: Cisco Catalyst SD-WAN Auth Bypass Actively Exploited
+Summary: Max-severity network flaw under active exploitation
+Link: https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html
+TLDR: CVE-2026-20182 CVSS 10.0 auth bypass lets unauthenticated attacker gain SD-WAN admin
 
-📅 May 15, 2026 • Title: Turla Turns Kazuar Backdoor Into Modular P2P Botnet for Persistent Access
-Summary: Russian Turla gang upgrades Kazuar to stealthy P2P botnet.
+📅 2026-05-15 • Title: node-ipc NPM Package Compromised to Steal Credentials
+Summary: Malicious versions siphon developer and cloud secrets
+Link: https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/
+TLDR: DevTools npm package node-ipc hijacked, credential-stealing malware in 3 versions
+
+📅 2026-05-15 • Title: Funnel Builder WordPress Plugin Bug Exploited to Steal Credit Cards
+Summary: Active campaign injects JS skimmers into checkout pages
+Link: https://www.bleepingcomputer.com/news/security/funnel-builder-wordpress-plugin-bug-exploited-to-steal-credit-cards/
+TLDR: WooCommerce payment skimmer injected via Funnel Builder plugin exploit
+
+📅 2026-05-15 • Title: Microsoft Exchange, Windows 11 Hacked on Second Day of Pwn2Own Berlin
+Summary: Hackers collect $385,750 for 15 enterprise zero-days
+Link: https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/
+TLDR: Multiple enterprise zero-days in Microsoft Exchange, Windows 11, RHEL at Pwn2Own Berlin
+
+📅 2026-05-06 • Title: Russian Turla Hackers Turn Kazuar Backdoor Into Modular P2P Botnet
+Summary: FSB-linked group upgrades backdoor for stealth and persistence
 Link: https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html
-
-📅 May 16, 2026 • Title: Microsoft rejects critical Azure vulnerability report, no CVE issued
-Summary: Researcher alleges Microsoft fixed silent Azure flaw and blocked CVE.
-Link: https://www.bleepingcomputer.com/news/security/microsoft-rejects-critical-azure-vulnerability-report-no-cve-issued/
-
-📅 May 15, 2026 • Title: Ícaro Cloud Allegedly Breached: Firewall Configs, VPN Keys, and Internal Network Data Exposed Across 20 Spanish Corporate Networks
-Summary: Spanish MSP breached; 20 corporate networks' secrets exposed.
-Link: https://darkwebinformer.com/icaro-cloud-allegedly-breached-firewall-configs-vpn-keys-tls-certificates-and-internal-network-data-exposed-across-20-spanish-corporate-networks/
-
-📅 May 15, 2026 • Title: mutreasury Allegedly Breached: Credentials Exposed From the Egyptian University Payment Gateway Covering 28+ Universities
-Summary: Egyptian university payment gateway breached; 28 schools hit.
-Link: https://darkwebinformer.com/mutreasury-allegedly-breached-admin-credentials-and-api-keys-exposed-from-the-egyptian-university-payment-gateway-covering-28-universities-sold-with-a-zero-day-vulnerability/
+TLDR: Turla upgrades Kazuar backdoor to modular P2P botnet for long-term FSB access
 
                         </div>
                     </div>
@@ -612,7 +617,7 @@ Link: https://darkwebinformer.com/mutreasury-allegedly-breached-admin-credential
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-18 07:32 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-18 07:50 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
