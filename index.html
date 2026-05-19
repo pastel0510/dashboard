@@ -540,53 +540,61 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42822 · May 18, 2026 · CVSS 10.0</p>
-<h3>Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.</h3>
+<p class="cve-id">CVE-2026-43633 · May 19, 2026</p>
+<h3>CVE-2026-43633 — HestiaCP versions 1</h3>
+<p>HestiaCP versions 1.9.0 through 1.9.4 contain a deserialization vulnerability in the web terminal component caused by a session format mismatch between PHP and Node.js that allows unauthenticated remote attackers to achieve root-level code execution....</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43633" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43633" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-42822 · May 18, 2026</p>
+<h3>CVE-2026-42822 — Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to...</h3>
 <p>Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42822" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42822" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27130 · May 18, 2026 · CVSS 9.9</p>
-<h3>Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input sanitization, lack of sch...</h3>
-<p>Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input sanitization, lack of schema validation and direct shell interpolation. User-controlled application names are passed through inadequate sanitization (cleanAppName function only replaces spaces and converts to lowercase) before being interpolated directly into shell commands executed via execAsync() and execAsyncRemote(). An authenticated attacker can inject shell metacharacters (e.g., ;, $(), backticks, |, &) in the appName field during application creation, which are then executed with server-level privileges when service operations (start, stop, remove, scale) are triggered. This issue has been resolved in version 0.26.7.</p>
+<p class="cve-id">CVE-2026-27130 · May 18, 2026, updated May 19, 2026</p>
+<h3>CVE-2026-27130 — Dokploy is a free, self-hostable Platform as a Service (PaaS)</h3>
+<p>Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input sanitization, lack of schema validation and direct...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-27130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27130" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2020-37228 · May 16, 2026, updated May 18, 2026 · CVSS 9.8</p>
-<h3>iDS6 DSSPro Digital Signage System 6.2 contains a CAPTCHA security bypass vulnerability that allows attackers to bypass authentication by requesting the autoLoginVerifyCode object. Attackers can retrieve valid CAPTCHA codes v</h3>
-<p>iDS6 DSSPro Digital Signage System 6.2 contains a CAPTCHA security bypass vulnerability that allows attackers to bypass authentication by requesting the autoLoginVerifyCode object. Attackers can retrieve valid CAPTCHA codes via the login endpoint and use them to perform brute-force attacks against user accounts.</p>
-<a href="https://db.gcve.eu/cve/CVE-2020-37228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2020-37228" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-36829 · May 19, 2026</p>
+<h3>CVE-2026-36829 — An authentication bypass vulnerability exists in the embedded HTTP server of Panabit PAP-XM320 up...</h3>
+<p>An authentication bypass vulnerability exists in the embedded HTTP server of Panabit PAP-XM320 up to and including v7.7. The server validates session cookies using a filesystem existence check based on a user-controlled cookie value without proper sa...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-36829" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36829" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2020-37239 · May 16, 2026, updated May 18, 2026 · CVSS 9.8</p>
-<h3>libbabl 0.1.62 contains a broken double free detection vulnerability that allows attackers to bypass memory safety checks by exploiting signature overwriting in freed chunks. Attackers can call babl_free() twice on the same p</h3>
-<p>libbabl 0.1.62 contains a broken double free detection vulnerability that allows attackers to bypass memory safety checks by exploiting signature overwriting in freed chunks. Attackers can call babl_free() twice on the same pointer without triggering detection, as libc's malloc metadata overwrites babl's signature field upon freeing, enabling potential memory corruption and code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2020-37239" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2020-37239" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44159 · May 19, 2026</p>
+<h3>CVE-2026-44159 — Tyler Identity Local (TID-L) uses documented, default administrative credentials</h3>
+<p>Tyler Identity Local (TID-L) uses documented, default administrative credentials. Users are not required to change the credentials before deployment. TID-L has not been distributed since December 2020, and has not been supported since 2021.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44159" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44159" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2021-47952 · May 16, 2026, updated May 18, 2026 · CVSS 9.8</p>
-<h3>python jsonpickle 2.0.0 contains a remote code execution vulnerability that allows attackers to execute arbitrary Python commands by deserializing malicious JSON payloads containing py/repr objects. Attackers can craft JSON s</h3>
-<p>python jsonpickle 2.0.0 contains a remote code execution vulnerability that allows attackers to execute arbitrary Python commands by deserializing malicious JSON payloads containing py/repr objects. Attackers can craft JSON strings with py/repr directives that invoke the eval function during deserialization to execute system commands and arbitrary code.</p>
-<a href="https://db.gcve.eu/cve/CVE-2021-47952" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2021-47952" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8975 · May 19, 2026</p>
+<h3>CVE-2026-8975 — Memory safety bugs present in Thunderbird 140</h3>
+<p>Memory safety bugs present in Thunderbird 140.10 and Thunderbird 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8975" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8975" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25320 · May 17, 2026, updated May 18, 2026 · CVSS 9.8</p>
-<h3>ACL Analytics versions 11.x through 13.0.0.579 contain an arbitrary code execution vulnerability that allows attackers to execute arbitrary commands by leveraging the EXECUTE function. Attackers can use bitsadmin to download </h3>
-<p>ACL Analytics versions 11.x through 13.0.0.579 contain an arbitrary code execution vulnerability that allows attackers to execute arbitrary commands by leveraging the EXECUTE function. Attackers can use bitsadmin to download malicious PowerShell scripts and execute them with system privileges to establish reverse shells and gain complete system control.</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25320" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25320" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8974 · May 19, 2026</p>
+<h3>CVE-2026-8974 — Memory safety bugs present in Thunderbird 140</h3>
+<p>Memory safety bugs present in Thunderbird 140.10 and Thunderbird 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8974" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25332 · May 17, 2026, updated May 18, 2026 · CVSS 9.8</p>
-<h3>GitBucket 4.23.1 contains an unauthenticated remote code execution vulnerability that allows attackers to execute arbitrary commands by exploiting weak secret token generation and insecure file upload functionality. Attackers</h3>
-<p>GitBucket 4.23.1 contains an unauthenticated remote code execution vulnerability that allows attackers to execute arbitrary commands by exploiting weak secret token generation and insecure file upload functionality. Attackers can brute-force the Blowfish encryption key, upload a malicious JAR plugin via the git-lfs endpoint, and execute system commands through an exposed exploit endpoint.</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25332" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25332" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8973 · May 19, 2026</p>
+<h3>CVE-2026-8973 — Memory safety bugs present in Thunderbird 150</h3>
+<p>Memory safety bugs present in Thunderbird 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 151 a...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8973" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8973" target="_blank">OpenCVE</a>
 </div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2018-25335 · May 17, 2026, updated May 18, 2026 · CVSS 9.8</p>
-<h3>WordPress Plugin Peugeot Music 1.0 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by sending POST requests to the upload.php endpoint. Attackers can upload file</h3>
-<p>WordPress Plugin Peugeot Music 1.0 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by sending POST requests to the upload.php endpoint. Attackers can upload files with arbitrary extensions by manipulating the 'name' parameter to execute code from the uploads directory.</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25335" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25335" target="_blank">OpenCVE</a>
-</div>
+
                         </div>
                     </div>
                 </div>
@@ -618,7 +626,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-19 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-19 21:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
