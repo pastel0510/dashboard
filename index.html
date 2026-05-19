@@ -504,58 +504,58 @@ TLDR: CVE-2026-31635 — DirtyDecrypt Linux kernel rxgk root privilege escalatio
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-42822 · May 18, 2026</p>
-<h3>CVE-2026-42822 — Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to...</h3>
-<p>Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.</p>
+<h3>CVE-2026-42822 — Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network</h3>
+<p>Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network. Affected products include Microsoft Azure Local (versions below 2604.2.25645) and Azure Resource Manager. An attacker who reaches the affected components over the network can exploit the missing authentication checks to gain administrative access, jeopardizing the confidentiality, integrity, and availability of Azure resources. This issue has a CVSS v3.1 score of 10.0 (Critical).</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42822" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42822" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-27130 · May 18, 2026</p>
+<h3>CVE-2026-27130 — Dokploy has Command Injection in its Service Operations</h3>
+<p>Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. Inadequate input sanitization, lack of schema validation, and direct shell interpolation allow an authenticated attacker to inject shell metacharacters (e.g., ;, $(), backticks, |, &amp;) in the appName field during application creation. Injected commands are then executed with server-level privileges when service operations (start, stop, remove, scale) are triggered. This issue has been resolved in version 0.26.7. CVSS v3.1 score: 9.9 (Critical).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27130" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-7304 · May 18, 2026</p>
-<h3>CVE-2026-7304 — SGLangs multimodal generation runtime is vulnerable to unauthenticated remote code execution when...</h3>
-<p>SGLangs multimodal generation runtime is vulnerable to unauthenticated remote code execution when the --enable-custom-logit-processor option is enabled, as Python objects loaded via dill.loads() will be deserialized without validation.</p>
+<h3>CVE-2026-7304 — SGLangs multimodal generation runtime is vulnerable to unauthenticated remote code execution when --enable-custom-logit-processor is enabled</h3>
+<p>SGLang multimodal generation runtime contains a flaw that permits execution of arbitrary code when the --enable-custom-logit-processor flag is activated. Under this configuration, the runtime passes untrusted data to dill.loads(), which deserializes Python objects without validation. An attacker who can supply a maliciously crafted pickle payload can cause the runtime to import and execute arbitrary code, fully compromising the host system. CVSS v3.1 score: 9.8 (Critical).</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-7304" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7304" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-7301 · May 18, 2026</p>
-<h3>CVE-2026-7301 — SGLangs multimodal generation runtime scheduler's ROUTER socket binds to 0</h3>
-<p>SGLangs multimodal generation runtime scheduler's ROUTER socket binds to 0.0.0.0 by default and contains a sink that calls pickle.loads() on incoming messages, enabling RCE when exposed to the internet.</p>
+<h3>CVE-2026-7301 — SGLangs multimodal generation runtime scheduler ROUTER socket binds to 0.0.0.0 by default and calls pickle.loads() on incoming messages</h3>
+<p>SGLang multimodal generation runtime scheduler exposes a ROUTER socket that, by default, binds to 0.0.0.0 and directly deserializes incoming messages via pickle.loads(). Because the socket is network-reachable by default, an attacker can send a crafted pickle payload to trigger arbitrary code execution on the host. This flaw aligns with CWE-502 (Deserialization of Untrusted Data). CVSS v3.1 score: 9.8 (Critical).</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-7301" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7301" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8721 · May 17, 2026, updated May 18, 2026</p>
-<h3>CVE-2026-8721 — Crypt::OpenSSL::PKCS12 versions through 1</h3>
-<p>Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl truncates passwords with embedded NULLs. Password parameters in PKCS12.xs are declared char *, which routes through Perl's default typemap to SvPV_nolen. The Perl length is discarded. The C code (...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8721" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8721" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-8507 · May 17, 2026, updated May 18, 2026</p>
-<h3>CVE-2026-8507 — Crypt::OpenSSL::PKCS12 versions through 1</h3>
-<p>Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl have out-of-bounds (OOB) write flaws. When parsing a PKCS12 file, with a >= 1 GiB OCTET STRING (or BIT STRING) attribute on a SAFEBAG, via info() or info_as_hash(), a heap out-of-bounds write woul...</p>
+<p class="cve-id">CVE-2026-8507 · May 17, 2026</p>
+<h3>CVE-2026-8507 — Crypt::OpenSSL::PKCS12 for Perl has heap out-of-bounds write via large PKCS12 OCTET STRING attributes, enabling RCE</h3>
+<p>Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl contain an out-of-bounds (OOB) heap write flaw. When parsing a PKCS12 file with a greater-than-or-equal 1 GiB OCTET STRING (or BIT STRING) attribute on a SAFEBAG via the info() or info_as_hash() functions, a signed integer overflow in the size calculation passed to Renew() triggers heap memory corruption with remote-code-execution potential. The vulnerability is fixed in version 1.95. CVSS v3.1 score: 9.8 (Critical).</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-8507" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8507" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25335 · May 17, 2026, updated May 18, 2026</p>
-<h3>CVE-2018-25335 — WordPress Plugin Peugeot Music 1</h3>
-<p>WordPress Plugin Peugeot Music 1.0 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by sending POST requests to the upload.php endpoint. Attackers can upload files with arbitrary extensio...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25335" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25335" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8721 · May 17, 2026</p>
+<h3>CVE-2026-8721 — Crypt::OpenSSL::PKCS12 for Perl truncates passwords containing embedded NULL bytes, reducing keystore security</h3>
+<p>Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl truncate passwords with embedded NULL bytes because password parameters are declared as C strings. When strlen() is called on the buffer, bytes at or after the first NULL byte are silently discarded. Binary, KDF-derived, or HMAC-derived passwords lose entropy without any warning, weakening confidentiality of the PKCS12 keystore and facilitating key recovery attacks. The issue is fixed in version 1.95. CVSS v3.1 score: 9.8 (Critical).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8721" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8721" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25332 · May 17, 2026</p>
-<h3>CVE-2018-25332 — GitBucket 4</h3>
-<p>GitBucket 4.23.1 contains an unauthenticated remote code execution vulnerability that allows attackers to execute arbitrary commands by exploiting weak secret token generation and insecure file upload functionality. Attackers can brute-force the Blow...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25332" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25332" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-45230 · May 18, 2026</p>
+<h3>CVE-2026-45230 — DumbAssets path traversal via /api/delete-file allows unauthenticated arbitrary file deletion causing denial of service</h3>
+<p>DumbAssets through 1.0.11 contains a path traversal vulnerability in the POST /api/delete-file endpoint and filesToDelete array parameters. Unauthenticated attackers can delete arbitrary files by supplying ../ sequences that bypass directory boundary validation. Exploitation of the optional authentication control (disabled by default) allows deletion of critical files such as server.js or package.json, causing complete denial of service. CVSS v3.1 score: 9.1 (Critical).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45230" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45230" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25320 · May 17, 2026</p>
-<h3>CVE-2018-25320 — ACL Analytics versions 11</h3>
-<p>ACL Analytics versions 11.x through 13.0.0.579 contain an arbitrary code execution vulnerability that allows attackers to execute arbitrary commands by leveraging the EXECUTE function. Attackers can use bitsadmin to download malicious PowerShell scri...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25320" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25320" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-30950 · May 18, 2026</p>
+<h3>CVE-2026-30950 — AutoGPT Authenticated Session Hijacking via IDOR in PATCH /sessions/{session_id}/assign-user</h3>
+<p>AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Versions 0.6.36 through 0.6.50 are vulnerable to Authenticated Session Hijacking via IDOR. The PATCH /sessions/{session_id}/assign-user endpoint authenticates the caller but never verifies session ownership: the service layer invokes session lookup with user_id=None, which the data access layer interprets as a privileged/system call that bypasses the ownership filter, allowing any authenticated user to reassign an arbitrary session to themselves. The issue has been patched in version 0.6.51. CVSS v3.1 score: 7.1 (High).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-30950" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-30950" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -589,7 +589,7 @@ TLDR: CVE-2026-31635 — DirtyDecrypt Linux kernel rxgk root privilege escalatio
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-19 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-19 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
