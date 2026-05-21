@@ -533,58 +533,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">
-  <a href="https://db.gcve.eu/cve/CVE-2008-4250" target="_blank">CVE-2008-4250</a>
-  · October 23, 2008
-  · <span class="badge-kcv">[KEV]</span>
-</p>
-<h3>Microsoft Windows Server Service Remote Code Execution</h3>
-<p>A buffer overflow in the RPC Server service on Windows allows a remote attacker to execute arbitrary code via a crafted RPC request, exploited in the wild by the Conficker/Gimmiv worm botnet.</p>
-<a href="https://db.gcve.eu/cve/CVE-2008-4250" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2008-4250" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27130 · May 18, 2026</p>
+<h3>Dokploy OS Command Injection via appName</h3>
+<p><strong>[Critical, CVSS 9.9]</strong> Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. Three chained issues cause this problem: inadequate input sanitization, lack of schema validation, and direct shell interpolation. User-controlled application names are passed through inadequate sanitization (cleanAppName only replaces spaces and converts to lowercase) before being interpolated directly into shell commands executed via execAsync() and execAsyncRemote(). An authenticated attacker can inject shell metacharacters (e.g., ;, $(), backticks, |, &amp;) in the appName field during application creation, executed with server-level privileges when service operations (start, stop, remove, scale) are triggered. Resolved in version 0.26.7.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27130" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">
-  <a href="https://db.gcve.eu/cve/CVE-2009-1537" target="_blank">CVE-2009-1537</a>
-  · May 28, 2009
-  · <span class="badge-kcv">[KEV]</span>
-</p>
-<h3>Microsoft DirectX QuickTime Movie Parser Remote Code Execution</h3>
-<p>The QuickTime Movie Parser Filter in DirectShow fails to properly handle crafted media files, allowing a remote attacker to trigger a memory corruption leading to arbitrary code execution when opening a malicious movie file.</p>
-<a href="https://db.gcve.eu/cve/CVE-2009-1537" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2009-1537" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-25244 · May 18, 2026</p>
+<h3>WebdriverIO Command Injection via Git Branch Name (RCE)</h3>
+<p><strong>[Critical, CVSS 9.8]</strong> WebdriverIO is a test automation framework for unit, end-to-end, and component testing using WebDriver and Appium. Versions below 9.24.0 contain a command injection vulnerability leading to remote code execution (RCE) in test orchestration. Git permits branch names containing shell metacharacters, and getGitMetadataForAISelection() interpolates these names directly into execSync() calls without sanitization. An attacker exploits this by supplying a malicious repository whose branch name carries a payload, causing the shell to execute arbitrary code. This enables RCE on CI/CD servers and developer machines, leading to credential and secret disclosure, source code exfiltration, system compromise, and supply chain attacks via tampered build artifacts. Fixed in version 9.24.0.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-25244" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25244" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">
-  <a href="https://db.gcve.eu/cve/CVE-2009-3459" target="_blank">CVE-2009-3459</a>
-  · October 8, 2009
-  · <span class="badge-kcv">[KEV]</span>
-</p>
-<h3>Adobe Reader &amp; Acrobat Heap Buffer Overflow</h3>
-<p>A heap-based buffer overflow in Adobe Reader and Acrobat allows a remote attacker to execute arbitrary code through a specially crafted PDF file, exploited in the wild in October 2009.</p>
-<a href="https://db.gcve.eu/cve/CVE-2009-3459" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2009-3459" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8836 · May 18, 2026</p>
+<h3>lwIP snmpv3 USM Handler Stack-Based Buffer Overflow</h3>
+<p><strong>[Critical, CVSS 9.8]</strong> A vulnerability was found in lwIP up to and including version 2.2.1. The affected function snmp_parse_inbound_frame in src/apps/snmp/snmp_msg.c in the snmpv3 USM Handler allows remote attackers to trigger a stack-based buffer overflow by manipulating the msgAuthenticationParameters argument. The attack may be initiated remotely. The fix is patch 0c957ec03054eb6c8205e9c9d1d05d90ada3898c. Applying the upstream patch is strongly recommended.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8836" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8836" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">
-  <a href="https://db.gcve.eu/cve/CVE-2010-0249" target="_blank">CVE-2010-0249</a>
-  · January 14, 2010
-  · <span class="badge-kcv">[KEV]</span>
-</p>
-<h3>Microsoft Internet Explorer Use-After-Free Remote Code Execution</h3>
-<p>A use-after-free vulnerability in Microsoft Internet Explorer allows a remote attacker to corrupt memory and execute arbitrary code by tricking a user into visiting a maliciously crafted web page.</p>
-<a href="https://db.gcve.eu/cve/CVE-2010-0249" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2010-0249" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8838 · May 18, 2026</p>
+<h3>amazon-redshift-python-driver eval() on Server-Received Data (RCE)</h3>
+<p><strong>[Critical, CVSS 9.8]</strong> Unsafe use of Python's eval() on server-received data in the vector_in() function in amazon-redshift-python-driver before 2.1.14 allows a rogue server or man-in-the-middle actor to execute arbitrary code on the client. Users should upgrade to version 2.1.14 to remediate this issue.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8838" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8838" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">
-  <a href="https://db.gcve.eu/cve/CVE-2010-0806" target="_blank">CVE-2010-0806</a>
-  · March 9, 2010
-  · <span class="badge-kcv">[KEV]</span>
-</p>
-<h3>Microsoft Internet Explorer Use-After-Free Remote Code Execution</h3>
-<p>A use-after-free vulnerability in the handling of HTML elements in Microsoft Internet Explorer allows a remote attacker to corrupt memory and execute arbitrary code when a user visits a malicious web page.</p>
-<a href="https://db.gcve.eu/cve/CVE-2010-0806" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2010-0806" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-27648 · May 19, 2026</p>
+<h3>OpenHarmony v6.0 Arbitrary Code Execution in Pre-installed Apps</h3>
+<p><strong>[High, CVSS 8.8]</strong> In OpenHarmony v6.0 and earlier, vulnerable pre-installed applications allow a remote attacker to execute arbitrary code through a remotely reachable code path. Affected components may process maliciously crafted data from remote sources and trigger code execution without prior authentication. Patches for the affected applications are available in the OpenHarmony security advisory 2026-04.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-27648" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27648" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-26978 · May 18, 2026, updated May 19, 2026</p>
+<h3>FreePBX Backup Restore PHP Deserialization (RCE)</h3>
+<p><strong>[High, CVSS 8.6]</strong> FreePBX is an open-source IP PBX platform. In versions below 16.0.71 and 17.0.6, the backup module does not properly sanitize data during restore operations. Selected files are extracted from a user-supplied tar archive and passed directly to PHP's unserialize() without validation, class restrictions, or integrity checks. A remote attacker with restoration privileges can exploit this to achieve arbitrary code execution on the web server (typically user asterisk or www-data) without shell access, CLI access, or write permissions beyond the normal restore workflow. Authentication with a known username having restore permissions is required. Fixed in v16.0.71 and v17.0.6.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-26978" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26978" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-24792 · May 19, 2026</p>
+<h3>OpenHarmony v6.0 Arbitrary Code Execution in Pre-installed Apps</h3>
+<p><strong>[High, CVSS 8.1]</strong> In OpenHarmony v6.0 and earlier, vulnerable pre-installed applications allow a remote attacker to execute arbitrary code through a network-reachable vector in affected component logic without requiring authentication. The OpenHarmony security advisory 2026-04 enumerates the affected applications and patches.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-24792" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24792" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-8851 · May 18, 2026, updated May 19, 2026</p>
+<h3>SOGo SQL Injection in ACL Management (Data Exfiltration)</h3>
+<p><strong>[High, CVSS 8.1]</strong> SOGo versions 5.12.7 and earlier contain a SQL injection vulnerability in the Access Control List management functionality. An authenticated user can extract arbitrary data from the database by injecting SQL subqueries through the uid parameter of the addUserInAcls endpoint. Malicious SQL injected by the attacker writes extracted data into the sogo_acl table and retrieves it through the /acls API, establishing an out-of-band data exfiltration channel.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8851" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8851" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -615,7 +616,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-21 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-21 21:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
