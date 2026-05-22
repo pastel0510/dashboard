@@ -561,59 +561,59 @@ Link: https://www.bleepingcomputer.com/news/security/max-severity-flaw-in-chroma
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27130 · May 18, 2026</p>
-<h3>Dokploy OS Command Injection via appName</h3>
-<p><strong>[Critical, CVSS 9.9]</strong> Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. Three chained issues cause this problem: inadequate input sanitization, lack of schema validation, and direct shell interpolation. User-controlled application names are passed through inadequate sanitization (cleanAppName only replaces spaces and converts to lowercase) before being interpolated directly into shell commands executed via execAsync() and execAsyncRemote(). An authenticated attacker can inject shell metacharacters (e.g., ;, $(), backticks, |, &amp;) in the appName field during application creation, executed with server-level privileges when service operations (start, stop, remove, scale) are triggered. Resolved in version 0.26.7.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27130" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-45444 · May 20, 2026, updated May 21, 2026</p>
+<h3>CVE-2026-45444 — Unrestricted Upload of File with Dangerous Type vulnerability in WP Swings Gift Cards For WooComm...</h3>
+<p>Unrestricted Upload of File with Dangerous Type vulnerability in WP Swings Gift Cards For WooCommerce Pro allows Using Malicious Files. This issue affects Gift Cards For WooCommerce Pro: from n/a through 4.2.6.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45444" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45444" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25244 · May 18, 2026</p>
-<h3>WebdriverIO Command Injection via Git Branch Name (RCE)</h3>
-<p><strong>[Critical, CVSS 9.8]</strong> WebdriverIO is a test automation framework for unit, end-to-end, and component testing using WebDriver and Appium. Versions below 9.24.0 contain a command injection vulnerability leading to remote code execution (RCE) in test orchestration. Git permits branch names containing shell metacharacters, and getGitMetadataForAISelection() interpolates these names directly into execSync() calls without sanitization. An attacker exploits this by supplying a malicious repository whose branch name carries a payload, causing the shell to execute arbitrary code. This enables RCE on CI/CD servers and developer machines, leading to credential and secret disclosure, source code exfiltration, system compromise, and supply chain attacks via tampered build artifacts. Fixed in version 9.24.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25244" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25244" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-20223 · May 20, 2026</p>
+<h3>CVE-2026-20223 — A vulnerability in the&nbsp;access validation of internal REST APIs of Cisco Secure Workload coul...</h3>
+<p>A vulnerability in the&nbsp;access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the&nbsp;Site Admin role. This vulnerability is due to insuff...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-20223" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20223" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8836 · May 18, 2026</p>
-<h3>lwIP snmpv3 USM Handler Stack-Based Buffer Overflow</h3>
-<p><strong>[Critical, CVSS 9.8]</strong> A vulnerability was found in lwIP up to and including version 2.2.1. The affected function snmp_parse_inbound_frame in src/apps/snmp/snmp_msg.c in the snmpv3 USM Handler allows remote attackers to trigger a stack-based buffer overflow by manipulating the msgAuthenticationParameters argument. The attack may be initiated remotely. The fix is patch 0c957ec03054eb6c8205e9c9d1d05d90ada3898c. Applying the upstream patch is strongly recommended.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8836" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8836" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42960 · May 20, 2026</p>
+<h3>CVE-2026-42960 — NLnet Labs Unbound up to and including version 1</h3>
+<p>NLnet Labs Unbound up to and including version 1.25.0 is vulnerable to poisoning via promiscuous records for the authority section. Promiscuous RRSets that complement DNS replies in the authority section can be used to trick Unbound to cache such rec...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42960" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42960" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8838 · May 18, 2026</p>
-<h3>amazon-redshift-python-driver eval() on Server-Received Data (RCE)</h3>
-<p><strong>[Critical, CVSS 9.8]</strong> Unsafe use of Python's eval() on server-received data in the vector_in() function in amazon-redshift-python-driver before 2.1.14 allows a rogue server or man-in-the-middle actor to execute arbitrary code on the client. Users should upgrade to version 2.1.14 to remediate this issue.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8838" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8838" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-34234 · May 19, 2026, updated May 20, 2026</p>
+<h3>CVE-2026-34234 — CtrlPanel is open-source billing software for hosting providers</h3>
+<p>CtrlPanel is open-source billing software for hosting providers. In versions 1.1.1 and prior, the web-based installer (public/installer/index.php) is vulnerable to unauthenticated Remote Code Execution (RCE) because it performs the install.lock check...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-34234" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-34234" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-27648 · May 19, 2026</p>
-<h3>OpenHarmony v6.0 Arbitrary Code Execution in Pre-installed Apps</h3>
-<p><strong>[High, CVSS 8.8]</strong> In OpenHarmony v6.0 and earlier, vulnerable pre-installed applications allow a remote attacker to execute arbitrary code through a remotely reachable code path. Affected components may process maliciously crafted data from remote sources and trigger code execution without prior authentication. Patches for the affected applications are available in the OpenHarmony security advisory 2026-04.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-27648" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-27648" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-43633 · May 19, 2026</p>
+<h3>CVE-2026-43633 — HestiaCP versions 1</h3>
+<p>HestiaCP versions 1.9.0 through 1.9.4 contain a deserialization vulnerability in the web terminal component caused by a session format mismatch between PHP and Node.js that allows unauthenticated remote attackers to achieve root-level code execution....</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43633" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43633" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-26978 · May 18, 2026, updated May 19, 2026</p>
-<h3>FreePBX Backup Restore PHP Deserialization (RCE)</h3>
-<p><strong>[High, CVSS 8.6]</strong> FreePBX is an open-source IP PBX platform. In versions below 16.0.71 and 17.0.6, the backup module does not properly sanitize data during restore operations. Selected files are extracted from a user-supplied tar archive and passed directly to PHP's unserialize() without validation, class restrictions, or integrity checks. A remote attacker with restoration privileges can exploit this to achieve arbitrary code execution on the web server (typically user asterisk or www-data) without shell access, CLI access, or write permissions beyond the normal restore workflow. Authentication with a known username having restore permissions is required. Fixed in v16.0.71 and v17.0.6.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-26978" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-26978" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-4858 · May 21, 2026</p>
+<h3>CVE-2026-4858 — Mattermost versions 11</h3>
+<p>Mattermost versions 11.6.x <= 11.6.0, 11.5.x <= 11.5.3, 11.4.x <= 11.4.4, 10.11.x <= 10.11.14 fail to check integration URL for path traversal which allows an malicious authenticated user to call an arbitrary API via system admin Mattermost auth toke...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4858" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4858" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-24792 · May 19, 2026</p>
-<h3>OpenHarmony v6.0 Arbitrary Code Execution in Pre-installed Apps</h3>
-<p><strong>[High, CVSS 8.1]</strong> In OpenHarmony v6.0 and earlier, vulnerable pre-installed applications allow a remote attacker to execute arbitrary code through a network-reachable vector in affected component logic without requiring authentication. The OpenHarmony security advisory 2026-04 enumerates the affected applications and patches.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-24792" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-24792" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44050 · May 21, 2026</p>
+<h3>CVE-2026-44050 — A heap-based buffer overflow in the CNID daemon comm_rcv() function in Netatalk 2</h3>
+<p>A heap-based buffer overflow in the CNID daemon comm_rcv() function in Netatalk 2.0.0 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code with escalated privileges or cause a denial of service.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44050" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44050" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8851 · May 18, 2026, updated May 19, 2026</p>
-<h3>SOGo SQL Injection in ACL Management (Data Exfiltration)</h3>
-<p><strong>[High, CVSS 8.1]</strong> SOGo versions 5.12.7 and earlier contain a SQL injection vulnerability in the Access Control List management functionality. An authenticated user can extract arbitrary data from the database by injecting SQL subqueries through the uid parameter of the addUserInAcls endpoint. Malicious SQL injected by the attacker writes extracted data into the sogo_acl table and retrieves it through the /acls API, establishing an out-of-band data exfiltration channel.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8851" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8851" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-33642 · May 19, 2026</p>
+<h3>CVE-2026-33642 — Kitty is a cross-platform GPU based terminal</h3>
+<p>Kitty is a cross-platform GPU based terminal. In versions 0.46.2 and below, the handle_compose_command() function in kitty/graphics.c performs bounds validation on composition offsets using unsigned 32-bit arithmetic that is subject to integer wrappi...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-33642" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-33642" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -644,7 +644,7 @@ Link: https://www.bleepingcomputer.com/news/security/max-severity-flaw-in-chroma
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-22 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-22 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
