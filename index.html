@@ -523,59 +523,38 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9405 · May 25, 2026 · CVSS 9.8 (Critical)</p>
-<h3>OS Command Injection in Totolink A8000RU Web Management Interface</h3>
-<p>A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This impacts the function setGameSpeedCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. Performing a manipulation of the argument enable results in os command injection. Remote exploitation of the attack is possible. The exploit has been released to the public and may be used for attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9405" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9405" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-45618 · May 27, 2026 · CVSS 10.0 (Critical)</p>
+<h3>LiquidJS Vulnerable to Remote Code Execution</h3>
+<p>A critical vulnerability exists in LiquidJS where crafted templates can lead to arbitrary code execution. The vulnerability stems from the template engine allowing access to internal JavaScript objects and prototype chains, enabling attackers to obtain references to the Function constructor and execute system commands. This affects applications that process untrusted Liquid templates. The vulnerability is exploitable remotely without authentication and has been assigned CVSS score 10.0 with Network attack vector and Low complexity.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45618" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45618" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9406 · May 25, 2026 · CVSS 9.8 (Critical)</p>
-<h3>OS Command Injection in Totolink A8000RU setRemoteCfg</h3>
-<p>A weakness has been identified in Totolink A8000RU 7.1cu.643_b20200521. Affected is the function setRemoteCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. Executing a manipulation of the argument enable can lead to os command injection. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9406" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9406" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-47717 · May 27, 2026 · CVSS 7.5 (High)</p>
+<h3>FUXA's Unauthenticated Project Data Disclosure Exposes Server-Side Scripts and Device Configurations</h3>
+<p>The GET /api/project endpoint in FUXA's SCADA/HMI web application exposes sensitive project configuration data including server-side scripts, device configurations, HMI views, and alarm definitions to unauthenticated guest requests. This occurs due to a flaw in the authentication middleware that auto-generates valid guest JWTs when no token is provided, combined with insufficient filtering of sensitive data in the response. An attacker can retrieve internal automation logic and system configuration details without credentials.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-47717" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47717" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9407 · May 25, 2026 · CVSS 9.8 (Critical)</p>
-<h3>OS Command Injection in Totolink A8000RU setFirewallType</h3>
-<p>A security vulnerability has been detected in Totolink A8000RU 7.1cu.643_b20200521. Affected by this vulnerability is the function setFirewallType of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. The manipulation of the argument firewallType leads to os command injection. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9407" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9407" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-45808 · May 28, 2026 · CVSS 7.5 (High)</p>
+<h3>free5GC NEF NULL Pointer Dereference Causes Denial of Service</h3>
+<p>A vulnerability in free5GC's Network Exposure Function (NEF) causes a nil-pointer dereference panic when processing PATCH requests to the 3gpp-pfd-management endpoint. The handler fails to properly check for nil ProblemDetails when UDR calls fail, resulting in an HTTP 500 error response instead of controlled error handling. This vulnerability can be exploited remotely with no privileges required and no user interaction needed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45808" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45808" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9408 · May 25, 2026 · CVSS 9.8 (Critical)</p>
-<h3>OS Command Injection in Totolink A8000RU setStaticDhcpRules</h3>
-<p>A vulnerability was detected in Totolink A8000RU 7.1cu.643_b20200521. Affected by this issue is the function setStaticDhcpRules of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. The manipulation of the argument enable results in os command injection. The attack may be performed from remote. The exploit is now public and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9408" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9408" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44730 · May 28, 2026 · CVSS 7.2 (High)</p>
+<h3>OpenCTI Privilege Escalation via GraphQL API Authorization Bypass</h3>
+<p>An authorization bypass vulnerability in OpenCTI's GraphQL API allows organization administrators to escalate privileges by adding users from other organizations with higher permissions. The improper access control on the userEdit relationAdd operation enables an attacker to gain full platform access and view sensitive proprietary information by manipulating organization membership relationships.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44730" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44730" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9421 · May 25, 2026 · CVSS 7.3 (High)</p>
-<h3>Unrestricted Upload in KLiK SocialMediaWebsite</h3>
-<p>A vulnerability was determined in KLiK SocialMediaWebsite 1.0. This vulnerability affects the function uniqid of the file upload.inc.php of the component File Handler. This manipulation causes unrestricted upload. The attack can be initiated remotely. The exploit has been publicly disclosed and may be utilized.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9421" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9421" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-9422 · May 25, 2026 · CVSS 7.3 (High)</p>
-<h3>Injection in KLiK SocialMediaWebsite HTTP POST Handler</h3>
-<p>A vulnerability was identified in KLiK SocialMediaWebsite 1.0. This issue affects some unknown processing of the component HTTP POST Request Parameter Handler. Such manipulation leads to injection. The attack can be launched remotely. The exploit is publicly available and might be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9422" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9422" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-9425 · May 25, 2026 · CVSS 8.8 (High)</p>
-<h3>Stack-Based Buffer Overflow in Edimax EW-7438RPn WiFi Management</h3>
-<p>A security vulnerability has been detected in Edimax EW-7438RPn 1.31. The impacted element is the function formWlanMP of the file /goform/formWlanMP. The manipulation of multiple WiFi configuration arguments leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed publicly and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9425" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9425" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-9426 · May 25, 2026 · CVSS 8.8 (High)</p>
-<h3>Stack-Based Buffer Overflow in Edimax EW-7438RPn Hardware Settings</h3>
-<p>A vulnerability was detected in Edimax EW-7438RPn 1.31. This affects the function formHwSet of the file /goform/formHwSet. The manipulation of network configuration arguments results in stack-based buffer overflow. The attack can be executed remotely. The exploit is now public and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9426" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9426" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44726 · May 27, 2026 · CVSS 7.4 (High)</p>
+<h3>Deno TLS Retry Fallback Leaks Plaintext Traffic</h3>
+<p>A vulnerability in Deno's Node.js TLS compatibility layer causes TLS connections to transmit application data in plaintext when autoSelectFamily is enabled and the first address-family attempt fails. The socket reinitialization path reuses a stale TLS upgrade hook that remains bound to the original failed handle instead of establishing a secure TLS connection on retry. Attackers positioned to cause IPv6 failures can observe or tamper with supposedly encrypted traffic.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44726" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44726" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -602,7 +581,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-28 21:36 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-28 21:53 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
