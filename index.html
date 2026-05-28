@@ -527,7 +527,49 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p> <div class="bulletin-item"> <p class="cve-id"><cve-id> · <pub-date> · <updated-date-if-different> · <KEV badge if in KEV></p> <h3><title></h3> <p><summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-8175 · May 27 · Updated May 28</p>
+<h3>Buffer overflow in IBM Aspera High-Speed Transfer asperahttpd component</h3>
+<p>IBM Aspera High-Speed Transfer Endpoint and Server versions 3.7.4 through 4.4.7 Fix Pack 1 are affected by a heap-based buffer overflow in the asperahttpd component. An unauthenticated attacker can exploit this vulnerability remotely over the network to cause denial of service, authentication bypass, or remote code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8175" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8175" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-8180 · May 27 · Updated May 28</p>
+<h3>Denial of service via NULL pointer dereference in IBM Aspera asperahttpd</h3>
+<p>IBM Aspera High-Speed Transfer Endpoint and Server versions 3.7.4 through 4.4.7 Fix Pack 1 are vulnerable to a denial-of-service flaw in the asperahttpd component. An unauthenticated user can cause the asperahttpd service to crash via a network-based attack.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8180" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8180" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-44345 · May 27</p>
+<h3>BentoML Dockerfile command injection via docker.base_image</h3>
+<p>BentoML versions prior to 1.4.39 allow arbitrary Dockerfile directives to be injected through a malicious bento.yaml docker.base_image value. When bentoml containerize executes docker build, the injected RUN commands execute on the victim host, enabling arbitrary code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-44345" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44345" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-8643 · May 28</p>
+<h3>pip Path traversal via malicious entry point name in wheel installation</h3>
+<p>A flaw in pip allows arbitrary file overwrite when processing malicious Python wheel packages with specially crafted entry-point names using directory traversal or absolute paths. This can lead to arbitrary file overwrite and potential code execution when users install compromised wheels.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8643" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8643" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-45047 · May 27</p>
+<h3>bird-lg-go Out-of-Memory denial of service via unbounded JSON decoding</h3>
+<p>bird-lg-go prior to version 1.4.5 processes user-provided JSON payloads without restricting maximum read size. An unauthenticated remote attacker can stream an extremely large JSON payload to exhaust system RAM and crash the service, causing denial of service.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45047" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45047" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-46426 · May 27</p>
+<h3>Budibase Unrestricted Upload of File with Dangerous Type</h3>
+<p>Budibase prior to 3.38.2 allows authenticated builders to upload executable web content through the file upload endpoint. Dangerous file extension checks are only applied to public users, enabling stored XSS attacks affecting all application users.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-46426" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46426" target="_blank">OpenCVE</a>
+</div>
                         </div>
                     </div>
                 </div>
@@ -553,7 +595,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-28 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-28 09:49 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
