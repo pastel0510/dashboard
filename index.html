@@ -530,45 +530,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-44578 · May 13, 2026 · May 13, 2026</p>
-<h3>Next.js: Server-side request forgery in applications using WebSocket upgrades</h3>
-<p>A server-side request forgery vulnerability affects self-hosted Next.js applications using the built-in Node.js server. Crafted WebSocket upgrade requests can cause the server to proxy requests to arbitrary internal or external destinations, potentially exposing internal services or cloud metadata endpoints. Fixed in versions 15.5.16 and 16.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44578" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44578" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10071 · May 29, 2026 · 9.8 CRITICAL</p>
+<h3>DreamMaker Arbitrary File Upload</h3>
+<p>DreamMaker developed by Interinfo has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10071" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10071" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-44574 · May 13, 2026 · May 14, 2026</p>
-<h3>Next.js: Middleware / Proxy bypass through dynamic route parameter injection</h3>
-<p>Authentication bypass vulnerability in Next.js versions 15.4.0-15.5.15 and 16.0.0-16.2.4. Applications relying on middleware to protect dynamic routes can be bypassed via specially crafted query parameters that alter the dynamic route value while leaving the visible path unchanged. Fixed in versions 15.5.16 and 16.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44574" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44574" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-9559 · May 29, 2026 · 9.9 CRITICAL</p>
+<h3>Mautic Remote Code Execution via Path Traversal</h3>
+<p>A path traversal vulnerability exists in the campaign import feature of Mautic 7. When extracting uploaded ZIP files during campaign imports, a flaw in the validation logic allows file paths to escape the intended temporary directories. Authenticated users with campaign import privileges can write arbitrary PHP files to sensitive system directories, resulting in Remote Code Execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-9559" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9559" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-44573 · May 13, 2026 · May 13, 2026</p>
-<h3>Next.js: Middleware / Proxy bypass in Pages Router applications using i18n</h3>
-<p>Authorization bypass vulnerability affecting Next.js versions 12.2.0-15.5.15 and 16.0.0-16.2.4. Applications using the Pages Router with i18n configured can allow unauthorized access to protected page data through locale-less /_next/data/ requests. Middleware does not run for the unprefixed data route, allowing attackers to retrieve SSR JSON without authorization checks. Fixed in versions 15.5.16 and 16.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44573" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44573" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-41277 · May 29, 2026 · 9.3 CRITICAL</p>
+<h3>Nozomi Networks Waterfall WF-500 OS Command Injection</h3>
+<p>Nozomi Networks Labs identified an OS Command Injection vulnerability in the Console WebUI in Waterfall WF-500 TX and RX Hosts. Remote unauthenticated attackers can execute arbitrary operating system commands on the device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-41277" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-41277" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-44575 · May 13, 2026 · May 13, 2026</p>
-<h3>Next.js: Middleware / Proxy bypass in App Router applications via segment-prefetch routes</h3>
-<p>Authentication bypass vulnerability in Next.js versions 15.2.0-15.5.15 and 16.0.0-16.2.4. App Router applications using middleware or proxy-based authorization can allow unauthorized access through crafted .rsc and segment-prefetch URLs that resolve to protected pages without middleware checks. Fixed in versions 15.5.16 and 16.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44575" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44575" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-49201 · May 29, 2026 · 10.0 CRITICAL</p>
+<h3>Acer Wave 7 router Hardcoded Cryptographic Key</h3>
+<p>The upload.cgi binary contains a hardcoded AES encryption key. This allows an attacker to decrypt, modify, and re-encrypt system backups, facilitating persistent backdoor injection on the device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49201" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49201" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-44579 · May 13, 2026 · May 14, 2026</p>
-<h3>Next.js: Denial of Service via connection exhaustion in applications using Cache Components</h3>
-<p>Denial of service vulnerability in Next.js versions 15.0.0-15.5.15 and 16.0.0-16.2.4. Applications using Partial Prerendering with Cache Components can be exploited via crafted POST requests to server actions, causing request-body handling deadlocks that consume connections and server capacity. Fixed in versions 15.5.16 and 16.2.5.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44579" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44579" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-49200 · May 29, 2026 · 10.0 CRITICAL</p>
+<h3>Acer Wave 7 router Broken Access Control</h3>
+<p>The acer_cgi.log file in the device firmware is accessible without authentication via the web interface. This file contains cleartext login credentials (for web and Telnet), leading to unauthorized system access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49200" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49200" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-23870 · May 13, 2026 · May 13, 2026</p>
-<h3>React Server Components: Denial of Service via infinite renders</h3>
-<p>A denial of service vulnerability affects React Server Components used in Next.js versions 13.x-16.x and React 19.x. Infinite renders can be triggered through crafted component structures, causing server resource exhaustion. This impacts applications relying on server-side rendering for content delivery.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-23870" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-23870" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-49199 · May 29, 2026 · 10.0 CRITICAL</p>
+<h3>Predator Connect W6x RCE via MQTT</h3>
+<p>Crafted MQTT messages can trigger command injection, resulting in root-level code execution on the target device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49199" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49199" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-49197 · May 29, 2026 · 10.0 CRITICAL</p>
+<h3>Predator Connect W6x Improper Authentication</h3>
+<p>Web endpoints intended for the Acer Connect app improperly validate the HTTP Authorization header, failing to block requests when Base64 decoding fails, allowing bypass of authentication controls.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49197" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49197" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-8809 · May 28, 2026 · May 29, 2026 · 9.8 CRITICAL</p>
+<h3>Advanced Custom Fields Extended Privilege Escalation</h3>
+<p>The Advanced Custom Fields Extended plugin for WordPress is vulnerable to Privilege Escalation via Validation Bypass in versions up to 0.9.2.5. Unauthenticated attackers can suppress role validation and create administrator-level accounts through frontend forms.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8809" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8809" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -595,7 +609,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-29 15:35 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-29 15:56 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
