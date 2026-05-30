@@ -530,61 +530,53 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46195 · May 28, 2026 · May 30, 2026</p>
-<h3>smb: client: validate dacloffset before building DACL pointers</h3>
-<p>In the Linux kernel SMB client, a vulnerability allows a malicious server to trigger an out-of-bounds read on 32-bit systems by returning a dacloffset near U32_MAX. This can lead to dereferencing DACL fields from a wrapped pointer in the chmod/chown rewrite paths, potentially causing privilege escalation or denial of service.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46195" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46195" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10126 · May 30, 2026 · 8.8 High</p>
+<h3>Edimax BR-6478AC formQoS Buffer Overflow</h3>
+<p>A buffer overflow vulnerability in the formQoS function of Edimax BR-6478AC firmware 1.23. Manipulation of the selSSID argument via POST request can lead to remote code execution. The exploit is publicly available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10126" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10126" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46185 · May 28, 2026 · May 30, 2026</p>
-<h3>smb/client: fix out-of-bounds read in symlink_data()</h3>
-<p>In the Linux kernel SMB client, if a server sends a truncated response with a large OutputBufferLength, check_wsl_eas() returns success without validating bounds. This causes smb2_compound_op() to memcpy beyond the allocated buffer, leaking adjacent kernel heap memory without authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46185" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46185" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10125 · May 30, 2026 · 8.8 High</p>
+<h3>Edimax BR-6478AC formPPPoESetup Stack Buffer Overflow</h3>
+<p>Stack-based buffer overflow in the formPPPoESetup function affecting Edimax BR-6478AC 1.23. The pppUserName parameter can be manipulated remotely to achieve code execution. Exploit is publicly available.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10125" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10125" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46177 · May 28, 2026 · May 30, 2026</p>
-<h3>ipmi: Add limits to event and receive message requests</h3>
-<p>Linux kernel IPMI driver would continuously fetch events and receive messages from a BMC without limits. A malicious BMC that never signals completion could exhaust kernel resources. The fix adds a limit of 10 fetches at a time. Affects kernel versions 2.6.12 and later.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46177" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46177" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10124 · May 30, 2026 · 8.8 High</p>
+<h3>Shibby Tomato rip_zebra_read_ipv4 Buffer Overflow</h3>
+<p>Stack-based buffer overflow in the rip_zebra_read_ipv4 function of Shibby Tomato firmware up to version 1.28. The vulnerability is in the Zserv Handler component and can be exploited remotely. Note: This project is superseded by FreshTomato and devices are no longer supported.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10124" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10124" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46155 · May 28, 2026 · May 30, 2026</p>
-<h3>smb/client: fix out-of-bounds read in smb2_compound_op()</h3>
-<p>Linux kernel SMB client has an out-of-bounds read in smb2_compound_op() when a server sends a truncated response but claims a large OutputBufferLength. This allows unauthenticated attackers to leak adjacent kernel heap memory by sending carefully crafted SMB responses.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46155" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46155" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10123 · May 30, 2026 · 8.8 High</p>
+<h3>TRENDnet TEW-432BRP formSetDomainFilter Buffer Overflow</h3>
+<p>Stack-based buffer overflow in the formSetDomainFilter function of TRENDnet TEW-432BRP 3.10B20. Multiple arguments including blocked_domain and permitted_domain can be manipulated for remote exploitation. Vendor notes this product has been EOL since 2009.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10123" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10123" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46137 · May 28, 2026 · May 30, 2026</p>
-<h3>mptcp: pm: ADD_ADDR rtx: fix potential data-race</h3>
-<p>Multipath TCP implementation has a data race condition in mptcp_pm_add_timer() when executed as a timer callback in softirq context. The socket lock needs to be held with bh_lock_sock() to prevent race conditions that could lead to privilege escalation or system instability.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46137" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46137" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10122 · May 30, 2026 · 8.8 High</p>
+<h3>TRENDnet TEW-432BRP formSetProtocolFilter Buffer Overflow</h3>
+<p>Stack-based buffer overflow in the formSetProtocolFilter function affecting TRENDnet TEW-432BRP 3.10B20. The protocol_name argument can be manipulated remotely. Product has been EOL since 2009.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10122" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10122" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46135 · May 28, 2026 · May 30, 2026</p>
-<h3>nvmet-tcp: fix race between ICReq handling and queue teardown</h3>
-<p>NVMe over TCP implementation has a race condition between Initialization Connection Request handling and queue teardown. A malicious host sending an ICReq and immediately closing the connection can trigger a double kref_put() on an already released queue, causing use-after-free and potential kernel panic.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46135" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46135" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10121 · May 30, 2026 · 8.8 High</p>
+<h3>TRENDnet TEW-432BRP formSetUrlFilter Buffer Overflow</h3>
+<p>Stack-based buffer overflow in the formSetUrlFilter function of TRENDnet TEW-432BRP 3.10B20. The keyword_list and keyword arguments are vulnerable to remote manipulation. Product has been EOL since 2009.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10121" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10121" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46133 · May 28, 2026 · May 30, 2026</p>
-<h3>RDMA/rxe: Reject unknown opcodes before ICRC processing</h3>
-<p>Linux Soft RoCE driver has an out-of-bounds read vulnerability triggered by sending a UDP packet with an unknown opcode (0xff) to port 4791. The rxe_opcode[] array lookup with zero-initialized entries causes pointer arithmetic underflow, leading to kernel memory disclosure and potential denial of service without authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46133" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46133" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10120 · May 30, 2026 · 8.8 High</p>
+<h3>TRENDnet TEW-432BRP formSetFirewallRule Buffer Overflow</h3>
+<p>Stack-based buffer overflow in the formSetFirewallRule function affecting TRENDnet TEW-432BRP 3.10B20. The firewall_name argument can be manipulated to achieve remote code execution. Product has been EOL since 2009.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10120" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10120" target="_blank">OpenCVE</a>
 </div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-46124 · May 28, 2026 · May 30, 2026</p>
-<h3>isofs: validate block number from NFS file handle in isofs_export_iget</h3>
-<p>Linux ISO9660 filesystem has a vulnerability where isofs_export_iget() accepts an attacker-controlled block number from the NFS file handle. An attacker can provide a crafted file handle with an invalid block number that bypasses validation and is passed to sb_bread(), potentially causing out-of-bounds memory access and kernel panic.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46124" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46124" target="_blank">OpenCVE</a>
-</div>
-
                         </div>
                     </div>
                 </div>
@@ -610,7 +602,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-30 21:17 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-30 21:50 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
