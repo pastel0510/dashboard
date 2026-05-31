@@ -533,53 +533,61 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10126 · May 30, 2026 · 8.8 High</p>
-<h3>Edimax BR-6478AC formQoS Buffer Overflow</h3>
-<p>A buffer overflow vulnerability in the formQoS function of Edimax BR-6478AC firmware 1.23. Manipulation of the selSSID argument via POST request can lead to remote code execution. The exploit is publicly available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10126" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10126" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-12686 · May 27, 2026</p>
+<h3>Classic Buffer Overflow in Synology BeeStation OS AdminCenter</h3>
+<p>Buffer copy without checking size of input in AdminCenter in Synology BeeStation OS before 1.3.2-65648 allows remote attackers to execute arbitrary code via unspecified vectors with a CVSS score of 9.8.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-12686" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-12686" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10125 · May 30, 2026 · 8.8 High</p>
-<h3>Edimax BR-6478AC formPPPoESetup Stack Buffer Overflow</h3>
-<p>Stack-based buffer overflow in the formPPPoESetup function affecting Edimax BR-6478AC 1.23. The pppUserName parameter can be manipulated remotely to achieve code execution. Exploit is publicly available.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10125" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10125" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-36044 · May 27, 2026 (updated May 29, 2026)</p>
+<h3>OS Command Injection via Unsanitized Parameters in @pensar/apex smart_enumerate Tool</h3>
+<p>@pensar/apex through 0.0.58 is vulnerable to OS command injection via the smart_enumerate tool. Unsanitized values from the extensions array and url parameter are concatenated into a shell command executed via Node.js child_process.exec(), resulting in arbitrary OS command execution with the privileges of the running process.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-36044" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36044" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10124 · May 30, 2026 · 8.8 High</p>
-<h3>Shibby Tomato rip_zebra_read_ipv4 Buffer Overflow</h3>
-<p>Stack-based buffer overflow in the rip_zebra_read_ipv4 function of Shibby Tomato firmware up to version 1.28. The vulnerability is in the Zserv Handler component and can be exploited remotely. Note: This project is superseded by FreshTomato and devices are no longer supported.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10124" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10124" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-38807 · May 27, 2026 (updated May 28, 2026)</p>
+<h3>Insecure Permissions in kvf-admin Allowing Remote Privilege Escalation</h3>
+<p>Insecure Permissions vulnerability in kvf-admin v1.0.0 allows a remote attacker to escalate privileges via the UserController.java component, leading to a CVSS score of 8.8.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-38807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38807" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10123 · May 30, 2026 · 8.8 High</p>
-<h3>TRENDnet TEW-432BRP formSetDomainFilter Buffer Overflow</h3>
-<p>Stack-based buffer overflow in the formSetDomainFilter function of TRENDnet TEW-432BRP 3.10B20. Multiple arguments including blocked_domain and permitted_domain can be manipulated for remote exploitation. Vendor notes this product has been EOL since 2009.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10123" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10123" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-48863 · May 30, 2026</p>
+<h3>Stack-Based Buffer Overflow in libsolv PGP Verification Component</h3>
+<p>A flaw in libsolv allows a stack-based buffer overflow in the PGP verification component due to incorrect length handling when copying EdDSA 's' MPI into a stack buffer. A remote attacker can craft a malicious Ed25519 PGP signature with mismatched MPI lengths, potentially causing a denial of service in automated package or repository processing workflows.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-48863" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48863" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10122 · May 30, 2026 · 8.8 High</p>
-<h3>TRENDnet TEW-432BRP formSetProtocolFilter Buffer Overflow</h3>
-<p>Stack-based buffer overflow in the formSetProtocolFilter function affecting TRENDnet TEW-432BRP 3.10B20. The protocol_name argument can be manipulated remotely. Product has been EOL since 2009.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10122" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10122" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-36540 · May 27, 2026 (updated May 28, 2026)</p>
+<h3>Unauthenticated Command Injection via skk_set.cgi in Netis AC1200 Router NC21</h3>
+<p>Netis AC1200 Router NC21 V4.0.1.4296 is vulnerable to unauthenticated command injection via the /cgi-bin/skk_set.cgi endpoint. The password and new_pwd_confirm POST parameters are passed directly to the underlying OS shell without sanitization, allowing any device on the LAN to achieve full Remote Code Execution with a single HTTP POST request.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-36540" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36540" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10121 · May 30, 2026 · 8.8 High</p>
-<h3>TRENDnet TEW-432BRP formSetUrlFilter Buffer Overflow</h3>
-<p>Stack-based buffer overflow in the formSetUrlFilter function of TRENDnet TEW-432BRP 3.10B20. The keyword_list and keyword arguments are vulnerable to remote manipulation. Product has been EOL since 2009.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10121" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10121" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-38422 · May 27, 2026 (updated May 28, 2026)</p>
+<h3>Tasmota Buffer Overflow in fetch_jpg Allows Remote Code Execution</h3>
+<p>Buffer overflow vulnerability in arendst Tasmota v.15.3.0.3 and before allows a remote attacker to execute arbitrary code via the fetch_jpg() function in the tasmota_xdrv_driver/xdrv_10_scripter.ino, with a CVSS score of 7.3.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-38422" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38422" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10120 · May 30, 2026 · 8.8 High</p>
-<h3>TRENDnet TEW-432BRP formSetFirewallRule Buffer Overflow</h3>
-<p>Stack-based buffer overflow in the formSetFirewallRule function affecting TRENDnet TEW-432BRP 3.10B20. The firewall_name argument can be manipulated to achieve remote code execution. Product has been EOL since 2009.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10120" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10120" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-38427 · May 27, 2026</p>
+<h3>Heap Buffer Overflow in Tasmota JPEG Fetch Function</h3>
+<p>An issue in fetch_jpg() in xdrv_10_scripter.ino in Tasmota through 15.3.0.3 allows a remote attacker to cause a heap buffer overflow. The Content-Length from a JPEG stream is stored in a uint16_t variable; values above 65535 wrap around, causing allocation of a smaller buffer than the data actually read.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-38427" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38427" target="_blank">OpenCVE</a>
 </div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-70103 · May 27, 2026 (updated May 30, 2026)</p>
+<h3>Heap Buffer Overflow in libjxl via Crafted PBM Images</h3>
+<p>Heap buffer overflow vulnerability in libjxl 0.12.0 triggered by crafted PBM images processed by the jxl::extras::DecodeImagePNM function in lib/extras/dec/pnm.cc, with a CVSS score of 7.3.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-70103" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-70103" target="_blank">OpenCVE</a>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -605,7 +613,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-31 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-31 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
