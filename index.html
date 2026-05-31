@@ -506,62 +506,62 @@ https://www.nature.com/articles/d41586-026-01625-2
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0 or above, Network attack vector, and Low attack complexity. CISA's Known Exploited Vulnerabilities (KEV) and GCVE bias checks could not be completed for this run due to service access issues; any [KEV] badges are omitted pending verification.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-12686 · May 27, 2026</p>
-<h3>Classic Buffer Overflow in Synology BeeStation OS AdminCenter</h3>
-<p>Buffer copy without checking size of input in AdminCenter in Synology BeeStation OS before 1.3.2-65648 allows remote attackers to execute arbitrary code via unspecified vectors with a CVSS score of 9.8.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-12686" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-12686" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10163 · May 31, 2026</p>
+<h3>Edimax BR-6478AC Buffer Overflow in formUSBAccount (POST Request Handler)</h3>
+<p>The formUSBAccount endpoint in /goform/formUSBAccount accepts UserName/Password parameters that are vulnerable to a stack-based or heap-based buffer overflow. Remote exploitation is possible, and a public exploit has already been disclosed. Successful exploitation may lead to crashes, code execution, or full device compromise on the affected router.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10163" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10163" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10163" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-36044 · May 27, 2026 (updated May 29, 2026)</p>
-<h3>OS Command Injection via Unsanitized Parameters in @pensar/apex smart_enumerate Tool</h3>
-<p>@pensar/apex through 0.0.58 is vulnerable to OS command injection via the smart_enumerate tool. Unsanitized values from the extensions array and url parameter are concatenated into a shell command executed via Node.js child_process.exec(), resulting in arbitrary OS command execution with the privileges of the running process.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-36044" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36044" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10164 · May 31, 2026</p>
+<h3>Edimax BR-6478AC Buffer Overflow in formUSBFolder (POST Request Handler)</h3>
+<p>The formUSBFolder endpoint in /goform/formUSBFolder processes ShareName/SelectName parameters in a way that can trigger a buffer overflow. The vulnerability is remotely exploitable with public proof-of-concept code available. An unauthenticated attacker on the network can leverage this flaw to corrupt memory or achieve arbitrary code execution on the router.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10164" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10164" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10164" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-38807 · May 27, 2026 (updated May 28, 2026)</p>
-<h3>Insecure Permissions in kvf-admin Allowing Remote Privilege Escalation</h3>
-<p>Insecure Permissions vulnerability in kvf-admin v1.0.0 allows a remote attacker to escalate privileges via the UserController.java component, leading to a CVSS score of 8.8.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-38807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38807" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10165 · May 31, 2026</p>
+<h3>Edimax BR-6478AC Stack-Based Buffer Overflow in formWanTcpipSetup</h3>
+<p>The formWanTcpipSetup endpoint in /goform/formWanTcpipSetup fails to safely handle the pppUserName argument, resulting in a stack-based buffer overflow. Remote exploitation is feasible and exploit code is already public. Given the ubiquity and network proximity of affected routers, this is a high-risk exposure if the devices remain unpatched.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10165" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10165" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10165" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-48863 · May 30, 2026</p>
-<h3>Stack-Based Buffer Overflow in libsolv PGP Verification Component</h3>
-<p>A flaw in libsolv allows a stack-based buffer overflow in the PGP verification component due to incorrect length handling when copying EdDSA 's' MPI into a stack buffer. A remote attacker can craft a malicious Ed25519 PGP signature with mismatched MPI lengths, potentially causing a denial of service in automated package or repository processing workflows.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-48863" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48863" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10162 · May 31, 2026</p>
+<h3>TRENDnet TEW-432BRP Stack-Based Buffer Overflow in formSetPassword</h3>
+<p>The formSetPassword handler in /goform/formSetPassword on TRENDnet TEW-432BRP 3.10B20 accepts a webpage parameter that can be abused to cause a stack-based buffer overflow. The device is already beyond end-of-life (EOL since 2009), so no vendor patch is forthcoming. A public exploit has been published, making exploitation straightforward for any attacker with network reach.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10162" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10162" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10162" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-36540 · May 27, 2026 (updated May 28, 2026)</p>
-<h3>Unauthenticated Command Injection via skk_set.cgi in Netis AC1200 Router NC21</h3>
-<p>Netis AC1200 Router NC21 V4.0.1.4296 is vulnerable to unauthenticated command injection via the /cgi-bin/skk_set.cgi endpoint. The password and new_pwd_confirm POST parameters are passed directly to the underlying OS shell without sanitization, allowing any device on the LAN to achieve full Remote Code Execution with a single HTTP POST request.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-36540" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36540" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-36539 · May 30, 2026</p>
+<h3>Netis AC1200 Router Exposes Full Configuration Without Authentication</h3>
+<p>An HTTP GET request to /cgi-bin/skk_get.cgi on the Netis AC1200 Router NC21 V4.0.1.4296 returns the entire router configuration as JSON without any authentication. The response includes administrator credentials, WiFi passwords, PPPoE credentials, DDNS credentials, and a complete client device inventory. Any host on the local area network can retrieve this sensitive information in a single unauthenticated request.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-36539" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36539" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36539" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-38422 · May 27, 2026 (updated May 28, 2026)</p>
-<h3>Tasmota Buffer Overflow in fetch_jpg Allows Remote Code Execution</h3>
-<p>Buffer overflow vulnerability in arendst Tasmota v.15.3.0.3 and before allows a remote attacker to execute arbitrary code via the fetch_jpg() function in the tasmota_xdrv_driver/xdrv_10_scripter.ino, with a CVSS score of 7.3.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-38422" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38422" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-36540 · May 30, 2026</p>
+<h3>Netis AC1200 Router Unauthenticated Command Injection in skk_set.cgi</h3>
+<p>The /cgi-bin/skk_set.cgi endpoint on the Netis AC1200 Router NC21 V4.0.1.4296 feeds the password and new_pwd_confirm POST parameters directly to the OS shell without sanitization. Because the endpoint requires no authentication, any local network attacker can inject arbitrary shell commands using backticks and base64 encoding to obtain full remote code execution on the router operating system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-36540" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-36540" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-36540" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-38427 · May 27, 2026</p>
-<h3>Heap Buffer Overflow in Tasmota JPEG Fetch Function</h3>
-<p>An issue in fetch_jpg() in xdrv_10_scripter.ino in Tasmota through 15.3.0.3 allows a remote attacker to cause a heap buffer overflow. The Content-Length from a JPEG stream is stored in a uint16_t variable; values above 65535 wrap around, causing allocation of a smaller buffer than the data actually read.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-38427" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38427" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-38945 · May 30, 2026</p>
+<h3>Raynet rvia Command Injection via Crafted Search Path</h3>
+<p>Raynet rvia versions up to 12.6 Update 8 construct a Java search using the operating-system find command. An attacker can supply a malicious path that matches an improperly terminated search criterion, causing rvia to execute arbitrary commands during search. The vulnerability affects local or remote users depending on application exposure and is compounded by the presence of multiple related argument-injection entry points.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-38945" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-38945" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-38945" target="_blank">NVD</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-70103 · May 27, 2026 (updated May 30, 2026)</p>
-<h3>Heap Buffer Overflow in libjxl via Crafted PBM Images</h3>
-<p>Heap buffer overflow vulnerability in libjxl 0.12.0 triggered by crafted PBM images processed by the jxl::extras::DecodeImagePNM function in lib/extras/dec/pnm.cc, with a CVSS score of 7.3.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-70103" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-70103" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-12686 · May 30, 2026</p>
+<h3>Synology BeeStation Manager / BeeStation OS Classic Buffer Overflow in AdminCenter</h3>
+<p>AdminCenter in Synology BeeStation Manager and BeeStation OS is vulnerable to a classic buffer overflow caused by improper memory-boundary checks when copying input. This flaw can allow an attacker to overwrite adjacent memory regions, leading to denial of service or code execution depending on how the affected service is exposed. The NVD record explicitly classifies the issue as a buffer copy without checking size of input, raising the severity profile for affected deployments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-12686" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-12686" target="_blank">OpenCVE</a> · <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-12686" target="_blank">NVD</a>
 </div>
 
                         </div>
@@ -589,7 +589,7 @@ https://www.nature.com/articles/d41586-026-01625-2
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-05-31 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-05-31 09:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
