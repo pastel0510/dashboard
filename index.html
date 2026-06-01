@@ -509,59 +509,52 @@ https://phys.org/news/2026-05-brain-cells-play-doom.html
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-1340 · May 31, 2026</p>
-<h3>Ivanti Endpoint Manager Mobile Unauthenticated Remote Code Execution</h3>
-<p>A code injection vulnerability in Ivanti Endpoint Manager Mobile allows unauthenticated remote attackers to execute arbitrary code with full privileges. The flaw (CWE-94) enables complete compromise of confidentiality, integrity, and availability with no user interaction required. Active exploitation has been confirmed in the wild (EPSS 69.7%). Patch to the latest unaffected version immediately.</p>
+<p class="cve-id">CVE-2026-1340 · Jan 29, 2026</p>
+<h3>Ivanti Endpoint Manager Mobile Code Injection</h3>
+<p>A code injection flaw in Ivanti Endpoint Manager Mobile allows attackers to inject arbitrary code and execute it without authentication, leading to unauthenticated remote code execution with full system compromise.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-1340" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1340" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10187 · May 31, 2026</p>
-<h3>Totolink N300RH Web Management Interface Stack-Based Buffer Overflow</h3>
-<p>A stack-based buffer overflow (CWE-119/CWE-121) in the setWiFiBasicConfig function of the Totolink N300RH router firmware (v6.1c.1353_B20190305) allows remote attackers to corrupt the stack and potentially execute arbitrary code by manipulating the KeyStr argument. The exploit is publicly available and can be triggered via the device's web management interface. Affects all unpatched N300RH units.</p>
+<p class="cve-id">CVE-2026-10187</p>
+<h3>Totolink N300RH Web Management Interface Stack Buffer Overflow</h3>
+<p>A stack-based buffer overflow in the setWiFiBasicConfig function of the Totolink N300RH web management interface (wireless.so) allows remote attackers to corrupt the stack and potentially execute arbitrary code via the KeyStr argument.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-10187" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10187" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10188 · May 31, 2026</p>
-<h3>Tenda W12 cgistaKickOff Stack-Based Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the cgistaKickOff function of the Tenda W12 firmware (3.0.0.7, build 4763) allows remote attackers to trigger arbitrary code execution by manipulating the staMac parameter in HTTP requests to /bin/httpd. A proof-of-concept exploit has been published. Affects all Tenda W12 routers running the vulnerable firmware version.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10188" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10188" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-10189 · May 31, 2026</p>
-<h3>Tenda W12 cgiSysTimeInfoSet Stack-Based Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the cgiSysTimeInfoSet function of Tenda W12 firmware (3.0.0.7, build 4763) allows remote attackers to corrupt the stack by supplying a crafted sec argument via the web interface. Successfully overwriting return addresses can lead to arbitrary code execution. A public PoC exploit is available, making immediate remediation critical for exposed devices.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10189" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10189" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-10191 · May 31, 2026</p>
-<h3>Tenda W12 cgiWifiMacFilterSet Stack-Based Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the cgiWifiMacFilterSet function of the Tenda W12 router firmware (3.0.0.7, build 4763) allows remote attackers to corrupt the stack and potentially execute arbitrary code by manipulating the wifiMacFilterSet.macList.mac argument. The exploit is publicly disclosed and can be triggered over the network with low privileges.</p>
+<p class="cve-id">CVE-2026-10191</p>
+<h3>Tenda W12 cgiWifiMacFilterSet Stack Buffer Overflow</h3>
+<p>A stack-based buffer overflow in the cgiWifiMacFilterSet function of the Tenda W12 /bin/httpd file allows remote attackers to corrupt the stack and potentially execute arbitrary code by manipulating the wifiMacFilterSet.macList.mac argument.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-10191" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10191" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10192 · May 31, 2026</p>
-<h3>Tenda W12 set_local_time_0 Stack-Based Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the set_local_time_0 function of Tenda W12 firmware (3.0.0.7, build 4763) allows remote attackers to corrupt stack memory by manipulating the Time argument sent to /bin/httpd. The vulnerability resides in a web-accessible service, enabling arbitrary code execution without physical access. A public exploit is available.</p>
+<p class="cve-id">CVE-2026-10192</p>
+<h3>Tenda W12 set_local_time_0 Stack Buffer Overflow</h3>
+<p>A stack-based buffer overflow in the set_local_time_0 function of the Tenda W12 firmware allows remote attackers to corrupt memory on the device stack by supplying a manipulated Time argument, leading to arbitrary code execution.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-10192" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10192" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10186 · May 31, 2026</p>
-<h3>code-projects Online Hospital Management System SQL Injection</h3>
-<p>An SQL injection flaw in the /patient.php endpoint of code-projects Online Hospital Management System v1.0 allows remote attackers to inject arbitrary SQL statements via the editid parameter. The vulnerability requires no authentication and can lead to unauthorized access, modification, or deletion of patient records. A public exploit has been released.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10186" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10186" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10188</p>
+<h3>Tenda W12 cgistaKickOff Stack Buffer Overflow</h3>
+<p>A stack-based buffer overflow in the cgistaKickOff function of the Tenda W12 /bin/httpd binary allows remote attackers to manipulate the staMac argument, corrupt the stack, and potentially execute arbitrary code on the device.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10188" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10188" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10185 · May 31, 2026</p>
-<h3>SourceCodester Hospitals Patient Records Management System SQL Injection</h3>
-<p>An SQL injection vulnerability in /classes/Users.php?f=save of SourceCodester Hospitals Patient Records Management System v1.0 allows remote attackers to inject arbitrary SQL via the ID argument. The attack requires no authentication and can expose, modify, or delete patient data. The vendor has not yet patched despite early notification.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10185" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10185" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10189</p>
+<h3>Tenda W12 cgiSysTimeInfoSet Stack Buffer Overflow</h3>
+<p>A stack-based buffer overflow in the cgiSysTimeInfoSet function of the Tenda W12 firmware allows remote attackers to overwrite return addresses on the stack by sending a crafted sec argument, enabling arbitrary code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10189" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10189" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-26625 · Oct 17, 2025, updated May 31, 2026</p>
+<h3>Git LFS Arbitrary File Write via Crafted Symlinks</h3>
+<p>Git LFS versions 0.5.2 through 3.7.0 allow writing to files outside the current working tree when symbolic or hard links collide with tracked paths. The git lfs checkout and pull commands do not check for symlinks before writing, allowing crafted repositories to write to arbitrary filesystem locations.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-26625" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-26625" target="_blank">OpenCVE</a>
+</div>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-10190</p>
+<h3>Tenda W12 cgiSysWebTimeoutSet Denial of Service</h3>
+<p>A flaw in the Tenda W12 web management interface allows remote attackers to manipulate the web_over_time parameter in the cgiSysWebTimeoutSet CGI handler, causing a denial of service that makes the web server process unreachable and disrupts administrative access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10190" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10190" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -589,7 +582,7 @@ https://phys.org/news/2026-05-brain-cells-play-doom.html
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-01 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-01 03:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
