@@ -532,52 +532,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-1340 · Jan 29, 2026</p>
-<h3>Ivanti Endpoint Manager Mobile Code Injection</h3>
-<p>A code injection flaw in Ivanti Endpoint Manager Mobile allows attackers to inject arbitrary code and execute it without authentication, leading to unauthenticated remote code execution with full system compromise.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-1340" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1340" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-48188 · June 1, 2026</p>
+<h3>SQL Injection via MySQL Quote Method in OTRS</h3>
+<p>An improper Input Validation vulnerability in OTRS or ((OTRS)) Community Edition database layer module allows an unauthenticated SQL injection which can lead to an authentication bypass. This issue only affects systems where the MySQL/MariaDB server is configured with the NO_BACKSLASH_ESCAPES SQL mode. Affected versions include OTRS 7.0.X, 8.0.X, 2023.X, 2024.X, 2025.X, 2026.X before 2026.4.X, and ((OTRS)) Community Edition 6.0.x.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-48188" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48188" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10187</p>
-<h3>Totolink N300RH Web Management Interface Stack Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the setWiFiBasicConfig function of the Totolink N300RH web management interface (wireless.so) allows remote attackers to corrupt the stack and potentially execute arbitrary code via the KeyStr argument.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10187" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10187" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-48209 · June 1, 2026</p>
+<h3>Reflected XSS in Authenticated Agent Context in OTRS</h3>
+<p>An improper neutralization of user-controllable input in OTRS or ((OTRS)) Community Edition ticket handling allows authenticated attackers to perform reflected cross-site scripting (XSS) attacks via crafted request parameters associated with ticket actions. By injecting malicious JavaScript into manipulated request URLs, attackers can execute arbitrary script code in the context of an authenticated agent session when the crafted link is opened.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-48209" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48209" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10191</p>
-<h3>Tenda W12 cgiWifiMacFilterSet Stack Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the cgiWifiMacFilterSet function of the Tenda W12 /bin/httpd file allows remote attackers to corrupt the stack and potentially execute arbitrary code by manipulating the wifiMacFilterSet.macList.mac argument.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10191" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10191" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10227 · June 1, 2026</p>
+<h3>SQL Injection in Student Management System User Creation</h3>
+<p>A vulnerability has been found in raisulislamg4 student_management_system_by_php up to commit 310d950e. The affected element is the User Creation Handler in the file add_user_check.php. Manipulation of the argument role leads to SQL injection. Remote exploitation is possible and the exploit has been publicly disclosed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10227" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10227" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10192</p>
-<h3>Tenda W12 set_local_time_0 Stack Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the set_local_time_0 function of the Tenda W12 firmware allows remote attackers to corrupt memory on the device stack by supplying a manipulated Time argument, leading to arbitrary code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10192" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10192" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10226 · June 1, 2026</p>
+<h3>SQL Injection in Student Management System Delete Handler</h3>
+<p>A flaw has been found in raisulislamg4 student_management_system_by_php up to commit 310d950e. The vulnerable component is the file delete.php. Manipulation of the arguments user_id, course_id, teacher_id, student_id, or application_id can lead to SQL injection. The attack may be launched remotely and the exploit has been published.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10226" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10226" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10188</p>
-<h3>Tenda W12 cgistaKickOff Stack Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the cgistaKickOff function of the Tenda W12 /bin/httpd binary allows remote attackers to manipulate the staMac argument, corrupt the stack, and potentially execute arbitrary code on the device.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10188" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10188" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10225 · June 1, 2026</p>
+<h3>SQL Injection in Student Management System Login Handler</h3>
+<p>A vulnerability was detected in raisulislamg4 student_management_system_by_php up to commit 310d950e. The issue affects the file login_check.php of the Login component. Performing a manipulation of the argument Username results in SQL injection. The attack may be initiated remotely and the exploit is now public.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10225" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10225" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10189</p>
-<h3>Tenda W12 cgiSysTimeInfoSet Stack Buffer Overflow</h3>
-<p>A stack-based buffer overflow in the cgiSysTimeInfoSet function of the Tenda W12 firmware allows remote attackers to overwrite return addresses on the stack by sending a crafted sec argument, enabling arbitrary code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10189" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10189" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10221 · June 1, 2026</p>
+<h3>Injection Vulnerability in Hermes Agent Context Compression</h3>
+<p>A vulnerability was identified in NousResearch hermes-agent up to version 0.12.0. The affected function is _compress_context in the file run_agent.py. The manipulation leads to injection. The attack can be initiated remotely and the exploit is publicly available. The vendor was contacted but did not respond.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10221" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10221" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-26625 · Oct 17, 2025, updated May 31, 2026</p>
-<h3>Git LFS Arbitrary File Write via Crafted Symlinks</h3>
-<p>Git LFS versions 0.5.2 through 3.7.0 allow writing to files outside the current working tree when symbolic or hard links collide with tracked paths. The git lfs checkout and pull commands do not check for symlinks before writing, allowing crafted repositories to write to arbitrary filesystem locations.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-26625" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-26625" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10220 · June 1, 2026</p>
+<h3>Injection Vulnerability in Hermes Agent Skill View</h3>
+<p>A vulnerability was determined in NousResearch hermes-agent up to version 2026.4.30. The affected function is _serve_plugin_skill/skill_view in the file tools/skills_tool.py. Executing a manipulation can lead to injection. The attack may be performed from remote. The exploit has been publicly disclosed.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10220" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10220" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10190</p>
-<h3>Tenda W12 cgiSysWebTimeoutSet Denial of Service</h3>
-<p>A flaw in the Tenda W12 web management interface allows remote attackers to manipulate the web_over_time parameter in the cgiSysWebTimeoutSet CGI handler, causing a denial of service that makes the web server process unreachable and disrupts administrative access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10190" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10190" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10111 · May 30, 2026</p>
+<h3>SQL Injection in Student Management System Login Page</h3>
+<p>A flaw has been found in sambitraj STUDENT-MANAGEMENT-SYSTEM 1.0. The issue impacts the Login Page component. Executing a manipulation of the argument email can lead to SQL injection. The attack may be performed from remote. The exploit has been published and the project has not responded to the issue report.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10111" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10111" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -605,7 +612,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-01 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-01 09:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
