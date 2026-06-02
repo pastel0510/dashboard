@@ -529,62 +529,54 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. Note: CISA KEV catalog was unreachable at refresh time, so no [KEV] markers are shown. Verify KEV status at <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">cisa.gov/known-exploited-vulnerabilities-catalog</a>.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40965 · June 1, 2026</p>
-<h3>CVE-2026-40965 — Cloud Foundry UAA versions v76</h3>
-<p>Cloud Foundry UAA versions v76.12.0 through v78.12.0 are vulnerable to a private key exposure. The server contains a vulnerability where EC (Elliptic Curve) private keys are inadvertently exposed through the public /token_keys endpoint. This endpoint...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40965" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-44825 · June 1, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-44825" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44825" target="_blank">OpenCVE</a></p>
+<h3>Apache Solr Hardcoded Credentials in Basic Authentication Setup Tool</h3>
+<p>Apache Solr versions 9.4.0 through 9.10.1 and 10.0.0 have hardcoded credentials in the bin/solr auth enable Basic Authentication setup tool. The tool silently installs publicly known default credentials (superadmin, admin, search, index) alongside the user-specified account, allowing a remote attacker to gain full administrative access to the Solr cluster. Immediate workaround: delete the template users from security.json. Fixed in upcoming versions 9.11.0 and 10.1.0.</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-45132 · June 1, 2026</p>
-<h3>CVE-2026-45132 — CloudPirates Open Source Helm Charts is a collection of Helm charts</h3>
-<p>CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (generate-schema.yaml) exposes sensitive credentials (Personal Access Token and SSH signing key) to fork-controlled code due to un...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-45132" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45132" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10187 · May 31, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-10187" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10187" target="_blank">OpenCVE</a></p>
+<h3>TOTOLINK N300RH Stack-Based Buffer Overflow in setWiFiBasicConfig</h3>
+<p>TOTOLINK N300RH version 6.1c.1353_B20190305 contains a stack-based buffer overflow in the setWiFiBasicConfig function within the wireless.so web management interface component. Manipulation of the KeyStr argument allows unauthenticated remote attackers to trigger the overflow over the network. Public PoC exploit has been released. CVSS 3.1: 9.8 (CRITICAL).</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-45131 · June 1, 2026</p>
-<h3>CVE-2026-45131 — CloudPirates Open Source Helm Charts is a collection of Helm charts</h3>
-<p>CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (pull-request.yaml) executes attacker-controlled code from fork pull requests in a privileged context, exposing repository secrets...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-45131" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45131" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2018-25427 · June 1, 2026 · <a href="https://db.gcve.eu/cve/CVE-2018-25427" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25427" target="_blank">OpenCVE</a></p>
+<h3>Arm Whois 3.11 Stack-Based Buffer Overflow via SEH Overwrite</h3>
+<p>Arm Whois 3.11 contains a stack-based buffer overflow that allows remote attackers to execute arbitrary code by supplying oversized input (exceeding 658 bytes with shellcode) to the IP address or domain field, overwriting the structured exception handler to gain command execution. Public exploit code is available on ExploitDB and VulnCheck has published an advisory. CVSS 4.0: 9.3 (CRITICAL).</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-53209 · June 2, 2026</p>
-<h3>CVE-2025-53209 — Incorrect Privilege Assignment vulnerability in Themeisle Masteriyo LMS PRO allows Privilege Esca...</h3>
-<p>Incorrect Privilege Assignment vulnerability in Themeisle Masteriyo LMS PRO allows Privilege Escalation. This issue affects Masteriyo LMS PRO: from n/a through 2.20.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-53209" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-53209" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8644 · June 1, 2026 · updated June 2, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-8644" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8644" target="_blank">OpenCVE</a></p>
+<h3>IBM WebSphere Application Server Identity Spoofing Vulnerability</h3>
+<p>IBM WebSphere Application Server 9.0 and 8.5 are vulnerable to identity spoofing that allows an unauthenticated remote attacker to spoof identities and bypass authentication mechanisms. CVSS 3.1: 9.1 (CRITICAL). IBM has published advisory details at ibm.com/support/pages/node/7274740.</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8206 · June 2, 2026</p>
-<h3>CVE-2026-8206 — The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerabl...</h3>
-<p>The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions 6.0.0 to 6.0.6. This is due to the plugin accepting an arbitrary email address when a user...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8206" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8206" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-9319 · June 1, 2026 · updated June 2, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-9319" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9319" target="_blank">OpenCVE</a></p>
+<h3>IBM WebSphere Application Server Remote Code Execution via Deserialization</h3>
+<p>IBM WebSphere Application Server 9.0 and 8.5 are vulnerable to potential remote code execution due to deserialization of untrusted data via JAX-WS endpoints with WS-Security. An unauthenticated remote attacker could exploit this to execute arbitrary code. KB at ibm.com/support/pages/node/7274738.</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-25879 · June 1, 2026</p>
-<h3>CVE-2026-25879 — Langroid is a framework for building large-language-model-powered applications</h3>
-<p>Langroid is a framework for building large-language-model-powered applications. Prior to version 0.63.0, SQLChatAgent executes SQL produced by an LLM, which is influenceable by prompt injection. When configured with a database role that has privilege...</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-25879" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-25879" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10158 · May 31, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-10158" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10158" target="_blank">OpenCVE</a></p>
+<h3>TRENDnet TEW-432BRP Stack-Based Buffer Overflow in formPortFw</h3>
+<p>TRENDnet TEW-432BRP 3.10B20 contains a stack-based buffer overflow in the formPortFw function (/goform/formPortFw) via the server_name argument. Remote attackers can exploit this to execute arbitrary code. The device has been end-of-life since 2009 with no vendor fix available. Public PoC exploit released. CVSS 3.1: 8.8 (HIGH).</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25427 · June 1, 2026</p>
-<h3>CVE-2018-25427 — Arm Whois 3</h3>
-<p>Arm Whois 3.11 contains a stack-based buffer overflow vulnerability that allows remote attackers to execute arbitrary code by supplying oversized input to the IP address or domain field. Attackers can craft malicious input exceeding 658 bytes with sh...</p>
-<a href="https://db.gcve.eu/cve/CVE-2018-25427" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25427" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10162 · May 31, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-10162" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10162" target="_blank">OpenCVE</a></p>
+<h3>TRENDnet TEW-432BRP Stack-Based Buffer Overflow in formSetPassword</h3>
+<p>TRENDnet TEW-432BRP 3.10B20 contains a stack-based buffer overflow in the formSetPassword function (/goform/formSetPassword) via the webpage argument. Remote exploitation is possible with publicly available PoC code. This product has been end-of-life since 2009 and no patches will be issued. CVSS 3.1: 8.8 (HIGH).</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-48879 · June 1, 2026</p>
-<h3>CVE-2026-48879 — Incorrect Privilege Assignment vulnerability in Sergey AIWU allows Privilege Escalation</h3>
-<p>Incorrect Privilege Assignment vulnerability in Sergey AIWU allows Privilege Escalation. This issue affects AIWU: from n/a through 1.4.17.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-48879" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48879" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7770 · June 1, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-7770" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7770" target="_blank">OpenCVE</a></p>
+<h3>IBM i Access Client Solutions Remote Code Execution</h3>
+<p>IBM i Access Family 1.1.5.0 through 1.1.9.12 IBM i Access Client Solutions (ACS) is vulnerable to remote code execution when configured to listen for requests from IBM i Navigator. CVSS 3.1: 8.8 (HIGH). IBM advisory: ibm.com/support/pages/node/7274214.</p>
 </div>
 
                         </div>
@@ -612,7 +604,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-02 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-02 21:51 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
