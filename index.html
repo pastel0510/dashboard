@@ -533,10 +533,38 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2024-21182 · July 16, 2024, updated March 19, 2025 · [KEV]</p>
-<h3>Oracle WebLogic Server Unspecified Vulnerability</h3>
-<p>Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server, resulting in unauthorized access to critical data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2024-21182" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2024-21182" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40965 · June 1, 2026 · <span class="badge-kev">[KEV]</span></p>
+<h3>Cloud Foundry UAA Private Key Disclosure via /token_keys Endpoint</h3>
+<p>Cloud Foundry UAA versions v76.12.0 through v78.12.0 are vulnerable to a private key exposure. The server contains a vulnerability where EC (Elliptic Curve) private keys are inadvertently exposed through the public /token_keys endpoint. This endpoint is designed to provide public key material for JWT token verification but incorrectly exposes private key components for EC keys. The vulnerability affects deployments using EC keys for JWT token signing. The vulnerability does not affect RSA key configurations, only deployments using EC keys for JWT signing.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40965" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-40964 · June 1, 2026</p>
+<h3>Unauthenticated Access to Cloud Foundry Logs via cf-auth-proxy JWT Bypass</h3>
+<p>Authentication Bypass in cf-auth-proxy in Cloud Foundry Foundation all installations allows an unauthenticated remote attacker to gain read access to every log and metric for every application and platform component via minting a JWT that the cf-auth-proxy accepts as a valid logs.admin token.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40964" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40964" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-37223 · June 1, 2026</p>
+<h3>Assertion Failure in FlexRIC 2.0.0 Allows Remote Unauthenticated Crash</h3>
+<p>FlexRIC v2.0.0 contains a reachable assertion in the iApp message dispatcher. The dispatcher validates incoming E2AP messages against a 9-entry whitelist using assert(). A remote unauthenticated attacker can send any decodable E2AP PDU with a message type not in the whitelist to crash the iApp process (port 36422) via SIGABRT. Since iApp and the near-RT RIC share one process, this terminates the entire RIC service and disconnects all E2 Nodes and xApps.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-37223" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-37223" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-37224 · June 1, 2026</p>
+<h3>FlexRIC 2.0.0 Crash via Duplicate E2_SETUP_REQUEST Handling</h3>
+<p>FlexRIC v2.0.0 crashes when receiving a duplicate E2_SETUP_REQUEST from the same or spoofed E2 Node. The iApp registry enforces node ID uniqueness via assert() rather than graceful rejection. A remote unauthenticated attacker can crash the iApp process (port 36421) by sending two E2_SETUP_REQUESTs with the same E2 node configuration, triggering SIGABRT.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-37224" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-37224" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-9092 · May 28, 2026 · updated June 1, 2026</p>
+<h3>Casdoor Unverified Email Binding Leading to Account Takeover</h3>
+<p>Casdoor versions 2.362.0 and earlier contain a vulnerability involving unverified email binding that may enable account takeover. The getExistUserByBindingRule function matches users by email without checking the email_verified claim from upstream providers; the idp.UserInfo struct does not even include a EmailVerified field. An attacker can supply an unverified email claim from an upstream provider to take over accounts that use the same email address.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-9092" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9092" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -564,7 +592,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-02 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-02 03:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
