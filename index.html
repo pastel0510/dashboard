@@ -514,38 +514,59 @@ https://phys.org/news/2026-06-chromosome-home-genes.html
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40965 · June 1, 2026 · <span class="badge-kev">[KEV]</span></p>
-<h3>Cloud Foundry UAA Private Key Disclosure via /token_keys Endpoint</h3>
-<p>Cloud Foundry UAA versions v76.12.0 through v78.12.0 are vulnerable to a private key exposure. The server contains a vulnerability where EC (Elliptic Curve) private keys are inadvertently exposed through the public /token_keys endpoint. This endpoint is designed to provide public key material for JWT token verification but incorrectly exposes private key components for EC keys. The vulnerability affects deployments using EC keys for JWT token signing. The vulnerability does not affect RSA key configurations, only deployments using EC keys for JWT signing.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40965" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-49121 · Jun 1, 2026</p>
+<h3>AI Tensor Engine for ROCm (AITER) Remote Code Execution via Unauthenticated Pickle Deserialization</h3>
+<p>AITER through 0.1.14 contains an unauthenticated remote code execution vulnerability in MessageQueue.recv(). Attackers can send a malicious pickle payload to a ZMQ SUB socket with no authentication, HMAC, or format validation, allowing arbitrary code execution simultaneously on every remote reader worker in the cluster.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49121" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49121" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40964 · June 1, 2026</p>
-<h3>Unauthenticated Access to Cloud Foundry Logs via cf-auth-proxy JWT Bypass</h3>
-<p>Authentication Bypass in cf-auth-proxy in Cloud Foundry Foundation all installations allows an unauthenticated remote attacker to gain read access to every log and metric for every application and platform component via minting a JWT that the cf-auth-proxy accepts as a valid logs.admin token.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40964" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40964" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-43624 · Jun 1, 2026</p>
+<h3>F5-TTS Path Traversal via finetune Gradio create_data_project()</h3>
+<p>F5-TTS through version 1.1.20 contains a path traversal vulnerability in the finetune Gradio handlers that allows unauthenticated attackers to write arbitrary files by passing unsanitized user-supplied project names directly to os.path.join() without validating the resulting path stays within the intended base directory.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43624" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43624" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-37223 · June 1, 2026</p>
-<h3>Assertion Failure in FlexRIC 2.0.0 Allows Remote Unauthenticated Crash</h3>
-<p>FlexRIC v2.0.0 contains a reachable assertion in the iApp message dispatcher. The dispatcher validates incoming E2AP messages against a 9-entry whitelist using assert(). A remote unauthenticated attacker can send any decodable E2AP PDU with a message type not in the whitelist to crash the iApp process (port 36422) via SIGABRT. Since iApp and the near-RT RIC share one process, this terminates the entire RIC service and disconnects all E2 Nodes and xApps.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-37223" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-37223" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-49491 · Jun 1, 2026</p>
+<h3>Pixa Bank 2.0 SQL Injection via agence-ajax.php 'rib' Parameter</h3>
+<p>Pixa Bank 2.0 contains an SQL injection vulnerability that allows unauthenticated attackers to extract sensitive data by injecting SQL code into the 'rib' parameter. Attackers can send POST requests to the agence-ajax.php endpoint with UNION-based SQL payloads to retrieve user information including names, email addresses, and phone numbers.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49491" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49491" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-37224 · June 1, 2026</p>
-<h3>FlexRIC 2.0.0 Crash via Duplicate E2_SETUP_REQUEST Handling</h3>
-<p>FlexRIC v2.0.0 crashes when receiving a duplicate E2_SETUP_REQUEST from the same or spoofed E2 Node. The iApp registry enforces node ID uniqueness via assert() rather than graceful rejection. A remote unauthenticated attacker can crash the iApp process (port 36421) by sending two E2_SETUP_REQUESTs with the same E2 node configuration, triggering SIGABRT.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-37224" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-37224" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-49490 · May 31, 2026</p>
+<h3>OpenCATS SQL Injection in DataGrid Filter Handling</h3>
+<p>OpenCATS from version 0.9.1a contains an SQL injection vulnerability in DataGrid filter handling that allows authenticated attackers to inject SQL through crafted filters targeting the non-filterable Tags column in the Candidates DataGrid. Attackers can bypass column filterable restrictions by manipulating filter requests to execute arbitrary SQL queries.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49490" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49490" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9092 · May 28, 2026 · updated June 1, 2026</p>
-<h3>Casdoor Unverified Email Binding Leading to Account Takeover</h3>
-<p>Casdoor versions 2.362.0 and earlier contain a vulnerability involving unverified email binding that may enable account takeover. The getExistUserByBindingRule function matches users by email without checking the email_verified claim from upstream providers; the idp.UserInfo struct does not even include a EmailVerified field. An attacker can supply an unverified email claim from an upstream provider to take over accounts that use the same email address.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9092" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9092" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-43623 · Jun 1, 2026</p>
+<h3>microtar Stack-based Buffer Overflow via raw_to_header()</h3>
+<p>microtar through 0.1.0 contains a stack-based buffer overflow vulnerability in the raw_to_header() function in src/microtar.c that allows attackers to corrupt adjacent stack memory by supplying a crafted TAR archive with non-null-terminated name or linkname fields, causing writes of up to 355 bytes into a 100-byte destination buffer.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-43623" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-43623" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-47294 · Jun 1, 2026</p>
+<h3>Microsoft Office SharePoint Deserialization of Untrusted Data Remote Code Execution</h3>
+<p>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network, leading to potential full system compromise.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-47294" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47294" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-10179 · May 31, 2026, updated Jun 1, 2026</p>
+<h3>TRENDnet TEW-432BRP Stack-based Buffer Overflow via formSetWlanEncrypt</h3>
+<p>A vulnerability was found in TRENDnet TEW-432BRP 3.10B20 affecting the formSetWlanEncrypt function. Manipulation of the webpage argument causes a stack-based buffer overflow that can be initiated remotely. The vendor states the product has been EOL since 2009, so no fix will be provided.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10179" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10179" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2018-25419 · May 30, 2026, updated Jun 1, 2026</p>
+<h3>AiOPMSD Final 1.0.0 SQL Injection via genre.php</h3>
+<p>AiOPMSD Final 1.0.0 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the genre parameter. Attackers can send GET requests to genre.php with crafted SQL payloads to extract sensitive database information including usernames, database names, and version details.</p>
+<a href="https://db.gcve.eu/cve/CVE-2018-25419" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25419" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -573,7 +594,7 @@ https://phys.org/news/2026-06-chromosome-home-genes.html
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-02 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-02 09:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
