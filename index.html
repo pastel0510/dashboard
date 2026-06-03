@@ -530,54 +530,62 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. Note: CISA KEV catalog was unreachable at refresh time, so no [KEV] markers are shown. Verify KEV status at <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank">cisa.gov/known-exploited-vulnerabilities-catalog</a>.</p>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-44825 · June 1, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-44825" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44825" target="_blank">OpenCVE</a></p>
-<h3>Apache Solr Hardcoded Credentials in Basic Authentication Setup Tool</h3>
-<p>Apache Solr versions 9.4.0 through 9.10.1 and 10.0.0 have hardcoded credentials in the bin/solr auth enable Basic Authentication setup tool. The tool silently installs publicly known default credentials (superadmin, admin, search, index) alongside the user-specified account, allowing a remote attacker to gain full administrative access to the Solr cluster. Immediate workaround: delete the template users from security.json. Fixed in upcoming versions 9.11.0 and 10.1.0.</p>
+<p class="cve-id">CVE-2026-7312 · June 2, 2026</p>
+<h3>CVE-2026-7312 — CWE‑522: Insufficiently Protected Credentials in web services in Progress Sitefinity version from 14</h3>
+<p>CWE‑522: Insufficiently Protected Credentials in web services in Progress Sitefinity version from 14.0.7700 to 14.4.8152, and 15.0.8200 to 15.0.8234, and 15.1.8300 to 15.1.8335, 15.2.8400 to 15.2.8441, 15.3.8500 to 15.3.8531, and 15.4.8600 to 15.4.86...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7312" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7312" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10187 · May 31, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-10187" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10187" target="_blank">OpenCVE</a></p>
-<h3>TOTOLINK N300RH Stack-Based Buffer Overflow in setWiFiBasicConfig</h3>
-<p>TOTOLINK N300RH version 6.1c.1353_B20190305 contains a stack-based buffer overflow in the setWiFiBasicConfig function within the wireless.so web management interface component. Manipulation of the KeyStr argument allows unauthenticated remote attackers to trigger the overflow over the network. Public PoC exploit has been released. CVSS 3.1: 9.8 (CRITICAL).</p>
+<p class="cve-id">CVE-2026-40965 · June 1, 2026, updated June 2, 2026</p>
+<h3>CVE-2026-40965 — Cloud Foundry UAA versions v76</h3>
+<p>Cloud Foundry UAA versions v76.12.0 through v78.12.0 are vulnerable to a private key exposure. The server contains a vulnerability where EC (Elliptic Curve) private keys are inadvertently exposed through the public /token_keys endpoint. This endpoint...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40965" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40965" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2018-25427 · June 1, 2026 · <a href="https://db.gcve.eu/cve/CVE-2018-25427" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2018-25427" target="_blank">OpenCVE</a></p>
-<h3>Arm Whois 3.11 Stack-Based Buffer Overflow via SEH Overwrite</h3>
-<p>Arm Whois 3.11 contains a stack-based buffer overflow that allows remote attackers to execute arbitrary code by supplying oversized input (exceeding 658 bytes with shellcode) to the IP address or domain field, overwriting the structured exception handler to gain command execution. Public exploit code is available on ExploitDB and VulnCheck has published an advisory. CVSS 4.0: 9.3 (CRITICAL).</p>
+<p class="cve-id">CVE-2026-45132 · June 1, 2026</p>
+<h3>CVE-2026-45132 — CloudPirates Open Source Helm Charts is a collection of Helm charts</h3>
+<p>CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (generate-schema.yaml) exposes sensitive credentials (Personal Access Token and SSH signing key) to fork-controlled code due to un...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45132" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45132" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8644 · June 1, 2026 · updated June 2, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-8644" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8644" target="_blank">OpenCVE</a></p>
-<h3>IBM WebSphere Application Server Identity Spoofing Vulnerability</h3>
-<p>IBM WebSphere Application Server 9.0 and 8.5 are vulnerable to identity spoofing that allows an unauthenticated remote attacker to spoof identities and bypass authentication mechanisms. CVSS 3.1: 9.1 (CRITICAL). IBM has published advisory details at ibm.com/support/pages/node/7274740.</p>
+<p class="cve-id">CVE-2026-45131 · June 1, 2026</p>
+<h3>CVE-2026-45131 — CloudPirates Open Source Helm Charts is a collection of Helm charts</h3>
+<p>CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (pull-request.yaml) executes attacker-controlled code from fork pull requests in a privileged context, exposing repository secrets...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-45131" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45131" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-9319 · June 1, 2026 · updated June 2, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-9319" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9319" target="_blank">OpenCVE</a></p>
-<h3>IBM WebSphere Application Server Remote Code Execution via Deserialization</h3>
-<p>IBM WebSphere Application Server 9.0 and 8.5 are vulnerable to potential remote code execution due to deserialization of untrusted data via JAX-WS endpoints with WS-Security. An unauthenticated remote attacker could exploit this to execute arbitrary code. KB at ibm.com/support/pages/node/7274738.</p>
+<p class="cve-id">CVE-2026-49448 · June 2, 2026</p>
+<h3>CVE-2026-49448 — authentik is an open-source identity provider</h3>
+<p>authentik is an open-source identity provider. Prior to versions 2025.12.6, 2026.2.4, and 2026.5.1, the Source stage can be bypassed by sending an empty POST. This issue has been patched in versions 2025.12.6, 2026.2.4, and 2026.5.1.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-49448" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49448" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10158 · May 31, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-10158" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10158" target="_blank">OpenCVE</a></p>
-<h3>TRENDnet TEW-432BRP Stack-Based Buffer Overflow in formPortFw</h3>
-<p>TRENDnet TEW-432BRP 3.10B20 contains a stack-based buffer overflow in the formPortFw function (/goform/formPortFw) via the server_name argument. Remote attackers can exploit this to execute arbitrary code. The device has been end-of-life since 2009 with no vendor fix available. Public PoC exploit released. CVSS 3.1: 8.8 (HIGH).</p>
+<p class="cve-id">CVE-2026-5076 · June 2, 2026</p>
+<h3>CVE-2026-5076 — The ARMember Premium plugin for WordPress is vulnerable to an insecure password reset mechanism i...</h3>
+<p>The ARMember Premium plugin for WordPress is vulnerable to an insecure password reset mechanism in all versions up to, and including, 7.3.1. The plugin stores a plaintext copy of the password reset key in the `arm_reset_password_key` user meta field ...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5076" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5076" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10162 · May 31, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-10162" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10162" target="_blank">OpenCVE</a></p>
-<h3>TRENDnet TEW-432BRP Stack-Based Buffer Overflow in formSetPassword</h3>
-<p>TRENDnet TEW-432BRP 3.10B20 contains a stack-based buffer overflow in the formSetPassword function (/goform/formSetPassword) via the webpage argument. Remote exploitation is possible with publicly available PoC code. This product has been end-of-life since 2009 and no patches will be issued. CVSS 3.1: 8.8 (HIGH).</p>
+<p class="cve-id">CVE-2026-0611 · June 2, 2026</p>
+<h3>CVE-2026-0611 — Spacelabs Healthcare Sentinel versions 10</h3>
+<p>Spacelabs Healthcare Sentinel versions 10.5.x and higher and 11.x.x before 11.6.0 contain an unauthenticated remote code execution vulnerability through a deprecated .NET Remoting HTTP channel exposed on port 8989 that allows attackers to perform arb...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-0611" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-0611" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7770 · June 1, 2026 · <a href="https://db.gcve.eu/cve/CVE-2026-7770" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7770" target="_blank">OpenCVE</a></p>
-<h3>IBM i Access Client Solutions Remote Code Execution</h3>
-<p>IBM i Access Family 1.1.5.0 through 1.1.9.12 IBM i Access Client Solutions (ACS) is vulnerable to remote code execution when configured to listen for requests from IBM i Navigator. CVSS 3.1: 8.8 (HIGH). IBM advisory: ibm.com/support/pages/node/7274214.</p>
+<p class="cve-id">CVE-2026-47117 · June 2, 2026</p>
+<h3>CVE-2026-47117 — OpenMed before 1</h3>
+<p>OpenMed before 1.5.2 contains a remote code execution vulnerability in the PII privacy-filter model loading path. The privacy-filter dispatcher used broad substring matching on the user-supplied model_name parameter, allowing a value such as attacker...</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-47117" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47117" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
