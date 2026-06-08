@@ -529,58 +529,58 @@ Martin Mašek
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-11413 · CVSS 8.8 · Jun 06, 2026</p>
-<h3>A security vulnerability has been detected in JingDong JD Cloud Box AX6600 4.5.3.r4546. The impacted element is...</h3>
+<h3>JingDong JD Cloud Box AX6600 stack-based buffer overflow in set_macfilter</h3>
 <p>A security vulnerability has been detected in JingDong JD Cloud Box AX6600 4.5.3.r4546. The impacted element is the function set_macfilter of the file /sbin/jdcweb_rpc. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11413" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11413" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-11498 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Tenda HG7/HG9/HG10 stack-based buffer overflow in asp_voip_OtherSet</h3>
+<p>A vulnerability was found in Tenda HG7HG9 and HG10 300001138_en_xpon. Affected by this issue is the function asp_voip_OtherSet of the file /boaform/voip_other_set of the component Web Management Interface. Performing a manipulation of the argument funckey_transfer results in stack-based buffer overflow. The attack is possible to be carried out remotely.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11498" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-11503 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Tenda CX12L Wi-Fi Configuration stack-based buffer overflow in form_fast_setting_wifi_set</h3>
+<p>A security vulnerability has been detected in Tenda CX12L 16.03.53.12. The affected element is the function form_fast_setting_wifi_set of the file /goform/fast_setting_wifi_set of the component Wi-Fi Configuration Endpoint. Such manipulation of the argument ssid leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11503" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11503" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-11504 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Tenda CX12L Wi-Fi Schedule Configuration stack-based buffer overflow in setSchedWifi</h3>
+<p>A vulnerability was detected in Tenda CX12L 16.03.53.12. The impacted element is the function setSchedWifi of the file /goform/openSchedWifi of the component Wi-Fi Schedule Configuration Endpoint. Performing a manipulation of the argument schedStartTime/schedEndTime results in stack-based buffer overflow. The attack may be initiated remotely. The exploit is now public and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11504" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11504" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-49492 · CVSS 8.8 · Jun 05, 2026</p>
-<h3>Markdown Preview Enhanced before 0.8.28 opens external files and links from the preview through...</h3>
-<p>Markdown Preview Enhanced before 0.8.28 opens external files and links from the preview through a shell and does not validate untrusted inputs taken from the markdown document - the diagram filename attribute, imported file paths, and the latex_engine code-chunk attribute. On Windows, a crafted markdown document can inject operating system commands that execute when the document is previewed. Fixed in 0.8.28 by passing these inputs as literal arguments instead of through a shell and validating t</p>
+<h3>Markdown Preview Enhanced before 0.8.28 arbitrary command execution via shell injection</h3>
+<p>Markdown Preview Enhanced before 0.8.28 opens external files and links from the preview through a shell and does not validate untrusted inputs taken from the markdown document - the diagram filename attribute, imported file paths, and the latex_engine code-chunk attribute. On Windows, a crafted markdown document can inject operating system commands that execute when the document is previewed. Fixed in 0.8.28 by passing these inputs as literal arguments instead of through a shell and validating trusted sources.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-49492" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49492" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-49493 · CVSS 8.8 · Jun 05, 2026</p>
-<h3>Markdown Preview Enhanced before 0.8.28 parses Bitfield fenced code blocks with interpretJS()...</h3>
+<p class="cve-id">CVE-2026-49493 · CVSS 8.8 · Jun 05, 2026 · [EPSS: 0.07%]</p>
+<h3>Markdown Preview Enhanced before 0.8.28 arbitrary code execution via bitfield code blocks</h3>
 <p>Markdown Preview Enhanced before 0.8.28 parses Bitfield fenced code blocks with interpretJS(), which evaluates the block content as code via vm.runInNewContext(), allowing arbitrary code execution. A crafted markdown document containing a malicious bitfield code block executes attacker-controlled code on the server side when the document is rendered or exported. Fixed in 0.8.28 by parsing bitfield register definitions with JSON5.parse(), since they are purely data.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-49493" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49493" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5411 · CVSS 8.8 · Jun 05, 2026</p>
-<h3>The WP Captcha PRO plugin for WordPress is vulnerable to arbitrary file upload in all versions...</h3>
-<p>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and including, 5.38. This is due to a capability check in the save_ajax() function of the licensing module, combined with unrestricted file extraction in sync_cloud_protection(). This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files including PHP </p>
+<p class="cve-id">CVE-2026-5411 · CVSS 8.8 · Jun 05, 2026 · [EPSS: 0.21%]</p>
+<h3>WP Captcha PRO arbitrary file upload via save_ajax() capability bypass</h3>
+<p>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and including, 5.38. This is due to a capability check in the save_ajax() function of the licensing module, combined with unrestricted file extraction in sync_cloud_protection(). This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files including PHP webshells.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-5411" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5411" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5415 · CVSS 8.8 · Jun 05, 2026</p>
-<h3>The WP Captcha PRO plugin for WordPress is vulnerable to Authentication Bypass in all versions...</h3>
-<p>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.38. This is due to the ajax_run_tool() AJAX handler relying solely on a nonce check (check_ajax_referer) for security without performing any capability check, combined with the create_temporary_link tool allowing the generation of passwordless login links for arbitrary users, and the handle_te</p>
+<p class="cve-id">CVE-2026-5415 · CVSS 8.8 · Jun 05, 2026 · [EPSS: 0.07%]</p>
+<h3>WP Captcha PRO authentication bypass via ajax_run_tool() nonce-only check</h3>
+<p>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.38. This is due to the ajax_run_tool() AJAX handler relying solely on a nonce check (check_ajax_referer) for security without performing any capability check, combined with the create_temporary_link tool allowing the generation of passwordless login links for arbitrary users.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-5415" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5415" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-7654 · CVSS 8.8 · Jun 05, 2026</p>
-<h3>The Admin Columns plugin for WordPress is vulnerable to PHP Object Injection leading to Remote Code Execution...</h3>
-<p>The Admin Columns plugin for WordPress is vulnerable to PHP Object Injection leading to Remote Code Execution in versions up to and including 7.0.18. This is due to the use of `unserialize()` without an `allowed_classes` restriction in the `IdsToCollection::get_ids_from_string()` function, which processes attacker-controlled post meta values without proper validation. This makes it possible for authenticated attackers with Contributor-level access and above to inject a serialized PHP object into</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7654" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7654" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-11416 · CVSS 8.1 · Jun 05, 2026</p>
-<h3>MoviePilot contains a path traversal vulnerability in the AliPan, U115, and Rclone cloud storage download...</h3>
-<p>MoviePilot contains a path traversal vulnerability in the AliPan, U115, and Rclone cloud storage download handlers where the local destination path is constructed by concatenating the configured download directory with a filename taken directly from remote cloud API metadata without basename normalization or path validation. An attacker who controls a filename returned by a remote cloud storage API can include traversal sequences ../ in the filename to cause downloaded content to be written outs</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-11416" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11416" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2023-54350 · CVSS 7.5 · Jun 08, 2026</p>
-<h3>WordPress Augmented-Reality plugin contains a remote code execution vulnerability in the elFinder connector...</h3>
-<p>WordPress Augmented-Reality plugin contains a remote code execution vulnerability in the elFinder connector that allows unauthenticated attackers to upload and execute arbitrary PHP files. Attackers can send POST requests to the connector.minimal.php endpoint with mkfile and put commands to create malicious PHP files in the file_manager directory and execute them on the server.</p>
-<a href="https://db.gcve.eu/cve/CVE-2023-54350" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2023-54350" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -609,7 +609,7 @@ Martin Mašek
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-08 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-08 15:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
