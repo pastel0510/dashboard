@@ -511,59 +511,59 @@ https://www.science.org/content/article/ex-google-ceo-funds-private-space-telesc
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-11413 · CVSS 8.8 · Jun 06, 2026</p>
-<h3>JingDong JD Cloud Box AX6600 stack-based buffer overflow in set_macfilter</h3>
+<p class="cve-id">CVE-2026-11413 · CVSS 8.8 · Jun 06, 2026 (updated Jun 08, 2026)</p>
+<h3>Stack-based buffer overflow in JingDong JD Cloud Box AX6600 set_macfilter enables remote code execution; exploit public</h3>
 <p>A security vulnerability has been detected in JingDong JD Cloud Box AX6600 4.5.3.r4546. The impacted element is the function set_macfilter of the file /sbin/jdcweb_rpc. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed publicly and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11413" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11413" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-11498 · CVSS 8.8 · Jun 08, 2026</p>
-<h3>Tenda HG7/HG9/HG10 stack-based buffer overflow in asp_voip_OtherSet</h3>
+<h3>Stack-based buffer overflow in Tenda HG7/HG9/HG10 Web Management Interface via funckey_transfer argument manipulation</h3>
 <p>A vulnerability was found in Tenda HG7HG9 and HG10 300001138_en_xpon. Affected by this issue is the function asp_voip_OtherSet of the file /boaform/voip_other_set of the component Web Management Interface. Performing a manipulation of the argument funckey_transfer results in stack-based buffer overflow. The attack is possible to be carried out remotely.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11498" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-11503 · CVSS 8.8 · Jun 08, 2026</p>
-<h3>Tenda CX12L Wi-Fi Configuration stack-based buffer overflow in form_fast_setting_wifi_set</h3>
+<h3>Stack-based buffer overflow in Tenda CX12L Wi-Fi Configuration via ssid argument manipulation; remote exploit available</h3>
 <p>A security vulnerability has been detected in Tenda CX12L 16.03.53.12. The affected element is the function form_fast_setting_wifi_set of the file /goform/fast_setting_wifi_set of the component Wi-Fi Configuration Endpoint. Such manipulation of the argument ssid leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed publicly and may be used.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11503" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11503" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-11504 · CVSS 8.8 · Jun 08, 2026</p>
-<h3>Tenda CX12L Wi-Fi Schedule Configuration stack-based buffer overflow in setSchedWifi</h3>
+<h3>Stack-based buffer overflow in Tenda CX12L Wi-Fi Schedule Configuration via schedStartTime/schedEndTime manipulation</h3>
 <p>A vulnerability was detected in Tenda CX12L 16.03.53.12. The impacted element is the function setSchedWifi of the file /goform/openSchedWifi of the component Wi-Fi Schedule Configuration Endpoint. Performing a manipulation of the argument schedStartTime/schedEndTime results in stack-based buffer overflow. The attack may be initiated remotely. The exploit is now public and may be used.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11504" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11504" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-49492 · CVSS 8.8 · Jun 05, 2026</p>
-<h3>Markdown Preview Enhanced before 0.8.28 arbitrary command execution via shell injection</h3>
-<p>Markdown Preview Enhanced before 0.8.28 opens external files and links from the preview through a shell and does not validate untrusted inputs taken from the markdown document - the diagram filename attribute, imported file paths, and the latex_engine code-chunk attribute. On Windows, a crafted markdown document can inject operating system commands that execute when the document is previewed. Fixed in 0.8.28 by passing these inputs as literal arguments instead of through a shell and validating trusted sources.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-49492" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49492" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-11517 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Buffer overflow in UTT HiPER 2610G DNS filter configuration via GroupName argument; remote exploit disclosed publicly</h3>
+<p>A vulnerability was determined in UTT HiPER 2610G up to 3.0.0-171107. This impacts the function strcpy of the file /goform/formConfigDnsFilterGlobal. Executing a manipulation of the argument GroupName can lead to buffer overflow. The attack can be executed remotely. The exploit has been publicly disclosed and may be utilized.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11517" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11517" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-49493 · CVSS 8.8 · Jun 05, 2026 · [EPSS: 0.07%]</p>
-<h3>Markdown Preview Enhanced before 0.8.28 arbitrary code execution via bitfield code blocks</h3>
-<p>Markdown Preview Enhanced before 0.8.28 parses Bitfield fenced code blocks with interpretJS(), which evaluates the block content as code via vm.runInNewContext(), allowing arbitrary code execution. A crafted markdown document containing a malicious bitfield code block executes attacker-controlled code on the server side when the document is rendered or exported. Fixed in 0.8.28 by parsing bitfield register definitions with JSON5.parse(), since they are purely data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-49493" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49493" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-11522 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Stack-based buffer overflow in Tenda W20E port mirror configuration via portMirrorMirroredPorts argument; remote exploit public</h3>
+<p>A vulnerability was detected in Tenda W20E 15.11.0.6. This vulnerability affects the function formSetPortMirror of the file /goform/setPortMirror. Performing a manipulation of the argument portMirrorMirroredPorts results in stack-based buffer overflow. The attack can be initiated remotely. The exploit is now public and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11522" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11522" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5411 · CVSS 8.8 · Jun 05, 2026 · [EPSS: 0.21%]</p>
-<h3>WP Captcha PRO arbitrary file upload via save_ajax() capability bypass</h3>
-<p>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and including, 5.38. This is due to a capability check in the save_ajax() function of the licensing module, combined with unrestricted file extraction in sync_cloud_protection(). This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files including PHP webshells.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5411" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5411" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-11524 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Stack-based buffer overflow in Tenda W20E Web Management Interface via wifiFilterListRemark manipulation; remote exploit</h3>
+<p>A vulnerability has been found in Tenda W20E 15.11.0.6. Impacted is the function modifyWifiFilterRules of the file /goform/modifyWifiFilterRules of the component Web Management Interface. The manipulation of the argument wifiFilterListRemark leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11524" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11524" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5415 · CVSS 8.8 · Jun 05, 2026 · [EPSS: 0.07%]</p>
-<h3>WP Captcha PRO authentication bypass via ajax_run_tool() nonce-only check</h3>
-<p>The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.38. This is due to the ajax_run_tool() AJAX handler relying solely on a nonce check (check_ajax_referer) for security without performing any capability check, combined with the create_temporary_link tool allowing the generation of passwordless login links for arbitrary users.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5415" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5415" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-11528 · CVSS 8.8 · Jun 08, 2026</p>
+<h3>Stack-based buffer overflow in Tenda AC18 Web Management Interface via callback argument; remote exploit made public</h3>
+<p>A vulnerability was found in Tenda AC18 15.03.05.05. The affected element is the function sub_45304 of the file /goform/getRebootStatus of the component Web Management Interface. The manipulation of the argument callback results in stack-based buffer overflow. The attack may be launched remotely. The exploit has been made public and could be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11528" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11528" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -592,7 +592,7 @@ https://www.science.org/content/article/ex-google-ceo-funds-private-space-telesc
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-08 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-08 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
