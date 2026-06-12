@@ -495,58 +495,60 @@ Please regenerate this bulletin later when the lookup service is available.</p>
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-11616 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28...</h3>
-<p>The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28. This is due to the ajax_ayi_action() handler only applying strip_tags(esc_sql()) — with no allow-list — to the attacker-controlled $_POST['type'] and $_POST['postid'] values before forwarding them to update_ayi_data(), which calls update_user_meta($current_user->ID, $rsvp_args['type'], $posts). By passing type=wp_capabilities and postid=administrator, an attacker can escalate privileges.</p>
+<p class="cve-id">CVE-2026-11616 · CVSS 8.8 · Jun 09, 2026</p>
+<h3>WordPress GeoDirectory plugin privilege escalation via stripped POST values</h3>
+<p>The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28. This is due to the ajax_ayi_action() handler only applying strip_tags(esc_sql()) — with no allow-list — to the attacker-controlled $_POST['type'] and $_POST['postid'] values before forwarding them to update_ayi_data(), which calls update_user_meta($current_user->ID, $rsvp_args['type'], $posts). By passing type=wp_capabilities and postid=administrator, an attack</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11616" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-20251 · CVSS 8.8 · Jun 10, 2026 (updated Jun 10, 2026)</p>
-<h3>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12...</h3>
-<p>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the 'admin' or 'power' Splunk roles could perform a Remote Code Execution (RCE) through the Splunk Secure Gateway app. The Remote Code Execution is possible because of unsafe deserialization of App Key Value Store.</p>
+<p class="cve-id">CVE-2026-20251 · CVSS 8.8 · Jun 10, 2026</p>
+<h3>Splunk Enterprise/Cloud RCE via Secure Gateway unsafe deserialization</h3>
+<p>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the 'admin' or 'power' Splunk roles could perform a Remote Code Execution (RCE) through the Splunk Secure Gateway app.
+
+The Remote Code Execution is possible because of unsafe deserialization of App Key Value Store</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20251" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20251" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40371 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Improper handling of insufficient permissions or privileges in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to elevate privileges...</h3>
+<p class="cve-id">CVE-2026-40371 · CVSS 8.8 · Jun 09, 2026</p>
+<h3>Microsoft Dynamics 365 on-premises privilege escalation over network</h3>
 <p>Improper handling of insufficient permissions or privileges in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-40371" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40371" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-42985 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Heap-based buffer overflow in Remote Desktop Client allows an unauthorized attacker to execute code over a network.</h3>
+<p class="cve-id">CVE-2026-42985 · CVSS 8.8 · Jun 09, 2026</p>
+<h3>Remote Desktop Client heap-based buffer overflow allows remote code execution</h3>
 <p>Heap-based buffer overflow in Remote Desktop Client allows an unauthorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42985" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42985" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-45484 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.</h3>
+<p class="cve-id">CVE-2026-45484 · CVSS 8.8 · Jun 09, 2026</p>
+<h3>Microsoft Office SharePoint deserialization leads to privilege escalation</h3>
 <p>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45484" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45484" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-45504 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Server-side request forgery (ssrf) in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.</h3>
+<p class="cve-id">CVE-2026-45504 · CVSS 8.8 · Jun 09, 2026</p>
+<h3>Microsoft Exchange Server SSRF enables privilege escalation</h3>
 <p>Server-side request forgery (ssrf) in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45504" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45504" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-45648 · CVSS 8.8 · Jun 09, 2026 (updated Jun 11, 2026)</p>
-<h3>Stack-based buffer overflow in Active Directory Domain Services allows an authorized attacker to execute code over a network.</h3>
+<h3>Active Directory Domain Services stack-based buffer overflow enables remote code execution</h3>
 <p>Stack-based buffer overflow in Active Directory Domain Services allows an authorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45648" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45648" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46746 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>A vulnerability has been identified in SINEC INS (All versions < V1.0 SP2 Update 6). The application does not properly sanitize user input in the...</h3>
-<p>A vulnerability has been identified in SINEC INS (All versions &lt; V1.0 SP2 Update 6). The application does not properly sanitize user input in the /api/sftp/uploadFiles endpoint, allowing the injection of shell command payloads via crafted directory names. These payloads are stored and executed when directory listings are retrieved. This could allow an authenticated remote attacker to execute arbitrary commands on the underlying operating system with the privileges of the affected service user.</p>
+<p class="cve-id">CVE-2026-46746 · CVSS 8.8 · Jun 09, 2026</p>
+<h3>Siemens SINEC INS command injection via SFTP upload endpoint</h3>
+<p>A vulnerability has been identified in SINEC INS (All versions &lt; V1.0 SP2 Update 6). The application does not properly sanitize user input in the /api/sftp/uploadFiles endpoint, allowing the injection of shell command payloads via crafted directory names. These payloads are stored and executed when directory listings are retrieved. This could allow an authenticated remote attacker to execute arbitrary commands on the underlying operating system with the privileges of the affected service user (s</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-46746" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46746" target="_blank">OpenCVE</a>
 </div>
 
@@ -576,7 +578,7 @@ Please regenerate this bulletin later when the lookup service is available.</p>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-12 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-12 09:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
