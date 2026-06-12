@@ -502,59 +502,59 @@ Please regenerate this bulletin later when the lookup service is available.</p>
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-11557 · CVSS 8.8 · Jun 08, 2026 (updated Jun 09, 2026)</p>
-<h3>Tenda F451 Web Management Interface buffer overflow via /goform/Natlimit — public exploit available</h3>
-<p>A weakness has been identified in Tenda F451 1.0.0.7/1.0.0.9. The affected element is the function fromNatlimit of the file /goform/Natlimit of the component Web Management Interface. Executing a manipulation of the argument page can lead to stack-based buffer overflow. The attack can be executed remotely. The exploit has been made available to the public and could be used for attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-11557" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11557" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-11616 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Events Calendar for GeoDirectory WordPress plugin privilege escalation via unsanitized type/postid</h3>
-<p>The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28. This is due to the ajax_ayi_action() handler only applying strip_tags(esc_sql()) — with no allow-list — to the attacker-controlled $_POST['type'] and $_POST['postid'] values before forwarding them to update_ayi_data(), which calls update_user_meta($current_user->ID, $rsvp_args['type'], $posts). By passing type=wp_capabilities and postid=administrator, an attack.</p>
+<h3>The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28...</h3>
+<p>The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28. This is due to the ajax_ayi_action() handler only applying strip_tags(esc_sql()) — with no allow-list — to the attacker-controlled $_POST['type'] and $_POST['postid'] values before forwarding them to update_ayi_data(), which calls update_user_meta($current_user->ID, $rsvp_args['type'], $posts). By passing type=wp_capabilities and postid=administrator, an attacker can escalate privileges.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11616" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11616" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-20251 · CVSS 8.8 · Jun 10, 2026 (updated Jun 10, 2026)</p>
-<h3>Splunk Enterprise/Cloud Secure Gateway RCE via unsafe App Key Value Store deserialization</h3>
+<h3>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12...</h3>
 <p>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the 'admin' or 'power' Splunk roles could perform a Remote Code Execution (RCE) through the Splunk Secure Gateway app. The Remote Code Execution is possible because of unsafe deserialization of App Key Value Store.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20251" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20251" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-40371 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Microsoft Dynamics 365 (on-premises) privilege escalation for authorized network attackers</h3>
+<h3>Improper handling of insufficient permissions or privileges in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to elevate privileges...</h3>
 <p>Improper handling of insufficient permissions or privileges in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-40371" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40371" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-42985 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Remote Desktop Client heap-based buffer overflow allows unauthorized remote code execution</h3>
+<h3>Heap-based buffer overflow in Remote Desktop Client allows an unauthorized attacker to execute code over a network.</h3>
 <p>Heap-based buffer overflow in Remote Desktop Client allows an unauthorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-42985" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42985" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-45484 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Microsoft Office SharePoint privilege escalation via deserialization of untrusted data</h3>
+<h3>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.</h3>
 <p>Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45484" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45484" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-45504 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Microsoft Exchange Server SSRF allowing authorized attackers to elevate privileges over a network</h3>
+<h3>Server-side request forgery (ssrf) in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.</h3>
 <p>Server-side request forgery (ssrf) in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45504" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45504" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-45648 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
-<h3>Active Directory Domain Services stack-based buffer overflow allows authorized remote code execution</h3>
+<p class="cve-id">CVE-2026-45648 · CVSS 8.8 · Jun 09, 2026 (updated Jun 11, 2026)</p>
+<h3>Stack-based buffer overflow in Active Directory Domain Services allows an authorized attacker to execute code over a network.</h3>
 <p>Stack-based buffer overflow in Active Directory Domain Services allows an authorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45648" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45648" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-46746 · CVSS 8.8 · Jun 09, 2026 (updated Jun 09, 2026)</p>
+<h3>A vulnerability has been identified in SINEC INS (All versions < V1.0 SP2 Update 6). The application does not properly sanitize user input in the...</h3>
+<p>A vulnerability has been identified in SINEC INS (All versions &lt; V1.0 SP2 Update 6). The application does not properly sanitize user input in the /api/sftp/uploadFiles endpoint, allowing the injection of shell command payloads via crafted directory names. These payloads are stored and executed when directory listings are retrieved. This could allow an authenticated remote attacker to execute arbitrary commands on the underlying operating system with the privileges of the affected service user.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-46746" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46746" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -583,7 +583,7 @@ Please regenerate this bulletin later when the lookup service is available.</p>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-12 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-12 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
