@@ -533,60 +533,58 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-12059 · CVSS 8.8 · Jun 12, 2026</p>
-<h3>The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability...</h3>
+<h3>The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability, allowing authenticated remote attackers to bypass the enforced command restrictions...</h3>
 <p>The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability, allowing authenticated remote attackers to bypass the enforced command restrictions and execute operating system commands outside the originally authorized scope.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-12059" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-12059" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-20251 · CVSS 8.8 · Jun 10, 2026</p>
-<h3>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform...</h3>
-<p>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the 'admin' or 'power' Splunk roles could perform a Remote Code Execution (RCE) through the Splunk Secure Gateway app.
-
-The Remote Code Execution is possible because of unsafe deserialization of App Key Value Store</p>
+<h3>In Splunk Enterprise and Cloud Platform, a low-privileged user could perform Remote Code Execution through the Splunk Secure Gateway app due to unsafe deserialization of App Key Value Store.</h3>
+<p>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the 'admin' or 'power' Splunk roles could perform a Remote Code Execution (RCE) through the Splunk Secure Gateway app.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-20251" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20251" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-47342 · CVSS 8.8 · Jun 10, 2026 (updated Jun 12, 2026)</p>
+<h3>A privilege escalation vulnerability in Apache OFBiz allows a low-privileged authenticated user to obtain higher privileges. This issue affects Apache OFBiz: before 24.09.07.</h3>
+<p>A privilege escalation vulnerability in Apache OFBiz allows a low-privileged authenticated user to obtain higher privileges. This issue affects Apache OFBiz: before 24.09.07. Users are recommended to upgrade to version 24.09.07, which fixes the issue.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-47342" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47342" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-49498 · CVSS 8.8 · Jun 10, 2026 (updated Jun 11, 2026)</p>
-<h3>Ghidra 11.0 before 12.1 contains a SQL injection vulnerability in the changePassword() method...</h3>
+<h3>Ghidra 11.0 before 12.1 contains a SQL injection vulnerability in PostgresFunctionDatabase.changePassword() allowing authenticated attackers to inject SQL commands via crafted usernames...</h3>
 <p>Ghidra 11.0 before 12.1 contains a SQL injection vulnerability in the changePassword() method of PostgresFunctionDatabase that fails to escape double quotes in usernames interpolated into ALTER ROLE statements. Authenticated attackers can inject SQL commands via crafted username parameters in PasswordChange network messages to escalate to PostgreSQL superuser privileges and gain full database control.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-49498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49498" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-52754 · CVSS 8.8 · Jun 10, 2026 (updated Jun 11, 2026)</p>
-<h3>Ghidra before 12.1 contains an authentication bypass vulnerability in PKIAuthenticationModule.authenticate()...</h3>
+<h3>Ghidra before 12.1 contains an authentication bypass vulnerability in PKIAuthenticationModule.authenticate() allowing users to impersonate others with null signature...</h3>
 <p>Ghidra before 12.1 contains an authentication bypass vulnerability in PKIAuthenticationModule.authenticate() that allows any user with a valid CA-signed certificate to impersonate other users by presenting their public certificate with a null signature. Attackers can escalate privileges, modify repository access controls, exfiltrate shared reverse engineering databases, and permanently compromise server integrity.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-52754" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-52754" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-53806 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
-<h3>OpenClaw before 2026.5.12 contains a shell option parsing vulnerability that allows combined...</h3>
+<h3>OpenClaw before 2026.5.12 contains a shell option parsing vulnerability allowing combined POSIX shell flags to bypass exec revalidation checks...</h3>
 <p>OpenClaw before 2026.5.12 contains a shell option parsing vulnerability that allows combined POSIX shell flags to bypass exec revalidation checks. Attackers can exploit this by using combined shell options to execute inline shell content without intended allowlist validation, potentially enabling unauthorized command execution when the affected feature is enabled.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-53806" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53806" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-53807 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
-<h3>OpenClaw before 2026.5.6 contains an authorization bypass vulnerability in Telegram interactive...</h3>
+<h3>OpenClaw before 2026.5.6 contains an authorization bypass in Telegram interactive callbacks allowing authenticated users to skip commands.allowFrom validation...</h3>
 <p>OpenClaw before 2026.5.6 contains an authorization bypass vulnerability in Telegram interactive callbacks that allows authenticated users to skip commands.allowFrom validation. Attackers can invoke affected callbacks to mark themselves as authorized senders before allowlist checks are applied, triggering command behavior outside configured Telegram sender restrictions.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-53807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53807" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-53810 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
-<h3>OpenClaw before 2026.5.18 contains a code execution vulnerability where marketplace runtime...</h3>
+<h3>OpenClaw before 2026.5.18 contains a code execution vulnerability where marketplace runtime extension metadata can redirect loading toward unscanned package payloads...</h3>
 <p>OpenClaw before 2026.5.18 contains a code execution vulnerability where marketplace runtime extension metadata can redirect loading toward unscanned package payloads. Attackers with trusted operator access can manipulate extension metadata to load plugin code outside reviewed package entry points, bypassing security scanning.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-53810" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53810" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-53811 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
-<h3>OpenClaw before 2026.5.7 contains a privilege escalation vulnerability in the Matrix allowFrom...</h3>
-<p>OpenClaw before 2026.5.7 contains a privilege escalation vulnerability in the Matrix allowFrom feature that allows authenticated accounts to match policy entries through mutable display name metadata. Attackers with the ability to change display names can receive agent access intended for another Matrix identity, potentially gaining unauthorized permissions depending on operator configuration.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-53811" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53811" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -615,7 +613,7 @@ The Remote Code Execution is possible because of unsafe deserialization of App K
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-13 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-13 03:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
