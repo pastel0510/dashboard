@@ -468,52 +468,52 @@
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 2026-06-12</p>
-<h3>Over 400 Arch Linux AUR Packages Compromised to Push Rootkit, Infostealer</h3>
-<p>Attackers took over more than 400 packages in the Arch User Repository (AUR) and rewrote build scripts to install a credential stealer on any machine that built them. The malware harvests developer secrets and can load an eBPF rootkit when running with root privileges, compromising the trust model of the community package system.</p>
-<a href="https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-12</p>
-<h3>CISA Orders Feds to Patch Actively Exploited Ivanti Flaw by Sunday</h3>
-<p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) ordered government agencies to patch an actively exploited Ivanti Sentry flaw within three days under Binding Operational Directive 26-04, as attackers conduct code execution campaigns with root privileges against Internet-exposed secure mobile gateways.</p>
-<a href="https://www.bleepingcomputer.com/news/security/cisa-gives-feds-3-days-to-patch-ivanti-flaw-exploited-in-attacks/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-12</p>
-<h3>Pharma Giant Novo Nordisk Discloses Breach of Clinical Trials Data</h3>
-<p>Danish pharmaceutical giant Novo Nordisk, the world's largest producer of insulin, disclosed a data breach affecting patient information from some clinical trials, underscoring healthcare sector vulnerability to cyberattacks targeting sensitive research data.</p>
-<a href="https://www.bleepingcomputer.com/news/security/pharmaceutical-giant-novo-nordisk-discloses-security-breach/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-12</p>
-<h3>Over 73,000 French Govt Employees Affected in Tchap Messenger Breach</h3>
-<p>A breach of France's Tchap encrypted messaging platform affected more than 73,000 accounts across the French public sector, compromising the secure communications used by government employees and raising concerns about state-sponsored surveillance risks.</p>
-<a href="https://www.bleepingcomputer.com/news/security/french-govt-says-tchap-breach-affected-over-73-000-accounts/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-12</p>
-<h3>China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade</h3>
-<p>A China-nexus group tracked as Velvet Ant spent close to a decade backdooring PAM and OpenSSH components on a segregated Linux network, replacing trusted login modules with malicious copies that allowed secret access and credential logging. The earliest traces date back to 2016, and the backdoors evaded normal detection.</p>
-<a href="https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-11</p>
-<h3>ShinyHunters Exploits Oracle PeopleSoft Zero-Day to Breach Universities</h3>
-<p>The ShinyHunters extortion crew exploited an unpatched remote code execution flaw in Oracle PeopleSoft (CVE-2026-35273, rated 9.8/10) to break into enterprise systems, steal data, and demand payment. The campaign hit universities hardest, with no authentication or user interaction required for exploitation.</p>
-<a href="https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-11</p>
-<h3>Authorities Dismantle 'AudiA6' Ransomware Crypto-Laundering Service</h3>
-<p>Law enforcement dismantled the "AudiA6" cryptocurrency service allegedly used by ransomware actors and cybercriminals to launder more than $380 million, dealing a significant blow to ransomware financial infrastructure and the underground economy supporting it.</p>
-<a href="https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
 <p class="date-line">📅 2026-06-10</p>
-<h3>New Attacks Trick OpenClaw AI Agent Into Running Code and Leaking Secrets</h3>
-<p>Two security teams independently demonstrated that the OpenClaw self-hosted AI agent can be tricked into running attacker-controlled code or handing over sensitive data through shared contacts, vCards, and plain emails. One flaw was patched in OpenClaw 2026.4.23, while the phishing weakness requires operational controls to limit agent autonomy.</p>
-<a href="https://thehackernews.com/2026/06/new-attacks-trick-openclaw-ai-agent.html" target="_blank">Read more</a>
+<h3>Miasma Supply Chain Worm Toolkit Leaked Publicly</h3>
+<p>The Miasma credential-stealing attack framework was leaked via compromised developer accounts on GitHub through the repository "Miasma-Open-Source-Release." This modular, multi-stage supply chain worm targets PyPI, npm, RubyGems, JFrog Artifactory, GitHub repos, GitHub Actions, and AI coding tool configurations. It embeds malicious C2 channels in commit histories and exfiltrates secrets via hardcoded strings like "DontRevokeOrItGoesBoom" for PAT exfiltration. The toolkit is a direct evolution of the Shai-Hulud worm, with its latest Python variant dubbed "Hades."</p>
+<a href="https://safedep.io/blog/miasma-leak" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-11</p>
+<h3>Oracle PeopleSoft Zero-Day Actively Exploited by ShinyHunters</h3>
+<p>CVE-2026-35273 is a critical Oracle PeopleSoft PeopleTools zero-day being actively exploited by the ShinyHunters threat group for data theft. The vulnerability allows unauthorized access to PeopleSoft portals. Oracle released an emergency Security Alert Advisory patch — not a scheduled CPU update — obtainable directly from My Oracle Support. Organizations should restrict internet access to PeopleSoft portals immediately, audit PS_PERSONAL_DATA and PS_JOB tables for unauthorized reads, and engage incident response if compromise is suspected.</p>
+<a href="https://www.oracle.com/security-alerts/cve-2026-35273" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-11</p>
+<h3>CISA Issues BOD 26-04 — 3-Day Patch Mandate for Highest-Risk CVEs</h3>
+<p>CISA published Binding Operational Directive 26-04, the most aggressive federal vulnerability remediation mandate ever issued to the U.S. government. The four-factor risk framework evaluates vulnerabilities on internet-facing systems, KEV catalog listing, automated exploitability, and attacker control level. Remediation tiers: Tier 1 Critical gets 3 days, Tier 2 High gets 14 days, Tier 3 Moderate gets 180 days, Tier 4 Low deferred to next upgrade cycle.</p>
+<a href="https://www.helpnetsecurity.com/2026/06/11/cisa-risk-based-vulnerability-management-government/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-09</p>
+<h3>Microsoft's Record Patch Tuesday Fixes 200 Flaws, Drops Unpatched Zero-Day</h3>
+<p>Microsoft released its largest Patch Tuesday in 23 years: 200 CVEs with 33 rated Critical. The fix for CVE-2026-50507 ("YellowKey") addresses a BitLocker bypass allowing TPM-only encrypted drive access via a crafted USB drive in Windows Recovery Environment with just 10 minutes of unattended physical access. Hours after release, researcher Nightmare Eclipse published a full exploit for RoguePlanet, an unpatched local privilege escalation in Microsoft Defender granting SYSTEM-level access on fully patched Windows 10/11.</p>
+<a href="https://diesec.com/2026/06/top-5-cybersecurity-news-stories-june-12-2026" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-11</p>
+<h3>Anthropic Patches High-Severity Claude Code GitHub Action Vulnerability</h3>
+<p>Anthropic issued a high-severity security patch for the Claude Code GitHub Action. The vulnerability in the AI coding assistant's GitHub integration posed risks to CI/CD pipelines and automated development workflows. Organizations using Claude Code in their repositories should update to the patched version immediately to prevent potential supply chain or code-execution risks in development environments.</p>
+<a href="https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-12</p>
+<h3>AI Agents Successfully Phished in Credential Theft Attacks</h3>
+<p>Security researchers demonstrated that AI agents — including LLM-based assistants and browser automation tools — can be tricked into leaking real credentials and accessing internal systems. The attacks exploit well-formed data payloads ingested by automated agents, bypassing traditional security assumptions. Organizations using OpenClaw, AI coding assistants, or browser automation should sandbox agents from secrets and internal APIs, audit agent access to sensitive tokens, and implement strict validation on dynamic data inputs.</p>
+<a href="https://techmaniacs.com/2026/06/12/ai-security-daily-briefing-june-12-2026" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-12</p>
+<h3>Browser-Cloning RAT Sold at $5,000/Month Targets Enterprise Credentials</h3>
+<p>A premium remote access trojan capable of cloning complete browser sessions is being advertised at approximately $5,000 per month. The RAT mimics legitimate browser activity to evade detection while harvesting credentials, session cookies, and authentication tokens from target endpoints. The tool lowers the skill barrier for sophisticated credential-theft operations, enabling less technically adept threat actors to conduct high-fidelity session hijacking and lateral movement.</p>
+<a href="https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 2026-06-12</p>
+<h3>Supply Chain Security Under Pressure as Attack Toolkits Go Public</h3>
+<p>The combination of the Miasma toolkit leak, emerging browser-cloning RATs, and AI agent phishing represents a significant escalation in supply chain and credential-based threats. Attackers now have access to polished, ready-to-use attack kits and AI-optimized phishing tools that lower the technical barrier for automated enterprise compromises. Security teams should prioritize supply chain validation, threat emulation against open-source dependencies, and SIEM tuning for novel AI-driven exfiltration behaviors.</p>
+<a href="https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -607,7 +607,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-13 15:06 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-13 15:19 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
