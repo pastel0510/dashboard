@@ -540,59 +540,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-12059 · CVSS 8.8 · Jun 12, 2026</p>
-<h3>The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability...</h3>
+<p class="cve-id">CVE-2026-12059 · CVSS 8.8 · Jun 12, 2026 (updated Jun 12, 2026)</p>
+<h3>SSH service in CelloOS has improper access control allowing authenticated attackers to bypass command restrictions and execute OS commands</h3>
 <p>The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability, allowing authenticated remote attackers to bypass the enforced command restrictions and execute operating system commands outside the originally authorized scope.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-12059" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-12059" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-20251 · CVSS 8.8 · Jun 10, 2026</p>
-<h3>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13...</h3>
-<p>In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the 'admin' or 'power' Splunk roles could perform a Remote Code Execution (RCE) through the Splunk Secure Gateway app. The Remote Code Execution is possible because of unsafe deserialization of App Key Value Store.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-20251" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-20251" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-47162 · CVSS 8.8 · Jun 11, 2026 (updated Jun 13, 2026)</p>
-<h3>Vim is an open source, command line text editor. Prior to version 9.2.0495, a Vimscript code injection vulnerability...</h3>
-<p>Vim is an open source, command line text editor. Prior to version 9.2.0495, a Vimscript code injection vulnerability exists in s:NetrwBookHistSave() in the netrw plugin (runtime/pack/dist/opt/netrw/autoload/netrw.vim) when serializing browsed directory paths to the history file ~/.vim/.netrwhist. A directory name derived from the filesystem is interpolated into a single-quoted Vimscript string literal without escaping embedded single quotes, allowing a crafted directory name to break out of the string context.</p>
+<h3>Vimscript code injection via netrw history serialization allows crafted directory names to break out of quoted strings</h3>
+<p>Vim is an open source, command line text editor. Prior to version 9.2.0495, a Vimscript code injection vulnerability exists in s:NetrwBookHistSave() in the netrw plugin (runtime/pack/dist/opt/netrw/autoload/netrw.vim) when serializing browsed directory paths to the history file ~/.vim/.netrwhist. A directory name derived from the filesystem is interpolated into a single-quoted Vimscript string literal without escaping embedded single quotes, allowing a crafted directory name to break out of the </p>
 <a href="https://db.gcve.eu/cve/CVE-2026-47162" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47162" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-47342 · CVSS 8.8 · Jun 10, 2026 (updated Jun 12, 2026)</p>
-<h3>A privilege escalation vulnerability in Apache OFBiz allows a low-privileged authenticated user to obtain higher privileges...</h3>
+<h3>Privilege escalation in Apache OFBiz allows low-privileged authenticated users to obtain higher privileges</h3>
 <p>A privilege escalation vulnerability in Apache OFBiz allows a low-privileged authenticated user to obtain higher privileges. This issue affects Apache OFBiz: before 24.09.07. Users are recommended to upgrade to version 24.09.07, which fixes the issue.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-47342" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47342" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-49498 · CVSS 8.8 · Jun 10, 2026 (updated Jun 11, 2026)</p>
-<h3>Ghidra 11.0 before 12.1 contains a SQL injection vulnerability in the changePassword() method of PostgresFunctionDatabase...</h3>
-<p>Ghidra 11.0 before 12.1 contains a SQL injection vulnerability in the changePassword() method of PostgresFunctionDatabase that fails to escape double quotes in usernames interpolated into ALTER ROLE statements. Authenticated attackers can inject SQL commands via crafted username parameters in PasswordChange network messages to escalate to PostgreSQL superuser privileges and gain full database control.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-49498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-49498" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-52754 · CVSS 8.8 · Jun 10, 2026 (updated Jun 11, 2026)</p>
-<h3>Ghidra before 12.1 contains an authentication bypass vulnerability in PKIAuthenticationModule.authenticate()...</h3>
-<p>Ghidra before 12.1 contains an authentication bypass vulnerability in PKIAuthenticationModule.authenticate() that allows any user with a valid CA-signed certificate to impersonate other users by presenting their public certificate with a null signature. Attackers can escalate privileges, modify repository access controls, exfiltrate shared reverse engineering databases, and permanently compromise server integrity.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-52754" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-52754" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-53806 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
-<h3>OpenClaw before 2026.5.12 contains a shell option parsing vulnerability...</h3>
+<h3>OpenClaw before 2026.5.12 has a shell option parsing vulnerability that bypasses exec revalidation checks</h3>
 <p>OpenClaw before 2026.5.12 contains a shell option parsing vulnerability that allows combined POSIX shell flags to bypass exec revalidation checks. Attackers can exploit this by using combined shell options to execute inline shell content without intended allowlist validation, potentially enabling unauthorized command execution when the affected feature is enabled.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-53806" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53806" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-53807 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
-<h3>OpenClaw before 2026.5.6 contains an authorization bypass vulnerability in Telegram interactive callbacks...</h3>
+<h3>OpenClaw before 2026.5.6 has an authorization bypass in Telegram interactive callbacks skipping allowFrom validation</h3>
 <p>OpenClaw before 2026.5.6 contains an authorization bypass vulnerability in Telegram interactive callbacks that allows authenticated users to skip commands.allowFrom validation. Attackers can invoke affected callbacks to mark themselves as authorized senders before allowlist checks are applied, triggering command behavior outside configured Telegram sender restrictions.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-53807" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53807" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-53810 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
+<h3>OpenClaw before 2026.5.18 marketplace runtime extensions can bypass security scanning via unscanned package payloads</h3>
+<p>OpenClaw before 2026.5.18 contains a code execution vulnerability where marketplace runtime extension metadata can redirect loading toward unscanned package payloads. Attackers with trusted operator access can manipulate extension metadata to load plugin code outside reviewed package entry points, bypassing security scanning.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-53810" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53810" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-53811 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
+<h3>OpenClaw before 2026.5.7 Matrix allowFrom feature allows authenticated accounts to match policies via mutable display names</h3>
+<p>OpenClaw before 2026.5.7 contains a privilege escalation vulnerability in the Matrix allowFrom feature that allows authenticated accounts to match policy entries through mutable display name metadata. Attackers with the ability to change display names can receive agent access intended for another Matrix identity, potentially gaining unauthorized permissions depending on operator configuration.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-53811" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53811" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-53817 · CVSS 8.8 · Jun 11, 2026 (updated Jun 12, 2026)</p>
+<h3>OpenClaw before 2026.5.22 Control UI pairing locality validation allows attackers to spoof locality and obtain admin tokens</h3>
+<p>OpenClaw before 2026.5.22 contains a locality validation vulnerability in Control UI pairing that allows attackers with network access to spoof locality information and obtain durable admin-capable device tokens. Attackers can exploit insufficient locality-derived trust validation to convert temporary shared access into persistent administrative credentials that survive token rotation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-53817" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-53817" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -621,7 +621,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-13 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-13 21:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
