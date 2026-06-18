@@ -473,52 +473,59 @@ CRESST II)</small><br>
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17 14:13 UTC</p>
-<h3>FortiBleed — ~75,000 Fortinet firewalls have admin credentials cracked/posted</h3>
-<p>A massive leak of Fortinet FortiGate configuration files containing plaintext or easily reversible admin credentials has appeared online, affecting roughly 50% of all internet-facing Fortinet firewalls according to Shodan polling. Hunt Intelligence Inc reportedly surfaced the data, and independent verification confirms the credentials are real and linked to config exports—many devices are still online and potentially compromised. Fortinet began hardening credential storage with PBKDF2 in early 2025 firmware updates, but on older/unpatched devices the data was stored as SHA-256 with salt, making brute-forcing feasible once configs are exfiltrated.</p>
-<a href="https://doublepulsar.com/fortibleed-75k-fortinet-firewalls-have-admin-passwords-cracked-60299faa65f8" target="_blank">Read more</a>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>FortiBleed Leak Exposes Fortinet VPN Credentials for 73,000 Devices</h3>
+<p>A newly discovered data leak dubbed "FortiBleed" has exposed what appears to be a collection of Fortinet and FortiGate VPN credentials for 73,932 firewall URLs at organizations worldwide. The exposed data includes usernames, email addresses, and plaintext passwords for major organizations including Chevron, Samsung, Foxconn, Comcast, AT&T, Mercedes-Benz, Toyota, and others. Researcher Bob Diachenko discovered the leak and claims a Russian-speaking threat group conducted roughly 1.16 billion credential attempts. Security researcher Kevin Beaumont confirmed the data is legitimate, estimating it covers roughly half of all internet-accessible Fortinet firewalls. Fortinet states the collection was obtained through previous incidents and brute-force attacks, not a newly disclosed vulnerability.</p>
+<a href="https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17 15:30 UTC</p>
-<h3>CISA orders federal agencies to patch max-severity Joomla CMS plugin flaw by Friday</h3>
-<p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) issued an emergency directive requiring federal civilian agencies to patch a maximum-severity flaw in the Widget Factory JCE (Joomla Content Editor) plugin that is being actively exploited in the wild. Agencies were given a 72-hour deadline (Friday) to apply available vendor mitigations or take the affected systems offline. The flaw enables attackers to remotely compromise Joomla installations, and widespread use of JCE makes this a high-priority patch for public-facing sites.</p>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>144 Mastra npm Packages Compromised via Hijacked Contributor Account</h3>
+<p>As many as 144 npm packages associated with the Mastra namespace (@mastra/*) have been compromised in a software supply chain attack codenamed easy-day-js. A single npm account (ehindero) mass-published more than 140 malicious packages across the Mastra scope in an 88-minute automated campaign. The attacker added a trojanized dependency ("easy-day-js") that downloads and runs a cryptocurrency-stealing remote access trojan during installation. The malware harvests browser history, cryptocurrency wallet data from over 160 wallet extensions, and installs persistence across Windows, macOS, and Linux. Researchers warn the campaign has a large potential blast radius since @mastra/core receives over 918,000 weekly npm downloads.</p>
+<a href="https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 June 17, 2026</p>
+<h3>CISA Orders Federal Agencies to Patch Max-Severity Joomla Plugin Flaw by Friday</h3>
+<p>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has ordered federal agencies to patch a maximum-severity flaw in the Widget Factory Joomla Content Editor (JCE) plugin, tracked as CVE-2026-48907. The vulnerability is being actively exploited in the wild and allows unauthenticated attackers to upload and execute PHP code via low-complexity attacks. CISA added it to the Known Exploited Vulnerabilities Catalog and requires patching by Friday under BOD 26-04. The JCE security team released JCE Pro 2.9.99.6 in early June, but warns that updating alone does not clean already-compromised sites — administrators must also remove rogue profiles, change all passwords, and run full malware scans.</p>
 <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-joomla-plugin-flaw-by-friday/" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-16 15:00 UTC</p>
-<h3>CISA warns of actively exploited LiteSpeed cPanel plugin vulnerability</h3>
-<p>CISA added a second critical CMS/web-hosting plugin flaw to its Known Exploited Vulnerabilities (KEV) catalog, giving U.S. government agencies three days to secure servers against CVE-2026-54420 in the LiteSpeed cPanel user-end plugin. Active exploitation is ongoing, and affected organizations are urged to apply vendor patches immediately or disable the plugin until mitigation is complete.</p>
-<a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-another-actively-exploited-cpanel-plugin-flaw/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-17 08:32 UTC</p>
-<h3>Microsoft developing patch for Defender zero-day “RoguePlanet”</h3>
-<p>Microsoft confirmed it is working on a security patch for a Windows Defender zero-day vulnerability dubbed “RoguePlanet,” publicly disclosed about a week ago. The flaw bypasses Defender’s protection mechanisms and can be leveraged by malware to evade detection. In the interim, organizations are advised to review Defender visibility and rely on layered defenses until the official update ships.</p>
-<a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-on-defender-patch-for-rogueplanet-zero-day/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-16 20:04 UTC</p>
-<h3>Rokarolla Android banking trojan targets 217 banking and crypto apps</h3>
-<p>A new Android banking Trojan called Rokarolla has been observed in the wild, targeting 217 banking and cryptocurrency applications with an extensive command-and-control (C2) infrastructure of 137 documented commands. The malware is designed to intercept credentials, session tokens, and financial transactions, making it one of the most capable mobile banking trojans reported in recent months.</p>
-<a href="https://www.bleepingcomputer.com/news/security/new-rokarolla-android-malware-targets-217-banking-crypto-apps/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-16 21:54 UTC</p>
-<h3>Malicious JetBrains Marketplace plugins steal AI API keys from developers</h3>
-<p>At least 15 malicious plugins published to the JetBrains Marketplace were discovered harvesting AI API keys from developer machines. The plugins abused the IDE ecosystem’s extension distribution trust model to silently collect credentials for services such as OpenAI, Anthropic, and other LLM providers, highlighting supply-chain risk inside developer toolchains.</p>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Malicious JetBrains Marketplace Plugins Steal AI API Keys from Developers</h3>
+<p>At least 15 malicious plugins found on the JetBrains Marketplace were designed to steal AI API keys from developers. Every plugin posed as an AI coding assistant built on DeepSeek and other large language models, offering chat, commit messages, code review, bug finding, and unit tests. The activity has been ongoing since late October 2025, with new plugins released as recently as June 10, 2026. Two plugins, CodeGPT AI Assistant and DeepSeek AI Assist, have more than 25,000 downloads each. The plugins covertly exfiltrate API keys to an attacker-controlled server over HTTP in plaintext, and researchers warn the operators may be sharing stolen keys as part of a monetization scheme.</p>
 <a href="https://www.bleepingcomputer.com/news/security/malicious-jetbrains-marketplace-plugins-steal-ai-api-keys-from-developers/" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17 07:07 UTC</p>
-<h3>Kodak confirms data breach claimed by ShinyHunters extortion gang</h3>
-<p>Kodak has confirmed a security incident after hackers—reportedly the ShinyHunters extortion group—gained access to some of the company’s data. Kodak is working with external cybersecurity experts to investigate the scope of the breach, including what data was accessed and whether customer, employee, or corporate records were exfiltrated.</p>
-<a href="https://www.bleepingcomputer.com/news/security/kodak-confirms-data-breach-claimed-by-shinyhunters-extortion-gang/" target="_blank">Read more</a>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Crypto Clipper Campaign Abuses Fake Reviews, AI Narrators, and VirusTotal Comments</h3>
+<p>An unknown threat actor has been observed leveraging paid posts on legitimate news websites, fake GitHub reviews, a YouTube channel with AI-generated narrators, and coordinated VirusTotal comments to promote a cryptocurrency clipboard hijacker. Check Point Research found the campaign uses a "fake reputation economy" spanning every platform a victim might check before downloading. The Rust-based clipper targets Windows and macOS, monitoring the clipboard for crypto wallet addresses and swapping them with attacker-controlled addresses. The threat actor even used a press release distribution service to syndicate marketing across USA TODAY Network partner sites. Researchers warn the same playbook could easily distribute info-stealers or ransomware to higher-value targets.</p>
+<a href="https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17 21:02 UTC</p>
-<h3>Google to use UK, EEA, and Swiss user IP addresses for ad personalization from August 2026</h3>
-<p>Starting August 3, 2026, Google will repurpose IP-address signals from users in the UK, EEA, and Switzerland for ad measurement and personalization, reversing its earlier stance on using such signals for device identification. The move comes as the UK ICO weighs new consent rules, raising privacy and regulatory concerns across European jurisdictions.</p>
-<a href="https://www.bleepingcomputer.com/news/security/google-to-use-uk-and-eu-user-ip-addresses-for-ad-personalization/" target="_blank">Read more</a>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Microsoft Working on Defender Patch for RoguePlanet Zero-Day</h3>
+<p>Microsoft confirmed it is working on a security patch for a Defender zero-day vulnerability named "RoguePlanet," disclosed one week ago. The vulnerability affects Microsoft Defender and has been actively exploited. While technical details remain limited, the confirmation signals urgency given Defender's widespread deployment across Windows environments. Organizations should monitor Microsoft's security update channels for the patch and ensure Defender definitions are kept current as interim protection.</p>
+<a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-on-defender-patch-for-rogueplanet-zero-day/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Russian Defense Research Institute VNIIR-M Allegedly Breached, 116GB Listed For Sale</h3>
+<p>A Russian defense research institute known as VNIIR-M has allegedly been breached, with approximately 116GB of data listed for sale on dark web marketplaces. The breach targets a Russian defense research organization at a time of heightened geopolitical tension. The full scope and sensitivity of the compromised data have not been independently verified, but the sale listing on dark web forums underscores the continued targeting of defense and government entities by cybercriminal and potentially state-aligned actors.</p>
+<a href="https://darkwebinformer.com/russian-defense-research-institute-vniir-m-allegedly-breached-116gb-listed-for-sale/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Kodak Confirms Data Breach Claimed by ShinyHunters Extortion Gang</h3>
+<p>Kodak has confirmed it is working with external cybersecurity experts to investigate a security breach after hackers gained access to some of the company's data. The breach has been claimed by the ShinyHunters extortion gang, a prolific cybercriminal group known for targeting large organizations and demanding ransom payments. While Kodak has not disclosed the full extent of the breach or what data was accessed, the confirmation highlights the continued effectiveness of ShinyHunters' campaigns against high-profile corporate targets. Organizations should review their incident response preparedness and ensure backups are air-gapped from production environments.</p>
+<a href="https://www.bleepingcomputer.com/news/security/kodak-confirms-data-breach-claimed-by-shinyhunters-extortion-gang/" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -556,7 +563,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-18 09:07 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-18 09:16 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
