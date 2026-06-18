@@ -467,59 +467,59 @@ CRESST II)</small><br>
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17</p>
-<h3>FortiBleed Leak Exposes Fortinet VPN Credentials for ~75,000 Devices</h3>
-<p>A newly discovered data leak dubbed "FortiBleed" has exposed plaintext admin passwords for approximately 75,000 Fortinet FortiGate firewall devices, confirmed by Kevin Beaumont and BleepingComputer. The data appears to come from device configuration exports and includes credentials, IP addresses, device types, revenue brackets, and countries — a format commonly used by eCrime groups selling initial access. Many sampled devices are on recent firmware patches, and most FortiGate Management Interfaces are exposed to the internet. Unlike the 2022 Belsen Group leak, most affected devices are still online and this dataset largely covers different devices. Organizations are urged to check exposure via Hudson Rock, rotate admin credentials immediately, enable MFA, and assume compromise if suspect logins are found.</p>
-<a href="https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/" target="_blank">Read more</a>
+<p class="date-line">📅 June 18, 2026</p>
+<h3>USB worm spreads crypto-stealing malware via Windows shortcut files</h3>
+<p>Threat actors are distributing a crypto-clipper worm that spreads via LNK shortcut files on USB drives. The malware monitors the clipboard for cryptocurrency wallet addresses and seed phrases, captures screenshots, and exfiltrates data over Tor using a hidden C2 infrastructure. It also replicates by replacing documents with malicious shortcuts and setting up scheduled tasks to infect newly connected USB devices.</p>
+<a href="https://www.bleepingcomputer.com/news/security/usb-worm-spreads-crypto-stealing-malware-via-windows-shortcut-files/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17</p>
-<h3>CISA Orders Federal Agencies to Patch Max-Severity Joomla JCE Flaw by Friday (CVE-2026-48907)</h3>
-<p>CISA added a maximum-severity pre-authentication remote code execution vulnerability in the Widget Factory Joomla Content Editor (JCE) plugin (CVE-2026-48907) to its Known Exploited Vulnerabilities catalog, ordering federal agencies to patch by June 19. The flaw allows unauthenticated attackers to execute arbitrary PHP code via profile import functionality, with confirmed active exploitation in the wild. Dark Web Informer details the exploit chain from profile import to PHP execution. Administrators should update JCE immediately.</p>
-<a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-joomla-plugin-flaw-by-friday/" target="_blank">Read more</a>
+<p class="date-line">📅 June 18, 2026</p>
+<h3>Klue OAuth breach linked to 'Icarus' Salesforce data theft attacks</h3>
+<p>A compromised Klue Battlecards OAuth integration has enabled the newly emerged 'Icarus' extortion group to steal Salesforce CRM data from multiple organizations. Attackers used stolen OAuth tokens to run automated Python scripts against the Salesforce REST API, slowly mapping objects before rapidly exfiltrating records in bursts. Salesforce has disabled the Klue integration, and victims have begun receiving extortion demands.</p>
+<a href="https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17</p>
-<h3>136 Malicious JetBrains Marketplace Plugins Steal AI API Keys from Developers</h3>
-<p>Security researchers flagged a coordinated malware campaign on the JetBrains Marketplace that published at least 15 malicious plugins designed to steal AI provider API keys from developers. Each plugin disguised itself as an AI coding assistant built on DeepSeek and other LLMs, offering chat, commit messages, code review, bug finding, and unit tests. The exfiltration ran from late October 2025 through at least June 10, 2026. Two plugins — CodeGPT AI Assistant and DeepSeek AI Assist — each recorded more than 25,000 downloads.</p>
-<a href="https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html" target="_blank">Read more</a>
+<p class="date-line">📅 June 18, 2026</p>
+<h3>International law enforcement cleans 15,000 WordPress sites in SocGholish takedown</h3>
+<p>A coordinated law enforcement operation led by the FBI, BKA, RCMP, and Dutch NHCTU has cleaned nearly 15,000 WordPress sites infected with the SocGholish malware and taken down over 100 servers. The action, part of Operation Endgame, targeted the FakeUpdates botnet tied to the Russian Evil Corp group, which has been distributing ransomware and banking trojans since 2017.</p>
+<a href="https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17</p>
-<h3>144 Mastra npm Packages Compromised in Supply Chain Attack (easy-day-js)</h3>
-<p>As many as 144 npm packages in the @mastra/* namespace were compromised in a supply chain attack dubbed easy-day-js. A single npm account (ehindero) mass-published malicious packages across the Mastra scope in an 88-minute automated campaign. The attacker injected a dependency named "easy-day-js," a clone of the legitimate dayjs date library, which downloads and runs cryptocurrency-stealing malware. The attack targeted the popular Mastra open-source JavaScript and TypeScript framework for building AI applications.</p>
-<a href="https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html" target="_blank">Read more</a>
+<p class="date-line">📅 June 18, 2026</p>
+<h3>ShapedPlugin supply chain attack infects WordPress sites via official updates</h3>
+<p>Multiple paid ShapedPlugin plugins were compromised in a supply chain attack that distributed backdoored updates through the vendor's own release channels. The malicious builds installed a hidden fake WooCommerce plugin capable of stealing credentials, 2FA secrets, database strings, and WooCommerce order data. Wordfence confirmed the backdoor was injected on May 21, affecting Product Slider Pro, Real Testimonials Pro, and Smart Post Show Pro.</p>
+<a href="https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17</p>
-<h3>Microsoft Working on Defender Patch for RoguePlanet Zero-Day</h3>
-<p>Microsoft confirmed it is working on a security patch for a zero-day vulnerability in Windows Defender named "RoguePlanet," disclosed one week ago. The flaw allows attackers to bypass Defender detection mechanisms. While technical details remain limited, the bug has drawn attention because it affects endpoint protection by default on most Windows systems. Organizations should monitor Microsoft Defender update channels for the forthcoming patch.</p>
-<a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-on-defender-patch-for-rogueplanet-zero-day/" target="_blank">Read more</a>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Crypto clipper campaign uses fake reviews, AI narrators, and VirusTotal manipulation</h3>
+<p>Check Point Research uncovered a sophisticated social engineering campaign marketing a crypto-clipper malware disguised as Solana and Pump.fun trading bots. The operators used paid news placements, a dedicated YouTube channel with AI-generated narrators, co-ordinated VirusTotal upvoting to misclassify samples as safe, and an Android device farm to inflate SourceForge download counts.</p>
+<a href="https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-06-17</p>
-<h3>F5 Releases Out-of-Band Patches for Critical NGINX Vulnerabilities</h3>
-<p>F5 has released out-of-band security updates to address multiple NGINX web server vulnerabilities, including two critical-severity flaws allowing remote code execution on vulnerable systems. The patches were issued outside the normal release cycle, underscoring the severity. Administrators running NGINX via F5 should apply the updates immediately.</p>
-<a href="https://www.bleepingcomputer.com/news/security/f5-issues-out-of-band-patches-for-critical-nginx-vulnerabilities/" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-16</p>
-<h3>Google Vertex AI SDK Flaw Lets Attackers Hijack Model Uploads via Bucket Squatting</h3>
-<p>A flaw in the Google Cloud Vertex AI SDK for Python allowed attackers with no project credentials to hijack machine learning model uploads and run code inside Google's serving infrastructure. Palo Alto Networks Unit 42 calls the technique "Pickle in the Middle": the SDK generated a predictable temporary Cloud Storage bucket name from the project ID and region, checked only whether the bucket existed — not whether the victim owned it — enabling an attacker to squat the bucket with their own project. Google patched the bug; users should update to SDK version 1.148.0 or later.</p>
-<a href="https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-06-16</p>
-<h3>Junior Hacker Used Tailscale and OpenSSH to Maintain Access After C2 Went Offline</h3>
-<p>Cato Networks published a rare 33-day command-by-command intrusion timeline showing a junior French-speaking attacker who broke into a small French automotive business, installed a keylogger, and then — before his Havoc C2 server went dark — deployed OpenSSH and Tailscale on the victim machine. When the C2 returned 18 days later, the agents reconnected on their own. The operator left SSH keys and a step-by-step playbook in an open storage bucket, giving researchers a complete view from the attacker's keyboard. The lesson: taking a C2 server offline is not remediation if the attacker has already built alternative persistence.</p>
+<p class="date-line">📅 June 17, 2026</p>
+<h3>Junior hacker maintained access via Tailscale and OpenSSH after C2 went offline</h3>
+<p>French-speaking attacker 'Poisson' maintained persistent access to a compromised automotive business for 18 days after his Havoc C2 server went offline by installing OpenSSH and Tailscale on the victim machine. Researchers from Cato Networks captured his full 339-command operation after his test keylogger and SSH keys were left exposed in a public storage bucket. The case demonstrates why taking down C2 infrastructure alone is not remediation.</p>
 <a href="https://thehackernews.com/2026/06/junior-hacker-used-tailscale-and.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 June 18, 2026</p>
+<h3>PCI DSS v4.0.1 puts checkout-page script risk under the spotlight</h3>
+<p>PCI DSS v4.0.1 now explicitly addresses the risk of third-party scripts on payment pages, closing a gap that enabled Magecart-style skimming attacks. An independent PCI assessor reviewed Reflectiz against the new requirements, highlighting that compromised vendor scripts can act as skimmers even when no code on the page itself has changed, and that over 100,000 sites have already been hit by web-skimming attacks.</p>
+<a href="https://thehackernews.com/2026/06/the-scripts-on-your-checkout-page-are.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 June 18, 2026</p>
+<h3>Device code phishing surges 37x as AiTM vendors race to add the capability</h3>
+<p>Device code phishing has seen a 37x spike in detections in 2026, with at least 18 phishing kits now in the wild. All major adversary-in-the-middle (AiTM) platforms have added device code phishing support, moving the technique from espionage-grade attacks to a criminal commodity. The method tricks victims into entering legitimate-looking device codes on attacker-controlled pages to silently acquire access tokens.</p>
+<a href="https://pushsecurity.com/webinar/device-code-phishing" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -557,7 +557,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-18 21:08 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-18 21:15 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
