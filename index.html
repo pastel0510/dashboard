@@ -514,6 +514,62 @@ https://www.nature.com/articles/d41586-026-01938-2
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
+<div class="bulletin-item">
+<p class="cve-id">CVE-2019-25758 · CVSS 8.8 · Jun 19, 2026</p>
+<h3>Joomla! vBizz 1.0.7 unrestricted file upload via profile_pic enables RCE</h3>
+<p>Joomla! Component vBizz 1.0.7 contains an unrestricted file upload vulnerability that allows authenticated attackers to upload arbitrary PHP files by submitting malicious files through the profile_pic parameter. Attackers can upload PHP files via POST requests to the employee view endpoint and execute them from the uploads directory to achieve remote code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2019-25758" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2019-25758" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-32208 · CVSS 8.8 · Jun 19, 2026</p>
+<h3>Microsoft Edge (Chromium-based) XSS allows spoofing over a network</h3>
+<p>Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Edge (Chromium-based) allows an authorized attacker to perform spoofing over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-32208" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-32208" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-47645 · CVSS 8.8 · Jun 19, 2026</p>
+<h3>Microsoft 365 Copilot Business Chat open redirect enables privilege escalation</h3>
+<p>Url redirection to untrusted site ('open redirect') in Microsoft 365 Copilot's Business Chat allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-47645" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47645" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56075 · CVSS 8.8 · Jun 18, 2026</p>
+<h3>PraisonAI before 4.5.128 arbitrary shell command execution via hardcoded approval_mode</h3>
+<p>PraisonAI before 4.5.128 contains an arbitrary shell command execution vulnerability where the UI modules hardcode approval_mode to auto, overriding administrator configuration from PRAISON_APPROVAL_MODE environment variable. Authenticated attackers can instruct the LLM agent to execute arbitrary shell commands via subprocess.run with shell=True, bypassing the manual approval gate and insufficient command sanitization blocklists.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56075" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56075" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56078 · CVSS 8.8 · Jun 18, 2026</p>
+<h3>PraisonAI before 1.5.115 path traversal in MultiAgentMonitor via agent IDs</h3>
+<p>PraisonAI before 1.5.115 contains a path traversal vulnerability in MultiAgentMonitor that fails to sanitize agent IDs when building file paths. Attackers can include traversal sequences like ../ in agent IDs to read, write, or overwrite arbitrary files, enabling sensitive disclosure, denial of service, or code execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56078" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56078" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56216 · CVSS 8.8 · Jun 20, 2026</p>
+<h3>Capgo before 12.128.2 scope escalation in apikey endpoint allows org-wide access</h3>
+<p>Capgo before 12.128.2 contains a scope escalation vulnerability in the POST /functions/v1/apikey endpoint that allows app-limited API keys to mint unrestricted keys by setting empty limits. Attackers with a compromised app-limited key can create an unrestricted key with org-wide access to resources like app listings and other protected endpoints.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56216" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56216" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56340 · CVSS 8.8 · Jun 20, 2026</p>
+<h3>vLLM missing sparse tensor validation in multimodal embeddings leads to DoS and memory corruption</h3>
+<p>vLLM versions >= 0.10.2 and < 0.13.0 are missing sparse tensor validation in multimodal embeddings processing. Because PyTorch disables sparse tensor invariant checks by default, an attacker can submit crafted embedding requests with malformed (negative or out-of-bounds) tensor indices, when the prompt-embeds feature is enabled, to trigger crashes or resource exhaustion (denial of service), with potential for out-of-bounds/write-what-where memory corruption.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56340" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56340" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56215 · CVSS 8.3 · Jun 20, 2026</p>
+<h3>Capgo before 12.128.12 mutable email field allows SSO account merge takeover</h3>
+<p>Capgo before 12.128.12 allows authenticated users to modify their mutable public.users.email to arbitrary addresses, which the SSO provisioning endpoint trusts as an account-merge key. Attackers can pre-position their account with a victim's corporate SSO email, causing the provision-user endpoint to merge the victim's SSO identity into the attacker-controlled account.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56215" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56215" target="_blank">OpenCVE</a>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -542,7 +598,7 @@ https://www.nature.com/articles/d41586-026-01938-2
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-21 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-21 09:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
