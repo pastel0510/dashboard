@@ -525,7 +525,61 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
-<!-- No qualifying CVEs found in the last 72 hours -->
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-12806 · CVSS 8.8 · Jun 21, 2026 (updated Jun 22, 2026)</p>
+<h3>Edimax BR-6478AC V2 buffer overflow via formWlSiteSurvey selSSID allows remote code execution</h3>
+<p>A vulnerability has been found in Edimax BR-6478AC V2 1.23. The impacted element is the function formWlSiteSurvey of the file /goform/formWlSiteSurvey of the component POST Request Handler. The manipulation of the argument selSSID leads to buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-12806" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-12806" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56340 · CVSS 8.8 · Jun 20, 2026 (updated Jun 22, 2026)</p>
+<h3>vLLM missing sparse tensor validation in multimodal embeddings allows DoS and memory corruption</h3>
+<p>vLLM versions >= 0.10.2 and < 0.13.0 are missing sparse tensor validation in multimodal embeddings processing. Because PyTorch disables sparse tensor invariant checks by default, an attacker can submit crafted embedding requests with malformed (negative or out-of-bounds) tensor indices, when the prompt-embeds feature is enabled, to trigger crashes or resource exhaustion (denial of service), with potential for out-of-bounds/write-what-where memory corruption. This continues CVE-2025-62164.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56340" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56340" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56396 · CVSS 8.8 · Jun 21, 2026 (updated Jun 22, 2026)</p>
+<h3>phpMyFAQ missing authorization in editUser() and updateUserRights() allows privilege escalation to SuperAdmin</h3>
+<p>phpMyFAQ before 4.1.4 contains missing authorization vulnerabilities in editUser() and updateUserRights() endpoints that allow authenticated administrators to escalate privileges. Non-SuperAdmin users with edit_user permission can set is_superadmin flag or grant arbitrary rights to escalate to SuperAdmin access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56396" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56396" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56266 · CVSS 8.6 · Jun 22, 2026</p>
+<h3>Crawl4AI SSRF via /crawl endpoints allows unauthenticated access to internal services and cloud metadata</h3>
+<p>Crawl4AI before 0.8.7 contains a server-side request forgery vulnerability in the /crawl, /crawl/stream, /md, and /llm endpoints that fetch arbitrary user-supplied URLs without validation. Unauthenticated attackers can bypass the internal-address blocklist using IPv6-mapped IPv4 addresses to reach internal services and cloud metadata endpoints.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56266" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56266" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56215 · CVSS 8.3 · Jun 20, 2026 (updated Jun 22, 2026)</p>
+<h3>Capgo email mutation allows account takeover via SSO provisioning merge</h3>
+<p>Capgo before 12.128.12 allows authenticated users to modify their mutable public.users.email to arbitrary addresses, which the SSO provisioning endpoint trusts as an account-merge key. Attackers can pre-position their account with a victim's corporate SSO email, causing the provision-user endpoint to merge the victim's SSO identity into the attacker-controlled account.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56215" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56215" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56324 · CVSS 8.2 · Jun 22, 2026</p>
+<h3>Capgo rate limit bypass via device_id rotation causes database exhaustion</h3>
+<p>Capgo before 12.128.2 contains a rate limit bypass vulnerability in the channel_self endpoint that allows attackers to circumvent rate limiting by rotating the user-controlled device_id parameter. Attackers can send multiple requests per second by changing device_id values to flood the channel_devices table and cause database exhaustion.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56324" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56324" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-71339 · CVSS 8.1 · Jun 22, 2026</p>
+<h3>Picklescan fails to detect numpy.f2py gadget in pickle __reduce__ allowing arbitrary code execution</h3>
+<p>Picklescan before 0.0.33 fails to detect the numpy.f2py.crackfortran._eval_length gadget in pickle __reduce__ methods, allowing arbitrary code execution. Attackers can craft malicious pickle files that execute arbitrary Python code when loaded by victims who trust Picklescan's safety validation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-71339" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71339" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2025-71344 · CVSS 8.1 · Jun 22, 2026</p>
+<h3>picklescan fails to detect ensurepip._run_pip in pickle files allowing arbitrary code execution</h3>
+<p>picklescan before 0.0.30 (affected versions 0.0.26 and earlier) fails to detect the ensurepip._run_pip built-in function when scanning pickle files, allowing attackers to execute arbitrary code. Malicious pickle files embedding ensurepip._run_pip calls in __reduce__ methods bypass picklescan detection and achieve remote code execution upon pickle.load() invocation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-71344" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71344" target="_blank">OpenCVE</a>
+</div>
 
                         </div>
                     </div>
@@ -555,7 +609,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-23 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-23 03:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
