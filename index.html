@@ -532,59 +532,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-35018 · CVSS 8.8 · Jun 23, 2026</p>
-<h3>NetComm NF20MESH routers allow authenticated RCE via shell metacharacter injection in username JSON parameter</h3>
+<p class="cve-id">CVE-2026-35018 · CVSS 8.8 · Jun 23, 2026 (updated Jun 23, 2026)</p>
+<h3>NetComm NF20MESH routers suffer authenticated remote code execution via shell metacharacter injection in username JSON field</h3>
 <p>NetComm NF20MESH routers running firmware R6B031 and earlier contain an authenticated remote code execution vulnerability that allows authenticated attackers to execute arbitrary commands as root by injecting shell metacharacters into the username JSON parameter processed by the dalStorage_addUserAccount function. Attackers can exploit the unsafe concatenation of user-supplied input into a shell command string passed to rut_doSystemAction without sanitization to achieve full root-level command execution.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-35018" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35018" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-4297 · CVSS 8.8 · Jun 24, 2026</p>
+<h3>WordPress Welcome Software Publishing plugin allows arbitrary options update via missing capability check in XML-RPC method</h3>
+<p>The Welcome Software Publishing plugin for WordPress is vulnerable to Arbitrary Options Update in all versions up to and including 0.0.31. This is due to a missing capability check in the nc_setOption() function, which is exposed via the nc.setOption XML-RPC method. The function authenticates the user via $wp_xmlrpc_server->login() (verifying credentials are valid) but does not perform any authorization check such as current_user_can('manage_options'). This makes it possible for authenticated attackers to modify arbitrary WordPress options.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-4297" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-4297" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-56423 · CVSS 8.8 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MISP Core broken access-control in bulk deletion flows for Event Reports and Sharing Groups</h3>
-<p>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object. For Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for deletion without owning those reports.</p>
+<h3>MISP Core has broken access control in bulk deletion flows for Event Reports, allowing unauthorized deletion</h3>
+<p>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object. For Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for reports not owned by them, leading to unauthorized deletion.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56423" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56423" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56424 · CVSS 8.8 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MISP core multiple broken access-control flaws allow lower-privileged users to mutate objects across organizations</h3>
-<p>MISP core contained multiple broken access-control flaws where authorization checks were performed against the wrong entity, or where ownership/editability checks were missing on write paths. In affected subsystems, a lower-privileged authenticated user with the relevant feature permission could cause the application to authorize one object but mutate another, or could modify objects that were merely visible rather than editable by the user's organization.</p>
+<h3>MISP core suffers multiple broken access-control flaws allowing lower-privileged users to mutate unauthorized objects</h3>
+<p>MISP core contained multiple broken access-control flaws where authorization checks were performed against the wrong entity, or where ownership/editability checks were missing on write paths. In affected subsystems, a lower-privileged authenticated user with the relevant feature permission could cause the application to authorize one object but mutate another, or could modify objects that were merely visible rather than editable by the user's organization. The affected paths included Event management, Sharing Group manipulation, and other write-enabled endpoints.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56424" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56424" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-7761 · CVSS 8.8 · Jun 24, 2026</p>
+<h3>Ultimate Member WordPress plugin allows account takeover via password reset link disclosure through MD5 hash fallback and meta key parsing flaws</h3>
+<p>The Ultimate Member plugin for WordPress is vulnerable to Account Takeover via Password Reset Link Disclosure in all versions up to and including 2.11.4. This is due to a chain of three logic bugs: (1) an MD5 hash fallback in get_directory_by_hash() that allows any post to be used as a member directory by computing SUBSTRING(MD5(post_id), 11, 5), (2) a strstr() parsing logic flaw in post_data() that allows bypassing WordPress's protected meta key restrictions by placing '_um_' anywhere in the meta key name, and (3) predictable reset token generation enabling attackers to enumerate valid password reset URLs.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7761" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7761" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-56324 · CVSS 8.2 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>Capgo before 12.128.2 rate limit bypass via device_id rotation enables database exhaustion</h3>
-<p>Capgo before 12.128.2 contains a rate limit bypass vulnerability in the channel_self endpoint that allows attackers to circumvent rate limiting by rotating the user-controlled device_id parameter. Attackers can send multiple requests per second by changing device_id values to flood the channel_devices table and cause database exhaustion.</p>
+<h3>Capgo channel_self endpoint allows rate limit bypass via device_id rotation causing database exhaustion</h3>
+<p>Capgo before 12.128.2 contains a rate limit bypass vulnerability in the channel_self endpoint that allows attackers to circumvent rate limiting by rotating the user-controlled device_id parameter. Attackers can send multiple requests per second by changing device_id values to flood the channel_devices table and cause database exhaustion, leading to service degradation or denial of service.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56324" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56324" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56785 · CVSS 8.2 · Jun 23, 2026</p>
-<h3>FlatPress stored XSS in comment and contact forms via unencoded name/URL/email fields in Smarty templates</h3>
+<h3>FlatPress stored XSS in comment and contact forms via unencoded name, URL, and email fields in Smarty templates</h3>
 <p>FlatPress versions prior to commit 10be83c contain a stored cross-site scripting vulnerability in comment and contact forms where name, URL, and email fields are rendered without proper output encoding in Smarty templates. Attackers can inject arbitrary HTML and JavaScript through these fields to execute malicious scripts in browsers of viewers including administrators, or bypass URL scheme validation to inject javascript: or data: URIs.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56785" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56785" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-56784 · CVSS 8.1 · Jun 23, 2026</p>
-<h3>OpenRemote before 1.25.0 IDOR in bulk alarm deletion allows cross-tenant alarm deletion</h3>
+<p class="cve-id">CVE-2026-56784 · CVSS 8.1 · Jun 23, 2026 (updated Jun 23, 2026)</p>
+<h3>OpenRemote insecure direct object reference in bulk alarm deletion allows cross-tenant alarm deletion</h3>
 <p>OpenRemote before 1.25.0 contains an insecure direct object reference (IDOR) vulnerability in the bulk alarm deletion endpoint that allows authenticated users to permanently delete alarms belonging to other tenants by supplying arbitrary alarm IDs. The removeAlarms() method in AlarmResourceImpl.java omits realm-scoping validation in its JPA query, enabling any user with alarm-write permissions to enumerate sequential auto-increment alarm IDs and delete cross-tenant alarm records without authorization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56784" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-56239 · CVSS 7.6 · Jun 21, 2026 (updated Jun 22, 2026)</p>
-<h3>Capgo before 12.128.2 privilege escalation via public.apply_usage_overage SECURITY DEFINER function</h3>
-<p>Capgo before 12.128.2 contains a potential privilege escalation vulnerability in the public.apply_usage_overage SECURITY DEFINER function, which performs sensitive billing operations without enforcing internal authorization checks (no validation of auth.uid(), org membership, or check_min_rights). Because the function runs with the owner's privileges, it bypasses Row Level Security. If EXECUTE permission is available to the authenticated or anon roles (explicitly or via default privileges), any database user could invoke it to manipulate billing data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56239" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56239" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-48502 · CVSS 7.5 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MessagePack for C# before 2.5.301/3.1.7 stack memory allocation via attacker-controlled extension length</h3>
-<p>MessagePack for C# is a MessagePack serializer for C#. Prior to 2.5.301 and 3.1.7, MessagePackReader.ReadDateTime() can allocate stack memory based on an attacker-controlled MessagePack extension length. In the slow path for timestamp extension parsing, the computed tokenSize includes the extension body length from the wire and is used in a stackalloc operation before the extension length is validated as one of the valid timestamp sizes. A very small payload can claim a large timestamp extension, leading to excessive stack allocation and potential crash.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-48502" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48502" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -615,7 +615,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-24 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-24 15:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
