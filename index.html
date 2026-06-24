@@ -533,59 +533,57 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-35018 · CVSS 8.8 · Jun 23, 2026</p>
-<h3>NetComm NF20MESH routers authenticated remote code execution via username JSON injection</h3>
+<h3>NetComm NF20MESH routers allow authenticated RCE via shell metacharacter injection in username JSON parameter</h3>
 <p>NetComm NF20MESH routers running firmware R6B031 and earlier contain an authenticated remote code execution vulnerability that allows authenticated attackers to execute arbitrary commands as root by injecting shell metacharacters into the username JSON parameter processed by the dalStorage_addUserAccount function. Attackers can exploit the unsafe concatenation of user-supplied input into a shell command string passed to rut_doSystemAction without sanitization to achieve full root-level command execution.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-35018" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-35018" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56423 · CVSS 8.8 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MISP Core broken access control in bulk deletion flows for Event Reports and Sharing Groups</h3>
-<p>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object.
-
-For Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for reports in other orgs, and the application would delete them.</p>
+<h3>MISP Core broken access-control in bulk deletion flows for Event Reports and Sharing Groups</h3>
+<p>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object. For Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for deletion without owning those reports.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56423" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56423" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56424 · CVSS 8.8 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MISP core multiple broken access-control flaws in authorization checks</h3>
+<h3>MISP core multiple broken access-control flaws allow lower-privileged users to mutate objects across organizations</h3>
 <p>MISP core contained multiple broken access-control flaws where authorization checks were performed against the wrong entity, or where ownership/editability checks were missing on write paths. In affected subsystems, a lower-privileged authenticated user with the relevant feature permission could cause the application to authorize one object but mutate another, or could modify objects that were merely visible rather than editable by the user's organization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56424" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56424" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56324 · CVSS 8.2 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>Capgo rate limit bypass via device_id rotation causing database exhaustion</h3>
+<h3>Capgo before 12.128.2 rate limit bypass via device_id rotation enables database exhaustion</h3>
 <p>Capgo before 12.128.2 contains a rate limit bypass vulnerability in the channel_self endpoint that allows attackers to circumvent rate limiting by rotating the user-controlled device_id parameter. Attackers can send multiple requests per second by changing device_id values to flood the channel_devices table and cause database exhaustion.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56324" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56324" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56785 · CVSS 8.2 · Jun 23, 2026</p>
-<h3>FlatPress stored cross-site scripting in comment and contact forms</h3>
-<p>FlatPress versions prior to commit 10be83c, contains a stored cross-site scripting vulnerability in comment and contact forms where name, URL, and email fields are rendered without proper output encoding in Smarty templates. Attackers can inject arbitrary HTML and JavaScript through these fields to execute malicious scripts in browsers of viewers including administrators, or bypass URL scheme validation to inject javascript: or data: URIs.</p>
+<h3>FlatPress stored XSS in comment and contact forms via unencoded name/URL/email fields in Smarty templates</h3>
+<p>FlatPress versions prior to commit 10be83c contain a stored cross-site scripting vulnerability in comment and contact forms where name, URL, and email fields are rendered without proper output encoding in Smarty templates. Attackers can inject arbitrary HTML and JavaScript through these fields to execute malicious scripts in browsers of viewers including administrators, or bypass URL scheme validation to inject javascript: or data: URIs.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56785" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56785" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56784 · CVSS 8.1 · Jun 23, 2026</p>
-<h3>OpenRemote insecure direct object reference in bulk alarm deletion endpoint</h3>
+<h3>OpenRemote before 1.25.0 IDOR in bulk alarm deletion allows cross-tenant alarm deletion</h3>
 <p>OpenRemote before 1.25.0 contains an insecure direct object reference (IDOR) vulnerability in the bulk alarm deletion endpoint that allows authenticated users to permanently delete alarms belonging to other tenants by supplying arbitrary alarm IDs. The removeAlarms() method in AlarmResourceImpl.java omits realm-scoping validation in its JPA query, enabling any user with alarm-write permissions to enumerate sequential auto-increment alarm IDs and delete cross-tenant alarm records without authorization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56784" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56239 · CVSS 7.6 · Jun 21, 2026 (updated Jun 22, 2026)</p>
-<h3>Capgo privilege escalation in public.apply_usage_overage SECURITY DEFINER function</h3>
-<p>Capgo before 12.128.2 contains a potential privilege escalation vulnerability in the public.apply_usage_overage SECURITY DEFINER function, which performs sensitive billing operations without enforcing internal authorization checks (no validation of auth.uid(), org membership, or check_min_rights). Because the function runs with the owner's privileges, it bypasses Row Level Security. If EXECUTE permission is available to the authenticated or anon roles (explicitly or via default privileges), an attacker could invoke it to perform unauthorized billing operations.</p>
+<h3>Capgo before 12.128.2 privilege escalation via public.apply_usage_overage SECURITY DEFINER function</h3>
+<p>Capgo before 12.128.2 contains a potential privilege escalation vulnerability in the public.apply_usage_overage SECURITY DEFINER function, which performs sensitive billing operations without enforcing internal authorization checks (no validation of auth.uid(), org membership, or check_min_rights). Because the function runs with the owner's privileges, it bypasses Row Level Security. If EXECUTE permission is available to the authenticated or anon roles (explicitly or via default privileges), any database user could invoke it to manipulate billing data.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56239" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56239" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-48502 · CVSS 7.5 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MessagePack for C# stack memory allocation vulnerability in ReadDateTime()</h3>
-<p>MessagePack for C# is a MessagePack serializer for C#. Prior to 2.5.301 and 3.1.7, MessagePackReader.ReadDateTime() can allocate stack memory based on an attacker-controlled MessagePack extension length. In the slow path for timestamp extension parsing, the computed tokenSize includes the extension body length from the wire and is used in a stackalloc operation before the extension length is validated as one of the valid timestamp sizes. A very small payload can claim a large timestamp extension.</p>
+<h3>MessagePack for C# before 2.5.301/3.1.7 stack memory allocation via attacker-controlled extension length</h3>
+<p>MessagePack for C# is a MessagePack serializer for C#. Prior to 2.5.301 and 3.1.7, MessagePackReader.ReadDateTime() can allocate stack memory based on an attacker-controlled MessagePack extension length. In the slow path for timestamp extension parsing, the computed tokenSize includes the extension body length from the wire and is used in a stackalloc operation before the extension length is validated as one of the valid timestamp sizes. A very small payload can claim a large timestamp extension, leading to excessive stack allocation and potential crash.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-48502" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48502" target="_blank">OpenCVE</a>
 </div>
 
@@ -617,7 +615,7 @@ For Event Reports, EventReportsController::deleteSelection relied on the global 
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-24 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-24 09:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
