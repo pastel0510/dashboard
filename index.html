@@ -517,58 +517,58 @@ https://yle.fi/a/74-20233252
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-44790 · CVSS 8.8 · Jun 23, 2026 (updated Jun 24, 2026)</p>
-<h3>n8n workflow automation platform: authenticated user with workflow permissions can inject CLI flags on Git node Push to read arbitrary server files</h3>
+<h3>n8n Git node Push operation CLI flag injection allows arbitrary file read</h3>
 <p>n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could inject CLI flags on the Git node's Push operation allowing an attacker to read arbitrary files from the n8n server potentially leading to full compromise. This vulnerability is fixed in 1.123.43, 2.22.1, and 2.20.7.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-44790" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44790" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56232 · CVSS 8.8 · Jun 24, 2026</p>
-<h3>Capgo fails to enforce limited_to_orgs/limited_to_apps constraints on subkeys via x-limited-key-id header, allowing subkey scope bypass</h3>
+<h3>Capgo subkey scope restriction bypass via x-limited-key-id header</h3>
 <p>Capgo before 12.128.2 fails to enforce limited_to_orgs and limited_to_apps constraints on subkeys provided via x-limited-key-id header in middlewareKey function. Attackers can bypass subkey scope restrictions by referencing their own subkeys, causing all downstream route handlers to use the unrestricted parent key instead of the scoped subkey.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56232" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56232" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56423 · CVSS 8.8 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MISP Core broken access-control checks in bulk deletion flows for Event Reports and Sharing Groups allow contributor-level users to delete arbitrary reports</h3>
-<p>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object. For Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for deletion without owning them.</p>
+<h3>MISP Core broken access control in bulk deletion of Event Reports and Sharing Groups</h3>
+<p>MISP Core contained broken access-control checks in the bulk deletion flows for Event Reports and Sharing Groups. The affected deleteSelection handlers authorized deletion using broad role-level permissions instead of validating authorization for each selected object. For Event Reports, EventReportsController::deleteSelection relied on the global perm_add capability rather than a per-report ownership/authorization check. As a result, a contributor-level user could submit report IDs or UUIDs for</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56423" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56423" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56424 · CVSS 8.8 · Jun 22, 2026 (updated Jun 23, 2026)</p>
-<h3>MISP Core multiple broken access-control flaws where authorization checks were performed against wrong entity or missing ownership/editability checks on write paths</h3>
-<p>MISP core contained multiple broken access-control flaws where authorization checks were performed against the wrong entity, or where ownership/editability checks were missing on write paths. In affected subsystems, a lower-privileged authenticated user with the relevant feature permission could cause the application to authorize one object but mutate another, or could modify objects that were merely visible rather than editable by the user’s organization.</p>
+<h3>MISP core multiple broken access-control flaws allowing unauthorized object mutation</h3>
+<p>MISP core contained multiple broken access-control flaws where authorization checks were performed against the wrong entity, or where ownership/editability checks were missing on write paths. In affected subsystems, a lower-privileged authenticated user with the relevant feature permission could cause the application to authorize one object but mutate another, or could modify objects that were merely visible rather than editable by the user's organization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56424" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56424" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7761 · CVSS 8.8 · Jun 24, 2026</p>
-<h3>Ultimate Member WordPress plugin vulnerable to Account Takeover via Password Reset Link Disclosure due to logic bugs in member directory and meta parsing</h3>
-<p>The Ultimate Member plugin for WordPress is vulnerable to Account Takeover via Password Reset Link Disclosure in all versions up to and including 2.11.4. This is due to a chain of three logic bugs: (1) an MD5 hash fallback in get_directory_by_hash() that allows any post to be used as a member directory by computing SUBSTRING(MD5(post_id), 11, 5), (2) a strstr() parsing logic flaw in post_data() that allows bypassing WordPress's protected meta key restrictions by placing '_um_' anywhere in the meta key name, and (3) a predictable password-reset link structure that combines these flaws to expose reset tokens to unauthenticated attackers.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7761" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7761" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-45732 · CVSS 8.1 · Jun 23, 2026 (updated Jun 24, 2026)</p>
-<h3>n8n OAuth1/OAuth2 credential reconnect endpoints authorized with credential:read instead of credential:update, allowing read-only users to overwrite tokens</h3>
-<p>n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, the OAuth1 and OAuth2 credential reconnect endpoints authorized access using credential:read rather than credential:update. An authenticated user with read-only access to a shared credential could initiate an OAuth reconnect flow and overwrite the stored token material for that credential with tokens bound to an external account they control. Workflows relying on the affected credential would subsequently execute under the attacker's control.</p>
+<h3>n8n OAuth credential reconnect endpoints allow token overwrite with read-only access</h3>
+<p>n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, the OAuth1 and OAuth2 credential reconnect endpoints authorized access using credential:read rather than credential:update. An authenticated user with read-only access to a shared credential could initiate an OAuth reconnect flow and overwrite the stored token material for that credential with tokens bound to an external account they control.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-45732" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45732" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-56784 · CVSS 8.1 · Jun 23, 2026</p>
-<h3>OpenRemote insecure direct object reference (IDOR) in bulk alarm deletion endpoint allows authenticated users to delete alarms belonging to other tenants</h3>
-<p>OpenRemote before 1.25.0 contains an insecure direct object reference (IDOR) vulnerability in the bulk alarm deletion endpoint that allows authenticated users to permanently delete alarms belonging to other tenants by supplying arbitrary alarm IDs. The removeAlarms() method in AlarmResourceImpl.java omits realm-scoping validation in its JPA query, enabling any user with alarm-write permissions to enumerate sequential auto-increment alarm IDs and delete cross-tenant alarm records without authorization.</p>
+<p class="cve-id">CVE-2026-56784 · CVSS 8.1 · Jun 23, 2026 (updated Jun 23, 2026)</p>
+<h3>OpenRemote insecure direct object reference in bulk alarm deletion endpoint</h3>
+<p>OpenRemote before 1.25.0 contains an insecure direct object reference (IDOR) vulnerability in the bulk alarm deletion endpoint that allows authenticated users to permanently delete alarms belonging to other tenants by supplying arbitrary alarm IDs. The removeAlarms() method in AlarmResourceImpl.java omits realm-scoping validation in its JPA query, enabling any user with alarm-write permissions to enumerate sequential auto-increment alarm IDs and delete cross-tenant alarm records.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56784" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56231 · CVSS 7.6 · Jun 24, 2026</p>
-<h3>Capgo broken object level authorization (BOLA) in build endpoints allows app ID-controlled privilege escalation</h3>
-<p>Capgo before 12.128.2 contains a broken object level authorization (BOLA) vulnerability in the POST /build/start/:jobId and POST /build/cancel/:jobId endpoints. The handlers authorize the request based only on the attacker-controlled app_id supplied in the request body and never verify that the jobId in the URL belongs to that app_id (or the same tenant/org) before issuing privileged builder commands with the server-held builder API key. An authenticated user with the app.build_native permission can manipulate any build job.</p>
+<h3>Capgo broken object level authorization in build start/cancel endpoints</h3>
+<p>Capgo before 12.128.2 contains a broken object level authorization (BOLA) vulnerability in the POST /build/start/:jobId and POST /build/cancel/:jobId endpoints. The handlers authorize the request based only on the attacker-controlled app_id supplied in the request body and never verify that the jobId in the URL belongs to that app_id (or the same tenant/org) before issuing privileged builder commands with the server-held builder API key.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56231" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56231" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-48502 · CVSS 7.5 · Jun 22, 2026 (updated Jun 23, 2026)</p>
+<h3>MessagePack for C# stack memory exhaustion via crafted timestamp extension</h3>
+<p>MessagePack for C# is a MessagePack serializer for C#. Prior to 2.5.301 and 3.1.7, MessagePackReader.ReadDateTime() can allocate stack memory based on an attacker-controlled MessagePack extension length. In the slow path for timestamp extension parsing, the computed tokenSize includes the extension body length from the wire and is used in a stackalloc operation before the extension length is validated as one of the valid timestamp sizes. A very small payload can claim a large timestamp extension</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-48502" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48502" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -599,7 +599,7 @@ https://yle.fi/a/74-20233252
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-25 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-25 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
