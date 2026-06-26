@@ -536,64 +536,7 @@ CRESST II)</small><br>
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-44790 · CVSS 8.8 · Jun 23, 2026 (updated Jun 24, 2026)</p>
-<h3>n8n workflow automation platform: authenticated users can inject CLI flags on Git Push node, leading to arbitrary file read and potential full server compromise</h3>
-<p>n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could inject CLI flags on the Git node's Push operation allowing an attacker to read arbitrary files from the n8n server potentially leading to full compromise. This vulnerability is fixed in 1.123.43, 2.22.1, and 2.20.7.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-44790" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-44790" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-56115 · CVSS 8.8 · Jun 23, 2026 (updated Jun 25, 2026)</p>
-<h3>Bootimus broken access control: low-privilege authenticated users can perform administrative actions via missing is_admin role enforcement</h3>
-<p>Bootimus through 0.1.70 contains a broken access control vulnerability that allows authenticated low-privileged users to perform administrative actions by exploiting missing role enforcement in the JWTMiddleware function in internal/auth/auth.go, which validates JWT tokens and account status but fails to inspect the is_admin flag. Attackers can send requests to any endpoint under the /api/users path to create new administrator accounts or reset administrator passwords, thereby gaining full control.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56115" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56115" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-56232 · CVSS 8.8 · Jun 24, 2026 (updated Jun 25, 2026)</p>
-<h3>Capgo fails to enforce subkey scope constraints: attackers can bypass limited_to_orgs and limited_to_apps restrictions via x-limited-key-id header</h3>
-<p>Capgo before 12.128.2 fails to enforce limited_to_orgs and limited_to_apps constraints on subkeys provided via x-limited-key-id header in middlewareKey function. Attackers can bypass subkey scope restrictions by referencing their own subkeys, causing all downstream route handlers to use the unrestricted parent key instead of the scoped subkey.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56232" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56232" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-54312 · CVSS 8.5 · Jun 23, 2026 (updated Jun 25, 2026)</p>
-<h3>n8n Microsoft SQL node: authenticated users can achieve global prototype pollution via crafted table parameter, causing application-wide failures</h3>
-<p>n8n is an open source workflow automation platform. Prior to 2.24.0, an authenticated user with permission to create or modify workflows could achieve global prototype pollution via the Microsoft SQL node by supplying a crafted value as the table parameter. This pollutes Object.prototype process-wide for the lifetime of the n8n server process, causing application-wide validation failures and rendering the n8n instance completely non-functional until restarted. This vulnerability is fixed in 2.24.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-54312" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-54312" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-45233 · CVSS 8.1 · Jun 25, 2026</p>
-<h3>HTMLy CMS path traversal: low-privilege authenticated attackers can relocate arbitrary files via unsanitized traversal sequences in oldfile parameter</h3>
-<p>HTMLy CMS through 3.1.1 contains a path traversal vulnerability that allows low-privileged authenticated attackers to relocate arbitrary files by supplying directory traversal sequences in the oldfile parameter at the admin autosave endpoint. Attackers can pass unsanitized traversal sequences directly to file_exists() and rename() functions in admin.php without canonicalization or directory boundary enforcement to cause unintended relocation of any file writable by the web server process.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-45233" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45233" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-45732 · CVSS 8.1 · Jun 23, 2026 (updated Jun 24, 2026)</p>
-<h3>n8n OAuth reconnect endpoints: read-only credential access allows token overwrite, enabling account takeover via OAuth replay</h3>
-<p>n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, the OAuth1 and OAuth2 credential reconnect endpoints authorized access using credential:read rather than credential:update. An authenticated user with read-only access to a shared credential could initiate an OAuth reconnect flow and overwrite the stored token material for that credential with tokens bound to an external account they control. Workflows relying on the affected credential would subsequently exfiltrate data to the attacker's account.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-45732" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-45732" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-56784 · CVSS 8.1 · Jun 23, 2026</p>
-<h3>OpenRemote IDOR in bulk alarm deletion: authenticated users can permanently delete alarms belonging to other tenants via missing realm-scoping validation</h3>
-<p>OpenRemote before 1.25.0 contains an insecure direct object reference (IDOR) vulnerability in the bulk alarm deletion endpoint that allows authenticated users to permanently delete alarms belonging to other tenants by supplying arbitrary alarm IDs. The removeAlarms() method in AlarmResourceImpl.java omits realm-scoping validation in its JPA query, enabling any user with alarm-write permissions to enumerate sequential auto-increment alarm IDs and delete cross-tenant alarm records without authorization.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56784" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-9800 · CVSS 8.1 · Jun 25, 2026</p>
-<h3>Keycloak Policy Enforcer bypass: authenticated users can evade all authorization policies by including access-denied page path in request URL</h3>
-<p>A flaw was found in Keycloak Policy Enforcer. This vulnerability allows any authenticated user to bypass all authorization policies, including role, scope, and User-Managed Access (UMA) permission checks. By including the configured access-denied page path within a request URL, either as a path segment or a query parameter, an attacker can gain unauthorized access to protected resources.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9800" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9800" target="_blank">OpenCVE</a>
-</div>
-
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability =5%.</p> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div> <div class="bulletin-item"> <p class="cve-id"><cve-id> · CVSS <score> · <date_str> · <EPSS badge if epss>=0.05></p> <h3><summary truncated to ~120 chars as title></h3> <p><full summary></p> <a href="https://db.gcve.eu/cve/<cve-id>" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/<cve-id>" target="_blank">OpenCVE</a> </div>
                         </div>
                     </div>
                 </div>
@@ -622,7 +565,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-26 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-26 03:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
