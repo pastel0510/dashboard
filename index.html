@@ -534,58 +534,58 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13518 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>A vulnerability has been found in Tenda JD12L 16.03.53.23. This affects the function fromAddressNat of the file /goform/addressNat. The manipulation of the argument page leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.</h3>
+<h3>Tenda JD12L stack-based buffer overflow in /goform/addressNat</h3>
 <p>A vulnerability has been found in Tenda JD12L 16.03.53.23. This affects the function fromAddressNat of the file /goform/addressNat. The manipulation of the argument page leads to stack-based buffer overflow. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13518" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13518" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13562 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>A flaw has been found in Edimax EW-7478APC 1.04. This affects the function formiNICSiteSurvey of the file /goform/formiNICSiteSurvey of the component POST Request Handler. This manipulation of the argument selSSID causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</h3>
+<h3>Edimax EW-7478APC buffer overflow in formiNICSiteSurvey POST handler</h3>
 <p>A flaw has been found in Edimax EW-7478APC 1.04. This affects the function formiNICSiteSurvey of the file /goform/formiNICSiteSurvey of the component POST Request Handler. This manipulation of the argument selSSID causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13562" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13562" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13583 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>A vulnerability has been found in Edimax EW-7478APC 1.04. Impacted is the function formUSBFolder of the file /goform/formUSBFolder of the component POST Request Handler. Such manipulation of the argument ShareName/SelectName leads to buffer overflow. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</h3>
+<h3>Edimax EW-7478APC buffer overflow in formUSBFolder POST handler</h3>
 <p>A vulnerability has been found in Edimax EW-7478APC 1.04. Impacted is the function formUSBFolder of the file /goform/formUSBFolder of the component POST Request Handler. Such manipulation of the argument ShareName/SelectName leads to buffer overflow. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13583" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13583" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-40521 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>FrontAccounting before 2.4.20 contains a path traversal vulnerability in the attachment upload handler that allows authenticated attackers to execute arbitrary code by uploading files with traversal sequences in the unique_name parameter. Attackers can supply path traversal sequences ../../../shell.php to write files outside the intended attachments directory into the web root, and by uploading PHP files without extension validation, achieve remote code execution as the web server user.</h3>
+<h3>FrontAccounting &lt;2.4.20 path traversal in attachment upload enables RCE</h3>
 <p>FrontAccounting before 2.4.20 contains a path traversal vulnerability in the attachment upload handler that allows authenticated attackers to execute arbitrary code by uploading files with traversal sequences in the unique_name parameter. Attackers can supply path traversal sequences ../../../shell.php to write files outside the intended attachments directory into the web root, and by uploading PHP files without extension validation, achieve remote code execution as the web server user.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-40521" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40521" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-56285 · CVSS 8.6 · Jun 29, 2026</p>
-<h3>Nitter's /video media proxy endpoint fails to validate target URLs against Twitter/X domains and uses a hardcoded default HMAC key, allowing unauthenticated attackers to compute valid HMACs for arbitrary URLs. Attackers can retrieve HTTP responses from any host reachable by the server, including cloud metadata services and internal network resources.</h3>
-<p>Nitter's /video media proxy endpoint fails to validate target URLs against Twitter/X domains and uses a hardcoded default HMAC key, allowing unauthenticated attackers to compute valid HMACs for arbitrary URLs. Attackers can retrieve HTTP responses from any host reachable by the server, including cloud metadata services and internal network resources.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56285" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56285" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-57947 · CVSS 8.5 · Jun 29, 2026</p>
-<h3>Pinpoint through 3.1.0 contains a server-side request forgery vulnerability in the webhook registration endpoint that allows authenticated users to register internal URLs due to missing SSRF protection. Attackers can trigger alarm threshold breaches to force the server to issue POST requests to internal hosts and metadata endpoints, enabling unauthorized access to internal network resources.</h3>
-<p>Pinpoint through 3.1.0 contains a server-side request forgery vulnerability in the webhook registration endpoint that allows authenticated users to register internal URLs due to missing SSRF protection. Attackers can trigger alarm threshold breaches to force the server to issue POST requests to internal hosts and metadata endpoints, enabling unauthorized access to internal network resources.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-57947" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57947" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-57955 · CVSS 8.5 · Jun 29, 2026</p>
-<h3>SigNoz through 0.130.1 contains a SQL injection vulnerability that allows authenticated attackers to execute arbitrary ClickHouse queries by injecting URL-encoded quotes into the rule ID path parameter of the alert-history endpoints. Attackers can manipulate the unsanitized rule ID interpolated into ClickHouse queries to read all stored traces, logs, and metrics, or abuse the url() function to perform server-side request forgery.</h3>
-<p>SigNoz through 0.130.1 contains a SQL injection vulnerability that allows authenticated attackers to execute arbitrary ClickHouse queries by injecting URL-encoded quotes into the rule ID path parameter of the alert-history endpoints. Attackers can manipulate the unsanitized rule ID interpolated into ClickHouse queries to read all stored traces, logs, and metrics, or abuse the url() function to perform server-side request forgery.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-57955" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57955" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-57999 · CVSS 8.8 · Jun 29, 2026</p>
+<h3>luci-app-tailscale-community command injection via loginserver RPC params</h3>
+<p>luci-app-tailscale-community contains a command injection vulnerability in the tailscale.do_login RPC method that allows authenticated users to execute arbitrary commands as root. The vulnerability exists because user-controlled loginserver and loginserver_authkey parameters are improperly quoted within a double-quoted shell command, allowing shell substitutions like $() to be evaluated by the outer shell before argument processing.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-57999" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57999" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-40524 · CVSS 8.1 · Jun 29, 2026</p>
-<h3>FrontAccounting before 2.4.20 contains a SQL injection vulnerability in the get_gl_transactions() function where the filter_type parameter is concatenated directly into a SQL IN() clause without parameterization. Attackers with SA_GLANALYTIC permission can inject arbitrary SQL by supplying a closing parenthesis followed by malicious conditions to extract sensitive journal entry data through boolean-based blind SQL injection with reliable response size differentials.</h3>
+<h3>FrontAccounting &lt;2.4.20 SQL injection in get_gl_transactions()</h3>
 <p>FrontAccounting before 2.4.20 contains a SQL injection vulnerability in the get_gl_transactions() function where the filter_type parameter is concatenated directly into a SQL IN() clause without parameterization. Attackers with SA_GLANALYTIC permission can inject arbitrary SQL by supplying a closing parenthesis followed by malicious conditions to extract sensitive journal entry data through boolean-based blind SQL injection with reliable response size differentials.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-40524" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40524" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-13498 · CVSS 7.3 · Jun 28, 2026 (updated Jun 29, 2026)</p>
+<h3>restaurent-management-system SQL injection via forgotpassword.php email param</h3>
+<p>A vulnerability was identified in yashpokharna2555 restaurent-management-system. This affects an unknown function of the file /forgotpassword.php of the component POST Parameter Handler. Such manipulation of the argument email leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The project was informed of the problem.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-13498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13498" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-13566 · CVSS 7.3 · Jun 29, 2026</p>
+<h3>Class and Exam Timetabling System 1.0 SQL injection in /preview3.php</h3>
+<p>A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected by this issue is some unknown functionality of the file /preview3.php. The manipulation of the argument course_year_section leads to sql injection. The attack may be initiated remotely. The exploit is publicly available and might be used.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-13566" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13566" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -612,7 +612,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-06-30 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-06-30 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
