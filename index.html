@@ -433,51 +433,59 @@ CRESST II)</small><br>
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 July 1, 2026</p>
-<h3><a href="https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html" target="_blank">Azure CLI Password Spray Hits at Least 78 Microsoft Accounts in 81M+ Attempts</a></h3>
-<p>Huntress warns of a massive, ongoing automated password spray attack targeting Microsoft's Azure CLI, originating from AS32167 (LSHIY LLC). Between June 12-26, attackers made over 81 million login attempts and compromised at least 78 Microsoft accounts across 64 organizations. Many targeted orgs had Conditional Access policies enabled.</p>
+<p class="date-line">📅 July 01, 2026</p>
+<h3>Azure CLI Password Spray Hits at Least 78 Microsoft Accounts in 81M+ Attempts</h3>
+<p>Huntress warns of a massive, ongoing automated password spray attack targeting Microsoft's Azure CLI. Between June 12 and June 26, attackers made over 81 million login attempts from IPv6 range 2a0a:d683::/32 (LSHIY LLC), compromising at least 78 accounts across 64 organizations. The campaign weaponizes the deprecated ROPC OAuth flow to bypass Conditional Access policies, even where MFA is enabled but not properly configured for Azure CLI logins.</p>
+<a href="https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 July 1, 2026</p>
-<h3><a href="https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html" target="_blank">Researcher Analyzes 3,000 Live ClickFix Payloads, Exposing API-Driven Malware Delivery</a></h3>
-<p>Security researcher Bert-Jan Pals dissected ClickFix platforms and analyzed roughly 3,000 live payloads, finding that the malicious commands behind fake "prove you're human" pages are now distributed by API-driven servers. Each visitor receives the same malware in a different disguise, including a new delivery method built to bypass Windows script scanning.</p>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 June 30, 2026</p>
-<h3><a href="https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html" target="_blank">282 iOS AI Apps Leak API Keys and Open AI Proxy Access in Network Traffic Study</a></h3>
-<p>Researchers at Wake Forest University tested 444 AI chatbot apps for iPhone and found that 282 — nearly two-thirds — exposed paid AI access through their network traffic. Using a tool called LLMKeyLens, the team extracted plaintext API keys and reusable tokens without jailbreaking the devices. Three months after disclosure, only 28% of developers had fixed the issue.</p>
+<p class="date-line">📅 July 01, 2026</p>
+<h3>Phantom Squatting Uses AI-Hallucinated Domains for Phishing and Malware</h3>
+<p>Palo Alto Networks Unit 42 reveals "phantom squatting": attackers registering domains that LLMs hallucinate but do not exist. In testing, two AI models produced 2.1 million links, with 13,229 flagged malicious and roughly 250,000 invented domains left unclaimed. In two observed cases, attackers registered hallucinated domains within 23 and 51 days respectively, then hosted phishing kits or malicious apps. The attack exploits a structural property of LLM architectures that remains inherently unpatchable.</p>
+<a href="https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 June 30, 2026</p>
-<h3><a href="https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html" target="_blank">Langflow RCE Exploited to Deploy Monero Miner on Exposed AI App Endpoints</a></h3>
-<p>Threat actors are actively exploiting CVE-2026-33017 (CVSS 9.3), an unauthenticated RCE vulnerability in Langflow, to deliver Monero cryptocurrency miners onto exposed AI application endpoints. A single line of Python code evaluated inside an unauthenticated Langflow API pulls down a shell script and launches a detached miner that also kills competing miner processes.</p>
+<h3>New BioShocking Attack Manipulates AI Browser Into Data Theft</h3>
+<p>LayerX researchers disclose "BioShocking," a prompt injection attack tested against six AI-powered browsers including ChatGPT Atlas, Comet, Genspark Browser, and the Claude Chrome plugin. A malicious webpage presents a BioShock-themed puzzle that teaches the browser agent that "wrong" actions are acceptable, causing it to bypass safety guardrails and exfiltrate sensitive data such as passwords from GitHub repositories. Only OpenAI fixed the issue; Anthropic's patch was ineffective, and Perplexity closed the report without action.</p>
+<a href="https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 01, 2026</p>
+<h3>Adobe Patches Seven Max-Severity ColdFusion and Campaign Flaws</h3>
+<p>Adobe released patches for seven maximum-severity vulnerabilities in ColdFusion (CVE-2026-48276, CVE-2026-48277, CVE-2026-48281, CVE-2026-48316, CVE-2026-48282) and Campaign Classic (CVE-2026-48286). All are low-complexity, unauthenticated remote code execution flaws tagged priority 1. Adobe recommends installing updates within 72 hours. Adobe also announced it will switch to twice-monthly security bulletins starting July 14, 2026, to deploy fixes faster amid AI-accelerated vulnerability discovery.</p>
+<a href="https://www.bleepingcomputer.com/news/security/adobe-patches-seven-max-severity-coldfusion-campaign-flaws/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 01, 2026</p>
+<h3>Researcher Analyzes 3,000 Live ClickFix Payloads, Exposing API-Driven Malware Delivery</h3>
+<p>Security researcher Bert-Jan Pals dissected roughly 3,000 ClickFix payloads from live campaigns, revealing that malicious commands are now served by API-driven platforms that deliver unique, scrambled payloads per visitor. A new "Downloads-folder" method drops a file silently and uses a harmless-looking clipboard command to slip past Windows AMSI script scanning. The technique is now MITRE ATT&CK entry T1204.004, linked to state-backed groups including APT28, MuddyWater, and Kimsuky, with one ClearFake wave infecting an estimated 147,521 systems since August 2025.</p>
+<a href="https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 June 30, 2026</p>
-<h3><a href="https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html" target="_blank">RustDuck Botnet Rebuilds in Rust to Hijack Routers and Servers for DDoS</a></h3>
-<p>QiAnXin XLab researchers report a new two-stage botnet called RustDuck that is hijacking home routers, IP cameras, Android boxes, and poorly secured servers. The botnet is being rewritten from C into Rust and employs unusual anti-analysis techniques. It uses a mix of old weaknesses — primarily default passwords — to spread and stitch infected devices into a DDoS-for-hire network.</p>
+<h3>Malicious PyPI Packages Give Hackers Control of Telegram Bot Servers</h3>
+<p>Checkmarx uncovered "Operation Navy Ghost," a supply-chain campaign active since November 2025 that published eight trojanized Pyrogram forks on PyPI. Packages including pyrogram-styled, pyrogram-navy, and VLifeGram amassed over 25,000 downloads and contain a hidden backdoor (secret.py) that activates on Telegram bot accounts. Attackers can execute arbitrary Python code or shell commands via Telegram messages, read any file on the server, dump secrets, and access chats. The backdoor silently suppresses errors and disables logging.</p>
+<a href="https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-give-hackers-control-of-telegram-bot-servers/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 June 30, 2026</p>
-<h3><a href="https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/" target="_blank">New BioShocking Attack Manipulates AI Browser into Data Theft</a></h3>
-<p>A new prompt injection attack called "BioShocking" can trick AI-powered browsers into treating risky real-world actions as part of a fictional scenario, causing them to bypass safety guardrails. The attack demonstrates how AI assistant tools that perform actions on behalf of users can be socially engineered into exfiltrating sensitive data.</p>
+<h3>Fake Perplexity Extension on Chrome Web Store Tracked Searches</h3>
+<p>Microsoft Threat Intelligence identified a malicious Chrome extension masquerading as Perplexity AI. Named "Search for perplexity ai," it intercepts Omnibox queries and real-time suggestions, routing them through attacker infrastructure at domain perplexity-ai[.]online before redirecting to legitimate services. The extension requests powerful DNR permissions enabling traffic redirection, URL rewriting, and selective request filtering. While no credential theft was observed, the permissions could easily support it. Users who installed extension ID flkebkiofojicogddingbdmcmkpbplcd should remove it and rotate passwords.</p>
+<a href="https://www.bleepingcomputer.com/news/security/fake-perplexity-extension-on-chrome-web-store-tracked-searches/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 June 30, 2026</p>
-<h3><a href="https://www.bleepingcomputer.com/news/security/insurance-giant-aflac-discloses-data-breach-after-subsidiary-hack/" target="_blank">Insurance Giant Aflac Discloses Data Breach After Subsidiary Hack</a></h3>
-<p>American insurance giant Aflac has disclosed a new data breach after attackers compromised its Japan subsidiary's systems. The attackers stole personal and bank account information. The disclosure underscores how cross-border subsidiary networks remain a high-value target for cybercriminal and espionage groups.</p>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 June 30, 2026</p>
-<h3><a href="https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-give-hackers-control-of-telegram-bot-servers/" target="_blank">Malicious PyPI Packages Give Hackers Control of Telegram Bot Servers</a></h3>
-<p>A campaign active since November has been targeting Python developers building Telegram bots with trojanized Pyrogram forks uploaded to PyPI. The malicious packages allow attackers to read arbitrary files on compromised servers, giving them full control over bot infrastructure used for messaging automation and community management.</p>
+<p class="date-line">📅 July 01, 2026</p>
+<h3>Amazon Fined $2.25M for Withholding Evidence from Fraud Victims</h3>
+<p>The FTC announced Amazon must pay a $2.25 million civil penalty for violating the Fair Credit Reporting Act by blocking identity theft victims' access to transaction records. Amazon agents denied record requests citing "privacy" or "security," refused requests from law enforcement, and failed to respond within the required 30-day window. Under the proposed order, Amazon must provide records within 30 days, notify affected consumers since April 2024, and comply with FCRA requirements going forward.</p>
+<a href="https://www.bleepingcomputer.com/news/security/amazon-fined-225m-for-withholding-evidence-from-fraud-victims/" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -569,7 +577,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-01 15:06 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-01 15:15 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
