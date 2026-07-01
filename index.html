@@ -517,58 +517,58 @@ https://www.nature.com/articles/s41586-026-10771-6
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13562 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>Edimax EW-7478APC buffer overflow via POST handler argument manipulation</h3>
+<h3>A flaw has been found in Edimax EW-7478APC 1.04. This affects the function formiNICSiteSurvey — buffer overflow via selSSID argument</h3>
 <p>A flaw has been found in Edimax EW-7478APC 1.04. This affects the function formiNICSiteSurvey of the file /goform/formiNICSiteSurvey of the component POST Request Handler. This manipulation of the argument selSSID causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13562" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13562" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13583 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>Edimax EW-7478APC buffer overflow via formUSBFolder ShareName/SelectName</h3>
+<h3>Vulnerability in Edimax EW-7478APC 1.04: function formUSBFolder allows buffer overflow via ShareName/SelectName manipulation</h3>
 <p>A vulnerability has been found in Edimax EW-7478APC 1.04. Impacted is the function formUSBFolder of the file /goform/formUSBFolder of the component POST Request Handler. Such manipulation of the argument ShareName/SelectName leads to buffer overflow. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13583" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13583" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-55607 · CVSS 8.8 · Jun 29, 2026 (updated Jun 30, 2026)</p>
-<h3>Claude Code worktree handling allows git directory confusion and sandbox escape</h3>
-<p>Claude Code is an agentic coding tool.  From 2.1.38 until 2.1.163, Claude Code's worktree handling allowed creation of worktrees named ".git" and navigation to worktrees outside the sandbox context, enabling git directory confusion attacks. By exploiting symlink manipulation and git fsmonitor execution during worktree operations, an attacker could overwrite files in the user's home directory (such as .zshenv), leading to code execution outside of seatbelt sandbox restrictions. Reliably exploitin</p>
+<h3>Claude Code worktree handling allowed creation of worktrees named '.git' and navigation outside sandbox context, enabling git directory confusion attacks</h3>
+<p>Claude Code is an agentic coding tool. From 2.1.38 until 2.1.163, Claude Code's worktree handling allowed creation of worktrees named ".git" and navigation to worktrees outside the sandbox context, enabling git directory confusion attacks. By exploiting symlink manipulation and git fsmonitor execution during worktree operations, an attacker could overwrite files in the user's home directory (such as .zshenv), leading to code execution outside of seatbelt sandbox restrictions.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-55607" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-55607" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-56230 · CVSS 8.8 · Jun 30, 2026</p>
+<h3>Capgo before 12.128.2 broken object level authorization in middlewareKey() accepts client-controlled x-limited-key-id header</h3>
+<p>Capgo before 12.128.2 contains a broken object level authorization vulnerability in middlewareKey() that accepts the client-controlled x-limited-key-id header without validating ownership, allowing authenticated users to adopt cross-tenant limited keys. Attackers can supply another tenant's limited key ID to bypass authorization checks and access unauthorized cross-tenant resources across multiple API endpoints.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56230" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56230" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-56247 · CVSS 8.8 · Jun 30, 2026</p>
+<h3>Capgo before 12.128.2 allows org admins to assign org-scoped RBAC roles at app scope without validating role scope compatibility</h3>
+<p>Capgo before 12.128.2 allows org admins to assign org-scoped RBAC roles at app scope without validating role scope compatibility, including to pending invitees. Attackers can pre-seed malformed high-privilege bindings that survive invite acceptance, enabling accepted low-privilege users to perform unauthorized privileged app actions.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56247" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56247" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-57995 · CVSS 8.8 · Jun 30, 2026</p>
+<h3>phpMyFAQ before 4.1.5 privilege escalation in GroupController::updatePermissions allows GROUP_EDIT admins to grant arbitrary rights</h3>
+<p>phpMyFAQ before 4.1.5 contains a privilege escalation vulnerability in GroupController::updatePermissions that allows GROUP_EDIT administrators to grant arbitrary rights to groups without verifying they hold those rights themselves. A delegated administrator can exploit this by assigning high-value permissions to a group they belong to, inheriting those rights and escalating privileges up to full administrative control.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-57995" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57995" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-58049 · CVSS 8.6 · Jun 28, 2026 (updated Jun 30, 2026)</p>
-<h3>FFmpeg RASC decoder out-of-bounds heap write via crafted media stream</h3>
+<h3>FFmpeg RASC video decoder performs 32-bit reads/writes before row-boundary check, causing out-of-bounds heap write and read</h3>
 <p>FFmpeg's RASC video decoder (decode_dlta in libavcodec/rasc.c) performs 32-bit reads and writes at the row cursor before the NEXT_LINE row-boundary check and validates the DLTA region in pixel rather than byte units, so a DLTA run on a PAL8 frame can access several bytes past the row allocation. A crafted media stream using the RASC FourCC, decoded by libavcodec, triggers a bitstream-controlled out-of-bounds heap write and adjacent out-of-bounds read, leading to memory corruption.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-58049" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58049" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-40524 · CVSS 8.1 · Jun 29, 2026</p>
-<h3>FrontAccounting SQL injection in get_gl_transactions filter_type parameter</h3>
-<p>FrontAccounting before 2.4.20 contains a SQL injection vulnerability in the get_gl_transactions() function where the filter_type parameter is concatenated directly into a SQL IN() clause without parameterization. Attackers with SA_GLANALYTIC permission can inject arbitrary SQL by supplying a closing parenthesis followed by malicious conditions to extract sensitive journal entry data through boolean-based blind SQL injection with reliable response size differentials.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-40524" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40524" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-58375 · CVSS 7.5 · Jun 30, 2026</p>
-<h3>JimuReport unauthenticated report export via /jmreport/auto/export endpoint</h3>
-<p>JimuReport through 2.5.0 exposes the POST /jmreport/auto/export endpoint without authentication: the handler is annotated @JimuNoLoginRequired, so JimuReportTokenInterceptor skips all authentication and authorization, and the export service streams the rendered report for any supplied report id without verifying the auto-export configuration flag. An unauthenticated remote attacker can enumerate Snowflake report identifiers and export the full contents of any report, including the data returned</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-58375" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58375" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-13498 · CVSS 7.3 · Jun 28, 2026 (updated Jun 29, 2026)</p>
-<h3>Restaurant Management System SQL injection in forgotpassword.php email parameter</h3>
-<p>A vulnerability was identified in yashpokharna2555 restaurent-management-system. This affects an unknown function of the file /forgotpassword.php of the component POST Parameter Handler. Such manipulation of the argument email leads to sql injection. The attack can be launched remotely. The exploit is publicly available and might be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The project was informed of the problem e</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13498" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13498" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-13568 · CVSS 7.3 · Jun 29, 2026</p>
-<h3>SourceCodester Inventory Management System improper access controls via role parameter</h3>
-<p>A weakness has been identified in SourceCodester Inventory Management System 1.0. This vulnerability affects unknown code of the file /api/users_handler.php of the component User Registration Endpoint. This manipulation of the argument role causes improper access controls. Remote exploitation of the attack is possible. The exploit has been made available to the public and could be used for attacks.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13568" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13568" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10129 · CVSS 8.5 · Jun 30, 2026</p>
+<h3>IBM Langflow 1.0.0-1.9.3: SSRF bypass via follow_redirects parameter enabling redirection to internal/localhost addresses</h3>
+<p>IBM Langflow OSS 1.0.0 through 1.9.3 contains a Server-Side Request Forgery (SSRF) protection bypass vulnerability in the API Request component. An authenticated attacker with low-level privileges (flow author role) can bypass SSRF protections by enabling the follow_redirects parameter and supplying a public URL that redirects to internal/localhost addresses. The vulnerability exists because the application validates only the initial URL but does not re-validate redirect destinations.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10129" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10129" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -595,7 +595,7 @@ https://www.nature.com/articles/s41586-026-10771-6
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-01 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-01 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
