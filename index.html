@@ -540,59 +540,59 @@ CRESST II)</small><br>
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13228 · CVSS 8.8 · Jul 01, 2026</p>
-<h3>LatePoint WordPress plugin vulnerable to Privilege Escalation via IDOR in OsOrdersController</h3>
-<p>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 5.6.3 This is due to an Insecure Direct Object Reference (IDOR) in the create_or_update() function of OsOrdersController, which allows an authenticated Agent to supply an arbitrary order[customer_id] and overwrite any LatePoint customer's email field (including one linked to a WordPress Administrator's account) through the vulnerable endpoint.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13228" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-58116 · CVSS 9.8 · Jun 30, 2026 (updated Jul 01, 2026)</p>
+<h3>LLaMA-Factory RCE via malicious model path in WebUI Chat/Training interfaces</h3>
+<p>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces. The application passes user-supplied model path input unvalidated into AutoTokenizer.from_pretrained() and AutoModel.from_pretrained() with a hardcoded trust_remote_code=True parameter, causing the Hugging Face transformers library to fetch and execute arbitrary code from a remote source.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-58116" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58116" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13562 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>Edimax EW-7478APC buffer overflow via POST argument selSSID in formiNICSiteSurvey</h3>
-<p>A flaw has been found in Edimax EW-7478APC 1.04. This affects the function formiNICSiteSurvey of the file /goform/formiNICSiteSurvey of the component POST Request Handler. This manipulation of the argument selSSID causes buffer overflow. It is possible to initiate the attack remotely. The exploit has been published and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13562" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13562" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-13777 · CVSS 8.8 · Jun 30, 2026 (updated Jul 01, 2026)</p>
+<h3>Chrome iOS heap corruption via crafted HTML page in iOSWeb</h3>
+<p>Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-13777" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13777" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13583 · CVSS 8.8 · Jun 29, 2026</p>
-<h3>Edimax EW-7478APC buffer overflow via POST arguments ShareName/SelectName in formUSBFolder</h3>
-<p>A vulnerability has been found in Edimax EW-7478APC 1.04. Impacted is the function formUSBFolder of the file /goform/formUSBFolder of the component POST Request Handler. Such manipulation of the argument ShareName/SelectName leads to buffer overflow. The attack may be performed from remote. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13583" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13583" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-13783 · CVSS 8.8 · Jun 30, 2026 (updated Jul 01, 2026)</p>
+<h3>Chrome use-after-free in Views via crafted HTML page causing heap corruption</h3>
+<p>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-13783" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13783" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-55607 · CVSS 8.8 · Jun 29, 2026 (updated Jun 30, 2026)</p>
-<h3>Claude Code 2.1.38-2.1.163 allows git directory confusion attacks escaping seatbelt sandbox</h3>
-<p>Claude Code is an agentic coding tool. From 2.1.38 until 2.1.163, Claude Code's worktree handling allowed creation of worktrees named ".git" and navigation to worktrees outside the sandbox context, enabling git directory confusion attacks. By exploiting symlink manipulation and git fsmonitor execution during worktree operations, an attacker could overwrite files in the user's home directory (such as .zshenv), leading to code execution outside of seatbelt sandbox restrictions. Reliably exploiting this issue requires user interaction and multiple factors, but the public exploit increases real-world risk.</p>
+<h3>Claude Code worktree manipulation leading to git directory confusion and sandbox escape</h3>
+<p>Claude Code is an agentic coding tool. From 2.1.38 until 2.1.163, Claude Code's worktree handling allowed creation of worktrees named ".git" and navigation to worktrees outside the sandbox context, enabling git directory confusion attacks. By exploiting symlink manipulation and git fsmonitor execution during worktree operations, an attacker could overwrite files in the user's home directory (such as .zshenv), leading to code execution outside of seatbelt sandbox restrictions.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-55607" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-55607" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-56230 · CVSS 8.8 · Jun 30, 2026</p>
-<h3>Capgo before 12.128.2 broken object-level auth allows cross-tenant limited key adoption</h3>
-<p>Capgo before 12.128.2 contains a broken object level authorization vulnerability in middlewareKey() that accepts the client-controlled x-limited-key-id header without validating ownership, allowing authenticated users to adopt cross-tenant limited keys. Attackers can supply another tenant's limited key ID to bypass authorization checks and access unauthorized cross-tenant resources across multiple API endpoints.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56230" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56230" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-57516 · CVSS 8.8 · Jul 01, 2026</p>
+<h3>Ray unsafe deserialization in WebDataset reader leading to remote code execution</h3>
+<p>Ray prior to 2.56.0 contains an unsafe deserialization vulnerability in the WebDataset reader that allows attackers to achieve remote code execution by supplying a malicious tar archive to the read_webdataset() function. The _default_decoder() function in webdataset_datasource.py unconditionally calls pickle.loads() on tar entries with .pkl/.pickle extensions and torch.load() with weights_only=False on .pt/.pth entries, executing arbitrary code inside Ray remote workers on every worker that processes the archive.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-57516" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57516" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-56247 · CVSS 8.8 · Jun 30, 2026</p>
-<h3>Capgo before 12.128.2 org admin RBAC role assignment bypasses scope validation</h3>
-<p>Capgo before 12.128.2 allows org admins to assign org-scoped RBAC roles at app scope without validating role scope compatibility, including to pending invitees. Attackers can pre-seed malformed high-privilege bindings that survive invite acceptance, enabling accepted low-privilege users to perform unauthorized privileged app actions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-56247" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56247" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-58452 · CVSS 8.8 · Jul 01, 2026</p>
+<h3>JAIOTlink C492A-W6 camera MAC parameter injection leading to OS command execution</h3>
+<p>JAIOTlink C492A-W6 Wi-Fi IP cameras running firmware 4.8.30.57701411 contain an OS command injection vulnerability that allows authenticated attackers to achieve remote code execution by supplying a malicious Wireless parameter to the HTTP PUT NetSDK/Factory SetMAC endpoint. Attackers can craft a string beginning with a valid MAC-like prefix followed by a semicolon and a shell payload, which bypasses partial sscanf() validation and is passed unsanitized into an echo shell command executed through the underlying operating system.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-58452" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58452" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-57995 · CVSS 8.8 · Jun 30, 2026</p>
-<h3>phpMyFAQ before 4.1.5 privilege escalation via GroupController::updatePermissions</h3>
-<p>phpMyFAQ before 4.1.5 contains a privilege escalation vulnerability in GroupController::updatePermissions that allows GROUP_EDIT administrators to grant arbitrary rights to groups without verifying they hold those rights themselves. A delegated administrator can exploit this by assigning high-value permissions to a group they belong to, inheriting those rights and escalating privileges up to full administrative control.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-57995" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57995" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-41992 · CVSS 7.5 · Jun 29, 2026 (updated Jul 01, 2026)</p>
+<h3>GNU gzip global buffer overflow in LZH decompression logic</h3>
+<p>GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation. By decompressing a specially crafted LZW file followed by a specially crafted LZH file in a single gzip -d command, an attacker can trigger the buffer overflow.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-41992" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-41992" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-10129 · CVSS 8.5 · Jun 30, 2026</p>
-<h3>IBM Langflow OSS SSRF protection bypass via API Request follow_redirects</h3>
-<p>IBM Langflow OSS 1.0.0 through 1.9.3 contains a Server-Side Request Forgery (SSRF) protection bypass vulnerability in the API Request component. An authenticated attacker with low-level privileges (flow author role) can bypass SSRF protections by enabling the follow_redirects parameter and supplying a public URL that redirects to internal/localhost addresses. The vulnerability exists because the application validates only the initial URL but does not re-validate redirect destinations. This allows unauthorized access to internal services.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-10129" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10129" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8451 · CVSS 7.5 · Jun 30, 2026 (updated Jul 01, 2026)</p>
+<h3>NetScaler ADC memory overread via SAML IDP configuration</h3>
+<p>Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or NetScaler Gateway is configured as a SAML IDP.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8451" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8451" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -619,7 +619,7 @@ CRESST II)</small><br>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-01 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-01 21:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
