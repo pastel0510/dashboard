@@ -516,58 +516,51 @@ https://yle.fi/a/74-20234574
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-58116 · CVSS 9.8 · Jun 30, 2026 (updated Jul 01, 2026)</p>
-<h3>LLaMA-Factory WebUI RCE via malicious model path passing through AutoTokenizer/AutoModel</h3>
+<h3>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces.</h3>
 <p>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces. The application passes user-supplied model path input unvalidated into AutoTokenizer.from_pretrained() and AutoModel.from_pretrained() with a hardcoded trust_remote_code=True parameter, causing the Hugging Face transformers library to fetch and execute arbitrary code from a remote source.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-58116" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58116" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13777 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Google Chrome on iOS heap corruption via crafted HTML in iOSWeb component</h3>
+<h3>Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13777" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13777" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13783 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Google Chrome use-after-free in Views enabling heap corruption via crafted HTML</h3>
+<h3>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13783" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13783" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13784 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Google Chrome use-after-free in Views enabling heap corruption via UI gesture manipulation</h3>
+<h3>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13784" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-55607 · CVSS 8.8 · Jun 29, 2026 (updated Jun 30, 2026)</p>
-<h3>Claude Code worktree traversal enables sandbox escape and home directory code execution</h3>
-<p>Claude Code is an agentic coding tool. From 2.1.38 until 2.1.163, Claude Code's worktree handling allowed creation of worktrees named ".git" and navigation to worktrees outside the sandbox context, enabling git directory confusion attacks. By exploiting symlink manipulation and git fsmonitor execution during worktree operations, an attacker could overwrite files in the user's home directory (such as .zshenv), leading to code execution outside of seatbelt sandbox restrictions.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-55607" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-55607" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-14102 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
+<h3>Use after free in Passwords in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.</h3>
+<p>Use after free in Passwords in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Low)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-14102" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14102" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-50521 · CVSS 8.3 · Jul 01, 2026</p>
-<h3>Microsoft Edge Chromium-based use-after-free allowing network-based code execution</h3>
-<p>Use after free in Microsoft Edge (Chromium-based) allows an authorized attacker to execute code over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-50521" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-50521" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-14090 · CVSS 8.1 · Jun 30, 2026 (updated Jul 02, 2026)</p>
+<h3>Insufficient validation of untrusted input in CameraCapture in Google Chrome on ChromeOS prior to 150.0.7871.47 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.</h3>
+<p>Insufficient validation of untrusted input in CameraCapture in Google Chrome on ChromeOS prior to 150.0.7871.47 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Low)</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-14090" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14090" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-5821 · CVSS 8.1 · Jul 02, 2026</p>
-<h3>WordPress Image Optimizer plugin arbitrary file deletion via insufficient path validation</h3>
-<p>The Image Optimizer plugin for WordPress is vulnerable to arbitrary file deletion in versions up to and including 1.7.4. This is due to insufficient path validation in the Image_Backup::remove() function where backup file paths stored in post meta are used directly in file deletion operations without verifying they are within the uploads directory. The plugin stores backup file paths in the image_optimizer_metadata post meta field and trusts these paths completely when deleting backups.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5821" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5821" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10816 · CVSS 7.5 · Jun 30, 2026 (updated Jul 02, 2026)</p>
+<h3>Arbitrary File Read (Unauthenticated) in NetScaler ADC and NetScaler Gateway if the access to NSIP, Cluster Management IP or SNIP with management access is enabled.</h3>
+<p>Arbitrary File Read (Unauthenticated) in NetScaler ADC and NetScaler Gateway if the access to NSIP, Cluster Management IP or SNIP with management access is enabled.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10816" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10816" target="_blank">OpenCVE</a>
 </div>
-
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-14249 · CVSS 7.5 · Jul 02, 2026</p>
-<h3>WordPress Request a Quote plugin code injection via unvalidated AJAX path parameter</h3>
-<p>The Request a Quote plugin for WordPress is vulnerable to Code Injection in versions up to, and including, 2.5.5 via the emd_delete_file AJAX action. This is due to the emd_delete_file() handler deriving a PHP function name from the attacker-controlled $_POST['path'] parameter and invoking it dynamically via the variable-function call $sess_name(), and the handler being registered for wp_ajax_nopriv with its only protection being a nonce that the plugin prints into the public quote-form page.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-14249" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14249" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-10817 · CVSS 7.5 · Jun 30, 2026 (updated Jul 02, 2026)</p>
+<h3>Insufficient input validation leading to memory overread in NetScaler ADC and NetScaler Gateway if the TCP TimeStamp is enabled in TCP Profile and is associated with the virtual server or service configured on NetScaler.</h3>
+<p>Insufficient input validation leading to memory overread in NetScaler ADC and NetScaler Gateway if the TCP TimeStamp is enabled in TCP Profile and is associated with the virtual server (of type LB, CS, VPN) or the service configured on NetScaler.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-10817" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10817" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -594,7 +587,7 @@ https://yle.fi/a/74-20234574
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-02 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-02 21:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
