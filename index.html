@@ -499,56 +499,56 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-58116 · CVSS 9.8 · Jun 30, 2026 (updated Jul 01, 2026)</p>
-<h3>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability allowing attackers with WebUI access to execute arbitrary Python code via a malicious model path</h3>
-<p>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces. The application passes user-supplied model path input unvalidated into AutoTokenizer.from_pretrained() and AutoModel.from_pretrained() with a hardcoded trust_remote_code=True parameter, causing the Hugging Face transformers library to fetch and execute arbitrary code from a remote source.</p>
+<h3>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces.</h3>
+<p>LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or Training interfaces. The application passes user-supplied model path input unvalidated into AutoTokenizer.from_pretrained() and AutoModel.from_pretrained() with a hardcoded trust_remote_code=True parameter, causing the Hugging Face transformers library to fetch and execute arbitrary code from a remot</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-58116" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58116" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13777 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page</h3>
+<h3>Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13777" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13777" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13783 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via crafted UI gestures and HTML</h3>
+<h3>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13783" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13783" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13784 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via crafted UI gestures and HTML</h3>
+<h3>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13784" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-14102 · CVSS 8.8 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Use after free in Passwords in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page</h3>
+<h3>Use after free in Passwords in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.</h3>
 <p>Use after free in Passwords in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Low)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-14102" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14102" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-54998 · CVSS 8.8 · Jul 02, 2026</p>
-<h3>Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network</h3>
+<h3>Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.</h3>
 <p>Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-54998" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-54998" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-59093 · CVSS 8.8 · Jul 02, 2026</p>
-<h3>Weaviate before 1.38.0 does not verify RBAC role assignment permissions when assigning roles to users or groups</h3>
-<p>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role. The assignRoleToUser and assignRoleToGroup handlers (POST /authz/users/{id}/assign and /authz/groups/{id}/assign) authorize only that the caller may assign roles to the target user or group, not the permissions contained in the assigned roles, unlike role creation which enforces that a user can only create roles with permissions less than or equal to its own.</p>
+<h3>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role.</h3>
+<p>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role. The assignRoleToUser and assignRoleToGroup handlers (POST /authz/users/{id}/assign and /authz/groups/{id}/assign) authorize only that the caller may assign roles to the target user or group, not the permissions contained in the assigned roles, unlike role creation which enforces that a user can only create roles with permissions less than or equal to its</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-59093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59093" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-14090 · CVSS 8.1 · Jun 30, 2026 (updated Jul 02, 2026)</p>
-<h3>Insufficient validation of untrusted input in CameraCapture in Google Chrome on ChromeOS allowed out-of-bounds memory read via crafted HTML</h3>
+<h3>Insufficient validation of untrusted input in CameraCapture in Google Chrome on ChromeOS prior to 150.0.7871.47 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.</h3>
 <p>Insufficient validation of untrusted input in CameraCapture in Google Chrome on ChromeOS prior to 150.0.7871.47 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Low)</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-14090" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14090" target="_blank">OpenCVE</a>
 </div>
@@ -577,7 +577,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-03 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-03 09:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
