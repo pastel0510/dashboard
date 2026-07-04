@@ -475,59 +475,52 @@
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 2026-07-03</p>
-<h3>Bad Epoll Linux Kernel Flaw Lets Unprivileged Users Gain Root, Affects Android</h3>
-<p>A newly disclosed Linux kernel flaw called Bad Epoll (CVE-2026-46242) lets an ordinary user with no special access take full control of a machine as root. It affects Linux desktops, servers, and Android. A patch is available. The bug is a use-after-free in the epoll subsystem where two parts of the kernel clean up the same object simultaneously, allowing kernel memory corruption and privilege escalation from unprivileged to root.</p>
+<p class="date-line">📅 July 03, 2026</p>
+<h3>NetNut Proxy Network Disrupted, 2 Million+ Infected Devices Cut Off</h3>
+<p>A joint operation involving Google, the FBI, and Lumen disrupted NetNut, a large residential proxy network built on millions of compromised home devices including smart TVs and streaming boxes worldwide. The takedown sharply reduced the botnet’s usable device pool, cutting off a major platform attackers used to route malicious traffic through legitimate residential IPs.</p>
+<a href="https://www.bleepingcomputer.com/news/security/netnut-proxy-network-disrupted-2-million-infected-devices-cut-off/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 July 03, 2026</p>
+<h3>ARToken PhaaS Toolkit Exposes EvilTokens' Microsoft 365 Phishing Operations</h3>
+<p>A new phishing-as-a-service platform called ARToken, operating as an affiliate of EvilTokens, has exposed an extensive toolkit built specifically to compromise Microsoft 365 accounts. The platform provides researchers unprecedented insight into how commercial phishing services automate tenant targeting, credential harvesting, and follow-on access.</p>
+<a href="https://www.bleepingcomputer.com/news/security/artoken-phaas-exposes-eviltokens-microsoft-365-phishing-toolkit/" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 July 03, 2026</p>
+<h3>"Bad Epoll" Linux Kernel Flaw Lets Unprivileged Users Gain Root, Affects Android</h3>
+<p>A newly disclosed Linux kernel vulnerability tracked as CVE-2026-46242, nicknamed Bad Epoll, allows any unprivileged local user to escalate to root. A use-after-free bug in the kernel’s epoll subsystem affects Linux desktops, servers, and Android devices; patches are now available across major distributions.</p>
 <a href="https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-03</p>
-<h3>Google Disrupts NetNut Residential Proxy Network Spanning 2 Million Home Devices</h3>
-<p>Google's Threat Intelligence Group, working with the FBI and Lumen, has significantly degraded NetNut, one of the largest residential proxy botnets consisting of at least 2 million compromised home devices including smart TVs and streaming boxes. The operation reduced usable devices by millions, cutting off attackers' ability to route malicious traffic through home internet connections while hiding their origins.</p>
-<a href="https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html" target="_blank">Read more</a>
+<p class="date-line">📅 July 03, 2026</p>
+<h3>Seven Unpatched Flaws Found in FatFs Filesystem Used by Millions of Embedded Devices</h3>
+<p>Security firm runZero disclosed seven vulnerabilities in FatFs, a tiny filesystem library embedded in firmware for security cameras, drones, industrial controllers, crypto wallets, and other IoT devices. An attacker with physical access to storage media such as a USB drive or SD card can corrupt memory and execute arbitrary code on many of these systems.</p>
+<a href="https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-03</p>
+<p class="date-line">📅 July 03, 2026</p>
 <h3>North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets</h3>
-<p>Threat actors with ties to North Korea have published malicious npm packages masquerading as Rollup polyfill tooling to facilitate remote access and data theft. Packages like "rollup-packages-polyfill-core" mimic legitimate tooling in description, metadata, and package shape. The campaign, identified by JFrog, includes six packages that have since been removed from the npm registry but may have reached downstream projects.</p>
+<p>JFrog linked a cluster of malicious npm packages to North Korean threat actors. The packages impersonate legitimate Rollup polyfill tooling, including names such as rollup-packages-polyfill-core, to trick developers into installing them and exfiltrating secrets or enabling remote access.</p>
 <a href="https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-03</p>
-<h3>EU Parliament Member Investigating Spyware Was Hacked With Pegasus</h3>
-<p>Citizen Lab revealed former Member of the European Parliament Stelios Kouloglou had his mobile device repeatedly hacked with Pegasus spyware while serving on a committee investigating commercial surveillance tools. Forensic analysis showed attackers could have accessed confidential documents and committee deliberations. The infections overlap with a previous campaign targeting Russian and Belarusian exiled journalists and activists in Europe.</p>
+<p class="date-line">📅 July 03, 2026</p>
+<h3>European Parliament Spyware Investigator Hacked With Pegasus</h3>
+<p>Citizen Lab revealed that former Member of the European Parliament Stelios Kouloglou was repeatedly infected with Pegasus spyware while serving on the committee investigating commercial surveillance tools. Forensic analysis showed attackers could have accessed confidential documents and committee deliberations.</p>
 <a href="https://thehackernews.com/2026/07/european-parliament-member.html" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-02</p>
-<h3>AI Agent Automates First Fully AI-Driven Ransomware Attack via Langflow RCE</h3>
-<p>Sysdig reports the first ransomware attack executed entirely by an AI agent, operated by an entity called JADEPUFFER. A large language model handled the full kill chain: exploitation of CVE-2025-3248 in Langflow, credential theft, lateral movement, database encryption, and wiping. If AI agents can autonomously run ransomware, the skill barrier for attacks drops dramatically while the threat scale increases.</p>
+<p class="date-line">📅 July 02, 2026</p>
+<h3>AI Agent Fully Automates Ransomware Attack via Langflow RCE</h3>
+<p>Researchers at Sysdig reported what they believe is the first ransomware attack run entirely by an AI agent. The operator JADEPUFFER used a large language model to exploit an unauthenticated RCE flaw in Langflow, steal credentials, move laterally, and then encrypt and wipe a production database without human intervention.</p>
 <a href="https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-02</p>
-<h3>CISA: Microsoft SharePoint RCE Flaw Now Actively Exploited</h3>
-<p>CISA added a high-severity Microsoft SharePoint remote code execution vulnerability, patched in May, to its Known Exploited Vulnerabilities catalog after confirming active exploitation in the wild. Organizations should apply the May patch immediately. The vulnerability enables remote code execution without authentication on affected SharePoint deployments.</p>
+<p class="date-line">📅 July 02, 2026</p>
+<h3>CISA Warns Microsoft SharePoint RCE Flaw Now Actively Exploited</h3>
+<p>CISA warned that attackers are actively exploiting a high-severity Microsoft SharePoint remote code execution vulnerability patched in May. Organizations that have not yet deployed the update should treat remediation as urgent given confirmed in-the-wild exploitation.</p>
 <a href="https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-rce-flaw-now-actively-exploited/" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-07-02</p>
-<h3>Cisco Confirms Attackers Exploiting Unified CM Flaw</h3>
-<p>Cisco confirmed that attackers are actively exploiting a Unified Communications Manager (Unified CM) vulnerability patched in early June. The flaw targets enterprise VoIP and communication infrastructure. Organizations running Unified CM should verify patching status and review logs for signs of exploitation.</p>
-<a href="https://www.bleepingcomputer.com/news/security/cisco-finally-confirms-attackers-exploiting-unified-cm-flaw/" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-07-02</p>
-<h3>ConsentFix and ClickFix: Microsoft 365 Accounts Hijacked in 3 Seconds</h3>
-<p>Huntress Labs disclosed ConsentFix and ClickFix attack techniques that let threat actors steal Microsoft 365 tokens in seconds using fake prompts and manipulated OAuth flows. The methods bypass MFA entirely by tricking users into approving malicious consent requests. Defenses include strict consent policies, user training, and monitoring for suspicious OAuth grants.</p>
-<a href="https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -624,7 +617,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-04 09:06 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-04 09:15 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
