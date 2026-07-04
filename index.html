@@ -533,6 +533,13 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2025-71380 · CVSS 8.8 · Jul 04, 2026</p>
+<h3>The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system where n8n runs.</h3>
+<p>The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system where n8n runs. Attackers with user access or compromised credentials can exploit this node to run malicious commands, potentially leading to data exfiltration, service disruption, or complete system compromise.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-71380" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71380" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-54998 · CVSS 8.8 · Jul 02, 2026</p>
 <h3>Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.</h3>
 <p>Incorrect authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.</p>
@@ -575,17 +582,10 @@
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-59095 · CVSS 7.7 · Jul 02, 2026</p>
-<h3>LobeChat before 2.2.10-canary.18 contains a server-side request forgery vulnerability allowing authenticated attackers to direct internal HTTP requests to arbitrary URLs.</h3>
-<p>LobeChat before 2.2.10-canary.18 contains a server-side request forgery vulnerability that allows authenticated attackers to direct internal HTTP requests to arbitrary URLs by supplying user-controlled input to the skill import service (importFromUrl) and topic cover update (fetchImageFromUrl) endpoints, which use the global fetch without the project's ssrf-safe-fetch wrapper. Attackers can target internal addresses such as cloud instance metadata endpoints through these unprotected code paths.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-59095" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59095" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-57985 · CVSS 7.6 · Jul 03, 2026</p>
-<h3>Improper input validation in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</h3>
-<p>Improper input validation in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-57985" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57985" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2025-71342 · CVSS 8.1 · Jul 04, 2026</p>
+<h3>picklescan before 0.0.30 fails to detect malicious pickle files using idlelib.run.Executive.runcode in reduce methods.</h3>
+<p>picklescan before 0.0.30 fails to detect malicious pickle files using idlelib.run.Executive.runcode in reduce methods. Attackers can embed undetected code in pickle files that executes during pickle.load, enabling remote code execution in PyTorch models and supply chain attacks.</p>
+<a href="https://db.gcve.eu/cve/CVE-2025-71342" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71342" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -617,7 +617,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-04 09:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-04 09:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
