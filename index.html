@@ -540,7 +540,7 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2025-71380 · CVSS 8.8 · Jul 04, 2026</p>
-<h3>The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system</h3>
+<h3>The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system where n8n runs.</h3>
 <p>The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system where n8n runs. Attackers with user access or compromised credentials can exploit this node to run malicious commands, potentially leading to data exfiltration, service disruption, or complete system compromise.</p>
 <a href="https://db.gcve.eu/cve/CVE-2025-71380" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71380" target="_blank">OpenCVE</a>
 </div>
@@ -554,43 +554,43 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-56645 · CVSS 8.8 · Jul 03, 2026</p>
-<h3>Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code</h3>
+<h3>Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</h3>
 <p>Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-56645" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56645" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-57974 · CVSS 8.8 · Jul 03, 2026</p>
-<h3>Integer overflow or wraparound in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code</h3>
+<h3>Integer overflow or wraparound in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</h3>
 <p>Integer overflow or wraparound in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-57974" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57974" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-57981 · CVSS 8.8 · Jul 03, 2026</p>
-<h3>Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network</h3>
+<h3>Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</h3>
 <p>Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-57981" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57981" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-59093 · CVSS 8.8 · Jul 02, 2026</p>
-<h3>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions</h3>
-<p>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role. The assignRoleToUser and assignRoleToGroup handlers (POST /authz/users/{id}/assign and /authz/groups/{id}/assign) authorize only that the caller may assign roles to the target user or group, not the permissions contained in the assigned roles, unlike role creation which enforces that a user can only create roles with permissions less than or equal to its.</p>
+<h3>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role.</h3>
+<p>Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role. The assignRoleToUser and assignRoleToGroup handlers (POST /authz/users/{id}/assign and /authz/groups/{id}/assign) authorize only that the caller may assign roles to the target user or group, not the permissions contained in the assigned roles, unlike role creation which enforces that a user can only create roles with permissions less than or equal to its own.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-59093" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59093" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-58295 · CVSS 8.3 · Jul 03, 2026</p>
-<h3>Access of resource using incompatible type ('type confusion') in Microsoft Edge allows unauthorized attacker</h3>
+<h3>Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.</h3>
 <p>Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-58295" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58295" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-14637 · CVSS 8.2 · Jul 04, 2026</p>
-<h3>Security vulnerability in kirilkirkov Ecommerce-CodeIgniter-Bootstrap allows remote deserialization attack</h3>
-<p>A security vulnerability has been detected in kirilkirkov Ecommerce-CodeIgniter-Bootstrap up to 13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7. The affected element is the function getCartItems in the library application/libraries/ShoppingCart.php. The manipulation of the argument shopping_cart leads to deserialization. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version.</p>
+<h3>Security vulnerability in kirilkirkov Ecommerce-CodeIgniter-Bootstrap up to 13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7 leads to deserialization via getCartItems.</h3>
+<p>A security vulnerability has been detected in kirilkirkov Ecommerce-CodeIgniter-Bootstrap up to 13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7. The affected element is the function getCartItems in the library application/libraries/ShoppingCart.php. The manipulation of the argument shopping_cart leads to deserialization. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version other than the mentioned commit address is available.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-14637" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14637" target="_blank">OpenCVE</a>
 </div>
 
@@ -623,7 +623,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-05 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-05 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
