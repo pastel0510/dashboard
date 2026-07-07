@@ -319,9 +319,9 @@
                 <div class="card">
                     <h2>Fox of the Day <a href="https://reddit.com/r/foxes" target="_blank" style="font-size:0.6em;color:#00ff88;">r/foxes</a></h2>
                     <div id="fox" class="lightbox-trigger">
-                        <img src="https://i.redd.it/kamvb5h00ebh1.jpeg" alt="Fox">
+                        <img src="https://i.redd.it/yk7b22zdjsbh1.jpeg" alt="Fox">
                     </div>
-                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/foxes/comments/1unylqd/red_fox_provincetown_ma_0526/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
+                    <p style="margin-top:8px;font-size:0.85em;"><a href="https://reddit.com/r/foxes/comments/1uprxx5/red_fox_bourne_ma_0525/" target="_blank" style="color:#00ff88;font-size:0.85em;">View on Reddit</a></p>
                 </div>
 
                 <!-- NASA Astronomy Picture of the Day -->
@@ -339,7 +339,7 @@
                 <div class="card">
                     <h2>xkcd <a href="https://xkcd.com/" target="_blank" style="font-size:0.6em;color:#00ff88;">Official</a></h2>
                     <div id="xkcd" class="lightbox-trigger">
-                        <img src="https://imgs.xkcd.com/comics/im_so_random.png" alt="Xkcd">
+                        <img src="https://imgs.xkcd.com/comics/offside.png" alt="Xkcd">
                     </div>
                 </div>
             </aside>
@@ -544,62 +544,74 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability &ge;5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-14637 · CVSS 8.2 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>Deserialization flaw in kirilkirkov Ecommerce-CodeIgniter-Bootstrap ShoppingCart library</h3>
-<p>A security vulnerability has been detected in kirilkirkov Ecommerce-CodeIgniter-Bootstrap up to 13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7. The affected element is the function getCartItems in the library application/libraries/ShoppingCart.php. The manipulation of the argument shopping_cart leads to deserialization. The attack can be initiated remotely. The exploit has been disclosed publicly and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version </p>
-<a href="https://db.gcve.eu/cve/CVE-2026-14637" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14637" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-11610 · CVSS 8.8 · Jul 07, 2026</p>
+<h3>A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server (389-ds-base). After a successful SA...</h3>
+<p>A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server
+(389-ds-base). After a successful SASL bind with integrity protection (SSF > 0),
+an authenticated attacker can send a specially crafted oversized LDAP UNBIND packet
+that is copied into a 512-byte heap receive buffer without a bounds check in
+sasl_io_recv() in sasl_io.c. This allows up to approximately 2 megabytes of
+attacker-controlled data to overflow the buffer, causing a denial of service (server
+crash). In Fr</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11610" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11610" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71343 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>picklescan before 0.0.30 fails to detect malicious pickle files via lib2to3 pgen ParserGenerator</h3>
-<p>picklescan before 0.0.30 fails to detect malicious pickle files that exploit lib2to3.pgen2.pgen.ParserGenerator.make_label function in the reduce method. Attackers can craft malicious pickle files with embedded code that evades detection but executes arbitrary commands when pickle.load() is called.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71343" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71343" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-14474 · CVSS 8.8 · Jul 07, 2026</p>
+<h3>A flaw was found in SSSD's LDAP sudo provider. When the ldap_sudo_search_base option is not explicitly configured, SSSD...</h3>
+<p>A flaw was found in SSSD's LDAP sudo provider. When the ldap_sudo_search_base option is not explicitly configured, SSSD searches the entire LDAP directory tree for sudoRole objects. An authenticated attacker with write access to any subtree can inject a sudoRole object granting root-level sudo privileges on all SSSD-enrolled hosts.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-14474" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14474" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71347 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>picklescan before 0.0.33 pickle scanning bypass via numpy.f2py crackfortran param_eval</h3>
-<p>picklescan before 0.0.33 fails to detect malicious pickle files using numpy.f2py.crackfortran.param_eval function in reduce methods, allowing attackers to bypass security checks. Remote attackers can embed undetected code in pickle files that executes during deserialization, enabling arbitrary code execution in applications loading untrusted pickle data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71347" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71347" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-11340 · CVSS 8.3 · Jul 07, 2026</p>
+<h3>Missing Authorization vulnerability in HAVELSAN Inc. Liman MYS allows Accessing Functionality Not Properly Constrained b...</h3>
+<p>Missing Authorization vulnerability in HAVELSAN Inc. Liman MYS allows Accessing Functionality Not Properly Constrained by ACLs.
+
+This issue affects Liman MYS: before release.Master.1107.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-11340" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11340" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71360 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>picklescan before 0.0.29 fails to detect malicious pickle using idlelib.calltip.get_entity</h3>
-<p>picklescan before 0.0.29 fails to detect malicious pickle files using idlelib.calltip.get_entity function in reduce methods. Attackers can embed undetected code in pickle files that executes remote commands when loaded by victims.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71360" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71360" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8377 · CVSS 8.2 · Jul 07, 2026</p>
+<h3>Missing Authorization vulnerability in Armiya Information Technologies Ltd. Co. Access Control System (GKS) allows Colle...</h3>
+<p>Missing Authorization vulnerability in Armiya Information Technologies Ltd. Co. Access Control System (GKS) allows Collect Data from Common Resource Locations.
+
+This issue affects Access Control System (GKS): before Version 2.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8377" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8377" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71364 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>picklescan before 0.0.30 pickle RCE bypass via asyncio unix_events subprocess transport</h3>
-<p>picklescan before 0.0.30 fails to detect the asyncio.unix_events._UnixSubprocessTransport._start function in pickle reduce methods, allowing remote code execution. Attackers can craft malicious pickle files embedding this built-in function that evade detection but execute arbitrary commands when loaded.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71364" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71364" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-59712 · CVSS 8.1 · Jul 06, 2026</p>
+<h3>Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to...</h3>
+<p>Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to retrieve full user credential rows including password hashes, TOTP secrets, and session tokens. Attackers can exploit this by calling users.getUser with arbitrary user IDs to enumerate all accounts and obtain credentials for offline password cracking, 2FA bypass, and session hijacking.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-59712" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59712" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71372 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>Picklescan before 0.0.33 fails to detect numpy.f2py crackfortran.getlincoef gadget</h3>
-<p>Picklescan before 0.0.33 fails to detect the numpy.f2py.crackfortran.getlincoef gadget in pickle __reduce__ methods, allowing arbitrary code execution. Attackers can craft malicious pickle files that execute arbitrary Python code when loaded, bypassing Picklescan's safety checks and enabling supply-chain poisoning of shared model files.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71372" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71372" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-59713 · CVSS 8.1 · Jul 06, 2026</p>
+<h3>Leantime contains an OIDC login CSRF vulnerability in the verifyState() method that unconditionally returns true without...</h3>
+<p>Leantime contains an OIDC login CSRF vulnerability in the verifyState() method that unconditionally returns true without validating state parameters. Attackers can craft malicious callback URLs with attacker-controlled authorization codes to perform session fixation, logging victims in as the attacker.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-59713" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59713" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71373 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>picklescan before 0.0.33 fails to detect operator.methodcaller calls in pickle files</h3>
-<p>picklescan before 0.0.33 fails to detect operator.methodcaller function calls in pickle files, allowing attackers to bypass security checks. Remote attackers can craft malicious pickle payloads using operator.methodcaller that execute arbitrary code when loaded, compromising systems relying on picklescan for validation.</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71373" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71373" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-9165 · CVSS 7.7 · Jul 06, 2026 (updated Jul 06, 2026)</p>
+<h3>A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). Central does not limit the depth of GraphQ...</h3>
+<p>A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). Central does not limit the depth of GraphQL queries served on the authenticated GraphQL API. An authenticated user with a valid API token can send deeply nested queries that cause excessive resource consumption in Central, resulting in a denial of service for the management plane.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-9165" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9165" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2025-71375 · CVSS 8.1 · Jul 04, 2026 (updated Jul 06, 2026)</p>
-<h3>picklescan before 0.0.34 fails to detect _operator.methodcaller built-in in pickle scan</h3>
-<p>picklescan before 0.0.34 fails to detect the _operator.methodcaller built-in function when scanning pickle files for malicious code. Attackers can craft malicious pickle payloads using _operator.methodcaller that evade detection and execute arbitrary code when loaded by pickle.load().</p>
-<a href="https://db.gcve.eu/cve/CVE-2025-71375" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2025-71375" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-5730 · CVSS 7.5 · Jul 07, 2026</p>
+<h3>Authorization bypass through User-Controlled key vulnerability in Idvlabs Software and Consulting Services Inc. Ontime a...</h3>
+<p>Authorization bypass through User-Controlled key vulnerability in Idvlabs Software and Consulting Services Inc. Ontime allows Exploitation of Trusted Identifiers.
+
+This issue affects Ontime: through 04052026.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-5730" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5730" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -626,7 +638,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-07 14:50 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-07 14:51 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
