@@ -545,53 +545,19 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-11610 · CVSS 8.8 · Jul 07, 2026</p>
-<h3>A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server (389-ds-base). After a successful…</h3>
-<p>A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server (389-ds-base). After a successful SASL bind with integrity protection (SSF > 0), an authenticated attacker can send a specially crafted oversized LDAP UNBIND packet that is copied into a 512-byte heap receive buffer without a bounds check in sasl_io_recv() in sasl_io.c. This allows up to approximately 2 megabytes of attacker-controlled data to overflow the buffer, causing a denial of service (server crash). In Fr</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-11610" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11610" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-23697 · CVSS 8.8 · Jul 07, 2026</p>
+<h3>Vtiger CRM before 8.4.0 contains an authenticated file upload vulnerability that allows low-privileged users to achieve…</h3>
+<p>Vtiger CRM before 8.4.0 contains an authenticated file upload vulnerability that allows low-privileged users to achieve remote code execution by uploading a .phar file containing arbitrary PHP code through the Documents module, bypassing the extension denylist in config.inc.php which omits the .phar extension. The uploaded file is stored with its original .phar extension under the web-accessible storage directory, and a misconfigured .htaccess using Apache 2.2 syntax is silently ignored on Apach</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-23697" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-23697" target="_blank">OpenCVE</a>
 </div>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13696 · CVSS 8.8 · Jul 07, 2026</p>
-<h3>Improper neutralization of special elements used in an LDAP query ('LDAP injection') vulnerability in HAVELSAN Inc.…</h3>
-<p>Improper neutralization of special elements used in an LDAP query ('LDAP injection') vulnerability in HAVELSAN Inc. Liman MYS allows LDAP Injection. This issue affects Liman MYS: before release.Master.1107.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13696" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13696" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-14474 · CVSS 8.8 · Jul 07, 2026</p>
-<h3>A flaw was found in SSSD's LDAP sudo provider. When the ldap_sudo_search_base option is not explicitly configured, SSSD…</h3>
-<p>A flaw was found in SSSD's LDAP sudo provider. When the ldap_sudo_search_base option is not explicitly configured, SSSD searches the entire LDAP directory tree for sudoRole objects. An authenticated attacker with write access to any subtree can inject a sudoRole object granting root-level sudo privileges on all SSSD-enrolled hosts.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-14474" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14474" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-8377 · CVSS 8.2 · Jul 07, 2026</p>
-<h3>Missing Authorization vulnerability in Armiya Information Technologies Ltd. Co. Access Control System (GKS) allows…</h3>
-<p>Missing Authorization vulnerability in Armiya Information Technologies Ltd. Co. Access Control System (GKS) allows Collect Data from Common Resource Locations. This issue affects Access Control System (GKS): before Version 2.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8377" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8377" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-59712 · CVSS 8.1 · Jul 06, 2026</p>
-<h3>Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to…</h3>
-<p>Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to retrieve full user credential rows including password hashes, TOTP secrets, and session tokens. Attackers can exploit this by calling users.getUser with arbitrary user IDs to enumerate all accounts and obtain credentials for offline password cracking, 2FA bypass, and session hijacking.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-59712" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59712" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-59713 · CVSS 8.1 · Jul 06, 2026</p>
-<h3>Leantime contains an OIDC login CSRF vulnerability in the verifyState() method that unconditionally returns true…</h3>
-<p>Leantime contains an OIDC login CSRF vulnerability in the verifyState() method that unconditionally returns true without validating state parameters. Attackers can craft malicious callback URLs with attacker-controlled authorization codes to perform session fixation, logging victims in as the attacker.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-59713" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59713" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-9165 · CVSS 7.7 · Jul 06, 2026</p>
-<h3>A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). Central does not limit the depth of…</h3>
-<p>A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). Central does not limit the depth of GraphQL queries served on the authenticated GraphQL API. An authenticated user with a valid API token can send deeply nested queries that cause excessive resource consumption in Central, resulting in a denial of service for the management plane.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-9165" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-9165" target="_blank">OpenCVE</a>
-</div>
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-5730 · CVSS 7.5 · Jul 07, 2026</p>
-<h3>Authorization bypass through User-Controlled key vulnerability in Idvlabs Software and Consulting Services Inc. Ontime…</h3>
-<p>Authorization bypass through User-Controlled key vulnerability in Idvlabs Software and Consulting Services Inc. Ontime allows Exploitation of Trusted Identifiers. This issue affects Ontime: through 04052026.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-5730" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-5730" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-40140 · CVSS 7.5 · Jul 06, 2026 (updated Jul 07, 2026)</p>
+<h3>BeyondTrust Remote Support and Privileged Remote Access contain a high-severity pre-authentication vulnerability in the network…</h3>
+<p>BeyondTrust Remote Support and Privileged Remote Access contain a high-severity pre-authentication vulnerability in the network communication subsystem. Insufficient validation of client-supplied input may allow an unauthenticated remote attacker to trigger a denial-of-service condition affecting appliance availability.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-40140" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-40140" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -618,7 +584,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-07 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-07 21:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
