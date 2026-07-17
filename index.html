@@ -547,59 +547,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13352 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>The ProfilePress plugin for WordPress is vulnerable to Arbitrary File Upload via the allowed_mime_types function.</h3>
-<p>The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile &amp; Restrict Content – ProfilePress plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 4.16.18 via the allowed_mime_types function. This is due to the unconditional registration of an upload_mimes filter that adds executable file extensions (.exe, .apk, .msi) to the global WordPress MIME allowlist, without scoping the expansion to digital-product upload contexts. T</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13352" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13352" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-15694 · CVSS 8.8 · Jul 14, 2026 (updated Jul 14, 2026)</p>
-<h3>Tenda BE12 Pro stack-based buffer overflow in fromSetIpBind via the page argument; exploit public.</h3>
-<p>A vulnerability was detected in Tenda BE12 Pro 16.03.66.23. Impacted is the function fromSetIpBind of the file /goform/SetIpBind. The manipulation of the argument page results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit is now public and may be used.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-15694" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-15694" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-46640 · CVSS 8.8 · Jul 14, 2026 (updated Jul 16, 2026)</p>
-<h3>Twig dynamic attribute syntax can emit and execute raw PHP in generated template source at load time.</h3>
+<p class="cve-id">CVE-2026-46640 · CVSS 8.8 · Jul 14, 2026 (updated Jul 16, 2026) · </p>
+<h3>Twig dynamic attribute syntax emits attacker-controlled raw PHP, executed at template-load time.</h3>
 <p>Twig is a template language for PHP. From 3.15.0 until 3.26.0, _self.(<string>) and import-alias dynamic attribute syntax can concatenate an attacker-controlled string into a MacroReferenceExpression name without identifier validation, causing raw PHP to be emitted into the generated template source and executed at template-load time. This issue is fixed in version 3.26.0.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-46640" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46640" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62202 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>OpenClaw privilege escalation in isolated cron jobs lets lower-trust callers regain denied execution tools.</h3>
+<p class="cve-id">CVE-2026-62202 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
+<h3>OpenClaw privilege escalation in isolated cron jobs allows denied exec tools to be regained.</h3>
 <p>OpenClaw versions 2026.6.1 before 2026.6.9 contain a privilege escalation vulnerability in isolated cron jobs that allows lower-trust callers to regain denied execution tools. Attackers can execute or persist actions beyond their intended authorization by leveraging misconfigured input paths in the affected cron feature.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-62202" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62202" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62203 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>OpenClaw fails to sanitize rustup startup variables in host exec, allowing unauthorized actions.</h3>
+<p class="cve-id">CVE-2026-62203 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
+<h3>OpenClaw env var filtering flaw in host exec enables privilege persistence via rustup vars.</h3>
 <p>OpenClaw versions before 2026.6.6 contain an environment variable filtering vulnerability in host exec that fails to properly sanitize rustup startup variables. Attackers with lower-trust caller access or configured input paths can execute or persist actions beyond their intended authorization level.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-62203" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62203" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62207 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>OpenClaw authentication bypass lets lower-trust callers reach admin-scoped tools via weak policy checks.</h3>
+<p class="cve-id">CVE-2026-62207 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
+<h3>OpenClaw authentication bypass lets lower-trust callers reach admin-scoped tools.</h3>
 <p>OpenClaw versions before 2026.6.5 contain an authentication bypass vulnerability that allows lower-trust callers to reach admin-scoped tools. Attackers can perform actions requiring stronger authorization by exploiting insufficient policy checks on configured input paths.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-62207" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62207" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62217 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>OpenClaw QQBot exec approvals authorization flaw lets non-allowlisted senders perform unauthorized ops.</h3>
-<p>OpenClaw 2026.5.14-beta.1 before 2026.5.27 contain an authorization flaw in the QQBot exec approvals feature. When the feature is enabled and reachable, a lower-trust caller or configured input path could execute or persist actions beyond the caller's intended authorization, allowing non-allowlisted senders to perform unauthorized operations.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-62217" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62217" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-62228 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
+<h3>OpenClaw authorization bypass in node exec approvals via mismatched environments.</h3>
+<p>OpenClaw before 2026.6.5 contain an authorization bypass vulnerability in node exec approvals that allows lower-trust callers to execute actions beyond their intended authorization by using different gateway and node environments. Attackers can exploit mismatched environment configurations to persist or execute actions that exceed the caller's approved permissions.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-62228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62228" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62218 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>OpenClaw device.pair.approve authorization bypass lets lower-trust callers bypass role-management checks.</h3>
-<p>OpenClaw 2026.1.20 before 2026.5.27 contain an authorization bypass vulnerability in the device.pair.approve feature that allows lower-trust callers to bypass role-management checks. Attackers can perform actions requiring stronger authorization by reaching the affected feature through configured input paths.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-62218" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62218" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-62233 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
+<h3>grav-plugin-api fails to validate super-admin on API key/2FA endpoints, enabling takeover.</h3>
+<p>grav-plugin-api before 1.0.6 fails to validate super-admin status in createApiKey, generate2fa, and disable2fa endpoints, allowing non-super api.users.write managers to escalate to super-admin. Attackers can mint API keys bound to super-admin accounts or strip 2FA from super-admin users to achieve full instance takeover.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-62233" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62233" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-63085 · CVSS 8.8 · Jul 16, 2026 (updated Jul 16, 2026) · </p>
+<h3>Axelor Open Platform auth bypass lets non-admin users escalate via nested relational saves.</h3>
+<p>Axelor Open Platform versions 8.x prior to 8.2.2 contains an authorization bypass vulnerability that allows authenticated non-admin users to escalate privileges by exploiting unenforced field restrictions on nested relational save operations. Attackers can modify sensitive User record fields such as roles and group by submitting changes through a related entity's save path, bypassing the USER_RESTRICTED_FIELDS control and causing the JPA persistence layer to flush attacker-supplied admin role an</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63085" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63085" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-48736 · CVSS 8.6 · Jul 14, 2026 (updated Jul 16, 2026) · </p>
+<h3>Symfony IpUtils omits IPv6 transition prefixes, allowing SSRF to private IPv4 targets.</h3>
+<p>Symfony is a PHP framework for web and console applications and a set of reusable PHP components. From 5.4.0 to 5.4.53, 6.4.41, 7.4.13, and 8.0.13, NoPrivateNetworkHttpClient and IpUtils::PRIVATE_SUBNETS omitted IPv6 transition prefixes such as 6to4, NAT64, Teredo, and IPv4-compatible IPv6, allowing attacker-supplied URLs to represent private IPv4 targets in forms that IpUtils::isPrivateIp() did not block. This issue is fixed in versions 5.4.53, 6.4.41, 7.4.13, and 8.0.13.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-48736" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48736" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -634,7 +634,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-17 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-17 21:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
