@@ -482,59 +482,52 @@
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>Abbott Laboratories probes two cyber incidents amid extortion claims</h3>
-<p>Medical device giant Abbott is investigating two separate cybersecurity incidents. Attackers gained unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while a separate claim alleges a breach of its LabCentral portal with company data stolen. The incidents come amid extortion demands.</p>
-<a href="https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/" target="_blank">Read more</a>
+<p class="date-line">📅 July 18, 2026</p>
+<h3>WordPress Core "wp2shell" RCE flaws get public exploits — patch now</h3>
+<p>Two chained WordPress Core bugs (CVE-2026-63030, a REST API batch-route confusion, and CVE-2026-60137, a SQL injection) let an anonymous HTTP request run code on any 6.9 or 7.0 site — even a bare install with no plugins. A working proof-of-concept is now public on GitHub. WordPress shipped 6.9.5 and 7.0.2 with forced auto-updates; administrators should confirm patches immediately.</p>
+<a href="https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/" target="_blank">Read more</a>
 </div>
-
+<div class="bulletin-item">
+<p class="date-line">📅 July 18, 2026</p>
+<h3>Microsoft warns of surge in ACR Stealer attacks using ClickFix lures</h3>
+<p>Microsoft's Defender Experts team reports ACR Stealer infections climbing across enterprise environments, walking out with saved browser passwords, live session tokens, PDFs, Microsoft 365 documents, and files from synced OneDrive and SharePoint folders. Victims are tricked into pasting a command into the Run box via ClickFix lures. Microsoft urges revoking tokens, not just rotating passwords.</p>
+<a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/" target="_blank">Read more</a>
+</div>
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
-<h3>HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload</h3>
-<p>A vulnerability dubbed HollowByte lets unauthenticated attackers trigger denial-of-service on OpenSSL servers using a malicious payload of just 11 bytes. OpenSSL shipped fixes in June (4.0.1, 3.6.3, 3.5.7, 3.4.6, 3.0.21) with no CVE, advisory, or changelog pointer, meaning normal patch scanners will not flag affected systems.</p>
+<h3>HollowByte DDoS flaw bloats OpenSSL server memory with an 11-byte payload</h3>
+<p>An 11-byte TLS request can make an unpatched OpenSSL server reserve up to 131 KB of memory for a message that never arrives — memory that stays gone on glibc systems until the process restarts. OpenSSL quietly shipped the fix in June with no CVE, advisory, or changelog entry. Fixed releases are 4.0.1, 3.6.3, 3.5.7, 3.4.6, and 3.0.21, all dated June 9.</p>
 <a href="https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
-<h3>New Windows LegacyHive zero-day gives hackers admin privileges</h3>
-<p>A security researcher using the handle "Nightmare Eclipse" released a Windows zero-day exploit dubbed LegacyHive that allows attackers to escalate privileges to administrator on up-to-date Windows systems. Microsoft has not yet released a patch for the disclosed flaw.</p>
-<a href="https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/" target="_blank">Read more</a>
+<h3>Ernst & Young discloses data breach after support system hack</h3>
+<p>Ernst & Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel — the latest incident underscoring the risk that vendor and support platforms pose as an entry point into large organizations.</p>
+<a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/" target="_blank">Read more</a>
 </div>
-
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
-<h3>wp2shell WordPress core flaw lets unauthenticated attackers run code</h3>
-<p>Two chained WordPress core bugs (CVE-2026-63030 REST API batch-route confusion and CVE-2026-60137 SQL injection) let an anonymous HTTP request run code on a bare site with zero plugins. WordPress shipped 6.9.5 and 7.0.2 with forced auto-updates. A public proof-of-concept is now available.</p>
-<a href="https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html" target="_blank">Read more</a>
+<h3>Abbott probes two cyber incidents amid extortion claims</h3>
+<p>Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while also examining a separate claim that attackers breached its LabCentral portal and stole company data.</p>
+<a href="https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/" target="_blank">Read more</a>
 </div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>CISA urges immediate action on actively exploited Fortinet flaws</h3>
-<p>CISA ordered federal agencies to urgently patch two actively exploited vulnerabilities in the Fortinet FortiSandbox threat detection platform, with a deadline of Sunday. The flaws are being used in active attacks, underscoring the need for immediate remediation across affected environments.</p>
-<a href="https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-patch-exploited-fortinet-fortisandbox-flaws-by-sunday/" target="_blank">Read more</a>
-</div>
-
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
 <h3>Seven malicious Vite npm packages use blockchain C2 to deliver a RAT</h3>
-<p>A cluster of seven malicious npm packages targeting the Vite frontend ecosystem (codenamed ViteVenom by Checkmarx) expands the ChainVeil campaign. It uses a four-tier blockchain-based C2 spanning Tron, Aptos, and Binance Smart Chain to deliver a RAT with reverse shell, credential harvesting, and persistent backdoor injection.</p>
+<p>Checkmarx uncovered a supply-chain campaign dubbed ViteVenom: seven malicious npm packages targeting the Vite frontend ecosystem. The campaign expands the ChainVeil operation, which uses a four-tier blockchain-based command-and-control infrastructure across Tron, Aptos, and Binance Smart Chain to deliver a RAT capable of reverse shell, credential harvesting, file exfiltration, and persistent backdoor injection.</p>
 <a href="https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html" target="_blank">Read more</a>
 </div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>New NadMesh botnet hunts exposed AI services for cloud keys and Kubernetes tokens</h3>
-<p>A Go-based botnet called NadMesh emerged in early July scanning for exposed AI services including ComfyUI, Ollama, n8n, Open WebUI, Langflow, and Gradio. The operator's dashboard claims thousands of harvested AWS keys, with the malware cataloging cloud-tagged model inventories that reach beyond the compromised host.</p>
-<a href="https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html" target="_blank">Read more</a>
-</div>
-
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
 <h3>GoldenEyeDog subgroup linked to DigiCert breach and code-signing certificate theft</h3>
-<p>Expel attributed the April 2026 DigiCert incident to a subgroup of GoldenEyeDog (aka APT-Q-27, Dragon Breath). The actor accessed a support member's device and stole code-signing certificates intended for DigiCert customers, using a modified Gh0st RAT, highlighting the risk of supply-chain certificate compromise.</p>
+<p>Researchers at Expel attributed the April 2026 DigiCert incident to a cluster dubbed CylindricalCanine, a sub-group of the Chinese cybercrime group GoldenEyeDog (aka APT-Q-27, Dragon Breath). Attackers used a modified Gh0st RAT to access a DigiCert support member's device and steal code-signing certificates intended for the provider's customers.</p>
 <a href="https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html" target="_blank">Read more</a>
+</div>
+<div class="bulletin-item">
+<p class="date-line">📅 July 16, 2026</p>
+<h3>Two Scattered Spider hackers get 5.5 years each for £29 million TfL hack</h3>
+<p>Owen Flowers, 18, and Thalha Jubair, 20, were each sentenced to five and a half years at Woolwich Crown Court for the 2024 Transport for London hack. The attack left 148 TfL systems inoperable and forced all 27,000 employees to reset passwords in person. The CPS says they are believed to be the first hackers prosecuted under the Computer Misuse Act's most serious charge, Section 3ZA.</p>
+<a href="https://thehackernews.com/2026/07/two-scattered-spider-hackers-get-55.html" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -634,7 +627,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-18 21:07 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-18 21:16 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
