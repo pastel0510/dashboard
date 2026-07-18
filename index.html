@@ -547,59 +547,59 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-46640 · CVSS 8.8 · Jul 14, 2026 (updated Jul 16, 2026) · </p>
-<h3>Twig dynamic attribute syntax emits attacker-controlled raw PHP, executed at template-load time.</h3>
-<p>Twig is a template language for PHP. From 3.15.0 until 3.26.0, _self.(<string>) and import-alias dynamic attribute syntax can concatenate an attacker-controlled string into a MacroReferenceExpression name without identifier validation, causing raw PHP to be emitted into the generated template source and executed at template-load time. This issue is fixed in version 3.26.0.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-46640" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-46640" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-14499 · CVSS 8.8 · Jul 17, 2026</p>
+<h3>IBM Langflow OSS authenticated command execution via Python Interpreter</h3>
+<p>IBM Langflow OSS 1.0.0 through 1.10.1 Langflow could allow an authenticated user to execute arbitrary commands with elevated privileges on the system due to improper validation of user supplied input in the Python Interpreter component.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-14499" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14499" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62202 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
-<h3>OpenClaw privilege escalation in isolated cron jobs allows denied exec tools to be regained.</h3>
-<p>OpenClaw versions 2026.6.1 before 2026.6.9 contain a privilege escalation vulnerability in isolated cron jobs that allows lower-trust callers to regain denied execution tools. Attackers can execute or persist actions beyond their intended authorization by leveraging misconfigured input paths in the affected cron feature.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-62202" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62202" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-62203 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
-<h3>OpenClaw env var filtering flaw in host exec enables privilege persistence via rustup vars.</h3>
+<p class="cve-id">CVE-2026-62203 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026)</p>
+<h3>OpenClaw host exec env var filtering flaw enables privilege persistence</h3>
 <p>OpenClaw versions before 2026.6.6 contain an environment variable filtering vulnerability in host exec that fails to properly sanitize rustup startup variables. Attackers with lower-trust caller access or configured input paths can execute or persist actions beyond their intended authorization level.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-62203" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62203" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62207 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
-<h3>OpenClaw authentication bypass lets lower-trust callers reach admin-scoped tools.</h3>
+<p class="cve-id">CVE-2026-62207 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026)</p>
+<h3>OpenClaw authentication bypass reaches admin-scoped tools</h3>
 <p>OpenClaw versions before 2026.6.5 contain an authentication bypass vulnerability that allows lower-trust callers to reach admin-scoped tools. Attackers can perform actions requiring stronger authorization by exploiting insufficient policy checks on configured input paths.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-62207" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62207" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62228 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
-<h3>OpenClaw authorization bypass in node exec approvals via mismatched environments.</h3>
+<p class="cve-id">CVE-2026-62228 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026)</p>
+<h3>OpenClaw node exec approvals authorization bypass via env mismatch</h3>
 <p>OpenClaw before 2026.6.5 contain an authorization bypass vulnerability in node exec approvals that allows lower-trust callers to execute actions beyond their intended authorization by using different gateway and node environments. Attackers can exploit mismatched environment configurations to persist or execute actions that exceed the caller's approved permissions.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-62228" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62228" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-62233 · CVSS 8.8 · Jul 17, 2026 (updated Jul 17, 2026) · </p>
-<h3>grav-plugin-api fails to validate super-admin on API key/2FA endpoints, enabling takeover.</h3>
-<p>grav-plugin-api before 1.0.6 fails to validate super-admin status in createApiKey, generate2fa, and disable2fa endpoints, allowing non-super api.users.write managers to escalate to super-admin. Attackers can mint API keys bound to super-admin accounts or strip 2FA from super-admin users to achieve full instance takeover.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-62233" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62233" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-7667 · CVSS 8.8 · Jul 17, 2026</p>
+<h3>IBM Langflow malicious flow enables arbitrary file write</h3>
+<p>IBM Langflow OSS 1.0.0 through 1.10.0 allows an authenticated attacker to create a malicious flow pointing to an attacker-controlled URL that returns a specially crafted Content-Disposition header (e.g., filename="../../../target/path" ), enabling arbitrary file write operations with attacker-controlled content to any path accessible by the Langflow process.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-7667" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7667" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-63085 · CVSS 8.8 · Jul 16, 2026 (updated Jul 16, 2026) · </p>
-<h3>Axelor Open Platform auth bypass lets non-admin users escalate via nested relational saves.</h3>
-<p>Axelor Open Platform versions 8.x prior to 8.2.2 contains an authorization bypass vulnerability that allows authenticated non-admin users to escalate privileges by exploiting unenforced field restrictions on nested relational save operations. Attackers can modify sensitive User record fields such as roles and group by submitting changes through a related entity's save path, bypassing the USER_RESTRICTED_FIELDS control and causing the JPA persistence layer to flush attacker-supplied admin role an</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63085" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63085" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-8056 · CVSS 8.8 · Jul 17, 2026</p>
+<h3>IBM Langflow runtime parameter override via apply_tweaks() flaw</h3>
+<p>IBM Langflow OSS 1.0.0 through 1.10.0 allows authenticated users to override component parameters at runtime via the API. A critical security flaw exists in the parameter filtering mechanism within the `apply_tweaks()` function.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-8056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8056" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-48736 · CVSS 8.6 · Jul 14, 2026 (updated Jul 16, 2026) · </p>
-<h3>Symfony IpUtils omits IPv6 transition prefixes, allowing SSRF to private IPv4 targets.</h3>
-<p>Symfony is a PHP framework for web and console applications and a set of reusable PHP components. From 5.4.0 to 5.4.53, 6.4.41, 7.4.13, and 8.0.13, NoPrivateNetworkHttpClient and IpUtils::PRIVATE_SUBNETS omitted IPv6 transition prefixes such as 6to4, NAT64, Teredo, and IPv4-compatible IPv6, allowing attacker-supplied URLs to represent private IPv4 targets in forms that IpUtils::isPrivateIp() did not block. This issue is fixed in versions 5.4.53, 6.4.41, 7.4.13, and 8.0.13.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-48736" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-48736" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60005 · CVSS 8.2 · Jul 15, 2026 (updated Jul 15, 2026)</p>
+<h3>NGINX slice module uninitialized memory access (unauth)</h3>
+<p>NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60005" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60005" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-13445 · CVSS 8.1 · Jul 17, 2026</p>
+<h3>IBM Langflow SaveToFile path traversal reads/writes other users' files</h3>
+<p>IBM Langflow OSS 1.0.0 through 1.10.1 can allow an authenticated attacker to exploit the SaveToFile component to read and modify another user's uploaded files by specifying absolute paths pointing to victim storage locations. In append mode, the attacker's workflow reads victim file contents, appends attacker-controlled data, and uploads a copy containing victim data to the attacker's namespace (confidentiality breach). In overwrite mode, the attacker can replace victim file contents with arbitr</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-13445" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13445" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -634,7 +634,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-18 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-18 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
