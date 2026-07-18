@@ -482,59 +482,59 @@
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
+<p class="date-line">📅 July 18, 2026</p>
 <h3>New wp2shell WordPress Core Flaw Lets Unauthenticated Attackers Run Code</h3>
-<p>A pre-authentication remote code execution flaw in WordPress core (versions 6.9.0–6.9.4 and 7.0.0–7.0.1) lets an anonymous request run code on a default install with no plugins. Dubbed wp2shell, the bug was found by Assetnote/Searchlight Cyber and fixed on July 17 via forced auto-updates to 6.9.5 and 7.0.2.</p>
+<p>A pair of chained WordPress core vulnerabilities (CVE-2026-63030, a REST API batch-route confusion, and CVE-2026-60137, a core SQL injection) lets an anonymous HTTP request achieve remote code execution on a bare install with zero plugins. WordPress shipped 6.9.5 and 7.0.2 on Friday with forced auto-updates. A public proof-of-concept is now available.</p>
 <a href="https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
-<h3>HollowByte DDoS Flaw Bloats OpenSSL Server Memory with 11-Byte Payload</h3>
-<p>A denial-of-service vulnerability nicknamed HollowByte lets unauthenticated attackers freeze OpenSSL servers with a malicious 11-byte TLS request, forcing up to 131 KB of leaked memory per handshake. OpenSSL shipped silent fixes in June (no CVE, no advisory) across branches 4.0.1, 3.6.3, 3.5.7, 3.4.6, and 3.0.21.</p>
-<a href="https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
 <h3>New Windows LegacyHive Zero-Day Gives Hackers Admin Privileges</h3>
-<p>A researcher using the handle "Nightmare Eclipse" released a Windows zero-day exploit called LegacyHive that lets attackers escalate privileges to admin on fully up-to-date Windows systems. The public release gives attackers a working local privilege escalation before Microsoft has shipped a patch.</p>
+<p>A security researcher using the handle "Nightmare Eclipse" released a Windows zero-day exploit dubbed LegacyHive that allows attackers to escalate privileges to admin on fully up-to-date Windows systems. The exploit chain targets legacy components and requires no prior access.</p>
 <a href="https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
+<h3>HollowByte DDoS Flaw Bloats OpenSSL Server Memory with 11-Byte Payload</h3>
+<p>A vulnerability dubbed HollowByte lets unauthenticated attackers trigger a denial-of-service on OpenSSL servers using a malicious TLS handshake of just 11 bytes, forcing up to 131 KB of unrecoverable receive-buffer memory per request. Fixed in OpenSSL 4.0.1, 3.6.3, 3.5.7, 3.4.6, and 3.0.21 — all shipped in June with no CVE or advisory.</p>
+<a href="https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 17, 2026</p>
 <h3>Abbott Laboratories Probes Two Cyber Incidents Amid Extortion Claims</h3>
-<p>Abbott is investigating unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business and a separate claim that attackers breached its LabCentral portal. The ShinyHunters extortion gang listed Abbott on its leak site, initially threatening to publish stolen data after July 18 before extending the deadline to July 21.</p>
+<p>Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business, while also examining a claim that attackers breached its LabCentral portal and stole company data.</p>
 <a href="https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
+<h3>Ernst &amp; Young Discloses Data Breach After Support System Hack</h3>
+<p>Ernst &amp; Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel. The incident exposed customer data handled through the affected support channel.</p>
+<a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 17, 2026</p>
 <h3>Seven Malicious Vite npm Packages Use Blockchain C2 to Deliver a RAT</h3>
-<p>Checkmarx uncovered a cluster of seven malicious npm packages (codenamed ViteVenom) targeting the Vite ecosystem. The campaign expands ChainVeil, using a four-tier blockchain-based C2 spanning Tron, Aptos, and Binance Smart Chain to deliver a RAT with reverse shell, credential theft, and persistent backdoor capabilities. Attribution points to threat actor SuccessKey.</p>
+<p>A cluster of seven malicious npm packages targeting the Vite frontend ecosystem (codenamed ViteVenom by Checkmarx) expands the ChainVeil campaign, using a four-tier blockchain-based C2 across Tron, Aptos, and Binance Smart Chain to deliver a RAT capable of reverse shells, credential theft, file exfiltration, and persistent backdoors. Attributed to threat actor SuccessKey.</p>
 <a href="https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
 <h3>New NadMesh Botnet Hunts Exposed AI Services for Cloud Keys and Kubernetes Tokens</h3>
-<p>A Go-based botnet called NadMesh surfaced in early July scanning for exposed AI services such as ComfyUI, Ollama, n8n, Open WebUI, Langflow, and Gradio. The operator's dashboard claims thousands of harvested AWS keys and Kubernetes tokens. QiAnXin XLab published the analysis and named the malware after the "n4d mesh controller" string in its source.</p>
+<p>A Go-based botnet called NadMesh, discovered in early July, scans for exposed AI services (ComfyUI, Ollama, n8n, Open WebUI, Langflow, Gradio) to harvest AWS keys, Kubernetes tokens, and model inventories. The operator's dashboard claims thousands of credential hauls, though figures are self-reported and inconsistent.</p>
 <a href="https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
 <h3>GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft</h3>
-<p>Expel attributed the April 2026 DigiCert incident to a subgroup dubbed CylindricalCanine, part of the Chinese cybercrime cluster GoldenEyeDog (APT-Q-27). The actor accessed a support engineer's device and stole code-signing certificates intended for DigiCert customers, using a modified Gh0st RAT. The breach undermines trust in signed software supply chains.</p>
-<a href="https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>Ernst & Young Discloses Data Breach After Support System Hack</h3>
-<p>Ernst & Young is notifying customers of a data breach caused by the compromise of a third-party support ticket system used by its IT personnel. The incident highlights the growing risk that managed service providers and external support tooling pose to large enterprise clients.</p>
-<a href="https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/" target="_blank">Read more</a>
+<p>Researchers have tied a GoldenEyeDog subgroup to the DigiCert breach and the theft of code-signing certificates, highlighting the ongoing risk that attackers can abuse trusted signing infrastructure to ship malicious updates that bypass security controls.</p>
+<a href="https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to-digicert.html" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -634,7 +634,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-18 09:08 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-18 09:15 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
