@@ -548,58 +548,58 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-14499 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>IBM Langflow OSS command execution via Python Interpreter input validation flaw</h3>
+<h3>IBM Langflow OSS 1.0.0 through 1.10.1 Python Interpreter command execution</h3>
 <p>IBM Langflow OSS 1.0.0 through 1.10.1 Langflow could allow an authenticated user to execute arbitrary commands with elevated privileges on the system due to improper validation of user supplied input in the Python Interpreter component.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-14499" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14499" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-16095 · CVSS 8.8 · Jul 18, 2026</p>
+<h3>Shibby Tomato setup_conntrack out-of-bounds write via ct_tcp_timeout</h3>
+<p>A flaw has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. Affected by this issue is the function setup_conntrack of the file /sbin/rc. Executing a manipulation of the argument ct_tcp_timeout can lead to out-of-bounds write. The attack may be performed from remote. This project is superseded by FreshTomato.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-16095" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16095" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-16096 · CVSS 8.8 · Jul 18, 2026</p>
+<h3>Shibby Tomato webmon_recent_domains stack-based buffer overflow</h3>
+<p>A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-16096" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16096" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-16097 · CVSS 8.8 · Jul 18, 2026</p>
+<h3>Shibby Tomato Scheduler Name Handler stack-based buffer overflow</h3>
+<p>A vulnerability was found in Shibby Tomato 1.28. This vulnerability affects the function sub_42537C of the component Scheduler Name Handler. The manipulation of the argument a1 results in stack-based buffer overflow. It is possible to launch the attack remotely. This project is superseded by FreshTomato.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-16097" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16097" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-7667 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>IBM Langflow OSS arbitrary file write via malicious flow Content-Disposition</h3>
+<h3>IBM Langflow OSS 1.0.0 through 1.10.0 malicious flow arbitrary file write</h3>
 <p>IBM Langflow OSS 1.0.0 through 1.10.0 allows an authenticated attacker to create a malicious flow pointing to an attacker-controlled URL that returns a specially crafted Content-Disposition header (e.g., filename="../../../target/path" ), enabling arbitrary file write operations with attacker-controlled content to any path accessible by the Langflow process.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-7667" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7667" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-8056 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>IBM Langflow OSS parameter override flaw in apply_tweaks()</h3>
+<h3>IBM Langflow OSS 1.0.0 through 1.10.0 apply_tweaks parameter override</h3>
 <p>IBM Langflow OSS 1.0.0 through 1.10.0 allows authenticated users to override component parameters at runtime via the API. A critical security flaw exists in the parameter filtering mechanism within the `apply_tweaks()` function.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-8056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8056" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-60005 · CVSS 8.2 · Jul 15, 2026 (updated Jul 15, 2026)</p>
-<h3>NGINX slice module uninitialized memory access in worker process</h3>
+<h3>NGINX slice module uninitialized memory access via unauthenticated requests</h3>
 <p>NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice directive and unnamed regex captures are configured or when a background cache update happens, unauthenticated attackers can send requests that may cause uninitialized memory access in the NGINX worker process, leading to limited disclosure of memory or a restart.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-60005" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60005" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-13445 · CVSS 8.1 · Jul 17, 2026</p>
-<h3>IBM Langflow OSS SaveToFile path traversal file read/modify</h3>
+<h3>IBM Langflow OSS 1.0.0 through 1.10.1 SaveToFile absolute-path file access</h3>
 <p>IBM Langflow OSS 1.0.0 through 1.10.1 can allow an authenticated attacker to exploit the SaveToFile component to read and modify another user's uploaded files by specifying absolute paths pointing to victim storage locations. In append mode, the attacker's workflow reads victim file contents, appends attacker-controlled data, and uploads a copy containing victim data to the attacker's namespace (confidentiality breach). In overwrite mode, the attacker can replace victim file contents with arbitr</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-13445" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13445" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-59950 · CVSS 8.1 · Jul 15, 2026 (updated Jul 17, 2026)</p>
-<h3>MCP Python SDK websocket transport missing Origin/Host validation</h3>
-<p>The MCP Python SDK, called mcp on PyPI, is a Python implementation of the Model Context Protocol (MCP). Prior to 1.28.1, the deprecated mcp.server.websocket.websocket_server transport accepted WebSocket handshakes without applying Host or Origin header validation, leaving no SDK-level way to restrict which origins could connect to applications that exposed that transport. This issue is fixed in version 1.28.1.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-59950" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-59950" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-62231 · CVSS 8.1 · Jul 17, 2026 (updated Jul 17, 2026)</p>
-<h3>Grav API plugin authorization bypass via ignored API key scopes</h3>
-<p>The Grav API plugin (getgrav/grav-plugin-api) before 1.0.6 contains an authorization bypass: API keys can be created with a restricted scopes array, but the ApiKeyAuthenticator class never reads or enforces these scopes. It loads and returns the owning user's full account object, so a key created with limited scopes (e.g. read-only) can perform any write, delete, or administrative operation the owning user is authorized for. Fixed in 1.0.6.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-62231" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62231" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-62234 · CVSS 8.1 · Jul 17, 2026 (updated Jul 17, 2026)</p>
-<h3>Grav unrestricted cURL protocol webhook SSRF/pivot</h3>
-<p>Grav before 2.0.4 fails to restrict cURL protocols in webhook dispatch, allowing authenticated users with api.webhooks.write permission to create webhooks with file://, dict://, or gopher:// URLs. Attackers can trigger webhook events to read local files, access process information, or pivot to internal services via unrestricted protocol handlers.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-62234" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62234" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -634,7 +634,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-18 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-18 15:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
