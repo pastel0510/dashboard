@@ -482,52 +482,59 @@
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 July 18, 2026</p>
-<h3>WordPress Core "wp2shell" RCE Flaws Get Public Exploits — Patch Now</h3>
-<p>Two chained WordPress Core vulnerabilities (CVE-2026-63030, a REST API batch-route confusion, and CVE-2026-60137, a SQL injection) let an anonymous HTTP request run code on any 6.9 or 7.0 site — even bare installs with no plugins. A working proof-of-concept is now public on GitHub. WordPress shipped 6.9.5 and 7.0.2 with forced auto-updates, but administrators should confirm their sites are patched immediately.</p>
-<a href="https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/" target="_blank">Read more</a>
+<p class="date-line">📅 July 19, 2026</p>
+<h3>Hackers abuse ViPNet software to target Russian govt agencies</h3>
+<p>An advanced threat actor is abusing the update mechanism of the ViPNet private networking product suite to deliver malware to Russian organizations, including government agencies. The supply-chain style campaign leverages a trusted vendor's update channel to reach high-value targets.</p>
+<a href="https://www.bleepingcomputer.com/news/security/hackers-abuse-vipnet-software-to-target-russian-govt-agencies/" target="_blank">Read more</a>
 </div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 19, 2026</p>
+<h3>UAC-0145 uses ClickFix CAPTCHAs to infect Ukrainian devices with malware</h3>
+<p>Russian state-sponsored actors attributed to UAC-0145, a Sandworm sub-cluster, are using fake CAPTCHA checks on compromised websites to trick Ukrainian targets into running PowerShell commands. The campaign drops data-stealing malware such as GHETTOVIBE and the SCOUTCURL reconnaissance script.</p>
+<a href="https://thehackernews.com/2026/07/uac-0145-uses-clickfix-captchas-to.html" target="_blank">Read more</a>
+</div>
+
 <div class="bulletin-item">
 <p class="date-line">📅 July 18, 2026</p>
-<h3>Update Now: 7-Zip Fixes RCE Flaw Exploitable via Malicious Archives</h3>
-<p>7-Zip version 26.02 was released to fix a remote code execution vulnerability that could allow attackers to run malicious code by convincing users to open specially crafted compressed files. Given 7-Zip's ubiquity across desktops and servers, users and administrators should update as soon as possible.</p>
+<h3>Update now: 7-Zip fixes RCE flaw exploitable with malicious archives</h3>
+<p>7-Zip version 26.02 patches a remote code execution vulnerability that lets attackers run malicious code by convincing users to open specially crafted compressed files. Users should update immediately to avoid drive-by code execution from archive files.</p>
 <a href="https://www.bleepingcomputer.com/news/security/update-now-7-zip-fixes-rce-flaw-exploitable-with-malicious-archives/" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
 <p class="date-line">📅 July 18, 2026</p>
-<h3>Microsoft Warns of Surge in ACR Stealer Attacks Using ClickFix Lures</h3>
-<p>Microsoft's Defender Experts team observed a sharp rise in ACR Stealer campaigns from late April to mid-June, using ClickFix lures that trick users into pasting commands into the Run box. The malware steals saved browser passwords, live session tokens, PDFs, Microsoft 365 documents, and files from synced OneDrive and SharePoint folders. Microsoft advises victims to revoke tokens — not just rotate passwords.</p>
+<h3>WordPress Core "wp2shell" RCE flaws get public exploits, patch now</h3>
+<p>Public proofs-of-concept are now available for the critical "wp2shell" vulnerabilities in WordPress Core (CVE-2026-63030 and CVE-2026-60137). The two chained bugs let an anonymous request reach code execution on a bare install. WordPress shipped 6.9.5 and 7.0.2 with forced auto-updates; admins must verify they are patched.</p>
+<a href="https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 18, 2026</p>
+<h3>Microsoft warns of surge in ACR Stealer attacks on customers</h3>
+<p>Microsoft reports a surge in attacks using the ACR Stealer malware to harvest browser-stored passwords, authentication tokens, and sensitive documents from enterprise customers. The info-stealer is being distributed through common initial-access vectors aimed at corporate environments.</p>
 <a href="https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
-<h3>OpenSSL "HollowByte" Flaw Freezes Server Memory With 11-Byte TLS Requests</h3>
-<p>Okta's Red Team disclosed a denial-of-service flaw in OpenSSL where an 11-byte TLS request tricks an unpatched server into reserving up to 131 KB of memory for a message that never arrives — memory that is lost until the process restarts. The fix shipped quietly in June with no CVE or advisory. Fixed releases are OpenSSL 4.0.1, 3.6.3, 3.5.7, 3.4.6, and 3.0.21, all dated June 9.</p>
-<a href="https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html" target="_blank">Read more</a>
+<h3>HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload</h3>
+<p>A vulnerability dubbed HollowByte lets unauthenticated attackers trigger denial-of-service on OpenSSL servers with an 11-byte malicious TLS payload, forcing up to 131 KB of memory allocation per request until the process restarts. Fixed releases (4.0.1, 3.6.3, 3.5.7, 3.4.6, 3.0.21) shipped in June with no CVE or advisory, so scanners may miss them.</p>
+<a href="https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/" target="_blank">Read more</a>
 </div>
+
 <div class="bulletin-item">
 <p class="date-line">📅 July 17, 2026</p>
-<h3>Abbott Probes Two Cyber Incidents Amid Extortion Claims</h3>
-<p>Abbott Laboratories is investigating two separate cybersecurity incidents after confirming unauthorized access to internal legacy Exact Sciences systems in its Cancer Diagnostics business. It is separately investigating a claim that attackers breached its LabCentral portal and stole company data, as extortion demands surface.</p>
-<a href="https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>NadMesh Botnet Hunts Exposed AI Services for Cloud Keys and Kubernetes Tokens</h3>
-<p>A Go-based botnet named NadMesh, reported by QiAnXin's XLab, scans for exposed AI services — ComfyUI, Ollama, n8n, Open WebUI, Langflow, and Gradio — to harvest cloud credentials. The operator's own dashboard claims 3,811 unique AWS keys along with dozens of model inventories, highlighting how fast teams stand up AI tools and how late they firewall them.</p>
-<a href="https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>GoldenEyeDog Subgroup Linked to DigiCert Breach and Code-Signing Certificate Theft</h3>
-<p>Researchers at Expel attributed the April 2026 DigiCert incident to CylindricalCanine, a sub-group of the Chinese threat actor GoldenEyeDog (aka APT-Q-27, Dragon Breath). The attackers used a modified Gh0st RAT to compromise a DigiCert support member's device and steal code-signing certificates intended for DigiCert customers — a serious supply-chain trust risk.</p>
-<a href="https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html" target="_blank">Read more</a>
-</div>
-<div class="bulletin-item">
-<p class="date-line">📅 July 17, 2026</p>
-<h3>Seven Malicious Vite npm Packages Use Blockchain C2 to Deliver a RAT</h3>
-<p>Checkmarx uncovered seven malicious npm packages targeting the Vite frontend ecosystem in a campaign dubbed ViteVenom. The packages use a four-tier blockchain-based command-and-control infrastructure spanning Tron, Aptos, and Binance Smart Chain to deliver a remote access trojan capable of reverse shell, credential harvesting, file exfiltration, and persistent backdoor injection — making the C2 extremely resilient to takedown.</p>
+<h3>Seven malicious Vite npm packages use blockchain C2 to deliver a RAT</h3>
+<p>Researchers discovered a cluster of seven malicious npm packages (codenamed ViteVenom) targeting the Vite ecosystem. The campaign, an expansion of ChainVeil, uses a four-tier blockchain-based command-and-control spanning Tron, Aptos, and Binance Smart Chain to deliver a RAT with reverse shell, credential theft, and persistent backdoor capabilities.</p>
 <a href="https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 July 17, 2026</p>
+<h3>New NadMesh botnet hunts exposed AI services for cloud keys and Kubernetes tokens</h3>
+<p>A Go-based botnet called NadMesh is scanning for exposed AI services such as ComfyUI, Ollama, n8n, Open WebUI, Langflow, and Gradio to steal AWS keys and Kubernetes tokens. The operator's dashboard claims thousands of harvested credentials, highlighting risk from quickly deployed, poorly firewalled AI tooling.</p>
+<a href="https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -627,7 +634,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-19 21:07 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-19 21:15 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
