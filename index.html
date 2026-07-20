@@ -535,58 +535,58 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2023-54366 · CVSS 8.8 · Jul 18, 2026</p>
-<h3>SurrealDB default table permissions set to FULL instead of NONE</h3>
+<h3>SurrealDB before 1.0.1 sets default table permissions to FULL instead of NONE</h3>
 <p>SurrealDB before 1.0.1 sets default table permissions to FULL instead of NONE, allowing SELECT, CREATE, UPDATE, and DELETE operations on tables without explicit permissions. Attackers with database access or unauthenticated users on publicly exposed instances can perform unrestricted operations on unprotected tables within their authorization scope.</p>
 <a href="https://db.gcve.eu/cve/CVE-2023-54366" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2023-54366" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2024-58362 · CVSS 8.8 · Jul 18, 2026</p>
-<h3>SurrealDB RPC API accepts unvalidated object enabling subquery execution</h3>
-<p>SurrealDB before 1.5.5 (and 2.0.0-beta before 2.0.0-beta.3) accepts an arbitrary object in the signin and signup operations of the RPC API without recursively validating it for non-computed values. When a record access method defines a SIGNIN or SIGNUP query and the RPC API is exposed to untrusted users, an unauthenticated attacker can encode a binary object containing a subquery using the bincode serialization format and supply it in place of credentials. The subquery is then executed within th</p>
+<h3>SurrealDB before 1.5.5 accepts arbitrary object in RPC API signin/signup operations</h3>
+<p>SurrealDB before 1.5.5 (and 2.0.0-beta before 2.0.0-beta.3) accepts an arbitrary object in the signin and signup operations of the RPC API without recursively validating it for non-computed values. When a record access method defines a SIGNIN or SIGNUP query and the RPC API is exposed to untrusted users, an unauthenticated attacker can encode a binary object containing a subquery using the bincode serialization format and supply it in place of credentials. The subquery is then executed within the database context.</p>
 <a href="https://db.gcve.eu/cve/CVE-2024-58362" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2024-58362" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-11826 · CVSS 8.8 · Jul 18, 2026</p>
-<h3>OpenPLC_v3 heap-based buffer overflow in getData() modbus_master</h3>
-<p>OpenPLC_v3 contains a heap-based buffer overflow in the getData() function in webserver/core/modbus_master.cpp. getData() reads characters between two delimiters into a caller-supplied buffer with no size parameter and no bounds check. In parseConfig() the function is invoked with the 100-byte heap-allocated MB_device.dev_name field. An authenticated attacker with access to the OpenPLC web interface can send a crafted HTTP POST to the /modbus endpoint with an oversized device_name value; the val</p>
+<h3>OpenPLC_v3 heap-based buffer overflow in getData() modbus_master.cpp</h3>
+<p>OpenPLC_v3 contains a heap-based buffer overflow in the getData() function in webserver/core/modbus_master.cpp. getData() reads characters between two delimiters into a caller-supplied buffer with no size parameter and no bounds check. In parseConfig() the function is invoked with the 100-byte heap-allocated MB_device.dev_name field. An authenticated attacker with access to the OpenPLC web interface can send a crafted HTTP POST to the /modbus endpoint with an oversized device_name value.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-11826" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-11826" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-14499 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>IBM Langflow OSS improper input validation enables command execution</h3>
+<h3>IBM Langflow OSS 1.0.0-1.10.1 Python Interpreter component allows arbitrary command execution</h3>
 <p>IBM Langflow OSS 1.0.0 through 1.10.1 Langflow could allow an authenticated user to execute arbitrary commands with elevated privileges on the system due to improper validation of user supplied input in the Python Interpreter component.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-14499" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-14499" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-16095 · CVSS 8.8 · Jul 18, 2026</p>
-<h3>Shibby Tomato setup_conntrack out-of-bounds write via ct_tcp_timeout</h3>
+<h3>Shibby Tomato 1.28 RT-N5x out-of-bounds write in setup_conntrack</h3>
 <p>A flaw has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. Affected by this issue is the function setup_conntrack of the file /sbin/rc. Executing a manipulation of the argument ct_tcp_timeout can lead to out-of-bounds write. The attack may be performed from remote. This project is superseded by FreshTomato.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-16095" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16095" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-16096 · CVSS 8.8 · Jul 18, 2026</p>
-<h3>Shibby Tomato webmon_recent_domains stack-based buffer overflow</h3>
+<h3>Shibby Tomato 1.28 RT-N5x stack-based buffer overflow in /proc/webmon_recent_domains</h3>
 <p>A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-16096" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16096" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-16097 · CVSS 8.8 · Jul 18, 2026</p>
-<h3>Shibby Tomato Scheduler Name Handler stack-based buffer overflow</h3>
+<h3>Shibby Tomato 1.28 stack-based buffer overflow in Scheduler Name Handler</h3>
 <p>A vulnerability was found in Shibby Tomato 1.28. This vulnerability affects the function sub_42537C of the component Scheduler Name Handler. The manipulation of the argument a1 results in stack-based buffer overflow. It is possible to launch the attack remotely. This project is superseded by FreshTomato.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-16097" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16097" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-7667 · CVSS 8.8 · Jul 17, 2026</p>
-<h3>IBM Langflow OSS malicious flow enables arbitrary file write</h3>
-<p>IBM Langflow OSS 1.0.0 through 1.10.0 allows an authenticated attacker to create a malicious flow pointing to an attacker-controlled URL that returns a specially crafted Content-Disposition header (e.g., filename="../target/path" ), enabling arbitrary file write operations with attacker-controlled content to any path accessible by the Langflow process.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-7667" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-7667" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-63757 · CVSS 8.8 · Jul 20, 2026</p>
+<h3>SurrealDB versions before 3.1.0 session hijacking via HTTP /rpc sessions</h3>
+<p>SurrealDB versions before 3.1.0 contain a session hijacking vulnerability where the HTTP /rpc sessions method returns attached session UUIDs without authentication and accepts arbitrary session fields with no ownership verification. Unauthenticated attackers can enumerate session UUIDs and impersonate authenticated sessions to read, write, delete data and escalate privileges.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63757" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63757" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -621,7 +621,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-20 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-20 15:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
