@@ -276,23 +276,23 @@
                     <div class="weather-mini">
                         <div class="weather-mini-item">
                             <div class="city">Helsinki</div>
-                            <div class="temp">16°C</div>
-                        </div>
-                        <div class="weather-mini-item">
-                            <div class="city">Tampere</div>
-                            <div class="temp">15°C</div>
-                        </div>
-                        <div class="weather-mini-item">
-                            <div class="city">Turku</div>
-                            <div class="temp">16°C</div>
-                        </div>
-                        <div class="weather-mini-item">
-                            <div class="city">Oulu</div>
                             <div class="temp">14°C</div>
                         </div>
                         <div class="weather-mini-item">
+                            <div class="city">Tampere</div>
+                            <div class="temp">17°C</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Turku</div>
+                            <div class="temp">18°C</div>
+                        </div>
+                        <div class="weather-mini-item">
+                            <div class="city">Oulu</div>
+                            <div class="temp">19°C</div>
+                        </div>
+                        <div class="weather-mini-item">
                             <div class="city">Rovaniemi</div>
-                            <div class="temp">12°C</div>
+                            <div class="temp">20°C</div>
                         </div>
                     </div>
                     <a href="weather.html" class="full-weather-link">View Full Forecast →</a>
@@ -530,63 +530,63 @@
                     <div class="card">
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
-                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[EPSS]</strong> indicates CVEs with exploitation probability ≥5%.</p>
+                            <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-13439 · CVSS 9.8 · Jul 21, 2026</p>
+<h3>security@wordfence.com</h3>
+<p>The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Administrator in versions up to, and including, 4.0.11 This is due to the password recovery flow using the publicly-visible session identifier ('sid') as the password reset token stored in wp_emsfb_temp_links, combined with a publicly-accessible nonce refresh endpoint (Emsfb/v1/nonce/refresh) that issues valid WordPress REST nonces to unauthenticated visitors. This makes it possible for unauthenticated attackers to reset the password of any WordPress user — including administrators — by scraping the public sid from a published login form page, submitting a recovery request for any known user email via Emsfb/v1/forms/message/add, and then calling Emsfb/v1/forms/recovery/efb_set_password with the known sid to set an arbitrary new password and gain full administrator access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-13439" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13439" target="_blank">OpenCVE</a>
+</div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-16096 · CVSS 8.8 · Jul 18, 2026 (updated Jul 20, 2026)</p>
-<h3>Shibby Tomato stack-based buffer overflow via /proc/webmon_recent_domains</h3>
+<p class="cve-id">CVE-2026-63766 · CVSS 9.8 · Jul 20, 2026</p>
+<h3>disclosure@vulncheck.com</h3>
+<p>GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise, and uvr5 functions interpolate unsanitized Gradio textbox values directly into shell commands executed with shell=True. Attackers can inject shell metacharacters through path parameters to execute arbitrary OS commands as the server process user without authentication.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63766" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63766" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-63767 · CVSS 9.8 · Jul 20, 2026</p>
+<h3>disclosure@vulncheck.com</h3>
+<p>ktransformers through 0.6.3, fixed in commit def0f93, contains an unauthenticated pickle deserialization vulnerability that allows remote attackers to execute arbitrary commands by sending crafted pickle payloads to the SchedulerServer ZMQ ROUTER socket bound to all interfaces. Attackers can exploit malicious __reduce__ methods embedded in crafted pickle payloads to execute arbitrary shell commands as the server process.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63767" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63767" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-64625 · CVSS 9.8 · Jul 20, 2026</p>
+<h3>disclosure@vulncheck.com</h3>
+<p>AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in double-quoted sh -c, allowing command substitution via $() and backticks. Attackers can inject arbitrary OS commands through the Live plugin on_publish.php endpoint despite escapeshellarg() protection.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-64625" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-64625" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-16096 · CVSS 8.8 · Jul 18, 2026, updated Jul 20, 2026</p>
+<h3>cna@vuldb.com</h3>
 <p>A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-16096" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16096" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-63090 · CVSS 8.8 · Jul 20, 2026</p>
-<h3>ProFTPD mod_sftp heap-based buffer overflow via oversized SFTP packet fragments</h3>
-<p>ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by sending crafted SFTP packet fragments exceeding the 16 KB reassembly buffer in the fxp.c component. Attackers can supply oversized fragments to trigger an incorrectly conditioned reallocation, corrupt pool freelist metadata, overwrite the root_fs BSS global pointer to reference a fake filesystem structure, and ultimately hijack execution.</p>
+<h3>disclosure@vulncheck.com</h3>
+<p>ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by sending crafted SFTP packet fragments exceeding the 16 KB reassembly buffer in the fxp.c component. Attackers can supply oversized fragments to trigger an incorrectly conditioned reallocation, corrupt pool freelist metadata, overwrite the root_fs BSS global pointer to reference a fake filesystem struct, and redirect pr_fsio_stat() to system() via a crafted RENAME request.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-63090" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63090" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-10130 · CVSS 8.2 · Jul 18, 2026</p>
-<h3>QueryWeaver authentication bypass via signup route session token leakage</h3>
-<p>QueryWeaver contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid session tokens for existing accounts by submitting a signup request with a known victim email address. The signup route unconditionally creates and links a new token to the matching Identity via a Cypher MERGE operation before checking whether the email belongs to an existing account, causing the server to return a valid authenticated session token for the victim's identity without requiring credentials.</p>
+<h3>disclosure@vulncheck.com</h3>
+<p>QueryWeaver contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid session tokens for existing accounts by submitting a signup request with a known victim email address. The signup route unconditionally creates and links a new token to the matching Identity via a Cypher MERGE operation before checking whether the email belongs to an existing account, causing the server to return a valid authenticated session token for the victim's identity without requiring any prior credentials or user interaction.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-10130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10130" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-63735 · CVSS 8.1 · Jul 20, 2026</p>
-<h3>SurrealDB missing scope validation allows cross-tenant custom API access</h3>
+<h3>disclosure@vulncheck.com</h3>
 <p>SurrealDB versions before 3.2.0 fail to validate namespace and database scope in custom API routes, allowing authenticated users to invoke endpoints in different namespaces/databases. Attackers with valid credentials for any namespace/database can access custom API endpoints in other tenants by specifying the target scope in the URL path, reading sensitive data or triggering unintended operations.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-63735" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63735" target="_blank">OpenCVE</a>
 </div>
 
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-63107 · CVSS 7.7 · Jul 20, 2026</p>
-<h3>LimeSurvey SSRF via Host header in REST API survey template endpoint</h3>
-<p>LimeSurvey through 6.17.10 and 7.0.4 contains a server-side request forgery vulnerability in the REST API survey template endpoint that allows authenticated users to cause the server to issue arbitrary HTTP requests by supplying a manipulated Host header. Attackers can exploit the unsanitized use of the HTTP Host header in the getTemplateData() function to reach internal network services, cloud metadata endpoints, and extract sensitive credentials such as IAM tokens from instance metadata services.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63107" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63107" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-63731 · CVSS 7.7 · Jul 20, 2026</p>
-<h3>HyperDX SSRF via unvalidated ClickHouse proxy test host parameter</h3>
-<p>HyperDX before 2.31.0 contains a server-side request forgery vulnerability that allows authenticated team members to direct the server to arbitrary internal destinations by supplying a caller-controlled host parameter to the ClickHouse proxy test endpoint with no URL validation or allowlist enforcement. Attackers can exploit the reflected error responses from the endpoint to disclose internal service response bodies, enabling access to internal APIs, container services, and cloud provider metadata endpoints.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63731" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63731" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-63769 · CVSS 7.7 · Jul 20, 2026</p>
-<h3>Huginn SSRF in ScenarioImport fetch_url method allows internal probing</h3>
-<p>Huginn through 2022.08.18 contains a server-side request forgery vulnerability in the fetch_url method of ScenarioImport that allows authenticated users to make arbitrary HTTP requests by submitting crafted URLs. Attackers can probe internal network services, enumerate ports via error signatures, and access cloud metadata endpoints to retrieve sensitive credentials.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63769" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-63747 · CVSS 7.5 · Jul 20, 2026</p>
-<h3>SurrealDB unauthenticated DoS via malformed WebSocket message to /rpc</h3>
-<p>SurrealDB versions before 3.1.0 contain a denial of service vulnerability in the RPC use handler that panics when db is set without a namespace. Unauthenticated attackers can send a malformed WebSocket message to the /rpc endpoint to crash the server process.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63747" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63747" target="_blank">OpenCVE</a>
-</div>
 
                         </div>
                     </div>
@@ -620,7 +620,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-21 14:00 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-21 15:00 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
