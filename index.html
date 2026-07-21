@@ -532,36 +532,6 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13439 · Jul 21, 2026</p>
-<h3>security@wordfence.com</h3>
-<p>The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Administrator in versions up to, and including, 4.0.11 This is due to the password recovery flow using the publicly-visible session identifier ('sid') as the password reset token stored in wp_emsfb_temp_links, combined with a publicly-accessible nonce refresh endpoint (Emsfb/v1/nonce/refresh) that issues valid WordPress REST nonces to unauthenticated visitors. This makes it possible for unauthenticated attackers to reset the password of any WordPress user — including administrators — by scraping the public sid from a published login form page, submitting a recovery request for any known user email via Emsfb/v1/forms/message/add, and then calling Emsfb/v1/forms/recovery/efb_set_password with the known sid to set an arbitrary new password and gain full administrator access.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13439" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13439" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-1617 · Jul 21, 2026</p>
-<h3>iletisim@usom.gov.tr</h3>
-<p>Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Turkmesh Communication Services Inc. Turkhotspot 5651 Loglama allows SQL Injection.
-
-This issue affects Turkhotspot 5651 Loglama: from 5.1.2 before 5.1.3.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-1617" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-1617" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-63766 · Jul 20, 2026</p>
-<h3>disclosure@vulncheck.com</h3>
-<p>GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise, and uvr5 functions interpolate unsanitized Gradio textbox values directly into shell commands executed with shell=True. Attackers can inject shell metacharacters through path parameters to execute arbitrary OS commands as the server process user without authentication.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63766" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63766" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-63767 · Jul 20, 2026</p>
-<h3>disclosure@vulncheck.com</h3>
-<p>ktransformers through 0.6.3, fixed in commit def0f93, contains an unauthenticated pickle deserialization vulnerability that allows remote attackers to execute arbitrary commands by sending crafted pickle payloads to the SchedulerServer ZMQ ROUTER socket bound to all interfaces. Attackers can exploit malicious __reduce__ methods embedded in crafted pickle payloads to execute arbitrary shell commands as the server process.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63767" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63767" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-64625 · Jul 20, 2026</p>
 <h3>disclosure@vulncheck.com</h3>
 <p>AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in double-quoted sh -c, allowing command substitution via $() and backticks. Attackers can inject arbitrary OS commands through the Live plugin on_publish.php endpoint despite escapeshellarg() protection.</p>
@@ -583,10 +553,38 @@ This issue affects Turkhotspot 5651 Loglama: from 5.1.2 before 5.1.3.</p>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-63090 · Jul 20, 2026</p>
-<h3>disclosure@vulncheck.com</h3>
-<p>ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by sending crafted SFTP packet fragments exceeding the 16 KB reassembly buffer in the fxp.c component. Attackers can supply oversized fragments to trigger an incorrectly conditioned reallocation, corrupt pool freelist metadata, overwrite the root_fs BSS global pointer to reference a fake filesystem struct, and redirect pr_fsio_stat() to system() via a crafted RENAME request.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63090" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63090" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-28302 · Jul 21, 2026</p>
+<h3>psirt@solarwinds.com</h3>
+<p>SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to privilege escalation and remote code execution as root. This issue requires group administrator access. The impact is lower in Windows deployments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28302" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28304 · Jul 21, 2026</p>
+<h3>psirt@solarwinds.com</h3>
+<p>SolarWinds Serv-U is affected by a remote code execution vulnerability that, when exploited, can allow the arbitrary execution of code remotely as root. The impact is lower in Windows deployments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28304" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28304" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28305 · Jul 21, 2026</p>
+<h3>psirt@solarwinds.com</h3>
+<p>SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to remote code execution as root. A domain account with admin privileges and read and write access to the home directory is required. The impact is lower in Windows deployments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28305" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28305" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28306 · Jul 21, 2026</p>
+<h3>psirt@solarwinds.com</h3>
+<p>SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain administrator to elevate their privileges to a system administrator. The impact is lower in Windows deployments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28306" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28306" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-28307 · Jul 21, 2026</p>
+<h3>psirt@solarwinds.com</h3>
+<p>SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain user group to be elevated into an administrator group. The impact is lower in Windows deployments.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-28307" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28307" target="_blank">OpenCVE</a>
 </div>
 
 
@@ -622,7 +620,7 @@ This issue affects Turkhotspot 5651 Loglama: from 5.1.2 before 5.1.3.</p>
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-21 21:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-21 21:47 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
