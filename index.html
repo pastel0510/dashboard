@@ -467,59 +467,59 @@
                         <h2>Security</h2>
                         <div id="security-bulletin">
                             <div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>New HollowGraph Malware Uses Microsoft 365 Calendar for Stealthy C2</h3>
-<p>A newly discovered espionage implant named HollowGraph abuses compromised Microsoft 365 mailboxes as a dead-drop command channel. The .NET DLL hides attacker commands and exfiltrated files inside calendar events dated to 2050, using the Microsoft Graph API so traffic looks like ordinary M365 activity. Group-IB says it is linked to the Iranian-linked Cavern C2 framework and has infected at least 12 systems focused on Israeli organizations.</p>
-<a href="https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/" target="_blank">Read more</a>
+<p class="date-line">📅 2026-07-21</p>
+<h3>WordPress Core wp2shell RCE flaws get public exploits, patch now</h3>
+<p>Searchlight Cyber disclosed a pre-authenticated remote code execution vulnerability in WordPress Core that can be exploited anonymously on a standard WordPress installation. CVE-2026-63030 and CVE-2026-60137 can be chained to turn an anonymous request into code execution, and public PoC exploits are already in circulation with early signs of in-the-wild exploitation.</p>
+<a href="https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>Hugging Face Breached by Autonomous AI Agent</h3>
-<p>Hugging Face disclosed that attackers used an autonomous AI agent framework to breach its production infrastructure via malicious datasets in its data-processing pipeline. The agent exploited code-execution vulnerabilities, stole cloud and cluster credentials, and moved laterally across internal clusters. Hugging Face has revoked credentials, rebuilt compromised nodes, and reported the incident to law enforcement.</p>
-<a href="https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/" target="_blank">Read more</a>
+<p class="date-line">📅 2026-07-21</p>
+<h3>SonicWall SMA1000 flaws exploited as zero-days to push custom malware</h3>
+<p>Two recently disclosed SonicWall SMA1000 vulnerabilities, CVE-2026-15409 (CVSS 10.0) and CVE-2026-15410, were exploited as zero-days since at least June 22 by a threat actor tracked as UTA0533. Volexity detailed the full chain: SSRF via the /wsproxy endpoint, command injection, and deployment of custom Java malware Sou5 and ORANGETAIL on VPN appliances.</p>
+<a href="https://www.bleepingcomputer.com/news/security/sonicwall-sma1000-flaws-exploited-as-zero-days-to-push-custom-malware/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>Critical ServiceNow RCE Now Actively Exploited</h3>
-<p>Threat intelligence firm Defused confirmed in-the-wild exploitation of CVE-2026-6875, a pre-authentication sandbox-escape remote code execution flaw in the ServiceNow AI Platform. Attackers began exploiting the vulnerability days after patches were released on July 13. ServiceNow has not yet acknowledged active abuse in its advisory but urges all customers to upgrade immediately.</p>
+<p class="date-line">📅 2026-07-21</p>
+<h3>Critical ServiceNow code execution flaw now exploited in attacks</h3>
+<p>Attackers have begun exploiting CVE-2026-6875, a critical pre-authentication sandbox-escape RCE in the ServiceNow AI Platform. Defused researchers confirmed in-the-wild exploitation over the weekend via the /assessment_thanks.do sink. ServiceNow-hosted and self-hosted instances should be patched immediately.</p>
 <a href="https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>Exposed Server Reveals AI-Assisted Phishing Toolkit</h3>
-<p>Rapid7 analyzed an exposed malware delivery server containing 1,048 files, including AI-generated lure templates, filename-spoofing tests, droppers, and builder notes. The operation targeted Windows users in Mexico with a fake government ID-lookup site delivering an infostealer via WebDAV. Evidence suggests the operator used generative AI to produce and test phishing delivery at speed, with a hardcoded path pointing at an open-source AI coding tool.</p>
-<a href="https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html" target="_blank">Read more</a>
+<p class="date-line">📅 2026-07-21</p>
+<h3>Hugging Face breached by autonomous AI agent system</h3>
+<p>Hugging Face disclosed that attackers gained access to internal datasets and service credentials by exploiting code execution paths in its data processing pipeline. The intrusion was carried out by an autonomous AI agent framework that performed thousands of actions across short-lived sandboxes. Hugging Face has revoked credentials and rotated secrets, and is urging customers to do the same.</p>
+<a href="https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html" target="_blank">Read more</a>
 </div>
 
 <div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>Russian Intelligence Hijacks IP Cameras Across NATO States</h3>
-<p>Dutch intelligence services AIVD and MIVD warned that Russian intelligence is systematically hijacking internet-connected IP cameras across Europe and Ukraine. Using default passwords, obsolete firmware, and automated image-recognition software, the operators track military logistics, weapons shipments, and troop movements. In Ukraine, camera access has been used to target Ukrainian military personnel directly.</p>
+<p class="date-line">📅 2026-07-21</p>
+<h3>FakeGit campaign uses 7,600 GitHub repositories to spread SmartLoader malware</h3>
+<p>Island researchers discovered nearly 7,600 malicious GitHub repositories, including more than 800 posing as AI skills or MCP servers, delivering SmartLoader and StealC info-stealer. The campaign’s AgentBaiting technique tricks AI coding agents like Claude Code and Gemini into discovering and executing malicious instructions autonomously without any human link.</p>
+<a href="https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 2026-07-21</p>
+<h3>HollowGraph malware hides C2 and stolen files in Microsoft 365 calendar events dated 2050</h3>
+<p>Group-IB identified HollowGraph, a .NET espionage implant that uses a compromised Microsoft 365 mailbox calendar as a two-way dead drop for command-and-control. It buries attacker tasking in calendar events dated 2050-05-13 and smuggles encrypted stolen files as attachments, blending into legitimate Microsoft Graph API traffic.</p>
+<a href="https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 2026-07-21</p>
+<h3>Russian-speaking hacker uses Google Gemini CLI to control dental clinic botnet</h3>
+<p>Trend Micro analyzed 200 Gemini CLI session logs tied to threat actor "bandcampro" and found the AI agent was used to migrate a C2 server, manage a botnet of eight dental clinic PCs, crack passwords, plan crypto fraud against elderly U.S. and Canada targets, and debug infrastructure in minutes. The entire operation fits in three plaintext files, making it highly disposable and replicable.</p>
+<a href="https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html" target="_blank">Read more</a>
+</div>
+
+<div class="bulletin-item">
+<p class="date-line">📅 2026-07-21</p>
+<h3>Russian intelligence hacks IP cameras to spy on military logistics across NATO states and Ukraine</h3>
+<p>A joint advisory from Dutch intelligence services AIVD and MIVD details an ongoing operation in which Russian intelligence systematically hijacks internet-connected security cameras across Europe and Ukraine. The cameras are used to monitor military transport routes, weapons shipments, and Ukrainian troop locations, and in Ukraine have been used to directly target military personnel and equipment.</p>
 <a href="https://thehackernews.com/2026/07/russian-intelligence-hacks-ip-cameras.html" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-07-18</p>
-<h3>WordPress wp2shell Flaw Lets Unauthenticated Attackers Run Code</h3>
-<p>Searchlight Cyber disclosed wp2shell, a pre-authentication remote code execution vulnerability in WordPress Core. The attack chains CVE-2026-63030 (REST API batch-route confusion) and CVE-2026-60137 (SQL injection) to turn an anonymous HTTP request into code execution on bare WordPress installs with no plugins. WordPress shipped forced auto-updates to 6.9.5 and 7.0.2, but watchTowr warns that PoC exploits are already circulating and in-the-wild exploitation is beginning.</p>
-<a href="https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>Microsoft Fixes WSUS Server Sync Delays</h3>
-<p>Microsoft is working to resolve a known issue affecting Windows Server Update Services (WSUS) servers that has caused synchronization delays and timeouts for more than a week. Organizations relying on WSUS for patch distribution should monitor for official fixes and consider alternative update channels if sync failures persist.</p>
-<a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-working-to-fix-wsus-server-sync-delays-and-timeouts/" target="_blank">Read more</a>
-</div>
-
-<div class="bulletin-item">
-<p class="date-line">📅 2026-07-20</p>
-<h3>Microsoft Releases Emergency Update for Dell Shutdown Bug</h3>
-<p>Microsoft issued out-of-band Windows updates, including KB5121767, to fix a known issue causing some Dell PCs to shut down unexpectedly after installing the July 2026 Windows 11 security updates. Affected users and administrators should deploy the emergency patch to prevent unplanned system reboots.</p>
-<a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-bug-causing-some-dell-pcs-to-shut-down/" target="_blank">Read more</a>
 </div>
 
                         </div>
@@ -619,7 +619,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-21 03:06 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-21 03:15 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
