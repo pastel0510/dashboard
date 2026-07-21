@@ -533,57 +533,57 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-16096 · CVSS 8.8 · Jul 18, 2026 (updated Jul 20, 2026)</p>
-<h3>Shibby Tomato 1.28 RT-N5x /proc/webmon_recent_domains stack-based buffer overflow</h3>
+<h3>Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124 /proc/webmon_recent_domains Stack-Based Buffer Overflow</h3>
 <p>A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer overflow. It is possible to initiate the attack remotely. This project is superseded by FreshTomato.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-16096" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-16096" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-63090 · CVSS 8.8 · Jul 20, 2026</p>
-<h3>ProFTPD mod_sftp heap-based buffer overflow allows authenticated RCE via SFTP fragment reassembly</h3>
-<p>ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by sending crafted SFTP packet fragments exceeding the 16 KB reassembly buffer in the fxp.c component. Attackers can supply oversized fragments to trigger an incorrectly conditioned reallocation, corrupt pool freelist metadata, overwrite the root_fs BSS global pointer to reference a fake filesystem structure, and execute arbitrary code.</p>
+<h3>ProFTPD mod_sftp Heap-Based Buffer Overflow via Oversized SFTP Packet Fragments</h3>
+<p>ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by sending crafted SFTP packet fragments exceeding the 16 KB reassembly buffer in the fxp.c component. Attackers can supply oversized fragments to trigger an incorrectly conditioned reallocation, corrupt pool freelist metadata, overwrite the root_fs BSS global pointer to reference a fake filesystem structure and execute arbitrary code.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-63090" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63090" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-8056 · CVSS 8.8 · Jul 17, 2026 (updated Jul 20, 2026)</p>
-<h3>IBM Langflow OSS 1.0.0–1.10.0 API parameter override via apply_tweaks() filtering flaw</h3>
-<p>IBM Langflow OSS 1.0.0 through 1.10.0 allows authenticated users to override component parameters at runtime via the API. A critical security flaw exists in the parameter filtering mechanism within the `apply_tweaks()` function.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-8056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-8056" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-10130 · CVSS 8.2 · Jul 18, 2026</p>
-<h3>QueryWeaver signup route authentication bypass via known victim email session token exposure</h3>
-<p>QueryWeaver contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid session tokens for existing accounts by submitting a signup request with a known victim email address. The signup route unconditionally creates and links a new token to the matching Identity via a Cypher MERGE operation before checking whether the email belongs to an existing account, causing the server to return a valid authenticated session token for the victim's identity without requiring credentials.</p>
+<h3>QueryWeaver Authentication Bypass via Signup Route Email-Based Session Token Issuance</h3>
+<p>QueryWeaver contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid session tokens for existing accounts by submitting a signup request with a known victim email address. The signup route unconditionally creates and links a new token to the matching Identity via a Cypher MERGE operation before checking whether the email belongs to an existing account, causing the server to return a valid authenticated session token for the victim's identity without requiring the victim's password.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-10130" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10130" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-13445 · CVSS 8.1 · Jul 17, 2026 (updated Jul 20, 2026)</p>
-<h3>IBM Langflow OSS SaveToFile component cross-user file read/write via absolute paths</h3>
-<p>IBM Langflow OSS 1.0.0 through 1.10.1 can allow an authenticated attacker to exploit the SaveToFile component to read and modify another user's uploaded files by specifying absolute paths pointing to victim storage locations. In append mode, the attacker's workflow reads victim file contents, appends attacker-controlled data, and uploads a copy containing victim data to the attacker's namespace (confidentiality breach). In overwrite mode, the attacker can replace victim file contents with arbitrary data, causing data loss and integrity compromise.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-13445" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-13445" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-63735 · CVSS 8.1 · Jul 20, 2026</p>
-<h3>SurrealDB custom API routes lack namespace/database scope validation enabling cross-tenant access</h3>
-<p>SurrealDB versions before 3.2.0 fail to validate namespace and database scope in custom API routes, allowing authenticated users to invoke endpoints in different namespaces/databases. Attackers with valid credentials for any namespace/database can access custom API endpoints in other tenants by specifying the target scope in the URL path, reading sensitive data or triggering unintended operations.</p>
+<h3>SurrealDB Cross-Tenant Custom API Route Scope Validation Bypass</h3>
+<p>SurrealDB versions before 3.2.0 fail to validate namespace and database scope in custom API routes, allowing authenticated users to invoke endpoints in different namespaces/databases. Attackers with valid credentials for any namespace/database can access custom API endpoints in other tenants by specifying the target scope in the URL path, reading sensitive data or triggering unintended operations across tenant boundaries.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-63735" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63735" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-15322 · CVSS 7.5 · Jul 17, 2026 (updated Jul 20, 2026) · [EPSS: 1%]</p>
-<h3>IBM Engineering AI Hub session tokens exposed in URLs enabling remote sensitive info disclosure</h3>
-<p>IBM Engineering AI Hub 1.0.0, 1.1.0, and 1.2.0 could allow a remote attacker to obtain sensitive information due to the exposure of session tokens in URLs.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-15322" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-15322" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-63107 · CVSS 7.7 · Jul 20, 2026</p>
+<h3>LimeSurvey REST API Survey Template Endpoint SSRF via Unsanitized Host Header</h3>
+<p>LimeSurvey through 6.17.10 and 7.0.4 contains a server-side request forgery vulnerability in the REST API survey template endpoint that allows authenticated users to cause the server to issue arbitrary HTTP requests by supplying a manipulated Host header. Attackers can exploit the unsanitized use of the HTTP Host header in the getTemplateData() function to reach internal network services, cloud metadata endpoints, and extract sensitive credentials such as IAM tokens from instance metadata services.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63107" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63107" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-63731 · CVSS 7.7 · Jul 20, 2026</p>
+<h3>HyperDX ClickHouse Proxy Test Endpoint SSRF via Caller-Controlled Host Parameter</h3>
+<p>HyperDX before 2.31.0 contains a server-side request forgery vulnerability that allows authenticated team members to direct the server to arbitrary internal destinations by supplying a caller-controlled host parameter to the ClickHouse proxy test endpoint with no URL validation or allowlist enforcement. Attackers can exploit the reflected error responses from the endpoint to disclose internal service response bodies, enabling access to internal APIs, container services, and cloud provider metadata endpoints.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63731" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63731" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-63769 · CVSS 7.7 · Jul 20, 2026</p>
+<h3>Huginn ScenarioImport fetch_url SSRF via Crafted URLs Allowing Arbitrary HTTP Requests</h3>
+<p>Huginn through 2022.08.18 contains a server-side request forgery vulnerability in the fetch_url method of ScenarioImport that allows authenticated users to make arbitrary HTTP requests by submitting crafted URLs. Attackers can probe internal network services, enumerate ports via error signatures, and access cloud metadata endpoints to retrieve sensitive credentials.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-63769" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63769" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-63747 · CVSS 7.5 · Jul 20, 2026</p>
-<h3>SurrealDB RPC handler panic on malformed WebSocket /rpc message without namespace causes DoS</h3>
-<p>SurrealDB versions before 3.1.0 contain a denial of service vulnerability in the RPC use handler that panics when db is set without a namespace. Unauthenticated attackers can send a malformed WebSocket message to the /rpc endpoint to crash the server process.</p>
+<h3>SurrealDB RPC Use Handler Denial of Service via Missing Namespace WebSocket Panic</h3>
+<p>SurrealDB versions before 3.1.0 contain a denial of service vulnerability in the RPC use handler that panics when db is set without a namespace. Unauthenticated attackers can send a malformed WebSocket message to the /rpc endpoint to crash the server process, causing a denial of service for all connected clients.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-63747" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63747" target="_blank">OpenCVE</a>
 </div>
 
@@ -619,7 +619,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-21 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-21 03:45 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
