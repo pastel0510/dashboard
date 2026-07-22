@@ -532,59 +532,59 @@
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-64625 · Jul 20, 2026</p>
-<h3>disclosure@vulncheck.com</h3>
-<p>AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in double-quoted sh -c, allowing command substitution via $() and backticks. Attackers can inject arbitrary OS commands through the Live plugin on_publish.php endpoint despite escapeshellarg() protection.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-64625" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-64625" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-47056 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Oracle Data Integrator product of Oracle Fusion Middleware (component: Rest Service).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Data Integrator.  While the vulnerability is in Oracle Data Integrator, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Data Integrator. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-47056" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-47056" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-65008 · Jul 21, 2026</p>
-<h3>disclosure@vulncheck.com</h3>
-<p>Grav 2.0.4 (fixed in 2.0.7) contains a remote code execution vulnerability in Blueprint::dynamicData() (system/src/Grav/Common/Data/Blueprint.php), which passes a Class::method callable string and its arguments directly to call_user_func_array() without any allowlist. Because the form plugin routes page frontmatter through this path, an authenticated account with the admin.pages (or api.pages.write) permission can plant a malicious callable directive in a page. The command then executes as the web-server user whenever anyone — including an unauthenticated visitor — accesses the page.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-65008" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-65008" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60217 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Oracle Coherence product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to compromise Oracle Coherence.  While the vulnerability is in Oracle Coherence, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Coherence. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60217" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60217" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-65007 · Jul 21, 2026</p>
-<h3>disclosure@vulncheck.com</h3>
-<p>The Grav api plugin (grav-plugin-api) before 1.0.8 fails to properly authorize API key generation and revocation: the plugin intercepts the apiKeyGenerate/apiKeyRevoke admin tasks before the account-management ACL runs and authorizes the caller on only the admin.login permission (the baseline permission held by every panel user). This allows any user with admin.login to mint a persistent API key bound to any account, and the forged key inherits the target account's API permissions. On installs where an API-enabled account holds broader permissions, this enables account impersonation and privilege escalation up to account takeover.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-65007" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-65007" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60358 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Access Manager.  While the vulnerability is in Oracle Access Manager, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Access Manager. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60358" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60358" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28302 · Jul 21, 2026</p>
-<h3>psirt@solarwinds.com</h3>
-<p>SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to privilege escalation and remote code execution as root. This issue requires group administrator access. The impact is lower in Windows deployments.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28302" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28302" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60360 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Oracle Unified Directory product of Oracle Fusion Middleware (component: OUD Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via LDAP to compromise Oracle Unified Directory.  While the vulnerability is in Oracle Unified Directory, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle Unified Directory. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60360" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60360" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28304 · Jul 21, 2026</p>
-<h3>psirt@solarwinds.com</h3>
-<p>SolarWinds Serv-U is affected by a remote code execution vulnerability that, when exploited, can allow the arbitrary execution of code remotely as root. The impact is lower in Windows deployments.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28304" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28304" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60365 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: WebLogic Server Proxy Plug-In for Third-Party Web Servers).   The supported version that is affected is 15.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Weblogic Server Proxy Plug-in.  While the vulnerability is in Oracle Weblogic Server Proxy Plug-in, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Weblogic Server Proxy Plug-in accessible data as well as  unauthorized access to critical data or complete access to all Oracle Weblogic Server Proxy Plug-in accessible data. CVSS 3.1 Base Score 10.0 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60365" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60365" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28305 · Jul 21, 2026</p>
-<h3>psirt@solarwinds.com</h3>
-<p>SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to remote code execution as root. A domain account with admin privileges and read and write access to the home directory is required. The impact is lower in Windows deployments.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28305" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28305" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60379 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via SOAP to compromise Service Delivery Platform.  While the vulnerability is in Service Delivery Platform, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Service Delivery Platform. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60379" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60379" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28306 · Jul 21, 2026</p>
-<h3>psirt@solarwinds.com</h3>
-<p>SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain administrator to elevate their privileges to a system administrator. The impact is lower in Windows deployments.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28306" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28306" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60389 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Service Delivery Platform product of Oracle Fusion Middleware (component: Messaging Enabler).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Service Delivery Platform.  While the vulnerability is in Service Delivery Platform, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Service Delivery Platform. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60389" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60389" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-28307 · Jul 21, 2026</p>
-<h3>psirt@solarwinds.com</h3>
-<p>SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain user group to be elevated into an administrator group. The impact is lower in Windows deployments.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-28307" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-28307" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-60644 · Jul 21, 2026</p>
+<h3>secalert_us@oracle.com</h3>
+<p>Vulnerability in the Oracle WebCenter Content product of Oracle Fusion Middleware (component: Web Content Management).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle WebCenter Content.  While the vulnerability is in Oracle WebCenter Content, attacks may significantly impact additional products (scope change).  Successful attacks of this vulnerability can result in takeover of Oracle WebCenter Content. CVSS 3.1 Base Score 10.0 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H).</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-60644" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-60644" target="_blank">OpenCVE</a>
 </div>
 
 
@@ -620,7 +620,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-22 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-22 03:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
