@@ -530,62 +530,62 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-66012 · July 25, 2026</p>
-<h3>SiYuan Missing Authorization in MCP Kernel Endpoint</h3>
-<p>SiYuan before v3.7.2 contains a missing authorization vulnerability in the POST /mcp kernel endpoint, which is gated only by a general auth check (model.CheckAuth) with no admin-role or read-only enforcement. This exposes 31 MCP tools, including a file tool with list/read/write/delete/rename/copy actions across the entire workspace. When the Publish server is enabled in anonymous mode (Conf.Publish.Enable=true and Conf.Publish.Auth.Enable=false), the Publish reverse proxy attaches an anonymous RoleReader JWT to proxied requests, allowing a remote unauthenticated attacker to reach /mcp. The attacker can read conf/conf.json to extract accessAuthCode, api.token, and cookieKey in plaintext, write arbitrary files in the workspace, and plant a plugin into data/plugins/ that executes with nodeIntegration:true and no contextIsolation on the next desktop launch, leading to administrator takeover.</p>
+<h3>SiYuan before v3.7.2 contains a missing authorization vulnerability in the POST /mcp kernel endpoint, which...</h3>
+<p>SiYuan before v3.7.2 contains a missing authorization vulnerability in the POST /mcp kernel endpoint, which is gated only by a general auth check (model.CheckAuth) with no admin-role or read-only enforcement. This exposes 31 MCP tools, including a fi...</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-66012" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-66012" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-63732 · July 23, 2026</p>
-<h3>9router Hardcoded Password, Host Header Bypass, and MCP Plugin RCE</h3>
-<p>9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that authenticates any fresh installation, a bypass of the LOCAL_ONLY network gate via a spoofed Host header, and unvalidated arguments passed to child_process.spawn() when registering MCP plugins. A remote, unauthenticated attacker can log in with the default credential, spoof the Host header to reach local-only routes, and register a malicious MCP plugin (e.g. node -e <payload>) to achieve arbitrary code execution on the host operating system when the plugin's SSE endpoint is triggered.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-63732" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-63732" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-58630 (July 24, 2026, updated July 25, 2026)</p>
+<h3>Improper access control in Azure App Service allows an unauthorized attacker to elevate privileges over a...</h3>
+<p>Improper access control in Azure App Service allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-58630" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58630" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-65700 · July 23, 2026</p>
-<h3>h2oGPT Path Traversal in OpenAI-Compatible Files API</h3>
-<p>h2oGPT through 0.2.1 contains a path traversal vulnerability in the OpenAI-compatible files API that allows unauthenticated remote attackers to read, write, and delete arbitrary files accessible to the server process by supplying traversal sequences in the bearer token. The get_user_dir function in openai_server/backend_utils.py uses the bearer token string unsanitized as a path component via os.path.join, and because the default API key is EMPTY authentication is bypassed, enabling attackers to traverse outside the intended user directory through the file content, delete, and upload endpoints to achieve remote code execution by writing to startup hooks or application-loaded files.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-65700" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-65700" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-57106 · July 24, 2026</p>
+<h3>Server-side request forgery (ssrf) in Data Quality allows an unauthorized attacker to elevate privileges over...</h3>
+<p>Server-side request forgery (ssrf) in Data Quality allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-57106" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-57106" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-65917 · July 23, 2026</p>
-<h3>CyberPanel IncBackups IDOR Allows Cross-Tenant Backup Manipulation</h3>
-<p>CyberPanel through 1.9.1, fixed in commit b198460, contains an insecure direct object reference (IDOR) vulnerability in the IncBackups application's incremental-backup handlers (deleteBackup, fetchRestorePoints, and restorePoint) that allows authenticated panel users to access or manipulate other tenants' backup resources by supplying an attacker-controlled globally sequential IncJob integer ID that is never re-scoped to the authorized domain. Attackers can enumerate sequential backup IDs to read another tenant's backup metadata, irrecoverably delete another tenant's backup snapshots, or trigger unauthorized restoration of another tenant's backup job with root privileges.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-65917" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-65917" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-56163 (July 24, 2026, updated July 25, 2026)</p>
+<h3>Missing authentication for critical function in Microsoft Azure Kubernetes Service allows an unauthorized...</h3>
+<p>Missing authentication for critical function in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56163" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56163" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-66036 · July 24, 2026</p>
-<h3>FFmpeg vf_hqdn3d Filter Heap Out-of-Bounds Write</h3>
-<p>FFmpeg through 8.1.2, fixed in commit 5d7112c, contains a heap out-of-bounds write vulnerability in the vf_hqdn3d filter that allows attackers to corrupt heap memory by supplying a crafted video whose frame resolution increases between frames when filtergraph reinitialization is disabled via the -reinit_filter 0 option. Attackers can provide a malicious video input where vf_hqdn3d.config_input() allocates undersized per-plane line-history buffers based on the initial frame width, and subsequent larger frames cause denoise_spatial() to write beyond the allocation boundary, resulting in heap memory corruption.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-66036" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-66036" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-62825 (July 24, 2026, updated July 25, 2026)</p>
+<h3>Improper authentication in Azure Key Vault allows an unauthorized attacker to elevate privileges over a...</h3>
+<p>Improper authentication in Azure Key Vault allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-62825" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-62825" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-66039 · July 24, 2026</p>
-<h3>FFmpeg MACE6 Audio Decoder Signed Integer Overflow</h3>
-<p>FFmpeg through 8.1.2, fixed in commit aafb5c6, contains a signed integer overflow vulnerability in the MACE6 audio decoder that allows attackers to corrupt heap memory by supplying a crafted CAF file with a malicious bytes_per_packet value. Attackers can craft a CAF file with oversized bytes_per_packet and frames_per_packet values in the desc chunk to trigger an integer overflow in mace_decode_frame() during output sample count computation, resulting in an undersized buffer allocation and heap out-of-bounds write that could enable code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-66039" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-66039" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-58275 (July 24, 2026, updated July 25, 2026)</p>
+<h3>Missing authorization in Azure DNS allows an unauthorized attacker to elevate privileges over a network.</h3>
+<p>Missing authorization in Azure DNS allows an unauthorized attacker to elevate privileges over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-58275" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-58275" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-66040 · July 24, 2026</p>
-<h3>FFmpeg PNG/APNG Encoder Heap Out-of-Bounds Write</h3>
-<p>FFmpeg through 8.1.2, fixed in commit b506faf, contains a heap out-of-bounds write vulnerability in the native PNG and APNG encoders that allows remote attackers to corrupt heap memory by supplying a crafted PNG image with a malicious eXIf chunk. Attackers can craft an eXIf chunk where multiple IFD entries reference the same large value payload, causing canonical serialization to expand the output far beyond the undersized allocation estimated by add_exif_profile_size(), resulting in png_write_chunk() writing tens of thousands of bytes past the buffer boundary, leading to deterministic heap corruption, process crash, and potentially arbitrary code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-66040" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-66040" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-56191 (July 24, 2026, updated July 25, 2026)</p>
+<h3>Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering...</h3>
+<p>Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering over a network.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-56191" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-56191" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-65702 · July 23, 2026</p>
-<h3>Vanna FileSystemConversationStore Path Traversal</h3>
-<p>Vanna through 2.0.2 contains a path traversal vulnerability in the FileSystemConversationStore persistence integration that allows unauthenticated remote attackers to write attacker-controlled JSON files to arbitrary filesystem locations and read conversation metadata from outside the intended store base directory. Attackers can supply path traversal sequences in the conversation_id parameter submitted to the unauthenticated chat API endpoints to escape the base directory during both write and read operations, enabling arbitrary file write with attacker-controlled content and unauthorized file read on the server filesystem.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-65702" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-65702" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-42933 (July 23, 2026, updated July 24, 2026)</p>
+<h3>Pronetiqs IntraVUE versions 3.2.1a14 and prior have an unintended proxy or intermediary vulnerability which...</h3>
+<p>Pronetiqs IntraVUE versions 3.2.1a14 and prior have an unintended proxy or intermediary vulnerability which could allow an attacker to use an active proxy, which would bypass OT segmentation.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-42933" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-42933" target="_blank">OpenCVE</a>
 </div>
-
 
                         </div>
                     </div>
@@ -609,7 +609,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-07-26 09:31 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-07-26 09:46 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
