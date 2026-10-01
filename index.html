@@ -501,6 +501,13 @@
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
 
 <div class="bulletin-item">
+<p class="cve-id">CVE-2026-101148 (October 1, 2026)</p>
+<h3>BackupSheep Plugin Unauthenticated Backup Download and File Deletion</h3>
+<p>Unauthenticated attackers download full site backups and delete server files</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-101148" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-101148" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
 <p class="cve-id">CVE-2026-55107 (September 30, 2026)</p>
 <h3>Kobako Wasm Sandbox Escape to Host Ruby Execution</h3>
 <p>Guest mruby scripts execute arbitrary Ruby in the host process</p>
@@ -510,21 +517,21 @@
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-102427 (September 30, 2026)</p>
 <h3>OrdaSoft Joomla CCK Unauthenticated PHP File Upload RCE</h3>
-<p>Commented-out extension allow-list in site/uploader.php enables webroot writes</p>
+<p>Unauthenticated attackers upload PHP files through the uploader endpoint</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-102427" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-102427" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-76570 (September 30, 2026)</p>
 <h3>JCTables Joomla Extension Unauthenticated SQL Injection</h3>
-<p>Front-end CRUD controller skips token checks, concatenates request parameters</p>
+<p>Unauthenticated SQL injection in the extension read function</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-76570" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-76570" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-96349 (September 30, 2026)</p>
 <h3>SiteSkite Unauthenticated Remote Code Execution</h3>
-<p>Unauthenticated RCE affects SiteSkite versions 2.1.8 and earlier</p>
+<p>Unauthenticated remote code execution in versions up to 2.1.8</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-96349" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-96349" target="_blank">OpenCVE</a>
 </div>
 
@@ -536,23 +543,16 @@
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-96587 (September 29, 2026)</p>
-<h3>Viidure Android App Hardcoded Cloud Storage Credentials</h3>
-<p>Plaintext credentials grant read, modify and delete access to firmware</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-96587" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-96587" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-76504 (September 30, 2026, updated October 1, 2026) [KEV]</p>
 <h3>Cisco Catalyst SD-WAN Manager API Authentication Bypass</h3>
-<p>URI encoding bypasses endpoint auth rule, granting admin API access</p>
+<p>URI encoding bypass grants unauthenticated admin API access</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-76504" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-76504" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-86950 (September 28, 2026, updated September 30, 2026) [KEV]</p>
 <h3>Apple Out-of-Bounds Write RCE in iOS and macOS</h3>
-<p>Crafted file triggers arbitrary code execution, actively exploited</p>
+<p>Crafted file triggers out-of-bounds write and code execution</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-86950" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-86950" target="_blank">OpenCVE</a>
 </div>
 
@@ -589,7 +589,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-10-01 15:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-10-01 15:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
