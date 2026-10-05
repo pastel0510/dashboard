@@ -507,57 +507,57 @@
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-103956 (October 2, 2026)</p>
 <h3>Loom for AWS Missing Authentication Super-Admin Takeover</h3>
-<p>Missing authentication in auth dependency allows remote super-admin takeover.</p>
+<p>Remote attackers obtain super-admin authority and rewrite IAM policies without authentication.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-103956" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-103956" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-55393 (October 1, 2026, updated October 2, 2026)</p>
-<h3>Teledyne FLIR Aware2 Path Traversal Configuration Disclosure</h3>
-<p>Unauthenticated attackers read configuration parameters via path traversal.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-55393" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-55393" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
 <p class="cve-id">CVE-2026-82041 (October 2, 2026)</p>
-<h3>UTMStack Missing Authorization WebSocket Command Execution</h3>
-<p>Any authenticated user executes arbitrary OS commands via unchecked handler.</p>
+<h3>UTMStack Missing Authorization Arbitrary Command Execution</h3>
+<p>Any authenticated user executes arbitrary OS commands on monitored endpoints as root or SYSTEM.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-82041" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-82041" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-90970 (October 2, 2026)</p>
-<h3>GitLab AI Gateway Prompt Template Sandbox Escape RCE</h3>
-<p>Authenticated Duo users escape sandbox and execute arbitrary commands.</p>
+<h3>GitLab AI Gateway Sandbox Escape Remote Code Execution</h3>
+<p>Authenticated users escape prompt sandbox and execute arbitrary commands on the AI Gateway.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-90970" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-90970" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-93698 (October 2, 2026)</p>
-<h3>Multilang adminbin Insufficient Validation Command Execution</h3>
-<p>Insufficient validation allows arbitrary command execution via adminbin.</p>
+<h3>Multilang Adminbin Insufficient Validation Command Execution</h3>
+<p>Insufficient validation in Multilang adminbin enables arbitrary command execution remotely.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-93698" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-93698" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-105105 (October 3, 2026)</p>
-<h3>NASA AIT-Core ZeroMQ Broker Missing Authentication RCE</h3>
-<p>Unauthenticated attackers inject spacecraft commands via ZeroMQ broker.</p>
+<h3>NASA AIT-Core Missing Authentication Spacecraft Command Injection</h3>
+<p>Unauthenticated attackers inject spacecraft commands and exfiltrate telemetry via ZeroMQ broker.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-105105" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-105105" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-104846 (October 2, 2026)</p>
-<h3>Seroval fromJSON Deserialization Promise Resolver Code Execution</h3>
-<p>Fulfilled Promise thenable bypasses resolver checks for code execution.</p>
+<h3>Seroval Promise Deserialization Remote Code Execution</h3>
+<p>Attacker-controlled JSON triggers code execution via thenable assimilation in plugin-capable releases.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-104846" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-104846" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-104286 (October 1, 2026, updated October 2, 2026) [KEV]</p>
-<h3>Fortinet FortiMail Unauthenticated Path Traversal Arbitrary File Write</h3>
-<p>Unauthenticated attackers write arbitrary files via crafted HTTP requests.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-104286" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-104286" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-19652 (October 2, 2026, updated October 3, 2026)</p>
+<h3>Divi Membership WordPress Plugin Privilege Escalation</h3>
+<p>Unauthenticated attackers register administrator accounts via bcrypt hash manipulation in form_id.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-19652" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-19652" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-88779 (October 4, 2026) [KEV]</p>
+<h3>Citrix NetScaler ADC Gateway Unauthenticated Takeover</h3>
+<p>Unauthenticated attackers compromise NetScaler ADC and Gateway via network access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-88779" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-88779" target="_blank">OpenCVE</a>
 </div>
                         </div>
                     </div>
@@ -590,7 +590,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-10-05 03:30 (Europe/Helsinki, UTC3)</p>
+        <p class="timestamp">Last updated: 2026-10-05 03:48 (Europe/Helsinki, UTC3)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
