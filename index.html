@@ -503,58 +503,58 @@
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-115905 (October 26, 2026)</p>
-<h3>Rust zip Crate Filename Mismatch Path Traversal</h3>
-<p>Conflicting ZIP headers allow attackers to write files outside extraction paths.</p>
+<h3>Rust zip Crate Path Traversal via Header Filename Mismatch</h3>
+<p>Conflicting ZIP headers allow writing files outside extraction paths.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-115905" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-115905" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-110720 (October 26, 2026)</p>
+<h3>Consul-k8s Cross-Namespace Authorization Bypass</h3>
+<p>Cross-namespace ACL rules allow elevated Consul privileges.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-110720" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-110720" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-102649 (October 26, 2026)</p>
 <h3>Burrito TACoS Unsigned Webhook Remote Code Execution</h3>
-<p>Empty webhook secrets allow unauthenticated GitHub and GitLab webhook triggers.</p>
+<p>Unsigned GitHub and GitLab webhooks allow unauthenticated code execution.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-102649" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-102649" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-115188 (October 26, 2026)</p>
-<h3>Mautic Campaign Import Unrestricted File Upload</h3>
-<p>Unauthenticated uploads to media directory allow arbitrary PHP file execution.</p>
+<h3>Mautic Campaign Import Unrestricted File Upload RCE</h3>
+<p>Unauthenticated uploads allow arbitrary PHP file execution.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-115188" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-115188" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-115933 (October 24, 2026, updated October 26, 2026)</p>
 <h3>Postiz Shared Secret Token Forgery Authentication Bypass</h3>
-<p>Same secret signs all tokens allowing forged session or reset access.</p>
+<p>Same shared secret signs all tokens allowing forged access.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-115933" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-115933" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-115931 (October 23, 2026, updated October 26, 2026)</p>
-<h3>Postiz Internal Function Access Privilege Escalation</h3>
-<p>Signed users can invoke internal helpers to access sensitive channel data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-115931" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-115931" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-115893 (October 23, 2026)</p>
-<h3>Wasmtime Cranelift br_table Branch Target Corruption</h3>
-<p>Large br_table tables produce incorrect branches allowing arbitrary code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-115893" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-115893" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-115889 (October 23, 2026, updated October 26, 2026)</p>
-<h3>Wasmtime Cranelift SSA Index Integer Overflow</h3>
-<p>SSA index overflow enables silent corruption and arbitrary code execution.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-115889" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-115889" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
 <p class="cve-id">CVE-2026-10757 (October 26, 2026)</p>
 <h3>Esri ArcGIS Server SQL Injection</h3>
-<p>Remote authenticated attackers execute arbitrary SQL via service parameters.</p>
+<p>Remote attackers can issue unauthorized database functions.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-10757" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-10757" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-65184 (October 26, 2026)</p>
+<h3>wsserver Terminal Bridge OS Command Injection</h3>
+<p>Root daemon passes unsanitized input to system() and popen().</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-65184" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-65184" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-107656 (October 26, 2026)</p>
+<h3>Fortinet FortiSandbox Authentication Bypass via Alternate Path</h3>
+<p>Alternate HTTP path allows unauthorized code or command execution.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-107656" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-107656" target="_blank">OpenCVE</a>
 </div>
 
                         </div>
@@ -588,7 +588,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-10-27 02:30 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-10-27 02:54 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
