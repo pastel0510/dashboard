@@ -500,62 +500,62 @@
                         <h2>CVE Bulletin</h2>
                         <div id="cve-bulletin">
                             <p class="disclaimer">Showing CVEs from the last 72 hours with CVSS 7.0+, Network attack vector, Low attack complexity. <strong>[KEV]</strong> indicates CVEs in CISA's Known Exploited Vulnerabilities catalog.</p>
+
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-130778 · November 18, 2026</p>
+<p class="cve-id">CVE-2026-75521 (November 18, 2026)</p>
+<h3>Miren Runtime Certificate Authentication Bypass to Cluster Access</h3>
+<p>Attackers bypass Miren RPC authentication with forged certificates.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-75521" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-75521" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-71499 (November 18, 2026)</p>
+<h3>cf-manager Server-Side Request Forgery to Worker Code Execution</h3>
+<p>Attackers fetch and deploy JavaScript in victim Cloudflare accounts.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-71499" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-71499" target="_blank">OpenCVE</a>
+</div>
+
+<div class="bulletin-item">
+<p class="cve-id">CVE-2026-130778 (November 18, 2026)</p>
 <h3>Incus Authentication Bypass to Cluster Access</h3>
-<p>Incus before 7.6.0 contains an authentication bypass vulnerability that allows remote attackers to authenticate as any trusted certificate by appending its public certificate to their presented TLS client chain. Attackers can append the server's or a cluster member's certificate to gain cluster-level access, bypass authorization, modify trust store entries, and influence scriptlet-based authorization decisions.</p>
+<p>Attackers append trusted certificates to bypass Incus authorization.</p>
 <a href="https://db.gcve.eu/cve/CVE-2026-130778" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-130778" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-130759 · November 18, 2026</p>
-<h3>Fleet Authentication Bypass to Admin Access</h3>
-<p>Fleet from 4.71.0 before 4.88.2 contains an authentication bypass vulnerability in the SAML SSO callback that looks up sessions using unvalidated client-supplied identifiers. Users able to run live queries or enroll secret holders can plant attacker-controlled identity provider metadata in the session store, then present a self-signed SAML response to log in as a global admin.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-130759" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-130759" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-95787 (November 18, 2026, updated November 19, 2026)</p>
+<h3>Aruba AOS-10 PAPI Authentication Bypass to Admin Access</h3>
+<p>Unauthenticated attackers bypass Aruba AOS-10 authentication for admin access.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-95787" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-95787" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-130771 · November 18, 2026</p>
-<h3>Incus Arbitrary File Access</h3>
-<p>Incus before 7.6.0 fails to reject special files, hard links, or symlinks in backup or image metadata, allowing restricted project users to read or overwrite host files. Attackers can import crafted backups containing device nodes, a hard-linked backup.yaml, or symlinks to corrupt host storage, overwrite host files, or leak other projects' data.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-130771" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-130771" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-114202 (November 18, 2026)</p>
+<h3>ASUS Control Center Express Hardcoded Key Authentication Bypass</h3>
+<p>Forged authentication tokens grant remote attackers administrative privileges.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-114202" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-114202" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-130780 · November 18, 2026</p>
-<h3>Incus Path Traversal to Host</h3>
-<p>Incus before 7.6.0 contains a path traversal vulnerability that allows malicious migration peers to write outside intended directories by supplying unvalidated dependent volume and snapshot names in the migration offer header. Attackers controlling a migration source can create root-owned volumes with attacker content at arbitrary host paths, compromising hosts using dir storage pools, bypassing restricted.storage-pools.access, or crashing the daemon.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-130780" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-130780" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-91569 (November 17, 2026, updated November 19, 2026)</p>
+<h3>Oracle WebLogic Server Unauthenticated HTTP Takeover</h3>
+<p>Unauthenticated HTTP attackers can take over Oracle WebLogic Server.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-91569" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-91569" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-130784 · November 18, 2026</p>
-<h3>Incus Authorization Bypass to Root Code Execution</h3>
-<p>Incus before 7.6.0 contains an authorization bypass vulnerability that allows restricted clients to create and access default project resources by exploiting entitlement checks against the requested project. Attackers can create bridge networks with raw.dnsmasq directives to execute code as root on the host, or manipulate inherited resources via the ?project= parameter.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-130784" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-130784" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-91510 (November 17, 2026, updated November 19, 2026)</p>
+<h3>Oracle Access Manager Authentication Engine Unauthenticated HTTP Takeover</h3>
+<p>Unauthenticated HTTP attackers take over Oracle Access Manager.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-91510" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-91510" target="_blank">OpenCVE</a>
 </div>
 
 <div class="bulletin-item">
-<p class="cve-id">CVE-2026-130786 · November 18, 2026</p>
-<h3>Incus Configuration Injection to Root Code Execution</h3>
-<p>Incus before 7.6.0 contains a configuration injection vulnerability that allows users who can launch instances from controlled images to inject LXC directives by embedding line breaks in OCI config.json values or oci.entrypoint and oci.cwd keys. Attackers can add liblxc hooks or crafted tmpfs lxc.mount.entry fields to run commands as root on the host or bind-mount host paths, even from restricted projects.</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-130786" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-130786" target="_blank">OpenCVE</a>
+<p class="cve-id">CVE-2026-91500 (November 17, 2026, updated November 19, 2026)</p>
+<h3>Oracle Access Manager Unauthenticated HTTP Takeover and Denial of Service</h3>
+<p>Unauthenticated HTTP access compromises Oracle Access Manager data.</p>
+<a href="https://db.gcve.eu/cve/CVE-2026-91500" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-91500" target="_blank">OpenCVE</a>
 </div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-132139 · November 18, 2026</p>
-<h3>DrayTek Vigor2960 Stack-Based Buffer Overflow</h3>
-<p>A weakness has been identified in DrayTek Vigor2960 up to 1.5.1.6. Affected is the function setSWMProfile of the file /cgi-bin/mainfunction.cgi. Executing a manipulation of the argument filename can lead to stack-based buffer overflow. The attack may be performed from remote. The exploit has been made available to the public and could be used for attacks. Upgrading to version 1.5.1.7 is able to address this issue. It is recommended to upgrade the affected component. The vendor recommends: "1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported."</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-132139" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-132139" target="_blank">OpenCVE</a>
-</div>
-
-<div class="bulletin-item">
-<p class="cve-id">CVE-2026-132141 · November 18, 2026</p>
-<h3>DrayTek Vigor2960 Stack-Based Buffer Overflow</h3>
-<p>A vulnerability was detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this issue is the function json_load_lock of the file /cgi-bin/mainfunction.cgi of the component Jsonstatus. The manipulation of the argument usefile results in stack-based buffer overflow. It is possible to launch the attack remotely. The exploit is now public and may be used. Upgrading to version 1.5.1.7 can resolve this issue. It is advisable to upgrade the affected component. The vendor recommends: "1.5.1.6 isn't the latest version of 2960, the latest version fixes many security issues. And we have another one in our release plan which should solve the issues reported."</p>
-<a href="https://db.gcve.eu/cve/CVE-2026-132141" target="_blank">GCVE</a> · <a href="https://www.opencve.io/cve/CVE-2026-132141" target="_blank">OpenCVE</a>
-</div>
-
 
                         </div>
                     </div>
@@ -586,7 +586,7 @@
             </main>
         </div>
         
-        <p class="timestamp">Last updated: 2026-11-19 14:31 (Europe/Helsinki, UTC2)</p>
+        <p class="timestamp">Last updated: 2026-11-19 14:55 (Europe/Helsinki, UTC2)</p>
         <p class="disclaimer" style="text-align:center;margin-top:20px;font-size:0.75em;color:#666;">
             Auto-generated with AI · Updated regularly · <a href="https://github.com/pastel0510/dashboard" style="color:#888;">Source</a>
         </p>
